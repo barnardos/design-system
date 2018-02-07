@@ -1,0 +1,39 @@
+{
+  "extends": "stylelint-config-recommended",
+  "plugins": ["stylelint-order", "stylelint-selector-bem-pattern"],
+  "rules": {
+    "order/order": ["custom-properties", "declarations"],
+    "order/properties-alphabetical-order": [true, { "severity": "warning" }],
+    "plugin/selector-bem-pattern": [
+      {
+        "preset": "suit"
+      },
+      { "severity": "warning" }
+    ],
+    "at-rule-no-unknown": null,
+    "at-rule-no-vendor-prefix": true,
+    "at-rule-whitelist": [],
+    "declaration-no-important": true,
+    "function-url-no-scheme-relative": true,
+    "function-url-scheme-whitelist": [],
+    "function-whitelist": [],
+    "media-feature-name-no-vendor-prefix": true,
+    "media-feature-name-whitelist": [],
+    "number-max-precision": 2,
+    "property-no-unknown": null,
+    "property-no-vendor-prefix": true,
+    "property-whitelist": [],
+    "selector-attribute-operator-whitelist": [],
+    "selector-max-attribute": 0,
+    "selector-max-class": 0,
+    "selector-max-id": 0,
+    "selector-max-type": 0,
+    "selector-max-universal": 0,
+    "selector-no-vendor-prefix": true,
+    "selector-pseudo-class-no-unknown": null,
+    "selector-pseudo-class-whitelist": [],
+    "unit-no-unknown": null,
+    "unit-whitelist": [],
+    "value-no-vendor-prefix": true
+  }
+}
