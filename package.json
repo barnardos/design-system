@@ -13,7 +13,8 @@
     "develop": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "build-serve": "npm-run-all --sequential build serve"
+    "build-serve": "npm-run-all --sequential build serve",
+    "test": "npm-run-all --parallel lint check-format"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
