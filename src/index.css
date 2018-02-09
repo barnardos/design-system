@@ -1,0 +1,67 @@
+/**
+ * Display font definitions
+ */
+
+@font-face {
+  font-family: Nova;
+  font-style: normal;
+  font-weight: 300;
+  src: url(./nova-light.woff);
+}
+
+@font-face {
+  font-family: Nova;
+  font-style: normal;
+  font-weight: 600;
+  src: url(./nova-semibold.woff);
+}
+
+/**
+ * Minimal reset
+ */
+
+/* stylelint-disable selector-max-universal */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* stylelint-enable */
+
+/**
+ * Foundation proportional font-sizing system
+ *
+ * The font-size of the html selector is scaled according to the viewport width.
+ * This provides a general rule for readable text and optimal line length.
+ * Components can then build of top of this general rule by using rem units.
+ * Thus, the majority of CSS will use rem units and target class selectors.
+ * Hence, the selector-max-type and declaration-property-unit-whitelist stylelint rules
+ * are only disabled for the following code, rather than turned off globally.
+ */
+
+/* stylelint-disable selector-max-type, declaration-property-unit-whitelist */
+
+html {
+  font-size: 93.75%;
+}
+
+@media (min-width: 36rem) {
+  html {
+    font-size: 100%;
+  }
+}
+
+@media (min-width: 40rem) {
+  html {
+    font-size: 106.25%;
+  }
+}
+
+@media (min-width: 44rem) {
+  html {
+    font-size: 112.5%;
+  }
+}
+
+/* stylelint-enable */
