@@ -1,0 +1,45 @@
+/** @define Index */
+
+.Index-typography {
+  background: whitesmoke;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.Index-typographyItem:not(:first-child) {
+  margin-top: 1rem;
+}
+
+.Index-typographyItemLabel {
+  font: 300 0.875rem/1.5rem system-ui;
+}
+
+.Index-scale {
+  background: whitesmoke;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.Index-scaleItem {
+  font: 300 1.625rem/2rem Nova, sans-serif;
+}
+
+.Index-scaleItem:not(:first-child) {
+  margin-top: 1rem;
+}
+
+.Index-headingOne {
+  margin-top: 2rem;
+}
+
+.Index-headingTwo {
+  margin-top: 2rem;
+}
+
+.Index-paragraph {
+  margin-top: 1rem;
+}
+
+.Index-unorderedList {
+  margin-top: 1rem;
+}
