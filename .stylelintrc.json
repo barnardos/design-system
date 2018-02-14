@@ -25,6 +25,7 @@
     "property-no-vendor-prefix": true,
     "property-whitelist": [
       "background",
+      "box-shadow",
       "box-sizing",
       "font-family",
       "font-size",
