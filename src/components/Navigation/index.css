@@ -1,0 +1,7 @@
+.Navigation-item {
+  list-style: none;
+}
+
+.Navigation-link {
+  font: 300 1rem/1.5rem system-ui;
+}
