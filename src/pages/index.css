@@ -1,56 +1,56 @@
-/** @define Index */
+/** @define Pages */
 
-.Index-typography {
+.Pages-typography {
   background: whitesmoke;
   margin-top: 1rem;
   padding: 1rem;
 }
 
-.Index-typographyItem:not(:first-child) {
+.Pages-typographyItem:not(:first-child) {
   margin-top: 1rem;
 }
 
-.Index-typographyItemLabel {
+.Pages-typographyItemLabel {
   font: 300 0.875rem/1.5rem system-ui;
 }
 
-.Index-example {
+.Pages-example {
   box-shadow: inset 0 0 0 0.0625rem gainsboro;
   margin-top: 1rem;
   max-width: 22rem;
   padding: 1rem;
 }
 
-.Index-image {
+.Pages-image {
   max-width: 100%;
 }
 
-.Index-scale {
+.Pages-scale {
   background: whitesmoke;
   margin-top: 1rem;
   padding: 1rem;
 }
 
-.Index-scaleItem {
+.Pages-scaleItem {
   font: 300 1.625rem/2rem Nova, sans-serif;
 }
 
-.Index-scaleItem:not(:first-child) {
+.Pages-scaleItem:not(:first-child) {
   margin-top: 1rem;
 }
 
-.Index-headingOne {
+.Pages-headingOne {
   margin-top: 2rem;
 }
 
-.Index-headingTwo {
+.Pages-headingTwo {
   margin-top: 2rem;
 }
 
-.Index-paragraph {
+.Pages-paragraph {
   margin-top: 1rem;
 }
 
-.Index-unorderedList {
+.Pages-unorderedList {
   margin-top: 1rem;
 }
