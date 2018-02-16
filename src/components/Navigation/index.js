@@ -4,13 +4,8 @@ import React from "react";
 import "./index.css";
 
 const Navigation = () => (
-  <nav>
+  <nav className="Navigation">
     <ul>
-      <li className="Navigation-item">
-        <Link className="Navigation-link" to="/">
-          Home
-        </Link>
-      </li>
       <li className="Navigation-item">
         <Link className="Navigation-link" to="/principles/">
           Principles

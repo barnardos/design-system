@@ -1,3 +1,4 @@
+import Link from "gatsby-link";
 import React from "react";
 
 import Title from "../components/Title";
@@ -13,7 +14,10 @@ import "./index.css";
 
 const Pages = () => (
   <div>
-    <Title>{`Typography and layout`}</Title>
+    <Link className="Pages-home" to="/">{`Home`}</Link>
+    <div className="Pages-title">
+      <Title>{`Typography and layout`}</Title>
+    </div>
     <div className="Pages-paragraph">
       <Paragraph>{`The system is:`}</Paragraph>
     </div>

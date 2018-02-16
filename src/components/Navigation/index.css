@@ -1,3 +1,18 @@
+.Navigation {
+  padding-top: 1rem;
+  position: relative;
+}
+
+.Navigation::before {
+  background: silver;
+  content: "";
+  height: 0.0625rem;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
 .Navigation-item {
   list-style: none;
 }

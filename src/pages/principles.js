@@ -1,15 +1,19 @@
+import Link from "gatsby-link";
 import React from "react";
 
-import Title from "../components/Title";
-import Paragraph from "../components/Paragraph";
-import UnorderedList from "../components/UnorderedList";
 import ListItem from "../components/ListItem";
+import Paragraph from "../components/Paragraph";
+import Title from "../components/Title";
+import UnorderedList from "../components/UnorderedList";
 
 import "./index.css";
 
 const Pages = () => (
   <div>
-    <Title>{`Principles`}</Title>
+    <Link className="Pages-home" to="/">{`Home`}</Link>
+    <div className="Pages-title">
+      <Title>{`Principles`}</Title>
+    </div>
     <div className="Pages-paragraph">
       <Paragraph>{`The principles are to:`}</Paragraph>
     </div>

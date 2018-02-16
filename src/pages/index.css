@@ -1,5 +1,17 @@
 /** @define Pages */
 
+.Pages-home {
+  font: 300 1rem/1.5rem system-ui;
+}
+
+.Pages-navigation {
+  margin-top: 1rem;
+}
+
+.Pages-title {
+  margin-top: 1rem;
+}
+
 .Pages-typography {
   background: whitesmoke;
   margin-top: 1rem;
