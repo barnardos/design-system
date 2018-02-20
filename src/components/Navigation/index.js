@@ -16,6 +16,11 @@ const Navigation = () => (
           Typography and layout
         </Link>
       </li>
+      <li className="Navigation-item">
+        <Link className="Navigation-link" to="/colour/">
+          Colour
+        </Link>
+      </li>
     </ul>
   </nav>
 );

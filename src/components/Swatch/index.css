@@ -1,0 +1,25 @@
+.Swatch {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+
+.Swatch-example {
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+}
+
+.Swatch-example--border {
+  border: 0.0625rem solid grey;
+}
+
+.Swatch-name {
+  font: 600 1rem/1.5rem system-ui;
+  margin-top: 0.5rem;
+}
+
+.Swatch-hex {
+  font: 300 1rem/1.5rem system-ui;
+}

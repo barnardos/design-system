@@ -66,3 +66,13 @@
 .Pages-unorderedList {
   margin-top: 1rem;
 }
+
+.Pages-colour {
+  background: whitesmoke;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.Pages-colourItem {
+  font: 300 1rem/1.5rem system-ui;
+}
