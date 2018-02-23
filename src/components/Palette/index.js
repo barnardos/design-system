@@ -22,7 +22,7 @@ const Palette = () => (
       <Swatch name="Orange" hex="#e86c00" />
     </li>
     <li className="Palette-swatch">
-      <Swatch name="Black" hex="#1D1D1D" />
+      <Swatch name="Black" hex="#1d1d1d" />
     </li>
     <li className="Palette-swatch ">
       <Swatch name="White" hex="#ffffff" hasBorder />
