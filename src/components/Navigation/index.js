@@ -21,6 +21,11 @@ const Navigation = () => (
           Colour
         </Link>
       </li>
+      <li className="Navigation-item">
+        <Link className="Navigation-link" to="/components/">
+          Components
+        </Link>
+      </li>
     </ul>
   </nav>
 );
