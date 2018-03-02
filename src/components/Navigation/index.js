@@ -1,4 +1,4 @@
-import Link from "gatsby-link";
+import GatsbyLink from "gatsby-link";
 import React from "react";
 
 import "./index.css";
@@ -7,24 +7,24 @@ const Navigation = () => (
   <nav className="Navigation">
     <ul>
       <li className="Navigation-item">
-        <Link className="Navigation-link" to="/principles/">
+        <GatsbyLink className="Navigation-link" to="/principles/">
           Principles
-        </Link>
+        </GatsbyLink>
       </li>
       <li className="Navigation-item">
-        <Link className="Navigation-link" to="/typography-and-layout/">
+        <GatsbyLink className="Navigation-link" to="/typography-and-layout/">
           Typography and layout
-        </Link>
+        </GatsbyLink>
       </li>
       <li className="Navigation-item">
-        <Link className="Navigation-link" to="/colour/">
+        <GatsbyLink className="Navigation-link" to="/colour/">
           Colour
-        </Link>
+        </GatsbyLink>
       </li>
       <li className="Navigation-item">
-        <Link className="Navigation-link" to="/components/">
+        <GatsbyLink className="Navigation-link" to="/components/">
           Components
-        </Link>
+        </GatsbyLink>
       </li>
     </ul>
   </nav>
