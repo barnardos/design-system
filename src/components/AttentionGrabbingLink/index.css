@@ -1,0 +1,57 @@
+.AttentionGrabbingLink {
+  color: #ffffff;
+  display: block;
+  font: 300 1.25rem/1.5rem Nova, sans-serif;
+  padding: 0.75rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.AttentionGrabbingLink:hover {
+  text-decoration: underline;
+}
+
+.AttentionGrabbingLink--black {
+  background-color: #1d1d1d;
+}
+
+.AttentionGrabbingLink--black:hover:active,
+.AttentionGrabbingLink--black:hover:hover {
+  background-color: color(#1d1d1d shade(10%));
+}
+
+.AttentionGrabbingLink--orange {
+  background-color: #e86c00;
+}
+
+.AttentionGrabbingLink--orange:active,
+.AttentionGrabbingLink--orange:hover {
+  background-color: color(#e86c00 shade(10%));
+}
+
+.AttentionGrabbingLink--pink {
+  background-color: #cc0070;
+}
+
+.AttentionGrabbingLink--pink:active,
+.AttentionGrabbingLink--pink:hover {
+  background-color: color(#cc0070 shade(10%));
+}
+
+.AttentionGrabbingLink--purple {
+  background-color: #702277;
+}
+
+.AttentionGrabbingLink--purple:active,
+.AttentionGrabbingLink--purple:hover {
+  background-color: color(#702277 shade(10%));
+}
+
+.AttentionGrabbingLink--teal {
+  background-color: #0099a9;
+}
+
+.AttentionGrabbingLink--teal:active,
+.AttentionGrabbingLink--teal:hover {
+  background-color: color(#0099a9 shade(10%));
+}
