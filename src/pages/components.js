@@ -3,7 +3,6 @@ import React from "react";
 
 import AttentionGrabbingLink from "../components/AttentionGrabbingLink";
 import HeadingOne from "../components/HeadingOne";
-import HeadingTwo from "../components/HeadingTwo";
 import Link from "../components/Link";
 import ListItem from "../components/ListItem";
 import Paragraph from "../components/Paragraph";
@@ -32,9 +31,6 @@ const Pages = () => (
         <ListItem>{`use a verb for example "Download"`}</ListItem>
         <ListItem>{`not use the Green colour`}</ListItem>
       </UnorderedList>
-    </div>
-    <div className="Pages-headingTwo">
-      <HeadingTwo>{`Examples of AttentionGrabbingLink`}</HeadingTwo>
     </div>
     <div className="Pages-example">
       <div className="Pages-exampleItem">
@@ -65,9 +61,6 @@ const Pages = () => (
         >{`use a meaningful phrase that makes sense out of context`}</ListItem>
         <ListItem>{`use the default browser/device colours`}</ListItem>
       </UnorderedList>
-      <div className="Pages-headingTwo">
-        <HeadingTwo>{`Example of Links`}</HeadingTwo>
-      </div>
       <div className="Pages-example">
         <HeadingOne>
           <Link href="http://example.org">{`Heading of section`}</Link>
@@ -96,9 +89,6 @@ const Pages = () => (
         <ListItem>{`use a verb for example "Save"`}</ListItem>
         <ListItem>{`only use the Green colour`}</ListItem>
       </UnorderedList>
-      <div className="Pages-headingTwo">
-        <HeadingTwo>{`Example of an SubmitAction`}</HeadingTwo>
-      </div>
       <div className="Pages-example">
         <SubmitAction text="Save" />
       </div>

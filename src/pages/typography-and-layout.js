@@ -18,26 +18,47 @@ const Pages = () => (
     <div className="Pages-title">
       <Title>{`Typography and layout`}</Title>
     </div>
+    <div className="Pages-rules">
+      <HeadingOne>{`The three rules are:`}</HeadingOne>
+      <div className="Pages-unorderedList">
+        <UnorderedList>
+          <ListItem>{`spacing that is multiples of 8px`}</ListItem>
+          <ListItem>{`line heights that are multiples of 4px`}</ListItem>
+          <ListItem
+          >{`a typographic scale that is multiples of 1.125 with a base of 16px`}</ListItem>
+        </UnorderedList>
+      </div>
+    </div>
+    <div className="Pages-example">
+      <img className="Pages-image" src={layoutExample} alt="" />
+    </div>
+    <div className="Pages-headingOne">
+      <HeadingOne>{`Grid`}</HeadingOne>
+    </div>
     <div className="Pages-paragraph">
-      <Paragraph>{`The system is:`}</Paragraph>
+      <Paragraph
+      >{`The spacing rule provides a flexible foundation for a grid.`}</Paragraph>
+    </div>
+    <div className="Pages-paragraph">
+      <Paragraph>{`For example, symmetric grids can be:`}</Paragraph>
     </div>
     <div className="Pages-unorderedList">
       <UnorderedList>
-        <ListItem>{`a grid with consistent spacing of 8px`}</ListItem>
-        <ListItem>{`line heights that are multiples of 4px`}</ListItem>
-        <ListItem>{`a typographic scale based on multiples of 1.125`}</ListItem>
+        <ListItem>{`12col/16px gutter`}</ListItem>
+        <ListItem>{`8col/16px gutter`}</ListItem>
+        <ListItem>{`4col/16px gutter`}</ListItem>
       </UnorderedList>
     </div>
-    <div className="Pages-headingTwo">
-      <HeadingTwo>{`Suggested symmetric grid`}</HeadingTwo>
+    <div className="Pages-headingOne">
+      <HeadingOne>{`Type`}</HeadingOne>
     </div>
-    <div className="Pages-scale">
-      <div className="Pages-scaleItem">{`12col/16px gutter`}</div>
-      <div className="Pages-scaleItem">{`8col/16px gutter`}</div>
-      <div className="Pages-scaleItem">{`4col/16px gutter`}</div>
+    <div className="Pages-paragraph">
+      <Paragraph
+      >{`The line height and typographic scale rules provide flexibility to produce a visual hierarchy.`}</Paragraph>
     </div>
-    <div className="Pages-headingTwo">
-      <HeadingTwo>{`Suggested sizes and styles`}</HeadingTwo>
+    <div className="Pages-paragraph">
+      <Paragraph
+      >{`For example, a visual hierarchy with specific type styles can be:`}</Paragraph>
     </div>
     <div className="Pages-typography">
       <div className="Pages-typographyItem">
@@ -63,23 +84,14 @@ const Pages = () => (
         <div className="Pages-typographyItemLabel">{`system-ui light`}</div>
       </div>
     </div>
-    <div className="Pages-headingTwo">
-      <HeadingTwo>{`Example of consistent 8px spacing`}</HeadingTwo>
-    </div>
-    <div className="Pages-example">
-      <img className="Pages-image" src={layoutExample} alt="" />
-    </div>
-    <div className="Pages-headingTwo">
+    <div className="Pages-headingOne">
       <HeadingOne>{`Scaling`}</HeadingOne>
     </div>
     <div className="Pages-paragraph">
       <Paragraph>
-        {`To ensure optimal white space and line lengths of 60 characters at
-        different viewport sizes, the layout and typography can be scaled proportionally.`}
+        {`To ensure optimal spacing and line lengths at
+        different viewport sizes, the layout and typography can be proportionally scaled:`}
       </Paragraph>
-    </div>
-    <div className="Pages-paragraph">
-      <Paragraph>{`For example, it can be scaled:`}</Paragraph>
     </div>
     <div className="Pages-unorderedList">
       <UnorderedList>
@@ -87,16 +99,9 @@ const Pages = () => (
         >{`down to 93.75% giving a paragraph size and guttering of 15px`}</ListItem>
         <ListItem
         >{`up to 106.25% giving a paragraph size and guttering  of 17px`}</ListItem>
+        <ListItem
+        >{`further up to 112.5% giving a paragraph size and guttering of 18px`}</ListItem>
       </UnorderedList>
-    </div>
-    <div className="Pages-headingTwo">
-      <HeadingTwo>{`Suggested scale`}</HeadingTwo>
-    </div>
-    <div className="Pages-scale">
-      <div className="Pages-scaleItem">{`93.75%`}</div>
-      <div className="Pages-scaleItem">{`100%`}</div>
-      <div className="Pages-scaleItem">{`106.25%`}</div>
-      <div className="Pages-scaleItem">{`112.5%`}</div>
     </div>
   </div>
 );
