@@ -1,19 +1,20 @@
-import Link from "gatsby-link";
+import GatsbyLink from "gatsby-link";
 import React from "react";
 
-import Title from "../components/Title";
-import SubmitAction from "../components/SubmitAction";
 import HeadingOne from "../components/HeadingOne";
 import HeadingTwo from "../components/HeadingTwo";
-import Paragraph from "../components/Paragraph";
-import UnorderedList from "../components/UnorderedList";
+import Link from "../components/Link";
 import ListItem from "../components/ListItem";
+import Paragraph from "../components/Paragraph";
+import SubmitAction from "../components/SubmitAction";
+import Title from "../components/Title";
+import UnorderedList from "../components/UnorderedList";
 
 import "./index.css";
 
 const Pages = () => (
   <div>
-    <Link className="Pages-home" to="/">{`Home`}</Link>
+    <GatsbyLink className="Pages-home" to="/">{`Home`}</GatsbyLink>
     <div className="Pages-title">
       <Title>{`Components`}</Title>
     </div>
@@ -35,6 +36,37 @@ const Pages = () => (
       </div>
       <div className="Pages-example">
         <SubmitAction text="Save" />
+      </div>
+    </div>
+    <div className="Pages-headingOne">
+      <HeadingOne>{`Link`}</HeadingOne>
+    </div>
+    <div className="Pages-paragraph">
+      <Paragraph>{`This component should:`}</Paragraph>
+    </div>
+    <div className="Pages-unorderedList">
+      <UnorderedList>
+        <ListItem>{`be used for linking to resources`}</ListItem>
+        <ListItem
+        >{`use a meaningful phrase that makes sense out of context`}</ListItem>
+        <ListItem>{`use the default browser/device colours`}</ListItem>
+      </UnorderedList>
+      <div className="Pages-headingTwo">
+        <HeadingTwo>{`Example of Links`}</HeadingTwo>
+      </div>
+      <div className="Pages-example">
+        <HeadingOne>
+          <Link href="http://example.org">{`Heading of section`}</Link>
+        </HeadingOne>
+        <div className="Pages-paragraph">
+          <Paragraph>
+            {`This is a paragraph, and it includes even more text to give a good
+            representation of a more `}
+            <Link href="http://example.org">{`average length paragraph`}</Link>
+            {`.
+            That way you can see more than one line wrapping.`}
+          </Paragraph>
+        </div>
       </div>
     </div>
   </div>

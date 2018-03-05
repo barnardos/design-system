@@ -1,4 +1,4 @@
-import Link from "gatsby-link";
+import GatsbyLink from "gatsby-link";
 import React from "react";
 
 import ListItem from "../components/ListItem";
@@ -10,7 +10,7 @@ import "./index.css";
 
 const Pages = () => (
   <div>
-    <Link className="Pages-home" to="/">{`Home`}</Link>
+    <GatsbyLink className="Pages-home" to="/">{`Home`}</GatsbyLink>
     <div className="Pages-title">
       <Title>{`Principles`}</Title>
     </div>
