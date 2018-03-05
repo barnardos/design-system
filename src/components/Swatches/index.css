@@ -1,0 +1,11 @@
+.Swatches {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-left: -1rem;
+}
+
+.Swatches-swatchGroup {
+  flex: 1 1 14rem;
+  margin: 1rem 0 0 1rem;
+}

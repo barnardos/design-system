@@ -4,7 +4,7 @@
 }
 
 .Navigation::before {
-  background: silver;
+  background: #a5a5a5;
   content: "";
   height: 0.0625rem;
   left: 0;

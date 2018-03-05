@@ -2,7 +2,7 @@ import GatsbyLink from "gatsby-link";
 import React from "react";
 
 import Title from "../components/Title";
-import Palette from "../components/Palette";
+import Swatches from "../components/Swatches";
 import HeadingTwo from "../components/HeadingTwo";
 import Paragraph from "../components/Paragraph";
 
@@ -14,21 +14,15 @@ const Pages = () => (
     <div className="Pages-title">
       <Title>{`Colour`}</Title>
     </div>
+
     <div className="Pages-paragraph">
       <Paragraph>{`The colour palette is:`}</Paragraph>
     </div>
-    <Palette />
-    <div className="Pages-paragraph">
-      <Paragraph
-      >{`These colours are accessible for text greater than 18px.`}</Paragraph>
-    </div>
-    <div className="Pages-paragraph">
-      <Paragraph
-      >{`For text smaller than this, use a 20% shade to maintain AA compliance.`}</Paragraph>
-    </div>
+    <Swatches />
     <div className="Pages-headingTwo">
       <HeadingTwo>{`Suggested usage`}</HeadingTwo>
     </div>
+
     <div className="Pages-colour">
       <div className="Pages-colourItem">
         <strong>{`Red`}</strong>
