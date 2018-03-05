@@ -14,6 +14,12 @@
     "at-rule-no-vendor-prefix": true,
     "at-rule-whitelist": ["font-face", "media"],
     "declaration-no-important": true,
+    "declaration-property-unit-whitelist": {
+      "outline": ["px", "rem"],
+      "/^font/": ["rem"],
+      "/^margin/": ["rem"],
+      "/^padding/": ["rem"]
+    },
     "font-family-no-missing-generic-family-keyword": null,
     "function-url-no-scheme-relative": true,
     "function-url-scheme-whitelist": [],
@@ -81,7 +87,7 @@
       "not"
     ],
     "unit-no-unknown": null,
-    "unit-whitelist": ["%", "rem"],
+    "unit-whitelist": ["%", "px", "rem"],
     "value-no-vendor-prefix": true
   }
 }
