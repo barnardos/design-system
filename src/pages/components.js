@@ -1,6 +1,7 @@
 import GatsbyLink from "gatsby-link";
 import React from "react";
 
+import AttentionGrabbingLink from "../components/AttentionGrabbingLink";
 import HeadingOne from "../components/HeadingOne";
 import HeadingTwo from "../components/HeadingTwo";
 import Link from "../components/Link";
@@ -19,23 +20,36 @@ const Pages = () => (
       <Title>{`Components`}</Title>
     </div>
     <div className="Pages-headingOne">
-      <HeadingOne>{`SubmitAction`}</HeadingOne>
+      <HeadingOne>{`AttentionGrabbingLink`}</HeadingOne>
     </div>
     <div className="Pages-paragraph">
-      <Paragraph>{`When incorporating SubmitActions, use only:`}</Paragraph>
+      <Paragraph>{`This component should:`}</Paragraph>
     </div>
     <div className="Pages-unorderedList">
       <UnorderedList>
-        <ListItem>{`one on each page`}</ListItem>
-        <ListItem>{`for moving through a transaction`}</ListItem>
-        <ListItem>{`informative text for example "Save"`}</ListItem>
+        <ListItem>{`be used for linking to resources`}</ListItem>
+        <ListItem>{`be used sparingly`}</ListItem>
+        <ListItem>{`use a verb for example "Download"`}</ListItem>
+        <ListItem>{`not use the Green colour`}</ListItem>
       </UnorderedList>
-
-      <div className="Pages-headingTwo">
-        <HeadingTwo>{`Example of an SubmitAction`}</HeadingTwo>
+    </div>
+    <div className="Pages-headingTwo">
+      <HeadingTwo>{`Examples of AttentionGrabbingLink`}</HeadingTwo>
+    </div>
+    <div className="Pages-example">
+      <div className="Pages-exampleItem">
+        <AttentionGrabbingLink
+          color="teal"
+          href="http://example.org"
+          text="Download"
+        />
       </div>
-      <div className="Pages-example">
-        <SubmitAction text="Save" />
+      <div className="Pages-exampleItem">
+        <AttentionGrabbingLink
+          color="pink"
+          href="http://example.org"
+          text="Donate"
+        />
       </div>
     </div>
     <div className="Pages-headingOne">
@@ -67,6 +81,26 @@ const Pages = () => (
             That way you can see more than one line wrapping.`}
           </Paragraph>
         </div>
+      </div>
+    </div>
+    <div className="Pages-headingOne">
+      <HeadingOne>{`SubmitAction`}</HeadingOne>
+    </div>
+    <div className="Pages-paragraph">
+      <Paragraph>{`This component should:`}</Paragraph>
+    </div>
+    <div className="Pages-unorderedList">
+      <UnorderedList>
+        <ListItem>{`be used for submitting data`}</ListItem>
+        <ListItem>{`only be used once on each page`}</ListItem>
+        <ListItem>{`use a verb for example "Save"`}</ListItem>
+        <ListItem>{`only use the Green colour`}</ListItem>
+      </UnorderedList>
+      <div className="Pages-headingTwo">
+        <HeadingTwo>{`Example of an SubmitAction`}</HeadingTwo>
+      </div>
+      <div className="Pages-example">
+        <SubmitAction text="Save" />
       </div>
     </div>
   </div>
