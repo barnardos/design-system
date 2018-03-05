@@ -26,9 +26,9 @@
     "prettier": "^1.10.2",
     "remark-cli": "^5.0.0",
     "remark-preset-lint-itgalaxy": "^12.0.0",
-    "stylelint": "^8.4.0",
-    "stylelint-config-recommended": "^2.0.1",
-    "stylelint-order": "^0.8.0",
+    "stylelint": "^9.1.1",
+    "stylelint-config-recommended": "^2.1.0",
+    "stylelint-order": "^0.8.1",
     "stylelint-selector-bem-pattern": "^2.0.0"
   }
 }

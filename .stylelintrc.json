@@ -10,9 +10,33 @@
       },
       { "severity": "warning" }
     ],
+    "at-rule-empty-line-before": [
+      "always",
+      {
+        "except": ["blockless-after-same-name-blockless"],
+        "ignore": ["after-comment", "first-nested"],
+        "severity": "warning"
+      }
+    ],
     "at-rule-no-unknown": null,
     "at-rule-no-vendor-prefix": true,
     "at-rule-whitelist": ["font-face", "media"],
+    "custom-property-empty-line-before": [
+      "always",
+      {
+        "except": ["after-custom-property"],
+        "ignore": ["after-comment", "first-nested", "inside-single-line-block"],
+        "severity": "warning"
+      }
+    ],
+    "declaration-empty-line-before": [
+      "always",
+      {
+        "except": ["after-declaration"],
+        "ignore": ["after-comment", "first-nested", "inside-single-line-block"],
+        "severity": "warning"
+      }
+    ],
     "declaration-no-important": true,
     "font-family-no-missing-generic-family-keyword": null,
     "function-url-no-scheme-relative": true,
@@ -64,6 +88,13 @@
       "top",
       "white-space",
       "width"
+    ],
+    "rule-empty-line-before": [
+      "always",
+      {
+        "ignore": ["after-comment", "first-nested"],
+        "severity": "warning"
+      }
     ],
     "selector-attribute-operator-whitelist": [],
     "selector-max-attribute": 0,
