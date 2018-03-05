@@ -11,7 +11,7 @@ const Pages = () => (
     <Title>{`Design system`}</Title>
     <div className="Pages-paragraph">
       <Paragraph
-      >{`Helping digital product teams create a consistent user experience and maximise efficiency.`}</Paragraph>
+      >{`Helping digital teams efficiently create a consistent experience for service users, including children and young people.`}</Paragraph>
     </div>
     <div className="Pages-navigation">
       <Navigation />
