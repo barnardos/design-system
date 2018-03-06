@@ -28,23 +28,44 @@ const Pages = () => (
       <UnorderedList>
         <ListItem>{`be used for linking to resources`}</ListItem>
         <ListItem>{`be used sparingly`}</ListItem>
-        <ListItem>{`use a verb for example "Download"`}</ListItem>
+        <ListItem>{`use a verb, for example "Donate"`}</ListItem>
         <ListItem>{`not use the Green colour`}</ListItem>
       </UnorderedList>
     </div>
     <div className="Pages-example">
       <div className="Pages-exampleItem">
         <AttentionGrabbingLink
-          color="teal"
+          color="pink"
           href="http://example.org"
-          text="Download"
+          text="Shop online"
         />
       </div>
       <div className="Pages-exampleItem">
         <AttentionGrabbingLink
-          color="pink"
+          color="orange"
+          href="http://example.org"
+          text="Volunteer with us"
+        />
+      </div>
+      <div className="Pages-exampleItem">
+        <AttentionGrabbingLink
+          color="teal"
+          href="http://example.org"
+          text="Foster today"
+        />
+      </div>
+      <div className="Pages-exampleItem">
+        <AttentionGrabbingLink
+          color="purple"
           href="http://example.org"
           text="Donate"
+        />
+      </div>
+      <div className="Pages-exampleItem">
+        <AttentionGrabbingLink
+          color="black"
+          href="http://example.org"
+          text="Commission us"
         />
       </div>
     </div>
@@ -86,7 +107,7 @@ const Pages = () => (
       <UnorderedList>
         <ListItem>{`be used for submitting data`}</ListItem>
         <ListItem>{`only be used once on each page`}</ListItem>
-        <ListItem>{`use a verb for example "Save"`}</ListItem>
+        <ListItem>{`use a verb, for example "Save"`}</ListItem>
         <ListItem>{`only use the Green colour`}</ListItem>
       </UnorderedList>
       <div className="Pages-example">

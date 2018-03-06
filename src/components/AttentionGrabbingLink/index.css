@@ -1,14 +1,10 @@
 .AttentionGrabbingLink {
   color: #ffffff;
-  display: block;
+  display: inline-block;
   font: 300 1.25rem/1.5rem Nova, sans-serif;
   padding: 0.75rem;
+  position: relative;
   text-align: center;
-  text-decoration: none;
-}
-
-.AttentionGrabbingLink:hover {
-  text-decoration: underline;
 }
 
 .AttentionGrabbingLink--black {
