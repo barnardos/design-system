@@ -14,7 +14,26 @@ const Pages = () => (
       >{`Helping digital teams efficiently create a consistent experience for service users, including children and young people.`}</Paragraph>
     </div>
     <div className="Pages-navigation">
-      <Navigation />
+      <Navigation
+        items={[
+          {
+            text: "Principles",
+            to: "/principles/"
+          },
+          {
+            text: "Typography and layout",
+            to: "/typography-and-layout/"
+          },
+          {
+            text: "Colour",
+            to: "/colour/"
+          },
+          {
+            text: "Components",
+            to: "/components/"
+          }
+        ]}
+      />
     </div>
   </div>
 );
