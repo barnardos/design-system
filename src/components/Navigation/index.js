@@ -1,33 +1,25 @@
 import GatsbyLink from "gatsby-link";
+import PropTypes from "prop-types";
 import React from "react";
 
 import "./index.css";
 
-const Navigation = () => (
+const Navigation = ({ items }) => (
   <nav className="Navigation">
     <ul>
-      <li className="Navigation-item">
-        <GatsbyLink className="Navigation-link" to="/principles/">
-          Principles
-        </GatsbyLink>
-      </li>
-      <li className="Navigation-item">
-        <GatsbyLink className="Navigation-link" to="/typography-and-layout/">
-          Typography and layout
-        </GatsbyLink>
-      </li>
-      <li className="Navigation-item">
-        <GatsbyLink className="Navigation-link" to="/colour/">
-          Colour
-        </GatsbyLink>
-      </li>
-      <li className="Navigation-item">
-        <GatsbyLink className="Navigation-link" to="/components/">
-          Components
-        </GatsbyLink>
-      </li>
+      {items.map(({ text, to }, index) => (
+        <li className="Navigation-item" key={index}>
+          <GatsbyLink className="Navigation-link" to={to}>
+            {text}
+          </GatsbyLink>
+        </li>
+      ))}
     </ul>
   </nav>
 );
+
+Navigation.propTypes = {
+  items: PropTypes.array.isRequired
+};
 
 export default Navigation;
