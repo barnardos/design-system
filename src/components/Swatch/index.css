@@ -20,7 +20,7 @@
  */
 
 .Swatch--bordered {
-  outline: 0.0625rem solid grey;
+  box-shadow: inset 0 0 0 1px grey;
 }
 
 /**
