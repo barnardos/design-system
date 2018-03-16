@@ -31,6 +31,10 @@ const Pages = () => (
           {
             text: "Components",
             to: "/components/"
+          },
+          {
+            text: "Gathering input",
+            to: "/gathering-input/"
           }
         ]}
       />

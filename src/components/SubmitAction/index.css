@@ -3,7 +3,7 @@
   background-color: #81bc00;
   border: 0;
   border-radius: 0;
-  box-shadow: 0 0.125rem #1d1d1d;
+  box-shadow: 0.25rem 0.25rem #4d7100;
   color: #ffffff;
   font: 600 1.25rem/1.5rem Nova, sans-serif;
   padding: 0.75rem;
@@ -16,12 +16,8 @@
   background-color: color(#81bc00 shade(10%));
 }
 
-.SubmitAction:focus {
-  outline: 0.25rem solid #f1a766;
-}
-
 .SubmitAction:active {
-  background-color: color(#81bc00 shade(10%));
+  box-shadow: none;
   position: relative;
-  top: 0.125rem;
+  top: 0.25rem;
 }
