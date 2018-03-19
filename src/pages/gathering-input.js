@@ -1,3 +1,4 @@
+import Helmet from "react-helmet";
 import GatsbyLink from "gatsby-link";
 import React from "react";
 
@@ -14,6 +15,9 @@ import SubmitAction from "../components/SubmitAction/index";
 
 const Pages = () => (
   <div>
+    <Helmet>
+      <title>{`Gathering input`}</title>
+    </Helmet>
     <GatsbyLink className="Pages-home" to="/">{`Home`}</GatsbyLink>
     <div className="Pages-title">
       <Title>{`Gathering input`}</Title>

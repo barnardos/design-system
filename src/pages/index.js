@@ -1,3 +1,4 @@
+import Helmet from "react-helmet";
 import React from "react";
 
 import Navigation from "../components/Navigation";
@@ -8,6 +9,9 @@ import "./index.css";
 
 const Pages = () => (
   <div>
+    <Helmet>
+      <title>{`Design system`}</title>
+    </Helmet>
     <Title>{`Design system`}</Title>
     <div className="Pages-paragraph">
       <Paragraph
