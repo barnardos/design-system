@@ -17,13 +17,13 @@ const MultilineTextControl = ({
   }`;
   return (
     <div className={className}>
-      {validation && (
-        <p className="MultilineTextControl-validation">{validation}</p>
-      )}
       <label className="MultilineTextControl-label" htmlFor={id}>
         {label}
       </label>
       {hint && <p className="MultilineTextControl-hint">{hint}</p>}
+      {validation && (
+        <p className="MultilineTextControl-validation">{validation}</p>
+      )}
       <textarea
         className="MultilineTextControl-element"
         name={id}

@@ -1,11 +1,48 @@
 /** @define SelectionControl; */
 
-.SelectionControl {
-  align-items: center;
-  display: flex;
+.SelectionControl-validation {
+  color: #c30000;
+  font: 600 1rem/1.5rem system-ui;
+  margin-top: 0.5rem;
 }
 
-.SelectionControl-label {
-  font: 300 1.25rem/1.5rem system-ui;
-  margin-left: 1rem;
+.SelectionControl-fieldset {
+  border: none;
+}
+
+.SelectionControl-fieldset:not(:first-child) {
+  margin-top: 0.5rem;
+}
+
+.SelectionControl-legend {
+  display: block;
+  font: 600 1.375rem/1.75rem system-ui;
+}
+
+.SelectionControl-hint {
+  color: #616161;
+  font: 300 1rem/1.5rem system-ui;
+  margin-top: 0.5rem;
+}
+
+.SelectionControl-optionControls {
+  margin-top: 1rem;
+}
+
+.SelectionControl-optionControl {
+  margin-top: 1rem;
+}
+
+/**
+ * errored
+ */
+
+.SelectionControl--errored {
+  box-shadow: inset 0.25rem 0 0 #c30000;
+  padding-left: 1rem;
+}
+
+.SelectionControl--errored .SelectionControl-element {
+  border-color: #c30000;
+  box-shadow: inset 0.25rem 0.25rem #f3cccc;
 }

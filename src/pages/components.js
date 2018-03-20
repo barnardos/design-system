@@ -7,7 +7,6 @@ import HeadingOne from "../components/HeadingOne";
 import Link from "../components/Link";
 import ListItem from "../components/ListItem";
 import Paragraph from "../components/Paragraph";
-import SubmitAction from "../components/SubmitAction";
 import Title from "../components/Title";
 import UnorderedList from "../components/UnorderedList";
 
@@ -99,23 +98,6 @@ const Pages = () => (
             That way you can see more than one line wrapping.`}
           </Paragraph>
         </div>
-      </div>
-    </div>
-    <div className="Pages-headingOne">
-      <HeadingOne>{`SubmitAction`}</HeadingOne>
-    </div>
-    <div className="Pages-paragraph">
-      <Paragraph>{`This component should:`}</Paragraph>
-    </div>
-    <div className="Pages-unorderedList">
-      <UnorderedList>
-        <ListItem>{`be used for submitting data`}</ListItem>
-        <ListItem>{`only be used once on each page`}</ListItem>
-        <ListItem>{`use a verb, for example "Save"`}</ListItem>
-        <ListItem>{`only use the Green colour`}</ListItem>
-      </UnorderedList>
-      <div className="Pages-example">
-        <SubmitAction text="Save" />
       </div>
     </div>
   </div>
