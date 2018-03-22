@@ -33,12 +33,12 @@ const Pages = () => (
             to: "/colour/"
           },
           {
-            text: "Components",
-            to: "/components/"
+            text: "Linking",
+            to: "/linking/"
           },
           {
-            text: "Gathering input",
-            to: "/gathering-input/"
+            text: "Requesting information",
+            to: "/requesting-information/"
           }
         ]}
       />
