@@ -14,6 +14,10 @@
   margin-top: 0.5rem;
 }
 
+.SubmitControls-validationItem:not(:first-child) {
+  margin-top: 0.5rem;
+}
+
 .SubmitControls-validationItemLink {
   color: #c30000;
   font: 600 1rem/1.5rem system-ui;
