@@ -5,6 +5,20 @@
   font: 600 1.375rem/1.75rem system-ui;
 }
 
+.MultilineTextControl-hint {
+  color: #616161;
+  font: 300 1rem/1.5rem system-ui;
+}
+
+.MultilineTextControl-validation {
+  margin-top: 0.5rem;
+}
+
+.MultilineTextControl-validationInner {
+  color: #c30000;
+  font: 600 1rem/1.5rem system-ui;
+}
+
 .MultilineTextControl-element {
   border: 1px solid #1d1d1d;
   box-shadow: inset 0.25rem 0.25rem #d2d2d2;
@@ -15,16 +29,9 @@
   resize: vertical;
 }
 
-.MultilineTextControl-hint {
-  color: #616161;
-  font: 300 1rem/1.5rem system-ui;
-}
-
-.MultilineTextControl-validation {
-  color: #c30000;
-  font: 600 1rem/1.5rem system-ui;
-  margin-top: 0.5rem;
-}
+/**
+ * errored
+ */
 
 .MultilineTextControl--errored {
   box-shadow: inset 0.25rem 0 0 #c30000;

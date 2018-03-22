@@ -22,7 +22,11 @@ const MultilineTextControl = ({
       </label>
       {hint && <p className="MultilineTextControl-hint">{hint}</p>}
       {validation && (
-        <p className="MultilineTextControl-validation">{validation}</p>
+        <p className="MultilineTextControl-validation">
+          <strong className="MultilineTextControl-validationInner">
+            {validation}
+          </strong>
+        </p>
       )}
       <textarea
         className="MultilineTextControl-element"

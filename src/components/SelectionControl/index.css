@@ -1,11 +1,5 @@
 /** @define SelectionControl; */
 
-.SelectionControl-validation {
-  color: #c30000;
-  font: 600 1rem/1.5rem system-ui;
-  margin-top: 0.5rem;
-}
-
 .SelectionControl-fieldset {
   border: none;
 }
@@ -23,6 +17,15 @@
   color: #616161;
   font: 300 1rem/1.5rem system-ui;
   margin-top: 0.5rem;
+}
+
+.SelectionControl-validation {
+  margin-top: 0.5rem;
+}
+
+.SelectionControl-validationInner {
+  color: #c30000;
+  font: 600 1rem/1.5rem system-ui;
 }
 
 .SelectionControl-optionControls {

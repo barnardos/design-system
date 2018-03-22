@@ -24,7 +24,11 @@ const SelectionControl = ({
         <legend className="SelectionControl-legend">{legend}</legend>
         {hint && <p className="SelectionControl-hint">{hint}</p>}
         {validation && (
-          <p className="SelectionControl-validation">{validation}</p>
+          <p className="SelectionControl-validation">
+            <strong className="SelectionControl-validationInner">
+              {validation}
+            </strong>
+          </p>
         )}
         <div className="SelectionControl-optionsControls">
           {options.map((option, index) => (

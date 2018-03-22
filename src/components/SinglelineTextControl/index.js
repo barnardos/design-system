@@ -21,7 +21,11 @@ const SinglelineTextControl = ({
       </label>
       {hint && <p className="SinglelineTextControl-hint">{hint}</p>}
       {validation && (
-        <p className="SinglelineTextControl-validation">{validation}</p>
+        <p className="SinglelineTextControl-validation">
+          <strong className="SinglelineTextControl-validationInner">
+            {validation}
+          </strong>
+        </p>
       )}
       <input
         className="SinglelineTextControl-element"
