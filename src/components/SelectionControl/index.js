@@ -1,29 +1,56 @@
 import PropTypes from "prop-types";
 import React from "react";
 
+import OptionControl from "../OptionControl/index";
+
 import "./index.css";
 
-const SelectionControl = ({ checked, id, label, name, type = "multi" }) => (
-  <div className="SelectionControl">
-    <input
-      checked={checked}
-      className="SelectionControl-element"
-      id={id}
-      name={name}
-      type={type === "multi" ? "checkbox" : "radio"}
-    />
-    <label htmlFor={id} className="SelectionControl-label">
-      {label}
-    </label>
-  </div>
-);
+const SelectionControl = ({
+  errored,
+  hint,
+  id,
+  legend,
+  options,
+  name,
+  type,
+  validation
+}) => {
+  const className = `SelectionControl ${
+    errored ? "SelectionControl--errored" : ""
+  }`;
+  return (
+    <div className={className}>
+      <fieldset className="SelectionControl-fieldset" id={id}>
+        <legend className="SelectionControl-legend">{legend}</legend>
+        {hint && <p className="SelectionControl-hint">{hint}</p>}
+        {validation && (
+          <p className="SelectionControl-validation">
+            <strong className="SelectionControl-validationInner">
+              {validation}
+            </strong>
+          </p>
+        )}
+        <div className="SelectionControl-optionsControls">
+          {options.map((option, index) => (
+            <div className="SelectionControl-optionControl" key={index}>
+              <OptionControl name={name} type={type} {...option} />
+            </div>
+          ))}
+        </div>
+      </fieldset>
+    </div>
+  );
+};
 
 SelectionControl.propTypes = {
-  checked: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
+  errored: PropTypes.bool,
+  hint: PropTypes.string,
   id: PropTypes.string.isRequired,
-  label: PropTypes.string.isRequired,
+  legend: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  type: PropTypes.oneOf(["multi", "single"])
+  options: PropTypes.array.isRequired,
+  type: PropTypes.oneOf(["single", "multi"]).isRequired,
+  validation: PropTypes.string
 };
 
 export default SelectionControl;

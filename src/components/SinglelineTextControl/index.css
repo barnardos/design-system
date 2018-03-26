@@ -1,25 +1,25 @@
-/** @define MultilineTextControl; */
+/** @define SinglelineTextControl; */
 
-.MultilineTextControl-label {
+.SinglelineTextControl-label {
   display: block;
   font: 600 1.375rem/1.75rem system-ui;
 }
 
-.MultilineTextControl-hint {
+.SinglelineTextControl-hint {
   color: #616161;
   font: 300 1rem/1.5rem system-ui;
 }
 
-.MultilineTextControl-validation {
+.SinglelineTextControl-validation {
   margin-top: 0.5rem;
 }
 
-.MultilineTextControl-validationInner {
+.SinglelineTextControl-validationInner {
   color: #c30000;
   font: 600 1rem/1.5rem system-ui;
 }
 
-.MultilineTextControl-element {
+.SinglelineTextControl-element {
   appearance: none;
   border: 1px solid #1d1d1d;
   border-radius: 0;
@@ -28,19 +28,18 @@
   margin-top: 0.5rem;
   max-width: 100%;
   padding: 0.5rem 0.75rem;
-  resize: vertical;
 }
 
 /**
  * errored
  */
 
-.MultilineTextControl--errored {
+.SinglelineTextControl--errored {
   box-shadow: inset 0.25rem 0 0 #c30000;
   padding-left: 1rem;
 }
 
-.MultilineTextControl--errored .MultilineTextControl-element {
+.SinglelineTextControl--errored .SinglelineTextControl-element {
   border-color: #c30000;
   box-shadow: inset 0.25rem 0.25rem #f3cccc;
 }

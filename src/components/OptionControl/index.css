@@ -1,0 +1,11 @@
+/** @define OptionControl; */
+
+.OptionControl {
+  align-items: center;
+  display: flex;
+}
+
+.OptionControl-label {
+  font: 300 1.25rem/1.5rem system-ui;
+  margin-left: 1rem;
+}
