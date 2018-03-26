@@ -74,7 +74,7 @@ const Pages = () => (
         <SinglelineTextControl
           id="text-control-post-code-example"
           label="Postcode (optional)"
-          size="8"
+          size="16"
         />
       </div>
     </div>
