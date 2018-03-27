@@ -4,12 +4,12 @@ import React from "react";
 
 import "./index.css";
 
-const Navigation = ({ items }) => (
-  <nav className="Navigation">
+const DesignSystemNavigation = ({ items }) => (
+  <nav className="DesignSystemNavigation">
     <ul>
       {items.map(({ text, to }, index) => (
-        <li className="Navigation-item" key={index}>
-          <GatsbyLink className="Navigation-link" to={to}>
+        <li className="DesignSystemNavigation-item" key={index}>
+          <GatsbyLink className="DesignSystemNavigation-link" to={to}>
             {text}
           </GatsbyLink>
         </li>
@@ -18,8 +18,8 @@ const Navigation = ({ items }) => (
   </nav>
 );
 
-Navigation.propTypes = {
+DesignSystemNavigation.propTypes = {
   items: PropTypes.array.isRequired
 };
 
-export default Navigation;
+export default DesignSystemNavigation;
