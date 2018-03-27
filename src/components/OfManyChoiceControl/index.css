@@ -1,38 +1,38 @@
-/** @define SelectionControl; */
+/** @define OfManyChoiceControl; */
 
-.SelectionControl-fieldset {
+.OfManyChoiceControl-fieldset {
   border: none;
 }
 
-.SelectionControl-fieldset:not(:first-child) {
+.OfManyChoiceControl-fieldset:not(:first-child) {
   margin-top: 0.5rem;
 }
 
-.SelectionControl-legend {
+.OfManyChoiceControl-legend {
   display: block;
   font: 600 1.375rem/1.75rem system-ui;
 }
 
-.SelectionControl-hint {
+.OfManyChoiceControl-hint {
   color: #616161;
   font: 300 1rem/1.5rem system-ui;
   margin-top: 0.5rem;
 }
 
-.SelectionControl-validation {
+.OfManyChoiceControl-validation {
   margin-top: 0.5rem;
 }
 
-.SelectionControl-validationInner {
+.OfManyChoiceControl-validationInner {
   color: #c30000;
   font: 600 1rem/1.5rem system-ui;
 }
 
-.SelectionControl-optionControls {
+.OfManyChoiceControl-choiceControls {
   margin-top: 1rem;
 }
 
-.SelectionControl-optionControl {
+.OfManyChoiceControl-choiceControl {
   margin-top: 1rem;
 }
 
@@ -40,12 +40,12 @@
  * errored
  */
 
-.SelectionControl--errored {
+.OfManyChoiceControl--errored {
   box-shadow: inset 0.25rem 0 0 #c30000;
   padding-left: 1rem;
 }
 
-.SelectionControl--errored .SelectionControl-element {
+.OfManyChoiceControl--errored .OfManyChoiceControl-element {
   border-color: #c30000;
   box-shadow: inset 0.25rem 0.25rem #f3cccc;
 }

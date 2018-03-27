@@ -2,15 +2,15 @@ import Helmet from "react-helmet";
 import GatsbyLink from "gatsby-link";
 import React from "react";
 
+import AnyOfManyChoiceControl from "../components/AnyOfManyChoiceControl";
+import ChoiceControl from "../components/ChoiceControl";
 import HeadingOne from "../components/HeadingOne";
 import HeadingTwo from "../components/HeadingTwo";
 import ListItem from "../components/ListItem";
 import MultilineTextControl from "../components/MultilineTextControl";
-import MultiSelectionControl from "../components/MultiSelectionControl";
-import OptionControl from "../components/OptionControl";
+import OneOfManyChoiceControl from "../components/OneOfManyChoiceControl";
 import Paragraph from "../components/Paragraph";
 import SinglelineTextControl from "../components/SinglelineTextControl";
-import SingleSelectionControl from "../components/SingleSelectionControl";
 import Submit from "../components/Submit";
 import SubmitControls from "../components/SubmitControls";
 import Title from "../components/Title";
@@ -93,11 +93,11 @@ const Pages = () => (
       </div>
     </div>
     <div className="Pages-headingOne">
-      <HeadingOne>{`Selections`}</HeadingOne>
+      <HeadingOne>{`Choices`}</HeadingOne>
     </div>
     <div className="Pages-paragraph">
       <Paragraph
-      >{`Use the components below for selections. You should:`}</Paragraph>
+      >{`Use the components below for choices. You should:`}</Paragraph>
     </div>
     <div className="Pages-unorderedList">
       <UnorderedList>
@@ -105,28 +105,32 @@ const Pages = () => (
       </UnorderedList>
     </div>
     <div className="Pages-headingTwo">
-      <HeadingTwo>{`SingleSelectionControl`}</HeadingTwo>
+      <HeadingTwo>{`OneOfManyChoiceControl`}</HeadingTwo>
     </div>
     <div className="Pages-example">
       <div className="Pages-exampleItem">
-        <SingleSelectionControl
-          legend="Will there be refreshments?"
-          name="single-selection-control-group-example"
-          options={[
+        <OneOfManyChoiceControl
+          choices={[
             {
               label: "Yes",
-              id: "single-selection-control-group-example-yes"
+              id: "one-of-many-choice-control-example-yes"
             },
             {
               label: "No",
-              id: "single-selection-control-group-example-no"
+              id: "one-of-many-choice-control-example-no"
+            },
+            {
+              label: "Maybe",
+              id: "one-of-many-choice-control-example-maybe"
             }
           ]}
+          legend="Will there be refreshments?"
+          name="one-of-many-choice-control-example"
         />
       </div>
     </div>
     <div className="Pages-headingTwo">
-      <HeadingTwo>{`MultiSelectionControl`}</HeadingTwo>
+      <HeadingTwo>{`AnyOfManyChoiceControl`}</HeadingTwo>
     </div>
     <div className="Pages-paragraph">
       <Paragraph>{`When using this component you should:`}</Paragraph>
@@ -138,39 +142,39 @@ const Pages = () => (
     </div>
     <div className="Pages-example">
       <div className="Pages-exampleItem">
-        <MultiSelectionControl
-          hint="Letting the participants know is a legal requirement."
-          legend="How will the interview be recorded?"
-          name="multi-selection-control-group-example"
-          options={[
+        <AnyOfManyChoiceControl
+          choices={[
             {
               label: "It won't be",
-              id: "multi-selection-control-group-example-no-record"
+              id: "any-of-many-choice-control-example-no-record"
             },
             {
               label: "Tape recorder",
-              id: "multi-selection-control-group-example-audio"
+              id: "any-of-many-choice-control-example-audio"
             },
             {
               label: "Video recorder",
-              id: "multi-selection-control-group-example-video"
+              id: "any-of-many-choice-control-example-video"
             },
             {
               label: "Hand-written notes",
-              id: "multi-selection-control-group-example-hand-written-notes"
+              id: "any-of-many-choice-control-example-hand-written-notes"
             }
           ]}
+          hint="Letting the participants know is a legal requirement."
+          legend="How will the interview be recorded?"
+          name="any-of-many-choice-control-example"
         />
       </div>
     </div>
     <div className="Pages-headingTwo">
-      <HeadingTwo>{`OptionControl`}</HeadingTwo>
+      <HeadingTwo>{`ChoiceControl`}</HeadingTwo>
     </div>
     <div className="Pages-example">
       <div className="Pages-exampleItem">
-        <OptionControl
+        <ChoiceControl
           label="Subscribe to mailing list"
-          id="option-control-example"
+          id="choice-control-example"
         />
       </div>
     </div>
@@ -230,46 +234,52 @@ const Pages = () => (
               validation: "Enter the name of the meal"
             },
             {
-              control: "singleSelection",
+              control: "oneOfManyChoice",
               errored: true,
               hint:
-                "Nut allergies can be dangerous. Choose 'Yes' if you're unsure.",
-              id: "submit-controls-single-selection-example",
+                "Nut allergies can be dangerous. Only choose 'No' if you're completely sure.",
+              id: "submit-controls-one-of-many-choice-example",
               legend: "Does the meal include nuts?",
-              name: "submit-controls-single-selection-example",
-              options: [
+              name: "submit-controls-one-of-many-choice-example",
+              choices: [
                 {
                   label: "Yes",
-                  id: "submit-controls-single-selection-control-example-yes"
+                  id: "submit-controls-one-of-many-choice-control-example-yes"
                 },
                 {
                   label: "No",
-                  id: "submit-controls-single-selection-control-example-no"
+                  id: "submit-controls-one-of-many-choice-control-example-no"
+                },
+                {
+                  label: "I'm not sure",
+                  id:
+                    "submit-controls-one-of-many-choice-control-example-unsure"
                 }
               ],
               validation: "Select whether the meal contains nuts or not"
             },
             {
-              control: "multiSelection",
-              name: "submit-controls-multi-selection-control-example",
+              control: "anyOfManyChoice",
+              name: "submit-controls-any-of-many-choice-control-example",
               legend: "What are the benefits of the meal?",
-              options: [
+              choices: [
                 {
                   label: "None",
-                  id: "submit-controls-multi-selection-control-example-none"
+                  id: "submit-controls-any-of-many-choice-control-example-none"
                 },
                 {
                   label: "Energising",
                   id:
-                    "submit-controls-multi-selection-control-example-energising"
+                    "submit-controls-any-of-many-choice-control-example-energising"
                 },
                 {
                   label: "Tasty",
-                  id: "submit-controls-multi-selection-control-example-tasty"
+                  id: "submit-controls-any-of-many-choice-control-example-tasty"
                 },
                 {
                   label: "Low cost",
-                  id: "submit-controls-multi-selection-control-example-low-cost"
+                  id:
+                    "submit-controls-any-of-many-choice-control-example-low-cost"
                 }
               ]
             }
