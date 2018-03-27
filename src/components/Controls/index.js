@@ -1,18 +1,18 @@
 import PropTypes from "prop-types";
 import React from "react";
 
+import AnyOfManyChoiceControl from "../AnyOfManyChoiceControl";
+import ChoiceControl from "../ChoiceControl";
 import MultilineTextControl from "../MultilineTextControl";
-import MultiSelectionControl from "../MultiSelectionControl";
-import SelectionControl from "../SelectionControl";
+import OneOfManyChoiceControl from "../OneOfManyChoiceControl";
 import SinglelineTextControl from "../SinglelineTextControl";
-import SingleSelectionControl from "../SingleSelectionControl";
 
 const controls = {
+  anyOfManyChoice: AnyOfManyChoiceControl,
+  choice: ChoiceControl,
   multilineText: MultilineTextControl,
-  multiSelection: MultiSelectionControl,
-  selection: SelectionControl,
-  singlelineText: SinglelineTextControl,
-  singleSelection: SingleSelectionControl
+  oneOfManyChoice: OneOfManyChoiceControl,
+  singlelineText: SinglelineTextControl
 };
 
 import "./index.css";

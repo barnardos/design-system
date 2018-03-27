@@ -1,11 +1,11 @@
-/** @define OptionControl; */
+/** @define ChoiceControl; */
 
-.OptionControl {
+.ChoiceControl {
   align-items: center;
   display: flex;
 }
 
-.OptionControl-label {
+.ChoiceControl-label {
   font: 300 1.25rem/1.5rem system-ui;
   margin-left: 1rem;
 }
