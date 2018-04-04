@@ -9,3 +9,9 @@
   list-style: none;
   margin: 1rem 0 0 1rem;
 }
+
+@media (min-width: 50rem) {
+  .Swatches {
+    margin-right: calc(-100vw + 46rem);
+  }
+}

@@ -1,11 +1,6 @@
 /** @define Layout */
 
 .Layout {
-  margin: 0 auto;
   max-width: 46rem;
   padding: 1rem;
-}
-
-.Layout-main {
-  margin-top: 1rem;
 }

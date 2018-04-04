@@ -41,13 +41,13 @@
     "declaration-property-unit-whitelist": {
       "outline": ["px", "rem"],
       "/^font/": ["rem"],
-      "/^margin/": ["rem"],
+      "/^margin/": ["rem", "vw"],
       "/^padding/": ["rem"]
     },
     "font-family-no-missing-generic-family-keyword": null,
     "function-url-no-scheme-relative": true,
     "function-url-scheme-whitelist": [],
-    "function-whitelist": ["color", "shade", "url"],
+    "function-whitelist": ["calc", "color", "shade", "url"],
     "media-feature-name-no-vendor-prefix": true,
     "media-feature-name-whitelist": ["min-width"],
     "number-max-precision": 4,
@@ -79,6 +79,7 @@
       "line-height",
       "list-style",
       "margin-left",
+      "margin-right",
       "margin-top",
       "margin",
       "max-width",
@@ -120,7 +121,7 @@
       "not"
     ],
     "unit-no-unknown": null,
-    "unit-whitelist": ["%", "px", "rem"],
+    "unit-whitelist": ["%", "px", "rem", "vw"],
     "value-no-vendor-prefix": true
   }
 }

@@ -33,6 +33,12 @@
   position: relative;
 }
 
+@media (min-width: 50rem) {
+  .Pages-example--full {
+    margin-right: calc(-100vw + 46rem);
+  }
+}
+
 .Pages-example::before {
   background: #a5a5a5;
   color: #ffffff;
