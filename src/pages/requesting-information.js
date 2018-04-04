@@ -102,6 +102,7 @@ const Pages = () => (
     <div className="Pages-unorderedList">
       <UnorderedList>
         <ListItem>{`use them instead of drop downs`}</ListItem>
+        <ListItem>{`limit the options to eight or less`}</ListItem>
       </UnorderedList>
     </div>
     <div className="Pages-headingTwo">
