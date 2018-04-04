@@ -1,5 +1,6 @@
 .Breadcrumbs-items {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .Breadcrumbs-item {
