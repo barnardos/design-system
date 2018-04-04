@@ -47,7 +47,7 @@
     "font-family-no-missing-generic-family-keyword": null,
     "function-url-no-scheme-relative": true,
     "function-url-scheme-whitelist": [],
-    "function-whitelist": ["calc", "color", "shade", "url"],
+    "function-whitelist": ["calc", "color", "repeat", "shade", "url"],
     "media-feature-name-no-vendor-prefix": true,
     "media-feature-name-whitelist": ["min-width"],
     "number-max-precision": 4,
@@ -57,10 +57,13 @@
       "align-items",
       "appearance",
       "background-color",
+      "background-image",
       "background",
       "border-color",
       "border-radius",
+      "border-width",
       "border",
+      "bottom",
       "box-shadow",
       "box-sizing",
       "color",
@@ -74,7 +77,14 @@
       "font-style",
       "font-weight",
       "font",
+      "grid-column",
+      "grid-gap",
+      "grid-row",
+      "grid-template-columns",
+      "grid-template-rows",
+      "grid",
       "height",
+      "justify-content",
       "left",
       "line-height",
       "list-style",
@@ -94,9 +104,11 @@
       "src",
       "text-align",
       "text-decoration",
+      "text-indent",
       "top",
       "white-space",
-      "width"
+      "width",
+      "z-index"
     ],
     "rule-empty-line-before": [
       "always",
@@ -121,7 +133,7 @@
       "not"
     ],
     "unit-no-unknown": null,
-    "unit-whitelist": ["%", "px", "rem", "vw"],
+    "unit-whitelist": ["%", "fr", "px", "rem", "vw"],
     "value-no-vendor-prefix": true
   }
 }
