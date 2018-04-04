@@ -1,0 +1,16 @@
+.Breadcrumbs-items {
+  display: flex;
+}
+
+.Breadcrumbs-item {
+  list-style: none;
+}
+
+.Breadcrumbs-item:not(:first-child) {
+  background: url("./slash.svg") no-repeat 0.75rem 0.45rem;
+  padding-left: 1.75rem;
+}
+
+.Breadcrumbs-link {
+  font: 300 1rem/1.5rem system-ui;
+}
