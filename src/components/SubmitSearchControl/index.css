@@ -1,0 +1,104 @@
+/** @define SubmitSearchControl; */
+
+.SubmitSearchControl-commands {
+  display: flex;
+}
+
+.SubmitSearchControl-command {
+  appearance: none;
+  background: #e9e9e9 url("./glass.svg") no-repeat center center;
+  border-radius: 0;
+  box-shadow: 0.125rem 0.125rem #a5a5a5;
+  color: #ffffff;
+  font: 300 1.25rem/1.75rem system-ui;
+  margin-left: auto;
+  padding: 0.5rem 1.5rem;
+  text-align: center;
+  text-indent: -1000rem;
+  white-space: normal;
+}
+
+.SubmitSearchControl-command--close {
+  background-image: url("./cross.svg");
+}
+
+.SubmitSearchControl-command:hover {
+  background-color: color(#e9e9e9 shade(10%));
+}
+
+.SubmitSearchControl-command:active {
+  box-shadow: none;
+  position: relative;
+  top: 0.125rem;
+}
+
+.SubmitSearchControl-details {
+  display: none;
+}
+
+.SubmitSearchControl-details--active {
+  background: #fff;
+  bottom: 0;
+  display: block;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.SubmitSearchControl-form {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.SubmitSearchControl-textInput {
+  appearance: none;
+  border: 1px solid #1d1d1d;
+  border-radius: 0;
+  box-shadow: inset 0.25rem 0.25rem #d2d2d2;
+  display: block;
+  font: 300 1.25rem/1.75rem system-ui;
+  padding: 0.5rem 0.75rem;
+  width: 100%;
+}
+
+.SubmitSearchControl-submitInput {
+  appearance: none;
+  background: #81bc00 url(./inverse-glass.svg) no-repeat center center;
+  border: 1px solid #81bc00;
+  border-radius: 0;
+  border-width: 1px 0;
+  box-shadow: 0.25rem 0.25rem #4d7100;
+  color: #ffffff;
+  font: 300 1.25rem/1.75rem system-ui;
+  margin: 0 0 0 0.5rem;
+  padding: 0.5rem 1.5rem;
+  text-align: center;
+  text-indent: -1000rem;
+  white-space: normal;
+}
+
+.SubmitSearchControl-submitInput:hover {
+  background-color: color(#81bc00 shade(10%));
+  border-color: color(#81bc00 shade(10%));
+}
+
+.SubmitSearchControl-submitInput:active {
+  box-shadow: none;
+  position: relative;
+  top: 0.25rem;
+}
+
+@media (min-width: 40rem) {
+  .SubmitSearchControl-commands {
+    display: none;
+  }
+
+  .SubmitSearchControl-details {
+    display: block;
+  }
+
+  .SubmitSearchControl-form {
+    margin-top: 0;
+  }
+}
