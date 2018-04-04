@@ -92,6 +92,15 @@ const Pages = () => (
       <HeadingOne>{`Scaling`}</HeadingOne>
     </div>
     <div className="Pages-paragraph">
+      <Paragraph>{`The optimal line length of text is between:`}</Paragraph>
+    </div>
+    <div className="Pages-unorderedList">
+      <UnorderedList>
+        <ListItem>{`40 and 60 characters for body copy`}</ListItem>
+        <ListItem>{`15 and 40 characters for short lines`}</ListItem>
+      </UnorderedList>
+    </div>
+    <div className="Pages-paragraph">
       <Paragraph>
         {`To ensure optimal spacing and line lengths at
         different viewport sizes, the layout and typography can be proportionally scaled:`}
