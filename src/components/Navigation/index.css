@@ -1,22 +1,120 @@
 .Navigation {
-  padding-top: 1rem;
-  position: relative;
+  box-shadow: inset 0 -1px 0 0 #bcbcbc;
 }
 
-.Navigation::before {
-  background: #a5a5a5;
-  content: "";
-  height: 0.0625rem;
+.Navigation-command {
+  appearance: none;
+  background: #e9e9e9 url("./burger.svg") no-repeat center center;
+  border-radius: 0;
+  box-shadow: 0.125rem 0.125rem #a5a5a5;
+  color: #ffffff;
+  font: 300 1.25rem/1.75rem system-ui;
+  padding: 0.5rem 1.5rem;
+  text-align: center;
+  text-indent: -1000rem;
+  white-space: normal;
+}
+
+.Navigation-command--close {
+  background-image: url("./cross.svg");
+}
+
+.Navigation-command:hover {
+  background-color: color(#e9e9e9 shade(10%));
+}
+
+.Navigation-command:active {
+  box-shadow: none;
+  position: relative;
+  top: 0.125rem;
+}
+
+.Navigation-items {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.Navigation-item {
+  flex: 1;
+}
+
+.Navigation-link {
+  color: #1d1d1d;
+  display: block;
+  font: 300 1.4375rem/1.5rem Nova, sans-serif;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.Navigation-link:hover {
+  box-shadow: inset 0 -0.25rem 0 0 #e86c00;
+  color: #e86c00;
+}
+
+.Navigation-link:active {
+  box-shadow: inset 0 -0.25rem 0 0 #e86c00;
+  color: #e86c00;
+}
+
+/**
+ * revealing
+ */
+
+.Navigation--revealing {
+  box-shadow: none;
+}
+
+.Navigation--revealing .Navigation-details {
+  display: none;
+}
+
+.Navigation--revealing .Navigation-details--active {
+  background: #fff;
+  bottom: 0;
+  display: block;
   left: 0;
   position: absolute;
   right: 0;
   top: 0;
 }
 
-.Navigation-item {
-  list-style: none;
+.Navigation--revealing .Navigation-items {
+  box-shadow: inset 0 1px 0 0 #bcbcbc;
+  display: block;
+  margin-top: 1rem;
 }
 
-.Navigation-link {
-  font: 300 1rem/1.5rem system-ui;
+.Navigation--revealing .Navigation-item {
+  box-shadow: inset 0 -1px 0 0 #bcbcbc;
+}
+
+.Navigation--revealing .Navigation-link {
+  padding: 1rem;
+}
+
+@media (min-width: 54rem) {
+  .Navigation--revealing {
+    box-shadow: inset 0 -1px 0 0 #bcbcbc;
+  }
+
+  .Navigation--revealing .Navigation-command {
+    display: none;
+  }
+
+  .Navigation--revealing .Navigation-details {
+    display: block;
+    width: 100%;
+  }
+
+  .Navigation--revealing .Navigation-items {
+    box-shadow: none;
+    display: flex;
+  }
+
+  .Navigation-item {
+    flex: 1;
+  }
 }

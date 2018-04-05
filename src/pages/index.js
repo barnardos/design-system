@@ -1,7 +1,7 @@
 import Helmet from "react-helmet";
 import React from "react";
 
-import Navigation from "../components/Navigation";
+import DesignSystemNavigation from "../components/DesignSystemNavigation";
 import Paragraph from "../components/Paragraph";
 import Title from "../components/Title";
 
@@ -18,7 +18,7 @@ const Pages = () => (
       >{`Helping digital teams efficiently create a consistent experience for service users, including children and young people.`}</Paragraph>
     </div>
     <div className="Pages-navigation">
-      <Navigation
+      <DesignSystemNavigation
         items={[
           {
             text: "Principles",
@@ -39,6 +39,10 @@ const Pages = () => (
           {
             text: "Requesting information",
             to: "/requesting-information/"
+          },
+          {
+            text: "Wayfinding",
+            to: "/wayfinding/"
           }
         ]}
       />

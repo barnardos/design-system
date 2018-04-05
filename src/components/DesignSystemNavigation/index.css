@@ -1,0 +1,22 @@
+.DesignSystemNavigation {
+  padding-top: 1rem;
+  position: relative;
+}
+
+.DesignSystemNavigation::before {
+  background: #a5a5a5;
+  content: "";
+  height: 0.0625rem;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.DesignSystemNavigation-item {
+  list-style: none;
+}
+
+.DesignSystemNavigation-link {
+  font: 300 1rem/1.5rem system-ui;
+}
