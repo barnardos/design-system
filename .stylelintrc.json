@@ -21,6 +21,7 @@
     "at-rule-no-unknown": null,
     "at-rule-no-vendor-prefix": true,
     "at-rule-whitelist": ["font-face", "media"],
+    "color-hex-length": "short",
     "custom-property-empty-line-before": [
       "always",
       {
