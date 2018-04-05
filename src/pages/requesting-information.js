@@ -78,6 +78,13 @@ const Pages = () => (
         />
       </div>
     </div>
+    <div className="Pages-paragraph">
+      <Paragraph>
+        {`View `}
+        <a href="https://github.com/barnardos/design-system/tree/master/src/components/SinglelineTextControl">{`code`}</a>
+        {` on GitHub.`}
+      </Paragraph>
+    </div>
     <div className="Pages-headingTwo">
       <HeadingTwo>{`MultilineTextControl`}</HeadingTwo>
     </div>
@@ -91,6 +98,20 @@ const Pages = () => (
           verticalSize="4"
         />
       </div>
+    </div>
+    <div className="Pages-paragraph">
+      <Paragraph>
+        {`View `}
+        <a href="https://github.com/barnardos/design-system/tree/master/src/components/MultilineTextControl">{`code`}</a>
+        {` on GitHub.`}
+      </Paragraph>
+    </div>
+    <div className="Pages-paragraph">
+      <Paragraph>
+        {`View `}
+        <a href="https://github.com/barnardos/design-system/issues/65">{`research`}</a>
+        {` on GitHub.`}
+      </Paragraph>
     </div>
     <div className="Pages-headingOne">
       <HeadingOne>{`Choices`}</HeadingOne>
@@ -130,6 +151,13 @@ const Pages = () => (
         />
       </div>
     </div>
+    <div className="Pages-paragraph">
+      <Paragraph>
+        {`View `}
+        <a href="https://github.com/barnardos/design-system/tree/master/src/components/OneOfManyChoiceControl">{`code`}</a>
+        {` on GitHub.`}
+      </Paragraph>
+    </div>
     <div className="Pages-headingTwo">
       <HeadingTwo>{`AnyOfManyChoiceControl`}</HeadingTwo>
     </div>
@@ -168,6 +196,13 @@ const Pages = () => (
         />
       </div>
     </div>
+    <div className="Pages-paragraph">
+      <Paragraph>
+        {`View `}
+        <a href="https://github.com/barnardos/design-system/tree/master/src/components/AnyOfManyChoiceControl">{`code`}</a>
+        {` on GitHub.`}
+      </Paragraph>
+    </div>
     <div className="Pages-headingTwo">
       <HeadingTwo>{`ChoiceControl`}</HeadingTwo>
     </div>
@@ -178,6 +213,20 @@ const Pages = () => (
           id="choice-control-example"
         />
       </div>
+    </div>
+    <div className="Pages-paragraph">
+      <Paragraph>
+        {`View `}
+        <a href="https://github.com/barnardos/design-system/tree/master/src/components/ChoiceControl">{`code`}</a>
+        {` on GitHub.`}
+      </Paragraph>
+    </div>
+    <div className="Pages-paragraph">
+      <Paragraph>
+        {`View `}
+        <a href="https://github.com/barnardos/design-system/issues/68">{`research`}</a>
+        {` on GitHub.`}
+      </Paragraph>
     </div>
     <div className="Pages-headingOne">
       <HeadingOne>{`Submitting`}</HeadingOne>
@@ -200,6 +249,15 @@ const Pages = () => (
     </div>
     <div className="Pages-example">
       <Submit text="Send application" />
+    </div>
+    <div className="Pages-paragraph">
+      <Paragraph>
+        {`View `}
+        <a href="https://github.com/barnardos/design-system/tree/master/src/components/Submit">{`code`}</a>
+        {` and `}
+        <a href="https://github.com/barnardos/design-system/issues/33">{`research`}</a>
+        {` on GitHub.`}
+      </Paragraph>
     </div>
     <div className="Pages-headingOne">
       <HeadingOne
@@ -291,6 +349,15 @@ const Pages = () => (
           validation="You need to fix the following errors to continue:"
         />
       </div>
+    </div>
+    <div className="Pages-paragraph">
+      <Paragraph>
+        {`View `}
+        <a href="https://github.com/barnardos/design-system/tree/master/src/components/SubmitControls">{`code`}</a>
+        {` and `}
+        <a href="https://github.com/barnardos/design-system/issues/67">{`research`}</a>
+        {` on GitHub.`}
+      </Paragraph>
     </div>
   </div>
 );
