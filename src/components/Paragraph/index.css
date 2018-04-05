@@ -3,3 +3,7 @@
 .Paragraph {
   font: 300 1rem/1.5rem system-ui;
 }
+
+.Paragraph:not(:first-child) {
+  margin-top: 1rem;
+}

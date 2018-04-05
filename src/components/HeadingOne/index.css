@@ -3,3 +3,7 @@
 .HeadingOne {
   font: 600 1.8125rem/2rem Nova, sans-serif;
 }
+
+.HeadingOne:not(:first-child) {
+  margin-top: 2rem;
+}

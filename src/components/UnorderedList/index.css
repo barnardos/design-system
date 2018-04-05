@@ -4,3 +4,7 @@
   font: 300 1rem/1.5rem system-ui;
   padding-left: 1rem;
 }
+
+.UnorderedList:not(:first-child) {
+  margin-top: 1rem;
+}
