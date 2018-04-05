@@ -8,15 +8,13 @@ import Title from "../components/Title";
 import "./index.css";
 
 const Pages = () => (
-  <div>
+  <div className="Pages">
     <Helmet>
       <title>{`Design system`}</title>
     </Helmet>
     <Title>{`Design system`}</Title>
-    <div className="Pages-paragraph">
-      <Paragraph
-      >{`Helping digital teams efficiently create a consistent experience for service users, including children and young people.`}</Paragraph>
-    </div>
+    <Paragraph
+    >{`Helping digital teams efficiently create a consistent experience for service users, including children and young people.`}</Paragraph>
     <div className="Pages-navigation">
       <DesignSystemNavigation
         items={[

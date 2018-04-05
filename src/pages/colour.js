@@ -12,17 +12,13 @@ import UnorderedList from "../components/UnorderedList";
 import "./index.css";
 
 const Pages = () => (
-  <div>
+  <div className="Pages">
     <Helmet>
       <title>{`Colour`}</title>
     </Helmet>
     <GatsbyLink className="Pages-home" to="/">{`Home`}</GatsbyLink>
-    <div className="Pages-title">
-      <Title>{`Colour`}</Title>
-    </div>
-    <div className="Pages-paragraph">
-      <Paragraph>{`The colour palette is:`}</Paragraph>
-    </div>
+    <Title>{`Colour`}</Title>
+    <Paragraph>{`The colour palette is:`}</Paragraph>
     <Swatches
       swatches={[
         [
@@ -86,26 +82,20 @@ const Pages = () => (
         [{ label: "Red", hex: "#c30000", primary: true }]
       ]}
     />
-    <div className="Pages-headingOne">
-      <HeadingOne>{`Semantics`}</HeadingOne>
-    </div>
-    <div className="Pages-unorderedList">
-      <UnorderedList>
-        <ListItem
-        >{`Red - destructive actions like deleting or removing`}</ListItem>
-        <ListItem
-        >{`Orange - cautionary actions like loading or warning`}</ListItem>
-        <ListItem
-        >{`Green - positive actions like submitting or continuing`}</ListItem>
-      </UnorderedList>
-    </div>
-    <div className="Pages-paragraph">
-      <Paragraph>
-        {`View `}
-        <a href="https://github.com/barnardos/design-system/issues/14">{`research`}</a>
-        {` on GitHub.`}
-      </Paragraph>
-    </div>
+    <HeadingOne>{`Semantics`}</HeadingOne>
+    <UnorderedList>
+      <ListItem
+      >{`Red - destructive actions like deleting or removing`}</ListItem>
+      <ListItem
+      >{`Orange - cautionary actions like loading or warning`}</ListItem>
+      <ListItem
+      >{`Green - positive actions like submitting or continuing`}</ListItem>
+    </UnorderedList>
+    <Paragraph>
+      {`View `}
+      <a href="https://github.com/barnardos/design-system/issues/14">{`research`}</a>
+      {` on GitHub.`}
+    </Paragraph>
   </div>
 );
 

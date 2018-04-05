@@ -19,346 +19,260 @@ import UnorderedList from "../components/UnorderedList";
 import "./index.css";
 
 const Pages = () => (
-  <div>
+  <div className="Pages">
     <Helmet>
       <title>{`Requesting information`}</title>
     </Helmet>
     <GatsbyLink className="Pages-home" to="/">{`Home`}</GatsbyLink>
-    <div className="Pages-title">
-      <Title>{`Requesting information`}</Title>
-    </div>
-    <div className="Pages-paragraph">
-      <Paragraph
-      >{`When requesting information from a user you should:`}</Paragraph>
-    </div>
-    <div className="Pages-unorderedList">
-      <UnorderedList>
-        <ListItem>{`only ask for information you absolutely need`}</ListItem>
-        <ListItem
-        >{`mark the label with '(optional)' if you do ask for extra information`}</ListItem>
-        <ListItem
-        >{`avoid unnecessary words like 'Please' or 'Enter' in labels`}</ListItem>
-      </UnorderedList>
-    </div>
-    <div className="Pages-headingOne">
-      <HeadingOne>{`Text entry`}</HeadingOne>
-    </div>
-    <div className="Pages-paragraph">
-      <Paragraph
-      >{`Use the components below for text entry. You should:`}</Paragraph>
-    </div>
-    <div className="Pages-unorderedList">
-      <UnorderedList>
-        <ListItem>
-          {`make the size appropriate to the amount of information requested`}
-        </ListItem>
-        <ListItem>{`use multiples of 8 for setting the size`}</ListItem>
-        <ListItem>{`use hint text rather than placeholder text`}</ListItem>
-      </UnorderedList>
-    </div>
-    <div className="Pages-headingTwo">
-      <HeadingTwo>{`SinglelineTextControl`}</HeadingTwo>
+    <Title>{`Requesting information`}</Title>
+    <Paragraph
+    >{`When requesting information from a user you should:`}</Paragraph>
+    <UnorderedList>
+      <ListItem>{`only ask for information you absolutely need`}</ListItem>
+      <ListItem
+      >{`mark the label with '(optional)' if you do ask for extra information`}</ListItem>
+      <ListItem
+      >{`avoid unnecessary words like 'Please' or 'Enter' in labels`}</ListItem>
+    </UnorderedList>
+    <HeadingOne>{`Text entry`}</HeadingOne>
+    <Paragraph
+    >{`Use the components below for text entry. You should:`}</Paragraph>
+    <UnorderedList>
+      <ListItem>
+        {`make the size appropriate to the amount of information requested`}
+      </ListItem>
+      <ListItem>{`use multiples of 8 for setting the size`}</ListItem>
+      <ListItem>{`use hint text rather than placeholder text`}</ListItem>
+    </UnorderedList>
+    <HeadingTwo>{`SinglelineTextControl`}</HeadingTwo>
+    <div className="Pages-example">
+      <SinglelineTextControl
+        hint="As it appears on your ID."
+        id="text-control-full-name-example"
+        label="Full name"
+        size="48"
+      />
     </div>
     <div className="Pages-example">
-      <div className="Pages-exampleItem">
-        <SinglelineTextControl
-          hint="As it appears on your ID."
-          id="text-control-full-name-example"
-          label="Full name"
-          size="48"
-        />
-      </div>
+      <SinglelineTextControl
+        id="text-control-post-code-example"
+        label="Postcode (optional)"
+        size="16"
+      />
     </div>
+    <Paragraph>
+      {`View `}
+      <a href="https://github.com/barnardos/design-system/tree/master/src/components/SinglelineTextControl">{`code`}</a>
+      {` on GitHub.`}
+    </Paragraph>
+    <HeadingTwo>{`MultilineTextControl`}</HeadingTwo>
     <div className="Pages-example">
-      <div className="Pages-exampleItem">
-        <SinglelineTextControl
-          id="text-control-post-code-example"
-          label="Postcode (optional)"
-          size="16"
-        />
-      </div>
+      <MultilineTextControl
+        hint="So that we can post the certificate."
+        id="multiline-text-control-example"
+        label="Address"
+        size="48"
+        verticalSize="4"
+      />
     </div>
-    <div className="Pages-paragraph">
-      <Paragraph>
-        {`View `}
-        <a href="https://github.com/barnardos/design-system/tree/master/src/components/SinglelineTextControl">{`code`}</a>
-        {` on GitHub.`}
-      </Paragraph>
-    </div>
-    <div className="Pages-headingTwo">
-      <HeadingTwo>{`MultilineTextControl`}</HeadingTwo>
-    </div>
+    <Paragraph>
+      {`View `}
+      <a href="https://github.com/barnardos/design-system/tree/master/src/components/MultilineTextControl">{`code`}</a>
+      {` on GitHub.`}
+    </Paragraph>
+    <Paragraph>
+      {`View `}
+      <a href="https://github.com/barnardos/design-system/issues/65">{`research`}</a>
+      {` on GitHub.`}
+    </Paragraph>
+    <HeadingOne>{`Choices`}</HeadingOne>
+    <Paragraph>{`Use the components below for choices. You should:`}</Paragraph>
+    <UnorderedList>
+      <ListItem>{`use them instead of drop downs`}</ListItem>
+      <ListItem>{`limit the options to eight or less`}</ListItem>
+    </UnorderedList>
+    <HeadingTwo>{`OneOfManyChoiceControl`}</HeadingTwo>
     <div className="Pages-example">
-      <div className="Pages-exampleItem">
-        <MultilineTextControl
-          hint="So that we can post the certificate."
-          id="multiline-text-control-example"
-          label="Address"
-          size="48"
-          verticalSize="4"
-        />
-      </div>
+      <OneOfManyChoiceControl
+        choices={[
+          {
+            label: "Yes",
+            id: "one-of-many-choice-control-example-yes"
+          },
+          {
+            label: "No",
+            id: "one-of-many-choice-control-example-no"
+          },
+          {
+            label: "Maybe",
+            id: "one-of-many-choice-control-example-maybe"
+          }
+        ]}
+        legend="Will there be refreshments?"
+        name="one-of-many-choice-control-example"
+      />
     </div>
-    <div className="Pages-paragraph">
-      <Paragraph>
-        {`View `}
-        <a href="https://github.com/barnardos/design-system/tree/master/src/components/MultilineTextControl">{`code`}</a>
-        {` on GitHub.`}
-      </Paragraph>
-    </div>
-    <div className="Pages-paragraph">
-      <Paragraph>
-        {`View `}
-        <a href="https://github.com/barnardos/design-system/issues/65">{`research`}</a>
-        {` on GitHub.`}
-      </Paragraph>
-    </div>
-    <div className="Pages-headingOne">
-      <HeadingOne>{`Choices`}</HeadingOne>
-    </div>
-    <div className="Pages-paragraph">
-      <Paragraph
-      >{`Use the components below for choices. You should:`}</Paragraph>
-    </div>
-    <div className="Pages-unorderedList">
-      <UnorderedList>
-        <ListItem>{`use them instead of drop downs`}</ListItem>
-        <ListItem>{`limit the options to eight or less`}</ListItem>
-      </UnorderedList>
-    </div>
-    <div className="Pages-headingTwo">
-      <HeadingTwo>{`OneOfManyChoiceControl`}</HeadingTwo>
-    </div>
+    <Paragraph>
+      {`View `}
+      <a href="https://github.com/barnardos/design-system/tree/master/src/components/OneOfManyChoiceControl">{`code`}</a>
+      {` on GitHub.`}
+    </Paragraph>
+    <HeadingTwo>{`AnyOfManyChoiceControl`}</HeadingTwo>
+    <Paragraph>{`When using this component you should:`}</Paragraph>
+    <UnorderedList>
+      <ListItem>{`provide an option that excludes the others`}</ListItem>
+    </UnorderedList>
     <div className="Pages-example">
-      <div className="Pages-exampleItem">
-        <OneOfManyChoiceControl
-          choices={[
-            {
-              label: "Yes",
-              id: "one-of-many-choice-control-example-yes"
-            },
-            {
-              label: "No",
-              id: "one-of-many-choice-control-example-no"
-            },
-            {
-              label: "Maybe",
-              id: "one-of-many-choice-control-example-maybe"
-            }
-          ]}
-          legend="Will there be refreshments?"
-          name="one-of-many-choice-control-example"
-        />
-      </div>
+      <AnyOfManyChoiceControl
+        choices={[
+          {
+            label: "It won't be",
+            id: "any-of-many-choice-control-example-no-record"
+          },
+          {
+            label: "Tape recorder",
+            id: "any-of-many-choice-control-example-audio"
+          },
+          {
+            label: "Video recorder",
+            id: "any-of-many-choice-control-example-video"
+          },
+          {
+            label: "Hand-written notes",
+            id: "any-of-many-choice-control-example-hand-written-notes"
+          }
+        ]}
+        hint="Letting the participants know is a legal requirement."
+        legend="How will the interview be recorded?"
+        name="any-of-many-choice-control-example"
+      />
     </div>
-    <div className="Pages-paragraph">
-      <Paragraph>
-        {`View `}
-        <a href="https://github.com/barnardos/design-system/tree/master/src/components/OneOfManyChoiceControl">{`code`}</a>
-        {` on GitHub.`}
-      </Paragraph>
-    </div>
-    <div className="Pages-headingTwo">
-      <HeadingTwo>{`AnyOfManyChoiceControl`}</HeadingTwo>
-    </div>
-    <div className="Pages-paragraph">
-      <Paragraph>{`When using this component you should:`}</Paragraph>
-    </div>
-    <div className="Pages-unorderedList">
-      <UnorderedList>
-        <ListItem>{`provide an option that excludes the others`}</ListItem>
-      </UnorderedList>
-    </div>
+    <Paragraph>
+      {`View `}
+      <a href="https://github.com/barnardos/design-system/tree/master/src/components/AnyOfManyChoiceControl">{`code`}</a>
+      {` on GitHub.`}
+    </Paragraph>
+    <HeadingTwo>{`ChoiceControl`}</HeadingTwo>
     <div className="Pages-example">
-      <div className="Pages-exampleItem">
-        <AnyOfManyChoiceControl
-          choices={[
-            {
-              label: "It won't be",
-              id: "any-of-many-choice-control-example-no-record"
-            },
-            {
-              label: "Tape recorder",
-              id: "any-of-many-choice-control-example-audio"
-            },
-            {
-              label: "Video recorder",
-              id: "any-of-many-choice-control-example-video"
-            },
-            {
-              label: "Hand-written notes",
-              id: "any-of-many-choice-control-example-hand-written-notes"
-            }
-          ]}
-          hint="Letting the participants know is a legal requirement."
-          legend="How will the interview be recorded?"
-          name="any-of-many-choice-control-example"
-        />
-      </div>
+      <ChoiceControl
+        label="Subscribe to mailing list"
+        id="choice-control-example"
+      />
     </div>
-    <div className="Pages-paragraph">
-      <Paragraph>
-        {`View `}
-        <a href="https://github.com/barnardos/design-system/tree/master/src/components/AnyOfManyChoiceControl">{`code`}</a>
-        {` on GitHub.`}
-      </Paragraph>
-    </div>
-    <div className="Pages-headingTwo">
-      <HeadingTwo>{`ChoiceControl`}</HeadingTwo>
-    </div>
-    <div className="Pages-example">
-      <div className="Pages-exampleItem">
-        <ChoiceControl
-          label="Subscribe to mailing list"
-          id="choice-control-example"
-        />
-      </div>
-    </div>
-    <div className="Pages-paragraph">
-      <Paragraph>
-        {`View `}
-        <a href="https://github.com/barnardos/design-system/tree/master/src/components/ChoiceControl">{`code`}</a>
-        {` on GitHub.`}
-      </Paragraph>
-    </div>
-    <div className="Pages-paragraph">
-      <Paragraph>
-        {`View `}
-        <a href="https://github.com/barnardos/design-system/issues/68">{`research`}</a>
-        {` on GitHub.`}
-      </Paragraph>
-    </div>
-    <div className="Pages-headingOne">
-      <HeadingOne>{`Submitting`}</HeadingOne>
-    </div>
-    <div className="Pages-paragraph">
-      <Paragraph>{`Use the component below to submit information.`}</Paragraph>
-    </div>
-    <div className="Pages-headingTwo">
-      <HeadingTwo>{`Submit`}</HeadingTwo>
-    </div>
-    <div className="Pages-paragraph">
-      <Paragraph>{`When using this component you should:`}</Paragraph>
-    </div>
-    <div className="Pages-unorderedList">
-      <UnorderedList>
-        <ListItem>{`only use it once on each page`}</ListItem>
-        <ListItem>{`use a verb, for example "Save"`}</ListItem>
-        <ListItem>{`only use the Green colour`}</ListItem>
-      </UnorderedList>
-    </div>
+    <Paragraph>
+      {`View `}
+      <a href="https://github.com/barnardos/design-system/tree/master/src/components/ChoiceControl">{`code`}</a>
+      {` on GitHub.`}
+    </Paragraph>
+    <Paragraph>
+      {`View `}
+      <a href="https://github.com/barnardos/design-system/issues/68">{`research`}</a>
+      {` on GitHub.`}
+    </Paragraph>
+    <HeadingOne>{`Submitting`}</HeadingOne>
+    <Paragraph>{`Use the component below to submit information.`}</Paragraph>
+    <HeadingTwo>{`Submit`}</HeadingTwo>
+    <Paragraph>{`When using this component you should:`}</Paragraph>
+    <UnorderedList>
+      <ListItem>{`only use it once on each page`}</ListItem>
+      <ListItem>{`use a verb, for example "Save"`}</ListItem>
+      <ListItem>{`only use the Green colour`}</ListItem>
+    </UnorderedList>
     <div className="Pages-example">
       <Submit text="Send application" />
     </div>
-    <div className="Pages-paragraph">
-      <Paragraph>
-        {`View `}
-        <a href="https://github.com/barnardos/design-system/tree/master/src/components/Submit">{`code`}</a>
-        {` and `}
-        <a href="https://github.com/barnardos/design-system/issues/33">{`research`}</a>
-        {` on GitHub.`}
-      </Paragraph>
-    </div>
-    <div className="Pages-headingOne">
-      <HeadingOne
-      >{`Requesting, validating and submitting information`}</HeadingOne>
-    </div>
-    <div className="Pages-paragraph">
-      <Paragraph
-      >{`Use the component below to request, validate and submit information.`}</Paragraph>
-    </div>
-    <div className="Pages-headingTwo">
-      <HeadingTwo>{`SubmitControls`}</HeadingTwo>
-    </div>
-    <div className="Pages-paragraph">
-      <Paragraph>{`When using this component you should:`}</Paragraph>
-    </div>
-    <div className="Pages-unorderedList">
-      <UnorderedList>
-        <ListItem>{`minimise the number of controls on each page`}</ListItem>
-        <ListItem>{`group the control logically`}</ListItem>
-        <ListItem>{`avoid indicators that show progress`}</ListItem>
-      </UnorderedList>
-    </div>
+    <Paragraph>
+      {`View `}
+      <a href="https://github.com/barnardos/design-system/tree/master/src/components/Submit">{`code`}</a>
+      {` and `}
+      <a href="https://github.com/barnardos/design-system/issues/33">{`research`}</a>
+      {` on GitHub.`}
+    </Paragraph>
+    <HeadingOne
+    >{`Requesting, validating and submitting information`}</HeadingOne>
+    <Paragraph
+    >{`Use the component below to request, validate and submit information.`}</Paragraph>
+    <HeadingTwo>{`SubmitControls`}</HeadingTwo>
+    <Paragraph>{`When using this component you should:`}</Paragraph>
+    <UnorderedList>
+      <ListItem>{`minimise the number of controls on each page`}</ListItem>
+      <ListItem>{`group the control logically`}</ListItem>
+      <ListItem>{`avoid indicators that show progress`}</ListItem>
+    </UnorderedList>
     <div className="Pages-example">
-      <div className="Pages-exampleItem">
-        <SubmitControls
-          errored
-          controls={[
-            {
-              errored: true,
-              control: "singlelineText",
-              id: "submit-controls-single-line-text-example",
-              label: "Name of the meal",
-              validation: "Enter the name of the meal"
-            },
-            {
-              control: "oneOfManyChoice",
-              errored: true,
-              hint:
-                "Nut allergies can be dangerous. Only choose 'No' if you're completely sure.",
-              id: "submit-controls-one-of-many-choice-example",
-              legend: "Does the meal include nuts?",
-              name: "submit-controls-one-of-many-choice-example",
-              choices: [
-                {
-                  label: "Yes",
-                  id: "submit-controls-one-of-many-choice-control-example-yes"
-                },
-                {
-                  label: "No",
-                  id: "submit-controls-one-of-many-choice-control-example-no"
-                },
-                {
-                  label: "I'm not sure",
-                  id:
-                    "submit-controls-one-of-many-choice-control-example-unsure"
-                }
-              ],
-              validation: "Select whether the meal contains nuts or not"
-            },
-            {
-              control: "anyOfManyChoice",
-              name: "submit-controls-any-of-many-choice-control-example",
-              legend: "What are the benefits of the meal?",
-              choices: [
-                {
-                  label: "None",
-                  id: "submit-controls-any-of-many-choice-control-example-none"
-                },
-                {
-                  label: "Energising",
-                  id:
-                    "submit-controls-any-of-many-choice-control-example-energising"
-                },
-                {
-                  label: "Tasty",
-                  id: "submit-controls-any-of-many-choice-control-example-tasty"
-                },
-                {
-                  label: "Low cost",
-                  id:
-                    "submit-controls-any-of-many-choice-control-example-low-cost"
-                }
-              ]
-            }
-          ]}
-          submit={{
-            text: "Continue"
-          }}
-          validation="You need to fix the following errors to continue:"
-        />
-      </div>
+      <SubmitControls
+        errored
+        controls={[
+          {
+            errored: true,
+            control: "singlelineText",
+            id: "submit-controls-single-line-text-example",
+            label: "Name of the meal",
+            validation: "Enter the name of the meal"
+          },
+          {
+            control: "oneOfManyChoice",
+            errored: true,
+            hint:
+              "Nut allergies can be dangerous. Only choose 'No' if you're completely sure.",
+            id: "submit-controls-one-of-many-choice-example",
+            legend: "Does the meal include nuts?",
+            name: "submit-controls-one-of-many-choice-example",
+            choices: [
+              {
+                label: "Yes",
+                id: "submit-controls-one-of-many-choice-control-example-yes"
+              },
+              {
+                label: "No",
+                id: "submit-controls-one-of-many-choice-control-example-no"
+              },
+              {
+                label: "I'm not sure",
+                id: "submit-controls-one-of-many-choice-control-example-unsure"
+              }
+            ],
+            validation: "Select whether the meal contains nuts or not"
+          },
+          {
+            control: "anyOfManyChoice",
+            name: "submit-controls-any-of-many-choice-control-example",
+            legend: "What are the benefits of the meal?",
+            choices: [
+              {
+                label: "None",
+                id: "submit-controls-any-of-many-choice-control-example-none"
+              },
+              {
+                label: "Energising",
+                id:
+                  "submit-controls-any-of-many-choice-control-example-energising"
+              },
+              {
+                label: "Tasty",
+                id: "submit-controls-any-of-many-choice-control-example-tasty"
+              },
+              {
+                label: "Low cost",
+                id:
+                  "submit-controls-any-of-many-choice-control-example-low-cost"
+              }
+            ]
+          }
+        ]}
+        submit={{
+          text: "Continue"
+        }}
+        validation="You need to fix the following errors to continue:"
+      />
     </div>
-    <div className="Pages-paragraph">
-      <Paragraph>
-        {`View `}
-        <a href="https://github.com/barnardos/design-system/tree/master/src/components/SubmitControls">{`code`}</a>
-        {` and `}
-        <a href="https://github.com/barnardos/design-system/issues/67">{`research`}</a>
-        {` on GitHub.`}
-      </Paragraph>
-    </div>
+    <Paragraph>
+      {`View `}
+      <a href="https://github.com/barnardos/design-system/tree/master/src/components/SubmitControls">{`code`}</a>
+      {` and `}
+      <a href="https://github.com/barnardos/design-system/issues/67">{`research`}</a>
+      {` on GitHub.`}
+    </Paragraph>
   </div>
 );
 

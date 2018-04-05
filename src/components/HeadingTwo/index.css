@@ -3,3 +3,7 @@
 .HeadingTwo {
   font: 300 1.625rem/2rem Nova, sans-serif;
 }
+
+.HeadingTwo:not(:first-child) {
+  margin-top: 2rem;
+}

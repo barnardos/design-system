@@ -13,64 +13,44 @@ import UnorderedList from "../components/UnorderedList";
 import "./index.css";
 
 const Pages = () => (
-  <div>
+  <div className="Pages">
     <Helmet>
       <title>{`Linking`}</title>
     </Helmet>
     <GatsbyLink className="Pages-home" to="/">{`Home`}</GatsbyLink>
-    <div className="Pages-title">
-      <Title>{`Linking`}</Title>
-    </div>
-    <div className="Pages-paragraph">
-      <Paragraph>{`Use the components below for linking.`}</Paragraph>
-    </div>
-    <div className="Pages-headingOne">
-      <HeadingOne>{`Link`}</HeadingOne>
-    </div>
-    <div className="Pages-paragraph">
-      <Paragraph>{`When using this component you should:`}</Paragraph>
-    </div>
-    <div className="Pages-unorderedList">
-      <UnorderedList>
-        <ListItem
-        >{`use a meaningful phrase that makes sense out of context`}</ListItem>
-        <ListItem>{`use the default styles`}</ListItem>
-      </UnorderedList>
-    </div>
+    <Title>{`Linking`}</Title>
+    <Paragraph>{`Use the components below for linking.`}</Paragraph>
+    <HeadingOne>{`Link`}</HeadingOne>
+    <Paragraph>{`When using this component you should:`}</Paragraph>
+    <UnorderedList>
+      <ListItem
+      >{`use a meaningful phrase that makes sense out of context`}</ListItem>
+      <ListItem>{`use the default styles`}</ListItem>
+    </UnorderedList>
     <div className="Pages-example">
       <HeadingOne>
         <Link href="http://example.org">{`Heading of section`}</Link>
       </HeadingOne>
-      <div className="Pages-paragraph">
-        <Paragraph>
-          {`This is a paragraph, and it includes even more text to give a good
-            representation of a more `}
-          <Link href="http://example.org">{`average length paragraph`}</Link>
-          {`.
-            That way you can see more than one line wrapping.`}
-        </Paragraph>
-      </div>
-    </div>
-    <div className="Pages-paragraph">
       <Paragraph>
-        {`View `}
-        <a href="https://github.com/barnardos/design-system/tree/master/src/components/Link">{`code`}</a>
-        {` on GitHub.`}
+        {`This is a paragraph, and it includes even more text to give a good
+            representation of a more `}
+        <Link href="http://example.org">{`average length paragraph`}</Link>
+        {`.
+            That way you can see more than one line wrapping.`}
       </Paragraph>
     </div>
-    <div className="Pages-headingOne">
-      <HeadingOne>{`AttentionGrabbingLink`}</HeadingOne>
-    </div>
-    <div className="Pages-paragraph">
-      <Paragraph>{`When using this component you should:`}</Paragraph>
-    </div>
-    <div className="Pages-unorderedList">
-      <UnorderedList>
-        <ListItem>{`limit the number on each page`}</ListItem>
-        <ListItem>{`use a verb, for example "Donate"`}</ListItem>
-        <ListItem>{`not use the Green colour`}</ListItem>
-      </UnorderedList>
-    </div>
+    <Paragraph>
+      {`View `}
+      <a href="https://github.com/barnardos/design-system/tree/master/src/components/Link">{`code`}</a>
+      {` on GitHub.`}
+    </Paragraph>
+    <HeadingOne>{`AttentionGrabbingLink`}</HeadingOne>
+    <Paragraph>{`When using this component you should:`}</Paragraph>
+    <UnorderedList>
+      <ListItem>{`limit the number on each page`}</ListItem>
+      <ListItem>{`use a verb, for example "Donate"`}</ListItem>
+      <ListItem>{`not use the Green colour`}</ListItem>
+    </UnorderedList>
     <div className="Pages-example">
       <AttentionGrabbingLink
         color="pink"
@@ -106,20 +86,16 @@ const Pages = () => (
         text="Commission us"
       />
     </div>
-    <div className="Pages-paragraph">
-      <Paragraph>
-        {`View `}
-        <a href="https://github.com/barnardos/design-system/tree/master/src/components/AttentionGrabbingLink">{`code`}</a>
-        {` on GitHub.`}
-      </Paragraph>
-    </div>
-    <div className="Pages-paragraph">
-      <Paragraph>
-        {`View `}
-        <a href="https://github.com/barnardos/design-system/issues/47">{`research`}</a>
-        {` on GitHub.`}
-      </Paragraph>
-    </div>
+    <Paragraph>
+      {`View `}
+      <a href="https://github.com/barnardos/design-system/tree/master/src/components/AttentionGrabbingLink">{`code`}</a>
+      {` on GitHub.`}
+    </Paragraph>
+    <Paragraph>
+      {`View `}
+      <a href="https://github.com/barnardos/design-system/issues/47">{`research`}</a>
+      {` on GitHub.`}
+    </Paragraph>
   </div>
 );
 

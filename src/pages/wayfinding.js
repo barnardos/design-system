@@ -15,214 +15,182 @@ import UnorderedList from "../components/UnorderedList";
 import "./index.css";
 
 const Pages = () => (
-  <div>
+  <div className="Pages">
     <Helmet>
       <title>{`WayFinding`}</title>
     </Helmet>
     <GatsbyLink className="Pages-home" to="/">{`Home`}</GatsbyLink>
-    <div>
-      <div className="Pages-title">
-        <Title>{`WayFinding`}</Title>
-      </div>
-      <div className="Pages-paragraph">
-        <Paragraph>{`Use the components below for wayfinding.`}</Paragraph>
-      </div>
-      <div className="Pages-headingOne">
-        <HeadingOne>{`Navigation`}</HeadingOne>
-      </div>
-      <div className="Pages-paragraph">
-        <Paragraph
-        >{`Use this component to switch between top-level categories easily. When using this component you should:`}</Paragraph>
-      </div>
-      <div className="Pages-unorderedList">
-        <UnorderedList>
-          <ListItem>{`aim to have the items visible at all times`}</ListItem>
-          <ListItem>{`reveal the navigation if this is not possible`}</ListItem>
-        </UnorderedList>
-      </div>
-      <div className="Pages-example">
-        <Navigation
-          items={[
+    <Title>{`WayFinding`}</Title>
+    <Paragraph>{`Use the components below for wayfinding.`}</Paragraph>
+    <HeadingOne>{`Navigation`}</HeadingOne>
+    <Paragraph
+    >{`Use this component to switch between top-level categories easily. When using this component you should:`}</Paragraph>
+    <UnorderedList>
+      <ListItem>{`aim to have the items visible at all times`}</ListItem>
+      <ListItem>{`reveal the navigation if this is not possible`}</ListItem>
+    </UnorderedList>
+    <div className="Pages-example">
+      <Navigation
+        items={[
+          {
+            text: "About",
+            href: "http://example.org"
+          },
+          {
+            text: "Help",
+            href: "http://example.org"
+          },
+          {
+            text: "Services",
+            href: "http://example.org"
+          }
+        ]}
+      />
+    </div>
+    <div
+      className="Pages-example"
+      style={{
+        paddingBottom: "19rem",
+        position: "relative"
+      }}
+    >
+      <Navigation
+        isRevealing
+        items={[
+          {
+            text: "About",
+            href: "http://example.org"
+          },
+          {
+            text: "Volunteer",
+            href: "http://example.org"
+          },
+          {
+            text: "Services",
+            href: "http://example.org"
+          },
+          {
+            text: "Mission",
+            href: "http://example.org"
+          },
+          {
+            text: "Commission us",
+            href: "http://example.org"
+          }
+        ]}
+      />
+    </div>
+    <Paragraph>
+      {`View `}
+      <a href="https://github.com/barnardos/design-system/tree/master/src/components/Navigation">{`code`}</a>
+      {` on GitHub.`}
+    </Paragraph>
+    <HeadingOne>{`Breadcrumbs`}</HeadingOne>
+    <div className="Pages-example">
+      <Breadcrumbs
+        items={[
+          {
+            text: "Home",
+            to: "/"
+          },
+          {
+            text: "Services",
+            to: "/"
+          }
+        ]}
+      />
+    </div>
+    <Paragraph>
+      {`View `}
+      <a href="https://github.com/barnardos/design-system/tree/master/src/components/Breadcrumbs">{`code`}</a>
+      {` on GitHub.`}
+    </Paragraph>
+    <HeadingOne>{`SubmitSearchControl`}</HeadingOne>
+    <div
+      className="Pages-example"
+      style={{
+        paddingBottom: "4rem",
+        position: "relative"
+      }}
+    >
+      <SubmitSearchControl />
+    </div>
+    <Paragraph>
+      {`View `}
+      <a href="https://github.com/barnardos/design-system/tree/master/src/components/SubmitSearchControl">{`code`}</a>
+      {` on GitHub.`}
+    </Paragraph>
+    <HeadingOne>{`Header`}</HeadingOne>
+    <div
+      className="Pages-example Pages-example--full"
+      style={{
+        position: "relative"
+      }}
+    >
+      <Header
+        navigation={{
+          items: [
             {
-              text: "About us",
+              text: "About",
               href: "http://example.org"
             },
             {
-              text: "Volunteer",
+              text: "Help",
               href: "http://example.org"
             },
             {
               text: "Services",
               href: "http://example.org"
             }
-          ]}
-        />
-      </div>
-      <div className="Pages-example">
-        <div
-          style={{
-            paddingBottom: "19rem",
-            position: "relative"
-          }}
-        >
-          <Navigation
-            isRevealing
-            items={[
-              {
-                text: "About us",
-                href: "http://example.org"
-              },
-              {
-                text: "Volunteer",
-                href: "http://example.org"
-              },
-              {
-                text: "Services",
-                href: "http://example.org"
-              },
-              {
-                text: "Mission",
-                href: "http://example.org"
-              },
-              {
-                text: "Commission us",
-                href: "http://example.org"
-              }
-            ]}
-          />
-        </div>
-      </div>
-      <div className="Pages-paragraph">
-        <Paragraph>
-          {`View `}
-          <a href="https://github.com/barnardos/design-system/tree/master/src/components/Navigation">{`code`}</a>
-          {` on GitHub.`}
-        </Paragraph>
-      </div>
-      <div className="Pages-headingOne">
-        <HeadingOne>{`Breadcrumbs`}</HeadingOne>
-      </div>
-      <div className="Pages-example">
-        <Breadcrumbs
-          items={[
+          ]
+        }}
+      />
+    </div>
+    <div
+      className="Pages-example Pages-example--full"
+      style={{
+        position: "relative"
+      }}
+    >
+      <Header
+        navigation={{
+          items: [
             {
-              text: "Home",
-              to: "/"
+              text: "About",
+              href: "http://example.org"
+            },
+            {
+              text: "Help",
+              href: "http://example.org"
             },
             {
               text: "Services",
-              to: "/"
-            }
-          ]}
-        />
-      </div>
-      <div className="Pages-paragraph">
-        <Paragraph>
-          {`View `}
-          <a href="https://github.com/barnardos/design-system/tree/master/src/components/Breadcrumbs">{`code`}</a>
-          {` on GitHub.`}
-        </Paragraph>
-      </div>
-      <div className="Pages-headingOne">
-        <HeadingOne>{`SubmitSearchControl`}</HeadingOne>
-      </div>
-      <div className="Pages-example">
-        <div
-          style={{
-            paddingBottom: "4rem",
-            position: "relative"
-          }}
-        >
-          <SubmitSearchControl />
-        </div>
-      </div>
-      <div className="Pages-paragraph">
-        <Paragraph>
-          {`View `}
-          <a href="https://github.com/barnardos/design-system/tree/master/src/components/SubmitSearchControl">{`code`}</a>
-          {` on GitHub.`}
-        </Paragraph>
-      </div>
-      <div className="Pages-headingOne">
-        <HeadingOne>{`Header`}</HeadingOne>
-      </div>
-    </div>
-    <div className="Pages-example Pages-example--full">
-      <div
-        style={{
-          position: "relative"
-        }}
-      >
-        <Header
-          navigation={{
-            items: [
-              {
-                text: "About us",
-                href: "http://example.org"
-              },
-              {
-                text: "Help us",
-                href: "http://example.org"
-              },
-              {
-                text: "Services",
-                href: "http://example.org"
-              }
-            ]
-          }}
-        />
-      </div>
-    </div>
-    <div className="Pages-example Pages-example--full">
-      <div
-        style={{
-          position: "relative"
-        }}
-      >
-        <Header
-          navigation={{
-            items: [
-              {
-                text: "About us",
-                href: "http://example.org"
-              },
-              {
-                text: "Help us",
-                href: "http://example.org"
-              },
-              {
-                text: "Services",
-                href: "http://example.org"
-              }
-            ]
-          }}
-          links={[
-            {
-              text: "Shop",
-              href: "http://example.org"
-            },
-            {
-              text: "Volunteer",
               href: "http://example.org"
             }
-          ]}
-        />
-      </div>
+          ]
+        }}
+        links={[
+          {
+            text: "Shop",
+            href: "http://example.org"
+          },
+          {
+            text: "Volunteer",
+            href: "http://example.org"
+          }
+        ]}
+      />
     </div>
-    <div className="Pages-paragraph">
-      <Paragraph>
-        {`View `}
-        <a href="https://github.com/barnardos/design-system/tree/master/src/components/Header">{`code`}</a>
-        {` on GitHub.`}
-      </Paragraph>
-    </div>
-    <div className="Pages-paragraph">
-      <Paragraph>
-        {`View `}
-        <a href="https://github.com/barnardos/design-system/issues/2">{`research`}</a>
-        {` on GitHub.`}
-      </Paragraph>
-    </div>
+    <Paragraph>
+      {`View `}
+      <a href="https://github.com/barnardos/design-system/tree/master/src/components/Header">{`code`}</a>
+      {` on GitHub.`}
+    </Paragraph>
+    <Paragraph>
+      {`View `}
+      <a href="https://github.com/barnardos/design-system/issues/2">{`research`}</a>
+      {` on GitHub.`}
+    </Paragraph>
   </div>
 );
 

@@ -4,6 +4,10 @@
   font: 600 2.25rem/2.5rem Nova, sans-serif;
 }
 
+.Title:not(:first-child) {
+  margin-top: 1rem;
+}
+
 @media (min-width: 40rem) {
   .Title {
     font-size: 2.875rem;
