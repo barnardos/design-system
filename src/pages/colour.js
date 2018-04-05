@@ -99,6 +99,13 @@ const Pages = () => (
         >{`Green - positive actions like submitting or continuing`}</ListItem>
       </UnorderedList>
     </div>
+    <div className="Pages-paragraph">
+      <Paragraph>
+        {`View `}
+        <a href="https://github.com/barnardos/design-system/issues/14">{`research`}</a>
+        {` on GitHub.`}
+      </Paragraph>
+    </div>
   </div>
 );
 

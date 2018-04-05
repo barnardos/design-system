@@ -116,6 +116,13 @@ const Pages = () => (
         >{`further up to 112.5% giving a paragraph size and guttering of 18px`}</ListItem>
       </UnorderedList>
     </div>
+    <div className="Pages-paragraph">
+      <Paragraph>
+        {`View `}
+        <a href="https://github.com/barnardos/design-system/issues/1">{`research`}</a>
+        {` on GitHub.`}
+      </Paragraph>
+    </div>
   </div>
 );
 

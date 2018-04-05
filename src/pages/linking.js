@@ -51,7 +51,13 @@ const Pages = () => (
         </Paragraph>
       </div>
     </div>
-
+    <div className="Pages-paragraph">
+      <Paragraph>
+        {`View `}
+        <a href="https://github.com/barnardos/design-system/tree/master/src/components/Link">{`code`}</a>
+        {` on GitHub.`}
+      </Paragraph>
+    </div>
     <div className="Pages-headingOne">
       <HeadingOne>{`AttentionGrabbingLink`}</HeadingOne>
     </div>
@@ -99,6 +105,20 @@ const Pages = () => (
         href="http://example.org"
         text="Commission us"
       />
+    </div>
+    <div className="Pages-paragraph">
+      <Paragraph>
+        {`View `}
+        <a href="https://github.com/barnardos/design-system/tree/master/src/components/AttentionGrabbingLink">{`code`}</a>
+        {` on GitHub.`}
+      </Paragraph>
+    </div>
+    <div className="Pages-paragraph">
+      <Paragraph>
+        {`View `}
+        <a href="https://github.com/barnardos/design-system/issues/47">{`research`}</a>
+        {` on GitHub.`}
+      </Paragraph>
     </div>
   </div>
 );

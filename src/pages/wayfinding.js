@@ -92,6 +92,13 @@ const Pages = () => (
           />
         </div>
       </div>
+      <div className="Pages-paragraph">
+        <Paragraph>
+          {`View `}
+          <a href="https://github.com/barnardos/design-system/tree/master/src/components/Navigation">{`code`}</a>
+          {` on GitHub.`}
+        </Paragraph>
+      </div>
       <div className="Pages-headingOne">
         <HeadingOne>{`Breadcrumbs`}</HeadingOne>
       </div>
@@ -109,6 +116,13 @@ const Pages = () => (
           ]}
         />
       </div>
+      <div className="Pages-paragraph">
+        <Paragraph>
+          {`View `}
+          <a href="https://github.com/barnardos/design-system/tree/master/src/components/Breadcrumbs">{`code`}</a>
+          {` on GitHub.`}
+        </Paragraph>
+      </div>
       <div className="Pages-headingOne">
         <HeadingOne>{`SubmitSearchControl`}</HeadingOne>
       </div>
@@ -121,6 +135,13 @@ const Pages = () => (
         >
           <SubmitSearchControl />
         </div>
+      </div>
+      <div className="Pages-paragraph">
+        <Paragraph>
+          {`View `}
+          <a href="https://github.com/barnardos/design-system/tree/master/src/components/SubmitSearchControl">{`code`}</a>
+          {` on GitHub.`}
+        </Paragraph>
       </div>
       <div className="Pages-headingOne">
         <HeadingOne>{`Header`}</HeadingOne>
@@ -187,6 +208,20 @@ const Pages = () => (
           ]}
         />
       </div>
+    </div>
+    <div className="Pages-paragraph">
+      <Paragraph>
+        {`View `}
+        <a href="https://github.com/barnardos/design-system/tree/master/src/components/Header">{`code`}</a>
+        {` on GitHub.`}
+      </Paragraph>
+    </div>
+    <div className="Pages-paragraph">
+      <Paragraph>
+        {`View `}
+        <a href="https://github.com/barnardos/design-system/issues/2">{`research`}</a>
+        {` on GitHub.`}
+      </Paragraph>
     </div>
   </div>
 );
