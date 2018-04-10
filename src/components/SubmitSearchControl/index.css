@@ -7,8 +7,9 @@
 .SubmitSearchControl-command {
   appearance: none;
   background: #e9e9e9 url("./glass.svg") no-repeat center center;
+  border: 0;
   border-radius: 0;
-  box-shadow: 0.125rem 0.125rem #a5a5a5;
+  box-shadow: 0.125rem 0.125rem color(#e9e9e9 shade(30%));
   color: #fff;
   font: 300 1.25rem/1.75rem system-ui;
   margin-left: auto;
@@ -64,11 +65,11 @@
 
 .SubmitSearchControl-submitInput {
   appearance: none;
-  background: #81bc00 url(./inverse-glass.svg) no-repeat center center;
-  border: 1px solid #81bc00;
+  background: #6aa300 url(./inverse-glass.svg) no-repeat center center;
+  border: 1px solid #6aa300;
   border-radius: 0;
   border-width: 1px 0;
-  box-shadow: 0.25rem 0.25rem #4d7100;
+  box-shadow: 0.25rem 0.25rem color(#6aa300 shade(30%));
   color: #fff;
   font: 300 1.25rem/1.75rem system-ui;
   margin: 0 0 0 0.5rem;
@@ -79,8 +80,8 @@
 }
 
 .SubmitSearchControl-submitInput:hover {
-  background-color: color(#81bc00 shade(10%));
-  border-color: color(#81bc00 shade(10%));
+  background-color: color(#6aa300 shade(10%));
+  border-color: color(#6aa300 shade(10%));
 }
 
 .SubmitSearchControl-submitInput:active {
