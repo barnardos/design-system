@@ -22,13 +22,13 @@ const Pages = () => (
     <Swatches
       swatches={[
         [
-          { label: "30% tint", hex: "#a7d04d" },
-          { label: "20% tint", hex: "#9ac933" },
-          { label: "10% tint", hex: "#8ec31a" },
-          { label: "Green", hex: "#81bc00", primary: true },
-          { label: "10% shade", hex: "#74a900" },
-          { label: "20% shade", hex: "#679600" },
-          { label: "30% shade", hex: "#5a8300" }
+          { label: "30% tint", hex: "#97bf4d" },
+          { label: "20% tint", hex: "#88b533" },
+          { label: "10% tint", hex: "#79ac1a" },
+          { label: "Green", hex: "#6aa300", primary: true },
+          { label: "10% shade", hex: "#5f9200" },
+          { label: "20% shade", hex: "#558200" },
+          { label: "30% shade", hex: "#4a7200" }
         ],
         [
           { label: "30% tint", hex: "#db4d9b" },
@@ -49,13 +49,13 @@ const Pages = () => (
           { label: "30% shade", hex: "#006b76" }
         ],
         [
-          { label: "30% tint", hex: "#9b65a0" },
-          { label: "20% tint", hex: "#8d4e92" },
-          { label: "10% tint", hex: "#7f3985" },
-          { label: "Purple", hex: "#702277", primary: true },
-          { label: "10% shade", hex: "#651f6b" },
-          { label: "20% shade", hex: "#5a1b5f" },
-          { label: "30% shade", hex: "#4e1853" }
+          { label: "30% tint", hex: "#9a6394" },
+          { label: "20% tint", hex: "#8b4d85" },
+          { label: "10% tint", hex: "#7d3776" },
+          { label: "Purple", hex: "#6e2066", primary: true },
+          { label: "10% shade", hex: "#631d5c" },
+          { label: "20% shade", hex: "#581a52" },
+          { label: "30% shade", hex: "#4d1647" }
         ],
         [
           { label: "30% tint", hex: "#ef984d" },

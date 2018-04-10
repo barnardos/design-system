@@ -2,10 +2,10 @@
 
 .Submit {
   appearance: none;
-  background-color: #81bc00;
+  background-color: #6aa300;
   border: 0;
   border-radius: 0;
-  box-shadow: 0.25rem 0.25rem #4d7100;
+  box-shadow: 0.25rem 0.25rem color(#6aa300 shade(30%));
   color: #fff;
   font: 600 1.25rem/1.5rem Nova, sans-serif;
   padding: 0.75rem 3rem;
@@ -15,7 +15,7 @@
 }
 
 .Submit:hover {
-  background-color: color(#81bc00 shade(10%));
+  background-color: color(#6aa300 shade(10%));
 }
 
 .Submit:active {

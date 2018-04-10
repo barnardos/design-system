@@ -37,12 +37,12 @@
 }
 
 .AttentionGrabbingLink--purple {
-  background-color: #702277;
+  background-color: #6e2066;
 }
 
 .AttentionGrabbingLink--purple:active,
 .AttentionGrabbingLink--purple:hover {
-  background-color: color(#702277 shade(10%));
+  background-color: color(#6e2066 shade(10%));
 }
 
 .AttentionGrabbingLink--teal {
