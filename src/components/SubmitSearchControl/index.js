@@ -1,5 +1,9 @@
 import React, { Component } from "react";
 
+import crossSvg from "./cross.svg";
+import glassSvg from "./glass.svg";
+import inverseGlassSvg from "./inverse-glass.svg";
+
 import "./index.css";
 
 class SubmitSearchControl extends Component {
@@ -27,37 +31,43 @@ class SubmitSearchControl extends Component {
             className="SubmitSearchControl-command"
             onClick={this.handleClick}
           >
-            Menu
+            <img
+              alt="Open search"
+              className="SubmitSearchControl-commandSvg"
+              src={glassSvg}
+            />
           </button>
         </div>
 
         <div className={detailsClassName}>
           <div className="SubmitSearchControl-commands">
             <button
-              className="SubmitSearchControl-command SubmitSearchControl-command--close"
+              className="SubmitSearchControl-command"
               onClick={this.handleClick}
             >
-              Close
+              <img
+                alt="Close search"
+                className="SubmitSearchControl-commandSvg"
+                src={crossSvg}
+              />
             </button>
           </div>
 
           <form className="SubmitSearchControl-form">
-            <div className="SubmitSearchControl-text">
-              <input
-                className="SubmitSearchControl-textInput"
-                name="search"
-                id="search"
-                type="text"
-                size="72"
+            <input
+              className="SubmitSearchControl-input"
+              name="search"
+              id="search"
+              type="text"
+              size="8"
+            />
+            <button className="SubmitSearchControl-button" type="submit">
+              <img
+                alt="Submit search"
+                className="SubmitSearchControl-buttonSvg"
+                src={inverseGlassSvg}
               />
-            </div>
-            <div className="SubmitSearchControl-submit">
-              <input
-                className="SubmitSearchControl-submitInput"
-                type="submit"
-                value="S"
-              />
-            </div>
+            </button>
           </form>
         </div>
       </div>

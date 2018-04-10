@@ -5,22 +5,18 @@
 }
 
 .SubmitSearchControl-command {
+  align-items: center;
   appearance: none;
-  background: #e9e9e9 url("./glass.svg") no-repeat center center;
+  background: #e9e9e9;
   border: 0;
   border-radius: 0;
   box-shadow: 0.125rem 0.125rem color(#e9e9e9 shade(30%));
-  color: #fff;
-  font: 300 1.25rem/1.75rem system-ui;
+  display: flex;
+  height: 3rem;
+  justify-content: center;
   margin-left: auto;
-  padding: 0.5rem 1.5rem;
-  text-align: center;
-  text-indent: -1000rem;
   white-space: normal;
-}
-
-.SubmitSearchControl-command--close {
-  background-image: url("./cross.svg");
+  width: 3rem;
 }
 
 .SubmitSearchControl-command:hover {
@@ -31,6 +27,10 @@
   box-shadow: none;
   position: relative;
   top: 0.125rem;
+}
+
+.SubmitSearchControl-commandSvg {
+  display: block;
 }
 
 .SubmitSearchControl-details {
@@ -49,45 +49,48 @@
 
 .SubmitSearchControl-form {
   display: flex;
+  height: 3rem;
   margin-top: 1rem;
 }
 
-.SubmitSearchControl-textInput {
+.SubmitSearchControl-input {
   appearance: none;
   border: 1px solid #1d1d1d;
   border-radius: 0;
   box-shadow: inset 0.25rem 0.25rem #d2d2d2;
   display: block;
+  flex: 1;
   font: 300 1.25rem/1.75rem system-ui;
   padding: 0.5rem 0.75rem;
-  width: 100%;
 }
 
-.SubmitSearchControl-submitInput {
+.SubmitSearchControl-button {
+  align-items: center;
   appearance: none;
-  background: #6aa300 url(./inverse-glass.svg) no-repeat center center;
-  border: 1px solid #6aa300;
+  background: #6aa300;
+  border: 0;
   border-radius: 0;
-  border-width: 1px 0;
-  box-shadow: 0.25rem 0.25rem color(#6aa300 shade(30%));
-  color: #fff;
-  font: 300 1.25rem/1.75rem system-ui;
-  margin: 0 0 0 0.5rem;
-  padding: 0.5rem 1.5rem;
-  text-align: center;
-  text-indent: -1000rem;
+  box-shadow: 0.125rem 0.125rem color(#6aa300 shade(30%));
+  display: flex;
+  flex: 0 0 3rem;
+  justify-content: center;
+  margin-left: 0.5rem;
   white-space: normal;
 }
 
-.SubmitSearchControl-submitInput:hover {
+.SubmitSearchControl-button:hover {
   background-color: color(#6aa300 shade(10%));
   border-color: color(#6aa300 shade(10%));
 }
 
-.SubmitSearchControl-submitInput:active {
+.SubmitSearchControl-button:active {
   box-shadow: none;
   position: relative;
   top: 0.25rem;
+}
+
+.SubmitSearchControl-buttonSvg {
+  display: block;
 }
 
 @media (min-width: 40rem) {

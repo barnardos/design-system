@@ -3,21 +3,17 @@
 }
 
 .Navigation-command {
+  align-items: center;
   appearance: none;
-  background: #e9e9e9 url("./burger.svg") no-repeat center center;
+  background: #e9e9e9;
   border: 0;
   border-radius: 0;
   box-shadow: 0.125rem 0.125rem color(#e9e9e9 shade(30%));
-  color: #fff;
-  font: 300 1.25rem/1.75rem system-ui;
-  padding: 0.5rem 1.5rem;
-  text-align: center;
-  text-indent: -1000rem;
+  display: flex;
+  height: 3rem;
+  justify-content: center;
   white-space: normal;
-}
-
-.Navigation-command--close {
-  background-image: url("./cross.svg");
+  width: 3rem;
 }
 
 .Navigation-command:hover {
@@ -28,6 +24,10 @@
   box-shadow: none;
   position: relative;
   top: 0.125rem;
+}
+
+.Navigation-commandSvg {
+  display: block;
 }
 
 .Navigation-items {

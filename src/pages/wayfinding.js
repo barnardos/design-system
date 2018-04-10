@@ -47,38 +47,39 @@ const Pages = () => (
         ]}
       />
     </div>
-    <div
-      className="Pages-example"
-      style={{
-        paddingBottom: "19rem",
-        position: "relative"
-      }}
-    >
-      <Navigation
-        isRevealing
-        items={[
-          {
-            text: "About",
-            href: "http://example.org"
-          },
-          {
-            text: "Volunteer",
-            href: "http://example.org"
-          },
-          {
-            text: "Services",
-            href: "http://example.org"
-          },
-          {
-            text: "Mission",
-            href: "http://example.org"
-          },
-          {
-            text: "Commission us",
-            href: "http://example.org"
-          }
-        ]}
-      />
+    <div className="Pages-example">
+      <div
+        style={{
+          paddingBottom: "19rem",
+          position: "relative"
+        }}
+      >
+        <Navigation
+          isRevealing
+          items={[
+            {
+              text: "About",
+              href: "http://example.org"
+            },
+            {
+              text: "Volunteer",
+              href: "http://example.org"
+            },
+            {
+              text: "Services",
+              href: "http://example.org"
+            },
+            {
+              text: "Mission",
+              href: "http://example.org"
+            },
+            {
+              text: "Commission us",
+              href: "http://example.org"
+            }
+          ]}
+        />
+      </div>
     </div>
     <Paragraph>
       {`View `}
@@ -106,14 +107,15 @@ const Pages = () => (
       {` on GitHub.`}
     </Paragraph>
     <HeadingOne>{`SubmitSearchControl`}</HeadingOne>
-    <div
-      className="Pages-example"
-      style={{
-        paddingBottom: "4rem",
-        position: "relative"
-      }}
-    >
-      <SubmitSearchControl />
+    <div className="Pages-example">
+      <div
+        style={{
+          paddingBottom: "4rem",
+          position: "relative"
+        }}
+      >
+        <SubmitSearchControl />
+      </div>
     </div>
     <Paragraph>
       {`View `}
@@ -121,65 +123,67 @@ const Pages = () => (
       {` on GitHub.`}
     </Paragraph>
     <HeadingOne>{`Header`}</HeadingOne>
-    <div
-      className="Pages-example Pages-example--full"
-      style={{
-        position: "relative"
-      }}
-    >
-      <Header
-        navigation={{
-          items: [
-            {
-              text: "About",
-              href: "http://example.org"
-            },
-            {
-              text: "Help",
-              href: "http://example.org"
-            },
-            {
-              text: "Services",
-              href: "http://example.org"
-            }
-          ]
+    <div className="Pages-example Pages-example--full">
+      <div
+        style={{
+          position: "relative"
         }}
-      />
+      >
+        <Header
+          navigation={{
+            items: [
+              {
+                text: "About",
+                href: "http://example.org"
+              },
+              {
+                text: "Help",
+                href: "http://example.org"
+              },
+              {
+                text: "Services",
+                href: "http://example.org"
+              }
+            ]
+          }}
+        />
+      </div>
     </div>
-    <div
-      className="Pages-example Pages-example--full"
-      style={{
-        position: "relative"
-      }}
-    >
-      <Header
-        navigation={{
-          items: [
+    <div className="Pages-example Pages-example--full">
+      <div
+        style={{
+          position: "relative"
+        }}
+      >
+        <Header
+          navigation={{
+            items: [
+              {
+                text: "About",
+                href: "http://example.org"
+              },
+              {
+                text: "Help",
+                href: "http://example.org"
+              },
+              {
+                text: "Services",
+                href: "http://example.org"
+              }
+            ]
+          }}
+          links={[
             {
-              text: "About",
+              text: "Shop",
               href: "http://example.org"
             },
             {
-              text: "Help",
-              href: "http://example.org"
-            },
-            {
-              text: "Services",
+              text: "Volunteer",
               href: "http://example.org"
             }
-          ]
-        }}
-        links={[
-          {
-            text: "Shop",
-            href: "http://example.org"
-          },
-          {
-            text: "Volunteer",
-            href: "http://example.org"
-          }
-        ]}
-      />
+          ]}
+        />
+      </div>
     </div>
     <Paragraph>
       {`View `}
