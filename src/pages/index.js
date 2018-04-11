@@ -41,6 +41,10 @@ const Pages = () => (
           {
             text: "Wayfinding",
             to: "/wayfinding/"
+          },
+          {
+            text: "Writing content",
+            to: "/writing-content/"
           }
         ]}
       />
