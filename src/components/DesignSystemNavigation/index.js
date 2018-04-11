@@ -9,7 +9,11 @@ const DesignSystemNavigation = ({ items }) => (
     <ul>
       {items.map(({ text, to }, index) => (
         <li className="DesignSystemNavigation-item" key={index}>
-          <GatsbyLink className="DesignSystemNavigation-link" to={to}>
+          <GatsbyLink
+            className="DesignSystemNavigation-link"
+            data-test-link={text}
+            to={to}
+          >
             {text}
           </GatsbyLink>
         </li>
