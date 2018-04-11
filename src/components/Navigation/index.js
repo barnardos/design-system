@@ -1,6 +1,9 @@
 import PropTypes from "prop-types";
 import React, { Component } from "react";
 
+import burgerSvg from "./burger.svg";
+import crossSvg from "./cross.svg";
+
 import "./index.css";
 
 class Navigation extends Component {
@@ -29,7 +32,11 @@ class Navigation extends Component {
       <nav className={navigationClassName}>
         {isRevealing && (
           <button className="Navigation-command" onClick={this.handleClick}>
-            Menu
+            <img
+              alt="Open menu"
+              className="Navigation-commandSvg"
+              src={burgerSvg}
+            />
           </button>
         )}
         <div className={detailsClassName}>
@@ -38,7 +45,11 @@ class Navigation extends Component {
               className="Navigation-command Navigation-command--close"
               onClick={this.handleClick}
             >
-              Close
+              <img
+                alt="Close menu"
+                className="Navigation-commandSvg"
+                src={crossSvg}
+              />
             </button>
           )}
           <ul className="Navigation-items">
