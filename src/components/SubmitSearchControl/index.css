@@ -93,7 +93,7 @@
   display: block;
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 56rem) {
   .SubmitSearchControl-commands {
     display: none;
   }

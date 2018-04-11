@@ -37,11 +37,11 @@ const Pages = () => (
             href: "http://example.org"
           },
           {
-            text: "Help",
+            text: "Services",
             href: "http://example.org"
           },
           {
-            text: "Services",
+            text: "Donate",
             href: "http://example.org"
           }
         ]}
@@ -66,15 +66,15 @@ const Pages = () => (
               href: "http://example.org"
             },
             {
-              text: "Services",
-              href: "http://example.org"
-            },
-            {
               text: "Mission",
               href: "http://example.org"
             },
             {
               text: "Commission us",
+              href: "http://example.org"
+            },
+            {
+              text: "Donate",
               href: "http://example.org"
             }
           ]}
@@ -95,7 +95,7 @@ const Pages = () => (
             to: "/"
           },
           {
-            text: "Services",
+            text: "Donate",
             to: "/"
           }
         ]}
@@ -126,7 +126,8 @@ const Pages = () => (
     <div className="Pages-example Pages-example--full">
       <div
         style={{
-          position: "relative"
+          position: "relative",
+          paddingBottom: "3rem"
         }}
       >
         <Header
@@ -137,51 +138,15 @@ const Pages = () => (
                 href: "http://example.org"
               },
               {
-                text: "Help",
+                text: "Services",
                 href: "http://example.org"
               },
               {
-                text: "Services",
+                text: "Donate",
                 href: "http://example.org"
               }
             ]
           }}
-        />
-      </div>
-    </div>
-    <div className="Pages-example Pages-example--full">
-      <div
-        style={{
-          position: "relative"
-        }}
-      >
-        <Header
-          navigation={{
-            items: [
-              {
-                text: "About",
-                href: "http://example.org"
-              },
-              {
-                text: "Help",
-                href: "http://example.org"
-              },
-              {
-                text: "Services",
-                href: "http://example.org"
-              }
-            ]
-          }}
-          links={[
-            {
-              text: "Shop",
-              href: "http://example.org"
-            },
-            {
-              text: "Volunteer",
-              href: "http://example.org"
-            }
-          ]}
         />
       </div>
     </div>
