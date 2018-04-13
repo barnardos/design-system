@@ -175,7 +175,7 @@ const Pages = () => (
     <Paragraph>{`When using this component you should:`}</Paragraph>
     <UnorderedList>
       <ListItem>{`only use it once on each page`}</ListItem>
-      <ListItem>{`use a verb, for example "Save"`}</ListItem>
+      <ListItem>{`use a verb, for example save`}</ListItem>
       <ListItem>{`only use the Green colour`}</ListItem>
     </UnorderedList>
     <div className="Pages-example">
