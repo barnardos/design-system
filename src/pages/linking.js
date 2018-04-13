@@ -48,7 +48,7 @@ const Pages = () => (
     <Paragraph>{`When using this component you should:`}</Paragraph>
     <UnorderedList>
       <ListItem>{`limit the number on each page`}</ListItem>
-      <ListItem>{`use a verb, for example "Donate"`}</ListItem>
+      <ListItem>{`use a verb, for example donate`}</ListItem>
       <ListItem>{`not use the Green colour`}</ListItem>
     </UnorderedList>
     <div className="Pages-example">

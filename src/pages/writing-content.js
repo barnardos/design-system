@@ -17,8 +17,10 @@ const Pages = () => (
     </Helmet>
     <GatsbyLink className="Pages-home" to="/">{`Home`}</GatsbyLink>
     <Title>{`Writing content`}</Title>
-    <Paragraph
-    >{`When writing content you should imagine you're talking to your reader. You should use inclusive language. To be clear and concise:`}</Paragraph>
+    <Paragraph>
+      {`When writing content use inclusive language and imagine you're talking to the reader.`}
+    </Paragraph>
+    <Paragraph>{`To be clear and concise you should:`}</Paragraph>
     <UnorderedList>
       <ListItem>{`avoid jargon`}</ListItem>
       <ListItem>{`avoid the passive`}</ListItem>
@@ -29,17 +31,19 @@ const Pages = () => (
     <Paragraph>{`When styling your writing you should:`}</Paragraph>
     <UnorderedList>
       <ListItem>{`use sentence case`}</ListItem>
-      <ListItem>{`start bullets with a lowercase`}</ListItem>
-      <ListItem>{`end bullets without any punctuation`}</ListItem>
-      <ListItem>{`avoid the use of bold`}</ListItem>
+
+      <ListItem>{`avoid use of bold`}</ListItem>
       <ListItem>{`use italics for general emphasis`}</ListItem>
-      <ListItem>{`write dates as: 9 January 2018`}</ListItem>
-      <ListItem>{`use the 12-hour clock e.g. 10am and 2.30pm`}</ListItem>
-      <ListItem
-      >{`use noon and midnight instead of 12 noon and 12 midnight`}</ListItem>
       <ListItem>{`use words for single-figure numbers`}</ListItem>
       <ListItem>{`use single quotation marks for quoted speech`}</ListItem>
       <ListItem>{`only use the ampersand when space is tight`}</ListItem>
+      <ListItem>{`write dates as 9 January 2018`}</ListItem>
+      <ListItem
+      >{`use the 12-hour clock, for example 10am and 2.30pm`}</ListItem>
+      <ListItem
+      >{`use noon and midnight instead of 12 noon and 12 midnight`}</ListItem>
+      <ListItem>{`start bullets with a lowercase`}</ListItem>
+      <ListItem>{`end bullets without any punctuation`}</ListItem>
     </UnorderedList>
     <HeadingOne>{`Spelling`}</HeadingOne>
     <UnorderedList>
