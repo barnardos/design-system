@@ -25,10 +25,10 @@
   font: 600 var(--type-0)/1.5rem system-ui;
 }
 
-.SubmitControls-controls {
+.SubmitControls-controls:not(:first-child) {
   margin-top: 2rem;
 }
 
 .SubmitControls-submit {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }

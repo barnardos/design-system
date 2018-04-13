@@ -39,6 +39,10 @@ const Pages = () => (
             to: "/requesting-information/"
           },
           {
+            text: "Filtering",
+            to: "/filtering/"
+          },
+          {
             text: "Wayfinding",
             to: "/wayfinding/"
           },

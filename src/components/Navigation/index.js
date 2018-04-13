@@ -1,6 +1,8 @@
 import PropTypes from "prop-types";
 import React, { Component } from "react";
 
+import Command from "../Command";
+
 import burgerSvg from "./burger.svg";
 import crossSvg from "./cross.svg";
 
@@ -31,26 +33,19 @@ class Navigation extends Component {
     return (
       <nav className={navigationClassName}>
         {isRevealing && (
-          <button className="Navigation-command" onClick={this.handleClick}>
-            <img
-              alt="Open menu"
-              className="Navigation-commandSvg"
-              src={burgerSvg}
-            />
-          </button>
+          <Command onClick={this.handleClick}>
+            <img alt="Open menu" src={burgerSvg} style={{ width: "1.5rem" }} />
+          </Command>
         )}
         <div className={detailsClassName}>
           {isRevealing && (
-            <button
-              className="Navigation-command Navigation-command--close"
-              onClick={this.handleClick}
-            >
+            <Command onClick={this.handleClick}>
               <img
                 alt="Close menu"
-                className="Navigation-commandSvg"
                 src={crossSvg}
+                style={{ width: "1.5rem" }}
               />
-            </button>
+            </Command>
           )}
           <ul className="Navigation-items">
             {this.props.items.map(({ text, href }, index) => (

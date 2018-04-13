@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 
+import Command from "../Command";
+
 import crossSvg from "./cross.svg";
 import glassSvg from "./glass.svg";
 import inverseGlassSvg from "./inverse-glass.svg";
@@ -27,30 +29,20 @@ class SubmitSearchControl extends Component {
     return (
       <div className="SubmitSearchControl">
         <div className="SubmitSearchControl-commands">
-          <button
-            className="SubmitSearchControl-command"
-            onClick={this.handleClick}
-          >
-            <img
-              alt="Open search"
-              className="SubmitSearchControl-commandSvg"
-              src={glassSvg}
-            />
-          </button>
+          <Command onClick={this.handleClick}>
+            <img alt="Open search" src={glassSvg} style={{ width: "1.5rem" }} />
+          </Command>
         </div>
 
         <div className={detailsClassName}>
           <div className="SubmitSearchControl-commands">
-            <button
-              className="SubmitSearchControl-command"
-              onClick={this.handleClick}
-            >
+            <Command onClick={this.handleClick}>
               <img
                 alt="Close search"
-                className="SubmitSearchControl-commandSvg"
                 src={crossSvg}
+                style={{ width: "1.5rem" }}
               />
-            </button>
+            </Command>
           </div>
 
           <form className="SubmitSearchControl-form">

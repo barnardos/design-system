@@ -1,0 +1,21 @@
+@import "../../custom-properties.css";
+
+/** @define Filter; */
+
+.Filter-details {
+  display: none;
+}
+
+.Filter-details--active {
+  background: var(--white);
+  bottom: 0;
+  display: block;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.Filter-submitControls {
+  margin-top: 1rem;
+}
