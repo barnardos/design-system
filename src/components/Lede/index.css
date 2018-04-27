@@ -1,7 +1,9 @@
+@import "../../custom-properties.css";
+
 /** @define Lede; */
 
 .Lede {
-  font: 300 1.625rem/2rem Nova, sans-serif;
+  font: 300 var(--type-4)/2rem Nova, sans-serif;
 }
 
 .Lede:not(:first-child) {

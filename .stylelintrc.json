@@ -16,7 +16,7 @@
       "#1d1d1d",
       "#fff"
     ],
-    "plugin/font-font-size-whitelist": ["/var\\(--step/"],
+    "plugin/font-font-size-whitelist": ["/var\\(--type-/"],
     "plugin/function-arguments-whitelist": {
       "shade": ["10%", "20%", "30%"],
       "tint": ["10%", "20%", "30%", "40%", "50%", "60%", "70%", "80%", "90%"]
@@ -51,8 +51,9 @@
     ],
     "at-rule-no-unknown": null,
     "at-rule-no-vendor-prefix": true,
-    "at-rule-whitelist": ["font-face", "media"],
+    "at-rule-whitelist": ["font-face", "import", "media"],
     "color-hex-length": "short",
+    "color-no-hex": true,
     "custom-property-empty-line-before": [
       "always",
       {
@@ -70,8 +71,11 @@
       }
     ],
     "declaration-no-important": true,
+    "declaration-property-value-whitelist": {
+      "font-size": ["/^var\\(--type-/"]
+    },
     "declaration-property-unit-whitelist": {
-      "outline": ["px", "rem"],
+      "outline": ["%", "px", "rem"],
       "/^font/": ["rem"],
       "/^margin/": ["rem", "vw"],
       "/^padding/": ["rem"]
@@ -79,7 +83,15 @@
     "font-family-no-missing-generic-family-keyword": null,
     "function-url-no-scheme-relative": true,
     "function-url-scheme-whitelist": [],
-    "function-whitelist": ["calc", "color", "repeat", "shade", "url"],
+    "function-whitelist": [
+      "calc",
+      "color",
+      "repeat",
+      "shade",
+      "tint",
+      "url",
+      "var"
+    ],
     "media-feature-name-no-vendor-prefix": true,
     "media-feature-name-whitelist": ["min-width"],
     "number-max-precision": 4,
@@ -163,7 +175,8 @@
       "first-child",
       "focus",
       "hover",
-      "not"
+      "not",
+      "root"
     ],
     "unit-no-unknown": null,
     "unit-whitelist": ["%", "fr", "px", "rem", "vw"],

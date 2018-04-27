@@ -1,0 +1,34 @@
+/*
+ * Shared custom properties
+ */
+
+:root {
+  /* type */
+  --type-ratio: 1.125;
+  --type-0: 1rem;
+  --type-1: calc(var(--type-0) * var(--type-ratio));
+  --type-2: calc(var(--type-1) * var(--type-ratio));
+  --type-3: calc(var(--type-2) * var(--type-ratio));
+  --type-4: calc(var(--type-3) * var(--type-ratio));
+  --type-5: calc(var(--type-4) * var(--type-ratio));
+  --type-6: calc(var(--type-5) * var(--type-ratio));
+  --type-7: calc(var(--type-6) * var(--type-ratio));
+  --type-8: calc(var(--type-7) * var(--type-ratio));
+  --type-9: calc(var(--type-8) * var(--type-ratio));
+  --type-10: calc(var(--type-9) * var(--type-ratio));
+  --type-11: calc(var(--type-10) * var(--type-ratio));
+  --type-12: calc(var(--type-11) * var(--type-ratio));
+  --type--1: calc(var(--type-0) / var(--type-ratio));
+  --type--2: calc(var(--type--1) / var(--type-ratio));
+
+  /* colors */
+  /* stylelint-disable color-no-hex */
+  --green: #6aa300;
+  --pink: #cc0070;
+  --teal: #0099a9;
+  --purple: #6e2066;
+  --orange: #e86c00;
+  --red: #c30000;
+  --black: #1d1d1d;
+  --white: #fff;
+}

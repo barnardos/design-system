@@ -1,10 +1,12 @@
+@import "../../custom-properties.css";
+
 .DesignSystemNavigation {
   padding-top: 1rem;
   position: relative;
 }
 
 .DesignSystemNavigation::before {
-  background: #a5a5a5;
+  background: color(var(--black) tint(60%));
   content: "";
   height: 0.0625rem;
   left: 0;
@@ -18,5 +20,5 @@
 }
 
 .DesignSystemNavigation-link {
-  font: 300 1rem/1.5rem system-ui;
+  font: 300 var(--type-0)/1.5rem system-ui;
 }

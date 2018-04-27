@@ -1,3 +1,5 @@
+@import "../../custom-properties.css";
+
 /** @define OfManyChoiceControl; */
 
 .OfManyChoiceControl-fieldset {
@@ -10,12 +12,12 @@
 
 .OfManyChoiceControl-legend {
   display: block;
-  font: 600 1.375rem/1.75rem system-ui;
+  font: 600 var(--type-3)/1.75rem system-ui;
 }
 
 .OfManyChoiceControl-hint {
-  color: #616161;
-  font: 300 1rem/1.5rem system-ui;
+  color: color(var(--black) tint(30%));
+  font: 300 var(--type-0)/1.5rem system-ui;
   margin-top: 0.5rem;
 }
 
@@ -24,8 +26,8 @@
 }
 
 .OfManyChoiceControl-validationInner {
-  color: #c30000;
-  font: 600 1rem/1.5rem system-ui;
+  color: var(--red);
+  font: 600 var(--type-0)/1.5rem system-ui;
 }
 
 .OfManyChoiceControl-choiceControls {
@@ -41,11 +43,11 @@
  */
 
 .OfManyChoiceControl--errored {
-  box-shadow: inset 0.25rem 0 0 #c30000;
+  box-shadow: inset 0.25rem 0 0 var(--red);
   padding-left: 1rem;
 }
 
 .OfManyChoiceControl--errored .OfManyChoiceControl-element {
-  border-color: #c30000;
-  box-shadow: inset 0.25rem 0.25rem #f3cccc;
+  border-color: var(--red);
+  box-shadow: inset 0.25rem 0.25rem color(var(--red) tint(80%));
 }

@@ -1,7 +1,9 @@
+@import "../custom-properties.css";
+
 /** @define Pages */
 
 .Pages-home {
-  font: 300 1rem/1.5rem system-ui;
+  font: 300 var(--type-0)/1.5rem system-ui;
 }
 
 .Pages-navigation {
@@ -9,7 +11,7 @@
 }
 
 .Pages-typography {
-  background: #e9e9e9;
+  background: color(var(--black) tint(90%));
   margin-top: 1rem;
   padding: 1rem;
 }
@@ -19,12 +21,12 @@
 }
 
 .Pages-typographyItemLabel {
-  font: 300 0.875rem/1.5rem system-ui;
+  font: 300 var(--type--1)/1.5rem system-ui;
 }
 
 .Pages-example {
   margin-top: 1.5rem;
-  outline: 1px solid #a5a5a5;
+  outline: 1px solid color(var(--black) tint(60%));
   padding: 2.5rem 1rem 1rem;
   position: relative;
 }
@@ -36,12 +38,12 @@
 }
 
 .Pages-example::before {
-  background: #a5a5a5;
-  color: #fff;
+  background: color(var(--black) tint(60%));
+  color: var(--white);
   content: "Example";
   display: block;
   font-family: system-ui;
-  font-size: 0.875rem;
+  font-size: var(--type--1);
   font-weight: 300;
   left: 0;
   padding: 0.25rem 0.5rem;
@@ -50,15 +52,15 @@
 }
 
 .Pages-rules {
-  background-color: #e6f5f7;
+  background-color: color(var(--teal) tint(90%));
   margin-top: 2rem;
   padding: 1rem;
   position: relative;
 }
 
 .Pages-rules::before {
-  background: #0099a9;
-  color: #fff;
+  background: var(--teal);
+  color: var(--white);
   content: "";
   height: 0.25rem;
   left: 0;
@@ -78,11 +80,11 @@
 }
 
 .Pages-colour {
-  background: #e9e9e9;
+  background: color(var(--black) tint(90%));
   margin-top: 1rem;
   padding: 1rem;
 }
 
 .Pages-colourItem {
-  font: 300 1rem/1.5rem system-ui;
+  font: 300 var(--type-0)/1.5rem system-ui;
 }

@@ -1,12 +1,14 @@
+@import "../../custom-properties.css";
+
 /** @define SubmitControls; */
 
 .SubmitControls-summary {
-  box-shadow: inset 0 0 0 0.25rem #c30000;
+  box-shadow: inset 0 0 0 0.25rem var(--red);
   padding: 1rem;
 }
 
 .SubmitControls-validation {
-  font: 600 1.5rem/1.75rem system-ui;
+  font: 600 var(--type-3)/1.75rem system-ui;
 }
 
 .SubmitControls-validationItems {
@@ -19,8 +21,8 @@
 }
 
 .SubmitControls-validationItemLink {
-  color: #c30000;
-  font: 600 1rem/1.5rem system-ui;
+  color: var(--red);
+  font: 600 var(--type-0)/1.5rem system-ui;
 }
 
 .SubmitControls-controls {
