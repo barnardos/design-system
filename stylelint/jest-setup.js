@@ -20,7 +20,7 @@ global.testRule = (rule, schema) => {
 
   describe(schema.ruleName, () => {
     const stylelintConfig = {
-      plugins: ["./tools/stylelint/index.js"],
+      plugins: ["./stylelint/index.js"],
       rules: {
         [schema.ruleName]: schema.config
       }

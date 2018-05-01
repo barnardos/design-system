@@ -1,7 +1,7 @@
 {
   "extends": "stylelint-config-recommended",
   "plugins": [
-    "./tools/stylelint/index.js",
+    "./stylelint/index.js",
     "stylelint-order",
     "stylelint-selector-bem-pattern"
   ],
