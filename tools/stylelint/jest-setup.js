@@ -1,5 +1,3 @@
-/* eslint-disable import/unambiguous */
-
 const get = require("lodash/get");
 const stylelint = require("stylelint");
 

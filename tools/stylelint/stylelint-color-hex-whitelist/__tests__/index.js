@@ -1,6 +1,3 @@
-/* eslint-disable import/unambiguous */
-/* global testRule: true */
-
 const rule = require("..");
 const { messages, ruleName } = rule;
 

@@ -1,5 +1,3 @@
-/* eslint-disable import/unambiguous */
-
 const isArray = require("lodash/isArray");
 const parseCssFont = require("parse-css-font");
 const {

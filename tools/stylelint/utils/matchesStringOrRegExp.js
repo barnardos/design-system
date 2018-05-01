@@ -1,5 +1,3 @@
-/* eslint-disable import/unambiguous */
-
 /* Pulled from stylelint repo */
 
 /* @flow */

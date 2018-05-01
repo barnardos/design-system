@@ -1,5 +1,3 @@
-/* eslint-disable import/unambiguous */
-
 module.exports = [
   require("./stylelint-color-hex-whitelist"),
   require("./stylelint-font-font-size-whitelist"),

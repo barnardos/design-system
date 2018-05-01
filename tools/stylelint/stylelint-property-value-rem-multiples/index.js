@@ -1,5 +1,3 @@
-/* eslint-disable import/unambiguous */
-
 const find = require("lodash/find");
 const isInteger = require("lodash/isInteger");
 const isObject = require("lodash/isObject");
