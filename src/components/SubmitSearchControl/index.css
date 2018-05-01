@@ -4,35 +4,7 @@
 
 .SubmitSearchControl-commands {
   display: flex;
-}
-
-.SubmitSearchControl-command {
-  align-items: center;
-  appearance: none;
-  background: color(var(--black) tint(90%));
-  border: 0;
-  border-radius: 0;
-  box-shadow: 0.125rem 0.125rem color(color(var(--black) tint(90%)) shade(30%));
-  display: flex;
-  height: 3rem;
-  justify-content: center;
-  margin-left: auto;
-  white-space: normal;
-  width: 3rem;
-}
-
-.SubmitSearchControl-command:hover {
-  background-color: color(color(var(--black) tint(90%)) shade(10%));
-}
-
-.SubmitSearchControl-command:active {
-  box-shadow: none;
-  position: relative;
-  top: 0.125rem;
-}
-
-.SubmitSearchControl-commandSvg {
-  display: block;
+  flex-direction: row-reverse;
 }
 
 .SubmitSearchControl-details {

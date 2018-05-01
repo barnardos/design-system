@@ -4,7 +4,7 @@ import React from "react";
 import "./index.css";
 
 const Title = ({ children }) => (
-  <h1 className="Title" data-test-title>
+  <h1 className="Title" data-test-title="">
     {children}
   </h1>
 );
