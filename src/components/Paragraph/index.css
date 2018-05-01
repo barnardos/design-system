@@ -1,7 +1,9 @@
+@import "../../custom-properties.css";
+
 /** @define Paragraph; */
 
 .Paragraph {
-  font: 300 1rem/1.5rem system-ui;
+  font: 300 var(--type-0)/1.5rem system-ui;
 }
 
 .Paragraph:not(:first-child) {

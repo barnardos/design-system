@@ -1,13 +1,15 @@
+@import "../../custom-properties.css";
+
 /** @define Submit; */
 
 .Submit {
   appearance: none;
-  background-color: #6aa300;
+  background-color: var(--green);
   border: 0;
   border-radius: 0;
-  box-shadow: 0.25rem 0.25rem color(#6aa300 shade(30%));
-  color: #fff;
-  font: 600 1.25rem/1.5rem Nova, sans-serif;
+  box-shadow: 0.25rem 0.25rem color(var(--green) shade(30%));
+  color: var(--white);
+  font: 600 var(--type-2)/1.5rem Nova, sans-serif;
   padding: 0.75rem 3rem;
   text-align: center;
   white-space: normal;
@@ -15,7 +17,7 @@
 }
 
 .Submit:hover {
-  background-color: color(#6aa300 shade(10%));
+  background-color: color(var(--green) shade(10%));
 }
 
 .Submit:active {

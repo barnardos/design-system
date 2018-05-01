@@ -1,3 +1,5 @@
+@import "../../custom-properties.css";
+
 /** @define Swatch; */
 
 .Swatch {
@@ -8,13 +10,13 @@
 }
 
 .Swatch-label {
-  color: #fff;
-  font: 600 1rem/1.5rem system-ui;
+  color: var(--white);
+  font: 600 var(--type-0)/1.5rem system-ui;
 }
 
 .Swatch-hex {
-  color: #fff;
-  font: 300 1rem/1.5rem system-ui;
+  color: var(--white);
+  font: 300 var(--type-0)/1.5rem system-ui;
 }
 
 /**
@@ -30,11 +32,11 @@
  */
 
 .Swatch--inverted .Swatch-label {
-  color: #1d1d1d;
+  color: var(--black);
 }
 
 .Swatch--inverted .Swatch-hex {
-  color: #1d1d1d;
+  color: var(--black);
 }
 
 /**

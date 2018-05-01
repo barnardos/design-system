@@ -1,7 +1,38 @@
 {
   "extends": "stylelint-config-recommended",
-  "plugins": ["stylelint-order", "stylelint-selector-bem-pattern"],
+  "plugins": [
+    "./stylelint/index.js",
+    "stylelint-order",
+    "stylelint-selector-bem-pattern"
+  ],
   "rules": {
+    "plugin/color-hex-whitelist": [
+      "#6aa300",
+      "#cc0070",
+      "#0099a9",
+      "#6e2066",
+      "#e86c00",
+      "#c30000",
+      "#1d1d1d",
+      "#fff"
+    ],
+    "plugin/font-font-size-whitelist": ["/var\\(--type-/"],
+    "plugin/function-arguments-whitelist": {
+      "shade": ["10%", "20%", "30%"],
+      "tint": ["10%", "20%", "30%", "40%", "50%", "60%", "70%", "80%", "90%"]
+    },
+    "plugin/property-value-rem-multiples": [
+      {
+        "/^border": 8,
+        "/box-shadow/": 8,
+        "font": 4,
+        "grid-gap": 8,
+        "line-height": 4,
+        "/^margin/": 8,
+        "/^padding/": 8
+      },
+      { "ignoreNumbers": ["0.125", "0.25", "0.5", "0.75"] }
+    ],
     "order/order": ["custom-properties", "declarations"],
     "order/properties-alphabetical-order": [true, { "severity": "warning" }],
     "plugin/selector-bem-pattern": [
@@ -20,8 +51,9 @@
     ],
     "at-rule-no-unknown": null,
     "at-rule-no-vendor-prefix": true,
-    "at-rule-whitelist": ["font-face", "media"],
+    "at-rule-whitelist": ["font-face", "import", "media"],
     "color-hex-length": "short",
+    "color-no-hex": true,
     "custom-property-empty-line-before": [
       "always",
       {
@@ -39,8 +71,11 @@
       }
     ],
     "declaration-no-important": true,
+    "declaration-property-value-whitelist": {
+      "font-size": ["/^var\\(--type-/"]
+    },
     "declaration-property-unit-whitelist": {
-      "outline": ["px", "rem"],
+      "outline": ["%", "px", "rem"],
       "/^font/": ["rem"],
       "/^margin/": ["rem", "vw"],
       "/^padding/": ["rem"]
@@ -48,7 +83,15 @@
     "font-family-no-missing-generic-family-keyword": null,
     "function-url-no-scheme-relative": true,
     "function-url-scheme-whitelist": [],
-    "function-whitelist": ["calc", "color", "repeat", "shade", "url"],
+    "function-whitelist": [
+      "calc",
+      "color",
+      "repeat",
+      "shade",
+      "tint",
+      "url",
+      "var"
+    ],
     "media-feature-name-no-vendor-prefix": true,
     "media-feature-name-whitelist": ["min-width"],
     "number-max-precision": 4,
@@ -132,7 +175,8 @@
       "first-child",
       "focus",
       "hover",
-      "not"
+      "not",
+      "root"
     ],
     "unit-no-unknown": null,
     "unit-whitelist": ["%", "fr", "px", "rem", "vw"],

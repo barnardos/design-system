@@ -1,6 +1,10 @@
+@import "../../custom-properties.css";
+
+/** @define Header; */
+
 .Header {
   align-items: flex-end;
-  box-shadow: inset 0 -1px 0 0 #e9e9e9;
+  box-shadow: inset 0 -1px 0 0 color(var(--black) tint(90%));
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(2, 1fr);
@@ -46,19 +50,19 @@
 }
 
 .Header-link {
-  background-color: #1d1d1d;
-  border: 1px solid #1d1d1d;
+  background-color: var(--black);
+  border: 1px solid var(--black);
   border-width: 1px 0;
-  color: #fff;
+  color: var(--white);
   display: block;
-  font: 600 1.25rem/1.75rem Nova, sans-serif;
+  font: 600 var(--type-2)/1.75rem Nova, sans-serif;
   padding: 0.5rem;
   text-align: center;
   white-space: nowrap;
 }
 
 .Header-link:hover {
-  background-color: #000;
+  background-color: var(--black);
 }
 
 @media (min-width: 36rem) {

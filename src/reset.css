@@ -1,0 +1,10 @@
+/**
+ * Minimal reset
+ */
+
+/* stylelint-disable selector-max-universal */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

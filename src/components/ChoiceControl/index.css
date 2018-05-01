@@ -1,3 +1,5 @@
+@import "../../custom-properties.css";
+
 /** @define ChoiceControl; */
 
 .ChoiceControl {
@@ -6,6 +8,6 @@
 }
 
 .ChoiceControl-label {
-  font: 300 1.25rem/1.5rem system-ui;
+  font: 300 var(--type-2)/1.5rem system-ui;
   margin-left: 1rem;
 }

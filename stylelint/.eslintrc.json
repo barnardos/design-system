@@ -1,0 +1,8 @@
+{
+  "globals": {
+    "testRule": true
+  },
+  "rules": {
+    "import/unambiguous": "off"
+  }
+}
