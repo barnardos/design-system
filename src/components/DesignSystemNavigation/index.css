@@ -1,19 +1,6 @@
 @import "../../custom-properties.css";
 
-.DesignSystemNavigation {
-  padding-top: 1rem;
-  position: relative;
-}
-
-.DesignSystemNavigation::before {
-  background: color(var(--black) tint(60%));
-  content: "";
-  height: 0.0625rem;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
+/** @define DesignSystemNavigation; */
 
 .DesignSystemNavigation-item {
   list-style: none;

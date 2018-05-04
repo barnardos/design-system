@@ -14,7 +14,7 @@ const Pages = () => (
     </Helmet>
     <Title>{`Design system`}</Title>
     <Paragraph
-    >{`Helping digital teams efficiently create a consistent experience for service users, including children and young people.`}</Paragraph>
+    >{`The Barnardo’s Design System is a central resource that helps you create great digital experiences with us.`}</Paragraph>
     <div className="Pages-navigation">
       <DesignSystemNavigation
         items={[
@@ -53,6 +53,12 @@ const Pages = () => (
         ]}
       />
     </div>
+    <Paragraph>{`This living resource exists to guide, not limit.`}</Paragraph>
+    <Paragraph>
+      {`Everyone’s welcome to `}
+      <a href="https://github.com/barnardos/design-system">{`contribute and give feedback`}</a>
+      {`.`}
+    </Paragraph>
   </div>
 );
 
