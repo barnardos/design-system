@@ -208,6 +208,7 @@ const Pages = () => (
             control: "singlelineText",
             id: "submit-controls-single-line-text-example",
             label: "Name of the meal",
+            size: "48",
             validation: "Enter the name of the meal"
           },
           {
