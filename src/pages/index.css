@@ -3,6 +3,7 @@
 /** @define Pages */
 
 .Pages-home {
+  display: inline-block;
   font: 300 var(--type-0)/1.5rem system-ui;
 }
 
@@ -25,8 +26,8 @@
 }
 
 .Pages-example {
+  box-shadow: inset 0 0 0 1px color(var(--black) tint(60%));
   margin-top: 1.5rem;
-  outline: 1px solid color(var(--black) tint(60%));
   padding: 2.5rem 1rem 1rem;
   position: relative;
 }

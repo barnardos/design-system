@@ -51,8 +51,6 @@
 
 .Header-link {
   background-color: var(--black);
-  border: 1px solid var(--black);
-  border-width: 1px 0;
   color: var(--white);
   display: block;
   font: 600 var(--type-2)/1.75rem Nova, sans-serif;
