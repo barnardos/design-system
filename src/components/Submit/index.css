@@ -5,7 +5,7 @@
 .Submit {
   appearance: none;
   background-color: var(--green);
-  border: 0;
+  border: none;
   border-radius: 0;
   box-shadow: 0.25rem 0.25rem color(var(--green) shade(30%));
   color: var(--white);

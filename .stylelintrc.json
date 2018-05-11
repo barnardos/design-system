@@ -72,6 +72,7 @@
     ],
     "declaration-no-important": true,
     "declaration-property-value-whitelist": {
+      "border": ["none"],
       "font-size": ["/^var\\(--type-/"]
     },
     "declaration-property-unit-whitelist": {
@@ -103,9 +104,7 @@
       "background-color",
       "background-image",
       "background",
-      "border-color",
       "border-radius",
-      "border-width",
       "border",
       "bottom",
       "box-shadow",
@@ -139,7 +138,6 @@
       "margin",
       "max-width",
       "min-width",
-      "outline",
       "padding-left",
       "padding-top",
       "padding",
