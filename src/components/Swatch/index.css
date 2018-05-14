@@ -2,20 +2,18 @@
 
 /** @define Swatch; */
 
-.Swatch {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  padding: 0.25rem;
+.Swatch-color {
+  height: 2.5rem;
 }
 
 .Swatch-label {
-  color: var(--white);
+  color: var(--black);
   font: 600 var(--type-0)/1.5rem system-ui;
+  margin-top: 0.25rem;
 }
 
 .Swatch-hex {
-  color: var(--white);
+  color: var(--black);
   font: 300 var(--type-0)/1.5rem system-ui;
 }
 
@@ -23,26 +21,6 @@
  * bordered
  */
 
-.Swatch--bordered {
-  box-shadow: inset 0 0 0 1px grey;
-}
-
-/**
- * inverted
- */
-
-.Swatch--inverted .Swatch-label {
-  color: var(--black);
-}
-
-.Swatch--inverted .Swatch-hex {
-  color: var(--black);
-}
-
-/**
- * primary
- */
-
-.Swatch--primary {
-  padding: 1.5rem;
+.Swatch-color--bordered {
+  box-shadow: inset 0 0 0 1px color(var(--black) tint(60%));
 }

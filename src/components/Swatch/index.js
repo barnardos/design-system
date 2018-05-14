@@ -3,12 +3,11 @@ import React from "react";
 
 import "./index.css";
 
-const Swatch = ({ hex, label, bordered, inverted, primary }) => {
-  const className = `Swatch ${bordered ? "Swatch--bordered" : ""}
-  ${inverted ? "Swatch--inverted" : ""}
-  ${primary ? "Swatch--primary" : ""}`;
+const Swatch = ({ hex, label, bordered }) => {
+  const className = `Swatch-color ${bordered ? "Swatch-color--bordered" : ""}`;
   return (
-    <div className={className} style={{ backgroundColor: hex }}>
+    <div className="Swatch">
+      <div className={className} style={{ backgroundColor: hex }} />
       <p className="Swatch-label">{label}</p>
       <p className="Swatch-hex">{hex}</p>
     </div>
@@ -18,9 +17,7 @@ const Swatch = ({ hex, label, bordered, inverted, primary }) => {
 Swatch.propTypes = {
   bordered: PropTypes.bool,
   hex: PropTypes.string.isRequired,
-  inverted: PropTypes.bool,
-  label: PropTypes.string.isRequired,
-  primary: PropTypes.bool
+  label: PropTypes.string.isRequired
 };
 
 export default Swatch;
