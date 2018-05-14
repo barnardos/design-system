@@ -33,19 +33,27 @@ class Navigation extends Component {
     return (
       <nav className={navigationClassName}>
         {isRevealing && (
-          <Command onClick={this.handleClick}>
-            <img alt="Open menu" src={burgerSvg} style={{ width: "1.5rem" }} />
-          </Command>
-        )}
-        <div className={detailsClassName}>
-          {isRevealing && (
+          <div className="Navigation-command">
             <Command onClick={this.handleClick}>
               <img
-                alt="Close menu"
-                src={crossSvg}
+                alt="Open menu"
+                src={burgerSvg}
                 style={{ width: "1.5rem" }}
               />
             </Command>
+          </div>
+        )}
+        <div className={detailsClassName}>
+          {isRevealing && (
+            <div className="Navigation-command">
+              <Command onClick={this.handleClick}>
+                <img
+                  alt="Close menu"
+                  src={crossSvg}
+                  style={{ width: "1.5rem" }}
+                />
+              </Command>
+            </div>
           )}
           <ul className="Navigation-items">
             {this.props.items.map(({ text, href }, index) => (
