@@ -23,13 +23,13 @@
     },
     "plugin/property-value-rem-multiples": [
       {
-        "/^border": 8,
-        "/box-shadow/": 8,
+        "/^border": 4,
+        "/box-shadow/": 4,
         "font": 4,
-        "grid-gap": 8,
+        "grid-gap": 4,
         "line-height": 4,
-        "/^margin/": 8,
-        "/^padding/": 8
+        "/^margin/": 4,
+        "/^padding/": 4
       },
       { "ignoreNumbers": ["0.125", "0.25", "0.5", "0.75"] }
     ],
@@ -118,6 +118,7 @@
       "font-family",
       "font-size",
       "font-style",
+      "font-variant-numeric",
       "font-weight",
       "font",
       "grid-column",

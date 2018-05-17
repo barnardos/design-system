@@ -23,8 +23,8 @@ const Pages = () => (
             to: "/principles/"
           },
           {
-            text: "Typography and layout",
-            to: "/typography-and-layout/"
+            text: "Layout and typography",
+            to: "/layout-and-typography/"
           },
           {
             text: "Colour",
