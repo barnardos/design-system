@@ -1,25 +1,36 @@
-import GatsbyLink from "gatsby-link";
 import Helmet from "react-helmet";
 import React from "react";
 
-import Breadcrumbs from "../components/Breadcrumbs";
-import Header from "../components/Header";
-import HeadingOne from "../components/HeadingOne";
-import ListItem from "../components/ListItem";
-import Navigation from "../components/Navigation";
-import Paragraph from "../components/Paragraph";
-import SubmitSearchControl from "../components/SubmitSearchControl";
-import Title from "../components/Title";
-import UnorderedList from "../components/UnorderedList";
+import Breadcrumbs from "../../components/Breadcrumbs";
+import Header from "../../components/Header";
+import HeadingOne from "../../components/HeadingOne";
+import Link from "../../components/Link";
+import ListItem from "../../components/ListItem";
+import Navigation from "../../components/Navigation";
+import Paragraph from "../../components/Paragraph";
+import SubmitSearchControl from "../../components/SubmitSearchControl";
+import Title from "../../components/Title";
+import UnorderedList from "../../components/UnorderedList";
 
-import "./index.css";
+import "../index.css";
 
 const Pages = () => (
   <div className="Pages">
     <Helmet>
       <title>{`WayFinding`}</title>
     </Helmet>
-    <GatsbyLink className="Pages-home" to="/">{`Home`}</GatsbyLink>
+    <Breadcrumbs
+      items={[
+        {
+          text: "Home",
+          to: "/"
+        },
+        {
+          text: "Guidance",
+          to: "/guidance/"
+        }
+      ]}
+    />
     <Title>{`WayFinding`}</Title>
     <Paragraph>{`Use the components below for wayfinding.`}</Paragraph>
     <HeadingOne>{`Navigation`}</HeadingOne>
@@ -83,7 +94,7 @@ const Pages = () => (
     </div>
     <Paragraph>
       {`View `}
-      <a href="https://github.com/barnardos/design-system/tree/master/src/components/Navigation">{`code`}</a>
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Navigation">{`code`}</Link>
       {` on GitHub.`}
     </Paragraph>
     <HeadingOne>{`Breadcrumbs`}</HeadingOne>
@@ -103,7 +114,7 @@ const Pages = () => (
     </div>
     <Paragraph>
       {`View `}
-      <a href="https://github.com/barnardos/design-system/tree/master/src/components/Breadcrumbs">{`code`}</a>
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Breadcrumbs">{`code`}</Link>
       {` on GitHub.`}
     </Paragraph>
     <HeadingOne>{`SubmitSearchControl`}</HeadingOne>
@@ -119,7 +130,7 @@ const Pages = () => (
     </div>
     <Paragraph>
       {`View `}
-      <a href="https://github.com/barnardos/design-system/tree/master/src/components/SubmitSearchControl">{`code`}</a>
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/SubmitSearchControl">{`code`}</Link>
       {` on GitHub.`}
     </Paragraph>
     <HeadingOne>{`Header`}</HeadingOne>
@@ -152,12 +163,12 @@ const Pages = () => (
     </div>
     <Paragraph>
       {`View `}
-      <a href="https://github.com/barnardos/design-system/tree/master/src/components/Header">{`code`}</a>
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Header">{`code`}</Link>
       {` on GitHub.`}
     </Paragraph>
     <Paragraph>
       {`View `}
-      <a href="https://github.com/barnardos/design-system/issues/2">{`research`}</a>
+      <Link href="https://github.com/barnardos/design-system/issues/2">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
   </div>

@@ -35,7 +35,7 @@ describe("End-to-end", () => {
   it("shows the index page title", async () => {
     await page.goto(routes.public.root);
     const title = await page.$eval("[data-test-title]", el => el.textContent);
-    expect(title).toBe("Design system");
+    expect(title).toBe("Design System");
   });
 
   it("shows each sub page title", async () => {

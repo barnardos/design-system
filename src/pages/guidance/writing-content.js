@@ -1,21 +1,32 @@
 import Helmet from "react-helmet";
-import GatsbyLink from "gatsby-link";
 import React from "react";
 
-import HeadingOne from "../components/HeadingOne";
-import ListItem from "../components/ListItem";
-import Paragraph from "../components/Paragraph";
-import Title from "../components/Title";
-import UnorderedList from "../components/UnorderedList";
+import Breadcrumbs from "../../components/Breadcrumbs";
+import HeadingOne from "../../components/HeadingOne";
+import ListItem from "../../components/ListItem";
+import Paragraph from "../../components/Paragraph";
+import Title from "../../components/Title";
+import UnorderedList from "../../components/UnorderedList";
 
-import "./index.css";
+import "../index.css";
 
 const Pages = () => (
   <div className="Pages">
     <Helmet>
       <title>{`Writing content`}</title>
     </Helmet>
-    <GatsbyLink className="Pages-home" to="/">{`Home`}</GatsbyLink>
+    <Breadcrumbs
+      items={[
+        {
+          text: "Home",
+          to: "/"
+        },
+        {
+          text: "Guidance",
+          to: "/guidance/"
+        }
+      ]}
+    />
     <Title>{`Writing content`}</Title>
     <Paragraph>
       {`When writing content use inclusive language and imagine you're talking to the reader.`}

@@ -1,26 +1,37 @@
 import Helmet from "react-helmet";
-import GatsbyLink from "gatsby-link";
 import React from "react";
 
-import HeadingOne from "../components/HeadingOne";
-import HeadingTwo from "../components/HeadingTwo";
-import Link from "../components/Link";
-import ListItem from "../components/ListItem";
-import Paragraph from "../components/Paragraph";
-import SinglelineTextControl from "../components/SinglelineTextControl/index";
-import Swatches from "../components/Swatches";
-import Submit from "../components/Submit";
-import Title from "../components/Title";
-import UnorderedList from "../components/UnorderedList";
+import Breadcrumbs from "../../components/Breadcrumbs";
+import HeadingOne from "../../components/HeadingOne";
+import HeadingTwo from "../../components/HeadingTwo";
+import Link from "../../components/Link";
+import ListItem from "../../components/ListItem";
+import Paragraph from "../../components/Paragraph";
+import SinglelineTextControl from "../../components/SinglelineTextControl/index";
+import Swatches from "../../components/Swatches";
+import Submit from "../../components/Submit";
+import Title from "../../components/Title";
+import UnorderedList from "../../components/UnorderedList";
 
-import "./index.css";
+import "../index.css";
 
 const Pages = () => (
   <div className="Pages">
     <Helmet>
       <title>{`Colour`}</title>
     </Helmet>
-    <GatsbyLink className="Pages-home" to="/">{`Home`}</GatsbyLink>
+    <Breadcrumbs
+      items={[
+        {
+          text: "Home",
+          to: "/"
+        },
+        {
+          text: "Guidance",
+          to: "/guidance/"
+        }
+      ]}
+    />
     <Title>{`Colour`}</Title>
     <Paragraph>{`When applying color you should:`}</Paragraph>
     <UnorderedList>
@@ -86,7 +97,7 @@ const Pages = () => (
     </UnorderedList>
     <Paragraph>
       {`View `}
-      <a href="https://github.com/barnardos/design-system/issues/14">{`research`}</a>
+      <Link href="https://github.com/barnardos/design-system/issues/14">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
   </div>

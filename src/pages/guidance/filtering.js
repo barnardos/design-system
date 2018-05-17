@@ -1,23 +1,35 @@
 import GatsbyLink from "gatsby-link";
 import Helmet from "react-helmet";
 import React from "react";
+import Link from "../../components/Link";
+import Breadcrumbs from "../../components/Breadcrumbs";
+import Filter from "../../components/Filter";
+import HeadingOne from "../../components/HeadingOne";
+import ListItem from "../../components/ListItem";
+import Paragraph from "../../components/Paragraph";
+import SubmitControls from "../../components/SubmitControls";
+import Title from "../../components/Title";
+import UnorderedList from "../../components/UnorderedList";
 
-import Filter from "../components/Filter";
-import HeadingOne from "../components/HeadingOne";
-import ListItem from "../components/ListItem";
-import Paragraph from "../components/Paragraph";
-import SubmitControls from "../components/SubmitControls";
-import Title from "../components/Title";
-import UnorderedList from "../components/UnorderedList";
-
-import "./index.css";
+import "../index.css";
 
 const Pages = () => (
   <div className="Pages">
     <Helmet>
       <title>{`Filtering`}</title>
     </Helmet>
-    <GatsbyLink className="Pages-home" to="/">{`Home`}</GatsbyLink>
+    <Breadcrumbs
+      items={[
+        {
+          text: "Home",
+          to: "/"
+        },
+        {
+          text: "Guidance",
+          to: "/guidance/"
+        }
+      ]}
+    />
     <Title>{`Filtering`}</Title>
     <Paragraph>{`When filtering you should:`}</Paragraph>
     <UnorderedList>
@@ -117,6 +129,13 @@ const Pages = () => (
         </div>
       </div>
     </div>
+    <Paragraph>
+      {`View `}
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Filter">{`code`}</Link>
+      {` and `}
+      <Link href="https://github.com/barnardos/design-system/issues/79">{`research`}</Link>
+      {` on GitHub.`}
+    </Paragraph>
   </div>
 );
 

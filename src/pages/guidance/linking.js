@@ -1,23 +1,34 @@
 import Helmet from "react-helmet";
-import GatsbyLink from "gatsby-link";
 import React from "react";
 
-import AttentionGrabbingLink from "../components/AttentionGrabbingLink";
-import HeadingOne from "../components/HeadingOne";
-import Link from "../components/Link";
-import ListItem from "../components/ListItem";
-import Paragraph from "../components/Paragraph";
-import Title from "../components/Title";
-import UnorderedList from "../components/UnorderedList";
+import AttentionGrabbingLink from "../../components/AttentionGrabbingLink";
+import Breadcrumbs from "../../components/Breadcrumbs";
+import HeadingOne from "../../components/HeadingOne";
+import Link from "../../components/Link";
+import ListItem from "../../components/ListItem";
+import Paragraph from "../../components/Paragraph";
+import Title from "../../components/Title";
+import UnorderedList from "../../components/UnorderedList";
 
-import "./index.css";
+import "../index.css";
 
 const Pages = () => (
   <div className="Pages">
     <Helmet>
       <title>{`Linking`}</title>
     </Helmet>
-    <GatsbyLink className="Pages-home" to="/">{`Home`}</GatsbyLink>
+    <Breadcrumbs
+      items={[
+        {
+          text: "Home",
+          to: "/"
+        },
+        {
+          text: "Guidance",
+          to: "/guidance/"
+        }
+      ]}
+    />
     <Title>{`Linking`}</Title>
     <Paragraph>{`Use the components below for linking.`}</Paragraph>
     <HeadingOne>{`Link`}</HeadingOne>
@@ -41,7 +52,7 @@ const Pages = () => (
     </div>
     <Paragraph>
       {`View `}
-      <a href="https://github.com/barnardos/design-system/tree/master/src/components/Link">{`code`}</a>
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Link">{`code`}</Link>
       {` on GitHub.`}
     </Paragraph>
     <HeadingOne>{`AttentionGrabbingLink`}</HeadingOne>
@@ -88,12 +99,12 @@ const Pages = () => (
     </div>
     <Paragraph>
       {`View `}
-      <a href="https://github.com/barnardos/design-system/tree/master/src/components/AttentionGrabbingLink">{`code`}</a>
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/AttentionGrabbingLink">{`code`}</Link>
       {` on GitHub.`}
     </Paragraph>
     <Paragraph>
       {`View `}
-      <a href="https://github.com/barnardos/design-system/issues/47">{`research`}</a>
+      <Link href="https://github.com/barnardos/design-system/issues/47">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
   </div>
