@@ -3,9 +3,13 @@ import GatsbyLink from "gatsby-link";
 import React from "react";
 
 import HeadingOne from "../components/HeadingOne";
+import HeadingTwo from "../components/HeadingTwo";
+import Link from "../components/Link";
 import ListItem from "../components/ListItem";
 import Paragraph from "../components/Paragraph";
+import SinglelineTextControl from "../components/SinglelineTextControl/index";
 import Swatches from "../components/Swatches";
+import Submit from "../components/Submit";
 import Title from "../components/Title";
 import UnorderedList from "../components/UnorderedList";
 
@@ -18,78 +22,67 @@ const Pages = () => (
     </Helmet>
     <GatsbyLink className="Pages-home" to="/">{`Home`}</GatsbyLink>
     <Title>{`Colour`}</Title>
-    <Paragraph>{`The colour palette is:`}</Paragraph>
-    <Swatches
-      swatches={[
-        [
-          { label: "30% tint", hex: "#97bf4d" },
-          { label: "20% tint", hex: "#88b533" },
-          { label: "10% tint", hex: "#79ac1a" },
-          { label: "Green", hex: "#6aa300", primary: true },
-          { label: "10% shade", hex: "#5f9200" },
-          { label: "20% shade", hex: "#558200" },
-          { label: "30% shade", hex: "#4a7200" }
-        ],
-        [
-          { label: "30% tint", hex: "#db4d9b" },
-          { label: "20% tint", hex: "#d6338d" },
-          { label: "10% tint", hex: "#d11a7f" },
-          { label: "Pink", hex: "#cc0070", primary: true },
-          { label: "10% shade", hex: "#b70065" },
-          { label: "20% shade", hex: "#a3005a" },
-          { label: "30% shade", hex: "#8e004e" }
-        ],
-        [
-          { label: "30% tint", hex: "#4db8c3" },
-          { label: "20% tint", hex: "#33adba" },
-          { label: "10% tint", hex: "#1aa3b2" },
-          { label: "Teal", hex: "#0099a9", primary: true },
-          { label: "10% shade", hex: "#008998" },
-          { label: "20% shade", hex: "#007a87" },
-          { label: "30% shade", hex: "#006b76" }
-        ],
-        [
-          { label: "30% tint", hex: "#9a6394" },
-          { label: "20% tint", hex: "#8b4d85" },
-          { label: "10% tint", hex: "#7d3776" },
-          { label: "Purple", hex: "#6e2066", primary: true },
-          { label: "10% shade", hex: "#631d5c" },
-          { label: "20% shade", hex: "#581a52" },
-          { label: "30% shade", hex: "#4d1647" }
-        ],
-        [
-          { label: "30% tint", hex: "#ef984d" },
-          { label: "20% tint", hex: "#ed8933" },
-          { label: "10% tint", hex: "#ea7b1a" },
-          { label: "Orange", hex: "#e86c00", primary: true },
-          { label: "10% shade", hex: "#d06100" },
-          { label: "20% shade", hex: "#ba5600" },
-          { label: "30% shade", hex: "#a24b00" }
-        ],
-        [
-          {
-            label: "White",
-            hex: "#ffffff",
-            bordered: true,
-            inverted: true,
-            primary: true
-          },
-          { label: "90% tint", hex: "#e9e9e9", inverted: true },
-          { label: "60% tint", hex: "#a5a5a5" },
-          { label: "30% tint", hex: "#616161" },
-          { label: "Black", hex: "#1d1d1d", primary: true }
-        ],
-        [{ label: "Red", hex: "#c30000", primary: true }]
-      ]}
-    />
-    <HeadingOne>{`Semantics`}</HeadingOne>
+    <Paragraph>{`When applying color you should:`}</Paragraph>
+    <UnorderedList>
+      <ListItem>{`only use the brand colours`}</ListItem>
+      <ListItem>{`use increments of 10% for tints and shades`}</ListItem>
+      <ListItem>
+        {`use `}
+        <Link href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html">{`accessible`}</Link>
+        {` colour combinations for text`}
+      </ListItem>
+      <ListItem>{`avoid relying on just color`}</ListItem>
+    </UnorderedList>
+    <HeadingOne>Brand colors</HeadingOne>
+    <div className="Pages-swatches">
+      <Swatches
+        swatches={[
+          [{ label: "Green", hex: "#6aa300", primary: true }],
+          [{ label: "Orange", hex: "#e86c00", primary: true }],
+          [{ label: "Pink", hex: "#cc0070", primary: true }],
+          [{ label: "Purple", hex: "#6e2066", primary: true }],
+          [{ label: "Teal", hex: "#0099a9", primary: true }],
+          [
+            {
+              label: "White",
+              hex: "#ffffff",
+              bordered: true,
+              inverted: true,
+              primary: true
+            }
+          ],
+          [{ label: "Black", hex: "#1d1d1d", primary: true }],
+          [{ label: "Red", hex: "#c30000", primary: true }]
+        ]}
+      />
+    </div>
+    <HeadingOne>Using colors</HeadingOne>
+    <Paragraph>{`For example, you could use:`}</Paragraph>
+    <div className="Pages-figures">
+      <figure className="Pages-figure">
+        <SinglelineTextControl
+          errored
+          hint="As it appears on your ID."
+          id="text-control-full-name-example"
+          label="Full name"
+          size="48"
+          validation="Enter your full name"
+        />
+        <figcaption className="Pages-figureCaption">{`Black for labels and 30% tint for hint text. Red for errors with 80% tint for inset shadows.`}</figcaption>
+      </figure>
+      <figure className="Pages-figure">
+        <Submit text="Continue" />
+        <figcaption className="Pages-figureCaption">{`White text on Green with 10% shade on hover and 30% shade for drop shadows.`}</figcaption>
+      </figure>
+    </div>
+    <HeadingTwo>{`Using colour semantically`}</HeadingTwo>
+    <Paragraph>{`For example, you could use:`}</Paragraph>
     <UnorderedList>
       <ListItem
-      >{`Red - destructive actions like deleting or removing`}</ListItem>
+      >{`greens for positive actions like submit or continue`}</ListItem>
+      <ListItem>{`oranges for cautionary actions like load or warn`}</ListItem>
       <ListItem
-      >{`Orange - cautionary actions like loading or warning`}</ListItem>
-      <ListItem
-      >{`Green - positive actions like submitting or continuing`}</ListItem>
+      >{`reds for destructive actions like delete or remove`}</ListItem>
     </UnorderedList>
     <Paragraph>
       {`View `}

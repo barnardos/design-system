@@ -1,19 +1,12 @@
 /** @define Swatches; */
 
 .Swatches {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -1rem;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(5rem, 1fr));
 }
 
 .Swatches-swatchGroup {
-  flex: 1 1 14rem;
   list-style: none;
-  margin: 1rem 0 0 1rem;
-}
-
-@media (min-width: 50rem) {
-  .Swatches {
-    margin-right: calc(-100vw + 46rem);
-  }
+  margin: 0;
 }

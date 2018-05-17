@@ -87,6 +87,7 @@
     "function-whitelist": [
       "calc",
       "color",
+      "minmax",
       "repeat",
       "shade",
       "tint",

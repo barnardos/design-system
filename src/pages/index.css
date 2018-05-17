@@ -18,7 +18,7 @@
 }
 
 .Pages-figure:not(:first-child) {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 .Pages-figure--positioned {
@@ -30,12 +30,18 @@
   display: inline-block;
   font: 300 var(--type--1)/1.5rem system-ui;
   font-variant-numeric: tabular-nums;
+  margin-top: 1rem;
   padding: 0 0.5rem;
+}
+
+.Pages-figureCaption--flush {
+  margin: 0;
 }
 
 .Pages-figure--positioned .Pages-figureCaption {
   bottom: 0;
   left: -3rem;
+  margin-top: 0;
   padding: 0;
   position: absolute;
 }
@@ -91,12 +97,7 @@
   top: 0;
 }
 
-.Pages-colour {
-  background: color(var(--black) tint(90%));
+.Pages-swatches {
   margin-top: 1rem;
-  padding: 1rem;
-}
-
-.Pages-colourItem {
-  font: 300 var(--type-0)/1.5rem system-ui;
+  max-width: 32rem;
 }
