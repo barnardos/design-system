@@ -1,13 +1,16 @@
 /**
- * Foundation proportional font-sizing system
+ * Spacing and type sizes can be proportionally scaled by:
+ * - using the `rem` unit within components
+ * - specifying a percentage value for the `font-size` property on the `html` selector
+*/
+
+/**
+ * stylelint is used to:
+ * - disallow the use of type selectors
+ * - enforce the use of CSS variables for `font-size` properties
  *
- * The font-size of the html selector is scaled according to the viewport width.
- * This provides a general rule for readable text and optimal line length.
- * Components can then build of top of this general rule by using rem units.
- * Thus, the majority of CSS will use rem units and target class selectors.
- * Hence, the selector-max-type and declaration-property-unit-whitelist stylelint rules
- * are only disabled for the following code, rather than turned off globally.
- */
+ * Both these rules are not applicable here.
+*/
 
 /* stylelint-disable selector-max-type, declaration-property-unit-whitelist, declaration-property-value-whitelist */
 
