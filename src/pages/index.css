@@ -20,6 +20,10 @@
   position: relative;
 }
 
+.Pages-figure--positioned:not(:first-child) {
+  margin-top: 1rem;
+}
+
 .Pages-figureCaption {
   background: color(var(--black) tint(90%));
   display: inline-block;
