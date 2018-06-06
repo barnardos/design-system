@@ -207,10 +207,10 @@ const Pages = () => (
     <HeadingOne>{`Proportional scale`}</HeadingOne>
     <Paragraph
     >{`The layout and typography can be proportionally scaled to maintain an optimal line length at any viewport size.`}</Paragraph>
-    <Paragraph>{`The optimal line length of text is between:`}</Paragraph>
+    <Paragraph>{`The optimal line length of text is around:`}</Paragraph>
     <UnorderedList>
-      <ListItem>{`40–60 characters for body copy`}</ListItem>
       <ListItem>{`15–40 characters for short lines`}</ListItem>
+      <ListItem>{`40–95 characters for body copy`}</ListItem>
     </UnorderedList>
     <Paragraph>{`For example, you could scale the base of 16:`}</Paragraph>
     <UnorderedList>
