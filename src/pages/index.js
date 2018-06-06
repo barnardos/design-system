@@ -2,6 +2,8 @@ import Helmet from "react-helmet";
 import React from "react";
 
 import DesignSystemNavigation from "../components/DesignSystemNavigation";
+import Lede from "../components/Lede";
+import Link from "../components/Link";
 import Paragraph from "../components/Paragraph";
 import Title from "../components/Title";
 
@@ -10,53 +12,31 @@ import "./index.css";
 const Pages = () => (
   <div className="Pages">
     <Helmet>
-      <title>{`Design system`}</title>
+      <title>{`Design System`}</title>
     </Helmet>
-    <Title>{`Design system`}</Title>
-    <Paragraph
-    >{`The Barnardo’s Design System is a central resource that helps you create great digital experiences with us.`}</Paragraph>
-    <div className="Pages-navigation">
+    <Title>{`Design System`}</Title>
+    <Lede>{`Designing and developing digital products for Barnardo's.`}</Lede>
+    <div className="Pages-designSystemNavigation">
       <DesignSystemNavigation
         items={[
+          {
+            text: "Getting started",
+            to: "/getting-started/"
+          },
           {
             text: "Principles",
             to: "/principles/"
           },
           {
-            text: "Layout and typography",
-            to: "/layout-and-typography/"
-          },
-          {
-            text: "Colour",
-            to: "/colour/"
-          },
-          {
-            text: "Linking",
-            to: "/linking/"
-          },
-          {
-            text: "Requesting information",
-            to: "/requesting-information/"
-          },
-          {
-            text: "Filtering",
-            to: "/filtering/"
-          },
-          {
-            text: "Wayfinding",
-            to: "/wayfinding/"
-          },
-          {
-            text: "Writing content",
-            to: "/writing-content/"
+            text: "Guidance",
+            to: "/guidance/"
           }
         ]}
       />
     </div>
-    <Paragraph>{`This living resource exists to guide, not limit.`}</Paragraph>
     <Paragraph>
-      {`Everyone’s welcome to `}
-      <a href="https://github.com/barnardos/design-system">{`contribute and give feedback`}</a>
+      {`You're welcome to `}
+      <Link href="https://github.com/barnardos/design-system">{`contribute and give feedback`}</Link>
       {`.`}
     </Paragraph>
   </div>

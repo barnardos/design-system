@@ -1,24 +1,36 @@
 import Helmet from "react-helmet";
-import GatsbyLink from "gatsby-link";
 import React from "react";
 
-import HeadingOne from "../components/HeadingOne";
-import HeadingTwo from "../components/HeadingTwo";
-import Lede from "../components/Lede";
-import ListItem from "../components/ListItem";
-import Paragraph from "../components/Paragraph";
-import SinglelineTextControl from "../components/SinglelineTextControl/index";
-import Title from "../components/Title";
-import UnorderedList from "../components/UnorderedList";
+import Breadcrumbs from "../../components/Breadcrumbs";
+import HeadingOne from "../../components/HeadingOne";
+import HeadingTwo from "../../components/HeadingTwo";
+import Lede from "../../components/Lede";
+import Link from "../../components/Link";
+import ListItem from "../../components/ListItem";
+import Paragraph from "../../components/Paragraph";
+import SinglelineTextControl from "../../components/SinglelineTextControl/index";
+import Title from "../../components/Title";
+import UnorderedList from "../../components/UnorderedList";
 
-import "./index.css";
+import "../index.css";
 
 const Pages = () => (
   <div className="Pages">
     <Helmet>
       <title>{`Layout and typography`}</title>
     </Helmet>
-    <GatsbyLink className="Pages-home" to="/">{`Home`}</GatsbyLink>
+    <Breadcrumbs
+      items={[
+        {
+          text: "Home",
+          to: "/"
+        },
+        {
+          text: "Guidance",
+          to: "/guidance/"
+        }
+      ]}
+    />
     <Title>{`Layout and typography`}</Title>
     <Paragraph>{`To unify layout and typography, you should use:`}</Paragraph>
     <UnorderedList>
@@ -189,7 +201,7 @@ const Pages = () => (
     >{`Title jumps to 16 * 1.125^9 at larger viewport sizes.`}</Paragraph>
     <Paragraph>
       {`View `}
-      <a href="https://github.com/barnardos/design-system/tree/master/src/custom-properties.css">{`code`}</a>
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/custom-properties.css">{`code`}</Link>
       {` on GitHub.`}
     </Paragraph>
     <HeadingOne>{`Proportional scale`}</HeadingOne>
@@ -211,12 +223,12 @@ const Pages = () => (
     </UnorderedList>
     <Paragraph>
       {`View `}
-      <a href="https://github.com/barnardos/design-system/tree/master/src/proportional-scale.css">{`code`}</a>
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/proportional-scale.css">{`code`}</Link>
       {` on GitHub.`}
     </Paragraph>
     <Paragraph>
       {`View `}
-      <a href="https://github.com/barnardos/design-system/issues/1">{`research`}</a>
+      <Link href="https://github.com/barnardos/design-system/issues/1">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
   </div>

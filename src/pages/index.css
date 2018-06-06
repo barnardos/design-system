@@ -2,12 +2,7 @@
 
 /** @define Pages */
 
-.Pages-home {
-  display: inline-block;
-  font: 300 var(--type-0)/1.5rem system-ui;
-}
-
-.Pages-navigation {
+.Pages-designSystemNavigation {
   margin-top: 1rem;
 }
 

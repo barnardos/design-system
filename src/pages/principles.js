@@ -2,6 +2,7 @@ import GatsbyLink from "gatsby-link";
 import Helmet from "react-helmet";
 import React from "react";
 
+import Breadcrumbs from "../components/Breadcrumbs";
 import HeadingOne from "../components/HeadingOne";
 import ListItem from "../components/ListItem";
 import Paragraph from "../components/Paragraph";
@@ -15,12 +16,17 @@ const Pages = () => (
     <Helmet>
       <title>{`Principles`}</title>
     </Helmet>
-    <GatsbyLink className="Pages-home" to="/">{`Home`}</GatsbyLink>
+    <Breadcrumbs
+      items={[
+        {
+          text: "Home",
+          to: "/"
+        }
+      ]}
+    />
     <Title>{`Principles`}</Title>
     <HeadingOne>{`1. Start small`}</HeadingOne>
-    <Paragraph>
-      {`Put your work in front of real people as soon as possible.`}
-    </Paragraph>
+    <Paragraph>{`Put work in front of real people early and often.`}</Paragraph>
     <Paragraph>{`You should:`}</Paragraph>
     <UnorderedList>
       <ListItem>{`start with user needs`}</ListItem>
@@ -31,7 +37,7 @@ const Pages = () => (
       <ListItem>{`release early`}</ListItem>
     </UnorderedList>
     <HeadingOne>{`2. Be inclusive`}</HeadingOne>
-    <Paragraph>{`Strive to support everyone who needs the service.`}</Paragraph>
+    <Paragraph>{`Strive to support all who need the product.`}</Paragraph>
     <Paragraph>{`You should:`}</Paragraph>
     <UnorderedList>
       <ListItem>{`always consider accessibility`}</ListItem>
@@ -41,8 +47,7 @@ const Pages = () => (
     and readable content`}</ListItem>
     </UnorderedList>
     <HeadingOne>{`3. Keep it simple`}</HeadingOne>
-    <Paragraph
-    >{`Lift the burden and do the hard work, so the user doesn't have to.`}</Paragraph>
+    <Paragraph>{`Do the hard work so the user doesn't have to.`}</Paragraph>
     <Paragraph>{`You should:`}</Paragraph>
     <UnorderedList>
       <ListItem>{`provide the simplest
@@ -53,8 +58,7 @@ const Pages = () => (
       >{`avoid deciding on a solution because "It's always been this way"`}</ListItem>
     </UnorderedList>
     <HeadingOne>{`4. Be consistent`}</HeadingOne>
-    <Paragraph
-    >{`Build trust and familiarity across other Barnardo's services.`}</Paragraph>
+    <Paragraph>{`Build trust and familiarity across products.`}</Paragraph>
     <Paragraph>{`You should:`}</Paragraph>
     <UnorderedList>
       <ListItem>
@@ -78,7 +82,7 @@ const Pages = () => (
       <ListItem>{`learn from others`}</ListItem>
     </UnorderedList>
     <HeadingOne>{`6. Embrace digital`}</HeadingOne>
-    <Paragraph>{`Make the most medium's benefits.`}</Paragraph>
+    <Paragraph>{`Make the most of the medium's benefits.`}</Paragraph>
     <Paragraph>{`You should:`}</Paragraph>
     <UnorderedList>
       <ListItem>{`be comfortable with change`}</ListItem>

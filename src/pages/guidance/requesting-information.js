@@ -1,29 +1,41 @@
 import Helmet from "react-helmet";
-import GatsbyLink from "gatsby-link";
 import React from "react";
 
-import AnyOfManyChoiceControl from "../components/AnyOfManyChoiceControl";
-import ChoiceControl from "../components/ChoiceControl";
-import HeadingOne from "../components/HeadingOne";
-import HeadingTwo from "../components/HeadingTwo";
-import ListItem from "../components/ListItem";
-import MultilineTextControl from "../components/MultilineTextControl";
-import OneOfManyChoiceControl from "../components/OneOfManyChoiceControl";
-import Paragraph from "../components/Paragraph";
-import SinglelineTextControl from "../components/SinglelineTextControl";
-import Submit from "../components/Submit";
-import SubmitControls from "../components/SubmitControls";
-import Title from "../components/Title";
-import UnorderedList from "../components/UnorderedList";
+import AnyOfManyChoiceControl from "../../components/AnyOfManyChoiceControl";
+import Breadcrumbs from "../../components/Breadcrumbs";
+import ChoiceControl from "../../components/ChoiceControl";
+import HeadingOne from "../../components/HeadingOne";
+import HeadingTwo from "../../components/HeadingTwo";
+import Link from "../../components/Link";
+import ListItem from "../../components/ListItem";
+import MultilineTextControl from "../../components/MultilineTextControl";
+import OneOfManyChoiceControl from "../../components/OneOfManyChoiceControl";
+import Paragraph from "../../components/Paragraph";
+import SinglelineTextControl from "../../components/SinglelineTextControl";
+import Submit from "../../components/Submit";
+import SubmitControls from "../../components/SubmitControls";
+import Title from "../../components/Title";
+import UnorderedList from "../../components/UnorderedList";
 
-import "./index.css";
+import "../index.css";
 
 const Pages = () => (
   <div className="Pages">
     <Helmet>
       <title>{`Requesting information`}</title>
     </Helmet>
-    <GatsbyLink className="Pages-home" to="/">{`Home`}</GatsbyLink>
+    <Breadcrumbs
+      items={[
+        {
+          text: "Home",
+          to: "/"
+        },
+        {
+          text: "Guidance",
+          to: "/guidance/"
+        }
+      ]}
+    />
     <Title>{`Requesting information`}</Title>
     <Paragraph
     >{`When requesting information from a user you should:`}</Paragraph>
@@ -62,7 +74,7 @@ const Pages = () => (
     </div>
     <Paragraph>
       {`View `}
-      <a href="https://github.com/barnardos/design-system/tree/master/src/components/SinglelineTextControl">{`code`}</a>
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/SinglelineTextControl">{`code`}</Link>
       {` on GitHub.`}
     </Paragraph>
     <HeadingTwo>{`MultilineTextControl`}</HeadingTwo>
@@ -77,12 +89,12 @@ const Pages = () => (
     </div>
     <Paragraph>
       {`View `}
-      <a href="https://github.com/barnardos/design-system/tree/master/src/components/MultilineTextControl">{`code`}</a>
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/MultilineTextControl">{`code`}</Link>
       {` on GitHub.`}
     </Paragraph>
     <Paragraph>
       {`View `}
-      <a href="https://github.com/barnardos/design-system/issues/65">{`research`}</a>
+      <Link href="https://github.com/barnardos/design-system/issues/65">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
     <HeadingOne>{`Choices`}</HeadingOne>
@@ -114,7 +126,7 @@ const Pages = () => (
     </div>
     <Paragraph>
       {`View `}
-      <a href="https://github.com/barnardos/design-system/tree/master/src/components/OneOfManyChoiceControl">{`code`}</a>
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/OneOfManyChoiceControl">{`code`}</Link>
       {` on GitHub.`}
     </Paragraph>
     <HeadingTwo>{`AnyOfManyChoiceControl`}</HeadingTwo>
@@ -149,7 +161,7 @@ const Pages = () => (
     </div>
     <Paragraph>
       {`View `}
-      <a href="https://github.com/barnardos/design-system/tree/master/src/components/AnyOfManyChoiceControl">{`code`}</a>
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/AnyOfManyChoiceControl">{`code`}</Link>
       {` on GitHub.`}
     </Paragraph>
     <HeadingTwo>{`ChoiceControl`}</HeadingTwo>
@@ -161,12 +173,12 @@ const Pages = () => (
     </div>
     <Paragraph>
       {`View `}
-      <a href="https://github.com/barnardos/design-system/tree/master/src/components/ChoiceControl">{`code`}</a>
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/ChoiceControl">{`code`}</Link>
       {` on GitHub.`}
     </Paragraph>
     <Paragraph>
       {`View `}
-      <a href="https://github.com/barnardos/design-system/issues/68">{`research`}</a>
+      <Link href="https://github.com/barnardos/design-system/issues/68">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
     <HeadingOne>{`Submitting`}</HeadingOne>
@@ -183,9 +195,9 @@ const Pages = () => (
     </div>
     <Paragraph>
       {`View `}
-      <a href="https://github.com/barnardos/design-system/tree/master/src/components/Submit">{`code`}</a>
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Submit">{`code`}</Link>
       {` and `}
-      <a href="https://github.com/barnardos/design-system/issues/33">{`research`}</a>
+      <Link href="https://github.com/barnardos/design-system/issues/33">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
     <HeadingOne
@@ -269,9 +281,9 @@ const Pages = () => (
     </div>
     <Paragraph>
       {`View `}
-      <a href="https://github.com/barnardos/design-system/tree/master/src/components/SubmitControls">{`code`}</a>
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/SubmitControls">{`code`}</Link>
       {` and `}
-      <a href="https://github.com/barnardos/design-system/issues/67">{`research`}</a>
+      <Link href="https://github.com/barnardos/design-system/issues/67">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
   </div>
