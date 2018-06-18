@@ -104,6 +104,7 @@
       "appearance",
       "background-color",
       "background-image",
+      "background-size",
       "background",
       "border-radius",
       "border",
