@@ -41,6 +41,9 @@ const Pages = () => (
     >{`When requesting information from a user you should:`}</Paragraph>
     <UnorderedList>
       <ListItem>{`only ask for information you absolutely need`}</ListItem>
+      <ListItem>{`place your controls into small logical groups`}</ListItem>
+      <ListItem
+      >{`lead with mandatory controls ordering within groups`}</ListItem>
       <ListItem
       >{`mark the label with '(optional)' if you do ask for extra information`}</ListItem>
       <ListItem
