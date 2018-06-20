@@ -4,6 +4,7 @@ import React from "react";
 import AnyOfManyChoiceControl from "../../components/AnyOfManyChoiceControl";
 import Breadcrumbs from "../../components/Breadcrumbs";
 import ChoiceControl from "../../components/ChoiceControl";
+import CurrencyControl from "../../components/CurrencyControl";
 import HeadingOne from "../../components/HeadingOne";
 import HeadingTwo from "../../components/HeadingTwo";
 import Link from "../../components/Link";
@@ -98,6 +99,23 @@ const Pages = () => (
     <Paragraph>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/issues/65">{`research`}</Link>
+      {` on GitHub.`}
+    </Paragraph>
+    <HeadingOne>{`Data entry`}</HeadingOne>
+    <Paragraph>{`Use the components below for specific data.`}</Paragraph>
+    <HeadingTwo>{`CurrencyControl`}</HeadingTwo>
+    <div className="Pages-example">
+      <CurrencyControl
+        currency="£"
+        id="currency-control-example"
+        label="Amount"
+      />
+    </div>
+    <Paragraph>
+      {`View `}
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/CurrencyControl">{`code`}</Link>
+      {` and `}
+      <Link href="https://github.com/barnardos/design-system/issues/160">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
     <HeadingOne>{`Choices`}</HeadingOne>
