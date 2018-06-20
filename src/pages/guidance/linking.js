@@ -8,6 +8,7 @@ import HeadingOne from "../../components/HeadingOne";
 import Link from "../../components/Link";
 import ListItem from "../../components/ListItem";
 import Paragraph from "../../components/Paragraph";
+import StartLink from "../../components/StartLink";
 import Title from "../../components/Title";
 import UnorderedList from "../../components/UnorderedList";
 
@@ -122,6 +123,21 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/BackLink">{`code`}</Link>
       {` and `}
       <Link href="https://github.com/barnardos/design-system/issues/166">{`research`}</Link>
+    </Paragraph>
+    <HeadingOne>{`StartLink`}</HeadingOne>
+    <Paragraph>{`You should only use this component:`}</Paragraph>
+    <UnorderedList>
+      <ListItem>{`once on each page`}</ListItem>
+      <ListItem>{`to link to the start of a transactional service`}</ListItem>
+    </UnorderedList>
+    <div className="Pages-example">
+      <StartLink href="http://example.org">{`Heading of section`}</StartLink>
+    </div>
+    <Paragraph>
+      {`View `}
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/StartLink">{`code`}</Link>
+      {` and `}
+      <Link href="https://github.com/barnardos/design-system/issues/167">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
   </div>
