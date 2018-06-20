@@ -38,15 +38,14 @@ const Pages = () => (
       ]}
     />
     <Title>{`Requesting information`}</Title>
-    <Paragraph
-    >{`When requesting information from a user you should:`}</Paragraph>
+    <Paragraph>{`When requesting information you should:`}</Paragraph>
     <UnorderedList>
-      <ListItem>{`only ask for information you absolutely need`}</ListItem>
-      <ListItem>{`place your controls into small logical groups`}</ListItem>
       <ListItem
-      >{`lead with mandatory controls ordering within groups`}</ListItem>
+      >{`only ask for information which is absolutely needed`}</ListItem>
+      <ListItem>{`ask for required information first`}</ListItem>
       <ListItem
-      >{`mark the label with '(optional)' if you do ask for extra information`}</ListItem>
+      >{`add '(optional)' to labels of information that isn't required`}</ListItem>
+      <ListItem>{`group related requests for information`}</ListItem>
       <ListItem
       >{`avoid unnecessary words like 'Please' or 'Enter' in labels`}</ListItem>
     </UnorderedList>
