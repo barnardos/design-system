@@ -1,0 +1,11 @@
+@import "../../custom-properties.css";
+
+/** @define BackLink; */
+
+.BackLink {
+  background: transparent url("./triangle.svg") left center no-repeat;
+  background-size: 0.75rem 0.75rem;
+  display: inline-block;
+  font: 300 var(--type-0)/1.5rem Nova, sans-serif;
+  padding-left: 1rem;
+}

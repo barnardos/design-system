@@ -2,6 +2,7 @@ import Helmet from "react-helmet";
 import React from "react";
 
 import AttentionGrabbingLink from "../../components/AttentionGrabbingLink";
+import BackLink from "../../components/BackLink";
 import Breadcrumbs from "../../components/Breadcrumbs";
 import HeadingOne from "../../components/HeadingOne";
 import Link from "../../components/Link";
@@ -105,6 +106,22 @@ const Pages = () => (
     <Paragraph>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/issues/47">{`research`}</Link>
+      {` on GitHub.`}
+    </Paragraph>
+    <HeadingOne>{`BackLink`}</HeadingOne>
+    <Paragraph>{`When using this component you should:`}</Paragraph>
+    <UnorderedList>
+      <ListItem>{`only use it once on each page`}</ListItem>
+      <ListItem>{`place it as the first interactive element`}</ListItem>
+    </UnorderedList>
+    <div className="Pages-example">
+      <BackLink href="http://example.org" />
+    </div>
+    <Paragraph>
+      {`View `}
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/BackLink">{`code`}</Link>
+      {` and `}
+      <Link href="https://github.com/barnardos/design-system/issues/166">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
   </div>
