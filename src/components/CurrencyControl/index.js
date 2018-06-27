@@ -5,16 +5,16 @@ import "./index.css";
 
 const CurrencyControl = ({
   currency,
-  errored,
   hint,
   id,
+  invalid,
   label,
   max,
   min,
   validation
 }) => {
   const className = `CurrencyControl ${
-    errored ? "CurrencyControl--errored" : ""
+    invalid ? "CurrencyControl--invalid" : ""
   }`;
   return (
     <div className={className}>
@@ -33,12 +33,12 @@ const CurrencyControl = ({
         <p className="CurrencyControl-prefix">{currency}</p>
         <input
           className="CurrencyControl-element"
-          name={id}
           id={id}
-          type="number"
-          min={min}
           max={max}
+          min={min}
+          name={id}
           step=".01"
+          type="number"
         />
       </div>
     </div>
@@ -47,12 +47,12 @@ const CurrencyControl = ({
 
 CurrencyControl.propTypes = {
   currency: PropTypes.string.isRequired,
-  errored: PropTypes.bool,
   hint: PropTypes.string,
   id: PropTypes.string.isRequired,
+  invalid: PropTypes.bool,
   label: PropTypes.string.isRequired,
-  min: PropTypes.number,
   max: PropTypes.number,
+  min: PropTypes.number,
   validation: PropTypes.string
 };
 

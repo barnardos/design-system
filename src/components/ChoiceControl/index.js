@@ -3,16 +3,16 @@ import React from "react";
 
 import "./index.css";
 
-const ChoiceControl = ({ checked, id, label, name, type = "multi" }) => (
+const ChoiceControl = ({ checked, id, label, name, type = "any" }) => (
   <div className="ChoiceControl">
     <input
       checked={checked}
       className="ChoiceControl-element"
       id={id}
       name={name}
-      type={type === "multi" ? "checkbox" : "radio"}
+      type={type === "any" ? "checkbox" : "radio"}
     />
-    <label htmlFor={id} className="ChoiceControl-label">
+    <label className="ChoiceControl-label" htmlFor={id}>
       {label}
     </label>
   </div>
@@ -23,7 +23,7 @@ ChoiceControl.propTypes = {
   id: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  type: PropTypes.oneOf(["multi", "single"])
+  type: PropTypes.oneOf(["any", "one"])
 };
 
 export default ChoiceControl;

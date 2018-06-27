@@ -3,8 +3,8 @@ import React from "react";
 
 import "./index.css";
 
-const DateControl = ({ errored, hint, id, label, validation }) => {
-  const className = `DateControl ${errored ? "DateControl--errored" : ""}`;
+const DateControl = ({ hint, id, invalid, label, validation }) => {
+  const className = `DateControl ${invalid ? "DateControl--invalid" : ""}`;
   return (
     <fieldset className={className}>
       <legend className="DateControl-legend">{label}</legend>
@@ -20,8 +20,8 @@ const DateControl = ({ errored, hint, id, label, validation }) => {
         </label>
         <input
           className="DateControl-element"
-          name={`${id}-day`}
           id={`${id}-day`}
+          name={`${id}-day`}
           type="number"
         />
         <label className="DateControl-label" htmlFor={`${id}-month`}>
@@ -29,8 +29,8 @@ const DateControl = ({ errored, hint, id, label, validation }) => {
         </label>
         <input
           className="DateControl-element"
-          name={`${id}-month`}
           id={`${id}-month`}
+          name={`${id}-month`}
           type="number"
         />
         <label className="DateControl-label" htmlFor={`${id}-year`}>
@@ -38,8 +38,8 @@ const DateControl = ({ errored, hint, id, label, validation }) => {
         </label>
         <input
           className="DateControl-element"
-          name={`${id}-year`}
           id={`${id}-year`}
+          name={`${id}-year`}
           type="number"
         />
       </div>
@@ -48,7 +48,7 @@ const DateControl = ({ errored, hint, id, label, validation }) => {
 };
 
 DateControl.propTypes = {
-  errored: PropTypes.bool,
+  invalid: PropTypes.bool,
   hint: PropTypes.string,
   id: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,

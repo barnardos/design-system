@@ -34,15 +34,15 @@
 }
 
 /**
- * errored
+ * invalid
  */
 
-.SinglelineTextControl--errored {
+.SinglelineTextControl--invalid {
   box-shadow: inset 0.25rem 0 0 var(--red);
   padding-left: 1rem;
 }
 
-.SinglelineTextControl--errored .SinglelineTextControl-element {
+.SinglelineTextControl--invalid .SinglelineTextControl-element {
   box-shadow: inset 0 0 0 1px var(--red),
     inset 0.25rem 0.25rem color(var(--red) tint(80%));
 }

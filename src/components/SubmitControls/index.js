@@ -7,10 +7,10 @@ import Submit from "../Submit";
 import "./index.css";
 
 const renderValidationItems = controls => {
-  const erroredControls = controls.filter(control => control.errored);
+  const invalidControls = controls.filter(control => control.invalid);
   return (
     <ul className="SubmitControls-validationItems">
-      {erroredControls.map((control, index) => (
+      {invalidControls.map((control, index) => (
         <li className="SubmitControls-validationItem" key={index}>
           <a
             className="SubmitControls-validationItemLink"
@@ -24,10 +24,10 @@ const renderValidationItems = controls => {
   );
 };
 
-const SubmitControls = ({ controls, errored, submit, validation }) => {
+const SubmitControls = ({ controls, invalid, submit, validation }) => {
   return (
     <form className="SubmitControls">
-      {errored && (
+      {invalid && (
         <div className="SubmitControls-summary">
           <p className="SubmitControls-validation">{validation}</p>
           {renderValidationItems(controls)}
@@ -45,7 +45,7 @@ const SubmitControls = ({ controls, errored, submit, validation }) => {
 
 SubmitControls.propTypes = {
   controls: PropTypes.array.isRequired,
-  errored: PropTypes.bool,
+  invalid: PropTypes.bool,
   submit: PropTypes.object.isRequired,
   validation: PropTypes.string
 };

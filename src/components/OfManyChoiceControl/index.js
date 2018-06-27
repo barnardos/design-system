@@ -1,5 +1,5 @@
-import PropTypes from "prop-types";
 import React from "react";
+import PropTypes from "prop-types";
 
 import ChoiceControl from "../ChoiceControl";
 
@@ -7,16 +7,16 @@ import "./index.css";
 
 const OfManyChoiceControl = ({
   choices,
-  errored,
   hint,
   id,
+  invalid,
   legend,
   name,
   type,
   validation
 }) => {
   const className = `OfManyChoiceControl ${
-    errored ? "OfManyChoiceControl--errored" : ""
+    invalid ? "OfManyChoiceControl--invalid" : ""
   }`;
   return (
     <div className={className}>
@@ -44,12 +44,12 @@ const OfManyChoiceControl = ({
 
 OfManyChoiceControl.propTypes = {
   choices: PropTypes.array.isRequired,
-  errored: PropTypes.bool,
   hint: PropTypes.string,
+  invalid: PropTypes.bool,
   id: PropTypes.string.isRequired,
   legend: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  type: PropTypes.oneOf(["single", "multi"]).isRequired,
+  type: PropTypes.oneOf(["any", "one"]).isRequired,
   validation: PropTypes.string
 };
 

@@ -48,10 +48,10 @@ class SubmitSearchControl extends Component {
           <form className="SubmitSearchControl-form">
             <input
               className="SubmitSearchControl-input"
-              name="search"
               id="search"
-              type="text"
+              name="search"
               size="8"
+              type="text"
             />
             <button className="SubmitSearchControl-button" type="submit">
               <img

@@ -72,11 +72,11 @@ const Pages = () => (
     <div className="Pages-figures">
       <figure className="Pages-figure">
         <SinglelineTextControl
-          errored
           hint="As it appears on your ID."
           id="text-control-full-name-example"
+          invalid
           label="Full name"
-          size="48"
+          size={48}
           validation="Enter your full name"
         />
         <figcaption className="Pages-figureCaption">{`Black for labels and 30% tint for hint text. Red for errors with 80% tint for inset shadows.`}</figcaption>
