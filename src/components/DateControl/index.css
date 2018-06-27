@@ -1,0 +1,75 @@
+@import "../../custom-properties.css";
+
+/** @define DateControl; */
+
+.DateControl {
+  border: none;
+  padding-top: 1.75rem;
+  position: relative;
+}
+
+.DateControl-legend {
+  display: block;
+  font: 600 var(--type-3)/1.75rem system-ui;
+  position: absolute;
+  top: 0;
+}
+
+.DateControl-label {
+  display: block;
+  font: 300 var(--type-2)/1.75rem system-ui;
+}
+
+.DateControl-hint {
+  color: color(var(--black) tint(30%));
+  font: 300 var(--type-0)/1.5rem system-ui;
+}
+
+.DateControl-validation {
+  margin-top: 0.5rem;
+}
+
+.DateControl-validationInner {
+  color: var(--red);
+  font: 600 var(--type-0)/1.5rem system-ui;
+}
+
+.DateControl-labelsAndElements {
+  display: grid;
+  grid-gap: 0.5rem 1rem;
+  grid-template-columns: 4rem 4rem 6rem;
+  margin-top: 0.5rem;
+}
+
+.DateControl-element {
+  -moz-appearance: textfield; /* stylelint-disable-line property-no-vendor-prefix */
+  appearance: none;
+  border: none;
+  border-radius: 0;
+  box-shadow: inset 0 0 0 1px var(--black),
+    inset 0.25rem 0.25rem color(var(--black) tint(80%));
+  font: 300 var(--type-2)/1.75rem system-ui;
+  grid-row: 2;
+  max-width: 100%;
+  padding: 0.5rem 0.75rem;
+}
+
+.DateControl-element::-webkit-inner-spin-button,
+.DateControl-element::-webkit-outer-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+/**
+ * errored
+ */
+
+.DateControl--errored {
+  box-shadow: inset 0.25rem 0 0 var(--red);
+  padding-left: 1rem;
+}
+
+.DateControl--errored .DateControl-element {
+  box-shadow: inset 0 0 0 1px var(--red),
+    inset 0.25rem 0.25rem color(var(--red) tint(80%));
+}

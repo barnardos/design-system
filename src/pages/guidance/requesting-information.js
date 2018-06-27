@@ -5,6 +5,7 @@ import AnyOfManyChoiceControl from "../../components/AnyOfManyChoiceControl";
 import Breadcrumbs from "../../components/Breadcrumbs";
 import ChoiceControl from "../../components/ChoiceControl";
 import CurrencyControl from "../../components/CurrencyControl";
+import DateControl from "../../components/DateControl";
 import HeadingOne from "../../components/HeadingOne";
 import HeadingTwo from "../../components/HeadingTwo";
 import Link from "../../components/Link";
@@ -117,10 +118,30 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/issues/160">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
+    <HeadingTwo>{`DateControl`}</HeadingTwo>
+    <Paragraph>{`Use this component for date entry. You should:`}</Paragraph>
+    <UnorderedList>
+      <ListItem>{`use it instead of dropdowns`}</ListItem>
+      <ListItem>{`allow flexible data entry, for
+    example 01 and 1`}</ListItem>
+      <ListItem>{`trigger a numeric keyboard when available`}</ListItem>
+      <ListItem>{`avoid auto-tabbing between fields`}</ListItem>
+      <ListItem>{`avoid using calendar pickers`}</ListItem>
+    </UnorderedList>
+    <div className="Pages-example">
+      <DateControl id="date-control-example" label="Date of birth" />
+    </div>
+    <Paragraph>
+      {`View `}
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/DateControl">{`code`}</Link>
+      {` and `}
+      <Link href="https://github.com/barnardos/design-system/issues/75">{`research`}</Link>
+      {` on GitHub.`}
+    </Paragraph>
     <HeadingOne>{`Choices`}</HeadingOne>
     <Paragraph>{`Use the components below for choices. You should:`}</Paragraph>
     <UnorderedList>
-      <ListItem>{`use them instead of drop downs`}</ListItem>
+      <ListItem>{`use them instead of dropdowns`}</ListItem>
       <ListItem>{`limit the options to eight or less`}</ListItem>
     </UnorderedList>
     <HeadingTwo>{`OneOfManyChoiceControl`}</HeadingTwo>
