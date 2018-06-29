@@ -8,7 +8,7 @@
   background: color(var(--black) tint(90%));
   border: none;
   border-radius: 0;
-  box-shadow: 0.125rem 0.125rem color(color(var(--black) tint(90%)) shade(30%));
+  box-shadow: 0.125rem 0.125rem color(color(var(--black) tint(90%)) shade(40%));
   color: var(--black);
   display: flex;
   font: 600 var(--type-2)/1.5rem Nova, sans-serif;

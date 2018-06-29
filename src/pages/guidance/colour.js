@@ -83,7 +83,7 @@ const Pages = () => (
       </figure>
       <figure className="Pages-figure">
         <Submit text="Continue" />
-        <figcaption className="Pages-figureCaption">{`White text on Green with 10% shade on hover and 30% shade for drop shadows.`}</figcaption>
+        <figcaption className="Pages-figureCaption">{`White text on Green with 10% shade on hover and 40% shade for drop shadows.`}</figcaption>
       </figure>
     </div>
     <HeadingTwo>{`Using colour semantically`}</HeadingTwo>
