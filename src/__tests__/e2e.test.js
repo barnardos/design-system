@@ -7,12 +7,11 @@ const appUrlBase =
 
 const routes = {
   public: {
-    root: `${appUrlBase}`,
-    noMatch: `${appUrlBase}/asdf`
+    root: `${appUrlBase}`
   }
 };
 
-describe("End-to-end", () => {
+describe("end-to-end", () => {
   let browser;
   let page;
 
@@ -33,27 +32,40 @@ describe("End-to-end", () => {
   });
 
   it("shows the index page title", async () => {
+    const titleSelector = "[data-test-title]";
     await page.goto(routes.public.root);
-    const title = await page.$eval("[data-test-title]", el => el.textContent);
+    await page.waitForSelector(titleSelector);
+    const title = await page.$eval(titleSelector, el => el.textContent);
     expect(title).toBe("Design System");
   });
 
   it("shows each sub page title", async () => {
+    const linkSelector = "[data-test-link]";
+    const titleSelector = "[data-test-title]";
+
     await page.goto(routes.public.root);
-    const links = await page.$$eval("[data-test-link]", els => {
-      return els.map(el => {
+    await page.waitForSelector(linkSelector);
+
+    // Extract the results from the page.
+    const links = await page.evaluate(linkSelector => {
+      const elements = Array.from(document.querySelectorAll(linkSelector));
+      return elements.map(element => {
         return {
-          title: el.getAttribute("data-test-link"),
-          href: el.href
+          title: element.getAttribute("data-test-link"),
+          href: element.href
         };
       });
-    });
+    }, linkSelector);
+
+    // Go to each page and check that the titles match
+    let title;
+    let pageTitle;
     for (let i = 0; i < links.length; i++) {
       let link = links[i];
       await page.goto(link.href);
-      await page.waitForSelector("[data-test-title]");
-      const title = await page.$eval("[data-test-title]", el => el.textContent);
-      const pageTitle = await page.title();
+      await page.waitForSelector(titleSelector);
+      title = await page.$eval(titleSelector, el => el.textContent);
+      pageTitle = await page.title();
       expect(`${title} - Barnardo's`).toBe(pageTitle);
     }
   });
