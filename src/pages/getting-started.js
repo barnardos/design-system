@@ -50,12 +50,10 @@ const Pages = () => (
     <Paragraph
     >{`When creating your product, try to adopt as much of the Design System as possible. Depending on your needs and constraints, you may not be able to adopt all of it. It's not all or nothing.`}</Paragraph>
     <Paragraph>
-      {`If something isn't in the Design System, don't let it stop you. Design a solution, test it and use it in your product. If you think it solves a common problem, `}
-      <Link href="https://github.com/barnardos/design-system">{`share it with us`}</Link>
-      {`.`}
+      {`If something isn't in the Design System, don't let it stop you. Design a solution, test it and use it in your product. If you think it solves a common problem, share it with us.`}
     </Paragraph>
     <Paragraph>
-      {`You can stay up to date with the latest changes by following us on `}
+      {`You can reach us on `}
       <Link href="https://barnardos.facebook.com/groups/design.system/">{`Workspace`}</Link>
       {`.`}
     </Paragraph>
