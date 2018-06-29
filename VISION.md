@@ -9,4 +9,4 @@ We should:
 * maximise adoption
 * embrace change
 
-So that designers and developers can build products that allow users to succesfully complete their journey.
+So that designers and developers can build products that allow users to successfully complete their journey.
