@@ -133,7 +133,7 @@ const Pages = () => (
             <SinglelineTextControl
               id="text-control-full-name-example"
               label="Full name"
-              size="48"
+              size={48}
             />
             <figcaption
               className="Pages-figureCaption"

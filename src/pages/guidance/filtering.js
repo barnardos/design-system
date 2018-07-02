@@ -59,7 +59,7 @@ const Pages = () => (
               id: "submit-controls-single-line-text-example",
               hint: "For example town or postcode.",
               label: "Location",
-              size: "48"
+              size: 48
             }
           ]}
           submit={{

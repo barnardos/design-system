@@ -66,14 +66,14 @@ const Pages = () => (
         hint="As it appears on your ID."
         id="text-control-full-name-example"
         label="Full name"
-        size="48"
+        size={48}
       />
     </div>
     <div className="Pages-example">
       <SinglelineTextControl
         id="text-control-post-code-example"
         label="Postcode (optional)"
-        size="16"
+        size={16}
       />
     </div>
     <Paragraph>
@@ -87,8 +87,8 @@ const Pages = () => (
         hint="So that we can post the certificate."
         id="multiline-text-control-example"
         label="Address"
-        size="48"
-        verticalSize="4"
+        size={48}
+        verticalSize={4}
       />
     </div>
     <Paragraph>
@@ -161,6 +161,7 @@ const Pages = () => (
             id: "one-of-many-choice-control-example-maybe"
           }
         ]}
+        id="one-of-many-choice-control-example"
         legend="Will there be refreshments?"
         name="one-of-many-choice-control-example"
       />
@@ -196,6 +197,7 @@ const Pages = () => (
           }
         ]}
         hint="Letting the participants know is a legal requirement."
+        id="any-of-many-choice-control-example"
         legend="How will the interview be recorded?"
         name="any-of-many-choice-control-example"
       />
@@ -208,8 +210,9 @@ const Pages = () => (
     <HeadingTwo>{`ChoiceControl`}</HeadingTwo>
     <div className="Pages-example">
       <ChoiceControl
-        label="Subscribe to mailing list"
         id="choice-control-example"
+        label="Subscribe to mailing list"
+        name="choice-control-example"
       />
     </div>
     <Paragraph>
@@ -254,19 +257,18 @@ const Pages = () => (
     </UnorderedList>
     <div className="Pages-example">
       <SubmitControls
-        errored
         controls={[
           {
-            errored: true,
+            invalid: true,
             control: "singlelineText",
             id: "submit-controls-single-line-text-example",
             label: "Name of the meal",
-            size: "48",
+            size: 48,
             validation: "Enter the name of the meal"
           },
           {
             control: "oneOfManyChoice",
-            errored: true,
+            invalid: true,
             hint:
               "Nut allergies can be dangerous. Only choose 'No' if you're completely sure.",
             id: "submit-controls-one-of-many-choice-example",
@@ -290,6 +292,7 @@ const Pages = () => (
           },
           {
             control: "anyOfManyChoice",
+            id: "submit-controls-any-of-many-choice-control-example",
             name: "submit-controls-any-of-many-choice-control-example",
             legend: "What are the benefits of the meal?",
             choices: [
@@ -314,6 +317,7 @@ const Pages = () => (
             ]
           }
         ]}
+        invalid
         submit={{
           text: "Continue"
         }}

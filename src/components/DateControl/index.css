@@ -61,15 +61,15 @@
 }
 
 /**
- * errored
+ * invalid
  */
 
-.DateControl--errored {
+.DateControl--invalid {
   box-shadow: inset 0.25rem 0 0 var(--red);
   padding-left: 1rem;
 }
 
-.DateControl--errored .DateControl-element {
+.DateControl--invalid .DateControl-element {
   box-shadow: inset 0 0 0 1px var(--red),
     inset 0.25rem 0.25rem color(var(--red) tint(80%));
 }

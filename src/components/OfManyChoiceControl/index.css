@@ -39,14 +39,14 @@
 }
 
 /**
- * errored
+ * invalid
  */
 
-.OfManyChoiceControl--errored {
+.OfManyChoiceControl--invalid {
   box-shadow: inset 0.25rem 0 0 var(--red);
   padding-left: 1rem;
 }
 
-.OfManyChoiceControl--errored .OfManyChoiceControl-element {
+.OfManyChoiceControl--invalid .OfManyChoiceControl-element {
   box-shadow: inset 0.25rem 0.25rem color(var(--red) tint(80%));
 }

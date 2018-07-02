@@ -4,7 +4,7 @@ import React from "react";
 import "./index.css";
 
 const SinglelineTextControl = ({
-  errored,
+  invalid,
   hint,
   id,
   label,
@@ -12,7 +12,7 @@ const SinglelineTextControl = ({
   validation
 }) => {
   const className = `SinglelineTextControl ${
-    errored ? "SinglelineTextControl--errored" : ""
+    invalid ? "SinglelineTextControl--invalid" : ""
   }`;
   return (
     <div className={className}>
@@ -29,17 +29,17 @@ const SinglelineTextControl = ({
       )}
       <input
         className="SinglelineTextControl-element"
-        name={id}
         id={id}
-        type="text"
+        name={id}
         size={size}
+        type="text"
       />
     </div>
   );
 };
 
 SinglelineTextControl.propTypes = {
-  errored: PropTypes.bool,
+  invalid: PropTypes.bool,
   hint: PropTypes.string,
   id: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,

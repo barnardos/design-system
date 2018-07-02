@@ -4,7 +4,7 @@ import React from "react";
 import "./index.css";
 
 const MultilineTextControl = ({
-  errored,
+  invalid,
   hint,
   id,
   label,
@@ -13,7 +13,7 @@ const MultilineTextControl = ({
   verticalSize
 }) => {
   const className = `MultilineTextControl ${
-    errored ? "MultilineTextControl--errored" : ""
+    invalid ? "MultilineTextControl--invalid" : ""
   }`;
   return (
     <div className={className}>
@@ -30,9 +30,9 @@ const MultilineTextControl = ({
       )}
       <textarea
         className="MultilineTextControl-element"
-        name={id}
-        id={id}
         cols={size}
+        id={id}
+        name={id}
         rows={verticalSize}
       />
     </div>
@@ -40,7 +40,7 @@ const MultilineTextControl = ({
 };
 
 MultilineTextControl.propTypes = {
-  errored: PropTypes.bool,
+  invalid: PropTypes.bool,
   hint: PropTypes.string,
   id: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
