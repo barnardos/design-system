@@ -63,12 +63,12 @@ const Pages = () => (
     <UnorderedList>
       <ListItem>
         {`follow the `}
-        <GatsbyLink to="/">{`guidance`}</GatsbyLink>
+        <GatsbyLink to="/guidance/">{`guidance`}</GatsbyLink>
       </ListItem>
       <ListItem>{`avoid reinventing the wheel`}</ListItem>
       <ListItem>
         {`write using `}
-        <GatsbyLink to="/writing-content/">{`consistent language`}</GatsbyLink>
+        <GatsbyLink to="/guidance/writing-content/">{`consistent language`}</GatsbyLink>
       </ListItem>
     </UnorderedList>
     <HeadingOne>{`5. Be open`}</HeadingOne>

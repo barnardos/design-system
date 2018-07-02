@@ -35,7 +35,7 @@ const Pages = () => (
     <UnorderedList>
       <ListItem>
         {`follow the guidance for `}
-        <GatsbyLink to="/requesting-information/">{`requesting information`}</GatsbyLink>
+        <GatsbyLink to="/guidance/requesting-information/">{`requesting information`}</GatsbyLink>
       </ListItem>
       <ListItem>{`avoid too many filters`}</ListItem>
       <ListItem>{`show common filters at all times`}</ListItem>
