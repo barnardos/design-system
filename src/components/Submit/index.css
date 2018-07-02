@@ -7,7 +7,7 @@
   background-color: var(--green);
   border: none;
   border-radius: 0;
-  box-shadow: 0.25rem 0.25rem color(var(--green) shade(30%));
+  box-shadow: 0.25rem 0.25rem color(var(--green) shade(40%));
   color: var(--white);
   font: 600 var(--type-2)/1.5rem Nova, sans-serif;
   padding: 0.75rem 3rem;
