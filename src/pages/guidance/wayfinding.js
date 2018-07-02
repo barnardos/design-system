@@ -158,6 +158,7 @@ const Pages = () => (
               }
             ]
           }}
+          search
         />
       </div>
     </div>
