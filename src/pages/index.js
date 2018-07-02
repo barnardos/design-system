@@ -36,7 +36,9 @@ const Pages = () => (
     </div>
     <Paragraph>
       {`You're welcome to `}
-      <Link href="https://github.com/barnardos/design-system">{`contribute and give feedback`}</Link>
+      <Link href="https://github.com/barnardos/design-system">{`contribute on GitHub`}</Link>
+      {` and `}
+      <Link href="https://barnardos.facebook.com/groups/design.system/">{`give feedback on Workplace`}</Link>
       {`.`}
     </Paragraph>
   </div>
