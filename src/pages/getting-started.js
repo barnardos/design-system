@@ -50,10 +50,26 @@ const Pages = () => (
     <Paragraph
     >{`When creating your product, try to adopt as much of the Design System as possible. Depending on your needs and constraints, you may not be able to adopt all of it. It's not all or nothing.`}</Paragraph>
     <Paragraph>
-      {`If something isn't in the Design System, don't let it stop you. Design a solution, test it and use it in your product. If you think it solves a common problem, share it with us.`}
+      {`If something isn't in the Design System, don't let it stop you. Design a solution, test it and use it in your product.`}
     </Paragraph>
     <Paragraph>
-      {`You can reach us on `}
+      {`If you've created something you think solves a common problem and aligns with `}
+      <Link href="https://github.com/barnardos/design-system/blob/master/VISION.md">{`vision`}</Link>
+      {` on GitHub:`}
+    </Paragraph>
+    <UnorderedList>
+      <ListItem>
+        {`check for a `}
+        <Link href="https://github.com/barnardos/design-system/issues?q=is%3Aissue+is%3Aopen+label%3A%22type%3A+story%22">{`relevant issue`}</Link>
+        {` on GitHub, and give it a thumbs-up reaction`}
+      </ListItem>
+      <ListItem>
+        <Link href="https://github.com/barnardos/design-system/issues/new?template=STORY.md">{`create an issue`}</Link>
+        {` if one doesn't exist`}
+      </ListItem>
+    </UnorderedList>
+    <Paragraph>
+      {`You also contribute to the discussion on `}
       <Link href="https://barnardos.facebook.com/groups/design.system/">{`Workspace`}</Link>
       {`.`}
     </Paragraph>
