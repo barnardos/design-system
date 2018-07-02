@@ -8,7 +8,7 @@ import logo from "./logo.svg";
 
 import "./index.css";
 
-const Header = ({ links, navigation }) => {
+const Header = ({ links, navigation, search }) => {
   return (
     <header className="Header">
       <a className="Header-logo" href="http://www.barnardos.org.uk/">
@@ -23,9 +23,11 @@ const Header = ({ links, navigation }) => {
           <Navigation {...navigation} />
         </div>
       )}
-      <div className="Header-submitSearchControl">
-        <SubmitSearchControl />
-      </div>
+      {search && (
+        <div className="Header-submitSearchControl">
+          <SubmitSearchControl />
+        </div>
+      )}
       {links && (
         <ul className="Header-linkItems">
           {links.map(({ href, text }, index) => (
@@ -43,7 +45,8 @@ const Header = ({ links, navigation }) => {
 
 Header.propTypes = {
   links: PropTypes.array,
-  navigation: PropTypes.object
+  navigation: PropTypes.object,
+  search: PropTypes.bool
 };
 
 export default Header;
