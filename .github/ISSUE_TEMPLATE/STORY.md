@@ -1,5 +1,6 @@
 ---
-name: "User story"
+name: "Story"
+about: "Write a user story"
 ---
 
 _As a [persona]
