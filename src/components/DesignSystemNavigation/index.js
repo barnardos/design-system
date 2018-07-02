@@ -6,7 +6,7 @@ import "./index.css";
 
 const DesignSystemNavigation = ({ items }) => (
   <nav className="DesignSystemNavigation">
-    <ul>
+    <ul className="DesignSystemNavigation-items">
       {items.map(({ text, to }, index) => (
         <li className="DesignSystemNavigation-item" key={index}>
           <GatsbyLink

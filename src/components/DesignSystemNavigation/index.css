@@ -2,10 +2,15 @@
 
 /** @define DesignSystemNavigation; */
 
+.DesignSystemNavigation-items {
+  display: grid;
+  grid-gap: 0.5rem;
+}
+
 .DesignSystemNavigation-item {
   list-style: none;
 }
 
 .DesignSystemNavigation-link {
-  font: 300 var(--type-0)/1.5rem system-ui;
+  font: 300 var(--type-2)/2.5rem system-ui;
 }
