@@ -33,7 +33,7 @@ const Pages = () => (
       ]}
     />
     <Title>{`Colour`}</Title>
-    <Paragraph>{`When applying color you should:`}</Paragraph>
+    <Paragraph>{`When applying colour you should:`}</Paragraph>
     <UnorderedList>
       <ListItem>{`only use the brand colours`}</ListItem>
       <ListItem>{`use increments of 10% for tints and shades`}</ListItem>
@@ -42,9 +42,9 @@ const Pages = () => (
         <Link href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html">{`accessible`}</Link>
         {` colour combinations for text`}
       </ListItem>
-      <ListItem>{`avoid relying on just color`}</ListItem>
+      <ListItem>{`avoid relying on just colour`}</ListItem>
     </UnorderedList>
-    <HeadingOne>Brand colors</HeadingOne>
+    <HeadingOne>Brand colours</HeadingOne>
     <div className="Pages-swatches">
       <Swatches
         swatches={[
@@ -67,7 +67,7 @@ const Pages = () => (
         ]}
       />
     </div>
-    <HeadingOne>Using colors</HeadingOne>
+    <HeadingOne>Using colours</HeadingOne>
     <Paragraph>{`For example, you could use:`}</Paragraph>
     <div className="Pages-figures">
       <figure className="Pages-figure">
