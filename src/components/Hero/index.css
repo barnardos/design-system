@@ -1,0 +1,48 @@
+@import "../../custom-properties.css";
+
+/** @define Hero; */
+
+.Hero {
+  position: relative;
+}
+
+.Hero-title {
+  font: 600 var(--type-8)/3rem Nova, sans-serif;
+  margin: 0 0.5rem;
+}
+
+.Hero-mask {
+  background-color: var(--green);
+  box-shadow: 0.5rem 0 0 var(--green), -0.5rem 0 0 var(--green);
+  color: var(--white);
+  display: inline;
+}
+
+.Hero-image {
+  display: block;
+  margin-top: 1rem;
+  max-width: 100%;
+}
+
+@media (min-width: 36rem) {
+  .Hero-title {
+    bottom: 2rem;
+    left: 1rem;
+    max-width: 60%;
+    position: absolute;
+  }
+}
+
+@media (min-width: 40rem) {
+  .Hero-title {
+    font-size: var(--type-9);
+    line-height: 3.5rem;
+  }
+}
+
+@media (min-width: 50rem) {
+  .Hero-title {
+    bottom: 4rem;
+    left: 2rem;
+  }
+}
