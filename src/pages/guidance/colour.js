@@ -42,7 +42,8 @@ const Pages = () => (
         <Link href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html">{`accessible`}</Link>
         {` colour combinations for text`}
       </ListItem>
-      <ListItem>{`avoid relying on just colour`}</ListItem>
+      <ListItem
+      >{`avoid relying on colour to convey important information`}</ListItem>
     </UnorderedList>
     <HeadingOne>Brand colours</HeadingOne>
     <div className="Pages-swatches">
