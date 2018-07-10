@@ -45,7 +45,7 @@
   background: var(--green);
   border: none;
   border-radius: 0;
-  box-shadow: 0.125rem 0.125rem color(var(--green) shade(40%));
+  box-shadow: 0.25rem 0.25rem color(var(--green) shade(40%));
   display: flex;
   flex: 0 0 3rem;
   justify-content: center;
