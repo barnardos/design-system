@@ -4,7 +4,6 @@ import Command from "../Command";
 
 import crossSvg from "./cross.svg";
 import glassSvg from "./glass.svg";
-import inverseGlassSvg from "./inverse-glass.svg";
 
 import "./index.css";
 
@@ -57,7 +56,7 @@ class SubmitSearchControl extends Component {
               <img
                 alt="Submit search"
                 className="SubmitSearchControl-buttonSvg"
-                src={inverseGlassSvg}
+                src={glassSvg}
               />
             </button>
           </form>

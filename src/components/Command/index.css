@@ -5,11 +5,11 @@
 .Command {
   align-items: center;
   appearance: none;
-  background: color(var(--black) tint(90%));
+  background: var(--black);
   border: none;
   border-radius: 0;
-  box-shadow: 0.125rem 0.125rem color(color(var(--black) tint(90%)) shade(40%));
-  color: var(--black);
+  box-shadow: 0.25rem 0.25rem color(var(--black) tint(60%));
+  color: var(--white);
   display: flex;
   font: 600 var(--type-2)/1.5rem Nova, sans-serif;
   justify-content: center;
@@ -19,7 +19,7 @@
 }
 
 .Command:hover {
-  background-color: color(color(var(--black) tint(90%)) shade(10%));
+  background-color: color(var(--black) shade(10%));
 }
 
 .Command:active {
