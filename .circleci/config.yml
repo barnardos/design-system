@@ -1,15 +1,17 @@
 # Javascript Node CircleCI 2.0 configuration file
 #
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
+
 version: 2
 jobs:
   build:
     docker:
-      - image: regviz/node-xcb
+      - image: circleci/node:latest-browsers
 
     working_directory: ~/repo
 
     steps:
+
       - checkout
 
       # Download and cache dependencies
@@ -19,7 +21,17 @@ jobs:
           # Fallback to using the latest cache if no exact match is found
           - v1-dependencies-
 
-      - run: yarn install
+      - run:
+          name: Update npm
+          command: sudo npm install -g npm@latest
+
+      - run:
+          name: Check versions
+          command: |
+            node --version
+            npm --version
+
+      - run: npm ci
 
       - save_cache:
           paths:
@@ -28,7 +40,7 @@ jobs:
 
       - run:
           name: Build app and serve
-          command: yarn build-serve
+          command: npm run build-serve
           background: true
 
       - run:
@@ -39,4 +51,4 @@ jobs:
 
       - run:
           name: Run tests
-          command: NODE_ENV=CI yarn test
+          command: NODE_ENV=CI npm test

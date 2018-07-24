@@ -4,23 +4,18 @@ The website for the Design System.
 
 ## Getting started
 
-Install:
+First, install [Node.js](https://nodejs.org/en/).
 
-* [Node.js](https://nodejs.org/en/)
-* [Yarn](https://yarnpkg.com/en/)
+Then, run these commands:
 
-Run these commands:
+* `npm install` - install all dependencies
+* `npm start` - start a development server
 
-* `yarn` - install all dependencies.
-* `yarn develop`\* - start a development server.
-
-Use `yarn run` to see a list of all the available commands.
-
-(\* Use `--host localhost` when on the `barn_corp` network.)
+Use `npm run` to see a list of all the available commands.
 
 ## Known issues
 
-If you run into difficulties getting Gatsby to build when you run `yarn develop`, try deleting the `.cache` folder in the root of the project (if it is there) and rerun.
+If you encounter an error, try deleting the `.cache` folder in the root of the project and run `npm start` again.
 
 ## Services
 
