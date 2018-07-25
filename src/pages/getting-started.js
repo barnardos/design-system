@@ -26,11 +26,14 @@ const Pages = () => (
     />
     <Title>{`Getting started`}</Title>
     <Paragraph>
-      {`The Design System is a set of `}
+      {`The Design System is for designers and developers working together.`}
+    </Paragraph>
+    <Paragraph>
+      {`It is a set of `}
       <GatsbyLink to="/principles/">{`Principles`}</GatsbyLink>
       {` and `}
       <GatsbyLink to="/guidance/">{`Guidance`}</GatsbyLink>
-      {`.`}
+      {` .`}
     </Paragraph>
     <Paragraph
     >{`The principles are how you should think about designing your product.`}</Paragraph>
