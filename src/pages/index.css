@@ -26,7 +26,7 @@
 
 .Pages-figureCaption {
   background: color(var(--black) tint(90%));
-  display: inline-block;
+  display: block;
   font: 300 var(--type--1)/1.5rem system-ui;
   font-variant-numeric: tabular-nums;
   margin-top: 1rem;
