@@ -62,7 +62,6 @@ const Pages = () => (
       <ListItem>{`email (no hyphen)`}</ListItem>
       <ListItem
       >{`http:// (is not required, begin web addresses with www)`}</ListItem>
-      <ListItem>{`intranet (always lowercase)`}</ListItem>
       <ListItem>{`online (one word)`}</ListItem>
       <ListItem
       >{`per cent (should be spelt in words, unless used in tables)`}</ListItem>
