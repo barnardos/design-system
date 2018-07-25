@@ -63,9 +63,9 @@ const Pages = () => (
     <HeadingTwo>{`SinglelineTextControl`}</HeadingTwo>
     <div className="Pages-example">
       <SinglelineTextControl
-        hint="As it appears on your ID."
-        id="text-control-full-name-example"
-        label="Full name"
+        hint="So that we can send you the certificate."
+        id="text-control-email-example"
+        label="Email"
         size={48}
       />
     </div>
@@ -84,9 +84,8 @@ const Pages = () => (
     <HeadingTwo>{`MultilineTextControl`}</HeadingTwo>
     <div className="Pages-example">
       <MultilineTextControl
-        hint="So that we can post the certificate."
         id="multiline-text-control-example"
-        label="Address"
+        label="Comment"
         size={48}
         verticalSize={4}
       />
