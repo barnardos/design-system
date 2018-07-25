@@ -36,10 +36,11 @@ const Pages = () => (
     <Paragraph>{`When applying colour you should:`}</Paragraph>
     <UnorderedList>
       <ListItem>{`only use the brand colours`}</ListItem>
-      <ListItem>{`use increments of 10% for tints and shades`}</ListItem>
+      <ListItem
+      >{`add white (tint) or black (shade) in 10% increments`}</ListItem>
       <ListItem>
         {`use `}
-        <Link href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html">{`accessible`}</Link>
+        <Link href="https://webaim.org/resources/contrastchecker/">{`accessible`}</Link>
         {` colour combinations for text`}
       </ListItem>
       <ListItem
