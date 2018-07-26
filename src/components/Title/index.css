@@ -4,10 +4,10 @@
 
 .Title {
   font: 600 var(--type-8)/3rem Nova, sans-serif;
-}
 
-.Title:not(:first-child) {
-  margin-top: 1rem;
+  &:not(:first-child) {
+    margin-top: 1rem;
+  }
 }
 
 @media (min-width: 40rem) {

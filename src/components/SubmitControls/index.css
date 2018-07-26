@@ -16,8 +16,10 @@
   margin-top: 0.5rem;
 }
 
-.SubmitControls-validationItem:not(:first-child) {
-  margin-top: 0.5rem;
+.SubmitControls-validationItem {
+  &:not(:first-child) {
+    margin-top: 0.5rem;
+  }
 }
 
 .SubmitControls-validationItemLink {
@@ -25,8 +27,10 @@
   font: 600 var(--type-0)/1.5rem system-ui;
 }
 
-.SubmitControls-controls:not(:first-child) {
-  margin-top: 2rem;
+.SubmitControls-controls {
+  &:not(:first-child) {
+    margin-top: 2rem;
+  }
 }
 
 .SubmitControls-submit {

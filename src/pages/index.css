@@ -12,16 +12,10 @@
   padding: 1rem;
 }
 
-.Pages-figure:not(:first-child) {
-  margin-top: 1.5rem;
-}
-
-.Pages-figure--positioned {
-  position: relative;
-}
-
-.Pages-figure--positioned:not(:first-child) {
-  margin-top: 1rem;
+.Pages-figure {
+  &:not(:first-child) {
+    margin-top: 1.5rem;
+  }
 }
 
 .Pages-figureCaption {
@@ -35,6 +29,14 @@
 
 .Pages-figureCaption--flush {
   margin: 0;
+}
+
+.Pages-figure--positioned {
+  position: relative;
+
+  &:not(:first-child) {
+    margin-top: 1rem;
+  }
 }
 
 .Pages-figure--positioned .Pages-figureCaption {
@@ -74,26 +76,26 @@
   margin-top: 1.5rem;
   padding: 2.5rem 1rem 1rem;
   position: relative;
+
+  &::before {
+    background: color-mod(var(--black) tint(60%));
+    color: var(--white);
+    content: "Example";
+    display: block;
+    font-family: system-ui;
+    font-size: var(--type--1);
+    font-weight: 300;
+    left: 0;
+    padding: 0.25rem 0.5rem;
+    position: absolute;
+    top: 0;
+  }
 }
 
 @media (min-width: 50rem) {
   .Pages-example--full {
     margin-right: calc(-100vw + 48rem);
   }
-}
-
-.Pages-example::before {
-  background: color-mod(var(--black) tint(60%));
-  color: var(--white);
-  content: "Example";
-  display: block;
-  font-family: system-ui;
-  font-size: var(--type--1);
-  font-weight: 300;
-  left: 0;
-  padding: 0.25rem 0.5rem;
-  position: absolute;
-  top: 0;
 }
 
 .Pages-swatches {

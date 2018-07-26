@@ -43,10 +43,10 @@
 
 .Header-linkItem {
   flex: 1;
-}
 
-.Header-linkItem:not(:first-child) {
-  margin-left: 0.5rem;
+  &:not(:first-child) {
+    margin-left: 0.5rem;
+  }
 }
 
 .Header-link {
@@ -57,10 +57,10 @@
   padding: 0.5rem;
   text-align: center;
   white-space: nowrap;
-}
 
-.Header-link:hover {
-  background-color: var(--black);
+  &:hover {
+    background-color: var(--black);
+  }
 }
 
 @media (min-width: 36rem) {

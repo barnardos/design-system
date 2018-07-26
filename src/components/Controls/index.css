@@ -1,5 +1,7 @@
 /** @define Controls; */
 
-.Controls-control:not(:first-child) {
-  margin-top: 2rem;
+.Controls-control {
+  &:not(:first-child) {
+    margin-top: 2rem;
+  }
 }

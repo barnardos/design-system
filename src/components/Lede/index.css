@@ -4,8 +4,8 @@
 
 .Lede {
   font: 300 var(--type-4)/2rem Nova, sans-serif;
-}
 
-.Lede:not(:first-child) {
-  margin-top: 1rem;
+  &:not(:first-child) {
+    margin-top: 1rem;
+  }
 }
