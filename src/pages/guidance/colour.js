@@ -14,7 +14,7 @@ import Submit from "../../components/Submit";
 import Title from "../../components/Title";
 import UnorderedList from "../../components/UnorderedList";
 
-import "../../index.css";
+import "../../app.css";
 import "../index.css";
 
 const Pages = () => (

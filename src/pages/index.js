@@ -6,7 +6,7 @@ import Layout from "../components/Layout";
 import Lede from "../components/Lede";
 import Title from "../components/Title";
 
-import "../index.css";
+import "../app.css";
 import "./index.css";
 
 const Pages = () => (

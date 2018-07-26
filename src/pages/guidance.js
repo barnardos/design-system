@@ -6,7 +6,7 @@ import DesignSystemNavigation from "../components/DesignSystemNavigation";
 import Layout from "../components/Layout";
 import Title from "../components/Title";
 
-import "../index.css";
+import "../app.css";
 import "./index.css";
 
 const Pages = () => (

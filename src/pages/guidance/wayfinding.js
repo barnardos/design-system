@@ -13,7 +13,7 @@ import SubmitSearchControl from "../../components/SubmitSearchControl";
 import Title from "../../components/Title";
 import UnorderedList from "../../components/UnorderedList";
 
-import "../../index.css";
+import "../../app.css";
 import "../index.css";
 
 const Pages = () => (
