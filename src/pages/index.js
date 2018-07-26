@@ -2,13 +2,15 @@ import Helmet from "react-helmet";
 import React from "react";
 
 import DesignSystemNavigation from "../components/DesignSystemNavigation";
+import Layout from "../components/Layout";
 import Lede from "../components/Lede";
 import Title from "../components/Title";
 
+import "../app.css";
 import "./index.css";
 
 const Pages = () => (
-  <div className="Pages">
+  <Layout>
     <Helmet>
       <title>{`Design System`}</title>
     </Helmet>
@@ -32,7 +34,7 @@ const Pages = () => (
         ]}
       />
     </div>
-  </div>
+  </Layout>
 );
 
 export default Pages;

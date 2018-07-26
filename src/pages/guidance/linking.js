@@ -5,6 +5,7 @@ import AttentionGrabbingLink from "../../components/AttentionGrabbingLink";
 import BackLink from "../../components/BackLink";
 import Breadcrumbs from "../../components/Breadcrumbs";
 import HeadingOne from "../../components/HeadingOne";
+import Layout from "../../components/Layout";
 import Link from "../../components/Link";
 import ListItem from "../../components/ListItem";
 import Paragraph from "../../components/Paragraph";
@@ -12,10 +13,11 @@ import StartLink from "../../components/StartLink";
 import Title from "../../components/Title";
 import UnorderedList from "../../components/UnorderedList";
 
+import "../../app.css";
 import "../index.css";
 
 const Pages = () => (
-  <div className="Pages">
+  <Layout>
     <Helmet>
       <title>{`Linking`}</title>
     </Helmet>
@@ -140,7 +142,7 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/issues/167">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
-  </div>
+  </Layout>
 );
 
 export default Pages;

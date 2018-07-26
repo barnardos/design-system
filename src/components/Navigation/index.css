@@ -3,7 +3,7 @@
 /** @define Navigation; */
 
 .Navigation {
-  box-shadow: inset 0 -1px 0 0 color(var(--black) tint(90%));
+  box-shadow: inset 0 -1px 0 0 color-mod(var(--black) tint(90%));
 }
 
 .Navigation-items {
@@ -59,13 +59,13 @@
 }
 
 .Navigation--revealing .Navigation-items {
-  box-shadow: inset 0 1px 0 0 color(var(--black) tint(90%));
+  box-shadow: inset 0 1px 0 0 color-mod(var(--black) tint(90%));
   display: block;
   margin-top: 1rem;
 }
 
 .Navigation--revealing .Navigation-item {
-  box-shadow: inset 0 -1px 0 0 color(var(--black) tint(90%));
+  box-shadow: inset 0 -1px 0 0 color-mod(var(--black) tint(90%));
 }
 
 .Navigation--revealing .Navigation-link {
@@ -74,7 +74,7 @@
 
 @media (min-width: 54rem) {
   .Navigation--revealing {
-    box-shadow: inset 0 -1px 0 0 color(var(--black) tint(90%));
+    box-shadow: inset 0 -1px 0 0 color-mod(var(--black) tint(90%));
   }
 
   .Navigation--revealing .Navigation-command {

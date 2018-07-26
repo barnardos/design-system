@@ -14,5 +14,5 @@
 
 .StartLink:hover:active,
 .StartLink:hover:hover {
-  background-color: color(var(--green) shade(10%));
+  background-color: color-mod(var(--green) shade(10%));
 }

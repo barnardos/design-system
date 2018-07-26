@@ -10,5 +10,6 @@ module.exports = {
     "<rootDir>/stylelint/**/__tests__/**/*.js",
     "<rootDir>/src/**/__tests__/**/*.js",
     "<rootDir>/src/**/?(*.)test.js"
-  ]
+  ],
+  transform: { "^.+\\.js$": "<rootDir>/jestTransform.js" }
 };

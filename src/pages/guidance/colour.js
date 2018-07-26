@@ -4,6 +4,7 @@ import React from "react";
 import Breadcrumbs from "../../components/Breadcrumbs";
 import HeadingOne from "../../components/HeadingOne";
 import HeadingTwo from "../../components/HeadingTwo";
+import Layout from "../../components/Layout";
 import Link from "../../components/Link";
 import ListItem from "../../components/ListItem";
 import Paragraph from "../../components/Paragraph";
@@ -13,10 +14,11 @@ import Submit from "../../components/Submit";
 import Title from "../../components/Title";
 import UnorderedList from "../../components/UnorderedList";
 
+import "../../app.css";
 import "../index.css";
 
 const Pages = () => (
-  <div className="Pages">
+  <Layout>
     <Helmet>
       <title>{`Colour`}</title>
     </Helmet>
@@ -102,7 +104,7 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/issues/14">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
-  </div>
+  </Layout>
 );
 
 export default Pages;

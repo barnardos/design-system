@@ -1,3 +1,4 @@
+require("babel-polyfill");
 const get = require("lodash/get");
 const stylelint = require("stylelint");
 

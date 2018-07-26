@@ -1,20 +1,22 @@
-import GatsbyLink from "gatsby-link";
+import { Link as GatsbyLink } from "gatsby";
 import Helmet from "react-helmet";
 import React from "react";
 import Link from "../../components/Link";
 import Breadcrumbs from "../../components/Breadcrumbs";
 import Filter from "../../components/Filter";
 import HeadingOne from "../../components/HeadingOne";
+import Layout from "../../components/Layout";
 import ListItem from "../../components/ListItem";
 import Paragraph from "../../components/Paragraph";
 import SubmitControls from "../../components/SubmitControls";
 import Title from "../../components/Title";
 import UnorderedList from "../../components/UnorderedList";
 
+import "../../app.css";
 import "../index.css";
 
 const Pages = () => (
-  <div className="Pages">
+  <Layout>
     <Helmet>
       <title>{`Filtering`}</title>
     </Helmet>
@@ -136,7 +138,7 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/issues/79">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
-  </div>
+  </Layout>
 );
 
 export default Pages;

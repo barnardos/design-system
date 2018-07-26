@@ -8,7 +8,7 @@
   background: var(--black);
   border: none;
   border-radius: 0;
-  box-shadow: 0.25rem 0.25rem color(var(--black) tint(60%));
+  box-shadow: 0.25rem 0.25rem color-mod(var(--black) tint(60%));
   color: var(--white);
   display: flex;
   font: 600 var(--type-2)/1.5rem Nova, sans-serif;
@@ -19,7 +19,7 @@
 }
 
 .Command:hover {
-  background-color: color(var(--black) shade(10%));
+  background-color: color-mod(var(--black) shade(10%));
 }
 
 .Command:active {
