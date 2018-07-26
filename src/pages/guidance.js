@@ -3,12 +3,14 @@ import React from "react";
 
 import Breadcrumbs from "../components/Breadcrumbs";
 import DesignSystemNavigation from "../components/DesignSystemNavigation";
+import Layout from "../components/Layout";
 import Title from "../components/Title";
 
+import "../index.css";
 import "./index.css";
 
 const Pages = () => (
-  <div className="Pages">
+  <Layout>
     <Helmet>
       <title>{`Guidance`}</title>
     </Helmet>
@@ -55,7 +57,7 @@ const Pages = () => (
         ]}
       />
     </div>
-  </div>
+  </Layout>
 );
 
 export default Pages;

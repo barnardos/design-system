@@ -86,7 +86,7 @@
     "function-url-scheme-whitelist": [],
     "function-whitelist": [
       "calc",
-      "color",
+      "color-mod",
       "minmax",
       "repeat",
       "shade",

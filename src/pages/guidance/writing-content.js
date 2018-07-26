@@ -3,15 +3,17 @@ import React from "react";
 
 import Breadcrumbs from "../../components/Breadcrumbs";
 import HeadingOne from "../../components/HeadingOne";
+import Layout from "../../components/Layout";
 import ListItem from "../../components/ListItem";
 import Paragraph from "../../components/Paragraph";
 import Title from "../../components/Title";
 import UnorderedList from "../../components/UnorderedList";
 
+import "../../index.css";
 import "../index.css";
 
 const Pages = () => (
-  <div className="Pages">
+  <Layout>
     <Helmet>
       <title>{`Writing content`}</title>
     </Helmet>
@@ -68,7 +70,7 @@ const Pages = () => (
       <ListItem>{`postcode (no hyphen)`}</ListItem>
       <ListItem>{`website (no hyphen)`}</ListItem>
     </UnorderedList>
-  </div>
+  </Layout>
 );
 
 export default Pages;

@@ -23,7 +23,6 @@
     "eslint": "^4.17.0",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-react": "^7.6.1",
-    "gatsby": "^1.9.183",
     "jest": "^22.4.3",
     "npm-run-all": "^4.1.2",
     "parse-css-font": "^2.0.2",
@@ -38,6 +37,14 @@
     "stylelint-selector-bem-pattern": "^2.0.0"
   },
   "dependencies": {
+    "gatsby": "next",
+    "gatsby-plugin-postcss": "next",
+    "postcss-browser-reporter": "^0.5.0",
+    "postcss-import": "^11.1.0",
+    "postcss-preset-env": "^5.3.0",
+    "postcss-reporter": "^5.0.0",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
     "react-helmet": "^5.2.0",
     "slugify": "^1.2.9"
   }

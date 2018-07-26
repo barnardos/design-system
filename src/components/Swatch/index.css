@@ -22,5 +22,5 @@
  */
 
 .Swatch-color--bordered {
-  box-shadow: inset 0 0 0 1px color(var(--black) tint(60%));
+  box-shadow: inset 0 0 0 1px color-mod(var(--black) tint(60%));
 }

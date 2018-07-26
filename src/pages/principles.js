@@ -1,18 +1,20 @@
-import GatsbyLink from "gatsby-link";
+import { Link as GatsbyLink } from "gatsby";
 import Helmet from "react-helmet";
 import React from "react";
 
 import Breadcrumbs from "../components/Breadcrumbs";
 import HeadingOne from "../components/HeadingOne";
+import Layout from "../components/Layout";
 import ListItem from "../components/ListItem";
 import Paragraph from "../components/Paragraph";
 import Title from "../components/Title";
 import UnorderedList from "../components/UnorderedList";
 
+import "../index.css";
 import "./index.css";
 
 const Pages = () => (
-  <div className="Pages">
+  <Layout>
     <Helmet>
       <title>{`Principles`}</title>
     </Helmet>
@@ -89,7 +91,7 @@ const Pages = () => (
       <ListItem>{`respect the environment's constraints`}</ListItem>
       <ListItem>{`avoid print-based thinking`}</ListItem>
     </UnorderedList>
-  </div>
+  </Layout>
 );
 
 export default Pages;

@@ -4,6 +4,7 @@ import React from "react";
 import Breadcrumbs from "../../components/Breadcrumbs";
 import HeadingOne from "../../components/HeadingOne";
 import HeadingTwo from "../../components/HeadingTwo";
+import Layout from "../../components/Layout";
 import Lede from "../../components/Lede";
 import Link from "../../components/Link";
 import ListItem from "../../components/ListItem";
@@ -12,10 +13,11 @@ import SinglelineTextControl from "../../components/SinglelineTextControl/index"
 import Title from "../../components/Title";
 import UnorderedList from "../../components/UnorderedList";
 
+import "../../index.css";
 import "../index.css";
 
 const Pages = () => (
-  <div className="Pages">
+  <Layout>
     <Helmet>
       <title>{`Layout and typography`}</title>
     </Helmet>
@@ -231,7 +233,7 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/issues/1">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
-  </div>
+  </Layout>
 );
 
 export default Pages;

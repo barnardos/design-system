@@ -3,23 +3,22 @@
  */
 
 :root {
-  /* type */
-  --type-ratio: 1.125;
+  /* type (1.125 scale) */
   --type-0: 1rem;
-  --type-1: calc(var(--type-0) * var(--type-ratio));
-  --type-2: calc(var(--type-1) * var(--type-ratio));
-  --type-3: calc(var(--type-2) * var(--type-ratio));
-  --type-4: calc(var(--type-3) * var(--type-ratio));
-  --type-5: calc(var(--type-4) * var(--type-ratio));
-  --type-6: calc(var(--type-5) * var(--type-ratio));
-  --type-7: calc(var(--type-6) * var(--type-ratio));
-  --type-8: calc(var(--type-7) * var(--type-ratio));
-  --type-9: calc(var(--type-8) * var(--type-ratio));
-  --type-10: calc(var(--type-9) * var(--type-ratio));
-  --type-11: calc(var(--type-10) * var(--type-ratio));
-  --type-12: calc(var(--type-11) * var(--type-ratio));
-  --type--1: calc(var(--type-0) / var(--type-ratio));
-  --type--2: calc(var(--type--1) / var(--type-ratio));
+  --type-1: 1.125rem;
+  --type-2: 1.265rem;
+  --type-3: 1.423rem;
+  --type-4: 1.601rem;
+  --type-5: 1.802rem;
+  --type-6: 2.027rem;
+  --type-7: 2.281rem;
+  --type-8: 2.566rem;
+  --type-9: 2.887rem;
+  --type-10: 3.247rem;
+  --type-11: 3.653rem;
+  --type-12: 4.11rem;
+  --type--1: 0.888rem;
+  --type--2: 0.79rem;
 
   /* colors */
   /* stylelint-disable color-no-hex */

@@ -4,7 +4,7 @@
 
 .Header {
   align-items: flex-end;
-  box-shadow: inset 0 -1px 0 0 color(var(--black) tint(90%));
+  box-shadow: inset 0 -1px 0 0 color-mod(var(--black) tint(90%));
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(2, 1fr);

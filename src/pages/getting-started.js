@@ -1,18 +1,20 @@
-import GatsbyLink from "gatsby-link";
+import { Link as GatsbyLink } from "gatsby";
 import Helmet from "react-helmet";
 import React from "react";
 
 import Breadcrumbs from "../components/Breadcrumbs";
+import Layout from "../components/Layout";
 import Link from "../components/Link";
 import ListItem from "../components/ListItem";
 import Paragraph from "../components/Paragraph";
 import Title from "../components/Title";
 import UnorderedList from "../components/UnorderedList";
 
+import "../index.css";
 import "./index.css";
 
 const Pages = () => (
-  <div className="Pages">
+  <Layout>
     <Helmet>
       <title>{`Getting started`}</title>
     </Helmet>
@@ -76,7 +78,7 @@ const Pages = () => (
       <Link href="https://barnardos.facebook.com/groups/design.system/">{`Workspace`}</Link>
       {`.`}
     </Paragraph>
-  </div>
+  </Layout>
 );
 
 export default Pages;
