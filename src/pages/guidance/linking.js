@@ -10,6 +10,7 @@ import Link from "../../components/Link";
 import ListItem from "../../components/ListItem";
 import Paragraph from "../../components/Paragraph";
 import StartLink from "../../components/StartLink";
+import TableOfContents from "../../components/TableOfContents";
 import Title from "../../components/Title";
 import UnorderedList from "../../components/UnorderedList";
 
@@ -34,6 +35,30 @@ const Pages = () => (
       ]}
     />
     <Title>{`Linking`}</Title>
+    <TableOfContents
+      items={[
+        {
+          level: 1,
+          text: "Link",
+          to: "#link"
+        },
+        {
+          level: 1,
+          text: "AttentionGrabbingLink",
+          to: "#attentiongrabbinglink"
+        },
+        {
+          level: 1,
+          text: "BackLink",
+          to: "#backlink"
+        },
+        {
+          level: 1,
+          text: "StartLink",
+          to: "#startlink"
+        }
+      ]}
+    />
     <Paragraph>{`Use the components below for linking.`}</Paragraph>
     <HeadingOne>{`Link`}</HeadingOne>
     <Paragraph>{`When using this component you should:`}</Paragraph>

@@ -9,3 +9,9 @@
   margin-top: 1.5rem;
   max-width: 46rem;
 }
+
+@media (min-width: 62rem) {
+  .Layout-main {
+    width: 66%;
+  }
+}

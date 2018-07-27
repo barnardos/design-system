@@ -17,6 +17,7 @@ import Paragraph from "../../components/Paragraph";
 import SinglelineTextControl from "../../components/SinglelineTextControl";
 import Submit from "../../components/Submit";
 import SubmitControls from "../../components/SubmitControls";
+import TableOfContents from "../../components/TableOfContents";
 import Title from "../../components/Title";
 import UnorderedList from "../../components/UnorderedList";
 
@@ -41,6 +42,80 @@ const Pages = () => (
       ]}
     />
     <Title>{`Requesting information`}</Title>
+    <TableOfContents
+      items={[
+        {
+          level: 1,
+          text: "Text entry",
+          to: "#text-entry"
+        },
+        {
+          level: 2,
+          text: "SingleLineTextControl",
+          to: "#singlelinetextcontrol"
+        },
+        {
+          level: 2,
+          text: "MultiLineTextControl",
+          to: "#multilinetextcontrol"
+        },
+        {
+          level: 1,
+          text: "Data entry",
+          to: "#data-entry"
+        },
+        {
+          level: 2,
+          text: "CurrencyControl",
+          to: "#currencycontrol"
+        },
+        {
+          level: 2,
+          text: "DateControl",
+          to: "#datecontrol"
+        },
+        {
+          level: 1,
+          text: "Choices",
+          to: "#choices"
+        },
+        {
+          level: 2,
+          text: "OneOfManyChoiceControl",
+          to: "#oneofmanychoicecontrol"
+        },
+        {
+          level: 2,
+          text: "AnyOfManyChoiceControl",
+          to: "#anyofmanychoicecontrol"
+        },
+        {
+          level: 2,
+          text: "ChoiceControl",
+          to: "#choicecontrol"
+        },
+        {
+          level: 1,
+          text: "Submitting",
+          to: "#submitting"
+        },
+        {
+          level: 2,
+          text: "Submit",
+          to: "#submit"
+        },
+        {
+          level: 1,
+          text: "Validating and submitting",
+          to: "#validating-and-submitting"
+        },
+        {
+          level: 2,
+          text: "SubmitControls",
+          to: "#submitcontrols"
+        }
+      ]}
+    />
     <Paragraph>{`When requesting information you should:`}</Paragraph>
     <UnorderedList>
       <ListItem
@@ -245,10 +320,9 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/issues/33">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
-    <HeadingOne
-    >{`Requesting, validating and submitting information`}</HeadingOne>
+    <HeadingOne>{`Validating and submitting`}</HeadingOne>
     <Paragraph
-    >{`Use the component below to request, validate and submit information.`}</Paragraph>
+    >{`Use the component below to validate and submit information.`}</Paragraph>
     <HeadingTwo>{`SubmitControls`}</HeadingTwo>
     <Paragraph>{`When using this component you should:`}</Paragraph>
     <UnorderedList>

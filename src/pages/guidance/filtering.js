@@ -9,6 +9,7 @@ import Layout from "../../components/Layout";
 import ListItem from "../../components/ListItem";
 import Paragraph from "../../components/Paragraph";
 import SubmitControls from "../../components/SubmitControls";
+import TableOfContents from "../../components/TableOfContents";
 import Title from "../../components/Title";
 import UnorderedList from "../../components/UnorderedList";
 
@@ -33,6 +34,15 @@ const Pages = () => (
       ]}
     />
     <Title>{`Filtering`}</Title>
+    <TableOfContents
+      items={[
+        {
+          level: 1,
+          text: "Filter",
+          to: "#filter"
+        }
+      ]}
+    />
     <Paragraph>{`When filtering you should:`}</Paragraph>
     <UnorderedList>
       <ListItem>

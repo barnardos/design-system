@@ -1,0 +1,44 @@
+@import "../../custom-properties.css";
+
+/** @define TableOfContents; */
+
+.TableOfContents {
+  margin-top: 1rem;
+}
+
+.TableOfContents-section {
+  color: var(--black);
+  font: 300 var(--type-0)/1.5rem system-ui, sans-serif;
+}
+
+.TableOfContents-items {
+  display: grid;
+  grid-gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.TableOfContents-item {
+  list-style: none;
+}
+
+.TableOfContents-link {
+  font: 600 var(--type-0)/1.5rem system-ui, sans-serif;
+}
+
+.TableOfContents-item--level2 {
+  &::before {
+    content: "– ";
+  }
+
+  & .TableOfContents-link {
+    font-weight: 300;
+  }
+}
+
+@media (min-width: 62rem) {
+  .TableOfContents {
+    left: 66%;
+    padding-left: 4rem;
+    position: absolute;
+  }
+}

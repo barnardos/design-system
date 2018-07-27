@@ -6,6 +6,7 @@ import HeadingOne from "../../components/HeadingOne";
 import Layout from "../../components/Layout";
 import ListItem from "../../components/ListItem";
 import Paragraph from "../../components/Paragraph";
+import TableOfContents from "../../components/TableOfContents";
 import Title from "../../components/Title";
 import UnorderedList from "../../components/UnorderedList";
 
@@ -30,6 +31,15 @@ const Pages = () => (
       ]}
     />
     <Title>{`Writing content`}</Title>
+    <TableOfContents
+      items={[
+        {
+          level: 1,
+          text: "Spelling",
+          to: "#spelling"
+        }
+      ]}
+    />
     <Paragraph>
       {`When writing content use inclusive language and imagine you're talking to the reader.`}
     </Paragraph>

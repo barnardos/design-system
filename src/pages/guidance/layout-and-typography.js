@@ -10,6 +10,7 @@ import Link from "../../components/Link";
 import ListItem from "../../components/ListItem";
 import Paragraph from "../../components/Paragraph";
 import SinglelineTextControl from "../../components/SinglelineTextControl/index";
+import TableOfContents from "../../components/TableOfContents";
 import Title from "../../components/Title";
 import UnorderedList from "../../components/UnorderedList";
 
@@ -34,6 +35,25 @@ const Pages = () => (
       ]}
     />
     <Title>{`Layout and typography`}</Title>
+    <TableOfContents
+      items={[
+        {
+          level: 1,
+          text: "Layout",
+          to: "#layout"
+        },
+        {
+          level: 1,
+          text: "Typography",
+          to: "#typography"
+        },
+        {
+          level: 1,
+          text: "Proportional scale",
+          to: "#proportional-scale"
+        }
+      ]}
+    />
     <Paragraph>{`To unify layout and typography, you should use:`}</Paragraph>
     <UnorderedList>
       <ListItem>{`multiples of 4 for spacing and line heights`}</ListItem>
