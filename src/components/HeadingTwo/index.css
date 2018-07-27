@@ -4,8 +4,8 @@
 
 .HeadingTwo {
   font: 300 var(--type-4)/2rem Nova, sans-serif;
-}
 
-.HeadingTwo:not(:first-child) {
-  margin-top: 2rem;
+  &:not(:first-child) {
+    margin-top: 2rem;
+  }
 }

@@ -51,16 +51,16 @@
   justify-content: center;
   margin-left: 0.5rem;
   white-space: normal;
-}
 
-.SubmitSearchControl-button:hover {
-  background-color: color-mod(var(--green) shade(10%));
-}
+  &:hover {
+    background-color: color-mod(var(--green) shade(10%));
+  }
 
-.SubmitSearchControl-button:active {
-  box-shadow: none;
-  position: relative;
-  top: 0.25rem;
+  &:active {
+    box-shadow: none;
+    position: relative;
+    top: 0.25rem;
+  }
 }
 
 .SubmitSearchControl-buttonSvg {

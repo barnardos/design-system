@@ -13,45 +13,45 @@
 
 .AttentionGrabbingLink--black {
   background-color: var(--black);
-}
 
-.AttentionGrabbingLink--black:hover:active,
-.AttentionGrabbingLink--black:hover:hover {
-  background-color: color-mod(var(--black) shade(10%));
+  &:active,
+  &:hover {
+    background-color: color-mod(var(--black) shade(10%));
+  }
 }
 
 .AttentionGrabbingLink--orange {
   background-color: var(--orange);
-}
 
-.AttentionGrabbingLink--orange:active,
-.AttentionGrabbingLink--orange:hover {
-  background-color: color-mod(var(--orange) shade(10%));
+  &:active,
+  &:hover {
+    background-color: color-mod(var(--orange) shade(10%));
+  }
 }
 
 .AttentionGrabbingLink--pink {
   background-color: var(--pink);
-}
 
-.AttentionGrabbingLink--pink:active,
-.AttentionGrabbingLink--pink:hover {
-  background-color: color-mod(var(--pink) shade(10%));
+  &:active,
+  &:hover {
+    background-color: color-mod(var(--pink) shade(10%));
+  }
 }
 
 .AttentionGrabbingLink--purple {
   background-color: var(--purple);
-}
 
-.AttentionGrabbingLink--purple:active,
-.AttentionGrabbingLink--purple:hover {
-  background-color: color-mod(var(--purple) shade(10%));
+  &:active,
+  &:hover {
+    background-color: color-mod(var(--purple) shade(10%));
+  }
 }
 
 .AttentionGrabbingLink--teal {
   background-color: var(--teal);
-}
 
-.AttentionGrabbingLink--teal:active,
-.AttentionGrabbingLink--teal:hover {
-  background-color: color-mod(var(--teal) shade(10%));
+  &:active,
+  &:hover {
+    background-color: color-mod(var(--teal) shade(10%));
+  }
 }

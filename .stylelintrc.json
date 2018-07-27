@@ -169,6 +169,7 @@
     "selector-max-id": 0,
     "selector-max-type": 0,
     "selector-max-universal": 0,
+    "selector-nested-pattern": "^&",
     "selector-no-vendor-prefix": true,
     "selector-pseudo-class-no-unknown": null,
     "selector-pseudo-class-whitelist": [

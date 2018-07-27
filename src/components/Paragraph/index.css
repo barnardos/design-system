@@ -4,8 +4,8 @@
 
 .Paragraph {
   font: 300 var(--type-0)/1.5rem system-ui;
-}
 
-.Paragraph:not(:first-child) {
-  margin-top: 1rem;
+  &:not(:first-child) {
+    margin-top: 1rem;
+  }
 }

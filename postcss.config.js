@@ -3,6 +3,7 @@ module.exports = () => ({
     require("postcss-import"),
     require("postcss-preset-env")({
       features: {
+        "nesting-rules": true,
         "color-mod": {
           unresolved: "warn"
         },

@@ -5,8 +5,8 @@
 .UnorderedList {
   font: 300 var(--type-0)/1.5rem system-ui;
   padding-left: 1rem;
-}
 
-.UnorderedList:not(:first-child) {
-  margin-top: 1rem;
+  &:not(:first-child) {
+    margin-top: 1rem;
+  }
 }

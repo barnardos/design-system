@@ -14,16 +14,16 @@
   text-align: center;
   white-space: normal;
   width: 100%;
-}
 
-.Submit:hover {
-  background-color: color-mod(var(--green) shade(10%));
-}
+  &:hover {
+    background-color: color-mod(var(--green) shade(10%));
+  }
 
-.Submit:active {
-  box-shadow: none;
-  position: relative;
-  top: 0.25rem;
+  &:active {
+    box-shadow: none;
+    position: relative;
+    top: 0.25rem;
+  }
 }
 
 @media (min-width: 32rem) {
