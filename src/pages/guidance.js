@@ -53,6 +53,10 @@ const Pages = () => (
           {
             text: "Writing content",
             to: "/guidance/writing-content/"
+          },
+          {
+            text: "Accessibility",
+            to: "/guidance/accessibility/"
           }
         ]}
       />
