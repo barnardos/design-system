@@ -16,7 +16,7 @@ import "../index.css";
 const Pages = () => (
   <Layout>
     <Helmet>
-      <title>{`Writing content`}</title>
+      <title>{`Accessibility`}</title>
     </Helmet>
     <Breadcrumbs
       items={[
