@@ -35,6 +35,10 @@ const Pages = () => (
             to: "/guidance/colour/"
           },
           {
+            text: "Film and photography",
+            to: "/guidance/film-and-photography/"
+          },
+          {
             text: "Iconography",
             to: "/guidance/iconography/"
           },
