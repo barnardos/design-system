@@ -11,6 +11,7 @@ import Paragraph from "../../components/Paragraph";
 import SinglelineTextControl from "../../components/SinglelineTextControl/index";
 import Swatches from "../../components/Swatches";
 import Submit from "../../components/Submit";
+import TableOfContents from "../../components/TableOfContents";
 import Title from "../../components/Title";
 import UnorderedList from "../../components/UnorderedList";
 
@@ -35,6 +36,25 @@ const Pages = () => (
       ]}
     />
     <Title>{`Colour`}</Title>
+    <TableOfContents
+      items={[
+        {
+          level: 1,
+          text: "Brand colours",
+          to: "#brand-colours"
+        },
+        {
+          level: 1,
+          text: "Using colours",
+          to: "#using-colours"
+        },
+        {
+          level: 2,
+          text: "Using colours semantically",
+          to: "#using-colours-semantically"
+        }
+      ]}
+    />
     <Paragraph>{`When applying colour you should:`}</Paragraph>
     <UnorderedList>
       <ListItem>{`only use the brand colours`}</ListItem>
@@ -90,7 +110,7 @@ const Pages = () => (
         <figcaption className="Pages-figureCaption">{`White text on Green with 10% shade on hover and 40% shade for drop shadows.`}</figcaption>
       </figure>
     </div>
-    <HeadingTwo>{`Using colour semantically`}</HeadingTwo>
+    <HeadingTwo>{`Using colours semantically`}</HeadingTwo>
     <Paragraph>{`For example, you could use:`}</Paragraph>
     <UnorderedList>
       <ListItem

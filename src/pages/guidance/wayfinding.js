@@ -10,6 +10,7 @@ import ListItem from "../../components/ListItem";
 import Navigation from "../../components/Navigation";
 import Paragraph from "../../components/Paragraph";
 import SubmitSearchControl from "../../components/SubmitSearchControl";
+import TableOfContents from "../../components/TableOfContents";
 import Title from "../../components/Title";
 import UnorderedList from "../../components/UnorderedList";
 
@@ -19,7 +20,7 @@ import "../index.css";
 const Pages = () => (
   <Layout>
     <Helmet>
-      <title>{`WayFinding`}</title>
+      <title>{`Wayfinding`}</title>
     </Helmet>
     <Breadcrumbs
       items={[
@@ -33,7 +34,31 @@ const Pages = () => (
         }
       ]}
     />
-    <Title>{`WayFinding`}</Title>
+    <Title>{`Wayfinding`}</Title>
+    <TableOfContents
+      items={[
+        {
+          level: 1,
+          text: "Navigation",
+          to: "#navigation"
+        },
+        {
+          level: 1,
+          text: "Breadcrumbs",
+          to: "#breadcrumbs"
+        },
+        {
+          level: 1,
+          text: "SubmitSearchControl",
+          to: "#submitsearchcontrol"
+        },
+        {
+          level: 1,
+          text: "Header",
+          to: "#header"
+        }
+      ]}
+    />
     <Paragraph>{`Use the components below for wayfinding.`}</Paragraph>
     <HeadingOne>{`Navigation`}</HeadingOne>
     <Paragraph

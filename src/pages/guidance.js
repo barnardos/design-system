@@ -27,12 +27,20 @@ const Pages = () => (
       <DesignSystemNavigation
         items={[
           {
-            text: "Layout and typography",
-            to: "/guidance/layout-and-typography/"
-          },
-          {
             text: "Colour",
             to: "/guidance/colour/"
+          },
+          {
+            text: "Layout and typography",
+            to: "/guidance/layout-and-typography/"
+          }
+        ]}
+      />
+      <DesignSystemNavigation
+        items={[
+          {
+            text: "Filtering",
+            to: "/guidance/filtering/"
           },
           {
             text: "Linking",
@@ -43,20 +51,20 @@ const Pages = () => (
             to: "/guidance/requesting-information/"
           },
           {
-            text: "Filtering",
-            to: "/guidance/filtering/"
-          },
-          {
             text: "Wayfinding",
             to: "/guidance/wayfinding/"
+          }
+        ]}
+      />
+      <DesignSystemNavigation
+        items={[
+          {
+            text: "Accessibility",
+            to: "/guidance/accessibility/"
           },
           {
             text: "Writing content",
             to: "/guidance/writing-content/"
-          },
-          {
-            text: "Accessibility",
-            to: "/guidance/accessibility/"
           }
         ]}
       />
