@@ -14,7 +14,7 @@ import "../../app.css";
 import "../index.css";
 
 const Pages = () => (
-  <Layout>
+  <Layout type="twoThirds">
     <Helmet>
       <title>{`Writing content`}</title>
     </Helmet>

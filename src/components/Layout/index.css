@@ -1,17 +1,24 @@
 /** @define Layout */
 
 .Layout {
-  padding: 1rem;
+  padding: 1rem 1rem 2rem;
 }
 
 .Layout-main {
   display: block;
   margin-top: 1.5rem;
-  max-width: 46rem;
+}
+
+@media (min-width: 48rem) {
+  .Layout {
+    padding: 2rem 2rem 4rem;
+  }
 }
 
 @media (min-width: 62rem) {
-  .Layout-main {
-    width: 66%;
+  .Layout--twoThirds {
+    & .Layout-main {
+      width: 66%;
+    }
   }
 }

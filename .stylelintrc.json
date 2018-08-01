@@ -114,6 +114,7 @@
       "color",
       "content",
       "display",
+      "flex-basis",
       "flex-direction",
       "flex-wrap",
       "flex",
