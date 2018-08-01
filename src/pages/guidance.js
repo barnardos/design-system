@@ -27,12 +27,24 @@ const Pages = () => (
       <DesignSystemNavigation
         items={[
           {
+            text: "Accessibility",
+            to: "/guidance/accessibility/"
+          },
+          {
             text: "Colour",
             to: "/guidance/colour/"
           },
           {
+            text: "Iconography",
+            to: "/guidance/iconography/"
+          },
+          {
             text: "Layout and typography",
             to: "/guidance/layout-and-typography/"
+          },
+          {
+            text: "Writing content",
+            to: "/guidance/writing-content/"
           }
         ]}
       />
@@ -53,18 +65,6 @@ const Pages = () => (
           {
             text: "Wayfinding",
             to: "/guidance/wayfinding/"
-          }
-        ]}
-      />
-      <DesignSystemNavigation
-        items={[
-          {
-            text: "Accessibility",
-            to: "/guidance/accessibility/"
-          },
-          {
-            text: "Writing content",
-            to: "/guidance/writing-content/"
           }
         ]}
       />
