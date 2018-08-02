@@ -25,6 +25,7 @@ const Pages = () => (
     <Title>{`Guidance`}</Title>
     <div className="Pages-designSystemNavigation">
       <DesignSystemNavigation
+        title="Foundation"
         items={[
           {
             text: "Accessibility",
@@ -53,6 +54,7 @@ const Pages = () => (
         ]}
       />
       <DesignSystemNavigation
+        title="Common problems"
         items={[
           {
             text: "Filtering",

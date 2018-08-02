@@ -3,9 +3,11 @@
 /** @define DesignSystemNavigation; */
 
 .DesignSystemNavigation {
-  &:not(:first-child) {
-    margin-top: 3rem;
-  }
+  margin-top: 3rem;
+}
+
+.DesignSystemNavigation-title {
+  font: 600 var(--type-5)/2rem Nova, sans-serif;
 }
 
 .DesignSystemNavigation-item {
@@ -15,20 +17,29 @@
 
 .DesignSystemNavigation-link {
   box-shadow: inset 0 -0.25rem 0 0 color-mod(var(--black) tint(90%));
-  color: var(--black);
   display: block;
-  font: 300 var(--type-3)/1.5rem Nova, sans-serif;
+  font: 300 var(--type-2)/1.5rem system-ui, sans-serif;
   padding: 0.5rem 0 1rem;
   text-decoration: none;
   white-space: nowrap;
 
+  &:active,
   &:hover {
-    box-shadow: inset 0 -0.25rem 0 0 var(--orange);
-    color: var(--orange);
+    box-shadow: inset 0 -0.25rem 0 0 color-mod(var(--green) tint(60%));
+  }
+}
+
+@media (min-width: 38rem) {
+  .DesignSystemNavigation-items {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -2rem;
+    margin-top: -1rem;
   }
 
-  &:active {
-    box-shadow: inset 0 -0.25rem 0 0 var(--orange);
-    color: var(--orange);
+  .DesignSystemNavigation-item {
+    flex-basis: calc(33% - 2rem);
+    margin-left: 2rem;
+    margin-top: 2rem;
   }
 }

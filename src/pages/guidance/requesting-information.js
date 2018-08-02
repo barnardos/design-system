@@ -25,7 +25,7 @@ import "../../app.css";
 import "../index.css";
 
 const Pages = () => (
-  <Layout>
+  <Layout type="twoThirds">
     <Helmet>
       <title>{`Requesting information`}</title>
     </Helmet>

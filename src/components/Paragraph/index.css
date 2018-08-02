@@ -4,6 +4,7 @@
 
 .Paragraph {
   font: 300 var(--type-0)/1.5rem system-ui;
+  max-width: 46rem;
 
   &:not(:first-child) {
     margin-top: 1rem;
