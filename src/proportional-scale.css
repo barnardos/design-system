@@ -12,7 +12,7 @@
  * Both these rules are not applicable here.
 */
 
-/* stylelint-disable selector-max-type, declaration-property-unit-whitelist, declaration-property-value-whitelist */
+/* stylelint-disable declaration-property-unit-whitelist, plugin/font-size-whitelist, selector-max-type */
 
 html {
   font-size: 93.75%;

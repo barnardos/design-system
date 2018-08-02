@@ -5,11 +5,11 @@ module.exports = {
     "^(?!.*\\.module\\.css$).*\\.css$": "<rootDir>/__mocks__/styleMock.js"
   },
   modulePathIgnorePatterns: ["<rootDir>/.cache", "<rootDir>/public"],
-  setupFiles: ["<rootDir>stylelint/jest-setup.js"],
+  setupFiles: ["<rootDir>jest-setup.js"],
   testMatch: [
-    "<rootDir>/stylelint/**/__tests__/**/*.js",
     "<rootDir>/src/**/__tests__/**/*.js",
     "<rootDir>/src/**/?(*.)test.js"
   ],
-  transform: { "^.+\\.js$": "<rootDir>/jestTransform.js" }
+  testURL: "http://localhost",
+  transform: { "^.+\\.js$": "<rootDir>/jest-transform.js" }
 };
