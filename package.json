@@ -34,6 +34,7 @@
   },
   "dependencies": {
     "gatsby": "next",
+    "gatsby-plugin-google-analytics": "next",
     "gatsby-plugin-postcss": "next",
     "postcss-browser-reporter": "^0.5.0",
     "postcss-import": "^11.1.0",
