@@ -4,6 +4,7 @@ import React from "react";
 import AnyOfManyChoiceControl from "../../components/AnyOfManyChoiceControl";
 import Breadcrumbs from "../../components/Breadcrumbs";
 import ChoiceControl from "../../components/ChoiceControl";
+import ConditionalControls from "../../components/ConditionalControls";
 import CurrencyControl from "../../components/CurrencyControl";
 import DateControl from "../../components/DateControl";
 import HeadingOne from "../../components/HeadingOne";
@@ -94,6 +95,11 @@ const Pages = () => (
           level: 2,
           text: "ChoiceControl",
           to: "/guidance/requesting-information/#choicecontrol"
+        },
+        {
+          level: 2,
+          text: "ConditionalControls",
+          to: "#conditionalcontrols"
         },
         {
           level: 1,
@@ -305,6 +311,43 @@ const Pages = () => (
     <Paragraph>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/issues/68">{`research`}</Link>
+      {` on GitHub.`}
+    </Paragraph>
+    <HeadingTwo>{`ConditionalControls`}</HeadingTwo>
+    <div className="Pages-figures">
+      <figure className="Pages-figure">
+        <ConditionalControls
+          trigger={
+            <OneOfManyChoiceControl
+              choices={[
+                {
+                  label: "Yes",
+                  id: "conditional-controls-one-of-many-control-example-yes"
+                },
+                {
+                  label: "No",
+                  id: "conditional-controls-one-of-many-control-example-no"
+                }
+              ]}
+              id="conditional-controls-one-of-many-choice-control-example"
+              legend="Can we email you?"
+              name="conditional-controls-one-of-many-choice-control-example"
+            />
+          }
+          target={
+            <SinglelineTextControl
+              id="conditional-control-singleline-text-control-example"
+              label="Email"
+              size={48}
+            />
+          }
+        />
+        <figcaption className="Pages-figureCaption">{`Select a choice to reveal`}</figcaption>
+      </figure>
+    </div>
+    <Paragraph>
+      {`View `}
+      <Link href="https://github.com/barnardos/design-system/issues/86">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
     <HeadingOne>{`Submitting`}</HeadingOne>
