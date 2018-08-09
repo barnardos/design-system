@@ -60,10 +60,6 @@
   }
 }
 
-/**
- * invalid
- */
-
 .DateControl--invalid {
   box-shadow: inset 0.25rem 0 0 var(--red);
   padding-left: 1rem;
