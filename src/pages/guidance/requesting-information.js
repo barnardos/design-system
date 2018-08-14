@@ -162,7 +162,7 @@ const Pages = () => (
     <div className="Pages-example">
       <MultilineTextControl
         id="multiline-text-control-example"
-        label="Comment"
+        label="What's on your mind?"
         size={48}
         verticalSize={4}
       />
