@@ -34,8 +34,7 @@ const Pages = () => (
     <UnorderedList>
       <ListItem>{`have consent from all subjects`}</ListItem>
       <ListItem>{`have the subjects look into the camera`}</ListItem>
-      <ListItem>{`use natural light`}</ListItem>
-      <ListItem>{`use real locations`}</ListItem>
+      <ListItem>{`use natural light in a real location`}</ListItem>
       <ListItem>{`avoid using actors`}</ListItem>
     </UnorderedList>
     <Paragraph>{`Your film and photography should show:`}</Paragraph>
