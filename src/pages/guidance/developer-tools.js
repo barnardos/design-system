@@ -86,6 +86,11 @@ const Pages = () => (
       <Link href="https://github.com/browserslist/browserslist">{`browserslist`}</Link>
       {` to configure both.`}
     </Paragraph>
+    <Paragraph>
+      {`View `}
+      <Link href="https://github.com/barnardos/design-system/issues/183">{`research`}</Link>
+      {` on GitHub.`}
+    </Paragraph>
   </Layout>
 );
 
