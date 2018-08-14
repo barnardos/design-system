@@ -46,6 +46,11 @@ const Pages = () => (
       <ListItem>{`allow users to navigate only with a keyboard`}</ListItem>
       <ListItem>{`enable the viewport to be zoomed to at least 200%`}</ListItem>
     </UnorderedList>
+    <Paragraph>
+      {`View `}
+      <Link href="https://github.com/barnardos/design-system/issues/168">{`research`}</Link>
+      {` on GitHub.`}
+    </Paragraph>
   </Layout>
 );
 

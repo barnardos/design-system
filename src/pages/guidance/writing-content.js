@@ -4,6 +4,7 @@ import React from "react";
 import Breadcrumbs from "../../components/Breadcrumbs";
 import HeadingOne from "../../components/HeadingOne";
 import Layout from "../../components/Layout";
+import Link from "../../components/Link";
 import ListItem from "../../components/ListItem";
 import Paragraph from "../../components/Paragraph";
 import TableOfContents from "../../components/TableOfContents";
@@ -80,6 +81,11 @@ const Pages = () => (
       <ListItem>{`postcode (no hyphen)`}</ListItem>
       <ListItem>{`website (no hyphen)`}</ListItem>
     </UnorderedList>
+    <Paragraph>
+      {`View `}
+      <Link href="https://github.com/barnardos/design-system/issues/87">{`research`}</Link>
+      {` on GitHub.`}
+    </Paragraph>
   </Layout>
 );
 
