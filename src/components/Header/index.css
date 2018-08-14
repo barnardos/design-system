@@ -23,7 +23,7 @@
   width: 6.5rem;
 }
 
-.Header-navigation {
+.Header-menu {
   grid-column: 1 / span 2;
   grid-row: 2;
 }
@@ -68,7 +68,7 @@
     grid-template-columns: 6.5rem auto 3rem;
   }
 
-  .Header-navigation {
+  .Header-menu {
     grid-column: 2;
     grid-row: 1;
     margin-bottom: -1rem;
