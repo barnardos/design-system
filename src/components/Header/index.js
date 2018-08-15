@@ -1,14 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import Navigation from "../Navigation";
+import Menu from "../Menu";
 import SubmitSearchControl from "../SubmitSearchControl";
 
 import logo from "./logo.svg";
 
 import "./index.css";
 
-const Header = ({ links, navigation, search }) => {
+const Header = ({ links, menu, search }) => {
   return (
     <header className="Header">
       <a className="Header-logo" href="http://www.barnardos.org.uk/">
@@ -18,9 +18,9 @@ const Header = ({ links, navigation, search }) => {
           src={logo}
         />
       </a>
-      {navigation && (
-        <div className="Header-navigation">
-          <Navigation {...navigation} />
+      {menu && (
+        <div className="Header-menu">
+          <Menu {...menu} />
         </div>
       )}
       {search && (
@@ -45,7 +45,7 @@ const Header = ({ links, navigation, search }) => {
 
 Header.propTypes = {
   links: PropTypes.array,
-  navigation: PropTypes.object,
+  menu: PropTypes.object,
   search: PropTypes.bool
 };
 

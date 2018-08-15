@@ -17,6 +17,7 @@ import Paragraph from "../../components/Paragraph";
 import SinglelineTextControl from "../../components/SinglelineTextControl";
 import Submit from "../../components/Submit";
 import SubmitControls from "../../components/SubmitControls";
+import SubmitSearchControl from "../../components/SubmitSearchControl";
 import TableOfContents from "../../components/TableOfContents";
 import Title from "../../components/Title";
 import UnorderedList from "../../components/UnorderedList";
@@ -113,6 +114,11 @@ const Pages = () => (
           level: 2,
           text: "SubmitControls",
           to: "#submitcontrols"
+        },
+        {
+          level: 2,
+          text: "SubmitSearchControl",
+          to: "#submitsearchcontrol"
         }
       ]}
     />
@@ -322,7 +328,7 @@ const Pages = () => (
     </Paragraph>
     <HeadingOne>{`Validating and submitting`}</HeadingOne>
     <Paragraph
-    >{`Use the component below to validate and submit information.`}</Paragraph>
+    >{`Use the components below to validate and submit information.`}</Paragraph>
     <HeadingTwo>{`SubmitControls`}</HeadingTwo>
     <Paragraph>{`When using this component you should:`}</Paragraph>
     <UnorderedList>
@@ -404,6 +410,22 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/SubmitControls">{`code`}</Link>
       {` and `}
       <Link href="https://github.com/barnardos/design-system/issues/67">{`research`}</Link>
+      {` on GitHub.`}
+    </Paragraph>
+    <HeadingOne>{`SubmitSearchControl`}</HeadingOne>
+    <div className="Pages-example">
+      <div
+        style={{
+          paddingBottom: "4rem",
+          position: "relative"
+        }}
+      >
+        <SubmitSearchControl />
+      </div>
+    </div>
+    <Paragraph>
+      {`View `}
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/SubmitSearchControl">{`code`}</Link>
       {` on GitHub.`}
     </Paragraph>
   </Layout>

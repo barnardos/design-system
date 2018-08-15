@@ -1,22 +1,22 @@
 @import "../../custom-properties.css";
 
-/** @define Navigation; */
+/** @define Menu; */
 
-.Navigation {
+.Menu {
   box-shadow: inset 0 -1px 0 0 color-mod(var(--black) tint(90%));
 }
 
-.Navigation-items {
+.Menu-items {
   display: flex;
   justify-content: space-between;
   list-style: none;
 }
 
-.Navigation-item {
+.Menu-item {
   flex: 1;
 }
 
-.Navigation-link {
+.Menu-link {
   color: var(--black);
   display: block;
   font: 300 var(--type-3)/1.5rem Nova, sans-serif;
@@ -36,14 +36,14 @@
   }
 }
 
-.Navigation--revealing {
+.Menu--revealing {
   box-shadow: none;
 
-  & .Navigation-details {
+  & .Menu-details {
     display: none;
   }
 
-  & .Navigation-details--active {
+  & .Menu-details--active {
     background: var(--white);
     bottom: 0;
     display: block;
@@ -53,41 +53,41 @@
     top: 0;
   }
 
-  & .Navigation-items {
+  & .Menu-items {
     box-shadow: inset 0 1px 0 0 color-mod(var(--black) tint(90%));
     display: block;
     margin-top: 1rem;
   }
 
-  & .Navigation-item {
+  & .Menu-item {
     box-shadow: inset 0 -1px 0 0 color-mod(var(--black) tint(90%));
   }
 
-  & .Navigation-link {
+  & .Menu-link {
     padding: 1rem;
   }
 }
 
 @media (min-width: 54rem) {
-  .Navigation--revealing {
+  .Menu--revealing {
     box-shadow: inset 0 -1px 0 0 color-mod(var(--black) tint(90%));
 
-    & .Navigation-command {
+    & .Menu-command {
       display: none;
     }
 
-    & .Navigation-details {
+    & .Menu-details {
       display: block;
       width: 100%;
     }
 
-    & .Navigation-items {
+    & .Menu-items {
       box-shadow: none;
       display: flex;
     }
   }
 
-  .Navigation-item {
+  .Menu-item {
     flex: 1;
   }
 }

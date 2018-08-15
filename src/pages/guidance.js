@@ -61,20 +61,16 @@ const Pages = () => (
         title="Common problems"
         items={[
           {
-            text: "Filtering",
-            to: "/guidance/filtering/"
+            text: "Navigating",
+            to: "/guidance/navigating/"
           },
           {
-            text: "Linking",
-            to: "/guidance/linking/"
+            text: "Patterns",
+            to: "/guidance/patterns/"
           },
           {
             text: "Requesting information",
             to: "/guidance/requesting-information/"
-          },
-          {
-            text: "Wayfinding",
-            to: "/guidance/wayfinding/"
           }
         ]}
       />

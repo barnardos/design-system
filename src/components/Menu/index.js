@@ -8,7 +8,7 @@ import crossSvg from "./cross.svg";
 
 import "./index.css";
 
-class Navigation extends Component {
+class Menu extends Component {
   constructor(props) {
     super(props);
     this.state = { isActive: false };
@@ -24,16 +24,14 @@ class Navigation extends Component {
   render() {
     const { isRevealing } = this.props;
     const { isActive } = this.state;
-    const navigationClassName = `Navigation ${
-      isRevealing ? "Navigation--revealing" : ""
-    }`;
-    const detailsClassName = `Navigation-details ${
-      isActive ? "Navigation-details--active" : ""
+    const MenuClassName = `Menu ${isRevealing ? "Menu--revealing" : ""}`;
+    const detailsClassName = `Menu-details ${
+      isActive ? "Menu-details--active" : ""
     }`;
     return (
-      <nav className={navigationClassName}>
+      <nav className={MenuClassName}>
         {isRevealing && (
-          <div className="Navigation-command">
+          <div className="Menu-command">
             <Command onClick={this.handleClick}>
               <img
                 alt="Open menu"
@@ -45,7 +43,7 @@ class Navigation extends Component {
         )}
         <div className={detailsClassName}>
           {isRevealing && (
-            <div className="Navigation-command">
+            <div className="Menu-command">
               <Command onClick={this.handleClick}>
                 <img
                   alt="Close menu"
@@ -55,10 +53,10 @@ class Navigation extends Component {
               </Command>
             </div>
           )}
-          <ul className="Navigation-items">
+          <ul className="Menu-items">
             {this.props.items.map(({ text, href }, index) => (
-              <li className="Navigation-item" key={index}>
-                <a className="Navigation-link" href={href}>
+              <li className="Menu-item" key={index}>
+                <a className="Menu-link" href={href}>
                   {text}
                 </a>
               </li>
@@ -70,9 +68,9 @@ class Navigation extends Component {
   }
 }
 
-Navigation.propTypes = {
+Menu.propTypes = {
   isRevealing: PropTypes.bool,
   items: PropTypes.array.isRequired
 };
 
-export default Navigation;
+export default Menu;

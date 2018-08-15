@@ -8,6 +8,7 @@ import HeadingOne from "../../components/HeadingOne";
 import Layout from "../../components/Layout";
 import Link from "../../components/Link";
 import ListItem from "../../components/ListItem";
+import Menu from "../../components/Menu";
 import Paragraph from "../../components/Paragraph";
 import StartLink from "../../components/StartLink";
 import TableOfContents from "../../components/TableOfContents";
@@ -20,7 +21,7 @@ import "../index.css";
 const Pages = () => (
   <Layout type="twoThirds">
     <Helmet>
-      <title>{`Linking`}</title>
+      <title>{`Navigation`}</title>
     </Helmet>
     <Breadcrumbs
       items={[
@@ -34,7 +35,7 @@ const Pages = () => (
         }
       ]}
     />
-    <Title>{`Linking`}</Title>
+    <Title>{`Navigation`}</Title>
     <TableOfContents
       items={[
         {
@@ -49,17 +50,26 @@ const Pages = () => (
         },
         {
           level: 1,
+          text: "StartLink",
+          to: "#startlink"
+        },
+        {
+          level: 1,
           text: "BackLink",
           to: "#backlink"
         },
         {
           level: 1,
-          text: "StartLink",
-          to: "#startlink"
+          text: "Breadcrumbs",
+          to: "#breadcrumbs"
+        },
+        {
+          level: 1,
+          text: "Menu",
+          to: "#menu"
         }
       ]}
     />
-    <Paragraph>{`Use the components below for linking.`}</Paragraph>
     <HeadingOne>{`Link`}</HeadingOne>
     <Paragraph>{`When using this component you should:`}</Paragraph>
     <UnorderedList>
@@ -136,21 +146,6 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/issues/47">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
-    <HeadingOne>{`BackLink`}</HeadingOne>
-    <Paragraph>{`When using this component you should:`}</Paragraph>
-    <UnorderedList>
-      <ListItem>{`only use it once on each page`}</ListItem>
-      <ListItem>{`place it as the first interactive element`}</ListItem>
-    </UnorderedList>
-    <div className="Pages-example">
-      <BackLink href="http://example.org" />
-    </div>
-    <Paragraph>
-      {`View `}
-      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/BackLink">{`code`}</Link>
-      {` and `}
-      <Link href="https://github.com/barnardos/design-system/issues/166">{`research`}</Link>
-    </Paragraph>
     <HeadingOne>{`StartLink`}</HeadingOne>
     <Paragraph>{`You should only use this component:`}</Paragraph>
     <UnorderedList>
@@ -165,6 +160,106 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/StartLink">{`code`}</Link>
       {` and `}
       <Link href="https://github.com/barnardos/design-system/issues/167">{`research`}</Link>
+      {` on GitHub.`}
+    </Paragraph>
+    <HeadingOne>{`BackLink`}</HeadingOne>
+    <Paragraph>{`When using this component you should:`}</Paragraph>
+    <UnorderedList>
+      <ListItem>{`only use it once on each page`}</ListItem>
+      <ListItem>{`place it as the first interactive element`}</ListItem>
+    </UnorderedList>
+    <div className="Pages-example">
+      <BackLink href="http://example.org" />
+    </div>
+    <Paragraph>
+      {`View `}
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/BackLink">{`code`}</Link>
+      {` and `}
+      <Link href="https://github.com/barnardos/design-system/issues/166">{`research`}</Link>
+      {` on GitHub.`}
+    </Paragraph>
+    <HeadingOne>{`Breadcrumbs`}</HeadingOne>
+    <div className="Pages-example">
+      <Breadcrumbs
+        items={[
+          {
+            text: "Home",
+            to: "/"
+          },
+          {
+            text: "Donate",
+            to: "/"
+          }
+        ]}
+      />
+    </div>
+    <Paragraph>
+      {`View `}
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Breadcrumbs">{`code`}</Link>
+      {` on GitHub.`}
+    </Paragraph>
+    <HeadingOne>{`Menu`}</HeadingOne>
+    <Paragraph
+    >{`Use this component to switch between top-level categories easily. When using this component you should:`}</Paragraph>
+    <UnorderedList>
+      <ListItem>{`aim to have the items visible at all times`}</ListItem>
+      <ListItem>{`reveal the menu if this is not possible`}</ListItem>
+    </UnorderedList>
+    <div className="Pages-example">
+      <Menu
+        items={[
+          {
+            text: "About",
+            href: "http://example.org"
+          },
+          {
+            text: "Services",
+            href: "http://example.org"
+          },
+          {
+            text: "Donate",
+            href: "http://example.org"
+          }
+        ]}
+      />
+    </div>
+    <div className="Pages-example">
+      <div
+        style={{
+          paddingBottom: "19rem",
+          position: "relative"
+        }}
+      >
+        <Menu
+          isRevealing
+          items={[
+            {
+              text: "About",
+              href: "http://example.org"
+            },
+            {
+              text: "Volunteer",
+              href: "http://example.org"
+            },
+            {
+              text: "Mission",
+              href: "http://example.org"
+            },
+            {
+              text: "Commission us",
+              href: "http://example.org"
+            },
+            {
+              text: "Donate",
+              href: "http://example.org"
+            }
+          ]}
+        />
+      </div>
+    </div>
+    <Paragraph>
+      {`View `}
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Menu">{`code`}</Link>
       {` on GitHub.`}
     </Paragraph>
   </Layout>
