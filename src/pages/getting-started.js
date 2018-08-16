@@ -74,8 +74,8 @@ const Pages = () => (
       </ListItem>
     </UnorderedList>
     <Paragraph>
-      {`You also contribute to the discussion on `}
-      <Link href="https://barnardos.facebook.com/groups/design.system/">{`Workspace`}</Link>
+      {`You can also contribute to the discussion on `}
+      <Link href="https://barnardos.facebook.com/groups/design.system/">{`Workplace`}</Link>
       {`.`}
     </Paragraph>
   </Layout>
