@@ -134,9 +134,7 @@ const Pages = () => (
             </figcaption>
           </figure>
           <figure className="Pages-figure Pages-figure--positioned">
-            <Paragraph>
-              {`We'll use this to contact you about the certificate.`}
-            </Paragraph>
+            <Paragraph>{`So that we can send you the certificate.`}</Paragraph>
             <figcaption
               className="Pages-figureCaption"
               style={{ top: "-1.25rem" }}
@@ -153,8 +151,8 @@ const Pages = () => (
           </figure>
           <figure className="Pages-figure Pages-figure--positioned">
             <SinglelineTextControl
-              id="text-control-full-name-example"
-              label="Full name"
+              id="text-control-email-example"
+              label="Email"
               size={48}
             />
             <figcaption
