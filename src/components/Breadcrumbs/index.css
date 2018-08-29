@@ -11,7 +11,8 @@
   list-style: none;
 
   &:not(:first-child) {
-    background: url("./slash.svg") no-repeat 0.6rem 0.45rem;
+    background: url("./chevron.svg") no-repeat 0.4rem 0.45rem;
+    background-size: 0.75rem 0.75rem;
     padding-left: 1.5rem;
   }
 }
