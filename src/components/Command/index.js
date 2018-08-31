@@ -3,13 +3,11 @@ import React from "react";
 
 import "./index.css";
 
-const Command = ({ onClick, children }) => {
-  return (
-    <button className="Command" onClick={onClick}>
-      {children}
-    </button>
-  );
-};
+const Command = ({ onClick, children }) => (
+  <button className="Command" onClick={onClick}>
+    {children}
+  </button>
+);
 
 Command.propTypes = {
   children: PropTypes.node.isRequired,
