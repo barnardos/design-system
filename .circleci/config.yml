@@ -5,18 +5,17 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:latest-browsers
+      - image: circleci/node:8.11.4-browsers
 
     working_directory: ~/design-system
 
     steps:
-
       - checkout
 
       - restore_cache:
           keys:
-          - v2-dependencies-{{ checksum "package-lock.json" }}
-          - v2-dependencies-
+            - v2-dependencies-{{ checksum "package-lock.json" }}
+            - v2-dependencies-
 
       - run:
           name: Update npm
