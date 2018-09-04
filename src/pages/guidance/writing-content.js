@@ -37,7 +37,7 @@ const Pages = () => (
         {
           level: 1,
           text: "Spelling",
-          to: "#spelling"
+          to: "/guidance/writing-content/#spelling"
         }
       ]}
     />

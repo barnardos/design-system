@@ -41,32 +41,32 @@ const Pages = () => (
         {
           level: 1,
           text: "Link",
-          to: "#link"
+          to: "/guidance/navigating/#link"
         },
         {
           level: 1,
           text: "AttentionGrabbingLink",
-          to: "#attentiongrabbinglink"
+          to: "/guidance/navigating/#attentiongrabbinglink"
         },
         {
           level: 1,
           text: "StartLink",
-          to: "#startlink"
+          to: "/guidance/navigating/#startlink"
         },
         {
           level: 1,
           text: "BackLink",
-          to: "#backlink"
+          to: "/guidance/navigating/#backlink"
         },
         {
           level: 1,
           text: "Breadcrumbs",
-          to: "#breadcrumbs"
+          to: "/guidance/navigating/#breadcrumbs"
         },
         {
           level: 1,
           text: "Menu",
-          to: "#menu"
+          to: "/guidance/navigating/#menu"
         }
       ]}
     />

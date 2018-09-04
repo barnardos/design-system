@@ -40,17 +40,17 @@ const Pages = () => (
         {
           level: 1,
           text: "Layout",
-          to: "#layout"
+          to: "/guidance/layout-and-typography/#layout"
         },
         {
           level: 1,
           text: "Typography",
-          to: "#typography"
+          to: "/guidance/layout-and-typography/#typography"
         },
         {
           level: 1,
           text: "Proportional scale",
-          to: "#proportional-scale"
+          to: "/guidance/layout-and-typography/#proportional-scale"
         }
       ]}
     />

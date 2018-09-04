@@ -40,12 +40,12 @@ const Pages = () => (
         {
           level: 1,
           text: "Filter",
-          to: "#filter"
+          to: "/guidance/patterns/#filter"
         },
         {
           level: 1,
           text: "Header",
-          to: "#header"
+          to: "/guidance/patterns/#header"
         }
       ]}
     />
