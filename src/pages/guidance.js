@@ -61,6 +61,10 @@ const Pages = () => (
         title="Common problems"
         items={[
           {
+            text: "Displaying information",
+            to: "/guidance/displaying-information/"
+          },
+          {
             text: "Navigating",
             to: "/guidance/navigating/"
           },

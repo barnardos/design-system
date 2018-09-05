@@ -1,0 +1,8 @@
+@import "../../custom-properties.css";
+
+/** @define Image; */
+
+.Image {
+  display: block;
+  max-width: 100%;
+}
