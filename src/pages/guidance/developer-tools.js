@@ -37,12 +37,12 @@ const Pages = () => (
         {
           level: 1,
           text: "Code quality",
-          to: "#code-quality"
+          to: "/guidance/developer-tools/#code-quality"
         },
         {
           level: 1,
           text: "Future-proofing code",
-          to: "#futureproofing-code"
+          to: "/guidance/developer-tools/#futureproofing-code"
         }
       ]}
     />

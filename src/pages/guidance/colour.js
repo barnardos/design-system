@@ -41,17 +41,17 @@ const Pages = () => (
         {
           level: 1,
           text: "Brand colours",
-          to: "#brand-colours"
+          to: "/guidance/colour/#brand-colours"
         },
         {
           level: 1,
           text: "Using colours",
-          to: "#using-colours"
+          to: "/guidance/colour/#using-colours"
         },
         {
           level: 2,
           text: "Using colours semantically",
-          to: "#using-colours-semantically"
+          to: "/guidance/colour/#using-colours-semantically"
         }
       ]}
     />

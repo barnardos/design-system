@@ -48,77 +48,77 @@ const Pages = () => (
         {
           level: 1,
           text: "Text entry",
-          to: "#text-entry"
+          to: "/guidance/requesting-information/#text-entry"
         },
         {
           level: 2,
           text: "SingleLineTextControl",
-          to: "#singlelinetextcontrol"
+          to: "/guidance/requesting-information/#singlelinetextcontrol"
         },
         {
           level: 2,
           text: "MultiLineTextControl",
-          to: "#multilinetextcontrol"
+          to: "/guidance/requesting-information/#multilinetextcontrol"
         },
         {
           level: 1,
           text: "Data entry",
-          to: "#data-entry"
+          to: "/guidance/requesting-information/#data-entry"
         },
         {
           level: 2,
           text: "CurrencyControl",
-          to: "#currencycontrol"
+          to: "/guidance/requesting-information/#currencycontrol"
         },
         {
           level: 2,
           text: "DateControl",
-          to: "#datecontrol"
+          to: "/guidance/requesting-information/#datecontrol"
         },
         {
           level: 1,
           text: "Choices",
-          to: "#choices"
+          to: "/guidance/requesting-information/#choices"
         },
         {
           level: 2,
           text: "OneOfManyChoiceControl",
-          to: "#oneofmanychoicecontrol"
+          to: "/guidance/requesting-information/#oneofmanychoicecontrol"
         },
         {
           level: 2,
           text: "AnyOfManyChoiceControl",
-          to: "#anyofmanychoicecontrol"
+          to: "/guidance/requesting-information/#anyofmanychoicecontrol"
         },
         {
           level: 2,
           text: "ChoiceControl",
-          to: "#choicecontrol"
+          to: "/guidance/requesting-information/#choicecontrol"
         },
         {
           level: 1,
           text: "Submitting",
-          to: "#submitting"
+          to: "/guidance/requesting-information/#submitting"
         },
         {
           level: 2,
           text: "Submit",
-          to: "#submit"
+          to: "/guidance/requesting-information/#submit"
         },
         {
           level: 1,
           text: "Validating and submitting",
-          to: "#validating-and-submitting"
+          to: "/guidance/requesting-information/#validating-and-submitting"
         },
         {
           level: 2,
           text: "SubmitControls",
-          to: "#submitcontrols"
+          to: "/guidance/requesting-information/#submitcontrols"
         },
         {
           level: 2,
           text: "SubmitSearchControl",
-          to: "#submitsearchcontrol"
+          to: "/guidance/requesting-information/#submitsearchcontrol"
         }
       ]}
     />
