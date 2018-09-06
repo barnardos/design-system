@@ -76,9 +76,7 @@ const Pages = () => (
     >{`Use this component for quotes, for example an excerpt from an article or quotation from a person.`}</Paragraph>
     <div className="Pages-example">
       <Quote
-        name="John Smith"
-        role="Teacher"
-      >{`The family support worker is able to engage and build positive relationships with families who previously kept their distance from school.`}</Quote>
+      >{`Parents needed more support with their emotional wellbeing, boundaries, behaviour, home and money.`}</Quote>
     </div>
     <div className="Pages-example">
       <Quote
@@ -87,7 +85,12 @@ const Pages = () => (
       >{`Someone believed in me once and now it’s time for me to do the same.`}</Quote>
     </div>
     <div className="Pages-example">
-      <Quote colour="orange">{`Parents needed more support with their emotional wellbeing, boundaries, behaviour, home and money.`}</Quote>
+      <Quote
+        colour="orange"
+        name="John Smith"
+        role="Teacher"
+        src="https://dummyimage.com/480x480/bbbbbb/d2d2d2.png&amp;text=1:1"
+      >{`The family support worker is able to engage and build positive relationships with families who previously kept their distance from school.`}</Quote>
     </div>
     <Paragraph>
       {`View `}

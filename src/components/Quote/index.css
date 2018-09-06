@@ -3,10 +3,22 @@
 /** @define Quote; */
 
 .Quote {
-  box-shadow: inset 0.25rem 0 0 currentColor;
   color: var(--green);
-  font: 300 var(--type-0)/1.5rem system-ui;
-  margin-top: 0.5rem;
+}
+
+.Quote-media {
+  max-width: 20rem;
+  padding: 0 1.5rem;
+}
+
+.Quote-image {
+  border-radius: 50%;
+  display: block;
+  max-width: 100%;
+}
+
+.Quote-text {
+  box-shadow: inset 0.25rem 0 0 currentColor;
   padding-left: 1.5rem;
 }
 
@@ -56,4 +68,15 @@
 
 .Quote--teal {
   color: var(--teal);
+}
+
+@media (min-width: 56rem) {
+  .Quote {
+    display: flex;
+  }
+
+  .Quote-media {
+    flex: 0 0 20rem;
+    margin-right: 1.5rem;
+  }
 }

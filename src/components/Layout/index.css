@@ -15,7 +15,7 @@
   }
 }
 
-@media (min-width: 62rem) {
+@media (min-width: 78rem) {
   .Layout--twoThirds {
     & .Layout-main {
       width: 66%;
