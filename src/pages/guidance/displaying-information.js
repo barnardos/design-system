@@ -9,7 +9,7 @@ import Layout from "../../components/Layout";
 import Link from "../../components/Link";
 import ListItem from "../../components/ListItem";
 import Paragraph from "../../components/Paragraph";
-import PullQuote from "../../components/PullQuote";
+import Quote from "../../components/Quote";
 import TableOfContents from "../../components/TableOfContents";
 import Title from "../../components/Title";
 import UnorderedList from "../../components/UnorderedList";
@@ -44,8 +44,8 @@ const Pages = () => (
         },
         {
           level: 1,
-          text: "PullQuote",
-          to: "/guidance/displaying-information/#pullquote"
+          text: "Quote",
+          to: "/guidance/displaying-information/#quote"
         }
       ]}
     />
@@ -71,19 +71,23 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/issues/300">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
-    <HeadingOne>{`PullQuote`}</HeadingOne>
-    <Paragraph>{`Use this component to add a pull quote.`}</Paragraph>
+    <HeadingOne>{`Quote`}</HeadingOne>
+    <Paragraph
+    >{`Use this component for quotes, for example an excerpt from an article or quotation from a person.`}</Paragraph>
     <div className="Pages-example">
-      <PullQuote
+      <Quote
         name="John Smith"
         role="Teacher"
-      >{`The family support worker is able to engage and build positive relationships with families who previously kept their distance from school.`}</PullQuote>
+      >{`The family support worker is able to engage and build positive relationships with families who previously kept their distance from school.`}</Quote>
     </div>
     <div className="Pages-example">
-      <PullQuote
+      <Quote
         colour="pink"
-        role="Child"
-      >{`I learned we are all beautiful in our own ways. I felt reassured.`}</PullQuote>
+        role="Young person"
+      >{`Someone believed in me once and now it’s time for me to do the same.`}</Quote>
+    </div>
+    <div className="Pages-example">
+      <Quote colour="orange">{`Parents needed more support with their emotional wellbeing, boundaries, behaviour, home and money.`}</Quote>
     </div>
     <Paragraph>
       {`View `}
