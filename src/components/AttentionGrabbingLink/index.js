@@ -3,8 +3,8 @@ import React from "react";
 
 import "./index.css";
 
-const AttentionGrabbingLink = ({ color, href, text }) => {
-  const className = `AttentionGrabbingLink AttentionGrabbingLink--${color}`;
+const AttentionGrabbingLink = ({ colour, href, text }) => {
+  const className = `AttentionGrabbingLink AttentionGrabbingLink--${colour}`;
   return (
     <a className={className} href={href}>
       {text}
@@ -13,7 +13,7 @@ const AttentionGrabbingLink = ({ color, href, text }) => {
 };
 
 AttentionGrabbingLink.propTypes = {
-  color: PropTypes.oneOf(["black", "orange", "pink", "purple", "teal"]),
+  colour: PropTypes.oneOf(["black", "orange", "pink", "purple", "teal"]),
   href: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired
 };

@@ -103,35 +103,35 @@ const Pages = () => (
     </UnorderedList>
     <div className="Pages-example">
       <AttentionGrabbingLink
-        color="pink"
+        colour="pink"
         href="http://example.org"
         text="Shop online"
       />
     </div>
     <div className="Pages-example">
       <AttentionGrabbingLink
-        color="orange"
+        colour="orange"
         href="http://example.org"
         text="Volunteer with us"
       />
     </div>
     <div className="Pages-example">
       <AttentionGrabbingLink
-        color="teal"
+        colour="teal"
         href="http://example.org"
         text="Foster today"
       />
     </div>
     <div className="Pages-example">
       <AttentionGrabbingLink
-        color="purple"
+        colour="purple"
         href="http://example.org"
         text="Donate"
       />
     </div>
     <div className="Pages-example">
       <AttentionGrabbingLink
-        color="black"
+        colour="black"
         href="http://example.org"
         text="Commission us"
       />
