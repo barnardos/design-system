@@ -1,8 +1,8 @@
 @import "../../custom-properties.css";
 
-/** @define PullQuote; */
+/** @define Quote; */
 
-.PullQuote {
+.Quote {
   box-shadow: inset 0.25rem 0 0 currentColor;
   color: var(--green);
   font: 300 var(--type-0)/1.5rem system-ui;
@@ -10,7 +10,7 @@
   padding-left: 1.5rem;
 }
 
-.PullQuote-children {
+.Quote-children {
   font: 600 var(--type-4)/2rem Nova, sans-serif;
   padding-top: 4.5rem;
   position: relative;
@@ -29,31 +29,31 @@
   }
 }
 
-.PullQuote-cite {
+.Quote-cite {
   display: block;
   margin-top: 1rem;
 }
 
-.PullQuote-role {
+.Quote-role {
   font: 300 var(--type-0)/1.5rem system-ui;
 }
 
-.PullQuote-name {
+.Quote-name {
   font: 600 var(--type-0)/1.5rem system-ui;
 }
 
-.PullQuote--orange {
+.Quote--orange {
   color: var(--orange);
 }
 
-.PullQuote--pink {
+.Quote--pink {
   color: var(--pink);
 }
 
-.PullQuote--purple {
+.Quote--purple {
   color: var(--purple);
 }
 
-.PullQuote--teal {
+.Quote--teal {
   color: var(--teal);
 }
