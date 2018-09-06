@@ -33,11 +33,11 @@
 
   &::before {
     content: "“";
-    font: 600 var(--type-20)/2rem Nova, sans-serif;
+    font: 600 var(--type-20)/0 Nova, sans-serif;
     left: -0.5rem;
     margin-top: 5rem;
     position: absolute;
-    top: -1.75rem;
+    top: -0.5rem;
   }
 }
 

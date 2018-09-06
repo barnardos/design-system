@@ -1,6 +1,7 @@
 import Helmet from "react-helmet";
 import React from "react";
 
+import AttentionGrabbingQuote from "../../components/AttentionGrabbingQuote";
 import Breadcrumbs from "../../components/Breadcrumbs";
 import Figure from "../../components/Figure";
 import HeadingOne from "../../components/HeadingOne";
@@ -46,6 +47,11 @@ const Pages = () => (
           level: 1,
           text: "Quote",
           to: "/guidance/displaying-information/#quote"
+        },
+        {
+          level: 1,
+          text: "AttentionGrabbingQuote",
+          to: "/guidance/displaying-information/#attentiongrabbingquote"
         }
       ]}
     />
@@ -94,9 +100,31 @@ const Pages = () => (
     </div>
     <Paragraph>
       {`View `}
-      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Figure">{`code`}</Link>
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Quote">{`code`}</Link>
       {` and `}
-      <Link href="https://github.com/barnardos/design-system/issues/300">{`research`}</Link>
+      <Link href="https://github.com/barnardos/design-system/issues/252">{`research`}</Link>
+      {` on GitHub.`}
+    </Paragraph>
+    <HeadingOne>{`AttentionGrabbingQuote`}</HeadingOne>
+    <Paragraph>{`When using this component you should:`}</Paragraph>
+    <UnorderedList>
+      <ListItem>{`only use it once on each page`}</ListItem>
+    </UnorderedList>
+    <div className="Pages-example">
+      <AttentionGrabbingQuote colour="teal">{`By tackling the causes as well as the symptoms, we can create better outcomes for more children.`}</AttentionGrabbingQuote>
+    </div>
+    <div className="Pages-example">
+      <AttentionGrabbingQuote
+        colour="black"
+        role="Young person"
+        name="James Roberts"
+      >{`I just needed a push in the right direction, and a stepping stone to act as a bridge across to adulthood. I finally feel that I'm closer to being happy.`}</AttentionGrabbingQuote>
+    </div>
+    <Paragraph>
+      {`View `}
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/AttentionGrabbingQuote">{`code`}</Link>
+      {` and `}
+      <Link href="https://github.com/barnardos/design-system/issues/321">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
   </Layout>

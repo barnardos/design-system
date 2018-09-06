@@ -1,0 +1,72 @@
+@import "../../custom-properties.css";
+
+/** @define AttentionGrabbingQuote; */
+
+.AttentionGrabbingQuote {
+  background-color: var(--green);
+  color: var(--white);
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.AttentionGrabbingQuote-children {
+  font: 300 var(--type-4)/2rem Nova, sans-serif;
+  margin: 0 auto;
+  max-width: 43rem;
+  padding-top: 6rem;
+  position: relative;
+
+  &::after {
+    content: "”";
+  }
+
+  &::before {
+    content: "“";
+    display: block;
+    font: 600 var(--type-20)/0 Nova, sans-serif;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 5rem;
+  }
+}
+
+.AttentionGrabbingQuote-cite {
+  display: block;
+  margin-top: 1rem;
+}
+
+.AttentionGrabbingQuote-role {
+  font: 300 var(--type-0)/1.5rem system-ui;
+}
+
+.AttentionGrabbingQuote-name {
+  font: 600 var(--type-0)/1.5rem system-ui;
+}
+
+.AttentionGrabbingQuote--black {
+  background-color: var(--black);
+}
+
+.AttentionGrabbingQuote--orange {
+  background-color: var(--orange);
+}
+
+.AttentionGrabbingQuote--pink {
+  background-color: var(--pink);
+}
+
+.AttentionGrabbingQuote--purple {
+  background-color: var(--purple);
+}
+
+.AttentionGrabbingQuote--teal {
+  background-color: var(--teal);
+}
+
+@media (min-width: 32rem) {
+  .AttentionGrabbingQuote {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
