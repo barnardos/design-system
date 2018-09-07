@@ -5,6 +5,7 @@ import AttentionGrabbingQuote from "../../components/AttentionGrabbingQuote";
 import Breadcrumbs from "../../components/Breadcrumbs";
 import Figure from "../../components/Figure";
 import HeadingOne from "../../components/HeadingOne";
+import HeadingTwo from "../../components/HeadingTwo";
 import Image from "../../components/Image";
 import Layout from "../../components/Layout";
 import Link from "../../components/Link";
@@ -14,6 +15,7 @@ import Quote from "../../components/Quote";
 import TableOfContents from "../../components/TableOfContents";
 import Title from "../../components/Title";
 import UnorderedList from "../../components/UnorderedList";
+import UnorderedListItem from "../../components/UnorderedListItem";
 
 import "../../app.css";
 import "../index.css";
@@ -52,10 +54,19 @@ const Pages = () => (
           level: 1,
           text: "AttentionGrabbingQuote",
           to: "/guidance/displaying-information/#attentiongrabbingquote"
+        },
+        {
+          level: 1,
+          text: "Lists",
+          to: "/guidance/displaying-information/#lists"
+        },
+        {
+          level: 2,
+          text: "UnorderedListItem",
+          to: "/guidance/displaying-information/#unorderedlistitem"
         }
       ]}
     />
-
     <Paragraph>{`When displaying information you should:`}</Paragraph>
     <UnorderedList>
       <ListItem>{`provide a meaningful content hierarchy`}</ListItem>
@@ -126,6 +137,32 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/AttentionGrabbingQuote">{`code`}</Link>
       {` and `}
       <Link href="https://github.com/barnardos/design-system/issues/321">{`research`}</Link>
+      {` on GitHub.`}
+    </Paragraph>
+    <HeadingOne>{`Lists`}</HeadingOne>
+    <Paragraph>{`Use the component below for lists. You should:`}</Paragraph>
+    <UnorderedList>
+      <ListItem>{`limit the number on each page`}</ListItem>
+      <ListItem>{`introduce with a descriptive sentence`}</ListItem>
+      <ListItem>{`aim to keep the length of items similar`}</ListItem>
+      <ListItem>{`avoid starting items with the same word`}</ListItem>
+    </UnorderedList>
+    <HeadingTwo>{`UnorderedListItem`}</HeadingTwo>
+    <Paragraph
+    >{`Use this component when the sequence or count of items isn’t important.`}</Paragraph>
+    <div className="Pages-example">
+      <Paragraph>{`There has been particular improvements in: `}</Paragraph>
+      <UnorderedList>
+        <UnorderedListItem
+        >{`families feeling less isolated`}</UnorderedListItem>
+        <UnorderedListItem>{`reduced parental stress`}</UnorderedListItem>
+      </UnorderedList>
+    </div>
+    <Paragraph>
+      {`View `}
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/UnorderedListItem">{`code`}</Link>
+      {` and `}
+      <Link href="https://github.com/barnardos/design-system/issues/325">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
   </Layout>
