@@ -27,7 +27,7 @@ import "../../app.css";
 import "../index.css";
 
 const Pages = () => (
-  <Layout type="twoThirds">
+  <Layout>
     <Helmet>
       <title>{`Requesting information`}</title>
     </Helmet>
@@ -99,7 +99,7 @@ const Pages = () => (
         {
           level: 2,
           text: "ConditionalControls",
-          to: "#conditionalcontrols"
+          to: "/guidance/requesting-information/#conditionalcontrols"
         },
         {
           level: 1,

@@ -14,11 +14,3 @@
     padding: 2rem 2rem 4rem;
   }
 }
-
-@media (min-width: 78rem) {
-  .Layout--twoThirds {
-    & .Layout-main {
-      width: 66%;
-    }
-  }
-}
