@@ -21,12 +21,14 @@ const Link = ({ index, level, text, to }) => {
 
 const TableOfContents = ({ items }) => (
   <div className="TableOfContents">
-    <p className="TableOfContents-section">{`In this section:`}</p>
-    <ul className="TableOfContents-items">
-      {items.map(({ level, text, to }, index) =>
-        Link({ index, level, text, to })
-      )}
-    </ul>
+    <div className="TableOfContents-inner">
+      <p className="TableOfContents-section">{`In this section:`}</p>
+      <ul className="TableOfContents-items">
+        {items.map(({ level, text, to }, index) =>
+          Link({ index, level, text, to })
+        )}
+      </ul>
+    </div>
   </div>
 );
 

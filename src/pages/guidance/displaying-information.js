@@ -19,7 +19,7 @@ import "../../app.css";
 import "../index.css";
 
 const Pages = () => (
-  <Layout type="twoThirds">
+  <Layout>
     <Helmet>
       <title>{`Displaying information`}</title>
     </Helmet>
@@ -55,6 +55,7 @@ const Pages = () => (
         }
       ]}
     />
+
     <Paragraph>{`When displaying information you should:`}</Paragraph>
     <UnorderedList>
       <ListItem>{`provide a meaningful content hierarchy`}</ListItem>

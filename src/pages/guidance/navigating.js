@@ -19,7 +19,7 @@ import "../../app.css";
 import "../index.css";
 
 const Pages = () => (
-  <Layout type="twoThirds">
+  <Layout>
     <Helmet>
       <title>{`Navigation`}</title>
     </Helmet>

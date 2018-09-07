@@ -35,10 +35,17 @@
   }
 }
 
-@media (min-width: 78rem) {
+/* stylelint-disable-next-line media-feature-name-whitelist */
+@media (min-width: 78rem) and (min-height: 40rem) {
   .TableOfContents {
-    left: 66%;
-    padding-left: 4rem;
+    margin-top: 0;
+    position: sticky;
+    top: 1rem;
+  }
+
+  .TableOfContents-inner {
     position: absolute;
+    right: 4rem;
+    width: 14rem;
   }
 }

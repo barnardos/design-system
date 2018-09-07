@@ -8,3 +8,8 @@
   margin: 0;
   padding: 0;
 }
+
+/* stylelint-disable selector-max-type, property-whitelist */
+html {
+  scroll-behavior: smooth;
+}
