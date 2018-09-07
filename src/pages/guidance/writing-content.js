@@ -66,8 +66,6 @@ const Pages = () => (
       >{`use the 12-hour clock, for example 10am and 2.30pm`}</ListItem>
       <ListItem
       >{`use noon and midnight instead of 12 noon and 12 midnight`}</ListItem>
-      <ListItem>{`start bullets with a lowercase`}</ListItem>
-      <ListItem>{`end bullets without any punctuation`}</ListItem>
     </UnorderedList>
     <HeadingOne>{`Spelling`}</HeadingOne>
     <UnorderedList>

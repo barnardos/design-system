@@ -1,0 +1,16 @@
+@import "../../custom-properties.css";
+
+/** @define UnorderedListItem; */
+
+.UnorderedListItem {
+  background: url("./bullet.svg") 0 0.25rem no-repeat;
+  background-size: 1rem 1rem;
+  font: 300 var(--type-0)/1.5rem system-ui;
+  list-style: none;
+  margin-left: -1rem;
+  padding-left: 1.75rem;
+
+  &:not(:first-child) {
+    margin-top: 0.5rem;
+  }
+}
