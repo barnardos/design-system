@@ -68,8 +68,40 @@
   z-index: -1;
 }
 
-.Pages-figureKey--space {
-  background: color-mod(var(--orange) tint(80%));
+.Pages-figureDemoItem {
+  background: color-mod(var(--teal) tint(80%));
+  height: 3rem;
+  margin-top: 1rem;
+}
+
+.Pages-figureDemo--thirds {
+  margin: -1rem 0 0 -1rem;
+
+  & .Pages-figureDemoItem {
+    margin: 1rem 0 0 1rem;
+  }
+}
+
+.Pages-figureDemo--constrained {
+  & .Pages-figureDemoItem {
+    box-shadow: 0.25rem 0.25rem 0 color-mod(var(--teal) tint(20%));
+    margin: 0 auto;
+    max-width: 28rem;
+  }
+}
+
+@media (min-width: 44rem) {
+  .Pages-figureDemo--thirds {
+    display: flex;
+
+    & .Pages-figureDemoItem--first {
+      flex: 2 2 auto;
+    }
+
+    & .Pages-figureDemoItem--second {
+      flex: 1 1 auto;
+    }
+  }
 }
 
 .Pages-example {

@@ -39,13 +39,13 @@ const Pages = () => (
       items={[
         {
           level: 1,
-          text: "Layout",
-          to: "/guidance/layout-and-typography/#layout"
+          text: "Typography",
+          to: "/guidance/layout-and-typography/#typography"
         },
         {
           level: 1,
-          text: "Typography",
-          to: "/guidance/layout-and-typography/#typography"
+          text: "Layout",
+          to: "/guidance/layout-and-typography/#layout"
         },
         {
           level: 1,
@@ -56,7 +56,8 @@ const Pages = () => (
     />
     <Paragraph>{`To unify layout and typography, you should use:`}</Paragraph>
     <UnorderedList>
-      <ListItem>{`multiples of 4 for spacing and line heights`}</ListItem>
+      <ListItem
+      >{`multiples of 4 for spacing, flourishes, and line heights`}</ListItem>
       <ListItem>{`a base of 16 for paragraphs`}</ListItem>
       <ListItem>{`exponents of 1.125 for other type sizes`}</ListItem>
     </UnorderedList>
@@ -75,13 +76,6 @@ const Pages = () => (
           }}
         />
         <div
-          className="Pages-figureKey Pages-figureKey--space"
-          style={{
-            height: "1rem",
-            top: "2rem"
-          }}
-        />
-        <div
           className="Pages-figureKey"
           style={{
             height: "3rem",
@@ -89,24 +83,10 @@ const Pages = () => (
           }}
         />
         <div
-          className="Pages-figureKey Pages-figureKey--space"
-          style={{
-            height: "1rem",
-            top: "6rem"
-          }}
-        />
-        <div
           className="Pages-figureKey"
           style={{
             height: "1.75rem",
             top: "7rem"
-          }}
-        />
-        <div
-          className="Pages-figureKey Pages-figureKey--space"
-          style={{
-            height: "0.5rem",
-            top: "8.75rem"
           }}
         />
         <div
@@ -180,15 +160,6 @@ const Pages = () => (
         </div>
       </div>
     </div>
-    <HeadingOne>{`Layout`}</HeadingOne>
-    <Paragraph
-    >{`Using multiples of 4 for spacing provides a flexible foundation for layout.`}</Paragraph>
-    <Paragraph>{`For example, you could have:`}</Paragraph>
-    <UnorderedList>
-      <ListItem>{`shadows of 4`}</ListItem>
-      <ListItem>{`margins of 8`}</ListItem>
-      <ListItem>{`gutters of 16`}</ListItem>
-    </UnorderedList>
     <HeadingOne>{`Typography`}</HeadingOne>
     <Paragraph
     >{`Using a base of 16 and exponents of 1.125 for type sizes provides flexibility to create a visual hierarchy.`}</Paragraph>
@@ -224,6 +195,28 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/tree/master/src/custom-properties.css">{`code`}</Link>
       {` on GitHub.`}
     </Paragraph>
+    <HeadingOne>{`Layout`}</HeadingOne>
+    <Paragraph
+    >{`Create simple and fluid layouts using multiples of 4 for spacing and flourishes.`}</Paragraph>
+    <div className="Pages-figures">
+      <figure className="Pages-figure">
+        <div className="Pages-figureDemo Pages-figureDemo--thirds">
+          <div className="Pages-figureDemoItem Pages-figureDemoItem--first" />
+          <div className="Pages-figureDemoItem Pages-figureDemoItem--second" />
+        </div>
+        <figcaption className="Pages-figureCaption">
+          {`Expands to two-thirds/one-third with gutter of 16`}
+        </figcaption>
+      </figure>
+      <figure className="Pages-figure">
+        <div className="Pages-figureDemo Pages-figureDemo--constrained">
+          <div className="Pages-figureDemoItem" />
+        </div>
+        <figcaption className="Pages-figureCaption">
+          {`Centered with maximum width of 448 and shadow of 4`}
+        </figcaption>
+      </figure>
+    </div>
     <HeadingOne>{`Proportional scale`}</HeadingOne>
     <Paragraph
     >{`The layout and typography can be proportionally scaled to maintain an optimal line length at any viewport size.`}</Paragraph>
