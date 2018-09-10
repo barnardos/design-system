@@ -8,7 +8,7 @@
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, auto);
+  padding: 1rem;
   position: relative;
 }
 
@@ -26,6 +26,7 @@
 .Header-menu {
   grid-column: 1 / span 2;
   grid-row: 2;
+  margin-bottom: -1rem;
 }
 
 .Header-submitSearchControl {
@@ -65,13 +66,7 @@
 
 @media (min-width: 36rem) {
   .Header {
-    grid-template-columns: 6.5rem auto 3rem;
-  }
-
-  .Header-menu {
-    grid-column: 2;
-    grid-row: 1;
-    margin-bottom: -1rem;
+    grid-template-columns: 8rem auto 3rem;
   }
 
   .Header-submitSearchControl {
@@ -82,10 +77,29 @@
     grid-column: 2;
     grid-row: 1;
   }
+
+  .Header-menu {
+    grid-column: 1 / span 3;
+  }
+}
+
+@media (min-width: 48rem) {
+  .Header {
+    padding: 1.5rem 2rem;
+  }
+
+  .Header-logoInner {
+    height: 3.5rem;
+    width: 8rem;
+  }
+
+  .Header-menu {
+    margin-bottom: -1.5rem;
+  }
 }
 
 @media (min-width: 56rem) {
   .Header {
-    grid-template-columns: 6.5rem auto auto;
+    grid-template-columns: 8rem auto auto;
   }
 }

@@ -4,6 +4,7 @@ import React from "react";
 import Link from "../../components/Link";
 import Breadcrumbs from "../../components/Breadcrumbs";
 import Filter from "../../components/Filter";
+import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import HeadingOne from "../../components/HeadingOne";
 import Layout from "../../components/Layout";
@@ -49,6 +50,7 @@ const Pages = () => (
         }
       ]}
     />
+    <HeadingOne>{`Filter`}</HeadingOne>
     <Paragraph>{`When filtering you should:`}</Paragraph>
     <UnorderedList>
       <ListItem>
@@ -62,7 +64,6 @@ const Pages = () => (
       <ListItem>{`include a way to undo each filter`}</ListItem>
       <ListItem>{`show the number of results`}</ListItem>
     </UnorderedList>
-    <HeadingOne>{`Filter`}</HeadingOne>
     <div className="Pages-example">
       <div
         style={{
@@ -188,6 +189,24 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Header">{`code`}</Link>
       {` and `}
       <Link href="https://github.com/barnardos/design-system/issues/2">{`research`}</Link>
+      {` on GitHub.`}
+    </Paragraph>
+    <HeadingOne>{`Footer`}</HeadingOne>
+    <div className="Pages-example Pages-example--full">
+      <div
+        style={{
+          overflow: "hidden",
+          position: "relative"
+        }}
+      >
+        <Footer>{`© Barnardo's 2018`}</Footer>
+      </div>
+    </div>
+    <Paragraph>
+      {`View `}
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Footer">{`code`}</Link>
+      {` and `}
+      <Link href="https://github.com/barnardos/design-system/issues/301">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
   </Layout>
