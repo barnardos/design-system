@@ -12,7 +12,7 @@
     0.25rem 0.25rem color-mod(var(--black) tint(60%));
   color: var(--black);
   display: flex;
-  font: 600 var(--type-2) Nova, sans-serif;
+  font: 500 var(--type-2) Vision, sans-serif;
   justify-content: center;
   min-height: 3rem;
   min-width: 3rem;

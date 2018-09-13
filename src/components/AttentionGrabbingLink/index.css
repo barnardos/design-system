@@ -5,8 +5,9 @@
 .AttentionGrabbingLink {
   color: var(--white);
   display: inline-block;
-  font: 600 var(--type-2) Nova, sans-serif;
-  padding: 0.5rem 1rem;
+  min-width: 7rem;
+  font: 500 var(--type-2) Vision, sans-serif;
+  padding: 0.5rem;
   position: relative;
   text-align: center;
 }

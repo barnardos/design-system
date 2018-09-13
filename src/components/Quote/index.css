@@ -23,7 +23,7 @@
 }
 
 .Quote-children {
-  font: 600 var(--type-4) Nova, sans-serif;
+  font: 500 var(--type-4) Vision, sans-serif;
   padding-top: 4.5rem;
   position: relative;
 
@@ -33,7 +33,7 @@
 
   &::before {
     content: "“";
-    font: 600 var(--type-20) Nova, sans-serif;
+    font: 500 var(--type-20) Vision, sans-serif;
     left: -0.5rem;
     line-height: 0;
     margin-top: 5rem;
@@ -52,7 +52,7 @@
 }
 
 .Quote-name {
-  font: 600 var(--type-2) system-ui;
+  font: 500 var(--type-2) system-ui;
 }
 
 .Quote--orange {
