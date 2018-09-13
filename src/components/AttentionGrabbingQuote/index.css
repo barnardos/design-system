@@ -7,10 +7,16 @@
   color: var(--white);
   padding: 2rem 1rem;
   text-align: center;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
 }
 
 .AttentionGrabbingQuote-children {
-  font: 300 var(--type-4) Nova, sans-serif;
+  font: 300 var(--type-4) Rubik, sans-serif;
   margin: 0 auto;
   max-width: 43rem;
   padding-top: 6rem;
@@ -23,7 +29,7 @@
   &::before {
     content: "“";
     display: block;
-    font: 600 var(--type-20) Nova, sans-serif;
+    font: 500 var(--type-20) Rubik, sans-serif;
     left: 0;
     line-height: 0;
     position: absolute;
@@ -42,7 +48,7 @@
 }
 
 .AttentionGrabbingQuote-name {
-  font: 600 var(--type-2) system-ui;
+  font: 500 var(--type-2) system-ui;
 }
 
 .AttentionGrabbingQuote--black {

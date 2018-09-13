@@ -163,8 +163,8 @@ const Pages = () => (
     <Heading>{`Typography`}</Heading>
     <Paragraph>{`You should only use these typefaces and weights:`}</Paragraph>
     <UnorderedList>
-      <ListItem>{`Proxima Nova semi-bold`}</ListItem>
-      <ListItem>{`Proxima Nova light`}</ListItem>
+      <ListItem>{`Proxima Rubik semi-bold`}</ListItem>
+      <ListItem>{`Proxima Rubik light`}</ListItem>
       <ListItem>{`system-ui light`}</ListItem>
     </UnorderedList>
     <Paragraph>{`Using a base of 16 and exponents of 1.125 for type sizes provides flexibility to create a visual hierarchy.`}</Paragraph>
@@ -175,7 +175,7 @@ const Pages = () => (
         <figcaption className="Pages-figureCaption">
           {`16 * 1.125^8 (roughly 41px/48px), 16 * 1.125^9 (roughly 46px/52px) at larger viewport sizes`}
           <br />
-          {`Proxima Nova Semi-Bold`}
+          {`Proxima Rubik Semi-Bold`}
         </figcaption>
       </figure>
       <figure className="Pages-figure">
@@ -183,7 +183,7 @@ const Pages = () => (
         <figcaption className="Pages-figureCaption">
           {`16 * 1.125^4 (roughly 26px/32px)`}
           <br />
-          {`Proxima Nova Light`}
+          {`Proxima Rubik Light`}
         </figcaption>
       </figure>
       <figure className="Pages-figure">
@@ -191,7 +191,7 @@ const Pages = () => (
         <figcaption className="Pages-figureCaption">
           {`16 * 1.125^5 (roughly 29px/32px)`}
           <br />
-          {`Proxima Nova Semi-Bold`}
+          {`Proxima Rubik Semi-Bold`}
         </figcaption>
       </figure>
       <figure className="Pages-figure">
@@ -199,7 +199,7 @@ const Pages = () => (
         <figcaption className="Pages-figureCaption">
           {`16 * 1.125^4 (roughly 26px/32px)`}
           <br />
-          {`Proxima Nova Light`}
+          {`Proxima Rubik Light`}
         </figcaption>
       </figure>
       <figure className="Pages-figure">

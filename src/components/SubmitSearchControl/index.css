@@ -2,29 +2,63 @@
 
 /** @define SubmitSearchControl; */
 
-.SubmitSearchControl-commands {
-  display: flex;
-  flex-direction: row-reverse;
+.SubmitSearchControl-commandLink {
+  display: block;
+  height: 1.55rem;
 }
 
-.SubmitSearchControl-details {
+.SubmitSearchControl-logoInner {
+  display: none;
+  height: 3rem;
+  margin: 1rem 1rem 2rem;
+  width: 6.5rem;
+}
+
+.SubmitSearchControl-command {
+  display: flex;
+  flex-direction: row-reverse;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+.SubmitSearchControl-command--close {
   display: none;
 }
 
-.SubmitSearchControl-details--active {
-  background: var(--white);
-  bottom: 0;
-  display: block;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
+.SubmitSearchControl--js {
+  & .SubmitSearchControl-details {
+    display: none;
+  }
+  & .SubmitSearchControl-details--active {
+    background: var(--white);
+    bottom: 0;
+    display: block;
+    left: 0;
+    overflow-y: scroll;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1;
+
+    & .SubmitSearchControl-logoInner {
+      display: block;
+    }
+
+    & .SubmitSearchControl-command--close {
+      display: block;
+    }
+
+    & .SubmitSearchControl-form {
+      margin: 1rem 1rem;
+    }
+  }
 }
 
 .SubmitSearchControl-form {
   display: flex;
   height: 3rem;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
 }
 
 .SubmitSearchControl-input {
@@ -35,7 +69,7 @@
     inset 0.25rem 0.25rem color-mod(var(--black) tint(80%));
   display: block;
   flex: 1;
-  font: 300 var(--type-2) system-ui;
+  font: 300 var(--type-1) / 1 system-ui;
   padding: 0.5rem 0.75rem;
 }
 
@@ -67,13 +101,33 @@
   display: block;
 }
 
-@media (min-width: 56rem) {
-  .SubmitSearchControl-commands {
-    display: none;
+@media (min-width: 48rem) {
+  .SubmitSearchControl-logoInner {
+    margin: 1.5rem 2rem 2rem;
+    height: 3.5rem;
+    width: 8rem;
+  }
+
+  .SubmitSearchControl-command {
+    right: 2rem;
+    top: 2rem;
+  }
+  .SubmitSearchControl--js {
+    & .SubmitSearchControl-details--active {
+      & .SubmitSearchControl-form {
+        margin: 2rem 2rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 54rem) {
+  .SubmitSearchControl-command {
+    display: none !important;
   }
 
   .SubmitSearchControl-details {
-    display: block;
+    display: block !important;
   }
 
   .SubmitSearchControl-form {

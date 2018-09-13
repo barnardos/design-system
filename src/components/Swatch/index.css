@@ -11,7 +11,7 @@
 
 .Swatch-label {
   color: var(--black);
-  font: 600 var(--type-0) system-ui;
+  font: 500 var(--type-0) system-ui;
   margin-top: 0.25rem;
   text-align: center;
 }

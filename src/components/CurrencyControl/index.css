@@ -4,7 +4,7 @@
 
 .CurrencyControl-label {
   display: block;
-  font: 600 var(--type-3) system-ui;
+  font: 500 var(--type-3) system-ui;
 }
 
 .CurrencyControl-hint {
@@ -18,7 +18,7 @@
 
 .CurrencyControl-validationInner {
   color: var(--red);
-  font: 600 var(--type-0) system-ui;
+  font: 500 var(--type-0) system-ui;
 }
 
 .CurrencyControl-prefixAndElement {
@@ -31,7 +31,7 @@
   background: color-mod(var(--black) tint(90%));
   display: flex;
   flex: 0 0 2.5rem;
-  font: 600 var(--type-2) system-ui;
+  font: 500 var(--type-2) system-ui;
   justify-content: center;
 }
 
