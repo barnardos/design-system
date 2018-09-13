@@ -393,12 +393,57 @@ const Pages = () => (
           isRevealing
           items={[
             {
-              text: "About",
-              href: "http://example.org"
+              isActive: true,
+              text: "Who we are",
+              href: "http://example.org",
+              items: [
+                {
+                  text: "History",
+                  href: "http://example.org"
+                },
+                {
+                  text: "Chief Executive",
+                  href: "http://example.org"
+                },
+                {
+                  text: "Patrons",
+                  href: "http://example.org"
+                },
+                {
+                  text: "Trustees",
+                  href: "http://example.org"
+                },
+                {
+                  text: "Influence",
+                  href: "http://example.org"
+                },
+                {
+                  text: "Measuring impact",
+                  href: "http://example.org"
+                },
+                {
+                  text: "Corporate strategy",
+                  href: "http://example.org"
+                },
+                {
+                  text: "Annual report",
+                  href: "http://example.org"
+                }
+              ]
             },
             {
               text: "Volunteer",
-              href: "http://example.org"
+              href: "http://example.org",
+              items: [
+                {
+                  text: "History",
+                  href: "http://example.org"
+                },
+                {
+                  text: "Chief Executive",
+                  href: "http://example.org"
+                }
+              ]
             },
             {
               text: "Mission",

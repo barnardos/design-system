@@ -54,7 +54,7 @@
   background-color: var(--black);
   color: var(--white);
   display: block;
-  font: 600 var(--type-2) Nova, sans-serif;
+  font: 700 var(--type-2) / 1.75rem Quicksand, sans-serif;
   padding: 0.5rem;
   text-align: center;
   white-space: nowrap;
@@ -101,5 +101,11 @@
 @media (min-width: 56rem) {
   .Header {
     grid-template-columns: 8rem auto auto;
+  }
+}
+
+@media (min-width: 54rem) {
+  .Header {
+    padding-bottom: 4.5rem;
   }
 }

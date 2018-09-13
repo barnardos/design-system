@@ -3,7 +3,7 @@
 /** @define Title; */
 
 .Title {
-  font: 600 var(--type-8) Nova, sans-serif;
+  font: 700 var(--type-8) Quicksand, sans-serif;
 
   &:not(:first-child) {
     margin-top: 1rem;
@@ -12,6 +12,6 @@
 
 @media (min-width: 40rem) {
   .Title {
-    font: 600 var(--type-9) Nova, sans-serif;
+    font: 700 var(--type-9) Quicksand, sans-serif;
   }
 }

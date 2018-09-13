@@ -15,6 +15,10 @@ const Layout = ({ children }) => (
     <Helmet titleTemplate="%s - Barnardo's">
       <html lang="en" />
       <link rel="shortcut icon" type="image/x-icon" href={favicon} />
+      <link
+        href="https://fonts.googleapis.com/css?family=Quicksand:400,700"
+        rel="stylesheet"
+      />
     </Helmet>
     <div className="Layout-header">
       <Header />

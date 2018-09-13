@@ -1,0 +1,36 @@
+.Example-main {
+  display: block;
+  margin: 1.5rem auto 0;
+  max-width: 46rem;
+  padding: 0 1rem;
+}
+
+.Example-submitSearchControl {
+  margin: 2rem 1rem 0;
+}
+
+.Example-footerNav {
+  margin-left: 1rem;
+}
+
+@media (min-width: 54rem) {
+  .Example-main {
+    padding: 1rem 2rem;
+  }
+
+  .Example-submitSearchControl {
+    margin: 0;
+    position: absolute;
+    right: 2rem;
+    top: 1.75rem;
+    width: 35%;
+  }
+
+  .Example-footer {
+    margin-top: 4rem;
+  }
+
+  .Example-footerNav {
+    margin-left: 2rem;
+  }
+}
