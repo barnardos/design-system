@@ -4,7 +4,7 @@ module.exports = () => ({
     require("postcss-preset-env")({
       features: {
         "nesting-rules": true,
-        "color-mod": {
+        "color-mod-function": {
           unresolved: "warn"
         },
         "custom-properties": {
