@@ -47,6 +47,11 @@ const Pages = () => (
           level: 1,
           text: "Header",
           to: "/guidance/patterns/#header"
+        },
+        {
+          level: 1,
+          text: "Footer",
+          to: "/guidance/patterns/#footer"
         }
       ]}
     />
