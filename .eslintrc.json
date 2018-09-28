@@ -16,5 +16,10 @@
     "ecmaVersion": 6,
     "sourceType": "module"
   },
+  "settings": {
+    "react": {
+      "version": "16.0"
+    }
+  },
   "globals": { "graphql": true }
 }
