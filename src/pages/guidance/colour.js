@@ -77,6 +77,8 @@ const Pages = () => (
           [{ label: "Pink", hex: "#cc0070", primary: true }],
           [{ label: "Purple", hex: "#6e2066", primary: true }],
           [{ label: "Teal", hex: "#0099a9", primary: true }],
+          [{ label: "Red", hex: "#c30000", primary: true }],
+          [{ label: "Black", hex: "#1d1d1d", primary: true }],
           [
             {
               label: "White",
@@ -85,9 +87,7 @@ const Pages = () => (
               inverted: true,
               primary: true
             }
-          ],
-          [{ label: "Black", hex: "#1d1d1d", primary: true }],
-          [{ label: "Red", hex: "#c30000", primary: true }]
+          ]
         ]}
       />
     </div>
