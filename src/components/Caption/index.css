@@ -1,24 +1,24 @@
 @import "../../custom-properties.css";
 
-/** @define Figure; */
+/** @define Caption; */
 
-.Figure {
+.Caption {
   display: block;
 }
 
-.Figure-children {
+.Caption-children {
   display: block;
   position: relative;
 }
 
-.Figure-children::before {
+.Caption-children::before {
   content: "";
   display: block;
   padding-bottom: 56.25%; /* stylelint-disable-line declaration-property-unit-whitelist */
   width: 100%;
 }
 
-.Figure-childrenInner {
+.Caption-childrenInner {
   border: none;
   bottom: 0;
   height: 100%;
@@ -29,7 +29,7 @@
   width: 100%;
 }
 
-.Figure-caption {
+.Caption-label {
   box-shadow: inset 0.25rem 0 0 var(--green);
   color: var(--green);
   font: 300 var(--type-0)/1.5rem system-ui;
