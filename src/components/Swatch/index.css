@@ -3,18 +3,23 @@
 /** @define Swatch; */
 
 .Swatch-color {
-  height: 2.5rem;
+  border-radius: 50%;
+  height: 4rem;
+  margin: 0 auto;
+  width: 4rem;
 }
 
 .Swatch-label {
   color: var(--black);
   font: 600 var(--type-0)/1.5rem system-ui;
   margin-top: 0.25rem;
+  text-align: center;
 }
 
 .Swatch-hex {
   color: var(--black);
   font: 300 var(--type-0)/1.5rem system-ui;
+  text-align: center;
 }
 
 .Swatch-color--bordered {
