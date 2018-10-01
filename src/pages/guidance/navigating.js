@@ -9,6 +9,7 @@ import Layout from "../../components/Layout";
 import Link from "../../components/Link";
 import ListItem from "../../components/ListItem";
 import Menu from "../../components/Menu";
+import Pagination from "../../components/Pagination";
 import Paragraph from "../../components/Paragraph";
 import StartLink from "../../components/StartLink";
 import TableOfContents from "../../components/TableOfContents";
@@ -62,6 +63,11 @@ const Pages = () => (
           level: 1,
           text: "Breadcrumbs",
           to: "/guidance/navigating/#breadcrumbs"
+        },
+        {
+          level: 1,
+          text: "Pagination",
+          to: "/guidance/navigating/#pagination"
         },
         {
           level: 1,
@@ -196,6 +202,26 @@ const Pages = () => (
     <Paragraph>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Breadcrumbs">{`code`}</Link>
+      {` on GitHub.`}
+    </Paragraph>
+    <HeadingOne>{`Pagination`}</HeadingOne>
+    <div className="Pages-example">
+      <Pagination
+        previous={{
+          href: "http://example.org",
+          label: "Overview"
+        }}
+        next={{
+          href: "http://example.org",
+          label: "Register as a foster carer"
+        }}
+      />
+    </div>
+    <Paragraph>
+      {`View `}
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Pagination">{`code`}</Link>
+      {` and `}
+      <Link href="https://github.com/barnardos/design-system/issues/250">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
     <HeadingOne>{`Menu`}</HeadingOne>
