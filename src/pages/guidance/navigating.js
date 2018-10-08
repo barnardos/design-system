@@ -45,17 +45,17 @@ const Pages = () => (
         },
         {
           level: 1,
-          text: "AttentionGrabbingLink",
+          text: "Attention Grabbing Link",
           to: "/guidance/navigating/#attentiongrabbinglink"
         },
         {
           level: 1,
-          text: "StartLink",
+          text: "Start Link",
           to: "/guidance/navigating/#startlink"
         },
         {
           level: 1,
-          text: "BackLink",
+          text: "Back Link",
           to: "/guidance/navigating/#backlink"
         },
         {
@@ -94,7 +94,7 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Link">{`code`}</Link>
       {` on GitHub.`}
     </Paragraph>
-    <HeadingOne>{`AttentionGrabbingLink`}</HeadingOne>
+    <HeadingOne>{`Attention Grabbing Link`}</HeadingOne>
     <Paragraph>{`When using this component you should:`}</Paragraph>
     <UnorderedList>
       <ListItem>{`limit the number on each page`}</ListItem>
@@ -146,7 +146,7 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/issues/47">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
-    <HeadingOne>{`StartLink`}</HeadingOne>
+    <HeadingOne>{`Start Link`}</HeadingOne>
     <Paragraph>{`You should only use this component:`}</Paragraph>
     <UnorderedList>
       <ListItem>{`once on each page`}</ListItem>
@@ -162,7 +162,7 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/issues/167">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
-    <HeadingOne>{`BackLink`}</HeadingOne>
+    <HeadingOne>{`Back Link`}</HeadingOne>
     <Paragraph>{`When using this component you should:`}</Paragraph>
     <UnorderedList>
       <ListItem>{`only use it once on each page`}</ListItem>

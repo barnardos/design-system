@@ -176,11 +176,11 @@ const Pages = () => (
         <figcaption className="Pages-figureCaption">{`16 * 1.125^4 (Proxima Nova Light)`}</figcaption>
       </figure>
       <figure className="Pages-figure">
-        <HeadingOne>{`HeadingOne`}</HeadingOne>
+        <HeadingOne>{`Heading One`}</HeadingOne>
         <figcaption className="Pages-figureCaption">{`16 * 1.125^5 (Proxima Nova Semi-Bold)`}</figcaption>
       </figure>
       <figure className="Pages-figure">
-        <HeadingTwo>{`HeadingTwo`}</HeadingTwo>
+        <HeadingTwo>{`Heading Two`}</HeadingTwo>
         <figcaption className="Pages-figureCaption">{`16 * 1.125^4 (Proxima Nova Light)`}</figcaption>
       </figure>
       <figure className="Pages-figure">
