@@ -48,7 +48,7 @@ const Pages = () => (
         },
         {
           level: 2,
-          text: "UnorderedListItem",
+          text: "Unordered List Item",
           to: "/guidance/displaying-information/#unorderedlistitem"
         },
         {
@@ -73,7 +73,7 @@ const Pages = () => (
         },
         {
           level: 2,
-          text: "AttentionGrabbingQuote",
+          text: "Attention Grabbing Quote",
           to: "/guidance/displaying-information/#attentiongrabbingquote"
         }
       ]}
@@ -90,7 +90,7 @@ const Pages = () => (
       <ListItem>{`aim to keep the length of items similar`}</ListItem>
       <ListItem>{`avoid starting items with the same word`}</ListItem>
     </UnorderedList>
-    <HeadingTwo>{`UnorderedListItem`}</HeadingTwo>
+    <HeadingTwo>{`Unordered List Item`}</HeadingTwo>
     <Paragraph
     >{`Use this component when the sequence or count of items isn’t important.`}</Paragraph>
     <div className="Pages-example">
@@ -170,7 +170,7 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/issues/252">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
-    <HeadingTwo>{`AttentionGrabbingQuote`}</HeadingTwo>
+    <HeadingTwo>{`Attention Grabbing Quote`}</HeadingTwo>
     <Paragraph>{`When using this component you should:`}</Paragraph>
     <UnorderedList>
       <ListItem>{`only use it once on each page`}</ListItem>
