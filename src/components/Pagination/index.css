@@ -1,0 +1,43 @@
+@import "../../custom-properties.css";
+
+/** @define Pagination; */
+
+.Pagination-item {
+  list-style: none;
+
+  &:not(:first-child) {
+    margin-top: 1rem;
+  }
+}
+
+.Pagination-link {
+  display: block;
+  padding-left: 1rem;
+  position: relative;
+
+  &::before {
+    background: transparent url("./triangle.svg") left 0.25rem no-repeat;
+    background-size: 0.75rem 0.75rem;
+    content: "";
+    height: 1rem;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1rem;
+  }
+}
+
+.Pagination-link--next {
+  &::before {
+    transform: rotate(180deg) translate(-0.75rem, -0.25rem);
+    transform-origin: left;
+  }
+}
+
+.Pagination-text {
+  font: 600 var(--type-2)/1.5rem Nova, sans-serif;
+}
+
+.Pagination-label {
+  font: 300 var(--type-0)/1.5rem system-ui;
+}
