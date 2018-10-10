@@ -2,7 +2,7 @@ import Helmet from "react-helmet";
 import React from "react";
 
 import Breadcrumbs from "../../components/Breadcrumbs";
-import HeadingOne from "../../components/HeadingOne";
+import Heading from "../../components/Heading";
 import Layout from "../../components/Layout";
 import Link from "../../components/Link";
 import ListItem from "../../components/ListItem";
@@ -67,7 +67,7 @@ const Pages = () => (
       <ListItem
       >{`use noon and midnight instead of 12 noon and 12 midnight`}</ListItem>
     </UnorderedList>
-    <HeadingOne>{`Spelling`}</HeadingOne>
+    <Heading>{`Spelling`}</Heading>
     <UnorderedList>
       <ListItem>{`Barnardo’s (always with apostrophe)`}</ListItem>
       <ListItem>{`email (no hyphen)`}</ListItem>
