@@ -6,12 +6,21 @@
   padding: 0 1rem;
 }
 
+.Layout-feedback {
+  margin: 5rem 1rem 0;
+}
+
 .Layout-footer {
-  margin-top: 6rem;
+  margin-top: 2rem;
 }
 
 @media (min-width: 48rem) {
   .Layout-main {
     padding: 0 2rem;
+  }
+
+  .Layout-feedback {
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 }

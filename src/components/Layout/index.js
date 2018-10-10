@@ -2,6 +2,7 @@ import Helmet from "react-helmet";
 import PropTypes from "prop-types";
 import React from "react";
 
+import Feedback from "../Feedback";
 import Footer from "../Footer";
 import Header from "../Header";
 
@@ -16,6 +17,15 @@ const Layout = ({ children }) => (
       <Header />
     </div>
     <main className="Layout-main">{children}</main>
+    <div className="Layout-feedback">
+      <Feedback title="Give feedback">
+        {`Email the Design System team on `}
+        <a href="mailto:designsystem@barnardos.org.uk">
+          {`designsystem@barnardos.org.uk`}
+        </a>
+        {`.`}
+      </Feedback>
+    </div>
     <div className="Layout-footer">
       <Footer>{`© Barnardo's 2018`}</Footer>
     </div>
