@@ -5,8 +5,8 @@ import AttentionGrabbingQuote from "../../components/AttentionGrabbingQuote";
 import Breadcrumbs from "../../components/Breadcrumbs";
 import Fact from "../../components/Fact";
 import Caption from "../../components/Caption";
-import HeadingOne from "../../components/HeadingOne";
-import HeadingTwo from "../../components/HeadingTwo";
+import Heading from "../../components/Heading";
+import Subheading from "../../components/Subheading";
 import Image from "../../components/Image";
 import Layout from "../../components/Layout";
 import Link from "../../components/Link";
@@ -82,7 +82,7 @@ const Pages = () => (
     <UnorderedList>
       <ListItem>{`provide a meaningful content hierarchy`}</ListItem>
     </UnorderedList>
-    <HeadingOne>{`Lists`}</HeadingOne>
+    <Heading>{`Lists`}</Heading>
     <Paragraph>{`Use the component below for lists. You should:`}</Paragraph>
     <UnorderedList>
       <ListItem>{`limit the number on each page`}</ListItem>
@@ -90,7 +90,7 @@ const Pages = () => (
       <ListItem>{`aim to keep the length of items similar`}</ListItem>
       <ListItem>{`avoid starting items with the same word`}</ListItem>
     </UnorderedList>
-    <HeadingTwo>{`Unordered List Item`}</HeadingTwo>
+    <Subheading>{`Unordered List Item`}</Subheading>
     <Paragraph
     >{`Use this component when the sequence or count of items isn’t important.`}</Paragraph>
     <div className="Pages-example">
@@ -108,7 +108,7 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/issues/325">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
-    <HeadingOne>{`Caption`}</HeadingOne>
+    <Heading>{`Caption`}</Heading>
     <Paragraph
     >{`Use this component to add a caption, for example to images and videos.`}</Paragraph>
     <div className="Pages-example">
@@ -126,7 +126,7 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/issues/300">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
-    <HeadingOne>{`Fact`}</HeadingOne>
+    <Heading>{`Fact`}</Heading>
     <Paragraph>{`Use this component for facts.`}</Paragraph>
     <div className="Pages-example">
       <Fact label="children supported through our school-based programmes">{`23,500`}</Fact>
@@ -141,10 +141,10 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/issues/212">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
-    <HeadingOne>{`Quotes`}</HeadingOne>
+    <Heading>{`Quotes`}</Heading>
     <Paragraph
     >{`Use this component for quotes, for example an excerpt from an article or quotation from a person.`}</Paragraph>
-    <HeadingTwo>{`Quote`}</HeadingTwo>
+    <Subheading>{`Quote`}</Subheading>
     <div className="Pages-example">
       <Quote
       >{`Parents needed more support with their emotional wellbeing, boundaries, behaviour, home and money.`}</Quote>
@@ -170,7 +170,7 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/issues/252">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
-    <HeadingTwo>{`Attention Grabbing Quote`}</HeadingTwo>
+    <Subheading>{`Attention Grabbing Quote`}</Subheading>
     <Paragraph>{`When using this component you should:`}</Paragraph>
     <UnorderedList>
       <ListItem>{`only use it once on each page`}</ListItem>

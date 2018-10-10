@@ -1,8 +1,8 @@
 @import "../../custom-properties.css";
 
-/** @define HeadingTwo; */
+/** @define Subheading; */
 
-.HeadingTwo {
+.Subheading {
   font: 300 var(--type-4)/2rem Nova, sans-serif;
 
   &:not(:first-child) {
