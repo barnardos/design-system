@@ -98,6 +98,8 @@ const Pages = () => (
     <Paragraph>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Link">{`code`}</Link>
+      {` and `}
+      <Link href="https://github.com/barnardos/design-system/issues/47">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
     <HeadingOne>{`Attention Grabbing Link`}</HeadingOne>
@@ -111,44 +113,20 @@ const Pages = () => (
       <AttentionGrabbingLink
         colour="pink"
         href="http://example.org"
-        text="Shop online"
-      />
-    </div>
-    <div className="Pages-example">
-      <AttentionGrabbingLink
-        colour="orange"
-        href="http://example.org"
         text="Volunteer with us"
-      />
-    </div>
-    <div className="Pages-example">
-      <AttentionGrabbingLink
-        colour="teal"
-        href="http://example.org"
-        text="Foster today"
-      />
-    </div>
-    <div className="Pages-example">
-      <AttentionGrabbingLink
-        colour="purple"
-        href="http://example.org"
-        text="Donate"
       />
     </div>
     <div className="Pages-example">
       <AttentionGrabbingLink
         colour="black"
         href="http://example.org"
-        text="Commission us"
+        text="Shop online"
       />
     </div>
     <Paragraph>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/AttentionGrabbingLink">{`code`}</Link>
-      {` on GitHub.`}
-    </Paragraph>
-    <Paragraph>
-      {`View `}
+      {` and `}
       <Link href="https://github.com/barnardos/design-system/issues/47">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
@@ -202,6 +180,8 @@ const Pages = () => (
     <Paragraph>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Breadcrumbs">{`code`}</Link>
+      {` and `}
+      <Link href="https://github.com/barnardos/design-system/issues/2">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
     <HeadingOne>{`Pagination`}</HeadingOne>
@@ -286,6 +266,8 @@ const Pages = () => (
     <Paragraph>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Menu">{`code`}</Link>
+      {` and `}
+      <Link href="https://github.com/barnardos/design-system/issues/2">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
   </Layout>
