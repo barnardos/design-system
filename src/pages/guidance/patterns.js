@@ -1,12 +1,13 @@
 import { Link as GatsbyLink } from "gatsby";
 import Helmet from "react-helmet";
 import React from "react";
+
 import Link from "../../components/Link";
 import Breadcrumbs from "../../components/Breadcrumbs";
 import Filter from "../../components/Filter";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
-import HeadingOne from "../../components/HeadingOne";
+import Heading from "../../components/Heading";
 import Layout from "../../components/Layout";
 import ListItem from "../../components/ListItem";
 import Paragraph from "../../components/Paragraph";
@@ -55,7 +56,7 @@ const Pages = () => (
         }
       ]}
     />
-    <HeadingOne>{`Filter`}</HeadingOne>
+    <Heading>{`Filter`}</Heading>
     <Paragraph>{`When filtering you should:`}</Paragraph>
     <UnorderedList>
       <ListItem>
@@ -160,7 +161,7 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/issues/79">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
-    <HeadingOne>{`Header`}</HeadingOne>
+    <Heading>{`Header`}</Heading>
     <div className="Pages-example Pages-example--full">
       <div
         style={{
@@ -196,7 +197,7 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/issues/2">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
-    <HeadingOne>{`Footer`}</HeadingOne>
+    <Heading>{`Footer`}</Heading>
     <div className="Pages-example Pages-example--full">
       <div
         style={{

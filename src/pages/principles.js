@@ -3,7 +3,7 @@ import Helmet from "react-helmet";
 import React from "react";
 
 import Breadcrumbs from "../components/Breadcrumbs";
-import HeadingOne from "../components/HeadingOne";
+import Heading from "../components/Heading";
 import Layout from "../components/Layout";
 import ListItem from "../components/ListItem";
 import Paragraph from "../components/Paragraph";
@@ -27,7 +27,7 @@ const Pages = () => (
       ]}
     />
     <Title>{`Principles`}</Title>
-    <HeadingOne>{`1. Start small`}</HeadingOne>
+    <Heading>{`1. Start small`}</Heading>
     <Paragraph>{`Put work in front of real people early and often.`}</Paragraph>
     <Paragraph>{`You should:`}</Paragraph>
     <UnorderedList>
@@ -38,7 +38,7 @@ const Pages = () => (
       <ListItem>{`iterate based on evidence`}</ListItem>
       <ListItem>{`release early`}</ListItem>
     </UnorderedList>
-    <HeadingOne>{`2. Be inclusive`}</HeadingOne>
+    <Heading>{`2. Be inclusive`}</Heading>
     <Paragraph>{`Strive to support all who need the product.`}</Paragraph>
     <Paragraph>{`You should:`}</Paragraph>
     <UnorderedList>
@@ -48,7 +48,7 @@ const Pages = () => (
       <ListItem>{`provide legible
     and readable content`}</ListItem>
     </UnorderedList>
-    <HeadingOne>{`3. Keep it simple`}</HeadingOne>
+    <Heading>{`3. Keep it simple`}</Heading>
     <Paragraph>{`Do the hard work so the user doesn't have to.`}</Paragraph>
     <Paragraph>{`You should:`}</Paragraph>
     <UnorderedList>
@@ -59,7 +59,7 @@ const Pages = () => (
       <ListItem
       >{`avoid deciding on a solution because "It's always been this way"`}</ListItem>
     </UnorderedList>
-    <HeadingOne>{`4. Be consistent`}</HeadingOne>
+    <Heading>{`4. Be consistent`}</Heading>
     <Paragraph>{`Build trust and familiarity across products.`}</Paragraph>
     <Paragraph>{`You should:`}</Paragraph>
     <UnorderedList>
@@ -73,7 +73,7 @@ const Pages = () => (
         <GatsbyLink to="/guidance/writing-content/">{`consistent language`}</GatsbyLink>
       </ListItem>
     </UnorderedList>
-    <HeadingOne>{`5. Be open`}</HeadingOne>
+    <Heading>{`5. Be open`}</Heading>
     <Paragraph>{`Be part of the open digital community.`}</Paragraph>
     <Paragraph>{`You should:`}</Paragraph>
     <UnorderedList>
@@ -83,7 +83,7 @@ const Pages = () => (
       <ListItem>{`encourage collaboration`}</ListItem>
       <ListItem>{`learn from others`}</ListItem>
     </UnorderedList>
-    <HeadingOne>{`6. Embrace digital`}</HeadingOne>
+    <Heading>{`6. Embrace digital`}</Heading>
     <Paragraph>{`Make the most of the medium's benefits.`}</Paragraph>
     <Paragraph>{`You should:`}</Paragraph>
     <UnorderedList>

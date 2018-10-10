@@ -2,7 +2,7 @@ import Helmet from "react-helmet";
 import React from "react";
 
 import Breadcrumbs from "../../components/Breadcrumbs";
-import HeadingOne from "../../components/HeadingOne";
+import Heading from "../../components/Heading";
 import Layout from "../../components/Layout";
 import Link from "../../components/Link";
 import ListItem from "../../components/ListItem";
@@ -48,7 +48,7 @@ const Pages = () => (
     />
     <Paragraph
     >{`When developing your product you should maintain code quality and future-proof your code.`}</Paragraph>
-    <HeadingOne>{`Code quality`}</HeadingOne>
+    <Heading>{`Code quality`}</Heading>
     <Paragraph>{`You should:`}</Paragraph>
     <UnorderedList>
       <ListItem>
@@ -69,7 +69,7 @@ const Pages = () => (
         {`)`}
       </ListItem>
     </UnorderedList>
-    <HeadingOne>{`Future-proofing code`}</HeadingOne>
+    <Heading>{`Future-proofing code`}</Heading>
     <Paragraph>{`You should transpile modern standards for:`}</Paragraph>
     <UnorderedList>
       <ListItem>

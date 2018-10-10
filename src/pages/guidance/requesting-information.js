@@ -7,8 +7,7 @@ import ChoiceControl from "../../components/ChoiceControl";
 import ConditionalControls from "../../components/ConditionalControls";
 import CurrencyControl from "../../components/CurrencyControl";
 import DateControl from "../../components/DateControl";
-import HeadingOne from "../../components/HeadingOne";
-import HeadingTwo from "../../components/HeadingTwo";
+import Heading from "../../components/Heading";
 import Layout from "../../components/Layout";
 import Link from "../../components/Link";
 import ListItem from "../../components/ListItem";
@@ -16,6 +15,7 @@ import MultilineTextControl from "../../components/MultilineTextControl";
 import OneOfManyChoiceControl from "../../components/OneOfManyChoiceControl";
 import Paragraph from "../../components/Paragraph";
 import SinglelineTextControl from "../../components/SinglelineTextControl";
+import Subheading from "../../components/Subheading";
 import Submit from "../../components/Submit";
 import SubmitControls from "../../components/SubmitControls";
 import SubmitSearchControl from "../../components/SubmitSearchControl";
@@ -139,7 +139,7 @@ const Pages = () => (
       <ListItem
       >{`avoid unnecessary words like 'Please' or 'Enter' in labels`}</ListItem>
     </UnorderedList>
-    <HeadingOne>{`Text entry`}</HeadingOne>
+    <Heading>{`Text entry`}</Heading>
     <Paragraph
     >{`Use the components below for text entry. You should:`}</Paragraph>
     <UnorderedList>
@@ -149,7 +149,7 @@ const Pages = () => (
       <ListItem>{`use multiples of 8 for setting the size`}</ListItem>
       <ListItem>{`use hint text rather than placeholder text`}</ListItem>
     </UnorderedList>
-    <HeadingTwo>{`SinglelineTextControl`}</HeadingTwo>
+    <Subheading>{`SinglelineTextControl`}</Subheading>
     <div className="Pages-example">
       <SinglelineTextControl
         hint="So that we can send you the certificate."
@@ -170,7 +170,7 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/SinglelineTextControl">{`code`}</Link>
       {` on GitHub.`}
     </Paragraph>
-    <HeadingTwo>{`MultilineTextControl`}</HeadingTwo>
+    <Subheading>{`MultilineTextControl`}</Subheading>
     <div className="Pages-example">
       <MultilineTextControl
         id="multiline-text-control-example"
@@ -189,9 +189,9 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/issues/65">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
-    <HeadingOne>{`Data entry`}</HeadingOne>
+    <Heading>{`Data entry`}</Heading>
     <Paragraph>{`Use the components below for specific data.`}</Paragraph>
-    <HeadingTwo>{`CurrencyControl`}</HeadingTwo>
+    <Subheading>{`CurrencyControl`}</Subheading>
     <div className="Pages-example">
       <CurrencyControl
         currency="£"
@@ -206,7 +206,7 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/issues/160">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
-    <HeadingTwo>{`DateControl`}</HeadingTwo>
+    <Subheading>{`DateControl`}</Subheading>
     <Paragraph>{`Use this component for date entry. You should:`}</Paragraph>
     <UnorderedList>
       <ListItem>{`use it instead of dropdowns`}</ListItem>
@@ -226,13 +226,13 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/issues/75">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
-    <HeadingOne>{`Choices`}</HeadingOne>
+    <Heading>{`Choices`}</Heading>
     <Paragraph>{`Use the components below for choices. You should:`}</Paragraph>
     <UnorderedList>
       <ListItem>{`use them instead of dropdowns`}</ListItem>
       <ListItem>{`limit the options to eight or less`}</ListItem>
     </UnorderedList>
-    <HeadingTwo>{`OneOfManyChoiceControl`}</HeadingTwo>
+    <Subheading>{`OneOfManyChoiceControl`}</Subheading>
     <div className="Pages-example">
       <OneOfManyChoiceControl
         choices={[
@@ -259,7 +259,7 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/OneOfManyChoiceControl">{`code`}</Link>
       {` on GitHub.`}
     </Paragraph>
-    <HeadingTwo>{`AnyOfManyChoiceControl`}</HeadingTwo>
+    <Subheading>{`AnyOfManyChoiceControl`}</Subheading>
     <Paragraph>{`When using this component you should:`}</Paragraph>
     <UnorderedList>
       <ListItem>{`provide an option that excludes the others`}</ListItem>
@@ -295,7 +295,7 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/AnyOfManyChoiceControl">{`code`}</Link>
       {` on GitHub.`}
     </Paragraph>
-    <HeadingTwo>{`ChoiceControl`}</HeadingTwo>
+    <Subheading>{`ChoiceControl`}</Subheading>
     <div className="Pages-example">
       <ChoiceControl
         id="choice-control-example"
@@ -313,7 +313,7 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/issues/68">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
-    <HeadingTwo>{`ConditionalControls`}</HeadingTwo>
+    <Subheading>{`ConditionalControls`}</Subheading>
     <div className="Pages-figures">
       <figure className="Pages-figure">
         <ConditionalControls
@@ -350,9 +350,9 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/issues/86">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
-    <HeadingOne>{`Submitting`}</HeadingOne>
+    <Heading>{`Submitting`}</Heading>
     <Paragraph>{`Use the component below to submit information.`}</Paragraph>
-    <HeadingTwo>{`Submit`}</HeadingTwo>
+    <Subheading>{`Submit`}</Subheading>
     <Paragraph>{`When using this component you should:`}</Paragraph>
     <UnorderedList>
       <ListItem>{`only use it once on each page`}</ListItem>
@@ -369,10 +369,10 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/issues/33">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
-    <HeadingOne>{`Validating and submitting`}</HeadingOne>
+    <Heading>{`Validating and submitting`}</Heading>
     <Paragraph
     >{`Use the components below to validate and submit information.`}</Paragraph>
-    <HeadingTwo>{`SubmitControls`}</HeadingTwo>
+    <Subheading>{`SubmitControls`}</Subheading>
     <Paragraph>{`When using this component you should:`}</Paragraph>
     <UnorderedList>
       <ListItem>{`minimise the number of controls on each page`}</ListItem>
@@ -455,7 +455,7 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/issues/67">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
-    <HeadingOne>{`SubmitSearchControl`}</HeadingOne>
+    <Heading>{`SubmitSearchControl`}</Heading>
     <div className="Pages-example">
       <div
         style={{

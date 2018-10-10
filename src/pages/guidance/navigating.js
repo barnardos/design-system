@@ -4,7 +4,7 @@ import React from "react";
 import AttentionGrabbingLink from "../../components/AttentionGrabbingLink";
 import BackLink from "../../components/BackLink";
 import Breadcrumbs from "../../components/Breadcrumbs";
-import HeadingOne from "../../components/HeadingOne";
+import Heading from "../../components/Heading";
 import Layout from "../../components/Layout";
 import Link from "../../components/Link";
 import ListItem from "../../components/ListItem";
@@ -70,7 +70,7 @@ const Pages = () => (
         }
       ]}
     />
-    <HeadingOne>{`Link`}</HeadingOne>
+    <Heading>{`Link`}</Heading>
     <Paragraph>{`When using this component you should:`}</Paragraph>
     <UnorderedList>
       <ListItem
@@ -78,9 +78,9 @@ const Pages = () => (
       <ListItem>{`use the default styles`}</ListItem>
     </UnorderedList>
     <div className="Pages-example">
-      <HeadingOne>
+      <Heading>
         <Link href="http://example.org">{`Heading of section`}</Link>
-      </HeadingOne>
+      </Heading>
       <Paragraph>
         {`This is a paragraph, and it includes even more text to give a good
             representation of a more `}
@@ -94,7 +94,7 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Link">{`code`}</Link>
       {` on GitHub.`}
     </Paragraph>
-    <HeadingOne>{`AttentionGrabbingLink`}</HeadingOne>
+    <Heading>{`AttentionGrabbingLink`}</Heading>
     <Paragraph>{`When using this component you should:`}</Paragraph>
     <UnorderedList>
       <ListItem>{`limit the number on each page`}</ListItem>
@@ -146,7 +146,7 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/issues/47">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
-    <HeadingOne>{`StartLink`}</HeadingOne>
+    <Heading>{`StartLink`}</Heading>
     <Paragraph>{`You should only use this component:`}</Paragraph>
     <UnorderedList>
       <ListItem>{`once on each page`}</ListItem>
@@ -162,7 +162,7 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/issues/167">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
-    <HeadingOne>{`BackLink`}</HeadingOne>
+    <Heading>{`BackLink`}</Heading>
     <Paragraph>{`When using this component you should:`}</Paragraph>
     <UnorderedList>
       <ListItem>{`only use it once on each page`}</ListItem>
@@ -178,7 +178,7 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/issues/166">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
-    <HeadingOne>{`Breadcrumbs`}</HeadingOne>
+    <Heading>{`Breadcrumbs`}</Heading>
     <div className="Pages-example">
       <Breadcrumbs
         items={[
@@ -198,7 +198,7 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Breadcrumbs">{`code`}</Link>
       {` on GitHub.`}
     </Paragraph>
-    <HeadingOne>{`Menu`}</HeadingOne>
+    <Heading>{`Menu`}</Heading>
     <Paragraph
     >{`Use this component to switch between top-level categories easily. When using this component you should:`}</Paragraph>
     <UnorderedList>

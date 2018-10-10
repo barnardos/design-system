@@ -2,14 +2,14 @@ import Helmet from "react-helmet";
 import React from "react";
 
 import Breadcrumbs from "../../components/Breadcrumbs";
-import HeadingOne from "../../components/HeadingOne";
-import HeadingTwo from "../../components/HeadingTwo";
+import Heading from "../../components/Heading";
 import Layout from "../../components/Layout";
 import Lede from "../../components/Lede";
 import Link from "../../components/Link";
 import ListItem from "../../components/ListItem";
 import Paragraph from "../../components/Paragraph";
 import SinglelineTextControl from "../../components/SinglelineTextControl/index";
+import Subheading from "../../components/Subheading";
 import TableOfContents from "../../components/TableOfContents";
 import Title from "../../components/Title";
 import UnorderedList from "../../components/UnorderedList";
@@ -105,7 +105,7 @@ const Pages = () => (
           }}
         >
           <figure className="Pages-figure Pages-figure--positioned">
-            <HeadingTwo>Contact details</HeadingTwo>
+            <Subheading>Contact details</Subheading>
             <figcaption className="Pages-figureCaption" style={{ top: 0 }}>
               <p
                 className="Pages-figureCaptionItem"
@@ -160,7 +160,7 @@ const Pages = () => (
         </div>
       </div>
     </div>
-    <HeadingOne>{`Typography`}</HeadingOne>
+    <Heading>{`Typography`}</Heading>
     <Paragraph
     >{`Using a base of 16 and exponents of 1.125 for type sizes provides flexibility to create a visual hierarchy.`}</Paragraph>
     <Paragraph>{`For example, you could have:`}</Paragraph>
@@ -176,11 +176,11 @@ const Pages = () => (
         <figcaption className="Pages-figureCaption">{`16 * 1.125^4 (Proxima Nova Light)`}</figcaption>
       </figure>
       <figure className="Pages-figure">
-        <HeadingOne>{`HeadingOne`}</HeadingOne>
+        <Heading>{`Heading`}</Heading>
         <figcaption className="Pages-figureCaption">{`16 * 1.125^5 (Proxima Nova Semi-Bold)`}</figcaption>
       </figure>
       <figure className="Pages-figure">
-        <HeadingTwo>{`HeadingTwo`}</HeadingTwo>
+        <Subheading>{`Subheading`}</Subheading>
         <figcaption className="Pages-figureCaption">{`16 * 1.125^4 (Proxima Nova Light)`}</figcaption>
       </figure>
       <figure className="Pages-figure">
@@ -195,7 +195,7 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/tree/master/src/custom-properties.css">{`code`}</Link>
       {` on GitHub.`}
     </Paragraph>
-    <HeadingOne>{`Layout`}</HeadingOne>
+    <Heading>{`Layout`}</Heading>
     <Paragraph
     >{`Create simple and fluid layouts using multiples of 4 for spacing and flourishes.`}</Paragraph>
     <div className="Pages-figures">
@@ -217,7 +217,7 @@ const Pages = () => (
         </figcaption>
       </figure>
     </div>
-    <HeadingOne>{`Proportional scale`}</HeadingOne>
+    <Heading>{`Proportional scale`}</Heading>
     <Paragraph
     >{`The layout and typography can be proportionally scaled to maintain an optimal line length at any viewport size.`}</Paragraph>
     <Paragraph>{`The optimal line length of text is around:`}</Paragraph>

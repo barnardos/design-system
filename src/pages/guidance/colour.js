@@ -2,15 +2,15 @@ import Helmet from "react-helmet";
 import React from "react";
 
 import Breadcrumbs from "../../components/Breadcrumbs";
-import HeadingOne from "../../components/HeadingOne";
-import HeadingTwo from "../../components/HeadingTwo";
+import Heading from "../../components/Heading";
 import Layout from "../../components/Layout";
 import Link from "../../components/Link";
 import ListItem from "../../components/ListItem";
 import Paragraph from "../../components/Paragraph";
 import SinglelineTextControl from "../../components/SinglelineTextControl/index";
-import Swatches from "../../components/Swatches";
+import Subheading from "../../components/Subheading";
 import Submit from "../../components/Submit";
+import Swatches from "../../components/Swatches";
 import TableOfContents from "../../components/TableOfContents";
 import Title from "../../components/Title";
 import UnorderedList from "../../components/UnorderedList";
@@ -68,7 +68,7 @@ const Pages = () => (
       <ListItem
       >{`avoid relying on colour to convey important information`}</ListItem>
     </UnorderedList>
-    <HeadingOne>Brand colours</HeadingOne>
+    <Heading>Brand colours</Heading>
     <div className="Pages-swatches">
       <Swatches
         swatches={[
@@ -91,7 +91,7 @@ const Pages = () => (
         ]}
       />
     </div>
-    <HeadingOne>Using colours</HeadingOne>
+    <Heading>Using colours</Heading>
     <Paragraph>{`For example, you could use:`}</Paragraph>
     <div className="Pages-figures">
       <figure className="Pages-figure">
@@ -110,7 +110,7 @@ const Pages = () => (
         <figcaption className="Pages-figureCaption">{`White text on Green with 10% shade on hover and 40% shade for drop shadows.`}</figcaption>
       </figure>
     </div>
-    <HeadingTwo>{`Using colours semantically`}</HeadingTwo>
+    <Subheading>{`Using colours semantically`}</Subheading>
     <Paragraph>{`For example, you could use:`}</Paragraph>
     <UnorderedList>
       <ListItem

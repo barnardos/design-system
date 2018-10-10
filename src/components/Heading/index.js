@@ -4,14 +4,14 @@ import slugifyNode from "../../utils/slugifyNode";
 
 import "./index.css";
 
-const HeadingTwo = ({ children }) => (
-  <h3 className="HeadingTwo" id={slugifyNode(children)}>
+const Heading = ({ children }) => (
+  <h2 className="Heading" id={slugifyNode(children)}>
     {children}
-  </h3>
+  </h2>
 );
 
-HeadingTwo.propTypes = {
+Heading.propTypes = {
   children: PropTypes.node.isRequired
 };
 
-export default HeadingTwo;
+export default Heading;
