@@ -176,14 +176,14 @@ const Pages = () => (
       <ListItem>{`only use it once on each page`}</ListItem>
     </UnorderedList>
     <div className="Pages-example">
-      <AttentionGrabbingQuote colour="teal">{`By tackling the causes as well as the symptoms, we can create better outcomes for more children.`}</AttentionGrabbingQuote>
-    </div>
-    <div className="Pages-example">
       <AttentionGrabbingQuote
-        colour="black"
+        colour="green"
         role="Young person"
         name="James Roberts"
-      >{`I just needed a push in the right direction, and a stepping stone to act as a bridge across to adulthood. I finally feel that I'm closer to being happy.`}</AttentionGrabbingQuote>
+      >{`By tackling the causes as well as the symptoms, we can create better outcomes for more children.`}</AttentionGrabbingQuote>
+    </div>
+    <div className="Pages-example">
+      <AttentionGrabbingQuote colour="black">{`I just needed a push in the right direction, and a stepping stone to act as a bridge across to adulthood. I finally feel that I'm closer to being happy.`}</AttentionGrabbingQuote>
     </div>
     <Paragraph>
       {`View `}

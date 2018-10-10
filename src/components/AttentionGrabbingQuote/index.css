@@ -37,11 +37,11 @@
 }
 
 .AttentionGrabbingQuote-role {
-  font: 300 var(--type-0)/1.5rem system-ui;
+  font: 300 var(--type-2)/1.75rem system-ui;
 }
 
 .AttentionGrabbingQuote-name {
-  font: 600 var(--type-0)/1.5rem system-ui;
+  font: 600 var(--type-2)/1.75rem system-ui;
 }
 
 .AttentionGrabbingQuote--black {
