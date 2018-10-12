@@ -32,6 +32,6 @@
 .Caption-label {
   background-color: color-mod(var(--black) tint(90%));
   color: var(--black);
-  font: 300 var(--type-0)/1.5rem system-ui;
+  font: 300 var(--type-0) system-ui;
   padding: 0.5rem 0.75rem;
 }

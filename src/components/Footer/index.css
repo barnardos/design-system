@@ -6,7 +6,7 @@
   background-color: color-mod(var(--black) tint(90%));
   box-shadow: 0 50vh 0 50vh color-mod(var(--black) tint(90%));
   color: var(--black);
-  font: 300 var(--type--1)/1.5rem system-ui;
+  font: 300 var(--type--1) system-ui;
   padding: 1rem;
 }
 

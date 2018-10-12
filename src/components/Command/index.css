@@ -11,7 +11,7 @@
   box-shadow: 0.25rem 0.25rem color-mod(var(--black) tint(60%));
   color: var(--white);
   display: flex;
-  font: 600 var(--type-2)/1.5rem Nova, sans-serif;
+  font: 600 var(--type-2) Nova, sans-serif;
   justify-content: center;
   min-width: 3rem;
   padding: 0.75rem;

@@ -3,7 +3,7 @@
 /** @define UnorderedList; */
 
 .UnorderedList {
-  font: 300 var(--type-0)/1.5rem system-ui;
+  font: 300 var(--type-0) system-ui;
   max-width: 46rem;
   padding-left: 1rem;
 

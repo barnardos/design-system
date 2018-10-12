@@ -3,7 +3,7 @@
 /** @define Heading; */
 
 .Heading {
-  font: 600 var(--type-5)/2rem Nova, sans-serif;
+  font: 600 var(--type-5) Nova, sans-serif;
 
   &:not(:first-child) {
     margin-top: 2rem;

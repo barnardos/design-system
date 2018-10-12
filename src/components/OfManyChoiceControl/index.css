@@ -12,12 +12,12 @@
 
 .OfManyChoiceControl-legend {
   display: block;
-  font: 600 var(--type-3)/1.75rem system-ui;
+  font: 600 var(--type-3) system-ui;
 }
 
 .OfManyChoiceControl-hint {
   color: color-mod(var(--black) tint(30%));
-  font: 300 var(--type-0)/1.5rem system-ui;
+  font: 300 var(--type-0) system-ui;
   margin-top: 0.5rem;
 }
 
@@ -27,7 +27,7 @@
 
 .OfManyChoiceControl-validationInner {
   color: var(--red);
-  font: 600 var(--type-0)/1.5rem system-ui;
+  font: 600 var(--type-0) system-ui;
 }
 
 .OfManyChoiceControl-choiceControls {

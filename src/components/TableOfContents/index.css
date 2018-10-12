@@ -8,7 +8,7 @@
 
 .TableOfContents-section {
   color: var(--black);
-  font: 300 var(--type-0)/1.5rem system-ui, sans-serif;
+  font: 300 var(--type-0) system-ui;
 }
 
 .TableOfContents-items {
@@ -22,7 +22,7 @@
 }
 
 .TableOfContents-link {
-  font: 600 var(--type-0)/1.5rem system-ui, sans-serif;
+  font: 600 var(--type-0) system-ui;
 }
 
 .TableOfContents-item--level2 {
