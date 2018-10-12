@@ -39,34 +39,38 @@ describe("end-to-end", () => {
     expect(title).toBe("Design System");
   });
 
-  it("shows each sub page title", async () => {
-    const linkSelector = "[data-test-link]";
-    const titleSelector = "[data-test-title]";
+  it(
+    "shows each sub page title",
+    async () => {
+      const linkSelector = "[data-test-link]";
+      const titleSelector = "[data-test-title]";
 
-    await page.goto(routes.public.root);
-    await page.waitForSelector(linkSelector);
+      await page.goto(routes.public.root);
+      await page.waitForSelector(linkSelector);
 
-    // Extract the results from the page.
-    const links = await page.evaluate(linkSelector => {
-      const elements = Array.from(document.querySelectorAll(linkSelector));
-      return elements.map(element => {
-        return {
-          title: element.getAttribute("data-test-link"),
-          href: element.href
-        };
-      });
-    }, linkSelector);
+      // Extract the results from the page.
+      const links = await page.evaluate(linkSelector => {
+        const elements = Array.from(document.querySelectorAll(linkSelector));
+        return elements.map(element => {
+          return {
+            title: element.getAttribute("data-test-link"),
+            href: element.href
+          };
+        });
+      }, linkSelector);
 
-    // Go to each page and check that the titles match
-    let title;
-    let pageTitle;
-    for (let i = 0; i < links.length; i++) {
-      let link = links[i];
-      await page.goto(link.href);
-      await page.waitForSelector(titleSelector);
-      title = await page.$eval(titleSelector, el => el.textContent);
-      pageTitle = await page.title();
-      expect(`${title} - Barnardo's`).toBe(pageTitle);
-    }
-  });
+      // Go to each page and check that the titles match
+      let title;
+      let pageTitle;
+      for (let i = 0; i < links.length; i++) {
+        let link = links[i];
+        await page.goto(link.href, { waitUntil: "networkidle2" });
+        await page.waitForSelector(titleSelector);
+        title = await page.$eval(titleSelector, el => el.textContent);
+        pageTitle = await page.title();
+        expect(`${title} - Barnardo's`).toBe(pageTitle);
+      }
+    },
+    10000
+  );
 });

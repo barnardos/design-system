@@ -13,11 +13,11 @@ Include detail about your issue and, if applicable, possible solutions or screen
 
 ## Links and resources
 
-* Google docs
-* Linked issues
+- Google docs
+- Linked issues
 
 ## Acceptance Criteria
 
-* [ ]
-* [ ]
-* [ ]
+- [ ]
+- [ ]
+- [ ]
