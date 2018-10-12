@@ -10,11 +10,11 @@
 
 .Feedback-title {
   color: var(--green);
-  font: 600 var(--type-4)/2rem Nova, sans-serif;
+  font: 600 var(--type-4) Nova, sans-serif;
 }
 
 .Feedback-children {
   color: var(--black);
-  font: 300 var(--type-0)/1.5rem system-ui;
+  font: 300 var(--type-0) system-ui;
   margin-top: 0.75rem;
 }

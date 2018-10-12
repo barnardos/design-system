@@ -8,7 +8,7 @@
 }
 
 .SubmitControls-validation {
-  font: 600 var(--type-3)/1.75rem system-ui;
+  font: 600 var(--type-3) system-ui;
 }
 
 .SubmitControls-validationItems {
@@ -24,7 +24,7 @@
 
 .SubmitControls-validationItemLink {
   color: var(--red);
-  font: 600 var(--type-0)/1.5rem system-ui;
+  font: 600 var(--type-0) system-ui;
 }
 
 .SubmitControls-controls {

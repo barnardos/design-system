@@ -54,7 +54,7 @@
   background-color: var(--black);
   color: var(--white);
   display: block;
-  font: 600 var(--type-2)/1.75rem Nova, sans-serif;
+  font: 600 var(--type-2) Nova, sans-serif;
   padding: 0.5rem;
   text-align: center;
   white-space: nowrap;

@@ -35,7 +35,7 @@
     inset 0.25rem 0.25rem color-mod(var(--black) tint(80%));
   display: block;
   flex: 1;
-  font: 300 var(--type-2)/1.75rem system-ui;
+  font: 300 var(--type-2) system-ui;
   padding: 0.5rem 0.75rem;
 }
 

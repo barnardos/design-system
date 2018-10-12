@@ -19,7 +19,7 @@
 .Menu-link {
   color: var(--black);
   display: block;
-  font: 300 var(--type-3)/1.5rem Nova, sans-serif;
+  font: 300 var(--type-3) Nova, sans-serif;
   padding: 0.5rem 0 1rem;
   text-align: center;
   text-decoration: none;

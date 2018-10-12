@@ -35,9 +35,9 @@
 }
 
 .Pagination-text {
-  font: 600 var(--type-2)/1.5rem Nova, sans-serif;
+  font: 600 var(--type-2) Nova, sans-serif;
 }
 
 .Pagination-label {
-  font: 300 var(--type-0)/1.5rem system-ui;
+  font: 300 var(--type-0) system-ui;
 }

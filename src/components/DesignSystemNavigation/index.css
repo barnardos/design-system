@@ -7,7 +7,7 @@
 }
 
 .DesignSystemNavigation-title {
-  font: 600 var(--type-5)/2rem Nova, sans-serif;
+  font: 600 var(--type-5) Nova, sans-serif;
 }
 
 .DesignSystemNavigation-item {
@@ -18,7 +18,7 @@
 .DesignSystemNavigation-link {
   box-shadow: inset 0 -0.25rem 0 0 color-mod(var(--black) tint(90%));
   display: block;
-  font: 300 var(--type-2)/1.5rem system-ui, sans-serif;
+  font: 300 var(--type-2) system-ui;
   padding: 0.5rem 0 1rem;
   text-decoration: none;
   white-space: nowrap;

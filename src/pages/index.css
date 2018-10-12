@@ -22,7 +22,7 @@
 .Pages-figureCaption {
   background: color-mod(var(--black) tint(90%));
   display: block;
-  font: 300 var(--type--1)/1.5rem system-ui;
+  font: 300 var(--type--1) system-ui;
   font-variant-numeric: tabular-nums;
   margin-top: 1rem;
   padding: 0 0.5rem;
@@ -60,7 +60,7 @@
   background: color-mod(var(--teal) tint(80%));
   color: var(--black);
   display: flex;
-  font: 300 var(--type--2)/1rem system-ui;
+  font: 300 var(--type--2) system-ui;
   font-variant-numeric: tabular-nums;
   left: 3rem;
   position: absolute;
@@ -116,9 +116,7 @@
     color: var(--white);
     content: "Example";
     display: block;
-    font-family: system-ui;
-    font-size: var(--type--1);
-    font-weight: 300;
+    font: 300 var(--type--1) system-ui;
     left: 0;
     padding: 0.25rem 0.5rem;
     position: absolute;

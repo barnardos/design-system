@@ -109,7 +109,7 @@ const Pages = () => (
             <figcaption className="Pages-figureCaption" style={{ top: 0 }}>
               <p
                 className="Pages-figureCaptionItem"
-                style={{ top: "0.25rem" }}
+                style={{ top: "0.5rem" }}
               >{`32`}</p>
             </figcaption>
           </figure>
@@ -117,7 +117,7 @@ const Pages = () => (
             <Paragraph>{`So that we can send you the certificate.`}</Paragraph>
             <figcaption
               className="Pages-figureCaption"
-              style={{ top: "-1.25rem" }}
+              style={{ top: "-1rem" }}
             >
               <p
                 className="Pages-figureCaptionItem"
@@ -137,7 +137,7 @@ const Pages = () => (
             />
             <figcaption
               className="Pages-figureCaption"
-              style={{ top: "-2rem" }}
+              style={{ top: "-1.75rem" }}
             >
               <p
                 className="Pages-figureCaptionItem"
@@ -145,15 +145,15 @@ const Pages = () => (
               >{`16`}</p>
               <p
                 className="Pages-figureCaptionItem"
-                style={{ top: "0.75rem" }}
+                style={{ top: "1rem" }}
               >{`28`}</p>
               <p
                 className="Pages-figureCaptionItem"
-                style={{ top: "0.25rem" }}
+                style={{ top: "0.75rem" }}
               >{`8`}</p>
               <p
                 className="Pages-figureCaptionItem"
-                style={{ top: "0.25rem" }}
+                style={{ top: "1rem" }}
               >{`44`}</p>
             </figcaption>
           </figure>

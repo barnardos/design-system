@@ -9,11 +9,11 @@
 }
 
 .Fact-children {
-  font: 600 var(--type-12)/4rem Nova, sans-serif;
+  font: 600 var(--type-12) Nova, sans-serif;
 }
 
 .Fact-label {
-  font: 300 var(--type-2)/1.75rem system-ui;
+  font: 300 var(--type-2) system-ui;
 }
 
 .Fact--orange {
