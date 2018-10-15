@@ -16,4 +16,8 @@
   &:hover {
     color: color-mod(var(--green) shade(10%));
   }
+
+  &:visited {
+    color: var(--purple);
+  }
 }
