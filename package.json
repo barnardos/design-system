@@ -19,7 +19,7 @@
     "watch-tests": "jest --watch --onlyChanged"
   },
   "devDependencies": {
-    "@barnardos/stylelint-config-barnardos": "^0.3.1",
+    "@barnardos/stylelint-config-barnardos": "^0.3.2",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.6.1",
     "eslint-plugin-import": "^2.14.0",
