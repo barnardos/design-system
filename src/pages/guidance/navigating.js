@@ -11,6 +11,7 @@ import ListItem from "../../components/ListItem";
 import Menu from "../../components/Menu";
 import Pagination from "../../components/Pagination";
 import Paragraph from "../../components/Paragraph";
+import ProgressLink from "../../components/ProgressLink";
 import StartLink from "../../components/StartLink";
 import TableOfContents from "../../components/TableOfContents";
 import Title from "../../components/Title";
@@ -46,18 +47,23 @@ const Pages = () => (
         },
         {
           level: 1,
-          text: "Attention Grabbing Link",
-          to: "/guidance/navigating/#attentiongrabbinglink"
+          text: "Progress Link",
+          to: "/guidance/navigating/#progress-link"
         },
         {
           level: 1,
           text: "Start Link",
-          to: "/guidance/navigating/#startlink"
+          to: "/guidance/navigating/#start-link"
         },
         {
           level: 1,
           text: "Back Link",
-          to: "/guidance/navigating/#backlink"
+          to: "/guidance/navigating/#back-link"
+        },
+        {
+          level: 1,
+          text: "Attention Grabbing Link",
+          to: "/guidance/navigating/#attention-grabbing-link"
         },
         {
           level: 1,
@@ -102,7 +108,64 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/issues/47">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
+    <Heading>{`Progress Link`}</Heading>
+    <Paragraph
+    >{`Use this component after a summary of content to progress into more detail.`}</Paragraph>
+    <Paragraph>{`When using this component you should:`}</Paragraph>
+    <UnorderedList>
+      <ListItem>{`use verbs, for example search`}</ListItem>
+      <ListItem>{`only use the Green colour`}</ListItem>
+      <ListItem
+      >{`don't use terms like "Read more" and "Find out more"`}</ListItem>
+    </UnorderedList>
+    <div className="Pages-example">
+      <ProgressLink href="http://example.org">{`Search and apply for jobs`}</ProgressLink>
+    </div>
+    <Paragraph>
+      {`View `}
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/ProgressLink">{`code`}</Link>
+      {` and `}
+      <Link href="https://github.com/barnardos/design-system/issues/282">{`research`}</Link>
+      {` on GitHub.`}
+    </Paragraph>
+    <Heading>{`Start Link`}</Heading>
+    <Paragraph
+    >{`Use this component to link to the start of a transactional service.`}</Paragraph>
+    <Paragraph>{`You should only use this component:`}</Paragraph>
+    <UnorderedList>
+      <ListItem>{`once on each page`}</ListItem>
+      <ListItem>{`only use the Green colour`}</ListItem>
+    </UnorderedList>
+    <div className="Pages-example">
+      <StartLink href="http://example.org">{`Heading of section`}</StartLink>
+    </div>
+    <Paragraph>
+      {`View `}
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/StartLink">{`code`}</Link>
+      {` and `}
+      <Link href="https://github.com/barnardos/design-system/issues/167">{`research`}</Link>
+      {` on GitHub.`}
+    </Paragraph>
+    <Heading>{`Back Link`}</Heading>
+    <Paragraph
+    >{`Use this component to link back within a transactional service.`}</Paragraph>
+    <Paragraph>{`When using this component you should:`}</Paragraph>
+    <UnorderedList>
+      <ListItem>{`only use it once on each page`}</ListItem>
+      <ListItem>{`place it as the first interactive element`}</ListItem>
+    </UnorderedList>
+    <div className="Pages-example">
+      <BackLink href="http://example.org" />
+    </div>
+    <Paragraph>
+      {`View `}
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/BackLink">{`code`}</Link>
+      {` and `}
+      <Link href="https://github.com/barnardos/design-system/issues/166">{`research`}</Link>
+      {` on GitHub.`}
+    </Paragraph>
     <Heading>{`Attention Grabbing Link`}</Heading>
+    <Paragraph>{`Use this component within featured content.`}</Paragraph>
     <Paragraph>{`When using this component you should:`}</Paragraph>
     <UnorderedList>
       <ListItem>{`limit the number on each page`}</ListItem>
@@ -130,39 +193,13 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/issues/47">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
-    <Heading>{`Start Link`}</Heading>
-    <Paragraph>{`You should only use this component:`}</Paragraph>
-    <UnorderedList>
-      <ListItem>{`once on each page`}</ListItem>
-      <ListItem>{`to link to the start of a transactional service`}</ListItem>
-    </UnorderedList>
-    <div className="Pages-example">
-      <StartLink href="http://example.org">{`Heading of section`}</StartLink>
-    </div>
-    <Paragraph>
-      {`View `}
-      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/StartLink">{`code`}</Link>
-      {` and `}
-      <Link href="https://github.com/barnardos/design-system/issues/167">{`research`}</Link>
-      {` on GitHub.`}
-    </Paragraph>
-    <Heading>{`Back Link`}</Heading>
+    <Heading>{`Breadcrumbs`}</Heading>
+    <Paragraph
+    >{`Use this component to help a user identify their current location.`}</Paragraph>
     <Paragraph>{`When using this component you should:`}</Paragraph>
     <UnorderedList>
-      <ListItem>{`only use it once on each page`}</ListItem>
-      <ListItem>{`place it as the first interactive element`}</ListItem>
+      <ListItem>{`place it directly above the page title`}</ListItem>
     </UnorderedList>
-    <div className="Pages-example">
-      <BackLink href="http://example.org" />
-    </div>
-    <Paragraph>
-      {`View `}
-      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/BackLink">{`code`}</Link>
-      {` and `}
-      <Link href="https://github.com/barnardos/design-system/issues/166">{`research`}</Link>
-      {` on GitHub.`}
-    </Paragraph>
-    <Heading>{`Breadcrumbs`}</Heading>
     <div className="Pages-example">
       <Breadcrumbs
         items={[
@@ -185,6 +222,8 @@ const Pages = () => (
       {` on GitHub.`}
     </Paragraph>
     <Heading>{`Pagination`}</Heading>
+    <Paragraph
+    >{`Use this component break overwhelming large pieces of content across pages.`}</Paragraph>
     <div className="Pages-example">
       <Pagination
         previous={{

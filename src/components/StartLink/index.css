@@ -3,7 +3,7 @@
 /** @define StartLink; */
 
 .StartLink {
-  background: url("./chevron.svg") no-repeat 92% 1rem var(--green);
+  background: url("./chevron.svg") no-repeat 92% 1.125rem var(--green);
   background-size: 1rem;
   color: var(--white);
   display: inline-block;
