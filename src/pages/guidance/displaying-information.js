@@ -49,7 +49,7 @@ const Pages = () => (
         {
           level: 2,
           text: "Unordered List Item",
-          to: "/guidance/displaying-information/#unorderedlistitem"
+          to: "/guidance/displaying-information/#unordered-list-item"
         },
         {
           level: 1,
@@ -74,7 +74,7 @@ const Pages = () => (
         {
           level: 2,
           text: "Attention Grabbing Quote",
-          to: "/guidance/displaying-information/#attentiongrabbingquote"
+          to: "/guidance/displaying-information/#attention-grabbing-quote"
         }
       ]}
     />
