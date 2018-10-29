@@ -71,7 +71,7 @@ const Pages = () => (
         <div
           className="Pages-figureKey"
           style={{
-            height: "2rem",
+            height: "2.25rem",
             top: "0"
           }}
         />
@@ -79,21 +79,21 @@ const Pages = () => (
           className="Pages-figureKey"
           style={{
             height: "3rem",
-            top: "3rem"
+            top: "3.25rem"
           }}
         />
         <div
           className="Pages-figureKey"
           style={{
-            height: "1.75rem",
-            top: "7rem"
+            height: "2.25rem",
+            top: "7.25rem"
           }}
         />
         <div
           className="Pages-figureKey"
           style={{
-            height: "2.75rem",
-            top: "9.25rem"
+            height: "3rem",
+            top: "10rem"
           }}
         />
         <div
@@ -110,7 +110,7 @@ const Pages = () => (
               <p
                 className="Pages-figureCaptionItem"
                 style={{ top: "0.5rem" }}
-              >{`32`}</p>
+              >{`36`}</p>
             </figcaption>
           </figure>
           <figure className="Pages-figure Pages-figure--positioned">
@@ -145,16 +145,16 @@ const Pages = () => (
               >{`16`}</p>
               <p
                 className="Pages-figureCaptionItem"
-                style={{ top: "1rem" }}
-              >{`28`}</p>
+                style={{ top: "1.25rem" }}
+              >{`36`}</p>
               <p
                 className="Pages-figureCaptionItem"
-                style={{ top: "0.75rem" }}
+                style={{ top: "1.25rem" }}
               >{`8`}</p>
               <p
                 className="Pages-figureCaptionItem"
-                style={{ top: "1rem" }}
-              >{`44`}</p>
+                style={{ top: "1.5rem" }}
+              >{`48`}</p>
             </figcaption>
           </figure>
         </div>
