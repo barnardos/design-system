@@ -4,6 +4,7 @@ import React from "react";
 import AttentionGrabbingLink from "../../components/AttentionGrabbingLink";
 import BackLink from "../../components/BackLink";
 import Breadcrumbs from "../../components/Breadcrumbs";
+import Command from "../../components/Command";
 import DonateLink from "../../components/DonateLink";
 import Heading from "../../components/Heading";
 import Layout from "../../components/Layout";
@@ -80,6 +81,11 @@ const Pages = () => (
           level: 1,
           text: "Pagination",
           to: "/guidance/navigating/#pagination"
+        },
+        {
+          level: 1,
+          text: "Command",
+          to: "/guidance/navigating/#command"
         },
         {
           level: 1,
@@ -266,6 +272,19 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Pagination">{`code`}</Link>
       {` and `}
       <Link href="https://github.com/barnardos/design-system/issues/250">{`research`}</Link>
+      {` on GitHub.`}
+    </Paragraph>
+    <Heading>{`Command`}</Heading>
+    <Paragraph
+    >{`Use this component for interactive triggers that don't submit data.`}</Paragraph>
+    <div className="Pages-example">
+      <Command>Menu</Command>
+    </div>
+    <Paragraph>
+      {`View `}
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Command">{`code`}</Link>
+      {` and `}
+      <Link href="https://github.com/barnardos/design-system/issues/33">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
     <Heading>{`Menu`}</Heading>
