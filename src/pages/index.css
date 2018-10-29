@@ -75,10 +75,10 @@
 }
 
 .Pages-figureDemo--thirds {
-  margin: -1rem 0 0 -1rem;
+  margin: -2rem 0 0 -2rem;
 
   & .Pages-figureDemoItem {
-    margin: 1rem 0 0 1rem;
+    margin: 2rem 0 0 2rem;
   }
 }
 

@@ -196,8 +196,12 @@ const Pages = () => (
       {` on GitHub.`}
     </Paragraph>
     <Heading>{`Layout`}</Heading>
-    <Paragraph
-    >{`Create simple and fluid layouts using multiples of 4 for spacing and flourishes.`}</Paragraph>
+    <Paragraph>{`To create simple and fluid layouts you should:`}</Paragraph>
+    <UnorderedList>
+      <ListItem>{`use multiples of 4 for spacing and flourishes`}</ListItem>
+      <ListItem>{`use ample white space between elements`}</ListItem>
+      <ListItem>{`avoid using thin lines for flourishes`}</ListItem>
+    </UnorderedList>
     <div className="Pages-figures">
       <figure className="Pages-figure">
         <div className="Pages-figureDemo Pages-figureDemo--thirds">
@@ -205,7 +209,7 @@ const Pages = () => (
           <div className="Pages-figureDemoItem Pages-figureDemoItem--second" />
         </div>
         <figcaption className="Pages-figureCaption">
-          {`Expands to two-thirds/one-third with gutter of 16`}
+          {`Expands to two-thirds/one-third with gutter of 32`}
         </figcaption>
       </figure>
       <figure className="Pages-figure">
