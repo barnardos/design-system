@@ -3,7 +3,6 @@ import React from "react";
 
 import Breadcrumbs from "../../components/Breadcrumbs";
 import Heading from "../../components/Heading";
-import Subheading from "../../components/Subheading";
 import Layout from "../../components/Layout";
 import Link from "../../components/Link";
 import ListItem from "../../components/ListItem";
@@ -47,26 +46,14 @@ const Pages = () => (
           level: 1,
           text: "Using colours",
           to: "/guidance/colour/#using-colours"
-        },
-        {
-          level: 2,
-          text: "Using colours semantically",
-          to: "/guidance/colour/#using-colours-semantically"
         }
       ]}
     />
-    <Paragraph>{`When applying colour you should:`}</Paragraph>
+    <Paragraph>{`To apply colour you should:`}</Paragraph>
     <UnorderedList>
       <ListItem>{`only use the brand colours`}</ListItem>
       <ListItem
       >{`add white (tint) or black (shade) in 10% increments`}</ListItem>
-      <ListItem>
-        {`use `}
-        <Link href="https://webaim.org/resources/contrastchecker/">{`accessible`}</Link>
-        {` colour combinations for text`}
-      </ListItem>
-      <ListItem
-      >{`avoid relying on colour to convey important information`}</ListItem>
     </UnorderedList>
     <Heading>Brand colours</Heading>
     <div className="Pages-swatches">
@@ -92,7 +79,26 @@ const Pages = () => (
       />
     </div>
     <Heading>Using colours</Heading>
-    <Paragraph>{`For example, you could use:`}</Paragraph>
+    <Paragraph>{`You should:`}</Paragraph>
+    <UnorderedList>
+      <ListItem>
+        {`use `}
+        <Link href="https://webaim.org/resources/contrastchecker/">{`accessible`}</Link>
+        {` colour combinations for text`}
+      </ListItem>
+      <ListItem>{`use Black for titles and headings`}</ListItem>
+      <ListItem>{`avoid tints and shades for backgrounds`}</ListItem>
+      <ListItem
+      >{`avoid relying on colour to convey important information`}</ListItem>
+    </UnorderedList>
+    <Paragraph
+    >{`Also consider meaningful use of colour, for example:`}</Paragraph>
+    <UnorderedList>
+      <ListItem
+      >{`greens for positive actions like submit or continue`}</ListItem>
+      <ListItem>{`oranges for cautionary actions like load or warn`}</ListItem>
+      <ListItem>{`reds for destructive actions like delete or error`}</ListItem>
+    </UnorderedList>
     <div className="Pages-figures">
       <figure className="Pages-figure">
         <SinglelineTextControl
@@ -110,15 +116,6 @@ const Pages = () => (
         <figcaption className="Pages-figureCaption">{`White text on Green with 10% shade on hover and 40% shade for drop shadows.`}</figcaption>
       </figure>
     </div>
-    <Subheading>{`Using colours semantically`}</Subheading>
-    <Paragraph>{`For example, you could use:`}</Paragraph>
-    <UnorderedList>
-      <ListItem
-      >{`greens for positive actions like submit or continue`}</ListItem>
-      <ListItem>{`oranges for cautionary actions like load or warn`}</ListItem>
-      <ListItem
-      >{`reds for destructive actions like delete or remove`}</ListItem>
-    </UnorderedList>
     <Paragraph>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/issues/14">{`research`}</Link>
