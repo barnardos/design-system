@@ -54,7 +54,7 @@ const Pages = () => (
         }
       ]}
     />
-    <Paragraph>{`To unify layout and typography, you should use:`}</Paragraph>
+    <Paragraph>{`To unify layout and typography you should use:`}</Paragraph>
     <UnorderedList>
       <ListItem
       >{`multiples of 4 for spacing, flourishes, and line heights`}</ListItem>
