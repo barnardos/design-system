@@ -61,7 +61,6 @@ const Pages = () => (
       <ListItem>{`a base of 16 for paragraphs`}</ListItem>
       <ListItem>{`exponents of 1.125 for other type sizes`}</ListItem>
     </UnorderedList>
-    <Paragraph>{`For example, you could use these multiples of 4:`}</Paragraph>
     <div className="Pages-figures">
       <div
         style={{
@@ -158,9 +157,16 @@ const Pages = () => (
             </figcaption>
           </figure>
         </div>
+        <p className="Pages-figureCaption">{`Paragraph has a base of 16. 'Email' is three steps up the 1.125 scale from the base.`}</p>
       </div>
     </div>
     <Heading>{`Typography`}</Heading>
+    <Paragraph>{`You should only use these typefaces and weights:`}</Paragraph>
+    <UnorderedList>
+      <ListItem>{`Proxima Nova semi-bold`}</ListItem>
+      <ListItem>{`Proxima Nova light`}</ListItem>
+      <ListItem>{`system-ui light`}</ListItem>
+    </UnorderedList>
     <Paragraph
     >{`Using a base of 16 and exponents of 1.125 for type sizes provides flexibility to create a visual hierarchy.`}</Paragraph>
     <Paragraph>{`For example, you could have:`}</Paragraph>
@@ -168,28 +174,44 @@ const Pages = () => (
       <figure className="Pages-figure">
         <Title>{`Title `}</Title>
         <figcaption className="Pages-figureCaption">
-          {`16 * 1.125^8 (Proxima Nova Semi-Bold)`}
+          {`16 * 1.125^8 (roughly 41px/48px), 16 * 1.125^9 (roughly 46px/52px) at larger viewport sizes`}
+          <br />
+          {`Proxima Nova Semi-Bold`}
         </figcaption>
       </figure>
       <figure className="Pages-figure">
         <Lede>{`Lede`}</Lede>
-        <figcaption className="Pages-figureCaption">{`16 * 1.125^4 (Proxima Nova Light)`}</figcaption>
+        <figcaption className="Pages-figureCaption">
+          {`16 * 1.125^4 (roughly 26px/32px)`}
+          <br />
+          {`Proxima Nova Light`}
+        </figcaption>
       </figure>
       <figure className="Pages-figure">
         <Heading>{`Heading`}</Heading>
-        <figcaption className="Pages-figureCaption">{`16 * 1.125^5 (Proxima Nova Semi-Bold)`}</figcaption>
+        <figcaption className="Pages-figureCaption">
+          {`16 * 1.125^5 (roughly 29px/32px)`}
+          <br />
+          {`Proxima Nova Semi-Bold`}
+        </figcaption>
       </figure>
       <figure className="Pages-figure">
         <Subheading>{`Subheading`}</Subheading>
-        <figcaption className="Pages-figureCaption">{`16 * 1.125^4 (Proxima Nova Light)`}</figcaption>
+        <figcaption className="Pages-figureCaption">
+          {`16 * 1.125^4 (roughly 26px/32px)`}
+          <br />
+          {`Proxima Nova Light`}
+        </figcaption>
       </figure>
       <figure className="Pages-figure">
         <Paragraph>{`Paragraph`}</Paragraph>
-        <figcaption className="Pages-figureCaption">{`16 * 1.125^0 (system-ui light)`}</figcaption>
+        <figcaption className="Pages-figureCaption">
+          {`16 * 1.125^0 (roughly 16px/24px)`}
+          <br />
+          {`system-ui light`}
+        </figcaption>
       </figure>
     </div>
-    <Paragraph
-    >{`Title jumps to 16 * 1.125^9 at larger viewport sizes.`}</Paragraph>
     <Paragraph>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/custom-properties.css">{`code`}</Link>
