@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+https://barnardos-design-system.netlify.com/* https://design-system.barnardos.org.uk/:splat 301!
