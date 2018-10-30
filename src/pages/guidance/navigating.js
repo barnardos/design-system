@@ -99,7 +99,6 @@ const Pages = () => (
     <UnorderedList>
       <ListItem
       >{`use a meaningful phrase that makes sense out of context`}</ListItem>
-      <ListItem>{`use the default styles`}</ListItem>
     </UnorderedList>
     <div className="Pages-example">
       <Heading>
@@ -125,6 +124,7 @@ const Pages = () => (
     >{`Use this component after a summary of content to progress onto more detail.`}</Paragraph>
     <Paragraph>{`When using this component you should:`}</Paragraph>
     <UnorderedList>
+      <ListItem>{`use sentence case`}</ListItem>
       <ListItem>{`use a verb, for example search`}</ListItem>
       <ListItem
       >{`use a meaningful phrase that makes sense out of context`}</ListItem>
@@ -182,6 +182,7 @@ const Pages = () => (
     <Paragraph>{`When using this component you should:`}</Paragraph>
     <UnorderedList>
       <ListItem>{`limit the number on each page`}</ListItem>
+      <ListItem>{`use sentence case`}</ListItem>
       <ListItem>{`use a verb, for example donate`}</ListItem>
       <ListItem>{`not use the Green colour`}</ListItem>
       <ListItem
