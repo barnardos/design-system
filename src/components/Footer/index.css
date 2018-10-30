@@ -10,8 +10,28 @@
   padding: 1rem;
 }
 
+.Footer-items {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.Footer-children {
+  margin-top: 1rem;
+}
+
 @media (min-width: 48rem) {
   .Footer {
     padding: 1.5rem 2rem;
+  }
+
+  .Footer-items {
+    flex-direction: row;
+  }
+
+  .Footer-item {
+    &:not(:first-child) {
+      margin-left: 1rem;
+    }
   }
 }
