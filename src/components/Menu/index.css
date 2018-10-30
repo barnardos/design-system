@@ -20,7 +20,7 @@
   color: var(--black);
   display: block;
   font: 300 var(--type-3) Nova, sans-serif;
-  padding: 0.5rem 0 1rem;
+  padding: 0.25rem 0 0.75rem;
   text-align: center;
   text-decoration: none;
   white-space: nowrap;
@@ -64,7 +64,7 @@
   }
 
   & .Menu-link {
-    padding: 1rem;
+    padding: 0.75rem;
   }
 }
 

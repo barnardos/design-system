@@ -6,6 +6,8 @@ import BackLink from "../../components/BackLink";
 import Breadcrumbs from "../../components/Breadcrumbs";
 import Command from "../../components/Command";
 import DonateLink from "../../components/DonateLink";
+import Footer from "../../components/Footer";
+import Header from "../../components/Header";
 import Heading from "../../components/Heading";
 import Layout from "../../components/Layout";
 import Link from "../../components/Link";
@@ -91,6 +93,16 @@ const Pages = () => (
           level: 1,
           text: "Menu",
           to: "/guidance/navigating/#menu"
+        },
+        {
+          level: 1,
+          text: "Header",
+          to: "/guidance/navigating/#header"
+        },
+        {
+          level: 1,
+          text: "Footer",
+          to: "/guidance/navigating/#footer"
         }
       ]}
     />
@@ -291,10 +303,12 @@ const Pages = () => (
     </Paragraph>
     <Heading>{`Menu`}</Heading>
     <Paragraph
-    >{`Use this component to switch between top-level categories easily. When using this component you should:`}</Paragraph>
+    >{`Use this component to navigate between top-level items.`}</Paragraph>
+    <Paragraph>{`When using this component you should:`}</Paragraph>
     <UnorderedList>
-      <ListItem>{`aim to have the items visible at all times`}</ListItem>
-      <ListItem>{`reveal the menu if this is not possible`}</ListItem>
+      <ListItem>{`aim to have the items visible`}</ListItem>
+      <ListItem
+      >{`avoid collapsing items into a Command on larger viewports`}</ListItem>
     </UnorderedList>
     <div className="Pages-example">
       <Menu
@@ -317,7 +331,7 @@ const Pages = () => (
     <div className="Pages-example">
       <div
         style={{
-          paddingBottom: "19rem",
+          paddingBottom: "20rem",
           position: "relative"
         }}
       >
@@ -353,6 +367,83 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Menu">{`code`}</Link>
       {` and `}
       <Link href="https://github.com/barnardos/design-system/issues/2">{`research`}</Link>
+      {` on GitHub.`}
+    </Paragraph>
+    <Heading>{`Header`}</Heading>
+    <Paragraph>{`When using this component you should:`}</Paragraph>
+    <UnorderedList>
+      <ListItem>{`link the Barnardo's logo to the homepage`}</ListItem>
+    </UnorderedList>
+    <div className="Pages-example Pages-example--full">
+      <div
+        style={{
+          position: "relative",
+          paddingBottom: "3rem"
+        }}
+      >
+        <Header
+          menu={{
+            items: [
+              {
+                text: "About",
+                href: "http://example.org"
+              },
+              {
+                text: "Services",
+                href: "http://example.org"
+              },
+              {
+                text: "Donate",
+                href: "http://example.org"
+              }
+            ]
+          }}
+          search
+        />
+      </div>
+    </div>
+    <Paragraph>
+      {`View `}
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Header">{`code`}</Link>
+      {` and `}
+      <Link href="https://github.com/barnardos/design-system/issues/2">{`research`}</Link>
+      {` on GitHub.`}
+    </Paragraph>
+    <Heading>{`Footer`}</Heading>
+    <div className="Pages-example Pages-example--full">
+      <div
+        style={{
+          overflow: "hidden",
+          position: "relative"
+        }}
+      >
+        <Footer
+          items={[
+            {
+              href: "http://example.org",
+              text: "Contact us"
+            },
+            {
+              href: "http://example.org",
+              text: "Privacy notice"
+            },
+            {
+              href: "http://example.org",
+              text: "Terms & conditions"
+            },
+            {
+              href: "http://example.org",
+              text: "Cookie policy"
+            }
+          ]}
+        >{`© Barnardo's 2018`}</Footer>
+      </div>
+    </div>
+    <Paragraph>
+      {`View `}
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Footer">{`code`}</Link>
+      {` and `}
+      <Link href="https://github.com/barnardos/design-system/issues/301">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
   </Layout>
