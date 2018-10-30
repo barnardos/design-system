@@ -130,7 +130,7 @@ const Pages = () => (
       >{`use a meaningful phrase that makes sense out of context`}</ListItem>
       <ListItem>{`only use the Green colour`}</ListItem>
       <ListItem
-      >{`don't use terms like "Read more" and "Find out more"`}</ListItem>
+      >{`not use terms like "Read more" and "Find out more"`}</ListItem>
     </UnorderedList>
     <div className="Pages-example">
       <ProgressLink href="http://example.org">{`Search and apply for jobs`}</ProgressLink>
@@ -184,6 +184,8 @@ const Pages = () => (
       <ListItem>{`limit the number on each page`}</ListItem>
       <ListItem>{`use a verb, for example donate`}</ListItem>
       <ListItem>{`not use the Green colour`}</ListItem>
+      <ListItem
+      >{`not use terms like "Read more" and "Find out more"`}</ListItem>
     </UnorderedList>
     <div className="Pages-example">
       <AttentionGrabbingLink
