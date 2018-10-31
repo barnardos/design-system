@@ -16,20 +16,20 @@
   position: relative;
 
   &::before {
-    background: transparent url("./triangle.svg") left 0.25rem no-repeat;
+    background: transparent url("./triangle.svg") 0 0 no-repeat;
     background-size: 0.75rem 0.75rem;
     content: "";
     height: 1rem;
     left: 0;
     position: absolute;
-    top: 0;
+    top: 0.5rem;
     width: 1rem;
   }
 }
 
 .Pagination-link--next {
   &::before {
-    transform: rotate(180deg) translate(-0.75rem, -0.25rem);
+    transform: rotate(180deg) translate(-0.75rem, 0.25rem);
     transform-origin: left;
   }
 }

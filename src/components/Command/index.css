@@ -14,8 +14,9 @@
   display: flex;
   font: 600 var(--type-2) Nova, sans-serif;
   justify-content: center;
+  min-height: 3rem;
   min-width: 3rem;
-  padding: 0.75rem;
+  padding: 0.5rem 0.75rem;
   white-space: normal;
 
   &:hover {
