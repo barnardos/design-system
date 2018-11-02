@@ -3,7 +3,7 @@
 /** @define ProgressLink; */
 
 .ProgressLink {
-  background: url("./chevron.svg") no-repeat 100% 0.4rem;
+  background: url("./chevron.svg") no-repeat 100% 0.5rem;
   background-size: 1rem;
   color: var(--green);
   display: inline-block;

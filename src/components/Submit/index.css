@@ -10,7 +10,7 @@
   box-shadow: 0.25rem 0.25rem color-mod(var(--green) shade(40%));
   color: var(--white);
   font: 600 var(--type-2) Nova, sans-serif;
-  padding: 0.75rem 3rem;
+  padding: 0.5rem 3rem;
   text-align: center;
   white-space: normal;
   width: 100%;
