@@ -82,9 +82,9 @@ const Pages = () => (
       </ListItem>
     </UnorderedList>
     <Paragraph>
-      {`You should use `}
+      {`You should use the `}
       <Link href="https://github.com/browserslist/browserslist">{`browserslist`}</Link>
-      {` to configure both.`}
+      {` defaults to configure both.`}
     </Paragraph>
     <Paragraph>
       {`View `}
