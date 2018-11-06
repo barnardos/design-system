@@ -4,6 +4,7 @@ import React from "react";
 import AttentionGrabbingLink from "../../components/AttentionGrabbingLink";
 import BackLink from "../../components/BackLink";
 import Breadcrumbs from "../../components/Breadcrumbs";
+import Card from "../../components/Card";
 import Command from "../../components/Command";
 import DonateLink from "../../components/DonateLink";
 import Footer from "../../components/Footer";
@@ -73,6 +74,11 @@ const Pages = () => (
           level: 1,
           text: "Back Link",
           to: "/guidance/navigating/#back-link"
+        },
+        {
+          level: 1,
+          text: "Card",
+          to: "/guidance/navigating/#card"
         },
         {
           level: 1,
@@ -239,6 +245,24 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/issues/166">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
+    <Heading>{`Card`}</Heading>
+    <Paragraph
+    >{`Use this component to provide a summary that links to additional details.`}</Paragraph>
+    <div className="Pages-example">
+      <Card
+        href="http://example.org"
+        meta="31 October 2018"
+        title="£2bn boost for the mental health services"
+      >{`In response to the mental health funding announcement in the Budget, Barnardo's Chief Executive Javed Khan said`}</Card>
+    </div>
+    <div className="Pages-example">
+      <Card
+        href="http://example.org"
+        src="https://dummyimage.com/1200x675/bbbbbb/d2d2d2.png&amp;text=16:9"
+        meta="31 October 2018"
+        title="£2bn boost for the mental health services"
+      >{`In response to the mental health funding announcement in the Budget, Barnardo's Chief Executive Javed Khan said`}</Card>
+    </div>
     <Heading>{`Breadcrumbs`}</Heading>
     <Paragraph
     >{`Use this component to help a user identify their current location.`}</Paragraph>
