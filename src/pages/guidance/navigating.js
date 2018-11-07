@@ -1,6 +1,7 @@
 import Helmet from "react-helmet";
 import React from "react";
 
+import AttentionGrabbingCard from "../../components/AttentionGrabbingCard";
 import AttentionGrabbingLink from "../../components/AttentionGrabbingLink";
 import BackLink from "../../components/BackLink";
 import Breadcrumbs from "../../components/Breadcrumbs";
@@ -18,6 +19,7 @@ import Pagination from "../../components/Pagination";
 import Paragraph from "../../components/Paragraph";
 import ProgressLink from "../../components/ProgressLink";
 import StartLink from "../../components/StartLink";
+import Subheading from "../../components/Subheading";
 import TableOfContents from "../../components/TableOfContents";
 import Title from "../../components/Title";
 import UnorderedList from "../../components/UnorderedList";
@@ -47,38 +49,53 @@ const Pages = () => (
       items={[
         {
           level: 1,
+          text: "Links",
+          to: "/guidance/navigating/#links"
+        },
+        {
+          level: 2,
           text: "Link",
           to: "/guidance/navigating/#link"
         },
         {
-          level: 1,
+          level: 2,
           text: "Progress Link",
           to: "/guidance/navigating/#progress-link"
         },
         {
-          level: 1,
+          level: 2,
           text: "Start Link",
           to: "/guidance/navigating/#start-link"
         },
         {
-          level: 1,
+          level: 2,
           text: "Donate Link",
           to: "/guidance/navigating/#donate-link"
         },
         {
-          level: 1,
+          level: 2,
           text: "Attention Grabbing Link",
           to: "/guidance/navigating/#attention-grabbing-link"
         },
         {
-          level: 1,
+          level: 2,
           text: "Back Link",
           to: "/guidance/navigating/#back-link"
         },
         {
           level: 1,
+          text: "Cards",
+          to: "/guidance/navigating/#cards"
+        },
+        {
+          level: 2,
           text: "Card",
           to: "/guidance/navigating/#card"
+        },
+        {
+          level: 2,
+          text: "Attention Grabbing Card",
+          to: "/guidance/navigating/#attention-grabbing-card"
         },
         {
           level: 1,
@@ -112,7 +129,8 @@ const Pages = () => (
         }
       ]}
     />
-    <Heading>{`Link`}</Heading>
+    <Heading>{`Links`}</Heading>
+    <Subheading>{`Link`}</Subheading>
     <Paragraph>{`When using this component you should:`}</Paragraph>
     <UnorderedList>
       <ListItem
@@ -120,7 +138,7 @@ const Pages = () => (
     </UnorderedList>
     <div className="Pages-example">
       <Heading>
-        <Link href="http://example.org">{`Heading of section`}</Link>
+        <Link href="http://example.org">{`Subheading of section`}</Link>
       </Heading>
       <Paragraph>
         {`This is a paragraph, and it includes even more text to give a good
@@ -137,7 +155,7 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/issues/47">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
-    <Heading>{`Progress Link`}</Heading>
+    <Subheading>{`Progress Link`}</Subheading>
     <Paragraph
     >{`Use this component after a summary of content to progress onto more detail.`}</Paragraph>
     <Paragraph>{`When using this component you should:`}</Paragraph>
@@ -160,7 +178,7 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/issues/282">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
-    <Heading>{`Start Link`}</Heading>
+    <Subheading>{`Start Link`}</Subheading>
     <Paragraph
     >{`Use this component to link to the start of a transactional service.`}</Paragraph>
     <Paragraph>{`When using this component you should:`}</Paragraph>
@@ -178,7 +196,7 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/issues/167">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
-    <Heading>{`Donate Link`}</Heading>
+    <Subheading>{`Donate Link`}</Subheading>
     <Paragraph
     >{`Use this component to link to the service to donate.`}</Paragraph>
     <Paragraph>{`When using this component you should:`}</Paragraph>
@@ -195,7 +213,7 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/issues/353">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
-    <Heading>{`Attention Grabbing Link`}</Heading>
+    <Subheading>{`Attention Grabbing Link`}</Subheading>
     <Paragraph>{`Use this component within featured content.`}</Paragraph>
     <Paragraph>{`When using this component you should:`}</Paragraph>
     <UnorderedList>
@@ -227,7 +245,7 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/issues/47">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
-    <Heading>{`Back Link`}</Heading>
+    <Subheading>{`Back Link`}</Subheading>
     <Paragraph
     >{`Use this component to link back within a transactional service.`}</Paragraph>
     <Paragraph>{`When using this component you should:`}</Paragraph>
@@ -245,24 +263,48 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/issues/166">{`research`}</Link>
       {` on GitHub.`}
     </Paragraph>
-    <Heading>{`Card`}</Heading>
+    <Heading>{`Cards`}</Heading>
     <Paragraph
-    >{`Use this component to provide a summary that links to additional details.`}</Paragraph>
+    >{`Use these components to provide a summary that links to additional details.`}</Paragraph>
+    <Subheading>{`Card`}</Subheading>
     <div className="Pages-example">
       <Card
         href="http://example.org"
-        meta="31 October 2018"
-        title="£2bn boost for the mental health services"
-      >{`In response to the mental health funding announcement in the Budget, Barnardo's Chief Executive Javed Khan said`}</Card>
+        meta="20 October 2019"
+        title="Barnardo’s celebrates National Adoption Week"
+      >{`This year’s campaign calls on people to welcome an older child into their family.`}</Card>
     </div>
     <div className="Pages-example">
       <Card
         href="http://example.org"
-        src="https://dummyimage.com/1200x675/bbbbbb/d2d2d2.png&amp;text=16:9"
-        meta="31 October 2018"
-        title="£2bn boost for the mental health services"
-      >{`In response to the mental health funding announcement in the Budget, Barnardo's Chief Executive Javed Khan said`}</Card>
+        src="https://donate.barnardos.org.uk/sites/default/files/styles/b_lg/public/uploads/IMG_8550.jpg"
+        title="Other ways to donate"
+      >{`Find out ways to help support vulnerable children including making one-off or regular donations.`}</Card>
     </div>
+    <Paragraph>
+      {`View `}
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Card">{`code`}</Link>
+      {` and `}
+      <Link href="https://github.com/barnardos/design-system/issues/91">{`research`}</Link>
+      {` on GitHub.`}
+    </Paragraph>
+    <Subheading>{`Attention Grabbing Card`}</Subheading>
+    <div className="Pages-example">
+      <AttentionGrabbingCard
+        colour="pink"
+        href="http://example.org"
+        meta="14 April 2019"
+        title="Brighton Marathon"
+        text="Sign up"
+      >{`Taking in the sights and sounds of the coast, this fantastic 26.2 mile route covers Hove and finishes at the famous Brighton Pier.`}</AttentionGrabbingCard>
+    </div>
+    <Paragraph>
+      {`View `}
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/AttentionGrabbingCard">{`code`}</Link>
+      {` and `}
+      <Link href="https://github.com/barnardos/design-system/issues/401">{`research`}</Link>
+      {` on GitHub.`}
+    </Paragraph>
     <Heading>{`Breadcrumbs`}</Heading>
     <Paragraph
     >{`Use this component to help a user identify their current location.`}</Paragraph>
