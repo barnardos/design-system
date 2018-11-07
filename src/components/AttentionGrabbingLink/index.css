@@ -11,6 +11,10 @@
   text-align: center;
 }
 
+.AttentionGrabbingLink--full {
+  width: 100%;
+}
+
 .AttentionGrabbingLink--black {
   background-color: var(--black);
 
