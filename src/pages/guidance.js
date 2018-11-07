@@ -32,6 +32,10 @@ const Pages = () => (
             to: "/guidance/accessibility/"
           },
           {
+            text: "Brand assets",
+            to: "/guidance/brand-assets/"
+          },
+          {
             text: "Colour",
             to: "/guidance/colour/"
           },

@@ -6,12 +6,15 @@ import Feedback from "../Feedback";
 import Footer from "../Footer";
 import Header from "../Header";
 
+import favicon from "./favicon.ico";
+
 import "./index.css";
 
 const Layout = ({ children }) => (
   <div className="Layout">
     <Helmet titleTemplate="%s - Barnardo's">
       <html lang="en" />
+      <link rel="shortcut icon" type="image/x-icon" href={favicon} />
     </Helmet>
     <div className="Layout-header">
       <Header />
