@@ -125,9 +125,10 @@ const Pages = () => (
       <ListItem>{`ask for required information first`}</ListItem>
       <ListItem
       >{`add '(optional)' to labels of information that isn't required`}</ListItem>
-      <ListItem>{`group related requests for information`}</ListItem>
       <ListItem
       >{`avoid unnecessary words like 'Please' or 'Enter' in labels`}</ListItem>
+      <ListItem
+      >{`group related controls together, for example "Email" and "Phone"`}</ListItem>
     </UnorderedList>
     <Heading>{`Text entry`}</Heading>
     <Paragraph
