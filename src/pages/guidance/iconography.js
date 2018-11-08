@@ -38,8 +38,7 @@ const Pages = () => (
         {`use the `}
         <GatsbyLink to="/guidance/colour/#brand-colours">{`brand colours`}</GatsbyLink>
       </ListItem>
-      <ListItem
-      >{`avoid relying on icons to convey important information`}</ListItem>
+      <ListItem>{`avoid relying on icons to convey important information`}</ListItem>
     </UnorderedList>
     <Paragraph>
       {`View `}

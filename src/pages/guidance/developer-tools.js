@@ -46,8 +46,7 @@ const Pages = () => (
         }
       ]}
     />
-    <Paragraph
-    >{`When developing your product you should maintain code quality and future-proof your code.`}</Paragraph>
+    <Paragraph>{`When developing your product you should maintain code quality and future-proof your code.`}</Paragraph>
     <Heading>{`Code quality`}</Heading>
     <Paragraph>{`You should:`}</Paragraph>
     <UnorderedList>

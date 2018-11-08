@@ -120,19 +120,14 @@ const Pages = () => (
     />
     <Paragraph>{`When requesting information you should:`}</Paragraph>
     <UnorderedList>
-      <ListItem
-      >{`only ask for information which is absolutely needed`}</ListItem>
+      <ListItem>{`only ask for information which is absolutely needed`}</ListItem>
       <ListItem>{`ask for required information first`}</ListItem>
-      <ListItem
-      >{`add '(optional)' to labels of information that isn't required`}</ListItem>
-      <ListItem
-      >{`avoid unnecessary words like 'Please' or 'Enter' in labels`}</ListItem>
-      <ListItem
-      >{`group related controls together, for example "Email" and "Phone"`}</ListItem>
+      <ListItem>{`add '(optional)' to labels of information that isn't required`}</ListItem>
+      <ListItem>{`avoid unnecessary words like 'Please' or 'Enter' in labels`}</ListItem>
+      <ListItem>{`group related controls together, for example "Email" and "Phone"`}</ListItem>
     </UnorderedList>
     <Heading>{`Text entry`}</Heading>
-    <Paragraph
-    >{`Use the components below for text entry. You should:`}</Paragraph>
+    <Paragraph>{`Use the components below for text entry. You should:`}</Paragraph>
     <UnorderedList>
       <ListItem>
         {`make the size appropriate to the amount of information requested`}
@@ -340,8 +335,7 @@ const Pages = () => (
       {` on GitHub.`}
     </Paragraph>
     <Heading>{`Validating and submitting`}</Heading>
-    <Paragraph
-    >{`Use the components below to validate and submit information.`}</Paragraph>
+    <Paragraph>{`Use the components below to validate and submit information.`}</Paragraph>
     <Subheading>{`Submit`}</Subheading>
     <Paragraph>{`When using this component you should:`}</Paragraph>
     <UnorderedList>

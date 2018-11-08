@@ -56,8 +56,7 @@ const Pages = () => (
     />
     <Paragraph>{`To unify layout and typography you should use:`}</Paragraph>
     <UnorderedList>
-      <ListItem
-      >{`multiples of 4 for spacing, flourishes, and line heights`}</ListItem>
+      <ListItem>{`multiples of 4 for spacing, flourishes, and line heights`}</ListItem>
       <ListItem>{`a base of 16 for paragraphs`}</ListItem>
       <ListItem>{`exponents of 1.125 for other type sizes`}</ListItem>
     </UnorderedList>
@@ -167,8 +166,7 @@ const Pages = () => (
       <ListItem>{`Proxima Nova light`}</ListItem>
       <ListItem>{`system-ui light`}</ListItem>
     </UnorderedList>
-    <Paragraph
-    >{`Using a base of 16 and exponents of 1.125 for type sizes provides flexibility to create a visual hierarchy.`}</Paragraph>
+    <Paragraph>{`Using a base of 16 and exponents of 1.125 for type sizes provides flexibility to create a visual hierarchy.`}</Paragraph>
     <Paragraph>{`For example, you could have:`}</Paragraph>
     <div className="Pages-figures">
       <figure className="Pages-figure">
@@ -244,8 +242,7 @@ const Pages = () => (
       </figure>
     </div>
     <Heading>{`Proportional scale`}</Heading>
-    <Paragraph
-    >{`The layout and typography can be proportionally scaled to maintain an optimal line length at any viewport size.`}</Paragraph>
+    <Paragraph>{`The layout and typography can be proportionally scaled to maintain an optimal line length at any viewport size.`}</Paragraph>
     <Paragraph>{`The optimal line length of text is around:`}</Paragraph>
     <UnorderedList>
       <ListItem>{`15–40 characters for short lines`}</ListItem>
@@ -253,12 +250,9 @@ const Pages = () => (
     </UnorderedList>
     <Paragraph>{`For example, you could scale the base of 16:`}</Paragraph>
     <UnorderedList>
-      <ListItem
-      >{`down to 93.75% to give a paragraph size and gutters of 15`}</ListItem>
-      <ListItem
-      >{`up to 106.25% to give a paragraph size and gutters  of 17`}</ListItem>
-      <ListItem
-      >{`further up to 112.5% to give a paragraph size and gutters of 18`}</ListItem>
+      <ListItem>{`down to 93.75% to give a paragraph size and gutters of 15`}</ListItem>
+      <ListItem>{`up to 106.25% to give a paragraph size and gutters  of 17`}</ListItem>
+      <ListItem>{`further up to 112.5% to give a paragraph size and gutters of 18`}</ListItem>
     </UnorderedList>
     <Paragraph>
       {`View `}

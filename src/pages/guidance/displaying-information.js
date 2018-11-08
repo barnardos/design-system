@@ -91,13 +91,11 @@ const Pages = () => (
       <ListItem>{`avoid starting items with the same word`}</ListItem>
     </UnorderedList>
     <Subheading>{`Unordered List Item`}</Subheading>
-    <Paragraph
-    >{`Use this component when the sequence or count of items isn’t important.`}</Paragraph>
+    <Paragraph>{`Use this component when the sequence or count of items isn’t important.`}</Paragraph>
     <div className="Pages-example">
       <Paragraph>{`There has been particular improvements in: `}</Paragraph>
       <UnorderedList>
-        <UnorderedListItem
-        >{`families feeling less isolated`}</UnorderedListItem>
+        <UnorderedListItem>{`families feeling less isolated`}</UnorderedListItem>
         <UnorderedListItem>{`reduced parental stress`}</UnorderedListItem>
       </UnorderedList>
     </div>
@@ -109,8 +107,7 @@ const Pages = () => (
       {` on GitHub.`}
     </Paragraph>
     <Heading>{`Caption`}</Heading>
-    <Paragraph
-    >{`Use this component to add a caption, for example to images and videos.`}</Paragraph>
+    <Paragraph>{`Use this component to add a caption, for example to images and videos.`}</Paragraph>
     <div className="Pages-example">
       <Caption label="Participants receiving their certificate">
         <Image
@@ -142,12 +139,10 @@ const Pages = () => (
       {` on GitHub.`}
     </Paragraph>
     <Heading>{`Quotes`}</Heading>
-    <Paragraph
-    >{`Use this component for quotes, for example an excerpt from an article or quotation from a person.`}</Paragraph>
+    <Paragraph>{`Use this component for quotes, for example an excerpt from an article or quotation from a person.`}</Paragraph>
     <Subheading>{`Quote`}</Subheading>
     <div className="Pages-example">
-      <Quote
-      >{`Parents needed more support with their emotional wellbeing, boundaries, behaviour, home and money.`}</Quote>
+      <Quote>{`Parents needed more support with their emotional wellbeing, boundaries, behaviour, home and money.`}</Quote>
     </div>
     <div className="Pages-example">
       <Quote
