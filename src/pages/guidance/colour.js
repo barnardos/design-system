@@ -52,8 +52,7 @@ const Pages = () => (
     <Paragraph>{`To apply colour you should:`}</Paragraph>
     <UnorderedList>
       <ListItem>{`only use the brand colours`}</ListItem>
-      <ListItem
-      >{`add white (tint) or black (shade) in 10% increments`}</ListItem>
+      <ListItem>{`add white (tint) or black (shade) in 10% increments`}</ListItem>
     </UnorderedList>
     <Heading>Brand colours</Heading>
     <div className="Pages-swatches">
@@ -88,14 +87,11 @@ const Pages = () => (
       </ListItem>
       <ListItem>{`use Black for titles and headings`}</ListItem>
       <ListItem>{`avoid tints and shades for backgrounds`}</ListItem>
-      <ListItem
-      >{`avoid relying on colour to convey important information`}</ListItem>
+      <ListItem>{`avoid relying on colour to convey important information`}</ListItem>
     </UnorderedList>
-    <Paragraph
-    >{`Also consider meaningful use of colour, for example:`}</Paragraph>
+    <Paragraph>{`Also consider meaningful use of colour, for example:`}</Paragraph>
     <UnorderedList>
-      <ListItem
-      >{`greens for positive actions like submit or continue`}</ListItem>
+      <ListItem>{`greens for positive actions like submit or continue`}</ListItem>
       <ListItem>{`oranges for cautionary actions like load or warn`}</ListItem>
       <ListItem>{`reds for destructive actions like delete or error`}</ListItem>
     </UnorderedList>

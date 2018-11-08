@@ -133,8 +133,7 @@ const Pages = () => (
     <Subheading>{`Link`}</Subheading>
     <Paragraph>{`When using this component you should:`}</Paragraph>
     <UnorderedList>
-      <ListItem
-      >{`use a meaningful phrase that makes sense out of context`}</ListItem>
+      <ListItem>{`use a meaningful phrase that makes sense out of context`}</ListItem>
     </UnorderedList>
     <div className="Pages-example">
       <Heading>
@@ -156,17 +155,14 @@ const Pages = () => (
       {` on GitHub.`}
     </Paragraph>
     <Subheading>{`Progress Link`}</Subheading>
-    <Paragraph
-    >{`Use this component after a summary of content to progress onto more detail.`}</Paragraph>
+    <Paragraph>{`Use this component after a summary of content to progress onto more detail.`}</Paragraph>
     <Paragraph>{`When using this component you should:`}</Paragraph>
     <UnorderedList>
       <ListItem>{`use sentence case`}</ListItem>
       <ListItem>{`use a verb, for example search`}</ListItem>
-      <ListItem
-      >{`use a meaningful phrase that makes sense out of context`}</ListItem>
+      <ListItem>{`use a meaningful phrase that makes sense out of context`}</ListItem>
       <ListItem>{`only use the Green colour`}</ListItem>
-      <ListItem
-      >{`not use terms like "Read more" and "Find out more"`}</ListItem>
+      <ListItem>{`not use terms like "Read more" and "Find out more"`}</ListItem>
     </UnorderedList>
     <div className="Pages-example">
       <ProgressLink href="http://example.org">{`Search and apply for jobs`}</ProgressLink>
@@ -179,8 +175,7 @@ const Pages = () => (
       {` on GitHub.`}
     </Paragraph>
     <Subheading>{`Start Link`}</Subheading>
-    <Paragraph
-    >{`Use this component to link to the start of a transactional service.`}</Paragraph>
+    <Paragraph>{`Use this component to link to the start of a transactional service.`}</Paragraph>
     <Paragraph>{`When using this component you should:`}</Paragraph>
     <UnorderedList>
       <ListItem>{`limit to one on each page`}</ListItem>
@@ -197,8 +192,7 @@ const Pages = () => (
       {` on GitHub.`}
     </Paragraph>
     <Subheading>{`Donate Link`}</Subheading>
-    <Paragraph
-    >{`Use this component to link to the service to donate.`}</Paragraph>
+    <Paragraph>{`Use this component to link to the service to donate.`}</Paragraph>
     <Paragraph>{`When using this component you should:`}</Paragraph>
     <UnorderedList>
       <ListItem>{`only use the Green colour`}</ListItem>
@@ -221,8 +215,7 @@ const Pages = () => (
       <ListItem>{`use sentence case`}</ListItem>
       <ListItem>{`use a verb, for example donate`}</ListItem>
       <ListItem>{`not use the Green colour`}</ListItem>
-      <ListItem
-      >{`not use terms like "Read more" and "Find out more"`}</ListItem>
+      <ListItem>{`not use terms like "Read more" and "Find out more"`}</ListItem>
     </UnorderedList>
     <div className="Pages-example">
       <AttentionGrabbingLink
@@ -246,8 +239,7 @@ const Pages = () => (
       {` on GitHub.`}
     </Paragraph>
     <Subheading>{`Back Link`}</Subheading>
-    <Paragraph
-    >{`Use this component to link back within a transactional service.`}</Paragraph>
+    <Paragraph>{`Use this component to link back within a transactional service.`}</Paragraph>
     <Paragraph>{`When using this component you should:`}</Paragraph>
     <UnorderedList>
       <ListItem>{`only use it once on each page`}</ListItem>
@@ -264,8 +256,7 @@ const Pages = () => (
       {` on GitHub.`}
     </Paragraph>
     <Heading>{`Cards`}</Heading>
-    <Paragraph
-    >{`Use these components to provide a summary that links to additional details.`}</Paragraph>
+    <Paragraph>{`Use these components to provide a summary that links to additional details.`}</Paragraph>
     <Subheading>{`Card`}</Subheading>
     <div className="Pages-example">
       <Card
@@ -306,8 +297,7 @@ const Pages = () => (
       {` on GitHub.`}
     </Paragraph>
     <Heading>{`Breadcrumbs`}</Heading>
-    <Paragraph
-    >{`Use this component to help a user identify their current location.`}</Paragraph>
+    <Paragraph>{`Use this component to help a user identify their current location.`}</Paragraph>
     <Paragraph>{`When using this component you should:`}</Paragraph>
     <UnorderedList>
       <ListItem>{`place it directly above the page title`}</ListItem>
@@ -334,8 +324,7 @@ const Pages = () => (
       {` on GitHub.`}
     </Paragraph>
     <Heading>{`Pagination`}</Heading>
-    <Paragraph
-    >{`Use this component to break large pieces of content across multiple pages.`}</Paragraph>
+    <Paragraph>{`Use this component to break large pieces of content across multiple pages.`}</Paragraph>
     <div className="Pages-example">
       <Pagination
         previous={{
@@ -356,8 +345,7 @@ const Pages = () => (
       {` on GitHub.`}
     </Paragraph>
     <Heading>{`Command`}</Heading>
-    <Paragraph
-    >{`Use this component for interactive triggers that don't submit data.`}</Paragraph>
+    <Paragraph>{`Use this component for interactive triggers that don't submit data.`}</Paragraph>
     <div className="Pages-example">
       <Command>Menu</Command>
     </div>
@@ -369,13 +357,11 @@ const Pages = () => (
       {` on GitHub.`}
     </Paragraph>
     <Heading>{`Menu`}</Heading>
-    <Paragraph
-    >{`Use this component to navigate between top-level items.`}</Paragraph>
+    <Paragraph>{`Use this component to navigate between top-level items.`}</Paragraph>
     <Paragraph>{`When using this component you should:`}</Paragraph>
     <UnorderedList>
       <ListItem>{`aim to have the items visible`}</ListItem>
-      <ListItem
-      >{`avoid collapsing items into a Command on larger viewports`}</ListItem>
+      <ListItem>{`avoid collapsing items into a Command on larger viewports`}</ListItem>
     </UnorderedList>
     <div className="Pages-example">
       <Menu

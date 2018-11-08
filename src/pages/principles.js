@@ -56,8 +56,7 @@ const Pages = () => (
     journey for the majority`}</ListItem>
       <ListItem>{`only add complexity when justified`}</ListItem>
       <ListItem>{`hide underlying complex systems`}</ListItem>
-      <ListItem
-      >{`avoid deciding on a solution because "It's always been this way"`}</ListItem>
+      <ListItem>{`avoid deciding on a solution because "It's always been this way"`}</ListItem>
     </UnorderedList>
     <Heading>{`4. Be consistent`}</Heading>
     <Paragraph>{`Build trust and familiarity across products.`}</Paragraph>
