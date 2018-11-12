@@ -6,6 +6,7 @@ import AttentionGrabbingLink from "../../components/AttentionGrabbingLink";
 import BackLink from "../../components/BackLink";
 import Breadcrumbs from "../../components/Breadcrumbs";
 import Card from "../../components/Card";
+import Cite from "../../components/Cite";
 import Command from "../../components/Command";
 import DonateLink from "../../components/DonateLink";
 import Footer from "../../components/Footer";
@@ -147,13 +148,13 @@ const Pages = () => (
             That way you can see more than one line wrapping.`}
       </Paragraph>
     </div>
-    <Paragraph>
+    <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Link">{`code`}</Link>
       {` and `}
       <Link href="https://github.com/barnardos/design-system/issues/47">{`research`}</Link>
       {` on GitHub.`}
-    </Paragraph>
+    </Cite>
     <Subheading>{`Progress Link`}</Subheading>
     <Paragraph>{`Use this component after a summary of content to progress onto more detail.`}</Paragraph>
     <Paragraph>{`When using this component you should:`}</Paragraph>
@@ -167,13 +168,13 @@ const Pages = () => (
     <div className="Pages-example">
       <ProgressLink href="http://example.org">{`Search and apply for jobs`}</ProgressLink>
     </div>
-    <Paragraph>
+    <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/ProgressLink">{`code`}</Link>
       {` and `}
       <Link href="https://github.com/barnardos/design-system/issues/282">{`research`}</Link>
       {` on GitHub.`}
-    </Paragraph>
+    </Cite>
     <Subheading>{`Start Link`}</Subheading>
     <Paragraph>{`Use this component to link to the start of a transactional service.`}</Paragraph>
     <Paragraph>{`When using this component you should:`}</Paragraph>
@@ -184,13 +185,13 @@ const Pages = () => (
     <div className="Pages-example">
       <StartLink href="http://example.org" />
     </div>
-    <Paragraph>
+    <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/StartLink">{`code`}</Link>
       {` and `}
       <Link href="https://github.com/barnardos/design-system/issues/167">{`research`}</Link>
       {` on GitHub.`}
-    </Paragraph>
+    </Cite>
     <Subheading>{`Donate Link`}</Subheading>
     <Paragraph>{`Use this component to link to the service to donate.`}</Paragraph>
     <Paragraph>{`When using this component you should:`}</Paragraph>
@@ -200,13 +201,13 @@ const Pages = () => (
     <div className="Pages-example">
       <DonateLink href="http://example.org" />
     </div>
-    <Paragraph>
+    <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/DonateLink">{`code`}</Link>
       {` and `}
       <Link href="https://github.com/barnardos/design-system/issues/353">{`research`}</Link>
       {` on GitHub.`}
-    </Paragraph>
+    </Cite>
     <Subheading>{`Attention Grabbing Link`}</Subheading>
     <Paragraph>{`Use this component within featured content.`}</Paragraph>
     <Paragraph>{`When using this component you should:`}</Paragraph>
@@ -231,13 +232,13 @@ const Pages = () => (
         text="Shop online"
       />
     </div>
-    <Paragraph>
+    <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/AttentionGrabbingLink">{`code`}</Link>
       {` and `}
       <Link href="https://github.com/barnardos/design-system/issues/47">{`research`}</Link>
       {` on GitHub.`}
-    </Paragraph>
+    </Cite>
     <Subheading>{`Back Link`}</Subheading>
     <Paragraph>{`Use this component to link back within a transactional service.`}</Paragraph>
     <Paragraph>{`When using this component you should:`}</Paragraph>
@@ -248,13 +249,13 @@ const Pages = () => (
     <div className="Pages-example">
       <BackLink href="http://example.org" />
     </div>
-    <Paragraph>
+    <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/BackLink">{`code`}</Link>
       {` and `}
       <Link href="https://github.com/barnardos/design-system/issues/166">{`research`}</Link>
       {` on GitHub.`}
-    </Paragraph>
+    </Cite>
     <Heading>{`Cards`}</Heading>
     <Paragraph>{`Use these components to provide a summary that links to additional details.`}</Paragraph>
     <Subheading>{`Card`}</Subheading>
@@ -272,13 +273,13 @@ const Pages = () => (
         title="Other ways to donate"
       >{`Find out ways to help support vulnerable children including making one-off or regular donations.`}</Card>
     </div>
-    <Paragraph>
+    <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Card">{`code`}</Link>
       {` and `}
       <Link href="https://github.com/barnardos/design-system/issues/91">{`research`}</Link>
       {` on GitHub.`}
-    </Paragraph>
+    </Cite>
     <Subheading>{`Attention Grabbing Card`}</Subheading>
     <div className="Pages-example">
       <AttentionGrabbingCard
@@ -289,13 +290,13 @@ const Pages = () => (
         text="Sign up"
       >{`Taking in the sights and sounds of the coast, this fantastic 26.2 mile route covers Hove and finishes at the famous Brighton Pier.`}</AttentionGrabbingCard>
     </div>
-    <Paragraph>
+    <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/AttentionGrabbingCard">{`code`}</Link>
       {` and `}
       <Link href="https://github.com/barnardos/design-system/issues/401">{`research`}</Link>
       {` on GitHub.`}
-    </Paragraph>
+    </Cite>
     <Heading>{`Breadcrumbs`}</Heading>
     <Paragraph>{`Use this component to help a user identify their current location.`}</Paragraph>
     <Paragraph>{`When using this component you should:`}</Paragraph>
@@ -316,13 +317,13 @@ const Pages = () => (
         ]}
       />
     </div>
-    <Paragraph>
+    <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Breadcrumbs">{`code`}</Link>
       {` and `}
       <Link href="https://github.com/barnardos/design-system/issues/2">{`research`}</Link>
       {` on GitHub.`}
-    </Paragraph>
+    </Cite>
     <Heading>{`Pagination`}</Heading>
     <Paragraph>{`Use this component to break large pieces of content across multiple pages.`}</Paragraph>
     <div className="Pages-example">
@@ -337,25 +338,25 @@ const Pages = () => (
         }}
       />
     </div>
-    <Paragraph>
+    <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Pagination">{`code`}</Link>
       {` and `}
       <Link href="https://github.com/barnardos/design-system/issues/250">{`research`}</Link>
       {` on GitHub.`}
-    </Paragraph>
+    </Cite>
     <Heading>{`Command`}</Heading>
     <Paragraph>{`Use this component for interactive triggers that don't submit data.`}</Paragraph>
     <div className="Pages-example">
       <Command>Menu</Command>
     </div>
-    <Paragraph>
+    <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Command">{`code`}</Link>
       {` and `}
       <Link href="https://github.com/barnardos/design-system/issues/33">{`research`}</Link>
       {` on GitHub.`}
-    </Paragraph>
+    </Cite>
     <Heading>{`Menu`}</Heading>
     <Paragraph>{`Use this component to navigate between top-level items.`}</Paragraph>
     <Paragraph>{`When using this component you should:`}</Paragraph>
@@ -415,13 +416,13 @@ const Pages = () => (
         />
       </div>
     </div>
-    <Paragraph>
+    <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Menu">{`code`}</Link>
       {` and `}
       <Link href="https://github.com/barnardos/design-system/issues/2">{`research`}</Link>
       {` on GitHub.`}
-    </Paragraph>
+    </Cite>
     <Heading>{`Header`}</Heading>
     <Paragraph>{`When using this component you should:`}</Paragraph>
     <UnorderedList>
@@ -455,13 +456,13 @@ const Pages = () => (
         />
       </div>
     </div>
-    <Paragraph>
+    <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Header">{`code`}</Link>
       {` and `}
       <Link href="https://github.com/barnardos/design-system/issues/2">{`research`}</Link>
       {` on GitHub.`}
-    </Paragraph>
+    </Cite>
     <Heading>{`Footer`}</Heading>
     <div className="Pages-example Pages-example--full">
       <div
@@ -492,13 +493,13 @@ const Pages = () => (
         >{`© Barnardo's 2018`}</Footer>
       </div>
     </div>
-    <Paragraph>
+    <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Footer">{`code`}</Link>
       {` and `}
       <Link href="https://github.com/barnardos/design-system/issues/301">{`research`}</Link>
       {` on GitHub.`}
-    </Paragraph>
+    </Cite>
   </Layout>
 );
 

@@ -3,6 +3,7 @@ import React from "react";
 
 import AttentionGrabbingQuote from "../../components/AttentionGrabbingQuote";
 import Breadcrumbs from "../../components/Breadcrumbs";
+import Cite from "../../components/Cite";
 import Fact from "../../components/Fact";
 import Caption from "../../components/Caption";
 import Heading from "../../components/Heading";
@@ -99,13 +100,13 @@ const Pages = () => (
         <UnorderedListItem>{`reduced parental stress`}</UnorderedListItem>
       </UnorderedList>
     </div>
-    <Paragraph>
+    <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/UnorderedListItem">{`code`}</Link>
       {` and `}
       <Link href="https://github.com/barnardos/design-system/issues/325">{`research`}</Link>
       {` on GitHub.`}
-    </Paragraph>
+    </Cite>
     <Heading>{`Caption`}</Heading>
     <Paragraph>{`Use this component to add a caption, for example to images and videos.`}</Paragraph>
     <div className="Pages-example">
@@ -116,13 +117,13 @@ const Pages = () => (
         />
       </Caption>
     </div>
-    <Paragraph>
+    <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Caption">{`code`}</Link>
       {` and `}
       <Link href="https://github.com/barnardos/design-system/issues/300">{`research`}</Link>
       {` on GitHub.`}
-    </Paragraph>
+    </Cite>
     <Heading>{`Fact`}</Heading>
     <Paragraph>{`Use this component for facts.`}</Paragraph>
     <div className="Pages-example">
@@ -131,13 +132,13 @@ const Pages = () => (
     <div className="Pages-example">
       <Fact colour="purple" label="had improved self-esteem">{`73%`}</Fact>
     </div>
-    <Paragraph>
+    <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Fact">{`code`}</Link>
       {` and `}
       <Link href="https://github.com/barnardos/design-system/issues/212">{`research`}</Link>
       {` on GitHub.`}
-    </Paragraph>
+    </Cite>
     <Heading>{`Quotes`}</Heading>
     <Paragraph>{`Use this component for quotes, for example an excerpt from an article or quotation from a person.`}</Paragraph>
     <Subheading>{`Quote`}</Subheading>
@@ -158,13 +159,13 @@ const Pages = () => (
         src="https://dummyimage.com/480x480/bbbbbb/d2d2d2.png&amp;text=1:1"
       >{`The family support worker is able to engage and build positive relationships with families who previously kept their distance from school.`}</Quote>
     </div>
-    <Paragraph>
+    <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Quote">{`code`}</Link>
       {` and `}
       <Link href="https://github.com/barnardos/design-system/issues/252">{`research`}</Link>
       {` on GitHub.`}
-    </Paragraph>
+    </Cite>
     <Subheading>{`Attention Grabbing Quote`}</Subheading>
     <Paragraph>{`When using this component you should:`}</Paragraph>
     <UnorderedList>
@@ -180,13 +181,13 @@ const Pages = () => (
     <div className="Pages-example">
       <AttentionGrabbingQuote colour="black">{`I just needed a push in the right direction, and a stepping stone to act as a bridge across to adulthood. I finally feel that I'm closer to being happy.`}</AttentionGrabbingQuote>
     </div>
-    <Paragraph>
+    <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/AttentionGrabbingQuote">{`code`}</Link>
       {` and `}
       <Link href="https://github.com/barnardos/design-system/issues/321">{`research`}</Link>
       {` on GitHub.`}
-    </Paragraph>
+    </Cite>
   </Layout>
 );
 

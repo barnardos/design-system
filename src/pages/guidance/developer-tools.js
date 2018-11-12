@@ -2,6 +2,7 @@ import Helmet from "react-helmet";
 import React from "react";
 
 import Breadcrumbs from "../../components/Breadcrumbs";
+import Cite from "../../components/Cite";
 import Heading from "../../components/Heading";
 import Layout from "../../components/Layout";
 import Link from "../../components/Link";
@@ -85,11 +86,11 @@ const Pages = () => (
       <Link href="https://github.com/browserslist/browserslist">{`browserslist`}</Link>
       {` defaults to configure both.`}
     </Paragraph>
-    <Paragraph>
+    <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/issues/183">{`research`}</Link>
       {` on GitHub.`}
-    </Paragraph>
+    </Cite>
   </Layout>
 );
 

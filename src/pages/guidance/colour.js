@@ -2,6 +2,7 @@ import Helmet from "react-helmet";
 import React from "react";
 
 import Breadcrumbs from "../../components/Breadcrumbs";
+import Cite from "../../components/Cite";
 import Heading from "../../components/Heading";
 import Layout from "../../components/Layout";
 import Link from "../../components/Link";
@@ -112,11 +113,11 @@ const Pages = () => (
         <figcaption className="Pages-figureCaption">{`White text on Green with 10% shade on hover and 40% shade for drop shadows.`}</figcaption>
       </figure>
     </div>
-    <Paragraph>
+    <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/issues/14">{`research`}</Link>
       {` on GitHub.`}
-    </Paragraph>
+    </Cite>
   </Layout>
 );
 

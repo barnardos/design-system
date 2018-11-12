@@ -4,6 +4,7 @@ import React from "react";
 import AnyOfManyChoiceControl from "../../components/AnyOfManyChoiceControl";
 import Breadcrumbs from "../../components/Breadcrumbs";
 import ChoiceControl from "../../components/ChoiceControl";
+import Cite from "../../components/Cite";
 import ConditionalControls from "../../components/ConditionalControls";
 import CurrencyControl from "../../components/CurrencyControl";
 import DateControl from "../../components/DateControl";
@@ -151,13 +152,13 @@ const Pages = () => (
         size={16}
       />
     </div>
-    <Paragraph>
+    <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/SinglelineTextControl">{`code`}</Link>
       {` and `}
       <Link href="https://github.com/barnardos/design-system/issues/65">{`research`}</Link>
       {` on GitHub.`}
-    </Paragraph>
+    </Cite>
     <Subheading>{`Multi-Line Text Control`}</Subheading>
     <div className="Pages-example">
       <MultilineTextControl
@@ -167,13 +168,13 @@ const Pages = () => (
         verticalSize={4}
       />
     </div>
-    <Paragraph>
+    <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/MultilineTextControl">{`code`}</Link>
       {` and `}
       <Link href="https://github.com/barnardos/design-system/issues/65">{`research`}</Link>
       {` on GitHub.`}
-    </Paragraph>
+    </Cite>
     <Subheading>{`Currency Control`}</Subheading>
     <div className="Pages-example">
       <CurrencyControl
@@ -182,13 +183,13 @@ const Pages = () => (
         label="Amount"
       />
     </div>
-    <Paragraph>
+    <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/CurrencyControl">{`code`}</Link>
       {` and `}
       <Link href="https://github.com/barnardos/design-system/issues/160">{`research`}</Link>
       {` on GitHub.`}
-    </Paragraph>
+    </Cite>
     <Subheading>{`Date Control`}</Subheading>
     <Paragraph>{`Use this component for date entry. You should:`}</Paragraph>
     <UnorderedList>
@@ -202,13 +203,13 @@ const Pages = () => (
     <div className="Pages-example">
       <DateControl id="date-control-example" label="Date of birth" />
     </div>
-    <Paragraph>
+    <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/DateControl">{`code`}</Link>
       {` and `}
       <Link href="https://github.com/barnardos/design-system/issues/75">{`research`}</Link>
       {` on GitHub.`}
-    </Paragraph>
+    </Cite>
     <Heading>{`Choices`}</Heading>
     <Paragraph>{`Use the components below for choices. You should:`}</Paragraph>
     <UnorderedList>
@@ -237,13 +238,13 @@ const Pages = () => (
         name="one-of-many-choice-control-example"
       />
     </div>
-    <Paragraph>
+    <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/OneOfManyChoiceControl">{`code`}</Link>
       {` and `}
       <Link href="https://github.com/barnardos/design-system/issues/68">{`research`}</Link>
       {` on GitHub.`}
-    </Paragraph>
+    </Cite>
     <Subheading>{`Any-Of-Many Choice Control`}</Subheading>
     <Paragraph>{`When using this component you should:`}</Paragraph>
     <UnorderedList>
@@ -275,13 +276,13 @@ const Pages = () => (
         name="any-of-many-choice-control-example"
       />
     </div>
-    <Paragraph>
+    <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/AnyOfManyChoiceControl">{`code`}</Link>
       {` and `}
       <Link href="https://github.com/barnardos/design-system/issues/68">{`research`}</Link>
       {` on GitHub.`}
-    </Paragraph>
+    </Cite>
     <Subheading>{`Choice Control`}</Subheading>
     <div className="Pages-example">
       <ChoiceControl
@@ -290,13 +291,13 @@ const Pages = () => (
         name="choice-control-example"
       />
     </div>
-    <Paragraph>
+    <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/ChoiceControl">{`code`}</Link>
       {` and `}
       <Link href="https://github.com/barnardos/design-system/issues/68">{`research`}</Link>
       {` on GitHub.`}
-    </Paragraph>
+    </Cite>
     <Subheading>{`Conditional Controls`}</Subheading>
     <div className="Pages-figures">
       <figure className="Pages-figure">
@@ -329,11 +330,11 @@ const Pages = () => (
         <figcaption className="Pages-figureCaption">{`Select a choice to reveal`}</figcaption>
       </figure>
     </div>
-    <Paragraph>
+    <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/issues/86">{`research`}</Link>
       {` on GitHub.`}
-    </Paragraph>
+    </Cite>
     <Heading>{`Validating and submitting`}</Heading>
     <Paragraph>{`Use the components below to validate and submit information.`}</Paragraph>
     <Subheading>{`Submit`}</Subheading>
@@ -346,14 +347,13 @@ const Pages = () => (
     <div className="Pages-example">
       <Submit text="Send application" />
     </div>
-    <Paragraph>
+    <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Submit">{`code`}</Link>
       {` and `}
       <Link href="https://github.com/barnardos/design-system/issues/33">{`research`}</Link>
       {` on GitHub.`}
-    </Paragraph>
-
+    </Cite>
     <Subheading>{`Submit Controls`}</Subheading>
     <Paragraph>{`When using this component you should:`}</Paragraph>
     <UnorderedList>
@@ -430,13 +430,13 @@ const Pages = () => (
         validation="You need to fix the following errors to continue:"
       />
     </div>
-    <Paragraph>
+    <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/SubmitControls">{`code`}</Link>
       {` and `}
       <Link href="https://github.com/barnardos/design-system/issues/67">{`research`}</Link>
       {` on GitHub.`}
-    </Paragraph>
+    </Cite>
     <Subheading>{`Submit Search Control`}</Subheading>
     <div className="Pages-example">
       <div
@@ -448,11 +448,11 @@ const Pages = () => (
         <SubmitSearchControl />
       </div>
     </div>
-    <Paragraph>
+    <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/SubmitSearchControl">{`code`}</Link>
       {` on GitHub.`}
-    </Paragraph>
+    </Cite>
   </Layout>
 );
 

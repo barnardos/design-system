@@ -1,0 +1,16 @@
+@import "../../custom-properties.css";
+
+/** @define Cite; */
+
+.Cite {
+  font: 300 var(--type--1) system-ui;
+  max-width: 46rem;
+
+  &:not(:first-child) {
+    margin-top: 1rem;
+  }
+}
+
+.Cite-inner {
+  font-style: normal;
+}
