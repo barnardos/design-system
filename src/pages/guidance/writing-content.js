@@ -2,6 +2,7 @@ import Helmet from "react-helmet";
 import React from "react";
 
 import Breadcrumbs from "../../components/Breadcrumbs";
+import Cite from "../../components/Cite";
 import Heading from "../../components/Heading";
 import Layout from "../../components/Layout";
 import Link from "../../components/Link";
@@ -54,7 +55,6 @@ const Pages = () => (
     <Paragraph>{`When styling your writing you should:`}</Paragraph>
     <UnorderedList>
       <ListItem>{`use sentence case`}</ListItem>
-
       <ListItem>{`avoid use of bold`}</ListItem>
       <ListItem>{`use italics for general emphasis`}</ListItem>
       <ListItem>{`use words for single-figure numbers`}</ListItem>
@@ -74,11 +74,11 @@ const Pages = () => (
       <ListItem>{`postcode (no hyphen)`}</ListItem>
       <ListItem>{`website (no hyphen)`}</ListItem>
     </UnorderedList>
-    <Paragraph>
+    <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/issues/87">{`research`}</Link>
       {` on GitHub.`}
-    </Paragraph>
+    </Cite>
   </Layout>
 );
 

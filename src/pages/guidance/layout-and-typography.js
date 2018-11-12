@@ -2,6 +2,7 @@ import Helmet from "react-helmet";
 import React from "react";
 
 import Breadcrumbs from "../../components/Breadcrumbs";
+import Cite from "../../components/Cite";
 import Heading from "../../components/Heading";
 import Subheading from "../../components/Subheading";
 import Layout from "../../components/Layout";
@@ -210,11 +211,11 @@ const Pages = () => (
         </figcaption>
       </figure>
     </div>
-    <Paragraph>
+    <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/custom-properties.css">{`code`}</Link>
       {` on GitHub.`}
-    </Paragraph>
+    </Cite>
     <Heading>{`Layout`}</Heading>
     <Paragraph>{`To create simple and fluid layouts you should:`}</Paragraph>
     <UnorderedList>
@@ -254,16 +255,13 @@ const Pages = () => (
       <ListItem>{`up to 106.25% to give a paragraph size and gutters  of 17`}</ListItem>
       <ListItem>{`further up to 112.5% to give a paragraph size and gutters of 18`}</ListItem>
     </UnorderedList>
-    <Paragraph>
+    <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/proportional-scale.css">{`code`}</Link>
-      {` on GitHub.`}
-    </Paragraph>
-    <Paragraph>
-      {`View `}
+      {` and `}
       <Link href="https://github.com/barnardos/design-system/issues/1">{`research`}</Link>
       {` on GitHub.`}
-    </Paragraph>
+    </Cite>
   </Layout>
 );
 

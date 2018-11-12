@@ -4,6 +4,7 @@ import React from "react";
 
 import Link from "../../components/Link";
 import Breadcrumbs from "../../components/Breadcrumbs";
+import Cite from "../../components/Cite";
 import Filter from "../../components/Filter";
 import Heading from "../../components/Heading";
 import Layout from "../../components/Layout";
@@ -142,13 +143,13 @@ const Pages = () => (
         </div>
       </div>
     </div>
-    <Paragraph>
+    <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Filter">{`code`}</Link>
       {` and `}
       <Link href="https://github.com/barnardos/design-system/issues/79">{`research`}</Link>
       {` on GitHub.`}
-    </Paragraph>
+    </Cite>
   </Layout>
 );
 
