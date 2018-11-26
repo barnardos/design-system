@@ -22,43 +22,60 @@ class Menu extends Component {
   }
 
   render() {
-    const { isRevealing } = this.props;
     const { isActive } = this.state;
-    const MenuClassName = `Menu ${isRevealing ? "Menu--revealing" : ""}`;
     const detailsClassName = `Menu-details ${
       isActive ? "Menu-details--active" : ""
     }`;
     return (
-      <nav className={MenuClassName}>
-        {isRevealing && (
-          <div className="Menu-command">
-            <Command onClick={this.handleClick}>
+      <nav className="Menu">
+        <div className="Menu-command">
+          <Command onClick={this.handleClick}>
+            <a className="Menu-commandLink" href="#menu">
               <img
                 alt="Open menu"
                 src={burgerSvg}
                 style={{ width: "1.5rem" }}
               />
+              <span className="Menu-commandText">{` Menu`}</span>
+            </a>
+          </Command>
+        </div>
+        <div className={detailsClassName}>
+          <div className="Menu-command Menu-command--close">
+            <Command onClick={this.handleClick}>
+              <img
+                alt="Close menu"
+                src={crossSvg}
+                style={{ width: "1.5rem" }}
+              />
+              <span className="Menu-commandText">{` Menu`}</span>
             </Command>
           </div>
-        )}
-        <div className={detailsClassName}>
-          {isRevealing && (
-            <div className="Menu-command">
-              <Command onClick={this.handleClick}>
-                <img
-                  alt="Close menu"
-                  src={crossSvg}
-                  style={{ width: "1.5rem" }}
-                />
-              </Command>
-            </div>
-          )}
           <ul className="Menu-items">
-            {this.props.items.map(({ text, href }, index) => (
-              <li className="Menu-item" key={index}>
+            {this.props.items.map(({ isActive, text, href, items }, index) => (
+              <li
+                className={`Menu-item ${isActive ? "Menu-item--active" : ""}`}
+                key={index}
+              >
                 <a className="Menu-link" href={href}>
                   {text}
                 </a>
+                {items && (
+                  <ul className="Menu-secondaryItems">
+                    {items.map(({ isActive, text, href }, index) => (
+                      <li
+                        className={`Menu-secondaryItem ${
+                          isActive ? "Menu-secondaryItem--active" : ""
+                        }`}
+                        key={index}
+                      >
+                        <a className="Menu-secondaryLink" href={href}>
+                          {text}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </li>
             ))}
           </ul>
@@ -69,7 +86,6 @@ class Menu extends Component {
 }
 
 Menu.propTypes = {
-  isRevealing: PropTypes.bool,
   items: PropTypes.array.isRequired
 };
 

@@ -3,13 +3,8 @@
 /** @define Header; */
 
 .Header {
-  align-items: flex-end;
   box-shadow: inset 0 -1px 0 0 color-mod(var(--black) tint(90%));
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(2, 1fr);
   padding: 1rem;
-  position: relative;
 }
 
 .Header-logo {
@@ -23,66 +18,6 @@
   width: 6.5rem;
 }
 
-.Header-menu {
-  grid-column: 1 / span 2;
-  grid-row: 2;
-  margin-bottom: -1rem;
-}
-
-.Header-submitSearchControl {
-  grid-column: 2;
-  grid-row: 1;
-}
-
-.Header-linkItems {
-  display: flex;
-  grid-column: 1 / span 2;
-  grid-row: 3;
-  list-style: none;
-  width: 100%;
-}
-
-.Header-linkItem {
-  flex: 1;
-
-  &:not(:first-child) {
-    margin-left: 0.5rem;
-  }
-}
-
-.Header-link {
-  background-color: var(--black);
-  color: var(--white);
-  display: block;
-  font: 600 var(--type-2) Nova, sans-serif;
-  padding: 0.5rem;
-  text-align: center;
-  white-space: nowrap;
-
-  &:hover {
-    background-color: var(--black);
-  }
-}
-
-@media (min-width: 36rem) {
-  .Header {
-    grid-template-columns: 8rem auto 3rem;
-  }
-
-  .Header-submitSearchControl {
-    grid-column: 3;
-  }
-
-  .Header-linkItems {
-    grid-column: 2;
-    grid-row: 1;
-  }
-
-  .Header-menu {
-    grid-column: 1 / span 3;
-  }
-}
-
 @media (min-width: 48rem) {
   .Header {
     padding: 1.5rem 2rem;
@@ -91,15 +26,5 @@
   .Header-logoInner {
     height: 3.5rem;
     width: 8rem;
-  }
-
-  .Header-menu {
-    margin-bottom: -1.5rem;
-  }
-}
-
-@media (min-width: 56rem) {
-  .Header {
-    grid-template-columns: 8rem auto auto;
   }
 }
