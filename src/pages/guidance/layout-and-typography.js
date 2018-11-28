@@ -3,6 +3,7 @@ import React from "react";
 
 import Breadcrumbs from "../../components/Breadcrumbs";
 import Cite from "../../components/Cite";
+import Code from "../../components/Code";
 import Heading from "../../components/Heading";
 import Subheading from "../../components/Subheading";
 import Layout from "../../components/Layout";
@@ -167,6 +168,15 @@ const Pages = () => (
       <ListItem>{`Proxima Nova light`}</ListItem>
       <ListItem>{`system-ui light`}</ListItem>
     </UnorderedList>
+    <Paragraph>
+      {`Use "`}
+      <Code>{`djy7snj`}</Code>
+      {`" for the `}
+      <Link href="https://helpx.adobe.com/uk/fonts/using/embed-codes.html">
+        {`Adobe Fonts embed code`}
+      </Link>
+      {`. This code is valid for all of Barnardo's products.`}
+    </Paragraph>
     <Paragraph>{`Using a base of 16 and exponents of 1.125 for type sizes provides flexibility to create a visual hierarchy.`}</Paragraph>
     <Paragraph>{`For example, you could have:`}</Paragraph>
     <div className="Pages-figures">

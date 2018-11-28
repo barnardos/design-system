@@ -10,7 +10,7 @@
 
 .Feedback-title {
   color: var(--green);
-  font: 600 var(--type-4) Nova, sans-serif;
+  font: 600 var(--type-4) proxima-nova, sans-serif;
 }
 
 .Feedback-children {

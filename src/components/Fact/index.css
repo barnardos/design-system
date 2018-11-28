@@ -9,7 +9,7 @@
 }
 
 .Fact-children {
-  font: 600 var(--type-12) Nova, sans-serif;
+  font: 600 var(--type-12) proxima-nova, sans-serif;
 }
 
 .Fact-label {

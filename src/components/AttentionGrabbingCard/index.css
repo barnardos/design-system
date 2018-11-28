@@ -28,7 +28,7 @@
 
 .AttentionGrabbingCard-title {
   color: var(--white);
-  font: 600 var(--type-5) Nova, sans-serif;
+  font: 600 var(--type-5) proxima-nova, sans-serif;
 }
 
 .AttentionGrabbingCard-children {

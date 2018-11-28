@@ -3,7 +3,7 @@
 /** @define Lede; */
 
 .Lede {
-  font: 300 var(--type-4) Nova, sans-serif;
+  font: 300 var(--type-4) proxima-nova, sans-serif;
 
   &:not(:first-child) {
     margin-top: 1rem;
