@@ -348,7 +348,7 @@ const Pages = () => (
     <Heading>{`Command`}</Heading>
     <Paragraph>{`Use this component for interactive triggers that don't submit data.`}</Paragraph>
     <div className="Pages-example">
-      <Command>Menu</Command>
+      <Command>Print page</Command>
     </div>
     <Cite>
       {`View `}
@@ -358,59 +358,66 @@ const Pages = () => (
       {` on GitHub.`}
     </Cite>
     <Heading>{`Menu`}</Heading>
-    <Paragraph>{`Use this component to navigate between top-level items.`}</Paragraph>
+    <Paragraph>{`Use this component to navigate to top and secondary level items.`}</Paragraph>
     <Paragraph>{`When using this component you should:`}</Paragraph>
     <UnorderedList>
       <ListItem>{`aim to have the items visible`}</ListItem>
       <ListItem>{`avoid collapsing items into a Command on larger viewports`}</ListItem>
     </UnorderedList>
     <div className="Pages-example">
-      <Menu
-        items={[
-          {
-            text: "About",
-            href: "http://example.org"
-          },
-          {
-            text: "Services",
-            href: "http://example.org"
-          },
-          {
-            text: "Donate",
-            href: "http://example.org"
-          }
-        ]}
-      />
-    </div>
-    <div className="Pages-example">
       <div
         style={{
-          paddingBottom: "20rem",
+          paddingBottom: "28rem",
           position: "relative"
         }}
       >
         <Menu
-          isRevealing
           items={[
             {
-              text: "About",
-              href: "http://example.org"
+              text: "About us",
+              href: "http://example.org",
+              items: [
+                {
+                  text: "Our history",
+                  href: "http://example.org"
+                },
+                {
+                  text: "Annual report",
+                  href: "http://example.org"
+                },
+                {
+                  text: "How we're funded",
+                  href: "http://example.org"
+                }
+              ]
             },
             {
-              text: "Volunteer",
-              href: "http://example.org"
+              text: "What we do",
+              href: "http://example.org",
+              items: [
+                {
+                  text: "Fostering & adoption",
+                  href: "http://example.org"
+                },
+                {
+                  text: "Supporting young adults",
+                  href: "http://example.org"
+                }
+              ]
             },
             {
-              text: "Mission",
-              href: "http://example.org"
-            },
-            {
-              text: "Commission us",
-              href: "http://example.org"
-            },
-            {
-              text: "Donate",
-              href: "http://example.org"
+              text: "Work with us",
+              href: "http://example.org",
+              items: [
+                {
+                  text: "Jobs",
+                  href: "http://example.org"
+                },
+                {
+                  text: "Commission us",
+                  href: "http://example.org"
+                }
+              ]
             }
           ]}
         />
@@ -428,33 +435,8 @@ const Pages = () => (
     <UnorderedList>
       <ListItem>{`link the Barnardo's logo to the homepage`}</ListItem>
     </UnorderedList>
-    <div className="Pages-example Pages-example--full">
-      <div
-        style={{
-          position: "relative",
-          paddingBottom: "3rem"
-        }}
-      >
-        <Header
-          menu={{
-            items: [
-              {
-                text: "About",
-                href: "http://example.org"
-              },
-              {
-                text: "Services",
-                href: "http://example.org"
-              },
-              {
-                text: "Donate",
-                href: "http://example.org"
-              }
-            ]
-          }}
-          search
-        />
-      </div>
+    <div className="Pages-example">
+      <Header />
     </div>
     <Cite>
       {`View `}
@@ -464,7 +446,7 @@ const Pages = () => (
       {` on GitHub.`}
     </Cite>
     <Heading>{`Footer`}</Heading>
-    <div className="Pages-example Pages-example--full">
+    <div className="Pages-example">
       <div
         style={{
           overflow: "hidden",
