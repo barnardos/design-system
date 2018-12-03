@@ -7,7 +7,7 @@
 }
 
 .DesignSystemNavigation-title {
-  font: 600 var(--type-5) Nova, sans-serif;
+  font: 600 var(--type-5) proxima-nova, sans-serif;
 }
 
 .DesignSystemNavigation-item {

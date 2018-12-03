@@ -1,0 +1,7 @@
+@import "../../custom-properties.css";
+
+/** @define Code; */
+
+.Code {
+  font: 400 var(--type-0) monospace;
+}
