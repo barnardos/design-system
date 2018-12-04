@@ -105,6 +105,11 @@ const Pages = () => (
         },
         {
           level: 1,
+          text: "Table Of Contents",
+          to: "/guidance/navigating/#table-of-contents"
+        },
+        {
+          level: 1,
           text: "Pagination",
           to: "/guidance/navigating/#pagination"
         },
@@ -322,6 +327,41 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Breadcrumbs">{`code`}</Link>
       {` and `}
       <Link href="https://github.com/barnardos/design-system/issues/2">{`research`}</Link>
+      {` on GitHub.`}
+    </Cite>
+    <Heading>{`Table Of Contents`}</Heading>
+    <Paragraph>{`Use this component to navigate within a page or section of pages.`}</Paragraph>
+    <div className="Pages-example">
+      <TableOfContents
+        items={[
+          {
+            level: 1,
+            text: "Who can adopt?",
+            to: "/"
+          },
+          {
+            level: 2,
+            text: "If you have children",
+            to: "/"
+          },
+          {
+            level: 2,
+            text: "If you have a partner",
+            to: "/"
+          },
+          {
+            level: 1,
+            text: "Types of adoption",
+            to: "/"
+          }
+        ]}
+      />
+    </div>
+    <Cite>
+      {`View `}
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/TableOfContent">{`code`}</Link>
+      {` and `}
+      <Link href="https://github.com/barnardos/design-system/issues/251">{`research`}</Link>
       {` on GitHub.`}
     </Cite>
     <Heading>{`Pagination`}</Heading>

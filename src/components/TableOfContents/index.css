@@ -3,7 +3,9 @@
 /** @define TableOfContents; */
 
 .TableOfContents {
-  margin-top: 1rem;
+  &:not(:first-child) {
+    margin-top: 1rem;
+  }
 }
 
 .TableOfContents-section {
