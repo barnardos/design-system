@@ -109,6 +109,11 @@ const Pages = () => (
     </Cite>
     <Heading>{`Caption`}</Heading>
     <Paragraph>{`Use this component to add a caption, for example to images and videos.`}</Paragraph>
+    <Paragraph>{`When using this component you should:`}</Paragraph>
+    <UnorderedList>
+      <ListItem>{`be clear and concise`}</ListItem>
+      <ListItem>{`provide a description that makes sense out of context`}</ListItem>
+    </UnorderedList>
     <div className="Pages-example">
       <Caption label="Participants receiving their certificate">
         <Image
@@ -126,6 +131,11 @@ const Pages = () => (
     </Cite>
     <Heading>{`Fact`}</Heading>
     <Paragraph>{`Use this component for facts.`}</Paragraph>
+    <Paragraph>{`When using this component you should:`}</Paragraph>
+    <UnorderedList>
+      <ListItem>{`use data that’s compelling and easy to understand`}</ListItem>
+      <ListItem>{`limit the number on each page`}</ListItem>
+    </UnorderedList>
     <div className="Pages-example">
       <Fact label="children supported through our school-based programmes">{`23,500`}</Fact>
     </div>
@@ -140,8 +150,13 @@ const Pages = () => (
       {` on GitHub.`}
     </Cite>
     <Heading>{`Quotes`}</Heading>
-    <Paragraph>{`Use this component for quotes, for example an excerpt from an article or quotation from a person.`}</Paragraph>
+    <Paragraph>{`Use these components for quotes, for example an excerpt from an article or quotation from a person.`}</Paragraph>
     <Subheading>{`Quote`}</Subheading>
+    <Paragraph>{`When using this component you should:`}</Paragraph>
+    <UnorderedList>
+      <ListItem>{`use a short sentence with one main idea`}</ListItem>
+      <ListItem>{`limit the number on each page`}</ListItem>
+    </UnorderedList>
     <div className="Pages-example">
       <Quote>{`Parents needed more support with their emotional wellbeing, boundaries, behaviour, home and money.`}</Quote>
     </div>
