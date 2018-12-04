@@ -11,8 +11,7 @@
   position: relative;
   text-align: center;
 
-  &:active,
   &:hover {
-    background-color: color-mod(var(--green) shade(10%));
+    text-decoration: none;
   }
 }

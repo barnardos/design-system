@@ -18,5 +18,10 @@
 }
 
 .Breadcrumbs-link {
+  color: color-mod(var(--green) shade(20%));
   font: 300 var(--type-0) system-ui;
+
+  &:hover {
+    text-decoration: none;
+  }
 }

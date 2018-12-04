@@ -43,9 +43,9 @@ const Pages = () => (
     </Paragraph>
     <Paragraph>
       {`It is a set of `}
-      <GatsbyLink to="/principles/">{`Principles`}</GatsbyLink>
+      <GatsbyLink className="Link" to="/principles/">{`Principles`}</GatsbyLink>
       {` and `}
-      <GatsbyLink to="/guidance/">{`Guidance`}</GatsbyLink>
+      <GatsbyLink className="Link" to="/guidance/">{`Guidance`}</GatsbyLink>
       {`.`}
     </Paragraph>
     <Paragraph>{`The principles are how you should think about designing your product.`}</Paragraph>
