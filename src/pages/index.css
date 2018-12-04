@@ -40,18 +40,20 @@
   }
 }
 
-.Pages-figure--positioned .Pages-figureCaption {
-  bottom: 0;
-  left: -3rem;
-  margin-top: 0;
-  padding: 0;
-  position: absolute;
-}
-
 .Pages-figureCaptionItem {
   display: block;
   padding: 0 0.5rem;
   position: relative;
+  text-align: right;
+}
+
+.Pages-figure--positioned .Pages-figureCaption {
+  bottom: 0;
+  left: -6rem;
+  margin-top: 0;
+  min-width: 5rem;
+  padding: 0;
+  position: absolute;
   text-align: right;
 }
 
@@ -62,7 +64,7 @@
   display: flex;
   font: 300 var(--type--2) system-ui;
   font-variant-numeric: tabular-nums;
-  left: 3rem;
+  left: 6rem;
   position: absolute;
   right: 0;
   z-index: -1;

@@ -58,8 +58,8 @@ const Pages = () => (
     />
     <Paragraph>{`To unify layout and typography you should use:`}</Paragraph>
     <UnorderedList>
-      <ListItem>{`multiples of 4 for spacing, flourishes, and line heights`}</ListItem>
-      <ListItem>{`a base of 16 for paragraphs`}</ListItem>
+      <ListItem>{`multiples of 0.25rem (roughly 4px) for spacing, flourishes, and line heights`}</ListItem>
+      <ListItem>{`a base of 1rem (roughly 16px) for paragraphs`}</ListItem>
       <ListItem>{`exponents of 1.125 for other type sizes`}</ListItem>
     </UnorderedList>
     <div className="Pages-figures">
@@ -71,7 +71,7 @@ const Pages = () => (
         <div
           className="Pages-figureKey"
           style={{
-            height: "2.25rem",
+            height: "2rem",
             top: "0"
           }}
         />
@@ -79,27 +79,27 @@ const Pages = () => (
           className="Pages-figureKey"
           style={{
             height: "3rem",
-            top: "3.25rem"
+            top: "3rem"
           }}
         />
         <div
           className="Pages-figureKey"
           style={{
-            height: "2.25rem",
-            top: "7.25rem"
+            height: "2rem",
+            top: "7rem"
           }}
         />
         <div
           className="Pages-figureKey"
           style={{
             height: "3rem",
-            top: "10rem"
+            top: "9.5rem"
           }}
         />
         <div
           style={{
             maxWidth: "19rem",
-            paddingLeft: "3rem",
+            paddingLeft: "6rem",
             position: "relative",
             zIndex: "1"
           }}
@@ -110,7 +110,7 @@ const Pages = () => (
               <p
                 className="Pages-figureCaptionItem"
                 style={{ top: "0.5rem" }}
-              >{`36`}</p>
+              >{`2.25rem`}</p>
             </figcaption>
           </figure>
           <figure className="Pages-figure Pages-figure--positioned">
@@ -122,11 +122,11 @@ const Pages = () => (
               <p
                 className="Pages-figureCaptionItem"
                 style={{ top: "0" }}
-              >{`16`}</p>
+              >{`2rem`}</p>
               <p
                 className="Pages-figureCaptionItem"
                 style={{ top: "0.5rem" }}
-              >{`48`}</p>
+              >{`3rem`}</p>
             </figcaption>
           </figure>
           <figure className="Pages-figure Pages-figure--positioned">
@@ -142,23 +142,23 @@ const Pages = () => (
               <p
                 className="Pages-figureCaptionItem"
                 style={{ top: "0.75rem" }}
-              >{`16`}</p>
+              >{`2rem`}</p>
+              <p
+                className="Pages-figureCaptionItem"
+                style={{ top: "0.75rem" }}
+              >{`2.25rem`}</p>
+              <p
+                className="Pages-figureCaptionItem"
+                style={{ top: "0.75rem" }}
+              >{`1rem`}</p>
               <p
                 className="Pages-figureCaptionItem"
                 style={{ top: "1.25rem" }}
-              >{`36`}</p>
-              <p
-                className="Pages-figureCaptionItem"
-                style={{ top: "1.25rem" }}
-              >{`8`}</p>
-              <p
-                className="Pages-figureCaptionItem"
-                style={{ top: "1.5rem" }}
-              >{`48`}</p>
+              >{`3rem`}</p>
             </figcaption>
           </figure>
         </div>
-        <p className="Pages-figureCaption">{`Paragraph has a base of 16. 'Email' is three steps up the 1.125 scale from the base.`}</p>
+        <p className="Pages-figureCaption">{`Paragraph has a base of 1rem. 'Email' is three steps up the 1.125 scale from the base.`}</p>
       </div>
     </div>
     <Heading>{`Typography`}</Heading>
@@ -177,13 +177,15 @@ const Pages = () => (
       </Link>
       {`. This code is valid for all of Barnardo's products.`}
     </Paragraph>
-    <Paragraph>{`Using a base of 16 and exponents of 1.125 for type sizes provides flexibility to create a visual hierarchy.`}</Paragraph>
+    <Paragraph>{`Using a base of 1rem and exponents of 1.125 for type sizes provides flexibility to create a visual hierarchy.`}</Paragraph>
     <Paragraph>{`For example, you could have:`}</Paragraph>
     <div className="Pages-figures">
       <figure className="Pages-figure">
         <Title>{`Title `}</Title>
         <figcaption className="Pages-figureCaption">
-          {`16 * 1.125^8 (roughly 41px/48px), 16 * 1.125^9 (roughly 46px/52px) at larger viewport sizes`}
+          {`1rem * 1.125^8 (roughly 41px/48px)`}
+          <br />
+          {`1rem * 1.125^9 (roughly 46px/52px) on larger viewports`}
           <br />
           {`Proxima Nova Semi-Bold`}
         </figcaption>
@@ -191,7 +193,7 @@ const Pages = () => (
       <figure className="Pages-figure">
         <Lede>{`Lede`}</Lede>
         <figcaption className="Pages-figureCaption">
-          {`16 * 1.125^4 (roughly 26px/32px)`}
+          {`1rem * 1.125^4 (roughly 26px/32px)`}
           <br />
           {`Proxima Nova Light`}
         </figcaption>
@@ -199,7 +201,7 @@ const Pages = () => (
       <figure className="Pages-figure">
         <Heading>{`Heading`}</Heading>
         <figcaption className="Pages-figureCaption">
-          {`16 * 1.125^5 (roughly 29px/32px)`}
+          {`1rem * 1.125^5 (roughly 29px/32px)`}
           <br />
           {`Proxima Nova Semi-Bold`}
         </figcaption>
@@ -207,7 +209,7 @@ const Pages = () => (
       <figure className="Pages-figure">
         <Subheading>{`Subheading`}</Subheading>
         <figcaption className="Pages-figureCaption">
-          {`16 * 1.125^4 (roughly 26px/32px)`}
+          {`1rem * 1.125^4 (roughly 26px/32px)`}
           <br />
           {`Proxima Nova Light`}
         </figcaption>
@@ -215,7 +217,7 @@ const Pages = () => (
       <figure className="Pages-figure">
         <Paragraph>{`Paragraph`}</Paragraph>
         <figcaption className="Pages-figureCaption">
-          {`16 * 1.125^0 (roughly 16px/24px)`}
+          {`1rem * 1.125^0 (roughly 16px/24px)`}
           <br />
           {`system-ui light`}
         </figcaption>
@@ -229,7 +231,7 @@ const Pages = () => (
     <Heading>{`Layout`}</Heading>
     <Paragraph>{`To create simple and fluid layouts you should:`}</Paragraph>
     <UnorderedList>
-      <ListItem>{`use multiples of 4 for spacing and flourishes`}</ListItem>
+      <ListItem>{`use multiples of 0.25rem for spacing and flourishes`}</ListItem>
       <ListItem>{`use ample white space between elements`}</ListItem>
       <ListItem>{`avoid using thin lines for flourishes`}</ListItem>
     </UnorderedList>
@@ -240,7 +242,7 @@ const Pages = () => (
           <div className="Pages-figureDemoItem Pages-figureDemoItem--second" />
         </div>
         <figcaption className="Pages-figureCaption">
-          {`Expands to two-thirds/one-third with gutter of 32`}
+          {`Expands to two-thirds/one-third with gutter of 2rem`}
         </figcaption>
       </figure>
       <figure className="Pages-figure">
@@ -248,7 +250,7 @@ const Pages = () => (
           <div className="Pages-figureDemoItem" />
         </div>
         <figcaption className="Pages-figureCaption">
-          {`Centered with maximum width of 448 and shadow of 4`}
+          {`Centered with maximum width of 28rem and shadow of 0.25rem`}
         </figcaption>
       </figure>
     </div>
@@ -259,11 +261,11 @@ const Pages = () => (
       <ListItem>{`15–40 characters for short lines`}</ListItem>
       <ListItem>{`40–95 characters for body copy`}</ListItem>
     </UnorderedList>
-    <Paragraph>{`For example, you could scale the base of 16:`}</Paragraph>
+    <Paragraph>{`For example, you could scale the base of 1rem (roughly 16px):`}</Paragraph>
     <UnorderedList>
-      <ListItem>{`down to 93.75% to give a paragraph size and gutters of 15`}</ListItem>
-      <ListItem>{`up to 106.25% to give a paragraph size and gutters  of 17`}</ListItem>
-      <ListItem>{`further up to 112.5% to give a paragraph size and gutters of 18`}</ListItem>
+      <ListItem>{`down to 93.75% to give a paragraph size and gutters of roughly 15px`}</ListItem>
+      <ListItem>{`up to 106.25% to give a paragraph size and gutters of roughly 17px`}</ListItem>
+      <ListItem>{`further up to 112.5% to give a paragraph size and gutters of roughly 18px`}</ListItem>
     </UnorderedList>
     <Cite>
       {`View `}
