@@ -25,6 +25,10 @@
 .SubmitControls-validationItemLink {
   color: var(--red);
   font: 600 var(--type-0) system-ui;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .SubmitControls-controls {

@@ -11,6 +11,7 @@
 }
 
 .Pagination-link {
+  color: color-mod(var(--green) shade(20%));
   display: block;
   padding-left: 1rem;
   position: relative;
@@ -24,6 +25,10 @@
     position: absolute;
     top: 0.5rem;
     width: 1rem;
+  }
+
+  &:hover {
+    text-decoration: none;
   }
 }
 

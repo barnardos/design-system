@@ -1,0 +1,13 @@
+@import "../../custom-properties.css";
+
+.Link {
+  color: color-mod(var(--green) shade(20%));
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:visited {
+    color: color-mod(var(--purple) shade(20%));
+  }
+}

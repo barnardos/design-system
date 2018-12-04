@@ -10,6 +10,10 @@
   padding: 0.5rem 1rem;
   position: relative;
   text-align: center;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .AttentionGrabbingLink--full {
@@ -18,45 +22,20 @@
 
 .AttentionGrabbingLink--black {
   background-color: var(--black);
-
-  &:active,
-  &:hover {
-    background-color: color-mod(var(--black) shade(10%));
-  }
 }
 
 .AttentionGrabbingLink--orange {
   background-color: var(--orange);
-
-  &:active,
-  &:hover {
-    background-color: color-mod(var(--orange) shade(10%));
-  }
 }
 
 .AttentionGrabbingLink--pink {
   background-color: var(--pink);
-
-  &:active,
-  &:hover {
-    background-color: color-mod(var(--pink) shade(10%));
-  }
 }
 
 .AttentionGrabbingLink--purple {
   background-color: var(--purple);
-
-  &:active,
-  &:hover {
-    background-color: color-mod(var(--purple) shade(10%));
-  }
 }
 
 .AttentionGrabbingLink--teal {
   background-color: var(--teal);
-
-  &:active,
-  &:hover {
-    background-color: color-mod(var(--teal) shade(10%));
-  }
 }

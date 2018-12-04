@@ -22,7 +22,16 @@
 }
 
 .TableOfContents-link {
+  color: color-mod(var(--green) shade(20%));
   font: 600 var(--type-0) system-ui;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:visited {
+    color: color-mod(var(--purple) shade(20%));
+  }
 }
 
 .TableOfContents-item--level2 {

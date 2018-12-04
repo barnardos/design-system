@@ -20,8 +20,13 @@
 }
 
 .Card-title {
+  color: color-mod(var(--green) shade(20%));
   font: 600 var(--type-5) proxima-nova, sans-serif;
   text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .Card-meta {

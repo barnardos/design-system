@@ -5,6 +5,7 @@ import React from "react";
 import Feedback from "../Feedback";
 import Footer from "../Footer";
 import Header from "../Header";
+import Link from "../Link";
 
 import favicon from "./favicon.ico";
 
@@ -23,9 +24,9 @@ const Layout = ({ children }) => (
     <div className="Layout-feedback">
       <Feedback title="Give feedback">
         {`Email the Design System team on `}
-        <a href="mailto:designsystem@barnardos.org.uk">
+        <Link href="mailto:designsystem@barnardos.org.uk">
           {`designsystem@barnardos.org.uk`}
-        </a>
+        </Link>
         {`.`}
       </Feedback>
     </div>

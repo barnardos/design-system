@@ -12,9 +12,8 @@
   position: relative;
   text-align: center;
 
-  &:active,
   &:hover {
-    color: color-mod(var(--green) shade(10%));
+    text-decoration: none;
   }
 
   &:visited {

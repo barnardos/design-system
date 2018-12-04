@@ -37,7 +37,10 @@ const Pages = () => (
       <ListItem>{`choose a flat graphic style`}</ListItem>
       <ListItem>
         {`use the `}
-        <GatsbyLink to="/guidance/colour/#brand-colours">{`brand colours`}</GatsbyLink>
+        <GatsbyLink
+          className="Link"
+          to="/guidance/colour/#brand-colours"
+        >{`brand colours`}</GatsbyLink>
       </ListItem>
       <ListItem>{`avoid relying on icons to convey important information`}</ListItem>
     </UnorderedList>

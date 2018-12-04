@@ -34,7 +34,10 @@ const Pages = () => (
     <Title>{`Accessibility`}</Title>
     <Paragraph>
       {`When considering accessibility, follow the principle `}
-      <GatsbyLink to="/principles/#2-be-inclusive">{`'be inclusive'`}</GatsbyLink>
+      <GatsbyLink
+        className="Link"
+        to="/principles/#2-be-inclusive"
+      >{`'be inclusive'`}</GatsbyLink>
       {`.`}
     </Paragraph>
     <Paragraph>{`You should:`}</Paragraph>

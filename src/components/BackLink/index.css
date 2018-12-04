@@ -5,7 +5,16 @@
 .BackLink {
   background: transparent url("./triangle.svg") left center no-repeat;
   background-size: 0.75rem 0.75rem;
+  color: color-mod(var(--green) shade(20%));
   display: inline-block;
   font: 300 var(--type-0) system-ui;
   padding-left: 1rem;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:visited {
+    color: color-mod(var(--purple) shade(20%));
+  }
 }
