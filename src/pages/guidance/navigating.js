@@ -332,30 +332,38 @@ const Pages = () => (
     <Heading>{`Table Of Contents`}</Heading>
     <Paragraph>{`Use this component to navigate within a page or section of pages.`}</Paragraph>
     <div className="Pages-example">
-      <TableOfContents
-        items={[
-          {
-            level: 1,
-            text: "Who can adopt?",
-            to: "/"
-          },
-          {
-            level: 2,
-            text: "If you have children",
-            to: "/"
-          },
-          {
-            level: 2,
-            text: "If you have a partner",
-            to: "/"
-          },
-          {
-            level: 1,
-            text: "Types of adoption",
-            to: "/"
-          }
-        ]}
-      />
+      <div
+        style={{
+          height: "12rem",
+          overflow: "hidden",
+          position: "relative"
+        }}
+      >
+        <TableOfContents
+          items={[
+            {
+              level: 1,
+              text: "Who can adopt?",
+              to: "/"
+            },
+            {
+              level: 2,
+              text: "If you have children",
+              to: "/"
+            },
+            {
+              level: 2,
+              text: "If you have a partner",
+              to: "/"
+            },
+            {
+              level: 1,
+              text: "Types of adoption",
+              to: "/"
+            }
+          ]}
+        />
+      </div>
     </div>
     <Cite>
       {`View `}
