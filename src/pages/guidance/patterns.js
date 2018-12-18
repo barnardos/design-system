@@ -1,4 +1,3 @@
-import { Link as GatsbyLink } from "gatsby";
 import Helmet from "react-helmet";
 import React from "react";
 
@@ -10,6 +9,7 @@ import Heading from "../../components/Heading";
 import Layout from "../../components/Layout";
 import ListItem from "../../components/ListItem";
 import Paragraph from "../../components/Paragraph";
+import SinglelineTextControl from "../../components/SinglelineTextControl";
 import SubmitControls from "../../components/SubmitControls";
 import TableOfContents from "../../components/TableOfContents";
 import Title from "../../components/Title";
@@ -40,21 +40,55 @@ const Pages = () => (
       items={[
         {
           level: 1,
-          text: "Filter",
-          to: "/guidance/patterns/#filter"
+          text: "Requesting names",
+          to: "/guidance/patterns/#requesting-names"
+        },
+        {
+          level: 1,
+          text: "Filtering",
+          to: "/guidance/patterns/#filtering"
         }
       ]}
     />
-    <Heading>{`Filter`}</Heading>
+    <Heading>{`Requesting names`}</Heading>
+    <Paragraph>{`Use this pattern when asking for names. You should:`}</Paragraph>
+    <UnorderedList>
+      <ListItem>{`only ask for names when absolutely needed`}</ListItem>
+      <ListItem>{`support all characters users may need to enter`}</ListItem>
+      <ListItem>{`avoid asking for title`}</ListItem>
+    </UnorderedList>
+    <div className="Pages-figures">
+      <figure className="Pages-figure">
+        <SinglelineTextControl
+          id="text-control-full-name-example"
+          label="Full name"
+          size={48}
+        />
+        <figcaption className="Pages-figureCaption">{`Where possible use a single name field to accommodates the broadest range of name types.`}</figcaption>
+      </figure>
+      <figure className="Pages-figure">
+        <SinglelineTextControl
+          id="text-control-first-name-example"
+          label="First name"
+          size={48}
+        />
+        <div
+          style={{
+            marginTop: "1rem"
+          }}
+        >
+          <SinglelineTextControl
+            id="text-control-last-name-example"
+            label="Last name"
+            size={48}
+          />
+        </div>
+        <figcaption className="Pages-figureCaption">{`If your product needs to reliably extract first name and last name, use multiple name fields.`}</figcaption>
+      </figure>
+    </div>
+    <Heading>{`Filtering`}</Heading>
     <Paragraph>{`When filtering you should:`}</Paragraph>
     <UnorderedList>
-      <ListItem>
-        {`follow the guidance for `}
-        <GatsbyLink
-          className="Link"
-          to="/guidance/requesting-information/"
-        >{`requesting information`}</GatsbyLink>
-      </ListItem>
       <ListItem>{`avoid too many filters`}</ListItem>
       <ListItem>{`show common filters at all times`}</ListItem>
       <ListItem>{`dynamically remove filters that have no results`}</ListItem>
