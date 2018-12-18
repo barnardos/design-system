@@ -86,6 +86,11 @@ const Pages = () => (
         <figcaption className="Pages-figureCaption">{`If your product needs to reliably extract first name and last name, use multiple name fields.`}</figcaption>
       </figure>
     </div>
+    <Cite>
+      {`View `}
+      <Link href="https://github.com/barnardos/design-system/issues/404">{`research`}</Link>
+      {` on GitHub.`}
+    </Cite>
     <Heading>{`Filtering`}</Heading>
     <Paragraph>{`When filtering you should:`}</Paragraph>
     <UnorderedList>

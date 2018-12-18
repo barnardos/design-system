@@ -99,6 +99,11 @@ const Pages = () => (
         },
         {
           level: 1,
+          text: "Preventing spam",
+          to: "/guidance/requesting-information/#preventing-spam"
+        },
+        {
+          level: 1,
           text: "Validating and submitting",
           to: "/guidance/requesting-information/#validating-and-submitting"
         },
@@ -333,6 +338,19 @@ const Pages = () => (
     <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/issues/86">{`research`}</Link>
+      {` on GitHub.`}
+    </Cite>
+    <Heading>{`Preventing spam`}</Heading>
+    <Paragraph>{`To prevent spam submissions when requesting information you could try:`}</Paragraph>
+    <UnorderedList>
+      <ListItem>{`rate and connection limiting`}</ListItem>
+      <ListItem>{`using honey pots`}</ListItem>
+      <ListItem>{`transaction monitoring`}</ListItem>
+    </UnorderedList>
+    <Paragraph>{`Avoid using CAPTCHAs, as they cause usability an accessibility issues.`}</Paragraph>
+    <Cite>
+      {`View `}
+      <Link href="https://github.com/barnardos/design-system/issues/411">{`research`}</Link>
       {` on GitHub.`}
     </Cite>
     <Heading>{`Validating and submitting`}</Heading>
