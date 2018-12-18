@@ -35,16 +35,18 @@
 }
 
 @media (min-width: 38rem) {
-  .DesignSystemNavigation-items {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -2rem;
-    margin-top: -1rem;
-  }
+  .DesignSystemNavigation--flex {
+    & .DesignSystemNavigation-items {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -2rem;
+      margin-top: -1rem;
+    }
 
-  .DesignSystemNavigation-item {
-    flex-basis: calc(33% - 2rem);
-    margin-left: 2rem;
-    margin-top: 2rem;
+    & .DesignSystemNavigation-item {
+      flex-basis: calc(33% - 2rem);
+      margin-left: 2rem;
+      margin-top: 2rem;
+    }
   }
 }
