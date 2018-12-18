@@ -1,0 +1,16 @@
+@import "../../custom-properties.css";
+
+/** @define DesignSystemNavigations; */
+
+@media (min-width: 62rem) {
+  .DesignSystemNavigations {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -2rem;
+  }
+
+  .DesignSystemNavigations-item {
+    flex: 1;
+    margin-left: 2rem;
+  }
+}

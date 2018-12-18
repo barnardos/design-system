@@ -59,6 +59,11 @@ const Pages = () => (
         },
         {
           level: 2,
+          text: "Requesting names",
+          to: "/guidance/requesting-information/#requesting-names"
+        },
+        {
+          level: 2,
           text: "Multi-Line Text Control",
           to: "/guidance/requesting-information/#multiline-text-control"
         },
@@ -162,6 +167,47 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/SinglelineTextControl">{`code`}</Link>
       {` and `}
       <Link href="https://github.com/barnardos/design-system/issues/65">{`research`}</Link>
+      {` on GitHub.`}
+    </Cite>
+    <Subheading>{`Requesting names`}</Subheading>
+    <Paragraph>{`Use this pattern when asking for names. You should:`}</Paragraph>
+    <UnorderedList>
+      <ListItem>{`only ask for names when absolutely needed`}</ListItem>
+      <ListItem>{`support all characters users may need to enter`}</ListItem>
+      <ListItem>{`avoid asking for title`}</ListItem>
+    </UnorderedList>
+    <div className="Pages-figures">
+      <figure className="Pages-figure">
+        <SinglelineTextControl
+          id="text-control-full-name-example"
+          label="Full name"
+          size={48}
+        />
+        <figcaption className="Pages-figureCaption">{`Where possible use a single name field to accommodates the broadest range of name types.`}</figcaption>
+      </figure>
+      <figure className="Pages-figure">
+        <SinglelineTextControl
+          id="text-control-first-name-example"
+          label="First name"
+          size={48}
+        />
+        <div
+          style={{
+            marginTop: "1rem"
+          }}
+        >
+          <SinglelineTextControl
+            id="text-control-last-name-example"
+            label="Last name"
+            size={48}
+          />
+        </div>
+        <figcaption className="Pages-figureCaption">{`If your product needs to reliably extract first name and last name, use multiple name fields.`}</figcaption>
+      </figure>
+    </div>
+    <Cite>
+      {`View `}
+      <Link href="https://github.com/barnardos/design-system/issues/404">{`research`}</Link>
       {` on GitHub.`}
     </Cite>
     <Subheading>{`Multi-Line Text Control`}</Subheading>

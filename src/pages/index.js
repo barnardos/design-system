@@ -18,6 +18,7 @@ const Pages = () => (
     <Lede>{`Designing and developing digital products for Barnardo's.`}</Lede>
     <div className="Pages-designSystemNavigation">
       <DesignSystemNavigation
+        isFlex
         items={[
           {
             text: "Getting started",

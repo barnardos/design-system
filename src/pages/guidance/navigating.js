@@ -9,6 +9,7 @@ import Card from "../../components/Card";
 import Cite from "../../components/Cite";
 import Command from "../../components/Command";
 import DonateLink from "../../components/DonateLink";
+import Filter from "../../components/Filter";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import Heading from "../../components/Heading";
@@ -21,6 +22,7 @@ import Paragraph from "../../components/Paragraph";
 import ProgressLink from "../../components/ProgressLink";
 import StartLink from "../../components/StartLink";
 import Subheading from "../../components/Subheading";
+import SubmitControls from "../../components/SubmitControls";
 import TableOfContents from "../../components/TableOfContents";
 import Title from "../../components/Title";
 import UnorderedList from "../../components/UnorderedList";
@@ -31,7 +33,7 @@ import "../index.css";
 const Pages = () => (
   <Layout>
     <Helmet>
-      <title>{`Navigation`}</title>
+      <title>{`Navigating`}</title>
     </Helmet>
     <Breadcrumbs
       items={[
@@ -45,7 +47,7 @@ const Pages = () => (
         }
       ]}
     />
-    <Title>{`Navigation`}</Title>
+    <Title>{`Navigating`}</Title>
     <TableOfContents
       items={[
         {
@@ -117,6 +119,11 @@ const Pages = () => (
           level: 1,
           text: "Command",
           to: "/guidance/navigating/#command"
+        },
+        {
+          level: 1,
+          text: "Filtering",
+          to: "/guidance/navigating/#filtering"
         },
         {
           level: 1,
@@ -403,6 +410,107 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Command">{`code`}</Link>
       {` and `}
       <Link href="https://github.com/barnardos/design-system/issues/33">{`research`}</Link>
+      {` on GitHub.`}
+    </Cite>
+    <Heading>{`Filtering`}</Heading>
+    <Paragraph>{`When filtering you should:`}</Paragraph>
+    <UnorderedList>
+      <ListItem>{`avoid too many filters`}</ListItem>
+      <ListItem>{`show common filters at all times`}</ListItem>
+      <ListItem>{`dynamically remove filters that have no results`}</ListItem>
+      <ListItem>{`show the active filters`}</ListItem>
+      <ListItem>{`include a way to undo each filter`}</ListItem>
+      <ListItem>{`show the number of results`}</ListItem>
+    </UnorderedList>
+    <div className="Pages-example">
+      <div
+        style={{
+          paddingBottom: "16rem",
+          position: "relative"
+        }}
+      >
+        <SubmitControls
+          controls={[
+            {
+              control: "singlelineText",
+              id: "submit-controls-single-line-text-example",
+              hint: "For example town or postcode.",
+              label: "Location",
+              size: 48
+            }
+          ]}
+          submit={{
+            text: "Find"
+          }}
+        />
+        <div
+          style={{
+            marginTop: "1rem"
+          }}
+        >
+          <Filter
+            submitControls={{
+              controls: [
+                {
+                  control: "oneOfManyChoice",
+                  id: "submit-controls-one-of-many-choice-example",
+                  legend: "Within",
+                  name: "submit-controls-one-of-many-choice-example",
+                  choices: [
+                    {
+                      label: "any distance",
+                      id:
+                        "submit-controls-one-of-many-choice-control-example-anydistance"
+                    },
+                    {
+                      label: "1 mile",
+                      id:
+                        "submit-controls-one-of-many-choice-control-example-1m"
+                    },
+                    {
+                      label: "10 miles",
+                      id:
+                        "submit-controls-one-of-many-choice-control-example-10m"
+                    },
+                    {
+                      label: "50 miles",
+                      id:
+                        "submit-controls-one-of-many-choice-control-example-50m"
+                    }
+                  ]
+                },
+                {
+                  control: "anyOfManyChoice",
+                  id: "submit-controls-one-of-many-choice-example",
+                  legend: "Type",
+                  name: "submit-controls-one-of-many-choice-example",
+                  choices: [
+                    {
+                      label: "vegan",
+                      id:
+                        "submit-controls-any-of-many-choice-control-example-vegan"
+                    },
+                    {
+                      label: "vegetarian",
+                      id:
+                        "submit-controls-any-of-many-choice-control-example-vegetarian"
+                    }
+                  ]
+                }
+              ],
+              submit: {
+                text: "Apply filters"
+              }
+            }}
+          />
+        </div>
+      </div>
+    </div>
+    <Cite>
+      {`View `}
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Filter">{`code`}</Link>
+      {` and `}
+      <Link href="https://github.com/barnardos/design-system/issues/79">{`research`}</Link>
       {` on GitHub.`}
     </Cite>
     <Heading>{`Menu`}</Heading>

@@ -2,7 +2,7 @@ import Helmet from "react-helmet";
 import React from "react";
 
 import Breadcrumbs from "../components/Breadcrumbs";
-import DesignSystemNavigation from "../components/DesignSystemNavigation";
+import DesignSystemNavigations from "../components/DesignSystemNavigations";
 import Layout from "../components/Layout";
 import Title from "../components/Title";
 
@@ -24,61 +24,66 @@ const Pages = () => (
     />
     <Title>{`Guidance`}</Title>
     <div className="Pages-designSystemNavigation">
-      <DesignSystemNavigation
-        title="Foundation"
+      <DesignSystemNavigations
         items={[
           {
-            text: "Accessibility",
-            to: "/guidance/accessibility/"
+            title: "Foundation",
+            items: [
+              {
+                text: "Brand assets",
+                to: "/guidance/brand-assets/"
+              },
+              {
+                text: "Colour",
+                to: "/guidance/colour/"
+              },
+              {
+                text: "Developer tools",
+                to: "/guidance/developer-tools/"
+              },
+              {
+                text: "Layout and typography",
+                to: "/guidance/layout-and-typography/"
+              }
+            ]
           },
           {
-            text: "Brand assets",
-            to: "/guidance/brand-assets/"
+            title: "Common problems",
+            items: [
+              {
+                text: "Displaying information",
+                to: "/guidance/displaying-information/"
+              },
+              {
+                text: "Navigating",
+                to: "/guidance/navigating/"
+              },
+              {
+                text: "Requesting information",
+                to: "/guidance/requesting-information/"
+              }
+            ]
           },
           {
-            text: "Colour",
-            to: "/guidance/colour/"
-          },
-          {
-            text: "Developer tools",
-            to: "/guidance/developer-tools/"
-          },
-          {
-            text: "Film and photography",
-            to: "/guidance/film-and-photography/"
-          },
-          {
-            text: "Iconography",
-            to: "/guidance/iconography/"
-          },
-          {
-            text: "Layout and typography",
-            to: "/guidance/layout-and-typography/"
-          },
-          {
-            text: "Writing content",
-            to: "/guidance/writing-content/"
-          }
-        ]}
-      />
-      <DesignSystemNavigation
-        title="Common problems"
-        items={[
-          {
-            text: "Displaying information",
-            to: "/guidance/displaying-information/"
-          },
-          {
-            text: "Navigating",
-            to: "/guidance/navigating/"
-          },
-          {
-            text: "Patterns",
-            to: "/guidance/patterns/"
-          },
-          {
-            text: "Requesting information",
-            to: "/guidance/requesting-information/"
+            title: "Documentation",
+            items: [
+              {
+                text: "Accessibility",
+                to: "/guidance/accessibility/"
+              },
+              {
+                text: "Film and photography",
+                to: "/guidance/film-and-photography/"
+              },
+              {
+                text: "Iconography",
+                to: "/guidance/iconography/"
+              },
+              {
+                text: "Writing content",
+                to: "/guidance/writing-content/"
+              }
+            ]
           }
         ]}
       />
