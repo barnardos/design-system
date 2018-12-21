@@ -1,0 +1,87 @@
+@import "../../custom-properties.css";
+
+.Example-menu {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  left: 12rem;
+}
+
+.Example-search {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+.Example-main {
+  display: block;
+  margin: 1.5rem 0 0;
+  max-width: 46rem;
+  padding: 0 1rem;
+}
+
+.Example-submitSearchControl {
+  margin: 2rem 1rem 0;
+}
+
+.Example-footerNav {
+  margin-left: 1rem;
+}
+
+.Example-links {
+  display: flex;
+}
+
+.Example-link {
+  margin: 0 0.5rem;
+  color: white;
+  background: black;
+  display: inline-block;
+  font: 600 var(--type-0) proxima-nova, sans-serif;
+  min-width: 6rem;
+  padding: 0.5rem 1rem;
+  position: relative;
+  text-align: center;
+  height: 2.25rem;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+@media (min-width: 62rem) {
+  .Example-search {
+    right: 1.5rem;
+    min-width: 20rem;
+  }
+  .Example-menu {
+    top: 3.5rem;
+    right: 1.5rem;
+    left: 40%;
+  }
+  .Example-main {
+    padding: 1rem 2rem;
+  }
+
+  .Example-links {
+    position: absolute;
+    right: 24rem;
+    top: 1rem;
+  }
+
+  .Example-submitSearchControl {
+    margin: 0;
+    position: absolute;
+    right: 2rem;
+    top: 1.75rem;
+    width: 35%;
+  }
+
+  .Example-footer {
+    margin-top: 4rem;
+  }
+
+  .Example-footerNav {
+    margin-left: 2rem;
+  }
+}

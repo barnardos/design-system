@@ -40,7 +40,7 @@
 .Menu-link {
   color: var(--black);
   display: block;
-  font: 500 var(--type-1) system-ui;
+  font: 600 var(--type-0) proxima-nova, sans-serif;
   padding: 0.75rem 1rem;
   text-decoration: none;
   white-space: nowrap;
@@ -59,7 +59,7 @@
 .Menu-secondaryLink {
   color: var(--black);
   display: block;
-  font: 300 var(--type-0) system-ui;
+  font: 300 var(--type--1) system-ui;
   margin: 0 1rem;
   padding: 0.25rem 0.5rem;
   text-decoration: none;
@@ -93,13 +93,17 @@
   }
 }
 
-@media (min-width: 54rem) {
+@media (min-width: 62rem) {
+  .Menu-details {
+    background: transparent;
+  }
   .Menu-command {
     display: none;
   }
 
   .Menu-details {
     display: block;
+    width: 100%;
   }
 
   .Menu-items {
@@ -113,6 +117,9 @@
     min-width: 12rem;
     padding: 0.75rem 0;
     position: absolute;
+    left: 0;
+    right: 0;
+    columns: 3;
   }
 
   .Menu-secondaryItem {
@@ -120,8 +127,12 @@
   }
 
   .Menu-item {
-    flex: 1;
+    flex: 0;
     text-align: center;
+
+    &:last-child {
+      padding-right: 0;
+    }
 
     &:hover {
       & .Menu-link {
@@ -135,5 +146,10 @@
         display: block;
       }
     }
+  }
+
+  .Menu-link {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
