@@ -9,7 +9,7 @@ import ListItem from "../../components/ListItem";
 import Link from "../../components/Link";
 import Paragraph from "../../components/Paragraph";
 import Title from "../../components/Title";
-import UnorderedList from "../../components/UnorderedList";
+import BulletedList from "../../components/BulletedList";
 
 import "../../app.css";
 import "../index.css";
@@ -41,7 +41,7 @@ const Pages = () => (
       {`.`}
     </Paragraph>
     <Paragraph>{`You should:`}</Paragraph>
-    <UnorderedList>
+    <BulletedList>
       <ListItem>
         {`use accessibility tools to test your work, for example `}
         <Link href="https://axe-core.org/">{`aXe`}</Link>
@@ -49,7 +49,7 @@ const Pages = () => (
       <ListItem>{`make page titles unique and descriptive`}</ListItem>
       <ListItem>{`allow users to navigate only with a keyboard`}</ListItem>
       <ListItem>{`enable the viewport to be zoomed to at least 200%`}</ListItem>
-    </UnorderedList>
+    </BulletedList>
     <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/issues/168">{`research`}</Link>

@@ -1,0 +1,21 @@
+@import "../../custom-properties.css";
+
+/** @define TextArea; */
+
+.TextArea-textarea {
+  appearance: none;
+  border: none;
+  border-radius: 0;
+  box-shadow: inset 0 0 0 1px var(--black),
+    inset 0.25rem 0.25rem color-mod(var(--black) tint(80%));
+  font: 300 var(--type-2) system-ui;
+  margin-top: 0.5rem;
+  max-width: 100%;
+  padding: 0.5rem 0.75rem;
+  resize: vertical;
+}
+
+.TextArea-textarea--errored {
+  box-shadow: inset 0 0 0 1px var(--red),
+    inset 0.25rem 0.25rem color-mod(var(--red) tint(80%));
+}

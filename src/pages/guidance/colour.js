@@ -8,12 +8,12 @@ import Layout from "../../components/Layout";
 import Link from "../../components/Link";
 import ListItem from "../../components/ListItem";
 import Paragraph from "../../components/Paragraph";
-import SinglelineTextControl from "../../components/SinglelineTextControl/index";
+import TextInput from "../../components/TextInput/index";
 import Swatches from "../../components/Swatches";
 import Submit from "../../components/Submit";
-import TableOfContents from "../../components/TableOfContents";
+import DesignSystemIndex from "../../components/DesignSystemIndex";
 import Title from "../../components/Title";
-import UnorderedList from "../../components/UnorderedList";
+import BulletedList from "../../components/BulletedList";
 
 import "../../app.css";
 import "../index.css";
@@ -36,7 +36,7 @@ const Pages = () => (
       ]}
     />
     <Title>{`Colour`}</Title>
-    <TableOfContents
+    <DesignSystemIndex
       items={[
         {
           level: 1,
@@ -51,10 +51,10 @@ const Pages = () => (
       ]}
     />
     <Paragraph>{`To apply colour you should:`}</Paragraph>
-    <UnorderedList>
+    <BulletedList>
       <ListItem>{`only use the brand colours`}</ListItem>
       <ListItem>{`add white (tint) or black (shade) in 10% increments`}</ListItem>
-    </UnorderedList>
+    </BulletedList>
     <Heading>Brand colours</Heading>
     <div className="Pages-swatches">
       <Swatches
@@ -80,7 +80,7 @@ const Pages = () => (
     </div>
     <Heading>Using colours</Heading>
     <Paragraph>{`You should:`}</Paragraph>
-    <UnorderedList>
+    <BulletedList>
       <ListItem>
         {`use `}
         <Link href="https://webaim.org/resources/contrastchecker/">{`accessible`}</Link>
@@ -89,22 +89,21 @@ const Pages = () => (
       <ListItem>{`use Black for titles and headings`}</ListItem>
       <ListItem>{`avoid tints and shades for backgrounds`}</ListItem>
       <ListItem>{`avoid relying on colour to convey important information`}</ListItem>
-    </UnorderedList>
+    </BulletedList>
     <Paragraph>{`Also consider meaningful use of colour, for example:`}</Paragraph>
-    <UnorderedList>
+    <BulletedList>
       <ListItem>{`greens for positive actions like submit or continue`}</ListItem>
       <ListItem>{`oranges for cautionary actions like load or warn`}</ListItem>
       <ListItem>{`reds for destructive actions like delete or error`}</ListItem>
-    </UnorderedList>
+    </BulletedList>
     <div className="Pages-figures">
       <figure className="Pages-figure">
-        <SinglelineTextControl
+        <TextInput
           hint="As it appears on your ID."
           id="text-control-full-name-example"
-          invalid
           label="Full name"
           size={48}
-          validation="Enter your full name"
+          error="Enter your full name"
         />
         <figcaption className="Pages-figureCaption">{`Black for labels and 30% tint for hint text. Red for errors with 80% tint for inset shadows.`}</figcaption>
       </figure>

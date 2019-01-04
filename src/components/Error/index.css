@@ -1,0 +1,12 @@
+@import "../../custom-properties.css";
+
+/** @define Error; */
+
+.Error {
+  margin-top: 0.25rem;
+}
+
+.Error-inner {
+  color: var(--red);
+  font: 600 var(--type-0) system-ui;
+}

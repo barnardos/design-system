@@ -11,10 +11,10 @@ import Lede from "../../components/Lede";
 import Link from "../../components/Link";
 import ListItem from "../../components/ListItem";
 import Paragraph from "../../components/Paragraph";
-import SinglelineTextControl from "../../components/SinglelineTextControl/index";
-import TableOfContents from "../../components/TableOfContents";
+import TextInput from "../../components/TextInput/index";
+import DesignSystemIndex from "../../components/DesignSystemIndex";
 import Title from "../../components/Title";
-import UnorderedList from "../../components/UnorderedList";
+import BulletedList from "../../components/BulletedList";
 
 import "../../app.css";
 import "../index.css";
@@ -37,7 +37,7 @@ const Pages = () => (
       ]}
     />
     <Title>{`Layout and typography`}</Title>
-    <TableOfContents
+    <DesignSystemIndex
       items={[
         {
           level: 1,
@@ -57,11 +57,11 @@ const Pages = () => (
       ]}
     />
     <Paragraph>{`To unify layout and typography you should use:`}</Paragraph>
-    <UnorderedList>
+    <BulletedList>
       <ListItem>{`multiples of 0.25rem (roughly 4px) for spacing, flourishes, and line heights`}</ListItem>
       <ListItem>{`a base of 1rem (roughly 16px) for paragraphs`}</ListItem>
       <ListItem>{`exponents of 1.125 for other type sizes`}</ListItem>
-    </UnorderedList>
+    </BulletedList>
     <div className="Pages-figures">
       <div
         style={{
@@ -130,7 +130,7 @@ const Pages = () => (
             </figcaption>
           </figure>
           <figure className="Pages-figure Pages-figure--positioned">
-            <SinglelineTextControl
+            <TextInput
               id="text-control-email-example"
               label="Email"
               size={48}
@@ -163,11 +163,11 @@ const Pages = () => (
     </div>
     <Heading>{`Typography`}</Heading>
     <Paragraph>{`You should only use these typefaces and weights:`}</Paragraph>
-    <UnorderedList>
+    <BulletedList>
       <ListItem>{`Proxima Nova semi-bold`}</ListItem>
       <ListItem>{`Proxima Nova light`}</ListItem>
       <ListItem>{`system-ui light`}</ListItem>
-    </UnorderedList>
+    </BulletedList>
     <Paragraph>
       {`Use "`}
       <Code>{`djy7snj`}</Code>
@@ -230,11 +230,11 @@ const Pages = () => (
     </Cite>
     <Heading>{`Layout`}</Heading>
     <Paragraph>{`To create simple and fluid layouts you should:`}</Paragraph>
-    <UnorderedList>
+    <BulletedList>
       <ListItem>{`use multiples of 0.25rem for spacing and flourishes`}</ListItem>
       <ListItem>{`use ample white space between elements`}</ListItem>
       <ListItem>{`avoid using thin lines for flourishes`}</ListItem>
-    </UnorderedList>
+    </BulletedList>
     <div className="Pages-figures">
       <figure className="Pages-figure">
         <div className="Pages-figureDemo Pages-figureDemo--thirds">
@@ -257,16 +257,16 @@ const Pages = () => (
     <Heading>{`Proportional scale`}</Heading>
     <Paragraph>{`The layout and typography can be proportionally scaled to maintain an optimal line length at any viewport size.`}</Paragraph>
     <Paragraph>{`The optimal line length of text is around:`}</Paragraph>
-    <UnorderedList>
+    <BulletedList>
       <ListItem>{`15–40 characters for short lines`}</ListItem>
       <ListItem>{`40–95 characters for body copy`}</ListItem>
-    </UnorderedList>
+    </BulletedList>
     <Paragraph>{`For example, you could scale the base of 1rem (roughly 16px):`}</Paragraph>
-    <UnorderedList>
+    <BulletedList>
       <ListItem>{`down to 93.75% to give a paragraph size and gutters of roughly 15px`}</ListItem>
       <ListItem>{`up to 106.25% to give a paragraph size and gutters of roughly 17px`}</ListItem>
       <ListItem>{`further up to 112.5% to give a paragraph size and gutters of roughly 18px`}</ListItem>
-    </UnorderedList>
+    </BulletedList>
     <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/proportional-scale.css">{`code`}</Link>

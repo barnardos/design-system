@@ -1,0 +1,41 @@
+@import "../../custom-properties.css";
+
+/** @define CurrencyInput; */
+
+.CurrencyInput-prefixAndInput {
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+.CurrencyInput-prefix {
+  align-items: center;
+  background: color-mod(var(--black) tint(90%));
+  display: flex;
+  flex: 0 0 2.5rem;
+  font: 600 var(--type-2) system-ui;
+  justify-content: center;
+}
+
+.CurrencyInput-input {
+  -moz-appearance: textfield; /* stylelint-disable-line property-no-vendor-prefix */
+  appearance: none;
+  border: none;
+  border-radius: 0;
+  box-shadow: inset 0 0 0 1px var(--black),
+    inset 0.25rem 0.25rem color-mod(var(--black) tint(80%));
+  font: 300 var(--type-2) system-ui;
+  max-width: 100%;
+  padding: 0.5rem 0.75rem;
+  width: 8rem;
+
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    appearance: none;
+    margin: 0;
+  }
+}
+
+.CurrencyInput-input--errored {
+  box-shadow: inset 0 0 0 1px var(--red),
+    inset 0.25rem 0.25rem color-mod(var(--red) tint(80%));
+}

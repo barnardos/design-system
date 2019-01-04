@@ -7,16 +7,17 @@ import "./index.css";
 
 const Footer = ({ children, items }) => (
   <footer className="Footer">
-    <ul className="Footer-items">
-      {items &&
-        items.map(({ text, href }, index) => (
+    {items && (
+      <ul className="Footer-items">
+        {items.map(({ text, href }, index) => (
           <li className="Footer-item" key={index}>
             <Link className="Footer-link" href={href}>
               {text}
             </Link>
           </li>
         ))}
-    </ul>
+      </ul>
+    )}
     <div className="Footer-children">{children}</div>
   </footer>
 );

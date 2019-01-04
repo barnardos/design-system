@@ -1,0 +1,11 @@
+/** @define Main; */
+
+.Main {
+  padding: 0 1rem;
+}
+
+@media (min-width: 48rem) {
+  .Main {
+    padding: 0 2rem;
+  }
+}

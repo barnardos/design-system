@@ -51,16 +51,24 @@ const Pages = () => (
             title: "Common problems",
             items: [
               {
-                text: "Displaying information",
-                to: "/guidance/displaying-information/"
-              },
-              {
                 text: "Navigating",
                 to: "/guidance/navigating/"
               },
               {
+                text: "Displaying content",
+                to: "/guidance/displaying-content/"
+              },
+              {
                 text: "Requesting information",
                 to: "/guidance/requesting-information/"
+              },
+              {
+                text: "Triggering events",
+                to: "/guidance/triggering-events/"
+              },
+              {
+                text: "Filtering",
+                to: "/guidance/filtering/"
               }
             ]
           },

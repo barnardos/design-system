@@ -1,0 +1,14 @@
+@import "../../custom-properties.css";
+
+/** @define Field; */
+
+.Field-children {
+  &:not(:first-child) {
+    margin-top: 1rem;
+  }
+}
+
+.Field--errored {
+  box-shadow: inset 0.25rem 0 0 var(--red);
+  padding-left: 1rem;
+}

@@ -1,0 +1,26 @@
+@import "../../custom-properties.css";
+
+/** @define BulletedListItem; */
+
+.BulletedListItem {
+  font: 300 var(--type-0) system-ui;
+  list-style: none;
+  margin-left: -1rem;
+  padding-left: 1.5rem;
+  position: relative;
+
+  &::before {
+    background-color: var(--green);
+    content: "";
+    display: block;
+    height: 0.75rem;
+    left: 0;
+    position: absolute;
+    top: 0.35rem;
+    width: 0.75rem;
+  }
+
+  &:not(:first-child) {
+    margin-top: 0.75rem;
+  }
+}

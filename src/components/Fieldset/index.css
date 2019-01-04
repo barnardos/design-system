@@ -1,0 +1,27 @@
+@import "../../custom-properties.css";
+
+/** @define Fieldset; */
+
+.Fieldset {
+  border: none;
+
+  &:not(:first-child) {
+    margin-top: 1rem;
+  }
+}
+
+.Fieldset-legend {
+  display: block;
+  float: left;
+  font: 600 var(--type-3) system-ui;
+}
+
+.Fieldset-children {
+  clear: left;
+  padding-top: 0.25rem;
+}
+
+.Fieldset--errored {
+  box-shadow: inset 0.25rem 0 0 var(--red);
+  padding-left: 1rem;
+}

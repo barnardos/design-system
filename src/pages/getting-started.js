@@ -8,9 +8,9 @@ import Layout from "../components/Layout";
 import Link from "../components/Link";
 import ListItem from "../components/ListItem";
 import Paragraph from "../components/Paragraph";
-import TableOfContents from "../components/TableOfContents";
+import DesignSystemIndex from "../components/DesignSystemIndex";
 import Title from "../components/Title";
-import UnorderedList from "../components/UnorderedList";
+import BulletedList from "../components/BulletedList";
 
 import "../app.css";
 import "./index.css";
@@ -29,7 +29,7 @@ const Pages = () => (
       ]}
     />
     <Title>{`Getting started`}</Title>
-    <TableOfContents
+    <DesignSystemIndex
       items={[
         {
           level: 1,
@@ -50,12 +50,12 @@ const Pages = () => (
     </Paragraph>
     <Paragraph>{`The principles are how you should think about designing your product.`}</Paragraph>
     <Paragraph>{`The guidance includes:`}</Paragraph>
-    <UnorderedList>
+    <BulletedList>
       <ListItem>{`rules you should follow`}</ListItem>
       <ListItem>{`suggestions on how you could apply those rules
 `}</ListItem>
       <ListItem>{`examples of these rules and suggestions in action`}</ListItem>
-    </UnorderedList>
+    </BulletedList>
     <Paragraph>{`The Design System is based on research, which you'll find linked to throughout.`}</Paragraph>
     <Paragraph>{`It solves the common problems you may encounter when creating your product, so you can focus on the problems unique to it.`}</Paragraph>
     <Paragraph>{`This provides consistency across Barnardo's products and familiarity for service users.`}</Paragraph>
@@ -67,7 +67,7 @@ const Pages = () => (
     <Paragraph>
       {`If you have a solution that could be included in the Design System:`}
     </Paragraph>
-    <UnorderedList>
+    <BulletedList>
       <ListItem>
         {`check whether a similar `}
         <Link href="https://github.com/barnardos/design-system/issues?q=is%3Aissue+is%3Aopen+label%3A%22type%3A+story%22">{`solution is being discussed`}</Link>
@@ -76,7 +76,7 @@ const Pages = () => (
         {`add a comment there or `}
         <Link href="https://github.com/barnardos/design-system/issues/new?template=STORY.md">{`create a new issue`}</Link>
       </ListItem>
-    </UnorderedList>
+    </BulletedList>
     <Paragraph>
       {`You can also contribute to the discussion on `}
       <Link href="https://barnardos.facebook.com/groups/design.system/">{`Workplace`}</Link>
