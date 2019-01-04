@@ -6,8 +6,8 @@
   appearance: none;
   background-color: var(--green);
   border: none;
-  border-radius: 0;
-  box-shadow: 0.25rem 0.25rem color-mod(var(--green) shade(40%));
+  border-radius: 1.75rem;
+  box-shadow: 0.125rem 0.125rem 1px color-mod(var(--black) alpha(15%));
   color: var(--white);
   font: 600 var(--type-2) proxima-nova, sans-serif;
   min-width: 6rem;
@@ -23,7 +23,7 @@
   &:active {
     box-shadow: none;
     position: relative;
-    top: 0.25rem;
+    top: 0.125rem;
   }
 }
 

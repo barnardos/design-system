@@ -1,0 +1,27 @@
+@import "../../custom-properties.css";
+
+/** @define Hero; */
+
+.Hero {
+  background: url("./background.jpg") no-repeat center top;
+  background-size: cover;
+  height: 40vh;
+  position: relative;
+}
+
+.Hero-inner {
+  background: var(--green);
+  color: var(--white);
+  font: 600 var(--type-8) proxima-nova, sans-serif;
+  position: absolute;
+  bottom: 1.5rem;
+  left: 0;
+  display: inline-block;
+  padding: 0.25rem 1rem;
+}
+
+@media (min-width: 40rem) {
+  .Hero {
+    font: 600 var(--type-9) proxima-nova, sans-serif;
+  }
+}

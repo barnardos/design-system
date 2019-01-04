@@ -29,7 +29,7 @@ class Menu extends Component {
     return (
       <nav className="Menu">
         <div className="Menu-command">
-          <Command onClick={this.handleClick}>
+          <Command onClick={this.handleClick} isCompact>
             <a className="Menu-commandLink" href="#menu">
               <img
                 alt="Open menu"
@@ -42,7 +42,7 @@ class Menu extends Component {
         </div>
         <div className={detailsClassName}>
           <div className="Menu-command Menu-command--close">
-            <Command onClick={this.handleClick}>
+            <Command onClick={this.handleClick} isCompact>
               <img
                 alt="Close menu"
                 src={crossSvg}
@@ -50,6 +50,17 @@ class Menu extends Component {
               />
               <span className="Menu-commandText">{` Menu`}</span>
             </Command>
+          </div>
+          <div className="Menu-attentionGrabbingLinks">
+            <a
+              href="#"
+              className="Menu-attentionGrabbingLink Menu-attentionGrabbingLink--donate"
+            >
+              Donate
+            </a>
+            <a href="#" className="Menu-attentionGrabbingLink">
+              Our shops
+            </a>
           </div>
           <ul className="Menu-items">
             {this.props.items.map(({ isActive, text, href, items }, index) => (

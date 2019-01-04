@@ -3,6 +3,7 @@
 /** @define AttentionGrabbingLink; */
 
 .AttentionGrabbingLink {
+  border-radius: 2px;
   color: var(--white);
   display: inline-block;
   font: 600 var(--type-2) proxima-nova, sans-serif;

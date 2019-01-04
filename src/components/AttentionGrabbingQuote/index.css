@@ -7,6 +7,7 @@
   color: var(--white);
   padding: 2rem 1rem;
   text-align: center;
+  max-width: 46rem;
 }
 
 .AttentionGrabbingQuote-children {
@@ -38,11 +39,11 @@
 }
 
 .AttentionGrabbingQuote-role {
-  font: 300 var(--type-2) system-ui;
+  font: 300 var(--type-1) system-ui;
 }
 
 .AttentionGrabbingQuote-name {
-  font: 600 var(--type-2) system-ui;
+  font: 600 var(--type-1) system-ui;
 }
 
 .AttentionGrabbingQuote--black {

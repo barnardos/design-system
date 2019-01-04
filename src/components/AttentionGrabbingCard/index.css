@@ -8,6 +8,7 @@
   color: var(--white);
   display: block;
   text-decoration: none;
+  max-width: 46rem;
 }
 
 .AttentionGrabbingCard-image {

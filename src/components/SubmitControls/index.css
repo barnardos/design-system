@@ -2,6 +2,10 @@
 
 /** @define SubmitControls; */
 
+.SubmitControls {
+  max-width: 46rem;
+}
+
 .SubmitControls-summary {
   box-shadow: inset 0 0 0 0.25rem var(--red);
   padding: 1rem;

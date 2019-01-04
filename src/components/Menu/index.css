@@ -2,6 +2,16 @@
 
 /** @define Menu; */
 
+.Menu-command {
+  position: absolute;
+  right: 5.5rem;
+  top: 1rem;
+}
+
+.Menu-command--close {
+  top: -4rem;
+}
+
 .Menu-commandLink {
   align-items: center;
   display: flex;
@@ -20,16 +30,40 @@
   left: 0;
   position: absolute;
   right: 0;
-  top: 0;
+  top: 5rem;
 }
 
 .Menu-details--active {
   display: block;
 }
 
+.Menu-attentionGrabbingLinks {
+  display: flex;
+}
+
+.Menu-attentionGrabbingLink {
+  margin: 1rem 0.5rem;
+  color: var(--white);
+  background: var(--black);
+  display: inline-block;
+  border-radius: 2px;
+  font: 600 var(--type-0) proxima-nova, sans-serif;
+  min-width: 6rem;
+  padding: 0.38rem 1rem;
+  position: relative;
+  text-align: center;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.Menu-attentionGrabbingLink--donate {
+  background-color: var(--green);
+}
+
 .Menu-items {
   list-style: none;
-  margin-top: 1rem;
 }
 
 .Menu-secondaryItems {
@@ -43,7 +77,6 @@
   font: 600 var(--type-0) proxima-nova, sans-serif;
   padding: 0.75rem 1rem;
   text-decoration: none;
-  white-space: nowrap;
 
   &:hover {
     box-shadow: inset 0 -0.25rem 0 0 var(--orange);
@@ -94,6 +127,11 @@
 }
 
 @media (min-width: 62rem) {
+  .Menu-attentionGrabbingLinks {
+    position: absolute;
+    right: 22.5rem;
+    top: -0.25rem;
+  }
   .Menu-details {
     background: transparent;
   }
@@ -104,52 +142,134 @@
   .Menu-details {
     display: block;
     width: 100%;
+    position: static;
   }
 
-  .Menu-items {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 0;
+  .Example--intranet {
+    & .Menu {
+      height: 100%;
+    }
+    & .Menu-details {
+      border-right: 1px solid #d3d3d3;
+      height: 100%;
+      position: relative;
+      top: -1rem;
+      padding-top: 1rem;
+    }
+
+    & .Menu-attentionGrabbingLinks {
+      right: -28rem;
+      top: -5.5rem !important;
+      bottom: auto;
+    }
+
+    & .Menu-items {
+      height: 100%;
+      position: absolute;
+    }
+
+    & .Menu-link {
+      &:hover {
+        box-shadow: inset -0.25rem 0 0 var(--orange);
+      }
+
+      &:active {
+        box-shadow: inset -0.25rem 0 0 var(--green);
+      }
+    }
+
+    & .Menu-secondaryItems {
+      display: none;
+      min-width: 12rem;
+      padding: 0.75rem 0;
+      position: absolute;
+      right: calc(-16rem - 1px);
+      top: -1rem;
+      width: 16rem;
+      bottom: 0;
+    }
+
+    & .Menu-item {
+      &:hover {
+        & .Menu-link {
+          box-shadow: inset -0.25rem 0 0 var(--orange);
+          color: var(--orange);
+        }
+
+        & .Menu-secondaryItems {
+          background: whitesmoke;
+          box-shadow: 0.25rem 0.25rem color-mod(var(--black) tint(60%));
+          display: block;
+        }
+      }
+    }
+
+    & .Menu-item--active {
+      & .Menu-link,
+      & .Menu-link:hover {
+        box-shadow: inset -0.25rem 0 var(--green);
+      }
+    }
   }
 
-  .Menu-secondaryItems {
-    display: none;
-    min-width: 12rem;
-    padding: 0.75rem 0;
-    position: absolute;
-    left: 0;
-    right: 0;
-    columns: 3;
-  }
+  .Example--main {
+    & .Menu-details {
+      display: block;
+      width: 100%;
+      top: 0;
+      position: absolute;
+    }
 
-  .Menu-secondaryItem {
-    text-align: left;
-  }
+    & .Menu-items {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 0;
+      position: absolute;
+      right: 2rem;
+      top: 3.5rem;
+      width: 42rem;
+    }
 
-  .Menu-item {
-    flex: 0;
-    text-align: center;
+    & .Menu-secondaryItems {
+      display: none;
+      min-width: 12rem;
+      padding: 0.75rem 0;
+      position: absolute;
+      left: -35%;
+      right: 0;
+      columns: 3;
+    }
 
-    &:last-child {
+    & .Menu-secondaryItem {
+      text-align: left;
+    }
+
+    & .Menu-item {
+      flex: 0;
+      text-align: center;
+
+      &:last-child {
+        padding-right: 0;
+      }
+
+      &:hover {
+        & .Menu-link {
+          box-shadow: inset 0 -0.25rem 0 0 var(--orange);
+          color: var(--orange);
+        }
+
+        & .Menu-secondaryItems {
+          background: whitesmoke;
+          box-shadow: 0.25rem 0.25rem color-mod(var(--black) tint(60%));
+          display: block;
+        }
+      }
+    }
+
+    & .Menu-link {
+      white-space: nowrap;
+      padding-left: 0;
       padding-right: 0;
     }
-
-    &:hover {
-      & .Menu-link {
-        box-shadow: inset 0 -0.25rem 0 0 var(--orange);
-        color: var(--orange);
-      }
-
-      & .Menu-secondaryItems {
-        background: color-mod(var(--black) tint(90%));
-        box-shadow: 0.25rem 0.25rem color-mod(var(--black) tint(60%));
-        display: block;
-      }
-    }
-  }
-
-  .Menu-link {
-    padding-left: 0;
-    padding-right: 0;
   }
 }

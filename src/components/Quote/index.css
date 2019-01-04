@@ -4,6 +4,7 @@
 
 .Quote {
   color: var(--green);
+  max-width: 46rem;
 }
 
 .Quote-media {
@@ -48,11 +49,11 @@
 }
 
 .Quote-role {
-  font: 300 var(--type-2) system-ui;
+  font: 300 var(--type-1) system-ui;
 }
 
 .Quote-name {
-  font: 600 var(--type-2) system-ui;
+  font: 600 var(--type-1) system-ui;
 }
 
 .Quote--orange {

@@ -4,6 +4,7 @@
 
 .Caption {
   display: block;
+  max-width: 46rem;
 }
 
 .Caption-children {

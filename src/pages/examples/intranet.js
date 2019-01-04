@@ -1,6 +1,8 @@
 import React from "react";
 import Helmet from "react-helmet";
 
+import Hero from "../../components/Hero";
+import AttentionGrabbingCard from "../../components/AttentionGrabbingCard";
 import Subheading from "../../components/Subheading";
 import Fact from "../../components/Fact";
 import SubmitControls from "../../components/SubmitControls";
@@ -25,196 +27,201 @@ import "../../app.css";
 const Example = () => {
   const isJs = true;
   return (
-    <div className="Example">
-      <Helmet titleTemplate="%s - Barnardo's">
-        <html lang="en" />
-        <link
-          href="https://fonts.googleapis.com/css?family=Quicksand:400,700"
-          rel="stylesheet"
-        />
-      </Helmet>
-      <Header />
-      <main className="Example-main">
-        <Breadcrumbs
-          items={[
-            {
-              text: "Home",
-              to: "/"
-            },
-            {
-              text: "Who we are",
-              to: "/"
-            }
-          ]}
-        />
-        <Title>{`Our history`}</Title>
-        <Paragraph>
-          {`Thomas John Barnardo was born in Dublin, Ireland, in 1845. As a young man he moved to London to train as a doctor. When he arrived, he was shocked to find children living in terrible conditions, with no access to education. Poverty and disease were so widespread that one in five children died before their fifth birthday. When a cholera epidemic swept through the East End, leaving 3000 people dead and many orphaned children, the young Barnardo felt an urgent need to help.`}
-        </Paragraph>
-        <Paragraph>
-          {`His first step, in 1867, was to set up a ‘ragged school’ where children could get a free basic education. One evening a boy at the mission, Jim Jarvis, took Barnardo around the East End, showing him children sleeping on roofs and in gutters. What he saw affected him so deeply he decided to abandon his medical training and devote himself to helping children living in poverty.`}
-        </Paragraph>
+    <div className="Example Example--intranet">
+      <div className="Example-header">
+        <Header />
+      </div>
 
-        <Heading>{`Beginnings – the Ragged School`}</Heading>
-        <Paragraph>
-          {`In 1870, Barnardo opened his first home for boys. As well as putting a
+      <div className="Example-temp">
+        <div className="Example-breadcrumbs">
+          <Breadcrumbs
+            items={[
+              {
+                text: "Home",
+                to: "/"
+              },
+              {
+                text: "Who we are",
+                to: "/"
+              }
+            ]}
+          />
+        </div>
+        <main className="Example-main">
+          <Hero>{`Our history`}</Hero>
+
+          <div className="Example-content">
+            <Paragraph>
+              {`Thomas John Barnardo was born in Dublin, Ireland, in 1845. As a young man he moved to London to train as a doctor. When he arrived, he was shocked to find children living in terrible conditions, with no access to education. Poverty and disease were so widespread that one in five children died before their fifth birthday. When a cholera epidemic swept through the East End, leaving 3000 people dead and many orphaned children, the young Barnardo felt an urgent need to help.`}
+            </Paragraph>
+            <Heading>{`Beginnings – the Ragged School`}</Heading>
+            <Paragraph>
+              {`In 1870, Barnardo opened his first home for boys. As well as putting a
       roof over their heads, the home trained the boys in carpentry, metalwork
       and shoemaking, and found apprenticeships for them.`}
-        </Paragraph>
-        <div style={{ marginTop: "3rem", marginBottom: "3rem" }}>
-          <AttentionGrabbingQuote
-            colour="green"
-            role="Young person"
-            name="James Roberts"
-          >{`I just needed a push in the right direction, and a stepping stone to act as a bridge across to adulthood. I finally feel that I'm closer to being happy.`}</AttentionGrabbingQuote>
-        </div>
-        <Paragraph>
-          {`Barnardo’s work was radical. The Victorians saw poverty as shameful, and
+            </Paragraph>
+            <div style={{ marginTop: "3rem", marginBottom: "3rem" }}>
+              <AttentionGrabbingQuote
+                colour="green"
+                role="Young person"
+                name="James Roberts"
+              >{`I just needed a push in the right direction, and a stepping stone to act as a bridge across to adulthood. I finally feel that I'm closer to being happy.`}</AttentionGrabbingQuote>
+            </div>
+            <Paragraph>
+              {`Barnardo’s work was radical. The Victorians saw poverty as shameful, and
       the result of laziness or vice. But Barnardo refused to discriminate
       between the ‘deserving’ and ‘undeserving’ poor. He accepted all children,
       including black and disabled children, and those born outside marriage.`}
-        </Paragraph>
-        <UnorderedList>
-          <UnorderedListItem>{`early support`}</UnorderedListItem>
-          <UnorderedListItem>{`family support`}</UnorderedListItem>
-          <UnorderedListItem>{`emotional health and wellbeing`}</UnorderedListItem>
-          <UnorderedListItem>{`looked-after children`}</UnorderedListItem>
-          <UnorderedListItem>{`family support`}</UnorderedListItem>
-        </UnorderedList>
-        <Paragraph>
-          {`To begin with, there was a limit to the number of boys who could stay
+            </Paragraph>
+            <UnorderedList>
+              <UnorderedListItem>{`early support`}</UnorderedListItem>
+              <UnorderedListItem>{`family support`}</UnorderedListItem>
+              <UnorderedListItem>{`emotional health and wellbeing`}</UnorderedListItem>
+              <UnorderedListItem>{`looked-after children`}</UnorderedListItem>
+              <UnorderedListItem>{`family support`}</UnorderedListItem>
+            </UnorderedList>
+            <Paragraph>
+              {`To begin with, there was a limit to the number of boys who could stay
       there. But when an 11-year-old boy was found dead — of malnutrition and
       exposure — two days after being told the shelter was full, Barnardo vowed
       never to turn another child away.`}
-        </Paragraph>
-        <div style={{ marginTop: "2rem", marginBottom: "2rem" }}>
-          <Caption label="Participants receiving their certificate">
-            <Image
-              src="https://dummyimage.com/1200x675/bbbbbb/d2d2d2.png&amp;text=16:9"
-              alt="A 6:9 dummy image"
-            />
-          </Caption>
-        </div>
-        <Paragraph>
-          {`Thomas John Barnardo was born in Dublin, Ireland, in 1845. As a young man he moved to London to train as a doctor. When he arrived, he was shocked to find children living in terrible conditions, with no access to education. Poverty and disease were so widespread that one in five children died before their fifth birthday. When a cholera epidemic swept through the East End, leaving 3000 people dead and many orphaned children, the young Barnardo felt an urgent need to help.`}
-        </Paragraph>
-        <div style={{ marginTop: "3rem", marginBottom: "3rem" }}>
-          <Fact label="children supported through our school-based programmes">{`23,500`}</Fact>
-        </div>
-        <div style={{ marginTop: "3rem", marginBottom: "3rem" }}>
-          <Fact colour="purple" label="had improved self-esteem">{`73%`}</Fact>
-        </div>
-        <Paragraph>
-          {`His first step, in 1867, was to set up a ‘ragged school’ where children could get a free basic education. One evening a boy at the mission, Jim Jarvis, took Barnardo around the East End, showing him children sleeping on roofs and in gutters. What he saw affected him so deeply he decided to abandon his medical training and devote himself to helping children living in poverty.`}
-        </Paragraph>
-        <Subheading>{"Child migrants"}</Subheading>
-        <Paragraph>
-          {`Barnardo’s was one of many children’s charities that sent some children to start a new life in Australia or Canada from the late nineteenth century to the 1960s. This was a popular policy, supported by the British government, who believed that the children would benefit from opportunities they wouldn’t have in the UK. We now know that however well-intentioned, it was a deeply misguided policy. The last Barnardo’s child to be migrated was in 1967, to Australia. In 2010 the British government formally apologised for the UK’s role in sending more than 130,000 child migrants to former colonies.`}
-        </Paragraph>
-        <div style={{ marginTop: "3rem", marginBottom: "3rem" }}>
-          <Quote
-            colour="orange"
-            name="John Smith"
-            role="Teacher"
-            src="https://dummyimage.com/480x480/bbbbbb/d2d2d2.png&amp;text=1:1"
-          >{`The family support worker is able to engage and build positive relationships with families who previously kept their distance from school.`}</Quote>
-        </div>
-        <Paragraph>
-          {`His first step, in 1867, was to set up a ‘ragged school’ where children could get a free basic education. One evening a boy at the mission, Jim Jarvis, took Barnardo around the East End, showing him children sleeping on roofs and in gutters. What he saw affected him so deeply he decided to abandon his medical training and devote himself to helping children living in poverty.`}
-        </Paragraph>
-        <div style={{ marginTop: "3rem", marginBottom: "3rem" }}>
-          <SubmitControls
-            controls={[
-              {
-                invalid: true,
-                control: "singlelineText",
-                id: "submit-controls-single-line-text-example",
-                label: "Name of the meal",
-                size: 48,
-                validation: "Enter the name of the meal"
-              },
-              {
-                control: "oneOfManyChoice",
-                invalid: true,
-                hint:
-                  "Nut allergies can be dangerous. Only choose 'No' if you're completely sure.",
-                id: "submit-controls-one-of-many-choice-example",
-                legend: "Does the meal include nuts?",
-                name: "submit-controls-one-of-many-choice-example",
-                choices: [
+            </Paragraph>
+            <div style={{ marginTop: "2rem", marginBottom: "2rem" }}>
+              <Caption label="Participants receiving their certificate">
+                <Image
+                  src="https://dummyimage.com/1200x675/bbbbbb/d2d2d2.png&amp;text=16:9"
+                  alt="A 6:9 dummy image"
+                />
+              </Caption>
+            </div>
+            <Paragraph>
+              {`Thomas John Barnardo was born in Dublin, Ireland, in 1845. As a young man he moved to London to train as a doctor. When he arrived, he was shocked to find children living in terrible conditions, with no access to education. Poverty and disease were so widespread that one in five children died before their fifth birthday. When a cholera epidemic swept through the East End, leaving 3000 people dead and many orphaned children, the young Barnardo felt an urgent need to help.`}
+            </Paragraph>
+            <div style={{ marginTop: "3rem", marginBottom: "3rem" }}>
+              <Fact label="children supported through our school-based programmes">{`23,500`}</Fact>
+            </div>
+            <div style={{ marginTop: "3rem", marginBottom: "3rem" }}>
+              <Fact
+                colour="purple"
+                label="had improved self-esteem"
+              >{`73%`}</Fact>
+            </div>
+            <Paragraph>
+              {`His first step, in 1867, was to set up a ‘ragged school’ where children could get a free basic education. One evening a boy at the mission, Jim Jarvis, took Barnardo around the East End, showing him children sleeping on roofs and in gutters. What he saw affected him so deeply he decided to abandon his medical training and devote himself to helping children living in poverty.`}
+            </Paragraph>
+            <Subheading>{"Child migrants"}</Subheading>
+            <Paragraph>
+              {`Barnardo’s was one of many children’s charities that sent some children to start a new life in Australia or Canada from the late nineteenth century to the 1960s. This was a popular policy, supported by the British government, who believed that the children would benefit from opportunities they wouldn’t have in the UK. We now know that however well-intentioned, it was a deeply misguided policy. The last Barnardo’s child to be migrated was in 1967, to Australia. In 2010 the British government formally apologised for the UK’s role in sending more than 130,000 child migrants to former colonies.`}
+            </Paragraph>
+            <div style={{ marginTop: "3rem", marginBottom: "3rem" }}>
+              <Quote
+                colour="orange"
+                name="John Smith"
+                role="Teacher"
+                src="https://dummyimage.com/480x480/bbbbbb/d2d2d2.png&amp;text=1:1"
+              >{`The family support worker is able to engage and build positive relationships with families who previously kept their distance from school.`}</Quote>
+            </div>
+            <Paragraph>
+              {`His first step, in 1867, was to set up a ‘ragged school’ where children could get a free basic education. One evening a boy at the mission, Jim Jarvis, took Barnardo around the East End, showing him children sleeping on roofs and in gutters. What he saw affected him so deeply he decided to abandon his medical training and devote himself to helping children living in poverty.`}
+            </Paragraph>
+            <div style={{ marginTop: "3rem", marginBottom: "3rem" }}>
+              <SubmitControls
+                controls={[
                   {
-                    label: "Yes",
-                    id: "submit-controls-one-of-many-choice-control-example-yes"
+                    invalid: true,
+                    control: "singlelineText",
+                    id: "submit-controls-single-line-text-example",
+                    label: "Name of the meal",
+                    size: 48,
+                    validation: "Enter the name of the meal"
                   },
                   {
-                    label: "No",
-                    id: "submit-controls-one-of-many-choice-control-example-no"
+                    control: "oneOfManyChoice",
+                    invalid: true,
+                    hint:
+                      "Nut allergies can be dangerous. Only choose 'No' if you're completely sure.",
+                    id: "submit-controls-one-of-many-choice-example",
+                    legend: "Does the meal include nuts?",
+                    name: "submit-controls-one-of-many-choice-example",
+                    choices: [
+                      {
+                        label: "Yes",
+                        id:
+                          "submit-controls-one-of-many-choice-control-example-yes"
+                      },
+                      {
+                        label: "No",
+                        id:
+                          "submit-controls-one-of-many-choice-control-example-no"
+                      },
+                      {
+                        label: "I'm not sure",
+                        id:
+                          "submit-controls-one-of-many-choice-control-example-unsure"
+                      }
+                    ],
+                    validation: "Select whether the meal contains nuts or not"
                   },
                   {
-                    label: "I'm not sure",
-                    id:
-                      "submit-controls-one-of-many-choice-control-example-unsure"
+                    control: "anyOfManyChoice",
+                    id: "submit-controls-any-of-many-choice-control-example",
+                    name: "submit-controls-any-of-many-choice-control-example",
+                    legend: "What are the benefits of the meal?",
+                    choices: [
+                      {
+                        label: "None",
+                        id:
+                          "submit-controls-any-of-many-choice-control-example-none"
+                      },
+                      {
+                        label: "Energising",
+                        id:
+                          "submit-controls-any-of-many-choice-control-example-energising"
+                      },
+                      {
+                        label: "Tasty",
+                        id:
+                          "submit-controls-any-of-many-choice-control-example-tasty"
+                      },
+                      {
+                        label: "Low cost",
+                        id:
+                          "submit-controls-any-of-many-choice-control-example-low-cost"
+                      }
+                    ]
                   }
-                ],
-                validation: "Select whether the meal contains nuts or not"
-              },
-              {
-                control: "anyOfManyChoice",
-                id: "submit-controls-any-of-many-choice-control-example",
-                name: "submit-controls-any-of-many-choice-control-example",
-                legend: "What are the benefits of the meal?",
-                choices: [
-                  {
-                    label: "None",
-                    id:
-                      "submit-controls-any-of-many-choice-control-example-none"
-                  },
-                  {
-                    label: "Energising",
-                    id:
-                      "submit-controls-any-of-many-choice-control-example-energising"
-                  },
-                  {
-                    label: "Tasty",
-                    id:
-                      "submit-controls-any-of-many-choice-control-example-tasty"
-                  },
-                  {
-                    label: "Low cost",
-                    id:
-                      "submit-controls-any-of-many-choice-control-example-low-cost"
-                  }
-                ]
-              }
-            ]}
-            invalid
-            submit={{
-              text: "Continue"
-            }}
-            validation="You need to fix the following errors to continue:"
-          />
-        </div>
-      </main>
+                ]}
+                invalid
+                submit={{
+                  text: "Continue"
+                }}
+                validation="You need to fix the following errors to continue:"
+              />
+            </div>
+            <Paragraph>
+              {`His first step, in 1867, was to set up a ‘ragged school’ where children could get a free basic education. One evening a boy at the mission, Jim Jarvis, took Barnardo around the East End, showing him children sleeping on roofs and in gutters. What he saw affected him so deeply he decided to abandon his medical training and devote himself to helping children living in poverty.`}
+            </Paragraph>
+            <div style={{ marginTop: "3rem", marginBottom: "3rem" }}>
+              <AttentionGrabbingCard
+                colour="pink"
+                href="http://example.org"
+                meta="14 April 2019"
+                title="Brighton Marathon"
+                text="Sign up"
+              >{`Taking in the sights and sounds of the coast, this fantastic 26.2 mile route covers Hove and finishes at the famous Brighton Pier.`}</AttentionGrabbingCard>
+            </div>
+          </div>
+        </main>
+      </div>
       <div className="Example-search">
         <SubmitSearchControl />
-      </div>
-      <div className="Example-links">
-        <a
-          className="Example-link"
-          style={{
-            background: "green"
-          }}
-        >
-          Donate
-        </a>
-        <a className="Example-link">Our shops</a>
       </div>
       <div className="Example-menu">
         <Menu
           items={[
             {
               isActive: true,
-              text: "Who we are",
+              text: "Learning and development",
               href: "http://example.org",
               items: [
                 {
@@ -249,7 +256,7 @@ const Example = () => {
               ]
             },
             {
-              text: "What we do",
+              text: "Safeguarding",
               href: "http://example.org",
               items: [
                 {
@@ -275,7 +282,7 @@ const Example = () => {
               ]
             },
             {
-              text: "Fostering & adoption",
+              text: "Employee and volunteer support",
               href: "http://example.org",
               items: [
                 {
@@ -289,7 +296,7 @@ const Example = () => {
               ]
             },
             {
-              text: "Support us",
+              text: "Policies and procedures",
               href: "http://example.org",
               items: [
                 {
@@ -311,7 +318,7 @@ const Example = () => {
               ]
             },
             {
-              text: "Work with us",
+              text: "Resource and guidance",
               href: "http://example.org",
               items: [
                 {
