@@ -5,8 +5,9 @@
 .Hero {
   background: url("./background.jpg") no-repeat center top;
   background-size: cover;
-  height: 40vh;
+  height: 48vmin;
   position: relative;
+  margin: 0 -1rem;
 }
 
 .Hero-inner {
