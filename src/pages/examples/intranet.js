@@ -41,14 +41,14 @@ const Example = () => {
                 to: "/"
               },
               {
-                text: "Who we are",
+                text: "Learning and development",
                 to: "/"
               }
             ]}
           />
         </div>
         <main className="Example-main">
-          <Hero>{`Our history`}</Hero>
+          <Hero>{`Health and safety`}</Hero>
 
           <div className="Example-content">
             <Paragraph>
@@ -226,7 +226,7 @@ const Example = () => {
               items: [
                 {
                   isActive: true,
-                  text: "Our history",
+                  text: "Health and safety",
                   href: "http://example.org"
                 },
                 {

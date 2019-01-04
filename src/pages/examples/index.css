@@ -35,6 +35,12 @@
     min-width: 20rem;
   }
 
+  .Example--main {
+    & .Example-content {
+      padding: 0 2rem;
+    }
+  }
+
   .Example-breadcrumbs {
     padding: 1rem 2rem;
   }
@@ -72,21 +78,21 @@
     & .Example-temp {
       grid-column: 2;
       grid-row: 2;
-      padding: 2rem;
+      padding-top: 2rem;
     }
 
     & .Example-content {
-      padding: 0;
-      padding-top: 1rem;
+      padding: 2rem;
     }
 
     & .Example-menu {
-      padding: 0 1rem;
+      padding-left: 1rem;
     }
 
     & .Example-breadcrumbs {
       padding: 0;
       padding-bottom: 1.5rem;
+      padding-left: 2rem;
     }
 
     & .Menu-attentionGrabbingLinks {

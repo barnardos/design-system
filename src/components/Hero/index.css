@@ -7,7 +7,6 @@
   background-size: cover;
   height: 48vmin;
   position: relative;
-  margin: 0 -1rem;
 }
 
 .Hero-inner {
@@ -24,5 +23,11 @@
 @media (min-width: 40rem) {
   .Hero {
     font: 600 var(--type-9) proxima-nova, sans-serif;
+  }
+}
+
+@media (min-width: 62rem) {
+  .Hero-inner {
+    padding: 0.5rem 2rem;
   }
 }
