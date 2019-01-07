@@ -1,0 +1,12 @@
+@import "../../custom-properties.css";
+
+/** @define Label; */
+
+.Label {
+  display: block;
+  font: 600 var(--type-3) system-ui;
+}
+
+.Label--inlined {
+  font: 300 var(--type-2) system-ui;
+}

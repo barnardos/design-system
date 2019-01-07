@@ -1,0 +1,23 @@
+@import "../../custom-properties.css";
+
+/** @define DesignSystemIndex; */
+
+.DesignSystemIndex {
+  &:not(:first-child) {
+    margin-top: 1rem;
+  }
+}
+
+@media (min-width: 78rem) and (min-height: 40rem) {
+  .DesignSystemIndex {
+    margin-top: 0;
+    position: sticky;
+    top: 1rem;
+  }
+
+  .DesignSystemIndex-inner {
+    position: absolute;
+    right: 4rem;
+    width: 14rem;
+  }
+}

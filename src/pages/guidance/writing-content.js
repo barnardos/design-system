@@ -8,9 +8,9 @@ import Layout from "../../components/Layout";
 import Link from "../../components/Link";
 import ListItem from "../../components/ListItem";
 import Paragraph from "../../components/Paragraph";
-import TableOfContents from "../../components/TableOfContents";
+import DesignSystemIndex from "../../components/DesignSystemIndex";
 import Title from "../../components/Title";
-import UnorderedList from "../../components/UnorderedList";
+import BulletedList from "../../components/BulletedList";
 
 import "../../app.css";
 import "../index.css";
@@ -33,7 +33,7 @@ const Pages = () => (
       ]}
     />
     <Title>{`Writing content`}</Title>
-    <TableOfContents
+    <DesignSystemIndex
       items={[
         {
           level: 1,
@@ -46,14 +46,14 @@ const Pages = () => (
       {`When writing content use inclusive language and imagine you're talking to the reader.`}
     </Paragraph>
     <Paragraph>{`To be clear and concise you should:`}</Paragraph>
-    <UnorderedList>
+    <BulletedList>
       <ListItem>{`avoid jargon`}</ListItem>
       <ListItem>{`avoid the passive`}</ListItem>
       <ListItem>{`use short sentences with one main idea`}</ListItem>
       <ListItem>{`use bulleted lists when paragraphs have more than four points`}</ListItem>
-    </UnorderedList>
+    </BulletedList>
     <Paragraph>{`When styling your writing you should:`}</Paragraph>
-    <UnorderedList>
+    <BulletedList>
       <ListItem>{`use sentence case`}</ListItem>
       <ListItem>{`avoid use of bold`}</ListItem>
       <ListItem>{`use italics for general emphasis`}</ListItem>
@@ -63,9 +63,9 @@ const Pages = () => (
       <ListItem>{`write dates as 9 January 2018`}</ListItem>
       <ListItem>{`use the 12-hour clock, for example 10am and 2.30pm`}</ListItem>
       <ListItem>{`use noon and midnight instead of 12 noon and 12 midnight`}</ListItem>
-    </UnorderedList>
+    </BulletedList>
     <Heading>{`Spelling`}</Heading>
-    <UnorderedList>
+    <BulletedList>
       <ListItem>{`Barnardo’s (always with apostrophe)`}</ListItem>
       <ListItem>{`email (no hyphen)`}</ListItem>
       <ListItem>{`http:// (is not required, begin web addresses with www)`}</ListItem>
@@ -73,7 +73,7 @@ const Pages = () => (
       <ListItem>{`per cent (should be spelt in words, unless used in tables)`}</ListItem>
       <ListItem>{`postcode (no hyphen)`}</ListItem>
       <ListItem>{`website (no hyphen)`}</ListItem>
-    </UnorderedList>
+    </BulletedList>
     <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/issues/87">{`research`}</Link>

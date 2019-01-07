@@ -1,0 +1,7 @@
+/** @define Form; */
+
+.Form {
+  &:not(:first-child) {
+    margin-top: 1rem;
+  }
+}

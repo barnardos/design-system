@@ -1,15 +1,14 @@
 import Helmet from "react-helmet";
 import React from "react";
 
-import AttentionGrabbingCard from "../../components/AttentionGrabbingCard";
+import AttentionGrabbingPromo from "../../components/AttentionGrabbingPromo";
 import AttentionGrabbingLink from "../../components/AttentionGrabbingLink";
 import BackLink from "../../components/BackLink";
 import Breadcrumbs from "../../components/Breadcrumbs";
-import Card from "../../components/Card";
+import Promo from "../../components/Promo";
 import Cite from "../../components/Cite";
-import Command from "../../components/Command";
 import DonateLink from "../../components/DonateLink";
-import Filter from "../../components/Filter";
+import DesignSystemIndex from "../../components/DesignSystemIndex";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import Heading from "../../components/Heading";
@@ -20,12 +19,12 @@ import Menu from "../../components/Menu";
 import Pagination from "../../components/Pagination";
 import Paragraph from "../../components/Paragraph";
 import ProgressLink from "../../components/ProgressLink";
+import Search from "../../components/Search";
 import StartLink from "../../components/StartLink";
 import Subheading from "../../components/Subheading";
-import SubmitControls from "../../components/SubmitControls";
-import TableOfContents from "../../components/TableOfContents";
+import Index from "../../components/Index";
 import Title from "../../components/Title";
-import UnorderedList from "../../components/UnorderedList";
+import BulletedList from "../../components/BulletedList";
 
 import "../../app.css";
 import "../index.css";
@@ -48,7 +47,7 @@ const Pages = () => (
       ]}
     />
     <Title>{`Navigating`}</Title>
-    <TableOfContents
+    <DesignSystemIndex
       items={[
         {
           level: 1,
@@ -87,18 +86,18 @@ const Pages = () => (
         },
         {
           level: 1,
-          text: "Cards",
-          to: "/guidance/navigating/#cards"
+          text: "Promos",
+          to: "/guidance/navigating/#promos"
         },
         {
           level: 2,
-          text: "Card",
-          to: "/guidance/navigating/#card"
+          text: "Promo",
+          to: "/guidance/navigating/#promo"
         },
         {
           level: 2,
-          text: "Attention Grabbing Card",
-          to: "/guidance/navigating/#attention-grabbing-card"
+          text: "Attention Grabbing Promo",
+          to: "/guidance/navigating/#attention-grabbing-promo"
         },
         {
           level: 1,
@@ -107,8 +106,8 @@ const Pages = () => (
         },
         {
           level: 1,
-          text: "Table Of Contents",
-          to: "/guidance/navigating/#table-of-contents"
+          text: "Index",
+          to: "/guidance/navigating/#index"
         },
         {
           level: 1,
@@ -117,18 +116,13 @@ const Pages = () => (
         },
         {
           level: 1,
-          text: "Command",
-          to: "/guidance/navigating/#command"
-        },
-        {
-          level: 1,
-          text: "Filtering",
-          to: "/guidance/navigating/#filtering"
-        },
-        {
-          level: 1,
           text: "Menu",
           to: "/guidance/navigating/#menu"
+        },
+        {
+          level: 1,
+          text: "Search",
+          to: "/guidance/navigating/#search"
         },
         {
           level: 1,
@@ -145,9 +139,9 @@ const Pages = () => (
     <Heading>{`Links`}</Heading>
     <Subheading>{`Link`}</Subheading>
     <Paragraph>{`When using this component you should:`}</Paragraph>
-    <UnorderedList>
+    <BulletedList>
       <ListItem>{`use a meaningful phrase that makes sense out of context`}</ListItem>
-    </UnorderedList>
+    </BulletedList>
     <div className="Pages-example">
       <Heading>
         <Link href="http://example.org">{`Subheading of section`}</Link>
@@ -170,13 +164,13 @@ const Pages = () => (
     <Subheading>{`Progress Link`}</Subheading>
     <Paragraph>{`Use this component after a summary of content to progress onto more detail.`}</Paragraph>
     <Paragraph>{`When using this component you should:`}</Paragraph>
-    <UnorderedList>
+    <BulletedList>
       <ListItem>{`use sentence case`}</ListItem>
       <ListItem>{`use a verb, for example search`}</ListItem>
       <ListItem>{`use a meaningful phrase that makes sense out of context`}</ListItem>
       <ListItem>{`only use the Green colour`}</ListItem>
       <ListItem>{`not use terms like "Read more" and "Find out more"`}</ListItem>
-    </UnorderedList>
+    </BulletedList>
     <div className="Pages-example">
       <ProgressLink href="http://example.org">{`Search and apply for jobs`}</ProgressLink>
     </div>
@@ -190,10 +184,10 @@ const Pages = () => (
     <Subheading>{`Start Link`}</Subheading>
     <Paragraph>{`Use this component to link to the start of a transactional service.`}</Paragraph>
     <Paragraph>{`When using this component you should:`}</Paragraph>
-    <UnorderedList>
+    <BulletedList>
       <ListItem>{`limit to one on each page`}</ListItem>
       <ListItem>{`only use the Green colour`}</ListItem>
-    </UnorderedList>
+    </BulletedList>
     <div className="Pages-example">
       <StartLink href="http://example.org" />
     </div>
@@ -207,9 +201,9 @@ const Pages = () => (
     <Subheading>{`Donate Link`}</Subheading>
     <Paragraph>{`Use this component to link to the service to donate.`}</Paragraph>
     <Paragraph>{`When using this component you should:`}</Paragraph>
-    <UnorderedList>
+    <BulletedList>
       <ListItem>{`only use the Green colour`}</ListItem>
-    </UnorderedList>
+    </BulletedList>
     <div className="Pages-example">
       <DonateLink href="http://example.org" />
     </div>
@@ -223,13 +217,13 @@ const Pages = () => (
     <Subheading>{`Attention Grabbing Link`}</Subheading>
     <Paragraph>{`Use this component within featured content.`}</Paragraph>
     <Paragraph>{`When using this component you should:`}</Paragraph>
-    <UnorderedList>
+    <BulletedList>
       <ListItem>{`limit the number on each page`}</ListItem>
       <ListItem>{`use sentence case`}</ListItem>
       <ListItem>{`use a verb, for example donate`}</ListItem>
       <ListItem>{`not use the Green colour`}</ListItem>
       <ListItem>{`not use terms like "Read more" and "Find out more"`}</ListItem>
-    </UnorderedList>
+    </BulletedList>
     <div className="Pages-example">
       <AttentionGrabbingLink
         colour="pink"
@@ -254,10 +248,10 @@ const Pages = () => (
     <Subheading>{`Back Link`}</Subheading>
     <Paragraph>{`Use this component to link back within a transactional service.`}</Paragraph>
     <Paragraph>{`When using this component you should:`}</Paragraph>
-    <UnorderedList>
+    <BulletedList>
       <ListItem>{`only use it once on each page`}</ListItem>
       <ListItem>{`place it as the first interactive element`}</ListItem>
-    </UnorderedList>
+    </BulletedList>
     <div className="Pages-example">
       <BackLink href="http://example.org" />
     </div>
@@ -268,43 +262,43 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/issues/166">{`research`}</Link>
       {` on GitHub.`}
     </Cite>
-    <Heading>{`Cards`}</Heading>
+    <Heading>{`Promos`}</Heading>
     <Paragraph>{`Use these components to provide a summary that links to additional details.`}</Paragraph>
-    <Subheading>{`Card`}</Subheading>
+    <Subheading>{`Promo`}</Subheading>
     <div className="Pages-example">
-      <Card
+      <Promo
         href="http://example.org"
         meta="20 October 2019"
         title="Barnardo’s celebrates National Adoption Week"
-      >{`This year’s campaign calls on people to welcome an older child into their family.`}</Card>
+      >{`This year’s campaign calls on people to welcome an older child into their family.`}</Promo>
     </div>
     <div className="Pages-example">
-      <Card
+      <Promo
         href="http://example.org"
         src="https://donate.barnardos.org.uk/sites/default/files/styles/b_lg/public/uploads/IMG_8550.jpg"
         title="Other ways to donate"
-      >{`Find out ways to help support vulnerable children including making one-off or regular donations.`}</Card>
+      >{`Find out ways to help support vulnerable children including making one-off or regular donations.`}</Promo>
     </div>
     <Cite>
       {`View `}
-      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Card">{`code`}</Link>
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Promo">{`code`}</Link>
       {` and `}
       <Link href="https://github.com/barnardos/design-system/issues/91">{`research`}</Link>
       {` on GitHub.`}
     </Cite>
-    <Subheading>{`Attention Grabbing Card`}</Subheading>
+    <Subheading>{`Attention Grabbing Promo`}</Subheading>
     <div className="Pages-example">
-      <AttentionGrabbingCard
+      <AttentionGrabbingPromo
         colour="pink"
         href="http://example.org"
         meta="14 April 2019"
         title="Brighton Marathon"
         text="Sign up"
-      >{`Taking in the sights and sounds of the coast, this fantastic 26.2 mile route covers Hove and finishes at the famous Brighton Pier.`}</AttentionGrabbingCard>
+      >{`Taking in the sights and sounds of the coast, this fantastic 26.2 mile route covers Hove and finishes at the famous Brighton Pier.`}</AttentionGrabbingPromo>
     </div>
     <Cite>
       {`View `}
-      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/AttentionGrabbingCard">{`code`}</Link>
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/AttentionGrabbingPromo">{`code`}</Link>
       {` and `}
       <Link href="https://github.com/barnardos/design-system/issues/401">{`research`}</Link>
       {` on GitHub.`}
@@ -312,9 +306,9 @@ const Pages = () => (
     <Heading>{`Breadcrumbs`}</Heading>
     <Paragraph>{`Use this component to help a user identify their current location.`}</Paragraph>
     <Paragraph>{`When using this component you should:`}</Paragraph>
-    <UnorderedList>
+    <BulletedList>
       <ListItem>{`place it directly above the page title`}</ListItem>
-    </UnorderedList>
+    </BulletedList>
     <div className="Pages-example">
       <Breadcrumbs
         items={[
@@ -336,41 +330,33 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/issues/2">{`research`}</Link>
       {` on GitHub.`}
     </Cite>
-    <Heading>{`Table Of Contents`}</Heading>
+    <Heading>{`Index`}</Heading>
     <Paragraph>{`Use this component to navigate within a page or section of pages.`}</Paragraph>
     <div className="Pages-example">
-      <div
-        style={{
-          height: "12rem",
-          overflow: "hidden",
-          position: "relative"
-        }}
-      >
-        <TableOfContents
-          items={[
-            {
-              level: 1,
-              text: "Who can adopt?",
-              to: "/"
-            },
-            {
-              level: 2,
-              text: "If you have children",
-              to: "/"
-            },
-            {
-              level: 2,
-              text: "If you have a partner",
-              to: "/"
-            },
-            {
-              level: 1,
-              text: "Types of adoption",
-              to: "/"
-            }
-          ]}
-        />
-      </div>
+      <Index
+        items={[
+          {
+            level: 1,
+            text: "Who can adopt?",
+            to: "/"
+          },
+          {
+            level: 2,
+            text: "If you have children",
+            to: "/"
+          },
+          {
+            level: 2,
+            text: "If you have a partner",
+            to: "/"
+          },
+          {
+            level: 1,
+            text: "Types of adoption",
+            to: "/"
+          }
+        ]}
+      />
     </div>
     <Cite>
       {`View `}
@@ -400,130 +386,17 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/issues/250">{`research`}</Link>
       {` on GitHub.`}
     </Cite>
-    <Heading>{`Command`}</Heading>
-    <Paragraph>{`Use this component for interactive triggers that don't submit data.`}</Paragraph>
-    <div className="Pages-example">
-      <Command>Print page</Command>
-    </div>
-    <Cite>
-      {`View `}
-      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Command">{`code`}</Link>
-      {` and `}
-      <Link href="https://github.com/barnardos/design-system/issues/33">{`research`}</Link>
-      {` on GitHub.`}
-    </Cite>
-    <Heading>{`Filtering`}</Heading>
-    <Paragraph>{`When filtering you should:`}</Paragraph>
-    <UnorderedList>
-      <ListItem>{`avoid too many filters`}</ListItem>
-      <ListItem>{`show common filters at all times`}</ListItem>
-      <ListItem>{`dynamically remove filters that have no results`}</ListItem>
-      <ListItem>{`show the active filters`}</ListItem>
-      <ListItem>{`include a way to undo each filter`}</ListItem>
-      <ListItem>{`show the number of results`}</ListItem>
-    </UnorderedList>
-    <div className="Pages-example">
-      <div
-        style={{
-          paddingBottom: "16rem",
-          position: "relative"
-        }}
-      >
-        <SubmitControls
-          controls={[
-            {
-              control: "singlelineText",
-              id: "submit-controls-single-line-text-example",
-              hint: "For example town or postcode.",
-              label: "Location",
-              size: 48
-            }
-          ]}
-          submit={{
-            text: "Find"
-          }}
-        />
-        <div
-          style={{
-            marginTop: "1rem"
-          }}
-        >
-          <Filter
-            submitControls={{
-              controls: [
-                {
-                  control: "oneOfManyChoice",
-                  id: "submit-controls-one-of-many-choice-example",
-                  legend: "Within",
-                  name: "submit-controls-one-of-many-choice-example",
-                  choices: [
-                    {
-                      label: "any distance",
-                      id:
-                        "submit-controls-one-of-many-choice-control-example-anydistance"
-                    },
-                    {
-                      label: "1 mile",
-                      id:
-                        "submit-controls-one-of-many-choice-control-example-1m"
-                    },
-                    {
-                      label: "10 miles",
-                      id:
-                        "submit-controls-one-of-many-choice-control-example-10m"
-                    },
-                    {
-                      label: "50 miles",
-                      id:
-                        "submit-controls-one-of-many-choice-control-example-50m"
-                    }
-                  ]
-                },
-                {
-                  control: "anyOfManyChoice",
-                  id: "submit-controls-one-of-many-choice-example",
-                  legend: "Type",
-                  name: "submit-controls-one-of-many-choice-example",
-                  choices: [
-                    {
-                      label: "vegan",
-                      id:
-                        "submit-controls-any-of-many-choice-control-example-vegan"
-                    },
-                    {
-                      label: "vegetarian",
-                      id:
-                        "submit-controls-any-of-many-choice-control-example-vegetarian"
-                    }
-                  ]
-                }
-              ],
-              submit: {
-                text: "Apply filters"
-              }
-            }}
-          />
-        </div>
-      </div>
-    </div>
-    <Cite>
-      {`View `}
-      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Filter">{`code`}</Link>
-      {` and `}
-      <Link href="https://github.com/barnardos/design-system/issues/79">{`research`}</Link>
-      {` on GitHub.`}
-    </Cite>
     <Heading>{`Menu`}</Heading>
     <Paragraph>{`Use this component to navigate to top and secondary level items.`}</Paragraph>
     <Paragraph>{`When using this component you should:`}</Paragraph>
-    <UnorderedList>
+    <BulletedList>
       <ListItem>{`aim to have the items visible`}</ListItem>
       <ListItem>{`avoid collapsing items into a Command on larger viewports`}</ListItem>
-    </UnorderedList>
+    </BulletedList>
     <div className="Pages-example">
       <div
         style={{
-          paddingBottom: "28rem",
+          paddingBottom: "8rem",
           position: "relative"
         }}
       >
@@ -531,47 +404,49 @@ const Pages = () => (
           items={[
             {
               text: "About us",
-              href: "http://example.org",
+              to: "/",
               items: [
                 {
                   text: "Our history",
-                  href: "http://example.org"
+                  to: "/"
                 },
                 {
                   text: "Annual report",
-                  href: "http://example.org"
+                  to: "/"
                 },
                 {
                   text: "How we're funded",
-                  href: "http://example.org"
+                  to: "/"
                 }
               ]
             },
             {
+              isActive: true,
               text: "What we do",
-              href: "http://example.org",
+              to: "/",
               items: [
                 {
+                  isActive: true,
                   text: "Fostering & adoption",
-                  href: "http://example.org"
+                  to: "/"
                 },
                 {
                   text: "Supporting young adults",
-                  href: "http://example.org"
+                  to: "/"
                 }
               ]
             },
             {
               text: "Work with us",
-              href: "http://example.org",
+              to: "/",
               items: [
                 {
                   text: "Jobs",
-                  href: "http://example.org"
+                  to: "/"
                 },
                 {
                   text: "Commission us",
-                  href: "http://example.org"
+                  to: "/"
                 }
               ]
             }
@@ -586,11 +461,20 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/issues/2">{`research`}</Link>
       {` on GitHub.`}
     </Cite>
+    <Heading>{`Search`}</Heading>
+    <div className="Pages-example">
+      <Search />
+    </div>
+    <Cite>
+      {`View `}
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Search">{`code`}</Link>
+      {` on GitHub.`}
+    </Cite>
     <Heading>{`Header`}</Heading>
     <Paragraph>{`When using this component you should:`}</Paragraph>
-    <UnorderedList>
+    <BulletedList>
       <ListItem>{`link the Barnardo's logo to the homepage`}</ListItem>
-    </UnorderedList>
+    </BulletedList>
     <div className="Pages-example">
       <Header />
     </div>

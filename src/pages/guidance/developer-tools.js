@@ -8,9 +8,9 @@ import Layout from "../../components/Layout";
 import Link from "../../components/Link";
 import ListItem from "../../components/ListItem";
 import Paragraph from "../../components/Paragraph";
-import TableOfContents from "../../components/TableOfContents";
+import DesignSystemIndex from "../../components/DesignSystemIndex";
 import Title from "../../components/Title";
-import UnorderedList from "../../components/UnorderedList";
+import BulletedList from "../../components/BulletedList";
 
 import "../../app.css";
 import "../index.css";
@@ -33,7 +33,7 @@ const Pages = () => (
       ]}
     />
     <Title>{`Developer tools`}</Title>
-    <TableOfContents
+    <DesignSystemIndex
       items={[
         {
           level: 1,
@@ -50,7 +50,7 @@ const Pages = () => (
     <Paragraph>{`When developing your product you should maintain code quality and future-proof your code.`}</Paragraph>
     <Heading>{`Code quality`}</Heading>
     <Paragraph>{`You should:`}</Paragraph>
-    <UnorderedList>
+    <BulletedList>
       <ListItem>
         {`format your code with `}
         <Link href="https://prettier.io/">{`Prettier`}</Link>
@@ -68,10 +68,10 @@ const Pages = () => (
         <Link href="https://github.com/barnardos/stylelint-config-barnardos">{`stylelint-config-barnardos`}</Link>
         {`)`}
       </ListItem>
-    </UnorderedList>
+    </BulletedList>
     <Heading>{`Future-proofing code`}</Heading>
     <Paragraph>{`You should transpile modern standards for:`}</Paragraph>
-    <UnorderedList>
+    <BulletedList>
       <ListItem>
         {`JavaScript with `}
         <Link href="https://babeljs.io/docs/en/babel-preset-env">{`babel-preset-env`}</Link>
@@ -80,7 +80,7 @@ const Pages = () => (
         {`CSS with `}
         <Link href="https://preset-env.cssdb.org/">{`postcss-preset-env`}</Link>
       </ListItem>
-    </UnorderedList>
+    </BulletedList>
     <Paragraph>
       {`You should use the `}
       <Link href="https://github.com/browserslist/browserslist">{`browserslist`}</Link>

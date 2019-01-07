@@ -1,0 +1,64 @@
+@import "../../custom-properties.css";
+
+/** @define AttentionGrabbingPromo; */
+
+.AttentionGrabbingPromo {
+  background-color: var(--black);
+  box-shadow: inset 0 0 0 2px var(--black), 0.25rem 0.25rem currentColor;
+  color: var(--white);
+  display: block;
+  text-decoration: none;
+}
+
+.AttentionGrabbingPromo-image {
+  display: block;
+  max-width: 100%;
+  padding: 2px; /* stylelint-disable-line declaration-property-unit-whitelist */
+}
+
+.AttentionGrabbingPromo-text {
+  padding: 1rem;
+}
+
+.AttentionGrabbingPromo-meta {
+  color: color-mod(var(--white) shade(30%));
+  font: 300 var(--type-0) system-ui;
+  margin-top: 0.5rem;
+}
+
+.AttentionGrabbingPromo-title {
+  color: var(--white);
+  font: 600 var(--type-5) proxima-nova, sans-serif;
+}
+
+.AttentionGrabbingPromo-children {
+  color: var(--white);
+  font: 300 var(--type-0) system-ui;
+  margin-top: 1rem;
+}
+
+.AttentionGrabbingPromo-link {
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 30rem) {
+  .AttentionGrabbingPromo-link {
+    display: inline-block;
+  }
+}
+
+.AttentionGrabbingPromo--orange {
+  color: var(--orange);
+}
+
+.AttentionGrabbingPromo--pink {
+  color: var(--pink);
+}
+
+.AttentionGrabbingPromo--purple {
+  color: var(--purple);
+}
+
+.AttentionGrabbingPromo--teal {
+  color: var(--teal);
+}

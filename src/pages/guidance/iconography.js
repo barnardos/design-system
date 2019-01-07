@@ -9,7 +9,7 @@ import Link from "../../components/Link";
 import ListItem from "../../components/ListItem";
 import Paragraph from "../../components/Paragraph";
 import Title from "../../components/Title";
-import UnorderedList from "../../components/UnorderedList";
+import BulletedList from "../../components/BulletedList";
 
 import "../../app.css";
 import "../index.css";
@@ -33,7 +33,7 @@ const Pages = () => (
     />
     <Title>{`Iconography`}</Title>
     <Paragraph>{`When using iconography you should:`}</Paragraph>
-    <UnorderedList>
+    <BulletedList>
       <ListItem>{`choose a flat graphic style`}</ListItem>
       <ListItem>
         {`use the `}
@@ -43,7 +43,7 @@ const Pages = () => (
         >{`brand colours`}</GatsbyLink>
       </ListItem>
       <ListItem>{`avoid relying on icons to convey important information`}</ListItem>
-    </UnorderedList>
+    </BulletedList>
     <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/issues/226">{`research`}</Link>

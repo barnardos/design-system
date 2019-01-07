@@ -1,0 +1,10 @@
+/** @define Switch; */
+
+.Switch {
+  align-items: center;
+  display: flex;
+}
+
+.Switch-input {
+  margin-right: 1rem;
+}

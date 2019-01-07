@@ -2,7 +2,6 @@ import PropTypes from "prop-types";
 import React, { Component } from "react";
 
 import Command from "../Command";
-import SubmitControls from "../SubmitControls";
 
 import crossSvg from "./cross.svg";
 
@@ -22,21 +21,23 @@ class Filter extends Component {
   }
 
   render() {
-    const { submitControls } = this.props;
+    const { children } = this.props;
     const { isActive } = this.state;
-    const detailsClassName = `Filter-details ${
-      isActive ? "Filter-details--active" : ""
-    }`;
     return (
       <div className="Filter">
-        <Command onClick={this.handleClick}>Filter</Command>
-        <div className={detailsClassName}>
-          <Command onClick={this.handleClick}>
+        <Command onClick={this.handleClick}>
+          {isActive ? (
             <img alt="Close menu" src={crossSvg} style={{ width: "1.5rem" }} />
-          </Command>
-          <div className="Filter-submitControls">
-            <SubmitControls {...submitControls} />
-          </div>
+          ) : (
+            `Filter`
+          )}
+        </Command>
+        <div
+          className={`Filter-details ${
+            isActive ? "Filter-details--active" : ""
+          }`}
+        >
+          <div className="Filter-children">{children}</div>
         </div>
       </div>
     );
@@ -44,7 +45,7 @@ class Filter extends Component {
 }
 
 Filter.propTypes = {
-  submitControls: PropTypes.object.isRequired
+  children: PropTypes.node.isRequired
 };
 
 export default Filter;

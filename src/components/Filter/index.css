@@ -2,20 +2,20 @@
 
 /** @define Filter; */
 
+.Filter {
+  &:not(:first-child) {
+    margin-top: 1rem;
+  }
+}
+
 .Filter-details {
   display: none;
 }
 
 .Filter-details--active {
-  background: var(--white);
-  bottom: 0;
   display: block;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
 }
 
-.Filter-submitControls {
+.Filter-children {
   margin-top: 1rem;
 }

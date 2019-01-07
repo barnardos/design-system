@@ -25,6 +25,10 @@
     position: relative;
     top: 0.25rem;
   }
+
+  &:not(:first-child) {
+    margin-top: 1.5rem;
+  }
 }
 
 @media (min-width: 32rem) {
