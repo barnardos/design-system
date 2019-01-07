@@ -1,29 +1,29 @@
 import Helmet from "react-helmet";
 import React from "react";
 
-import Breadcrumbs from "../../components/Breadcrumbs";
-import CheckBox from "../../components/CheckBox";
-import CheckBoxes from "../../components/CheckBoxes";
-import Cite from "../../components/Cite";
-import Conditional from "../../components/Conditional";
-import CurrencyInput from "../../components/CurrencyInput";
-import DateInput from "../../components/DateInput";
-import ErrorSummary from "../../components/ErrorSummary";
-import Heading from "../../components/Heading";
-import Layout from "../../components/Layout";
-import Link from "../../components/Link";
-import ListItem from "../../components/ListItem";
-import Paragraph from "../../components/Paragraph";
-import RadioButtons from "../../components/RadioButtons";
-import Subheading from "../../components/Subheading";
-import DesignSystemIndex from "../../components/DesignSystemIndex";
-import TextArea from "../../components/TextArea";
-import TextInput from "../../components/TextInput";
-import Title from "../../components/Title";
-import BulletedList from "../../components/BulletedList";
+import Breadcrumbs from "../components/Breadcrumbs";
+import CheckBox from "../components/CheckBox";
+import CheckBoxes from "../components/CheckBoxes";
+import Cite from "../components/Cite";
+import Conditional from "../components/Conditional";
+import CurrencyInput from "../components/CurrencyInput";
+import DateInput from "../components/DateInput";
+import ErrorSummary from "../components/ErrorSummary";
+import Heading from "../components/Heading";
+import Layout from "../components/Layout";
+import Link from "../components/Link";
+import ListItem from "../components/ListItem";
+import Paragraph from "../components/Paragraph";
+import RadioButtons from "../components/RadioButtons";
+import Subheading from "../components/Subheading";
+import DesignSystemIndex from "../components/DesignSystemIndex";
+import TextArea from "../components/TextArea";
+import TextInput from "../components/TextInput";
+import Title from "../components/Title";
+import BulletedList from "../components/BulletedList";
 
-import "../../app.css";
-import "../index.css";
+import "../app.css";
+import "./index.css";
 
 const Pages = () => (
   <Layout>
@@ -35,10 +35,6 @@ const Pages = () => (
         {
           text: "Home",
           to: "/"
-        },
-        {
-          text: "Guidance",
-          to: "/guidance/"
         }
       ]}
     />
@@ -48,72 +44,77 @@ const Pages = () => (
         {
           level: 1,
           text: "Text entry",
-          to: "/guidance/requesting-information/#text-entry"
+          to: "/requesting-information/#text-entry"
         },
         {
           level: 2,
           text: "Text Input",
-          to: "/guidance/requesting-information/#text-input"
+          to: "/requesting-information/#text-input"
         },
         {
           level: 3,
           text: "Requesting names",
-          to: "/guidance/requesting-information/#requesting-names"
+          to: "/requesting-information/#requesting-names"
         },
         {
           level: 2,
           text: "Text Area",
-          to: "/guidance/requesting-information/#text-area"
+          to: "/requesting-information/#text-area"
         },
         {
           level: 2,
           text: "Currency Input",
-          to: "/guidance/requesting-information/#currency-input"
+          to: "/requesting-information/#currency-input"
         },
         {
           level: 2,
           text: "Date Input",
-          to: "/guidance/requesting-information/#date-input"
+          to: "/requesting-information/#date-input"
         },
         {
           level: 1,
           text: "Choices",
-          to: "/guidance/requesting-information/#choices"
+          to: "/requesting-information/#choices"
         },
         {
           level: 2,
           text: "Check Box",
-          to: "/guidance/requesting-information/#check-box"
+          to: "/requesting-information/#check-box"
         },
         {
           level: 2,
           text: "Check Boxes",
-          to: "/guidance/requesting-information/#check-boxes"
+          to: "/requesting-information/#check-boxes"
         },
         {
           level: 2,
           text: "Radio Buttons",
-          to: "/guidance/requesting-information/#radio-buttons"
+          to: "/requesting-information/#radio-buttons"
         },
         {
           level: 2,
           text: "Conditional",
-          to: "/guidance/requesting-information/#conditional"
+          to: "/requesting-information/#conditional"
         },
         {
           level: 1,
           text: "Validation",
-          to: "/guidance/requesting-information/#validation"
+          to: "/requesting-information/#validation"
         },
         {
           level: 2,
           text: "Error Summary",
-          to: "/guidance/requesting-information/#error-summary"
+          to: "/requesting-information/#error-summary"
+        },
+        {
+          level: 2,
+          text: "Errors",
+          to: "/requesting-information/#errors"
         },
         {
           level: 2,
           text: "Preventing spam",
-          to: "/guidance/requesting-information/#preventing-spam"
+          to: "/requesting-information/#preventing-spam"
         }
       ]}
     />
@@ -363,7 +364,7 @@ const Pages = () => (
             />
           }
         />
-        <figcaption className="Pages-figureCaption">{`Select a choice to reveal`}</figcaption>
+        <figcaption className="Pages-figureCaption">{`Select an option to reveal`}</figcaption>
       </figure>
     </div>
     <Cite>
@@ -372,6 +373,28 @@ const Pages = () => (
       {` on GitHub.`}
     </Cite>
     <Heading>{`Validation`}</Heading>
+    <Subheading>{`Error Summary`}</Subheading>
+    <div className="Pages-example">
+      <ErrorSummary
+        items={[
+          {
+            id: "submit-inputs-text-input-example",
+            error: "Enter the name of the meal"
+          },
+          {
+            error: "Select whether the meal contains nuts or not"
+          }
+        ]}
+      />
+    </div>
+    <Cite>
+      {`View `}
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/ErrorSummary">{`code`}</Link>
+      {` and `}
+      <Link href="https://github.com/barnardos/design-system/issues/67">{`research`}</Link>
+      {` on GitHub.`}
+    </Cite>
+    <Subheading>{`Errors`}</Subheading>
     <div className="Pages-example">
       <TextInput
         id="text-input-validation-example"
@@ -403,27 +426,6 @@ const Pages = () => (
         name="radio-buttons-example-validation"
       />
     </div>
-    <Subheading>{`Error Summary`}</Subheading>
-    <div className="Pages-example">
-      <ErrorSummary
-        items={[
-          {
-            id: "submit-inputs-text-input-example",
-            error: "Enter the name of the meal"
-          },
-          {
-            error: "Select whether the meal contains nuts or not"
-          }
-        ]}
-      />
-    </div>
-    <Cite>
-      {`View `}
-      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/ErrorSummary">{`code`}</Link>
-      {` and `}
-      <Link href="https://github.com/barnardos/design-system/issues/67">{`research`}</Link>
-      {` on GitHub.`}
-    </Cite>
     <Subheading>{`Preventing spam`}</Subheading>
     <Paragraph>{`To prevent spam submissions when requesting information you could try:`}</Paragraph>
     <BulletedList>

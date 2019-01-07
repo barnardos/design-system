@@ -1,10 +1,11 @@
+import { Link as GatsbyLink } from "gatsby";
 import PropTypes from "prop-types";
 import React from "react";
 
 import "./index.css";
 
-const Promo = ({ children, href, title, meta, src }) => (
-  <a className="Promo" href={href}>
+const Promo = ({ children, to, title, meta, src }) => (
+  <GatsbyLink className="Promo" to={to}>
     {src && (
       <div className="Promo-media">
         <img alt="" className="Promo-image" src={src} />
@@ -15,15 +16,15 @@ const Promo = ({ children, href, title, meta, src }) => (
       {meta && <h3 className="Promo-meta">{meta}</h3>}
       <div className="Promo-children">{children}</div>
     </div>
-  </a>
+  </GatsbyLink>
 );
 
 Promo.propTypes = {
   children: PropTypes.node.isRequired,
-  href: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
   meta: PropTypes.string,
-  src: PropTypes.string
+  src: PropTypes.string,
+  title: PropTypes.string.isRequired,
+  to: PropTypes.string.isRequired
 };
 
 export default Promo;

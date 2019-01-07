@@ -27,7 +27,7 @@ const Pages = () => (
       ]}
     />
     <Title>{`Principles`}</Title>
-    <Heading>{`1. Start small`}</Heading>
+    <Heading>{`Start small`}</Heading>
     <Paragraph>{`Put work in front of real people early and often.`}</Paragraph>
     <Paragraph>{`You should:`}</Paragraph>
     <BulletedList>
@@ -38,7 +38,7 @@ const Pages = () => (
       <ListItem>{`iterate based on evidence`}</ListItem>
       <ListItem>{`release early`}</ListItem>
     </BulletedList>
-    <Heading>{`2. Be inclusive`}</Heading>
+    <Heading>{`Be inclusive`}</Heading>
     <Paragraph>{`Strive to support all who need the product.`}</Paragraph>
     <Paragraph>{`You should:`}</Paragraph>
     <BulletedList>
@@ -48,7 +48,7 @@ const Pages = () => (
       <ListItem>{`provide legible
     and readable content`}</ListItem>
     </BulletedList>
-    <Heading>{`3. Keep it simple`}</Heading>
+    <Heading>{`Keep it simple`}</Heading>
     <Paragraph>{`Do the hard work so the user doesn't have to.`}</Paragraph>
     <Paragraph>{`You should:`}</Paragraph>
     <BulletedList>
@@ -58,24 +58,24 @@ const Pages = () => (
       <ListItem>{`hide underlying complex systems`}</ListItem>
       <ListItem>{`avoid deciding on a solution because "It's always been this way"`}</ListItem>
     </BulletedList>
-    <Heading>{`4. Be consistent`}</Heading>
+    <Heading>{`Be consistent`}</Heading>
     <Paragraph>{`Build trust and familiarity across products.`}</Paragraph>
     <Paragraph>{`You should:`}</Paragraph>
     <BulletedList>
       <ListItem>
         {`follow the `}
-        <GatsbyLink className="Link" to="/guidance/">{`guidance`}</GatsbyLink>
+        <GatsbyLink className="Link" to="/">{`guidance`}</GatsbyLink>
       </ListItem>
       <ListItem>{`avoid reinventing the wheel`}</ListItem>
       <ListItem>
         {`write using `}
         <GatsbyLink
           className="Link"
-          to="/guidance/writing-content/"
+          to="/writing-content/"
         >{`consistent language`}</GatsbyLink>
       </ListItem>
     </BulletedList>
-    <Heading>{`5. Be open`}</Heading>
+    <Heading>{`Be open`}</Heading>
     <Paragraph>{`Be part of the open digital community.`}</Paragraph>
     <Paragraph>{`You should:`}</Paragraph>
     <BulletedList>
@@ -85,7 +85,7 @@ const Pages = () => (
       <ListItem>{`encourage collaboration`}</ListItem>
       <ListItem>{`learn from others`}</ListItem>
     </BulletedList>
-    <Heading>{`6. Embrace digital`}</Heading>
+    <Heading>{`Embrace digital`}</Heading>
     <Paragraph>{`Make the most of the medium's benefits.`}</Paragraph>
     <Paragraph>{`You should:`}</Paragraph>
     <BulletedList>

@@ -1,0 +1,9 @@
+@import "../../custom-properties.css";
+
+/** @define Promos; */
+
+.Promos {
+  display: grid;
+  grid-gap: 0 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+}

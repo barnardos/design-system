@@ -2,6 +2,10 @@
 
 /** @define Breadcrumbs; */
 
+.Breadcrumbs {
+  margin-top: 1.5rem;
+}
+
 .Breadcrumbs-items {
   display: flex;
   flex-wrap: wrap;
@@ -9,11 +13,20 @@
 
 .Breadcrumbs-item {
   list-style: none;
+  position: relative;
 
   &:not(:first-child) {
-    background: url("./chevron.svg") no-repeat 0.4rem 0.45rem;
-    background-size: 0.75rem 0.75rem;
-    padding-left: 1.5rem;
+    margin-left: 1.5rem;
+
+    &::before {
+      color: color-mod(var(--black) tint(90%));
+      content: "›";
+      font: 300 var(--type-6) proxima-nova, sans-serif;
+      line-height: 0;
+      margin: 0.5rem 0 0 -1rem;
+      position: absolute;
+      top: 0.125rem;
+    }
   }
 }
 

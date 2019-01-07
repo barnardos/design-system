@@ -36,7 +36,7 @@ describe("end-to-end", () => {
     await page.goto(routes.public.root);
     await page.waitForSelector(titleSelector);
     const title = await page.$eval(titleSelector, el => el.textContent);
-    expect(title).toBe("Design System");
+    expect(title).toBe("Barnardo’s Design System");
   });
 
   it("shows each sub page title", async () => {
@@ -68,5 +68,5 @@ describe("end-to-end", () => {
       pageTitle = await page.title();
       expect(`${title} - Barnardo's`).toBe(pageTitle);
     }
-  }, 10000);
+  }, 100000);
 });

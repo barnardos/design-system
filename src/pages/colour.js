@@ -1,22 +1,22 @@
 import Helmet from "react-helmet";
 import React from "react";
 
-import Breadcrumbs from "../../components/Breadcrumbs";
-import Cite from "../../components/Cite";
-import Heading from "../../components/Heading";
-import Layout from "../../components/Layout";
-import Link from "../../components/Link";
-import ListItem from "../../components/ListItem";
-import Paragraph from "../../components/Paragraph";
-import TextInput from "../../components/TextInput/index";
-import Swatches from "../../components/Swatches";
-import Submit from "../../components/Submit";
-import DesignSystemIndex from "../../components/DesignSystemIndex";
-import Title from "../../components/Title";
-import BulletedList from "../../components/BulletedList";
+import Breadcrumbs from "../components/Breadcrumbs";
+import Cite from "../components/Cite";
+import Heading from "../components/Heading";
+import Layout from "../components/Layout";
+import Link from "../components/Link";
+import ListItem from "../components/ListItem";
+import Paragraph from "../components/Paragraph";
+import TextInput from "../components/TextInput/index";
+import Swatches from "../components/Swatches";
+import Submit from "../components/Submit";
+import DesignSystemIndex from "../components/DesignSystemIndex";
+import Title from "../components/Title";
+import BulletedList from "../components/BulletedList";
 
-import "../../app.css";
-import "../index.css";
+import "../app.css";
+import "./index.css";
 
 const Pages = () => (
   <Layout>
@@ -28,10 +28,6 @@ const Pages = () => (
         {
           text: "Home",
           to: "/"
-        },
-        {
-          text: "Guidance",
-          to: "/guidance/"
         }
       ]}
     />
@@ -41,12 +37,12 @@ const Pages = () => (
         {
           level: 1,
           text: "Brand colours",
-          to: "/guidance/colour/#brand-colours"
+          to: "/colour/#brand-colours"
         },
         {
           level: 1,
           text: "Using colours",
-          to: "/guidance/colour/#using-colours"
+          to: "/colour/#using-colours"
         }
       ]}
     />
