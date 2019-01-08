@@ -14,10 +14,9 @@ import TextInput from "../components/TextInput";
 import RadioButtons from "../components/RadioButtons";
 import Form from "../components/Form";
 import Submit from "../components/Submit";
+import Example from "../components/Example";
 
-import "./index.css";
-
-const Pages = () => (
+const Page = () => (
   <DesignSystemLayout>
     <Helmet>
       <title>{`Filtering`}</title>
@@ -40,7 +39,7 @@ const Pages = () => (
       <ListItem>{`include a way to undo each filter`}</ListItem>
       <ListItem>{`show the number of results`}</ListItem>
     </BulletedList>
-    <div className="Pages-example">
+    <Example>
       <TextInput
         hint="For example town or postcode."
         id="text-input-filtering-location-example"
@@ -71,7 +70,7 @@ const Pages = () => (
         </Form>
       </Filter>
       <Submit text="Find" />
-    </div>
+    </Example>
     <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Filter">{`code`}</Link>
@@ -82,4 +81,4 @@ const Pages = () => (
   </DesignSystemLayout>
 );
 
-export default Pages;
+export default Page;

@@ -8,6 +8,7 @@ import Cite from "../components/Cite";
 import Conditional from "../components/Conditional";
 import CurrencyInput from "../components/CurrencyInput";
 import DateInput from "../components/DateInput";
+import Example from "../components/Example";
 import ErrorSummary from "../components/ErrorSummary";
 import Heading from "../components/Heading";
 import DesignSystemLayout from "../components/DesignSystemLayout";
@@ -21,10 +22,10 @@ import TextArea from "../components/TextArea";
 import TextInput from "../components/TextInput";
 import Title from "../components/Title";
 import BulletedList from "../components/BulletedList";
+import Figures from "../components/Figures";
+import Figure from "../components/Figure";
 
-import "./index.css";
-
-const Pages = () => (
+const Page = () => (
   <DesignSystemLayout>
     <Helmet>
       <title>{`Requesting information`}</title>
@@ -136,21 +137,21 @@ const Pages = () => (
       <ListItem>{`use hint text rather than placeholder text`}</ListItem>
     </BulletedList>
     <Subheading>{`Text Input`}</Subheading>
-    <div className="Pages-example">
+    <Example>
       <TextInput
         hint="So that we can send you the certificate."
         id="text-input-email-example"
         label="Email"
         size={48}
       />
-    </div>
-    <div className="Pages-example">
+    </Example>
+    <Example>
       <TextInput
         id="text-input-post-code-example"
         label="Postcode (optional)"
         size={16}
       />
-    </div>
+    </Example>
     <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/TextInput">{`code`}</Link>
@@ -165,49 +166,42 @@ const Pages = () => (
       <ListItem>{`support all characters users may need to enter`}</ListItem>
       <ListItem>{`avoid asking for title`}</ListItem>
     </BulletedList>
-    <div className="Pages-figures">
-      <figure className="Pages-figure">
+    <Figures>
+      <Figure caption="Where possible use a single name field to accommodates the broadest range of name types.">
         <TextInput
           id="text-input-full-name-example"
           label="Full name"
           size={48}
         />
-        <figcaption className="Pages-figureCaption">{`Where possible use a single name field to accommodates the broadest range of name types.`}</figcaption>
-      </figure>
-      <figure className="Pages-figure">
+      </Figure>
+      <Figure caption="If your product needs to reliably extract first name and last name, use multiple name fields.">
         <TextInput
           id="text-input-first-name-example"
           label="First name"
           size={48}
         />
-        <div
-          style={{
-            marginTop: "1rem"
-          }}
-        >
-          <TextInput
-            id="text-input-last-name-example"
-            label="Last name"
-            size={48}
-          />
-        </div>
-        <figcaption className="Pages-figureCaption">{`If your product needs to reliably extract first name and last name, use multiple name fields.`}</figcaption>
-      </figure>
-    </div>
+
+        <TextInput
+          id="text-input-last-name-example"
+          label="Last name"
+          size={48}
+        />
+      </Figure>
+    </Figures>
     <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/issues/404">{`research`}</Link>
       {` on GitHub.`}
     </Cite>
     <Subheading>{`Text Area`}</Subheading>
-    <div className="Pages-example">
+    <Example>
       <TextArea
         id="text-area-example"
         label="What's on your mind?"
         size={48}
         verticalSize={4}
       />
-    </div>
+    </Example>
     <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/TextArea">{`code`}</Link>
@@ -216,9 +210,9 @@ const Pages = () => (
       {` on GitHub.`}
     </Cite>
     <Subheading>{`Currency Input`}</Subheading>
-    <div className="Pages-example">
+    <Example>
       <CurrencyInput currency="£" id="currency-input-example" label="Amount" />
-    </div>
+    </Example>
     <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/CurrencyInput">{`code`}</Link>
@@ -236,9 +230,9 @@ const Pages = () => (
       <ListItem>{`avoid auto-tabbing between fields`}</ListItem>
       <ListItem>{`avoid using calendar pickers`}</ListItem>
     </BulletedList>
-    <div className="Pages-example">
+    <Example>
       <DateInput id="date-input-example" legend="Date of birth" />
-    </div>
+    </Example>
     <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/DateInput">{`code`}</Link>
@@ -253,13 +247,13 @@ const Pages = () => (
       <ListItem>{`limit the options to eight or less`}</ListItem>
     </BulletedList>
     <Subheading>{`Check Box`}</Subheading>
-    <div className="Pages-example">
+    <Example>
       <CheckBox
         id="check-box-example"
         label="Subscribe to mailing list"
         name="check-box-example"
       />
-    </div>
+    </Example>
     <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/CheckBox">{`code`}</Link>
@@ -272,7 +266,7 @@ const Pages = () => (
     <BulletedList>
       <ListItem>{`provide an option that excludes the others`}</ListItem>
     </BulletedList>
-    <div className="Pages-example">
+    <Example>
       <CheckBoxes
         items={[
           {
@@ -297,7 +291,7 @@ const Pages = () => (
         legend="How will the interview be recorded?"
         name="check-boxes-example"
       />
-    </div>
+    </Example>
     <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/CheckBoxes">{`code`}</Link>
@@ -306,7 +300,7 @@ const Pages = () => (
       {` on GitHub.`}
     </Cite>
     <Subheading>{`Radio Buttons`}</Subheading>
-    <div className="Pages-example">
+    <Example>
       <RadioButtons
         items={[
           {
@@ -326,7 +320,7 @@ const Pages = () => (
         legend="Will there be refreshments?"
         name="radio-buttons-example"
       />
-    </div>
+    </Example>
     <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/RadioButtons">{`code`}</Link>
@@ -335,8 +329,8 @@ const Pages = () => (
       {` on GitHub.`}
     </Cite>
     <Subheading>{`Conditional`}</Subheading>
-    <div className="Pages-figures">
-      <figure className="Pages-figure">
+    <Figures>
+      <Figure caption="Select an option to reveal">
         <Conditional
           trigger={
             <RadioButtons
@@ -363,9 +357,8 @@ const Pages = () => (
             />
           }
         />
-        <figcaption className="Pages-figureCaption">{`Select an option to reveal`}</figcaption>
-      </figure>
-    </div>
+      </Figure>
+    </Figures>
     <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/issues/86">{`research`}</Link>
@@ -373,7 +366,7 @@ const Pages = () => (
     </Cite>
     <Heading>{`Validation`}</Heading>
     <Subheading>{`Error Summary`}</Subheading>
-    <div className="Pages-example">
+    <Example>
       <ErrorSummary
         items={[
           {
@@ -385,7 +378,7 @@ const Pages = () => (
           }
         ]}
       />
-    </div>
+    </Example>
     <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/ErrorSummary">{`code`}</Link>
@@ -394,15 +387,15 @@ const Pages = () => (
       {` on GitHub.`}
     </Cite>
     <Subheading>{`Errors`}</Subheading>
-    <div className="Pages-example">
+    <Example>
       <TextInput
         id="text-input-validation-example"
         label="Name of the meal"
         size={48}
         error="Enter the name of the meal"
       />
-    </div>
-    <div className="Pages-example">
+    </Example>
+    <Example>
       <RadioButtons
         items={[
           {
@@ -424,7 +417,7 @@ const Pages = () => (
         legend="Does the meal include nuts?"
         name="radio-buttons-example-validation"
       />
-    </div>
+    </Example>
     <Subheading>{`Preventing spam`}</Subheading>
     <Paragraph>{`To prevent spam submissions when requesting information you could try:`}</Paragraph>
     <BulletedList>
@@ -441,4 +434,4 @@ const Pages = () => (
   </DesignSystemLayout>
 );
 
-export default Pages;
+export default Page;

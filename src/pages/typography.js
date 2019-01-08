@@ -14,10 +14,10 @@ import Paragraph from "../components/Paragraph";
 import Title from "../components/Title";
 import BulletedList from "../components/BulletedList";
 import DesignSystemIndex from "../components/DesignSystemIndex";
+import Figures from "../components/Figures";
+import Figure from "../components/Figure";
 
-import "./index.css";
-
-const Pages = () => (
+const Page = () => (
   <DesignSystemLayout>
     <Helmet>
       <title>{`Typography`}</title>
@@ -46,50 +46,39 @@ const Pages = () => (
       <ListItem>{`exponents of 1.125 for other type sizes`}</ListItem>
       <ListItem>{`multiples of 0.25rem (roughly 4px) for line heights`}</ListItem>
     </BulletedList>
-    <div className="Pages-figures">
-      <figure className="Pages-figure">
-        <Title>{`Title `}</Title>
-        <figcaption className="Pages-figureCaption">
-          {`1rem * 1.125^8 (roughly 41px/48px)`}
-          <br />
-          {`1rem * 1.125^9 (roughly 46px/52px) on larger viewports`}
-          <br />
-          {`Proxima Nova Semi-Bold`}
-        </figcaption>
-      </figure>
-      <figure className="Pages-figure">
+    <Figures>
+      <Figure
+        caption="1rem * 1.125^8 (roughly 41px/48px)"
+        secondaryCaption="1rem * 1.125^9 (roughly 46px/52px) on larger viewports"
+        tertiaryCaption="Proxima Nova Semi-Bold"
+      >
+        <Title>{`Title`}</Title>
+      </Figure>
+      <Figure
+        caption="1rem * 1.125^4 (roughly 26px/32px)"
+        secondaryCaption="Proxima Nova Light"
+      >
         <Lede>{`Lede`}</Lede>
-        <figcaption className="Pages-figureCaption">
-          {`1rem * 1.125^4 (roughly 26px/32px)`}
-          <br />
-          {`Proxima Nova Light`}
-        </figcaption>
-      </figure>
-      <figure className="Pages-figure">
+      </Figure>
+      <Figure
+        caption="1rem * 1.125^5 (roughly 29px/32px)"
+        secondaryCaption="Proxima Nova Semi-Bold"
+      >
         <Heading>{`Heading`}</Heading>
-        <figcaption className="Pages-figureCaption">
-          {`1rem * 1.125^5 (roughly 29px/32px)`}
-          <br />
-          {`Proxima Nova Semi-Bold`}
-        </figcaption>
-      </figure>
-      <figure className="Pages-figure">
+      </Figure>
+      <Figure
+        caption="1rem * 1.125^4 (roughly 26px/32px)"
+        secondaryCaption="Proxima Nova Light"
+      >
         <Subheading>{`Subheading`}</Subheading>
-        <figcaption className="Pages-figureCaption">
-          {`1rem * 1.125^4 (roughly 26px/32px)`}
-          <br />
-          {`Proxima Nova Light`}
-        </figcaption>
-      </figure>
-      <figure className="Pages-figure">
+      </Figure>
+      <Figure
+        caption="1rem * 1.125^0 (roughly 16px/24px)"
+        secondaryCaption="system-ui light."
+      >
         <Paragraph>{`Paragraph`}</Paragraph>
-        <figcaption className="Pages-figureCaption">
-          {`1rem * 1.125^0 (roughly 16px/24px)`}
-          <br />
-          {`system-ui light`}
-        </figcaption>
-      </figure>
-    </div>
+      </Figure>
+    </Figures>
     <Heading>{`Using typefaces`}</Heading>
     <Paragraph>{`You should only use these fonts:`}</Paragraph>
     <BulletedList>
@@ -114,4 +103,4 @@ const Pages = () => (
   </DesignSystemLayout>
 );
 
-export default Pages;
+export default Page;

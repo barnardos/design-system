@@ -12,9 +12,7 @@ import Hero from "../components/Hero";
 import Section from "../components/Section";
 import SignpostLink from "../components/SignpostLink";
 
-import "./index.css";
-
-const Pages = () => (
+const Page = () => (
   <DesignSystemLayout>
     <Helmet>
       <title>{`Barnardo’s Design System`}</title>
@@ -147,4 +145,4 @@ const Pages = () => (
   </DesignSystemLayout>
 );
 
-export default Pages;
+export default Page;

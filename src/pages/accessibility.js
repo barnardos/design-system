@@ -11,9 +11,7 @@ import Paragraph from "../components/Paragraph";
 import Title from "../components/Title";
 import BulletedList from "../components/BulletedList";
 
-import "./index.css";
-
-const Pages = () => (
+const Page = () => (
   <DesignSystemLayout>
     <Helmet>
       <title>{`Accessibility`}</title>
@@ -53,4 +51,4 @@ const Pages = () => (
   </DesignSystemLayout>
 );
 
-export default Pages;
+export default Page;

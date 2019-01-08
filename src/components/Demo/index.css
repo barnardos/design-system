@@ -1,0 +1,34 @@
+@import "../../custom-properties.css";
+
+/** @define Demo; weak; */
+/* stylelint-disable selector-max-universal, selector-pseudo-class-whitelist */
+
+.Demo--thirds {
+  margin: -2rem 0 0 -2rem;
+
+  & > * {
+    margin: 2rem 0 0 2rem;
+  }
+}
+
+.Demo--constrained {
+  & > * {
+    box-shadow: 0.25rem 0.25rem 0 color-mod(var(--teal) tint(20%));
+    margin: 0 auto;
+    max-width: 28rem;
+  }
+}
+
+@media (min-width: 44rem) {
+  .Demo--thirds {
+    display: flex;
+
+    & > *:nth-child(1) {
+      flex: 2 2 auto;
+    }
+
+    & > *:nth-child(2) {
+      flex: 1 1 auto;
+    }
+  }
+}
