@@ -1,26 +1,25 @@
 import Helmet from "react-helmet";
 import React from "react";
 
-import AttentionGrabbingQuote from "../../components/AttentionGrabbingQuote";
-import Breadcrumbs from "../../components/Breadcrumbs";
-import Cite from "../../components/Cite";
-import Fact from "../../components/Fact";
-import Caption from "../../components/Caption";
-import Heading from "../../components/Heading";
-import Subheading from "../../components/Subheading";
-import Image from "../../components/Image";
-import Layout from "../../components/Layout";
-import Link from "../../components/Link";
-import ListItem from "../../components/ListItem";
-import Paragraph from "../../components/Paragraph";
-import Quote from "../../components/Quote";
-import DesignSystemIndex from "../../components/DesignSystemIndex";
-import Title from "../../components/Title";
-import BulletedList from "../../components/BulletedList";
-import BulletedListItem from "../../components/BulletedListItem";
+import AttentionGrabbingQuote from "../components/AttentionGrabbingQuote";
+import Breadcrumbs from "../components/Breadcrumbs";
+import Cite from "../components/Cite";
+import Fact from "../components/Fact";
+import Caption from "../components/Caption";
+import Heading from "../components/Heading";
+import Subheading from "../components/Subheading";
+import Image from "../components/Image";
+import Layout from "../components/Layout";
+import Link from "../components/Link";
+import ListItem from "../components/ListItem";
+import Paragraph from "../components/Paragraph";
+import Quote from "../components/Quote";
+import DesignSystemIndex from "../components/DesignSystemIndex";
+import Title from "../components/Title";
+import BulletedList from "../components/BulletedList";
 
-import "../../app.css";
-import "../index.css";
+import "../app.css";
+import "./index.css";
 
 const Pages = () => (
   <Layout>
@@ -32,10 +31,6 @@ const Pages = () => (
         {
           text: "Home",
           to: "/"
-        },
-        {
-          text: "Guidance",
-          to: "/guidance/"
         }
       ]}
     />
@@ -45,41 +40,41 @@ const Pages = () => (
         {
           level: 1,
           text: "Lists",
-          to: "/guidance/displaying-content/#lists"
+          to: "/displaying-content/#lists"
         },
         {
           level: 2,
-          text: "Bulleted List Item",
-          to: "/guidance/displaying-content/#bulleted-list-item"
+          text: "Bulleted List",
+          to: "/displaying-content/#bulleted-list"
         },
         {
           level: 1,
           text: "Caption",
-          to: "/guidance/displaying-content/#caption"
+          to: "/displaying-content/#caption"
         },
         {
           level: 1,
           text: "Fact",
-          to: "/guidance/displaying-content/#fact"
+          to: "/displaying-content/#fact"
         },
         {
           level: 1,
           text: "Quotes",
-          to: "/guidance/displaying-content/#quotes"
+          to: "/displaying-content/#quotes"
         },
         {
           level: 2,
           text: "Quote",
-          to: "/guidance/displaying-content/#quote"
+          to: "/displaying-content/#quote"
         },
         {
           level: 2,
           text: "Attention Grabbing Quote",
-          to: "/guidance/displaying-content/#attention-grabbing-quote"
+          to: "/displaying-content/#attention-grabbing-quote"
         }
       ]}
     />
-    <Paragraph>{`When displaying information you should:`}</Paragraph>
+    <Paragraph>{`When displaying content you should:`}</Paragraph>
     <BulletedList>
       <ListItem>{`provide a meaningful content hierarchy`}</ListItem>
     </BulletedList>
@@ -91,13 +86,13 @@ const Pages = () => (
       <ListItem>{`aim to keep the length of items similar`}</ListItem>
       <ListItem>{`avoid starting items with the same word`}</ListItem>
     </BulletedList>
-    <Subheading>{`Bulleted List Item`}</Subheading>
+    <Subheading>{`Bulleted List`}</Subheading>
     <Paragraph>{`Use this component when the sequence or count of items isn’t important.`}</Paragraph>
     <div className="Pages-example">
       <Paragraph>{`There has been particular improvements in: `}</Paragraph>
       <BulletedList>
-        <BulletedListItem>{`families feeling less isolated`}</BulletedListItem>
-        <BulletedListItem>{`reduced parental stress`}</BulletedListItem>
+        <ListItem>{`families feeling less isolated`}</ListItem>
+        <ListItem>{`reduced parental stress`}</ListItem>
       </BulletedList>
     </div>
     <Cite>

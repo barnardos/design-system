@@ -1,0 +1,51 @@
+@import "../../custom-properties.css";
+
+/** @define Hero; */
+
+.Hero {
+  background-color: var(--green);
+  background-position: top center;
+  background-size: cover;
+  color: var(--white);
+  margin: 0 -1rem;
+  position: relative;
+}
+
+.Hero-children {
+  background-color: var(--green);
+  max-width: 48rem;
+  padding: 2rem 1rem 2.5rem;
+}
+
+.Hero--withImage {
+  height: 60vmin;
+  min-height: 20rem;
+
+  & .Hero-children {
+    bottom: -2rem;
+    left: 1rem;
+    position: absolute;
+    right: 1rem;
+  }
+}
+
+@media (min-width: 48rem) {
+  .Hero {
+    margin-left: -2rem;
+    margin-right: -2rem;
+  }
+
+  .Hero-children {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .Hero--withImage {
+    height: 60vmin;
+
+    & .Hero-children {
+      left: 2rem;
+      right: auto;
+    }
+  }
+}

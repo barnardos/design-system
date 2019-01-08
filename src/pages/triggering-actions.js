@@ -1,58 +1,54 @@
 import Helmet from "react-helmet";
 import React from "react";
 
-import Breadcrumbs from "../../components/Breadcrumbs";
-import Command from "../../components/Command";
-import Cite from "../../components/Cite";
-import Heading from "../../components/Heading";
-import Layout from "../../components/Layout";
-import Link from "../../components/Link";
-import ListItem from "../../components/ListItem";
-import Paragraph from "../../components/Paragraph";
-import Submit from "../../components/Submit";
-import DesignSystemIndex from "../../components/DesignSystemIndex";
-import Title from "../../components/Title";
-import BulletedList from "../../components/BulletedList";
+import Breadcrumbs from "../components/Breadcrumbs";
+import Command from "../components/Command";
+import Cite from "../components/Cite";
+import Heading from "../components/Heading";
+import Layout from "../components/Layout";
+import Link from "../components/Link";
+import ListItem from "../components/ListItem";
+import Paragraph from "../components/Paragraph";
+import Submit from "../components/Submit";
+import DesignSystemIndex from "../components/DesignSystemIndex";
+import Title from "../components/Title";
+import BulletedList from "../components/BulletedList";
 
-import "../../app.css";
-import "../index.css";
+import "../app.css";
+import "./index.css";
 
 const Pages = () => (
   <Layout>
     <Helmet>
-      <title>{`Triggering events`}</title>
+      <title>{`Triggering actions`}</title>
     </Helmet>
     <Breadcrumbs
       items={[
         {
           text: "Home",
           to: "/"
-        },
-        {
-          text: "Guidance",
-          to: "/guidance/"
         }
       ]}
     />
-    <Title>{`Triggering events`}</Title>
+    <Title>{`Triggering actions`}</Title>
     <DesignSystemIndex
       items={[
         {
           level: 1,
           text: "Command",
-          to: "/guidance/triggering-events/#command"
+          to: "/triggering-actions/#command"
         },
         {
           level: 1,
           text: "Text Input",
-          to: "/guidance/triggering-events/#submit"
+          to: "/triggering-actions/#submit"
         }
       ]}
     />
     <Heading>{`Command`}</Heading>
     <Paragraph>{`Use this component for interactive triggers that don't submit data.`}</Paragraph>
     <div className="Pages-example">
-      <Command>Print page</Command>
+      <Command>{`Print page`}</Command>
     </div>
     <Cite>
       {`View `}

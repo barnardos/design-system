@@ -1,6 +1,9 @@
 @import "../../custom-properties.css";
 
 /** @define DesignSystemNavigations; */
+.DesignSystemNavigations {
+  margin: -2rem 0 0;
+}
 
 @media (min-width: 62rem) {
   .DesignSystemNavigations {

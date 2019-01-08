@@ -1,22 +1,22 @@
 import Helmet from "react-helmet";
 import React from "react";
 
-import Breadcrumbs from "../../components/Breadcrumbs";
-import Cite from "../../components/Cite";
-import Heading from "../../components/Heading";
-import Layout from "../../components/Layout";
-import Link from "../../components/Link";
-import Filter from "../../components/Filter";
-import ListItem from "../../components/ListItem";
-import Paragraph from "../../components/Paragraph";
-import BulletedList from "../../components/BulletedList";
-import TextInput from "../../components/TextInput";
-import RadioButtons from "../../components/RadioButtons";
-import Form from "../../components/Form";
-import Submit from "../../components/Submit";
+import Breadcrumbs from "../components/Breadcrumbs";
+import Cite from "../components/Cite";
+import Title from "../components/Title";
+import Layout from "../components/Layout";
+import Link from "../components/Link";
+import Filter from "../components/Filter";
+import ListItem from "../components/ListItem";
+import Paragraph from "../components/Paragraph";
+import BulletedList from "../components/BulletedList";
+import TextInput from "../components/TextInput";
+import RadioButtons from "../components/RadioButtons";
+import Form from "../components/Form";
+import Submit from "../components/Submit";
 
-import "../../app.css";
-import "../index.css";
+import "../app.css";
+import "./index.css";
 
 const Pages = () => (
   <Layout>
@@ -28,14 +28,10 @@ const Pages = () => (
         {
           text: "Home",
           to: "/"
-        },
-        {
-          text: "Guidance",
-          to: "/guidance/"
         }
       ]}
     />
-    <Heading>{`Filtering`}</Heading>
+    <Title>{`Filtering`}</Title>
     <Paragraph>{`When filtering you should:`}</Paragraph>
     <BulletedList>
       <ListItem>{`avoid too many filters`}</ListItem>

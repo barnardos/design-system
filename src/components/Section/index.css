@@ -1,0 +1,19 @@
+@import "../../custom-properties.css";
+
+/** @define Section; */
+
+.Section {
+  margin: 0 -1rem;
+  padding: 1.5rem 1rem;
+
+  &:nth-of-type(even) {
+    background: color-mod(var(--black) tint(95%));
+  }
+}
+
+@media (min-width: 48rem) {
+  .Section {
+    margin: 0 -2rem;
+    padding: 2.5rem 2rem;
+  }
+}

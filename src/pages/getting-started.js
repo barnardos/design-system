@@ -3,12 +3,10 @@ import Helmet from "react-helmet";
 import React from "react";
 
 import Breadcrumbs from "../components/Breadcrumbs";
-import Heading from "../components/Heading";
 import Layout from "../components/Layout";
 import Link from "../components/Link";
 import ListItem from "../components/ListItem";
 import Paragraph from "../components/Paragraph";
-import DesignSystemIndex from "../components/DesignSystemIndex";
 import Title from "../components/Title";
 import BulletedList from "../components/BulletedList";
 
@@ -29,41 +27,30 @@ const Pages = () => (
       ]}
     />
     <Title>{`Getting started`}</Title>
-    <DesignSystemIndex
-      items={[
-        {
-          level: 1,
-          text: "How to contribute",
-          to: "/getting-started/#how-to-contribute"
-        }
-      ]}
-    />
     <Paragraph>
-      {`The Design System is for designers and developers working together.`}
+      {`The Design System is for designers and developers working together to create digital products.`}
     </Paragraph>
-    <Paragraph>
-      {`It is a set of `}
-      <GatsbyLink className="Link" to="/principles/">{`Principles`}</GatsbyLink>
-      {` and `}
-      <GatsbyLink className="Link" to="/guidance/">{`Guidance`}</GatsbyLink>
-      {`.`}
-    </Paragraph>
-    <Paragraph>{`The principles are how you should think about designing your product.`}</Paragraph>
-    <Paragraph>{`The guidance includes:`}</Paragraph>
+    <Paragraph>{`It includes:`}</Paragraph>
     <BulletedList>
+      <ListItem>
+        {`a set of `}
+        <GatsbyLink
+          className="Link"
+          to="/principles/"
+        >{`principles`}</GatsbyLink>
+      </ListItem>
       <ListItem>{`rules you should follow`}</ListItem>
       <ListItem>{`suggestions on how you could apply those rules
 `}</ListItem>
       <ListItem>{`examples of these rules and suggestions in action`}</ListItem>
     </BulletedList>
-    <Paragraph>{`The Design System is based on research, which you'll find linked to throughout.`}</Paragraph>
+    <Paragraph>{`These are based on research, which you'll find linked to throughout.`}</Paragraph>
     <Paragraph>{`It solves the common problems you may encounter when creating your product, so you can focus on the problems unique to it.`}</Paragraph>
     <Paragraph>{`This provides consistency across Barnardo's products and familiarity for service users.`}</Paragraph>
     <Paragraph>{`When creating your product, try to adopt as much of the Design System as possible. Depending on your needs and constraints, you may not be able to adopt all of it. It's not all or nothing.`}</Paragraph>
     <Paragraph>
       {`If something isn't in the Design System, don't let it stop you. Design a solution, test it and use it in your product.`}
     </Paragraph>
-    <Heading>{`How to contribute`}</Heading>
     <Paragraph>
       {`If you have a solution that could be included in the Design System:`}
     </Paragraph>

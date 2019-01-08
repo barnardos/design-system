@@ -1,33 +1,33 @@
 import Helmet from "react-helmet";
 import React from "react";
 
-import AttentionGrabbingPromo from "../../components/AttentionGrabbingPromo";
-import AttentionGrabbingLink from "../../components/AttentionGrabbingLink";
-import BackLink from "../../components/BackLink";
-import Breadcrumbs from "../../components/Breadcrumbs";
-import Promo from "../../components/Promo";
-import Cite from "../../components/Cite";
-import DonateLink from "../../components/DonateLink";
-import DesignSystemIndex from "../../components/DesignSystemIndex";
-import Footer from "../../components/Footer";
-import Header from "../../components/Header";
-import Heading from "../../components/Heading";
-import Layout from "../../components/Layout";
-import Link from "../../components/Link";
-import ListItem from "../../components/ListItem";
-import Menu from "../../components/Menu";
-import Pagination from "../../components/Pagination";
-import Paragraph from "../../components/Paragraph";
-import ProgressLink from "../../components/ProgressLink";
-import Search from "../../components/Search";
-import StartLink from "../../components/StartLink";
-import Subheading from "../../components/Subheading";
-import Index from "../../components/Index";
-import Title from "../../components/Title";
-import BulletedList from "../../components/BulletedList";
+import AttentionGrabbingPromo from "../components/AttentionGrabbingPromo";
+import AttentionGrabbingLink from "../components/AttentionGrabbingLink";
+import BackLink from "../components/BackLink";
+import Breadcrumbs from "../components/Breadcrumbs";
+import Promo from "../components/Promo";
+import Cite from "../components/Cite";
+import DonateLink from "../components/DonateLink";
+import DesignSystemIndex from "../components/DesignSystemIndex";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+import Heading from "../components/Heading";
+import Layout from "../components/Layout";
+import Link from "../components/Link";
+import ListItem from "../components/ListItem";
+import Menu from "../components/Menu";
+import Pagination from "../components/Pagination";
+import Paragraph from "../components/Paragraph";
+import SignpostLink from "../components/SignpostLink";
+import Search from "../components/Search";
+import StartLink from "../components/StartLink";
+import Subheading from "../components/Subheading";
+import Index from "../components/Index";
+import Title from "../components/Title";
+import BulletedList from "../components/BulletedList";
 
-import "../../app.css";
-import "../index.css";
+import "../app.css";
+import "./index.css";
 
 const Pages = () => (
   <Layout>
@@ -39,10 +39,6 @@ const Pages = () => (
         {
           text: "Home",
           to: "/"
-        },
-        {
-          text: "Guidance",
-          to: "/guidance/"
         }
       ]}
     />
@@ -52,87 +48,87 @@ const Pages = () => (
         {
           level: 1,
           text: "Links",
-          to: "/guidance/navigating/#links"
+          to: "/navigating/#links"
         },
         {
           level: 2,
           text: "Link",
-          to: "/guidance/navigating/#link"
+          to: "/navigating/#link"
         },
         {
           level: 2,
-          text: "Progress Link",
-          to: "/guidance/navigating/#progress-link"
+          text: "Signpost Link",
+          to: "/navigating/#signpost-link"
         },
         {
           level: 2,
           text: "Start Link",
-          to: "/guidance/navigating/#start-link"
+          to: "/navigating/#start-link"
         },
         {
           level: 2,
           text: "Donate Link",
-          to: "/guidance/navigating/#donate-link"
+          to: "/navigating/#donate-link"
         },
         {
           level: 2,
           text: "Attention Grabbing Link",
-          to: "/guidance/navigating/#attention-grabbing-link"
+          to: "/navigating/#attention-grabbing-link"
         },
         {
           level: 2,
           text: "Back Link",
-          to: "/guidance/navigating/#back-link"
+          to: "/navigating/#back-link"
         },
         {
           level: 1,
           text: "Promos",
-          to: "/guidance/navigating/#promos"
+          to: "/navigating/#promos"
         },
         {
           level: 2,
           text: "Promo",
-          to: "/guidance/navigating/#promo"
+          to: "/navigating/#promo"
         },
         {
           level: 2,
           text: "Attention Grabbing Promo",
-          to: "/guidance/navigating/#attention-grabbing-promo"
+          to: "/navigating/#attention-grabbing-promo"
         },
         {
           level: 1,
           text: "Breadcrumbs",
-          to: "/guidance/navigating/#breadcrumbs"
+          to: "/navigating/#breadcrumbs"
         },
         {
           level: 1,
           text: "Index",
-          to: "/guidance/navigating/#index"
+          to: "/navigating/#index"
         },
         {
           level: 1,
           text: "Pagination",
-          to: "/guidance/navigating/#pagination"
+          to: "/navigating/#pagination"
         },
         {
           level: 1,
           text: "Menu",
-          to: "/guidance/navigating/#menu"
+          to: "/navigating/#menu"
         },
         {
           level: 1,
           text: "Search",
-          to: "/guidance/navigating/#search"
+          to: "/navigating/#search"
         },
         {
           level: 1,
           text: "Header",
-          to: "/guidance/navigating/#header"
+          to: "/navigating/#header"
         },
         {
           level: 1,
           text: "Footer",
-          to: "/guidance/navigating/#footer"
+          to: "/navigating/#footer"
         }
       ]}
     />
@@ -143,9 +139,6 @@ const Pages = () => (
       <ListItem>{`use a meaningful phrase that makes sense out of context`}</ListItem>
     </BulletedList>
     <div className="Pages-example">
-      <Heading>
-        <Link href="http://example.org">{`Subheading of section`}</Link>
-      </Heading>
       <Paragraph>
         {`This is a paragraph, and it includes even more text to give a good
             representation of a more `}
@@ -161,8 +154,8 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/issues/47">{`research`}</Link>
       {` on GitHub.`}
     </Cite>
-    <Subheading>{`Progress Link`}</Subheading>
-    <Paragraph>{`Use this component after a summary of content to progress onto more detail.`}</Paragraph>
+    <Subheading>{`Signpost Link`}</Subheading>
+    <Paragraph>{`Use this component after a summary of content to signpost onto more detail.`}</Paragraph>
     <Paragraph>{`When using this component you should:`}</Paragraph>
     <BulletedList>
       <ListItem>{`use sentence case`}</ListItem>
@@ -172,11 +165,11 @@ const Pages = () => (
       <ListItem>{`not use terms like "Read more" and "Find out more"`}</ListItem>
     </BulletedList>
     <div className="Pages-example">
-      <ProgressLink href="http://example.org">{`Search and apply for jobs`}</ProgressLink>
+      <SignpostLink href="http://example.org">{`Search and apply for jobs`}</SignpostLink>
     </div>
     <Cite>
       {`View `}
-      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/ProgressLink">{`code`}</Link>
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/SignpostLink">{`code`}</Link>
       {` and `}
       <Link href="https://github.com/barnardos/design-system/issues/282">{`research`}</Link>
       {` on GitHub.`}
@@ -317,7 +310,11 @@ const Pages = () => (
             to: "/"
           },
           {
-            text: "Donate",
+            text: "What we do",
+            to: "/"
+          },
+          {
+            text: "Supporting young people",
             to: "/"
           }
         ]}
@@ -360,7 +357,7 @@ const Pages = () => (
     </div>
     <Cite>
       {`View `}
-      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/TableOfContent">{`code`}</Link>
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Index">{`code`}</Link>
       {` and `}
       <Link href="https://github.com/barnardos/design-system/issues/251">{`research`}</Link>
       {` on GitHub.`}

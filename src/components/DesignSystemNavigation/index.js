@@ -4,7 +4,7 @@ import React from "react";
 
 import "./index.css";
 
-const DesignSystemNavigation = ({ items, title, isFlex }) => {
+const DesignSystemNavigation = ({ description, items, title, isFlex }) => {
   const className = `DesignSystemNavigation ${
     isFlex ? "DesignSystemNavigation--flex" : ""
   }`;
@@ -12,6 +12,9 @@ const DesignSystemNavigation = ({ items, title, isFlex }) => {
   return (
     <nav className={className}>
       {title && <p className="DesignSystemNavigation-title">{title}</p>}
+      {description && (
+        <p className="DesignSystemNavigation-description">{description}</p>
+      )}
       <ul className="DesignSystemNavigation-items">
         {items.map(({ text, to }, index) => (
           <li className="DesignSystemNavigation-item" key={index}>
@@ -32,6 +35,7 @@ const DesignSystemNavigation = ({ items, title, isFlex }) => {
 DesignSystemNavigation.propTypes = {
   items: PropTypes.array.isRequired,
   title: PropTypes.string,
+  description: PropTypes.string,
   isFlex: PropTypes.bool
 };
 

@@ -1,13 +1,11 @@
 @import "../../custom-properties.css";
 
-/** @define StartLink; */
+/** @define SignpostLink; */
 
-.StartLink {
-  background-color: var(--green);
-  color: var(--white);
+.SignpostLink {
+  color: var(--green);
   display: inline-block;
   font: 600 var(--type-2) proxima-nova, sans-serif;
-  padding: 0.5rem 2.25rem 0.5rem 1rem;
   position: relative;
   text-align: center;
 
@@ -15,7 +13,7 @@
     content: "›";
     font: 300 var(--type-8) proxima-nova, sans-serif;
     line-height: 0;
-    margin: 1.25rem 0 0 0.5rem;
+    margin: 0.75rem 0 0 0.5rem;
     position: absolute;
     text-decoration: none;
     top: 0.125rem;
@@ -23,5 +21,21 @@
 
   &:hover {
     text-decoration: none;
+  }
+
+  &:visited {
+    color: var(--purple);
+  }
+
+  &:not(:first-child) {
+    margin-top: 1.25rem;
+  }
+}
+
+.SignpostLink--inverted {
+  color: var(--white);
+
+  &:visited {
+    color: var(--white);
   }
 }
