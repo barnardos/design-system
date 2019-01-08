@@ -9,7 +9,7 @@ import Caption from "../components/Caption";
 import Heading from "../components/Heading";
 import Subheading from "../components/Subheading";
 import Image from "../components/Image";
-import Layout from "../components/Layout";
+import DesignSystemLayout from "../components/DesignSystemLayout";
 import Link from "../components/Link";
 import ListItem from "../components/ListItem";
 import Paragraph from "../components/Paragraph";
@@ -18,11 +18,10 @@ import DesignSystemIndex from "../components/DesignSystemIndex";
 import Title from "../components/Title";
 import BulletedList from "../components/BulletedList";
 
-import "../app.css";
 import "./index.css";
 
 const Pages = () => (
-  <Layout>
+  <DesignSystemLayout>
     <Helmet>
       <title>{`Displaying content`}</title>
     </Helmet>
@@ -198,7 +197,7 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/issues/321">{`research`}</Link>
       {` on GitHub.`}
     </Cite>
-  </Layout>
+  </DesignSystemLayout>
 );
 
 export default Pages;

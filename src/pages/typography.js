@@ -6,7 +6,7 @@ import Cite from "../components/Cite";
 import Code from "../components/Code";
 import Heading from "../components/Heading";
 import Subheading from "../components/Subheading";
-import Layout from "../components/Layout";
+import DesignSystemLayout from "../components/DesignSystemLayout";
 import Lede from "../components/Lede";
 import Link from "../components/Link";
 import ListItem from "../components/ListItem";
@@ -15,11 +15,10 @@ import Title from "../components/Title";
 import BulletedList from "../components/BulletedList";
 import DesignSystemIndex from "../components/DesignSystemIndex";
 
-import "../app.css";
 import "./index.css";
 
 const Pages = () => (
-  <Layout>
+  <DesignSystemLayout>
     <Helmet>
       <title>{`Typography`}</title>
     </Helmet>
@@ -112,7 +111,7 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/tree/master/src/custom-properties.css">{`code`}</Link>
       {` on GitHub.`}
     </Cite>
-  </Layout>
+  </DesignSystemLayout>
 );
 
 export default Pages;

@@ -12,7 +12,7 @@ import DesignSystemIndex from "../components/DesignSystemIndex";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Heading from "../components/Heading";
-import Layout from "../components/Layout";
+import DesignSystemLayout from "../components/DesignSystemLayout";
 import Link from "../components/Link";
 import ListItem from "../components/ListItem";
 import Menu from "../components/Menu";
@@ -26,11 +26,10 @@ import Index from "../components/Index";
 import Title from "../components/Title";
 import BulletedList from "../components/BulletedList";
 
-import "../app.css";
 import "./index.css";
 
 const Pages = () => (
-  <Layout>
+  <DesignSystemLayout>
     <Helmet>
       <title>{`Navigating`}</title>
     </Helmet>
@@ -519,7 +518,7 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/issues/301">{`research`}</Link>
       {` on GitHub.`}
     </Cite>
-  </Layout>
+  </DesignSystemLayout>
 );
 
 export default Pages;

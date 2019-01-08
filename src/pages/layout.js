@@ -3,18 +3,17 @@ import React from "react";
 
 import Breadcrumbs from "../components/Breadcrumbs";
 import Subheading from "../components/Subheading";
-import Layout from "../components/Layout";
+import DesignSystemLayout from "../components/DesignSystemLayout";
 import ListItem from "../components/ListItem";
 import Paragraph from "../components/Paragraph";
 import TextInput from "../components/TextInput/index";
 import Title from "../components/Title";
 import BulletedList from "../components/BulletedList";
 
-import "../app.css";
 import "./index.css";
 
 const Pages = () => (
-  <Layout>
+  <DesignSystemLayout>
     <Helmet>
       <title>{`Layout`}</title>
     </Helmet>
@@ -153,7 +152,7 @@ const Pages = () => (
         </figcaption>
       </figure>
     </div>
-  </Layout>
+  </DesignSystemLayout>
 );
 
 export default Pages;

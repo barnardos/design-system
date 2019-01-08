@@ -2,7 +2,7 @@ import Helmet from "react-helmet";
 import React from "react";
 
 import DesignSystemNavigations from "../components/DesignSystemNavigations";
-import Layout from "../components/Layout";
+import DesignSystemLayout from "../components/DesignSystemLayout";
 import Lede from "../components/Lede";
 import Title from "../components/Title";
 import Heading from "../components/Heading";
@@ -12,11 +12,10 @@ import Hero from "../components/Hero";
 import Section from "../components/Section";
 import SignpostLink from "../components/SignpostLink";
 
-import "../app.css";
 import "./index.css";
 
 const Pages = () => (
-  <Layout>
+  <DesignSystemLayout>
     <Helmet>
       <title>{`Barnardo’s Design System`}</title>
     </Helmet>
@@ -145,7 +144,7 @@ const Pages = () => (
         >{`Make the most of the medium's benefits.`}</Promo>
       </Promos>
     </Section>
-  </Layout>
+  </DesignSystemLayout>
 );
 
 export default Pages;

@@ -4,7 +4,7 @@ import React from "react";
 import Breadcrumbs from "../components/Breadcrumbs";
 import Cite from "../components/Cite";
 import Title from "../components/Title";
-import Layout from "../components/Layout";
+import DesignSystemLayout from "../components/DesignSystemLayout";
 import Link from "../components/Link";
 import Filter from "../components/Filter";
 import ListItem from "../components/ListItem";
@@ -15,11 +15,10 @@ import RadioButtons from "../components/RadioButtons";
 import Form from "../components/Form";
 import Submit from "../components/Submit";
 
-import "../app.css";
 import "./index.css";
 
 const Pages = () => (
-  <Layout>
+  <DesignSystemLayout>
     <Helmet>
       <title>{`Filtering`}</title>
     </Helmet>
@@ -80,7 +79,7 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/issues/79">{`research`}</Link>
       {` on GitHub.`}
     </Cite>
-  </Layout>
+  </DesignSystemLayout>
 );
 
 export default Pages;
