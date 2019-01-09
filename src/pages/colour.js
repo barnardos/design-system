@@ -14,10 +14,10 @@ import Submit from "../components/Submit";
 import DesignSystemIndex from "../components/DesignSystemIndex";
 import Title from "../components/Title";
 import BulletedList from "../components/BulletedList";
+import Figures from "../components/Figures";
+import Figure from "../components/Figure";
 
-import "./index.css";
-
-const Pages = () => (
+const Page = () => (
   <DesignSystemLayout>
     <Helmet>
       <title>{`Colour`}</title>
@@ -50,30 +50,28 @@ const Pages = () => (
       <ListItem>{`only use the brand colours`}</ListItem>
       <ListItem>{`add white (tint) or black (shade) in 10% increments`}</ListItem>
     </BulletedList>
-    <Heading>Brand colours</Heading>
-    <div className="Pages-swatches">
-      <Swatches
-        swatches={[
-          [{ label: "Green", hex: "#6aa300", primary: true }],
-          [{ label: "Orange", hex: "#e86c00", primary: true }],
-          [{ label: "Pink", hex: "#cc0070", primary: true }],
-          [{ label: "Purple", hex: "#6e2066", primary: true }],
-          [{ label: "Teal", hex: "#0099a9", primary: true }],
-          [{ label: "Red", hex: "#c30000", primary: true }],
-          [{ label: "Black", hex: "#1d1d1d", primary: true }],
-          [
-            {
-              label: "White",
-              hex: "#ffffff",
-              bordered: true,
-              inverted: true,
-              primary: true
-            }
-          ]
-        ]}
-      />
-    </div>
-    <Heading>Using colours</Heading>
+    <Heading>{`Brand colours`}</Heading>
+    <Swatches
+      swatches={[
+        [{ label: "Green", hex: "#6aa300", primary: true }],
+        [{ label: "Orange", hex: "#e86c00", primary: true }],
+        [{ label: "Pink", hex: "#cc0070", primary: true }],
+        [{ label: "Purple", hex: "#6e2066", primary: true }],
+        [{ label: "Teal", hex: "#0099a9", primary: true }],
+        [{ label: "Red", hex: "#c30000", primary: true }],
+        [{ label: "Black", hex: "#1d1d1d", primary: true }],
+        [
+          {
+            label: "White",
+            hex: "#ffffff",
+            bordered: true,
+            inverted: true,
+            primary: true
+          }
+        ]
+      ]}
+    />
+    <Heading>{`Using colours`}</Heading>
     <Paragraph>{`You should:`}</Paragraph>
     <BulletedList>
       <ListItem>
@@ -91,8 +89,8 @@ const Pages = () => (
       <ListItem>{`oranges for cautionary actions like load or warn`}</ListItem>
       <ListItem>{`reds for destructive actions like delete or error`}</ListItem>
     </BulletedList>
-    <div className="Pages-figures">
-      <figure className="Pages-figure">
+    <Figures>
+      <Figure caption="Black for labels and 30% tint for hint text. Red for errors with 80% tint for inset shadows.">
         <TextInput
           hint="As it appears on your ID."
           id="text-control-full-name-example"
@@ -100,13 +98,11 @@ const Pages = () => (
           size={48}
           error="Enter your full name"
         />
-        <figcaption className="Pages-figureCaption">{`Black for labels and 30% tint for hint text. Red for errors with 80% tint for inset shadows.`}</figcaption>
-      </figure>
-      <figure className="Pages-figure">
+      </Figure>
+      <Figure caption="White text on Green with 10% shade on hover and 40% shade for drop shadows.">
         <Submit text="Continue" />
-        <figcaption className="Pages-figureCaption">{`White text on Green with 10% shade on hover and 40% shade for drop shadows.`}</figcaption>
-      </figure>
-    </div>
+      </Figure>
+    </Figures>
     <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/issues/14">{`research`}</Link>
@@ -115,4 +111,4 @@ const Pages = () => (
   </DesignSystemLayout>
 );
 
-export default Pages;
+export default Page;

@@ -13,10 +13,9 @@ import Submit from "../components/Submit";
 import DesignSystemIndex from "../components/DesignSystemIndex";
 import Title from "../components/Title";
 import BulletedList from "../components/BulletedList";
+import Example from "../components/Example";
 
-import "./index.css";
-
-const Pages = () => (
+const Page = () => (
   <DesignSystemLayout>
     <Helmet>
       <title>{`Triggering actions`}</title>
@@ -46,9 +45,9 @@ const Pages = () => (
     />
     <Heading>{`Command`}</Heading>
     <Paragraph>{`Use this component for interactive triggers that don't submit data.`}</Paragraph>
-    <div className="Pages-example">
+    <Example>
       <Command>{`Print page`}</Command>
-    </div>
+    </Example>
     <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Command">{`code`}</Link>
@@ -64,9 +63,9 @@ const Pages = () => (
       <ListItem>{`use a verb, for example save`}</ListItem>
       <ListItem>{`only use the Green colour`}</ListItem>
     </BulletedList>
-    <div className="Pages-example">
+    <Example>
       <Submit text="Send application" />
-    </div>
+    </Example>
     <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Submit">{`code`}</Link>
@@ -77,4 +76,4 @@ const Pages = () => (
   </DesignSystemLayout>
 );
 
-export default Pages;
+export default Page;

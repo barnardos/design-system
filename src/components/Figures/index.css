@@ -1,0 +1,10 @@
+@import "../../custom-properties.css";
+
+/** @define Figures; */
+
+.Figures {
+  box-shadow: inset 0 0 0 1px color-mod(var(--black) tint(60%));
+  margin-top: 1rem;
+  max-width: 46rem;
+  padding: 1rem;
+}

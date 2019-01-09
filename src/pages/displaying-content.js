@@ -5,6 +5,7 @@ import AttentionGrabbingQuote from "../components/AttentionGrabbingQuote";
 import Breadcrumbs from "../components/Breadcrumbs";
 import Cite from "../components/Cite";
 import Fact from "../components/Fact";
+import Example from "../components/Example";
 import Caption from "../components/Caption";
 import Heading from "../components/Heading";
 import Subheading from "../components/Subheading";
@@ -18,9 +19,7 @@ import DesignSystemIndex from "../components/DesignSystemIndex";
 import Title from "../components/Title";
 import BulletedList from "../components/BulletedList";
 
-import "./index.css";
-
-const Pages = () => (
+const Page = () => (
   <DesignSystemLayout>
     <Helmet>
       <title>{`Displaying content`}</title>
@@ -87,13 +86,13 @@ const Pages = () => (
     </BulletedList>
     <Subheading>{`Bulleted List`}</Subheading>
     <Paragraph>{`Use this component when the sequence or count of items isn’t important.`}</Paragraph>
-    <div className="Pages-example">
+    <Example>
       <Paragraph>{`There has been particular improvements in: `}</Paragraph>
       <BulletedList>
         <ListItem>{`families feeling less isolated`}</ListItem>
         <ListItem>{`reduced parental stress`}</ListItem>
       </BulletedList>
-    </div>
+    </Example>
     <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/BulletedListItem">{`code`}</Link>
@@ -108,14 +107,14 @@ const Pages = () => (
       <ListItem>{`be clear and concise`}</ListItem>
       <ListItem>{`provide a description that makes sense out of context`}</ListItem>
     </BulletedList>
-    <div className="Pages-example">
+    <Example>
       <Caption label="Participants receiving their certificate">
         <Image
           src="https://dummyimage.com/1200x675/bbbbbb/d2d2d2.png&amp;text=16:9"
           alt="A 6:9 dummy image"
         />
       </Caption>
-    </div>
+    </Example>
     <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Caption">{`code`}</Link>
@@ -130,12 +129,12 @@ const Pages = () => (
       <ListItem>{`use data that’s compelling and easy to understand`}</ListItem>
       <ListItem>{`limit the number on each page`}</ListItem>
     </BulletedList>
-    <div className="Pages-example">
+    <Example>
       <Fact label="children supported through our school-based programmes">{`23,500`}</Fact>
-    </div>
-    <div className="Pages-example">
+    </Example>
+    <Example>
       <Fact colour="purple" label="had improved self-esteem">{`73%`}</Fact>
-    </div>
+    </Example>
     <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Fact">{`code`}</Link>
@@ -151,23 +150,23 @@ const Pages = () => (
       <ListItem>{`use a short sentence with one main idea`}</ListItem>
       <ListItem>{`limit the number on each page`}</ListItem>
     </BulletedList>
-    <div className="Pages-example">
+    <Example>
       <Quote>{`Parents needed more support with their emotional wellbeing, boundaries, behaviour, home and money.`}</Quote>
-    </div>
-    <div className="Pages-example">
+    </Example>
+    <Example>
       <Quote
         colour="pink"
         role="Young person"
       >{`Someone believed in me once and now it’s time for me to do the same.`}</Quote>
-    </div>
-    <div className="Pages-example">
+    </Example>
+    <Example>
       <Quote
         colour="orange"
         name="John Smith"
         role="Teacher"
         src="https://dummyimage.com/480x480/bbbbbb/d2d2d2.png&amp;text=1:1"
       >{`The family support worker is able to engage and build positive relationships with families who previously kept their distance from school.`}</Quote>
-    </div>
+    </Example>
     <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Quote">{`code`}</Link>
@@ -180,16 +179,16 @@ const Pages = () => (
     <BulletedList>
       <ListItem>{`only use it once on each page`}</ListItem>
     </BulletedList>
-    <div className="Pages-example">
+    <Example>
       <AttentionGrabbingQuote
         colour="green"
         role="Young person"
         name="James Roberts"
       >{`By tackling the causes as well as the symptoms, we can create better outcomes for more children.`}</AttentionGrabbingQuote>
-    </div>
-    <div className="Pages-example">
+    </Example>
+    <Example>
       <AttentionGrabbingQuote colour="black">{`I just needed a push in the right direction, and a stepping stone to act as a bridge across to adulthood. I finally feel that I'm closer to being happy.`}</AttentionGrabbingQuote>
-    </div>
+    </Example>
     <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/AttentionGrabbingQuote">{`code`}</Link>
@@ -200,4 +199,4 @@ const Pages = () => (
   </DesignSystemLayout>
 );
 
-export default Pages;
+export default Page;

@@ -5,6 +5,7 @@ import AttentionGrabbingPromo from "../components/AttentionGrabbingPromo";
 import AttentionGrabbingLink from "../components/AttentionGrabbingLink";
 import BackLink from "../components/BackLink";
 import Breadcrumbs from "../components/Breadcrumbs";
+import Example from "../components/Example";
 import Promo from "../components/Promo";
 import Cite from "../components/Cite";
 import DonateLink from "../components/DonateLink";
@@ -26,9 +27,7 @@ import Index from "../components/Index";
 import Title from "../components/Title";
 import BulletedList from "../components/BulletedList";
 
-import "./index.css";
-
-const Pages = () => (
+const Page = () => (
   <DesignSystemLayout>
     <Helmet>
       <title>{`Navigating`}</title>
@@ -137,7 +136,7 @@ const Pages = () => (
     <BulletedList>
       <ListItem>{`use a meaningful phrase that makes sense out of context`}</ListItem>
     </BulletedList>
-    <div className="Pages-example">
+    <Example>
       <Paragraph>
         {`This is a paragraph, and it includes even more text to give a good
             representation of a more `}
@@ -145,7 +144,7 @@ const Pages = () => (
         {`.
             That way you can see more than one line wrapping.`}
       </Paragraph>
-    </div>
+    </Example>
     <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Link">{`code`}</Link>
@@ -163,9 +162,9 @@ const Pages = () => (
       <ListItem>{`only use the Green colour`}</ListItem>
       <ListItem>{`not use terms like "Read more" and "Find out more"`}</ListItem>
     </BulletedList>
-    <div className="Pages-example">
+    <Example>
       <SignpostLink href="http://example.org">{`Search and apply for jobs`}</SignpostLink>
-    </div>
+    </Example>
     <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/SignpostLink">{`code`}</Link>
@@ -180,9 +179,9 @@ const Pages = () => (
       <ListItem>{`limit to one on each page`}</ListItem>
       <ListItem>{`only use the Green colour`}</ListItem>
     </BulletedList>
-    <div className="Pages-example">
+    <Example>
       <StartLink href="http://example.org" />
-    </div>
+    </Example>
     <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/StartLink">{`code`}</Link>
@@ -196,9 +195,9 @@ const Pages = () => (
     <BulletedList>
       <ListItem>{`only use the Green colour`}</ListItem>
     </BulletedList>
-    <div className="Pages-example">
+    <Example>
       <DonateLink href="http://example.org" />
-    </div>
+    </Example>
     <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/DonateLink">{`code`}</Link>
@@ -216,20 +215,20 @@ const Pages = () => (
       <ListItem>{`not use the Green colour`}</ListItem>
       <ListItem>{`not use terms like "Read more" and "Find out more"`}</ListItem>
     </BulletedList>
-    <div className="Pages-example">
+    <Example>
       <AttentionGrabbingLink
         colour="pink"
         href="http://example.org"
         text="Volunteer with us"
       />
-    </div>
-    <div className="Pages-example">
+    </Example>
+    <Example>
       <AttentionGrabbingLink
         colour="black"
         href="http://example.org"
         text="Shop online"
       />
-    </div>
+    </Example>
     <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/AttentionGrabbingLink">{`code`}</Link>
@@ -244,9 +243,9 @@ const Pages = () => (
       <ListItem>{`only use it once on each page`}</ListItem>
       <ListItem>{`place it as the first interactive element`}</ListItem>
     </BulletedList>
-    <div className="Pages-example">
+    <Example>
       <BackLink href="http://example.org" />
-    </div>
+    </Example>
     <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/BackLink">{`code`}</Link>
@@ -257,20 +256,20 @@ const Pages = () => (
     <Heading>{`Promos`}</Heading>
     <Paragraph>{`Use these components to provide a summary that links to additional details.`}</Paragraph>
     <Subheading>{`Promo`}</Subheading>
-    <div className="Pages-example">
+    <Example>
       <Promo
         href="http://example.org"
         meta="20 October 2019"
         title="Barnardo’s celebrates National Adoption Week"
       >{`This year’s campaign calls on people to welcome an older child into their family.`}</Promo>
-    </div>
-    <div className="Pages-example">
+    </Example>
+    <Example>
       <Promo
         href="http://example.org"
         src="https://donate.barnardos.org.uk/sites/default/files/styles/b_lg/public/uploads/IMG_8550.jpg"
         title="Other ways to donate"
       >{`Find out ways to help support vulnerable children including making one-off or regular donations.`}</Promo>
-    </div>
+    </Example>
     <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Promo">{`code`}</Link>
@@ -279,7 +278,7 @@ const Pages = () => (
       {` on GitHub.`}
     </Cite>
     <Subheading>{`Attention Grabbing Promo`}</Subheading>
-    <div className="Pages-example">
+    <Example>
       <AttentionGrabbingPromo
         colour="pink"
         href="http://example.org"
@@ -287,7 +286,7 @@ const Pages = () => (
         title="Brighton Marathon"
         text="Sign up"
       >{`Taking in the sights and sounds of the coast, this fantastic 26.2 mile route covers Hove and finishes at the famous Brighton Pier.`}</AttentionGrabbingPromo>
-    </div>
+    </Example>
     <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/AttentionGrabbingPromo">{`code`}</Link>
@@ -301,7 +300,7 @@ const Pages = () => (
     <BulletedList>
       <ListItem>{`place it directly above the page title`}</ListItem>
     </BulletedList>
-    <div className="Pages-example">
+    <Example>
       <Breadcrumbs
         items={[
           {
@@ -318,7 +317,7 @@ const Pages = () => (
           }
         ]}
       />
-    </div>
+    </Example>
     <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Breadcrumbs">{`code`}</Link>
@@ -328,7 +327,7 @@ const Pages = () => (
     </Cite>
     <Heading>{`Index`}</Heading>
     <Paragraph>{`Use this component to navigate within a page or section of pages.`}</Paragraph>
-    <div className="Pages-example">
+    <Example>
       <Index
         items={[
           {
@@ -353,7 +352,7 @@ const Pages = () => (
           }
         ]}
       />
-    </div>
+    </Example>
     <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Index">{`code`}</Link>
@@ -363,7 +362,7 @@ const Pages = () => (
     </Cite>
     <Heading>{`Pagination`}</Heading>
     <Paragraph>{`Use this component to break large pieces of content across multiple pages.`}</Paragraph>
-    <div className="Pages-example">
+    <Example>
       <Pagination
         previous={{
           href: "http://example.org",
@@ -374,7 +373,7 @@ const Pages = () => (
           label: "Register as a foster carer"
         }}
       />
-    </div>
+    </Example>
     <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Pagination">{`code`}</Link>
@@ -389,7 +388,7 @@ const Pages = () => (
       <ListItem>{`aim to have the items visible`}</ListItem>
       <ListItem>{`avoid collapsing items into a Command on larger viewports`}</ListItem>
     </BulletedList>
-    <div className="Pages-example">
+    <Example>
       <div
         style={{
           paddingBottom: "8rem",
@@ -449,7 +448,7 @@ const Pages = () => (
           ]}
         />
       </div>
-    </div>
+    </Example>
     <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Menu">{`code`}</Link>
@@ -458,9 +457,9 @@ const Pages = () => (
       {` on GitHub.`}
     </Cite>
     <Heading>{`Search`}</Heading>
-    <div className="Pages-example">
+    <Example>
       <Search />
-    </div>
+    </Example>
     <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Search">{`code`}</Link>
@@ -471,9 +470,9 @@ const Pages = () => (
     <BulletedList>
       <ListItem>{`link the Barnardo's logo to the homepage`}</ListItem>
     </BulletedList>
-    <div className="Pages-example">
+    <Example>
       <Header />
-    </div>
+    </Example>
     <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Header">{`code`}</Link>
@@ -482,7 +481,7 @@ const Pages = () => (
       {` on GitHub.`}
     </Cite>
     <Heading>{`Footer`}</Heading>
-    <div className="Pages-example">
+    <Example>
       <div
         style={{
           overflow: "hidden",
@@ -510,7 +509,7 @@ const Pages = () => (
           ]}
         >{`© Barnardo's 2018`}</Footer>
       </div>
-    </div>
+    </Example>
     <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Footer">{`code`}</Link>
@@ -521,4 +520,4 @@ const Pages = () => (
   </DesignSystemLayout>
 );
 
-export default Pages;
+export default Page;

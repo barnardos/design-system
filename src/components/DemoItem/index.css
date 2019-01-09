@@ -1,0 +1,8 @@
+@import "../../custom-properties.css";
+
+/** @define DemoItem; */
+
+.DemoItem {
+  background: color-mod(var(--teal) tint(80%));
+  height: 3rem;
+}

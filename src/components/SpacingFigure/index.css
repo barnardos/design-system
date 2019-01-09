@@ -1,0 +1,42 @@
+@import "../../custom-properties.css";
+
+/** @define SpacingFigure; */
+
+.SpacingFigure {
+  position: relative;
+}
+
+.SpacingFigure-figure {
+  position: relative;
+}
+
+.SpacingFigure-caption {
+  position: absolute;
+}
+
+.SpacingFigure-captionItem {
+  background: color-mod(var(--black) tint(90%));
+  bottom: 0;
+  display: block;
+  font: 300 var(--type--1) system-ui;
+  font-variant-numeric: tabular-nums;
+  left: -6rem;
+  margin-top: 0;
+  min-width: 5rem;
+  padding: 0 0.5rem;
+  position: relative;
+  text-align: right;
+}
+
+.SpacingFigure-key {
+  align-items: center;
+  background: color-mod(var(--teal) tint(80%));
+  color: var(--black);
+  display: flex;
+  font: 300 var(--type--2) system-ui;
+  font-variant-numeric: tabular-nums;
+  left: 6rem;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
