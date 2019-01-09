@@ -10,7 +10,7 @@ import CurrencyInput from "../components/CurrencyInput";
 import DateInput from "../components/DateInput";
 import ErrorSummary from "../components/ErrorSummary";
 import Heading from "../components/Heading";
-import Layout from "../components/Layout";
+import DesignSystemLayout from "../components/DesignSystemLayout";
 import Link from "../components/Link";
 import ListItem from "../components/ListItem";
 import Paragraph from "../components/Paragraph";
@@ -22,11 +22,10 @@ import TextInput from "../components/TextInput";
 import Title from "../components/Title";
 import BulletedList from "../components/BulletedList";
 
-import "../app.css";
 import "./index.css";
 
 const Pages = () => (
-  <Layout>
+  <DesignSystemLayout>
     <Helmet>
       <title>{`Requesting information`}</title>
     </Helmet>
@@ -439,7 +438,7 @@ const Pages = () => (
       <Link href="https://github.com/barnardos/design-system/issues/411">{`research`}</Link>
       {` on GitHub.`}
     </Cite>
-  </Layout>
+  </DesignSystemLayout>
 );
 
 export default Pages;

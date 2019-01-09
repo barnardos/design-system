@@ -3,18 +3,17 @@ import Helmet from "react-helmet";
 import React from "react";
 
 import Breadcrumbs from "../components/Breadcrumbs";
-import Layout from "../components/Layout";
+import DesignSystemLayout from "../components/DesignSystemLayout";
 import Link from "../components/Link";
 import ListItem from "../components/ListItem";
 import Paragraph from "../components/Paragraph";
 import Title from "../components/Title";
 import BulletedList from "../components/BulletedList";
 
-import "../app.css";
 import "./index.css";
 
 const Pages = () => (
-  <Layout>
+  <DesignSystemLayout>
     <Helmet>
       <title>{`Getting started`}</title>
     </Helmet>
@@ -69,7 +68,7 @@ const Pages = () => (
       <Link href="https://barnardos.facebook.com/groups/design.system/">{`Workplace`}</Link>
       {`.`}
     </Paragraph>
-  </Layout>
+  </DesignSystemLayout>
 );
 
 export default Pages;

@@ -4,17 +4,16 @@ import React from "react";
 
 import Breadcrumbs from "../components/Breadcrumbs";
 import Heading from "../components/Heading";
-import Layout from "../components/Layout";
+import DesignSystemLayout from "../components/DesignSystemLayout";
 import ListItem from "../components/ListItem";
 import Paragraph from "../components/Paragraph";
 import Title from "../components/Title";
 import BulletedList from "../components/BulletedList";
 
-import "../app.css";
 import "./index.css";
 
 const Pages = () => (
-  <Layout>
+  <DesignSystemLayout>
     <Helmet>
       <title>{`Principles`}</title>
     </Helmet>
@@ -93,7 +92,7 @@ const Pages = () => (
       <ListItem>{`respect the environment's constraints`}</ListItem>
       <ListItem>{`avoid print-based thinking`}</ListItem>
     </BulletedList>
-  </Layout>
+  </DesignSystemLayout>
 );
 
 export default Pages;
