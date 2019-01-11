@@ -24,12 +24,7 @@ const Page = () => (
       ]}
     />
     <Title>{`Viewport scale`}</Title>
-    <Paragraph>{`The layout and typography can be proportionally scaled to maintain an optimal line length at any viewport size.`}</Paragraph>
-    <Paragraph>{`The optimal line length of text is around:`}</Paragraph>
-    <BulletedList>
-      <ListItem>{`15–40 characters for short lines`}</ListItem>
-      <ListItem>{`40–95 characters for body copy`}</ListItem>
-    </BulletedList>
+    <Paragraph>{`The layout and type can be proportionally scaled to maintain an optimal line length at any viewport size.`}</Paragraph>
     <Paragraph>{`For example, you could scale the base of 1rem (roughly 16px):`}</Paragraph>
     <BulletedList>
       <ListItem>{`down to 93.75% to give a paragraph size and gutters of roughly 15px`}</ListItem>
