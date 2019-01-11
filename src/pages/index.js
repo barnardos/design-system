@@ -41,8 +41,8 @@ const Page = () => (
                 to: "/displaying-content/"
               },
               {
-                text: "Requesting information",
-                to: "/requesting-information/"
+                text: "Gathering information",
+                to: "/gathering-information/"
               },
               {
                 text: "Triggering actions",

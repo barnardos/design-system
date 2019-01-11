@@ -28,7 +28,7 @@ import Figure from "../components/Figure";
 const Page = () => (
   <DesignSystemLayout>
     <Helmet>
-      <title>{`Requesting information`}</title>
+      <title>{`Gathering information`}</title>
     </Helmet>
     <Breadcrumbs
       items={[
@@ -38,87 +38,87 @@ const Page = () => (
         }
       ]}
     />
-    <Title>{`Requesting information`}</Title>
+    <Title>{`Gathering information`}</Title>
     <DesignSystemIndex
       items={[
         {
           level: 1,
           text: "Text entry",
-          to: "/requesting-information/#text-entry"
+          to: "/gathering-information/#text-entry"
         },
         {
           level: 2,
           text: "Text Input",
-          to: "/requesting-information/#text-input"
+          to: "/gathering-information/#text-input"
         },
         {
           level: 3,
-          text: "Requesting names",
-          to: "/requesting-information/#requesting-names"
+          text: "Gathering names",
+          to: "/gathering-information/#gathering-names"
         },
         {
           level: 2,
           text: "Text Area",
-          to: "/requesting-information/#text-area"
+          to: "/gathering-information/#text-area"
         },
         {
           level: 2,
           text: "Currency Input",
-          to: "/requesting-information/#currency-input"
+          to: "/gathering-information/#currency-input"
         },
         {
           level: 2,
           text: "Date Input",
-          to: "/requesting-information/#date-input"
+          to: "/gathering-information/#date-input"
         },
         {
           level: 1,
           text: "Choices",
-          to: "/requesting-information/#choices"
+          to: "/gathering-information/#choices"
         },
         {
           level: 2,
           text: "Check Box",
-          to: "/requesting-information/#check-box"
+          to: "/gathering-information/#check-box"
         },
         {
           level: 2,
           text: "Check Boxes",
-          to: "/requesting-information/#check-boxes"
+          to: "/gathering-information/#check-boxes"
         },
         {
           level: 2,
           text: "Radio Buttons",
-          to: "/requesting-information/#radio-buttons"
+          to: "/gathering-information/#radio-buttons"
         },
         {
           level: 2,
           text: "Conditional",
-          to: "/requesting-information/#conditional"
+          to: "/gathering-information/#conditional"
         },
         {
           level: 1,
           text: "Validation",
-          to: "/requesting-information/#validation"
+          to: "/gathering-information/#validation"
         },
         {
           level: 2,
           text: "Error Summary",
-          to: "/requesting-information/#error-summary"
+          to: "/gathering-information/#error-summary"
         },
         {
           level: 2,
           text: "Errors",
-          to: "/requesting-information/#errors"
+          to: "/gathering-information/#errors"
         },
         {
           level: 2,
           text: "Preventing spam",
-          to: "/requesting-information/#preventing-spam"
+          to: "/gathering-information/#preventing-spam"
         }
       ]}
     />
-    <Paragraph>{`When requesting information you should:`}</Paragraph>
+    <Paragraph>{`When gathering information you should:`}</Paragraph>
     <BulletedList>
       <ListItem>{`only ask for information which is absolutely needed`}</ListItem>
       <ListItem>{`ask for required information first`}</ListItem>
@@ -159,7 +159,7 @@ const Page = () => (
       <Link href="https://github.com/barnardos/design-system/issues/65">{`research`}</Link>
       {` on GitHub.`}
     </Cite>
-    <Subheading>{`Requesting names`}</Subheading>
+    <Subheading>{`Gathering names`}</Subheading>
     <Paragraph>{`Use this pattern when asking for names. You should:`}</Paragraph>
     <BulletedList>
       <ListItem>{`only ask for names when absolutely needed`}</ListItem>
@@ -419,7 +419,7 @@ const Page = () => (
       />
     </Example>
     <Subheading>{`Preventing spam`}</Subheading>
-    <Paragraph>{`To prevent spam submissions when requesting information you could try:`}</Paragraph>
+    <Paragraph>{`To prevent spam submissions when gathering information you could try:`}</Paragraph>
     <BulletedList>
       <ListItem>{`rate and connection limiting`}</ListItem>
       <ListItem>{`using honey pots`}</ListItem>
