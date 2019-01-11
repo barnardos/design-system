@@ -11,6 +11,7 @@ import Heading from "../components/Heading";
 import Subheading from "../components/Subheading";
 import Image from "../components/Image";
 import DesignSystemLayout from "../components/DesignSystemLayout";
+import Lede from "../components/Lede";
 import Link from "../components/Link";
 import ListItem from "../components/ListItem";
 import Paragraph from "../components/Paragraph";
@@ -35,6 +36,36 @@ const Page = () => (
     <Title>{`Displaying content`}</Title>
     <DesignSystemIndex
       items={[
+        {
+          level: 1,
+          text: "Type",
+          to: "/displaying-content/#type"
+        },
+        {
+          level: 2,
+          text: "Title",
+          to: "/displaying-content/#title"
+        },
+        {
+          level: 2,
+          text: "Lede",
+          to: "/displaying-content/#lede"
+        },
+        {
+          level: 2,
+          text: "Heading",
+          to: "/displaying-content/#heading"
+        },
+        {
+          level: 2,
+          text: "Subheading",
+          to: "/displaying-content/#subheading"
+        },
+        {
+          level: 2,
+          text: "Paragraph",
+          to: "/displaying-content/#paragraph"
+        },
         {
           level: 1,
           text: "Lists",
@@ -76,6 +107,47 @@ const Page = () => (
     <BulletedList>
       <ListItem>{`provide a meaningful content hierarchy`}</ListItem>
     </BulletedList>
+    <Heading>{`Type hierarchy`}</Heading>
+    <Example>
+      <Title>{`Title`}</Title>
+    </Example>
+    <Cite>
+      {`View `}
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Title">{`code`}</Link>
+      {` on GitHub.`}
+    </Cite>
+    <Example>
+      <Lede>{`Lede`}</Lede>
+    </Example>
+    <Cite>
+      {`View `}
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Lede">{`code`}</Link>
+      {` on GitHub.`}
+    </Cite>
+    <Example>
+      <Heading>{`Heading`}</Heading>
+    </Example>
+    <Cite>
+      {`View `}
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Heading">{`code`}</Link>
+      {` on GitHub.`}
+    </Cite>
+    <Example>
+      <Subheading>{`Subheading`}</Subheading>
+    </Example>
+    <Cite>
+      {`View `}
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Subheading">{`code`}</Link>
+      {` on GitHub.`}
+    </Cite>
+    <Example>
+      <Paragraph>{`Paragraph`}</Paragraph>
+    </Example>
+    <Cite>
+      {`View `}
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Paragraph">{`code`}</Link>
+      {` on GitHub.`}
+    </Cite>
     <Heading>{`Lists`}</Heading>
     <Paragraph>{`Use the component below for lists. You should:`}</Paragraph>
     <BulletedList>
