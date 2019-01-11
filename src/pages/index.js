@@ -129,6 +129,10 @@ const Page = () => (
           title="Keep it simple"
         >{`Do the hard work so the user doesn't have to.`}</Promo>
         <Promo
+          to="/principles/#embrace-digital"
+          title="Embrace digital"
+        >{`Make the most of the medium's benefits.`}</Promo>
+        <Promo
           to="/principles/#be-consistent"
           title="Be consistent"
         >{`Build trust and familiarity across products.`}</Promo>
@@ -136,10 +140,6 @@ const Page = () => (
           to="/principles/#be-open"
           title="Be open"
         >{`Be part of the open digital community.`}</Promo>
-        <Promo
-          to="/principles/#embrace-digital"
-          title="Embrace digital"
-        >{`Make the most of the medium's benefits.`}</Promo>
       </Promos>
     </Section>
   </DesignSystemLayout>

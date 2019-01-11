@@ -55,6 +55,14 @@ const Page = () => (
       <ListItem>{`hide underlying complex systems`}</ListItem>
       <ListItem>{`avoid deciding on a solution because "It's always been this way"`}</ListItem>
     </BulletedList>
+    <Heading>{`Embrace digital`}</Heading>
+    <Paragraph>{`Make the most of the medium's benefits.`}</Paragraph>
+    <Paragraph>{`You should:`}</Paragraph>
+    <BulletedList>
+      <ListItem>{`be comfortable with change`}</ListItem>
+      <ListItem>{`respect the environment's constraints`}</ListItem>
+      <ListItem>{`avoid print-based thinking`}</ListItem>
+    </BulletedList>
     <Heading>{`Be consistent`}</Heading>
     <Paragraph>{`Build trust and familiarity across products.`}</Paragraph>
     <Paragraph>{`You should:`}</Paragraph>
@@ -81,14 +89,6 @@ const Page = () => (
       <ListItem>{`code in the open`}</ListItem>
       <ListItem>{`encourage collaboration`}</ListItem>
       <ListItem>{`learn from others`}</ListItem>
-    </BulletedList>
-    <Heading>{`Embrace digital`}</Heading>
-    <Paragraph>{`Make the most of the medium's benefits.`}</Paragraph>
-    <Paragraph>{`You should:`}</Paragraph>
-    <BulletedList>
-      <ListItem>{`be comfortable with change`}</ListItem>
-      <ListItem>{`respect the environment's constraints`}</ListItem>
-      <ListItem>{`avoid print-based thinking`}</ListItem>
     </BulletedList>
   </DesignSystemLayout>
 );
