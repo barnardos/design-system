@@ -36,6 +36,10 @@
 .Footer-copyright {
   color: var(--black);
   font: 300 var(--type--1) system-ui;
+
+  &:not(:first-child) {
+    margin-top: 1rem;
+  }
 }
 
 @media (min-width: 48rem) {

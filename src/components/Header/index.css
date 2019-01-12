@@ -4,21 +4,12 @@
 
 .Header {
   box-shadow: inset 0 -1px 0 0 color-mod(var(--black) tint(90%));
-  overflow-x: hidden;
   padding: 0.5rem 1rem;
-  position: relative;
+}
 
-  &::after {
-    bottom: 0;
-    box-shadow: inset 0 -1px 0 0 color-mod(var(--black) tint(90%));
-    content: "";
-    height: 1px;
-    left: 0;
-    margin-left: calc(50% - 50vw);
-    margin-right: calc(50% - 50vw);
-    position: absolute;
-    right: 0;
-  }
+.Header-actions {
+  display: flex;
+  justify-content: space-between;
 }
 
 .Header-logo {
@@ -32,12 +23,83 @@
   width: 100%;
 }
 
+.Header-trigger {
+  align-items: center;
+  appearance: none;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  color: var(--black);
+  display: flex;
+  font: 600 var(--type-0) proxima-nova, sans-serif;
+  justify-content: center;
+  margin-left: 0.5rem;
+  padding: 0 0.5rem;
+  white-space: normal;
+
+  &:hover {
+    background-color: color-mod(var(--white) shade(10%));
+  }
+
+  &:active {
+    box-shadow: inset 0 0 0 1px var(--black);
+    position: relative;
+    top: 0.125rem;
+  }
+}
+
+.Header-triggerText {
+  margin-left: 0.25rem;
+}
+
+.Header-target {
+  left: -100vw;
+  position: absolute;
+
+  &:focus-within {
+    position: static;
+  }
+}
+
+.Header-target--active {
+  position: static;
+}
+
+.Header-search {
+  padding: 1.5rem 0 1rem;
+}
+
+.Header-menu {
+  margin: 0 -1rem;
+}
+
 @media (min-width: 48rem) {
   .Header {
+    display: flex;
+    justify-content: space-between;
     padding: 1rem 2rem;
   }
 
   .Header-logo {
     width: 7.5rem;
+  }
+
+  .Header-trigger {
+    display: none;
+  }
+
+  .Header-target {
+    align-self: center;
+    flex: 0 1 30rem;
+    margin-left: 4rem;
+    position: static;
+  }
+
+  .Header-search {
+    padding: 0;
+  }
+
+  .Header-menu {
+    margin: 0.5rem 0 -1rem 0;
   }
 }

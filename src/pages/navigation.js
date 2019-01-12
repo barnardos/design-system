@@ -494,6 +494,72 @@ const Page = () => (
           <Example>
             <Header />
           </Example>
+          <Example>
+            <div
+              style={{
+                paddingBottom: "8rem",
+                position: "relative"
+              }}
+            >
+              <Header
+                search
+                menu={
+                  <Menu
+                    items={[
+                      {
+                        text: "About us",
+                        to: "/",
+                        items: [
+                          {
+                            text: "Our history",
+                            to: "/"
+                          },
+                          {
+                            text: "Annual report",
+                            to: "/"
+                          },
+                          {
+                            text: "How we're funded",
+                            to: "/"
+                          }
+                        ]
+                      },
+                      {
+                        isActive: true,
+                        text: "What we do",
+                        to: "/",
+                        items: [
+                          {
+                            isActive: true,
+                            text: "Fostering & adoption",
+                            to: "/"
+                          },
+                          {
+                            text: "Supporting young adults",
+                            to: "/"
+                          }
+                        ]
+                      },
+                      {
+                        text: "Work with us",
+                        to: "/",
+                        items: [
+                          {
+                            text: "Jobs",
+                            to: "/"
+                          },
+                          {
+                            text: "Commission us",
+                            to: "/"
+                          }
+                        ]
+                      }
+                    ]}
+                  />
+                }
+              />
+            </div>
+          </Example>
           <Cite>
             {`View `}
             <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Header">{`Header code`}</Link>

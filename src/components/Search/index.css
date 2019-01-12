@@ -15,7 +15,7 @@
   display: block;
   flex: 1;
   font: 300 var(--type-2) system-ui;
-  padding: 0.5rem 0.75rem;
+  padding: 0.25rem 0.75rem;
 }
 
 .Search-button {
@@ -26,9 +26,9 @@
   border-radius: 0;
   box-shadow: 0.25rem 0.25rem color-mod(var(--green) shade(40%));
   display: flex;
-  flex: 0 0 3rem;
   justify-content: center;
   margin-left: 0.5rem;
+  padding: 0 0.5rem;
   white-space: normal;
 
   &:hover {
