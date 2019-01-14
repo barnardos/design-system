@@ -2,7 +2,7 @@
   "parser": "babel-eslint",
   "plugins": ["import", "react"],
   "extends": [
-    "eslint:recommended",
+    "@barnardos/eslint-config-barnardos",
     "plugin:react/recommended",
     "plugin:import/recommended"
   ],

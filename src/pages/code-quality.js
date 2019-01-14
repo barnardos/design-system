@@ -34,7 +34,9 @@ const Page = () => (
       <ListItem>
         {`lint your JavaScript with `}
         <Link href="https://eslint.org/">{`ESLint`}</Link>
-        {` (recommended config)`}
+        {` (`}
+        <Link href="https://github.com/barnardos/eslint-config-barnardos">{`eslint-config-barnardos`}</Link>
+        {`)`}
       </ListItem>
       <ListItem>
         {`lint your CSS with `}
