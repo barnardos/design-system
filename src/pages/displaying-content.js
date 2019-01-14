@@ -19,6 +19,7 @@ import Quote from "../components/Quote";
 import DesignSystemIndex from "../components/DesignSystemIndex";
 import Title from "../components/Title";
 import BulletedList from "../components/BulletedList";
+import Section from "../components/Section";
 
 const Page = () => (
   <DesignSystemLayout>
@@ -100,6 +101,11 @@ const Page = () => (
           level: 2,
           text: "Attention Grabbing Quote",
           to: "/displaying-content/#attention-grabbing-quote"
+        },
+        {
+          level: 1,
+          text: "Section",
+          to: "/displaying-content/#section"
         }
       ]}
     />
@@ -266,6 +272,26 @@ const Page = () => (
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/AttentionGrabbingQuote">{`code`}</Link>
       {` and `}
       <Link href="https://github.com/barnardos/design-system/issues/321">{`research`}</Link>
+      {` on GitHub.`}
+    </Cite>
+    <Heading>{`Section`}</Heading>
+    <Paragraph>{`Use this component to section parts of content.`}</Paragraph>
+    <Example>
+      <Section>
+        <Paragraph>{`1st section`}</Paragraph>
+      </Section>
+      <Section>
+        <Paragraph>{`2nd section`}</Paragraph>
+      </Section>
+      <Section>
+        <Paragraph>{`3rd section`}</Paragraph>
+      </Section>
+    </Example>
+    <Cite>
+      {`View `}
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Section">{`code`}</Link>
+      {` and `}
+      <Link href="https://github.com/barnardos/design-system/issues/462">{`research`}</Link>
       {` on GitHub.`}
     </Cite>
   </DesignSystemLayout>
