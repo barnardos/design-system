@@ -23,6 +23,8 @@ The providers are:
 
 - [CircleCI](https://circleci.com) - continuous integration
 - [Netlify](https://www.netlify.com) - continuous deployment
+- [Google Analytics](https://analytics.google.com) - user analytics
+- [Project Wallace](https://www.projectwallace.com/~barnardos/design-system) - CSS analytics
 
 ### Netlify
 
