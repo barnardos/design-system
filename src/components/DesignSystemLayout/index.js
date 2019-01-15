@@ -7,7 +7,9 @@ import Link from "../Link";
 import Paragraph from "../Paragraph";
 
 const DesignSystemLayout = ({ children }) => (
-  <Layout footer={<div>{`© Barnardo's 2018`}</div>}>
+  <Layout
+    footer={<div>{`© Barnardo's ${new Date(Date.now()).getFullYear()}`}</div>}
+  >
     {children}
     <Feedback title="Give feedback">
       <Paragraph>

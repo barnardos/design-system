@@ -507,7 +507,7 @@ const Page = () => (
               text: "Cookie policy"
             }
           ]}
-        >{`© Barnardo's 2018`}</Footer>
+        >{`© Barnardo's ${new Date(Date.now()).getFullYear()}`}</Footer>
       </div>
     </Example>
     <Cite>
