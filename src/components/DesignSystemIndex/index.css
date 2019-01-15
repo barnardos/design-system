@@ -8,6 +8,11 @@
   }
 }
 
+.DesignSystemIndex-section {
+  color: var(--black);
+  font: 300 var(--type-0) system-ui;
+}
+
 @media (min-width: 78rem) and (min-height: 40rem) {
   .DesignSystemIndex {
     margin-top: 0;

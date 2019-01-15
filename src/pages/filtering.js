@@ -30,7 +30,7 @@ const Page = () => (
       ]}
     />
     <Title>{`Filtering`}</Title>
-    <Paragraph>{`When filtering you should:`}</Paragraph>
+    <Paragraph>{`You should:`}</Paragraph>
     <BulletedList>
       <ListItem>{`avoid too many filters`}</ListItem>
       <ListItem>{`show common filters at all times`}</ListItem>

@@ -13,12 +13,14 @@
 
   &::after {
     content: "›";
+    display: inline-block;
     font: 300 var(--type-8) proxima-nova, sans-serif;
     line-height: 0;
     margin: 1.25rem 0 0 0.5rem;
     position: absolute;
     text-decoration: none;
     top: 0.125rem;
+    white-space: pre-wrap;
   }
 
   &:hover {

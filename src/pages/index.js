@@ -1,3 +1,4 @@
+import { Link as GatsbyLink } from "gatsby";
 import Helmet from "react-helmet";
 import React from "react";
 
@@ -11,6 +12,15 @@ import Promos from "../components/Promos";
 import Hero from "../components/Hero";
 import Section from "../components/Section";
 import SignpostLink from "../components/SignpostLink";
+import Paragraph from "../components/Paragraph";
+import DesignSystemNavigation from "../components/DesignSystemNavigation";
+import ComponentsIndex from "../components/ComponentsIndex";
+import BulletedList from "../components/BulletedList";
+import ListItem from "../components/ListItem";
+
+import { indexItems as contentItems } from "./content";
+import { indexItems as navigationItems } from "./navigation";
+import { indexItems as formsItems } from "./forms";
 
 const Page = () => (
   <DesignSystemLayout>
@@ -26,87 +36,100 @@ const Page = () => (
       >{`Getting started`}</SignpostLink>
     </Hero>
     <Section>
+      <Heading>{`Patterns`}</Heading>
+      <Paragraph>{`Using our components to solve common problems.`}</Paragraph>
+      <DesignSystemNavigation
+        isFlex
+        items={[
+          {
+            text: "Asking for names",
+            to: "/asking-for-names/"
+          },
+          {
+            text: "Filtering",
+            to: "/filtering/"
+          },
+          {
+            text: "Preventing spam",
+            to: "/preventing-spam/"
+          }
+        ]}
+      />
+    </Section>
+    <Section>
+      <Heading>{`Components`}</Heading>
+      <Paragraph>{`Following our standards to create reusable parts.`}</Paragraph>
+      <Promos>
+        <Promo to="/content/" title="Content">
+          {<ComponentsIndex items={contentItems} />}
+        </Promo>
+        <Promo to="/navigation/" title="Navigation">
+          {<ComponentsIndex items={navigationItems} />}
+        </Promo>
+        <Promo to="/forms/" title="Forms">
+          {" "}
+          {<ComponentsIndex items={formsItems} />}
+        </Promo>
+      </Promos>
+    </Section>
+    <Section>
+      <Heading>{`Standards`}</Heading>
+      <Paragraph>{`Building on our principles to maintain quality and consistency.`}</Paragraph>
       <DesignSystemNavigations
         items={[
           {
-            title: "Components and patterns",
-            description: "Solutions to common problems",
+            title: "Accessibility",
             items: [
               {
-                text: "Navigating",
-                to: "/navigating/"
+                text: "Considerations",
+                to: "/considerations/"
               },
               {
-                text: "Displaying content",
-                to: "/displaying-content/"
-              },
-              {
-                text: "Gathering information",
-                to: "/gathering-information/"
-              },
-              {
-                text: "Triggering actions",
-                to: "/triggering-actions/"
-              },
-              {
-                text: "Filtering",
-                to: "/filtering/"
+                text: "Viewport scale",
+                to: "/viewport-scale/"
               }
             ]
           },
           {
-            title: "Style and brand",
-            description: "Foundations for components and patterns",
+            title: "Design",
             items: [
               {
                 text: "Colour",
                 to: "/colour/"
               },
               {
-                text: "Layout",
-                to: "/layout/"
-              },
-              {
                 text: "Typography",
                 to: "/typography/"
               },
               {
-                text: "Proportional scale",
-                to: "/proportional-scale/"
-              },
-              {
-                text: "Film and photography",
-                to: "/film-and-photography/"
-              },
-              {
-                text: "Iconography",
-                to: "/iconography/"
-              },
-              {
-                text: "Brand assets",
-                to: "/brand-assets/"
+                text: "Spacing and layout",
+                to: "/spacing-and-layout/"
               }
             ]
           },
           {
-            title: "Fundamentals",
-            description: "Building on our principles",
+            title: "Writing",
             items: [
               {
-                text: "Accessibility",
-                to: "/accessibility/"
+                text: "Style",
+                to: "/style/"
               },
               {
-                text: "Writing content",
-                to: "/writing-content/"
-              },
+                text: "Spelling",
+                to: "/spelling/"
+              }
+            ]
+          },
+          {
+            title: "Development",
+            items: [
               {
                 text: "Code quality",
                 to: "/code-quality/"
               },
               {
-                text: "Future-proofing code",
-                to: "/future-proofing-code/"
+                text: "Future-proof code",
+                to: "/future-proof-code/"
               }
             ]
           }
@@ -141,6 +164,30 @@ const Page = () => (
           title="Be open"
         >{`Be part of the open digital community.`}</Promo>
       </Promos>
+    </Section>
+    <Section>
+      <Heading>{`Assets`}</Heading>
+      <BulletedList>
+        <ListItem>
+          <GatsbyLink
+            to="/brand-assets/"
+            className="Link"
+          >{`Brand assets`}</GatsbyLink>
+        </ListItem>
+
+        <ListItem>
+          <GatsbyLink
+            to="/film-and-photography/"
+            className="Link"
+          >{`Film and photography`}</GatsbyLink>
+        </ListItem>
+        <ListItem>
+          <GatsbyLink
+            to="/iconography/"
+            className="Link"
+          >{`Iconography`}</GatsbyLink>
+        </ListItem>
+      </BulletedList>
     </Section>
   </DesignSystemLayout>
 );

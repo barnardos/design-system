@@ -4,6 +4,7 @@
 
 .DateInput-labelsAndInputs {
   display: grid;
+  /* autoprefixer: off */
   grid-gap: 0.5rem 1rem;
   grid-template-columns: 4rem 4rem 6rem;
   margin-top: 0.5rem;

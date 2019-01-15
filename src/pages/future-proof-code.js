@@ -13,7 +13,7 @@ import BulletedList from "../components/BulletedList";
 const Page = () => (
   <DesignSystemLayout>
     <Helmet>
-      <title>{`Future-proofing code`}</title>
+      <title>{`Future-proof code`}</title>
     </Helmet>
     <Breadcrumbs
       items={[
@@ -23,7 +23,7 @@ const Page = () => (
         }
       ]}
     />
-    <Title>{`Future-proofing code`}</Title>
+    <Title>{`Future-proof code`}</Title>
     <Paragraph>{`You should transpile modern standards for:`}</Paragraph>
     <BulletedList>
       <ListItem>

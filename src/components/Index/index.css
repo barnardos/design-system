@@ -3,20 +3,13 @@
 /** @define Index; */
 
 .Index {
+  /* autoprefixer: off */
+  display: grid;
+  grid-gap: 0.25rem;
+
   &:not(:first-child) {
     margin-top: 1rem;
   }
-}
-
-.Index-section {
-  color: var(--black);
-  font: 300 var(--type-0) system-ui;
-}
-
-.Index-items {
-  display: grid;
-  grid-gap: 0.25rem;
-  margin-top: 1rem;
 }
 
 .Index-item {

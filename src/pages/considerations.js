@@ -14,7 +14,7 @@ import BulletedList from "../components/BulletedList";
 const Page = () => (
   <DesignSystemLayout>
     <Helmet>
-      <title>{`Accessibility`}</title>
+      <title>{`Considerations`}</title>
     </Helmet>
     <Breadcrumbs
       items={[
@@ -24,12 +24,12 @@ const Page = () => (
         }
       ]}
     />
-    <Title>{`Accessibility`}</Title>
+    <Title>{`Considerations`}</Title>
     <Paragraph>
       {`When considering accessibility, follow the principle `}
       <GatsbyLink
         className="Link"
-        to="/principles/#2-be-inclusive"
+        to="/principles/#be-inclusive"
       >{`'be inclusive'`}</GatsbyLink>
       {`.`}
     </Paragraph>
@@ -37,7 +37,7 @@ const Page = () => (
     <BulletedList>
       <ListItem>
         {`use accessibility tools to test your work, for example `}
-        <Link href="https://axe-core.org/">{`aXe`}</Link>
+        <Link href="https://www.deque.com/axe/">{`aXe`}</Link>
       </ListItem>
       <ListItem>{`make page titles unique and descriptive`}</ListItem>
       <ListItem>{`allow users to navigate only with a keyboard`}</ListItem>

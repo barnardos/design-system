@@ -13,7 +13,7 @@ import BulletedList from "../components/BulletedList";
 const Page = () => (
   <DesignSystemLayout>
     <Helmet>
-      <title>{`Proportional scale`}</title>
+      <title>{`Viewport scale`}</title>
     </Helmet>
     <Breadcrumbs
       items={[
@@ -23,7 +23,7 @@ const Page = () => (
         }
       ]}
     />
-    <Title>{`Proportional scale`}</Title>
+    <Title>{`Viewport scale`}</Title>
     <Paragraph>{`The layout and typography can be proportionally scaled to maintain an optimal line length at any viewport size.`}</Paragraph>
     <Paragraph>{`The optimal line length of text is around:`}</Paragraph>
     <BulletedList>
