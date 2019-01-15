@@ -3,19 +3,17 @@ import React from "react";
 
 import Breadcrumbs from "../components/Breadcrumbs";
 import Cite from "../components/Cite";
-import Heading from "../components/Heading";
 import DesignSystemLayout from "../components/DesignSystemLayout";
 import Link from "../components/Link";
 import ListItem from "../components/ListItem";
 import Paragraph from "../components/Paragraph";
-import DesignSystemIndex from "../components/DesignSystemIndex";
 import Title from "../components/Title";
 import BulletedList from "../components/BulletedList";
 
 const Page = () => (
   <DesignSystemLayout>
     <Helmet>
-      <title>{`Writing content`}</title>
+      <title>{`Style`}</title>
     </Helmet>
     <Breadcrumbs
       items={[
@@ -25,16 +23,7 @@ const Page = () => (
         }
       ]}
     />
-    <Title>{`Writing content`}</Title>
-    <DesignSystemIndex
-      items={[
-        {
-          level: 1,
-          text: "Spelling",
-          to: "/writing-content/#spelling"
-        }
-      ]}
-    />
+    <Title>{`Style`}</Title>
     <Paragraph>
       {`When writing content use inclusive language and imagine you're talking to the reader.`}
     </Paragraph>
@@ -56,16 +45,6 @@ const Page = () => (
       <ListItem>{`write dates as 9 January 2018`}</ListItem>
       <ListItem>{`use the 12-hour clock, for example 10am and 2.30pm`}</ListItem>
       <ListItem>{`use noon and midnight instead of 12 noon and 12 midnight`}</ListItem>
-    </BulletedList>
-    <Heading>{`Spelling`}</Heading>
-    <BulletedList>
-      <ListItem>{`Barnardo’s (always with apostrophe)`}</ListItem>
-      <ListItem>{`email (no hyphen)`}</ListItem>
-      <ListItem>{`http:// (is not required, begin web addresses with www)`}</ListItem>
-      <ListItem>{`online (one word)`}</ListItem>
-      <ListItem>{`per cent (should be spelt in words, unless used in tables)`}</ListItem>
-      <ListItem>{`postcode (no hyphen)`}</ListItem>
-      <ListItem>{`website (no hyphen)`}</ListItem>
     </BulletedList>
     <Cite>
       {`View `}

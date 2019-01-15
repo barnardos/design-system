@@ -16,7 +16,7 @@ import SpacingFigure from "../components/SpacingFigure";
 const Page = () => (
   <DesignSystemLayout>
     <Helmet>
-      <title>{`Layout`}</title>
+      <title>{`Spacing and layout`}</title>
     </Helmet>
     <Breadcrumbs
       items={[
@@ -26,7 +26,7 @@ const Page = () => (
         }
       ]}
     />
-    <Title>{`Layout`}</Title>
+    <Title>{`Spacing and layout`}</Title>
     <Paragraph>{`You should:`}</Paragraph>
     <BulletedList>
       <ListItem>{`use multiples of 0.25rem (roughly 4px) for spacing`}</ListItem>

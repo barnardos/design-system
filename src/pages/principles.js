@@ -1,4 +1,3 @@
-import { Link as GatsbyLink } from "gatsby";
 import Helmet from "react-helmet";
 import React from "react";
 
@@ -67,18 +66,9 @@ const Page = () => (
     <Paragraph>{`Build trust and familiarity across products.`}</Paragraph>
     <Paragraph>{`You should:`}</Paragraph>
     <BulletedList>
-      <ListItem>
-        {`follow the `}
-        <GatsbyLink className="Link" to="/">{`guidance`}</GatsbyLink>
-      </ListItem>
+      <ListItem>{`follow the standards`}</ListItem>
+      <ListItem>{`follow consistent language`}</ListItem>
       <ListItem>{`avoid reinventing the wheel`}</ListItem>
-      <ListItem>
-        {`write using `}
-        <GatsbyLink
-          className="Link"
-          to="/writing-content/"
-        >{`consistent language`}</GatsbyLink>
-      </ListItem>
     </BulletedList>
     <Heading>{`Be open`}</Heading>
     <Paragraph>{`Be part of the open digital community.`}</Paragraph>

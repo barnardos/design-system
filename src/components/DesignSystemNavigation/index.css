@@ -2,12 +2,8 @@
 
 /** @define DesignSystemNavigation; */
 
-.DesignSystemNavigation {
-  margin-top: 2.5rem;
-}
-
 .DesignSystemNavigation-title {
-  font: 600 var(--type-5) proxima-nova, sans-serif;
+  font: 300 var(--type-4) proxima-nova, sans-serif;
 }
 
 .DesignSystemNavigation-description {
@@ -17,7 +13,7 @@
 
 .DesignSystemNavigation-item {
   list-style: none;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 
 .DesignSystemNavigation-link {

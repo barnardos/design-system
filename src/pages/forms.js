@@ -24,11 +24,91 @@ import Title from "../components/Title";
 import BulletedList from "../components/BulletedList";
 import Figures from "../components/Figures";
 import Figure from "../components/Figure";
+import Submit from "../components/Submit";
+import Command from "../components/Command";
+
+export const indexItems = [
+  {
+    level: 1,
+    text: "Text inputs",
+    to: "/forms/#text-entry"
+  },
+  {
+    level: 2,
+    text: "Text Input",
+    to: "/forms/#text-input"
+  },
+  {
+    level: 2,
+    text: "Text Area",
+    to: "/forms/#text-area"
+  },
+  {
+    level: 2,
+    text: "Currency Input",
+    to: "/forms/#currency-input"
+  },
+  {
+    level: 2,
+    text: "Date Input",
+    to: "/forms/#date-input"
+  },
+  {
+    level: 1,
+    text: "Choices",
+    to: "/forms/#choices"
+  },
+  {
+    level: 2,
+    text: "Check Box",
+    to: "/forms/#check-box"
+  },
+  {
+    level: 2,
+    text: "Check Boxes",
+    to: "/forms/#check-boxes"
+  },
+  {
+    level: 2,
+    text: "Radio Buttons",
+    to: "/forms/#radio-buttons"
+  },
+  {
+    level: 2,
+    text: "Conditional",
+    to: "/forms/#conditional"
+  },
+  {
+    level: 1,
+    text: "Command",
+    to: "/forms/#command"
+  },
+  {
+    level: 1,
+    text: "Submit",
+    to: "/forms/#submit"
+  },
+  {
+    level: 1,
+    text: "Validation",
+    to: "/forms/#validation"
+  },
+  {
+    level: 2,
+    text: "Error Summary",
+    to: "/forms/#error-summary"
+  },
+  {
+    level: 2,
+    text: "Errors",
+    to: "/forms/#errors"
+  }
+];
 
 const Page = () => (
   <DesignSystemLayout>
     <Helmet>
-      <title>{`Gathering information`}</title>
+      <title>{`Forms`}</title>
     </Helmet>
     <Breadcrumbs
       items={[
@@ -38,86 +118,8 @@ const Page = () => (
         }
       ]}
     />
-    <Title>{`Gathering information`}</Title>
-    <DesignSystemIndex
-      items={[
-        {
-          level: 1,
-          text: "Text entry",
-          to: "/gathering-information/#text-entry"
-        },
-        {
-          level: 2,
-          text: "Text Input",
-          to: "/gathering-information/#text-input"
-        },
-        {
-          level: 3,
-          text: "Gathering names",
-          to: "/gathering-information/#gathering-names"
-        },
-        {
-          level: 2,
-          text: "Text Area",
-          to: "/gathering-information/#text-area"
-        },
-        {
-          level: 2,
-          text: "Currency Input",
-          to: "/gathering-information/#currency-input"
-        },
-        {
-          level: 2,
-          text: "Date Input",
-          to: "/gathering-information/#date-input"
-        },
-        {
-          level: 1,
-          text: "Choices",
-          to: "/gathering-information/#choices"
-        },
-        {
-          level: 2,
-          text: "Check Box",
-          to: "/gathering-information/#check-box"
-        },
-        {
-          level: 2,
-          text: "Check Boxes",
-          to: "/gathering-information/#check-boxes"
-        },
-        {
-          level: 2,
-          text: "Radio Buttons",
-          to: "/gathering-information/#radio-buttons"
-        },
-        {
-          level: 2,
-          text: "Conditional",
-          to: "/gathering-information/#conditional"
-        },
-        {
-          level: 1,
-          text: "Validation",
-          to: "/gathering-information/#validation"
-        },
-        {
-          level: 2,
-          text: "Error Summary",
-          to: "/gathering-information/#error-summary"
-        },
-        {
-          level: 2,
-          text: "Errors",
-          to: "/gathering-information/#errors"
-        },
-        {
-          level: 2,
-          text: "Preventing spam",
-          to: "/gathering-information/#preventing-spam"
-        }
-      ]}
-    />
+    <Title>{`Forms`}</Title>
+    <DesignSystemIndex items={indexItems} />
     <Paragraph>{`When gathering information you should:`}</Paragraph>
     <BulletedList>
       <ListItem>{`only ask for information which is absolutely needed`}</ListItem>
@@ -127,7 +129,7 @@ const Page = () => (
       <ListItem>{`group related fields together, for example "Email" and "Phone"`}</ListItem>
       <ListItem>{`minimise the number of fields on each page`}</ListItem>
     </BulletedList>
-    <Heading>{`Text entry`}</Heading>
+    <Heading>{`Text inputs`}</Heading>
     <Paragraph>{`Use the components below for text entry. You should:`}</Paragraph>
     <BulletedList>
       <ListItem>
@@ -157,40 +159,6 @@ const Page = () => (
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/TextInput">{`code`}</Link>
       {` and `}
       <Link href="https://github.com/barnardos/design-system/issues/65">{`research`}</Link>
-      {` on GitHub.`}
-    </Cite>
-    <Subheading>{`Gathering names`}</Subheading>
-    <Paragraph>{`Use this pattern when asking for names. You should:`}</Paragraph>
-    <BulletedList>
-      <ListItem>{`only ask for names when absolutely needed`}</ListItem>
-      <ListItem>{`support all characters users may need to enter`}</ListItem>
-      <ListItem>{`avoid asking for title`}</ListItem>
-    </BulletedList>
-    <Figures>
-      <Figure caption="Where possible use a single name field to accommodates the broadest range of name types.">
-        <TextInput
-          id="text-input-full-name-example"
-          label="Full name"
-          size={48}
-        />
-      </Figure>
-      <Figure caption="If your product needs to reliably extract first name and last name, use multiple name fields.">
-        <TextInput
-          id="text-input-first-name-example"
-          label="First name"
-          size={48}
-        />
-
-        <TextInput
-          id="text-input-last-name-example"
-          label="Last name"
-          size={48}
-        />
-      </Figure>
-    </Figures>
-    <Cite>
-      {`View `}
-      <Link href="https://github.com/barnardos/design-system/issues/404">{`research`}</Link>
       {` on GitHub.`}
     </Cite>
     <Subheading>{`Text Area`}</Subheading>
@@ -364,6 +332,36 @@ const Page = () => (
       <Link href="https://github.com/barnardos/design-system/issues/86">{`research`}</Link>
       {` on GitHub.`}
     </Cite>
+    <Heading>{`Command`}</Heading>
+    <Paragraph>{`Use this component for interactive triggers that don't submit data.`}</Paragraph>
+    <Example>
+      <Command>{`Print page`}</Command>
+    </Example>
+    <Cite>
+      {`View `}
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Command">{`code`}</Link>
+      {` and `}
+      <Link href="https://github.com/barnardos/design-system/issues/33">{`research`}</Link>
+      {` on GitHub.`}
+    </Cite>
+    <Heading>{`Submit`}</Heading>
+    <Paragraph>{`Use this component to trigger the submitting of form data.`}</Paragraph>
+    <Paragraph>{`When using this component you should:`}</Paragraph>
+    <BulletedList>
+      <ListItem>{`only use it once on each page`}</ListItem>
+      <ListItem>{`use a verb, for example save`}</ListItem>
+      <ListItem>{`only use the Green colour`}</ListItem>
+    </BulletedList>
+    <Example>
+      <Submit text="Send application" />
+    </Example>
+    <Cite>
+      {`View `}
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Submit">{`code`}</Link>
+      {` and `}
+      <Link href="https://github.com/barnardos/design-system/issues/33">{`research`}</Link>
+      {` on GitHub.`}
+    </Cite>
     <Heading>{`Validation`}</Heading>
     <Subheading>{`Error Summary`}</Subheading>
     <Example>
@@ -418,19 +416,6 @@ const Page = () => (
         name="radio-buttons-example-validation"
       />
     </Example>
-    <Subheading>{`Preventing spam`}</Subheading>
-    <Paragraph>{`To prevent spam submissions when gathering information you could try:`}</Paragraph>
-    <BulletedList>
-      <ListItem>{`rate and connection limiting`}</ListItem>
-      <ListItem>{`using honey pots`}</ListItem>
-      <ListItem>{`transaction monitoring`}</ListItem>
-    </BulletedList>
-    <Paragraph>{`Avoid using CAPTCHAs, as they cause usability an accessibility issues.`}</Paragraph>
-    <Cite>
-      {`View `}
-      <Link href="https://github.com/barnardos/design-system/issues/411">{`research`}</Link>
-      {` on GitHub.`}
-    </Cite>
   </DesignSystemLayout>
 );
 

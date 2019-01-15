@@ -1,0 +1,30 @@
+@import "../../custom-properties.css";
+
+/** @define ComponentsIndex; */
+
+.ComponentsIndex {
+  /* autoprefixer: off */
+  display: grid;
+  grid-gap: 0.25rem;
+
+  &:not(:first-child) {
+    margin-top: 1rem;
+  }
+}
+
+.ComponentsIndex-item {
+  list-style: none;
+}
+
+.ComponentsIndex-link {
+  color: color-mod(var(--green) shade(20%));
+  font: 300 var(--type-2) system-ui;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:visited {
+    color: color-mod(var(--purple) shade(20%));
+  }
+}

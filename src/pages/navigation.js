@@ -27,10 +27,98 @@ import Index from "../components/Index";
 import Title from "../components/Title";
 import BulletedList from "../components/BulletedList";
 
+export const indexItems = [
+  {
+    level: 1,
+    text: "Links",
+    to: "/navigation/#links"
+  },
+  {
+    level: 2,
+    text: "Link",
+    to: "/navigation/#link"
+  },
+  {
+    level: 2,
+    text: "Signpost Link",
+    to: "/navigation/#signpost-link"
+  },
+  {
+    level: 2,
+    text: "Start Link",
+    to: "/navigation/#start-link"
+  },
+  {
+    level: 2,
+    text: "Donate Link",
+    to: "/navigation/#donate-link"
+  },
+  {
+    level: 2,
+    text: "Attention Grabbing Link",
+    to: "/navigation/#attention-grabbing-link"
+  },
+  {
+    level: 2,
+    text: "Back Link",
+    to: "/navigation/#back-link"
+  },
+  {
+    level: 1,
+    text: "Promos",
+    to: "/navigation/#promos"
+  },
+  {
+    level: 2,
+    text: "Promo",
+    to: "/navigation/#promo"
+  },
+  {
+    level: 2,
+    text: "Attention Grabbing Promo",
+    to: "/navigation/#attention-grabbing-promo"
+  },
+  {
+    level: 1,
+    text: "Breadcrumbs",
+    to: "/navigation/#breadcrumbs"
+  },
+  {
+    level: 1,
+    text: "Index",
+    to: "/navigation/#index"
+  },
+  {
+    level: 1,
+    text: "Pagination",
+    to: "/navigation/#pagination"
+  },
+  {
+    level: 1,
+    text: "Menu",
+    to: "/navigation/#menu"
+  },
+  {
+    level: 1,
+    text: "Search",
+    to: "/navigation/#search"
+  },
+  {
+    level: 1,
+    text: "Header",
+    to: "/navigation/#header"
+  },
+  {
+    level: 1,
+    text: "Footer",
+    to: "/navigation/#footer"
+  }
+];
+
 const Page = () => (
   <DesignSystemLayout>
     <Helmet>
-      <title>{`Navigating`}</title>
+      <title>{`Navigation`}</title>
     </Helmet>
     <Breadcrumbs
       items={[
@@ -40,96 +128,8 @@ const Page = () => (
         }
       ]}
     />
-    <Title>{`Navigating`}</Title>
-    <DesignSystemIndex
-      items={[
-        {
-          level: 1,
-          text: "Links",
-          to: "/navigating/#links"
-        },
-        {
-          level: 2,
-          text: "Link",
-          to: "/navigating/#link"
-        },
-        {
-          level: 2,
-          text: "Signpost Link",
-          to: "/navigating/#signpost-link"
-        },
-        {
-          level: 2,
-          text: "Start Link",
-          to: "/navigating/#start-link"
-        },
-        {
-          level: 2,
-          text: "Donate Link",
-          to: "/navigating/#donate-link"
-        },
-        {
-          level: 2,
-          text: "Attention Grabbing Link",
-          to: "/navigating/#attention-grabbing-link"
-        },
-        {
-          level: 2,
-          text: "Back Link",
-          to: "/navigating/#back-link"
-        },
-        {
-          level: 1,
-          text: "Promos",
-          to: "/navigating/#promos"
-        },
-        {
-          level: 2,
-          text: "Promo",
-          to: "/navigating/#promo"
-        },
-        {
-          level: 2,
-          text: "Attention Grabbing Promo",
-          to: "/navigating/#attention-grabbing-promo"
-        },
-        {
-          level: 1,
-          text: "Breadcrumbs",
-          to: "/navigating/#breadcrumbs"
-        },
-        {
-          level: 1,
-          text: "Index",
-          to: "/navigating/#index"
-        },
-        {
-          level: 1,
-          text: "Pagination",
-          to: "/navigating/#pagination"
-        },
-        {
-          level: 1,
-          text: "Menu",
-          to: "/navigating/#menu"
-        },
-        {
-          level: 1,
-          text: "Search",
-          to: "/navigating/#search"
-        },
-        {
-          level: 1,
-          text: "Header",
-          to: "/navigating/#header"
-        },
-        {
-          level: 1,
-          text: "Footer",
-          to: "/navigating/#footer"
-        }
-      ]}
-    />
+    <Title>{`Navigation`}</Title>
+    <DesignSystemIndex items={indexItems} />
     <Heading>{`Links`}</Heading>
     <Subheading>{`Link`}</Subheading>
     <Paragraph>{`When using this component you should:`}</Paragraph>

@@ -30,9 +30,11 @@ const Page = () => (
     <Paragraph>{`This provides consistency and familiarity for service users.`}</Paragraph>
     <Paragraph>{`It includes:`}</Paragraph>
     <BulletedList>
-      <ListItem>{`a set of principles`}</ListItem>
-      <ListItem>{`rules you should follow`}</ListItem>
-      <ListItem>{`reusable components`}</ListItem>
+      <ListItem>{`principles`}</ListItem>
+      <ListItem>{`standards`}</ListItem>
+      <ListItem>{`components`}</ListItem>
+      <ListItem>{`patterns`}</ListItem>
+      <ListItem>{`assets`}</ListItem>
     </BulletedList>
     <Paragraph>{`Try to adopt as much of the Design System as possible. Depending on your needs and constraints, you may not be able to adopt all of it. It's not all or nothing.`}</Paragraph>
     <Paragraph>

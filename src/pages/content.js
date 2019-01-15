@@ -21,10 +21,83 @@ import Title from "../components/Title";
 import BulletedList from "../components/BulletedList";
 import Section from "../components/Section";
 
+export const indexItems = [
+  {
+    level: 1,
+    text: "Type hierarchy",
+    to: "/content/#type-hierarchy"
+  },
+  {
+    level: 2,
+    text: "Title",
+    to: "/content/#title"
+  },
+  {
+    level: 2,
+    text: "Lede",
+    to: "/content/#lede"
+  },
+  {
+    level: 2,
+    text: "Heading",
+    to: "/content/#heading"
+  },
+  {
+    level: 2,
+    text: "Subheading",
+    to: "/content/#subheading"
+  },
+  {
+    level: 2,
+    text: "Paragraph",
+    to: "/content/#paragraph"
+  },
+  {
+    level: 1,
+    text: "Lists",
+    to: "/content/#lists"
+  },
+  {
+    level: 2,
+    text: "Bulleted List",
+    to: "/content/#bulleted-list"
+  },
+  {
+    level: 1,
+    text: "Quotes",
+    to: "/content/#quotes"
+  },
+  {
+    level: 2,
+    text: "Quote",
+    to: "/content/#quote"
+  },
+  {
+    level: 2,
+    text: "Attention Grabbing Quote",
+    to: "/content/#attention-grabbing-quote"
+  },
+  {
+    level: 1,
+    text: "Caption",
+    to: "/content/#caption"
+  },
+  {
+    level: 1,
+    text: "Fact",
+    to: "/content/#fact"
+  },
+  {
+    level: 1,
+    text: "Section",
+    to: "/content/#section"
+  }
+];
+
 const Page = () => (
   <DesignSystemLayout>
     <Helmet>
-      <title>{`Displaying content`}</title>
+      <title>{`Content`}</title>
     </Helmet>
     <Breadcrumbs
       items={[
@@ -34,81 +107,8 @@ const Page = () => (
         }
       ]}
     />
-    <Title>{`Displaying content`}</Title>
-    <DesignSystemIndex
-      items={[
-        {
-          level: 1,
-          text: "Type",
-          to: "/displaying-content/#type"
-        },
-        {
-          level: 2,
-          text: "Title",
-          to: "/displaying-content/#title"
-        },
-        {
-          level: 2,
-          text: "Lede",
-          to: "/displaying-content/#lede"
-        },
-        {
-          level: 2,
-          text: "Heading",
-          to: "/displaying-content/#heading"
-        },
-        {
-          level: 2,
-          text: "Subheading",
-          to: "/displaying-content/#subheading"
-        },
-        {
-          level: 2,
-          text: "Paragraph",
-          to: "/displaying-content/#paragraph"
-        },
-        {
-          level: 1,
-          text: "Lists",
-          to: "/displaying-content/#lists"
-        },
-        {
-          level: 2,
-          text: "Bulleted List",
-          to: "/displaying-content/#bulleted-list"
-        },
-        {
-          level: 1,
-          text: "Caption",
-          to: "/displaying-content/#caption"
-        },
-        {
-          level: 1,
-          text: "Fact",
-          to: "/displaying-content/#fact"
-        },
-        {
-          level: 1,
-          text: "Quotes",
-          to: "/displaying-content/#quotes"
-        },
-        {
-          level: 2,
-          text: "Quote",
-          to: "/displaying-content/#quote"
-        },
-        {
-          level: 2,
-          text: "Attention Grabbing Quote",
-          to: "/displaying-content/#attention-grabbing-quote"
-        },
-        {
-          level: 1,
-          text: "Section",
-          to: "/displaying-content/#section"
-        }
-      ]}
-    />
+    <Title>{`Content`}</Title>
+    <DesignSystemIndex items={indexItems} />
     <Paragraph>{`When displaying content you should:`}</Paragraph>
     <BulletedList>
       <ListItem>{`provide a meaningful content hierarchy`}</ListItem>
@@ -178,48 +178,6 @@ const Page = () => (
       <Link href="https://github.com/barnardos/design-system/issues/325">{`research`}</Link>
       {` on GitHub.`}
     </Cite>
-    <Heading>{`Caption`}</Heading>
-    <Paragraph>{`Use this component to add a caption, for example to images and videos.`}</Paragraph>
-    <Paragraph>{`When using this component you should:`}</Paragraph>
-    <BulletedList>
-      <ListItem>{`be clear and concise`}</ListItem>
-      <ListItem>{`provide a description that makes sense out of context`}</ListItem>
-    </BulletedList>
-    <Example>
-      <Caption label="Participants receiving their certificate">
-        <Image
-          src="https://dummyimage.com/1200x675/bbbbbb/d2d2d2.png&amp;text=16:9"
-          alt="A 6:9 dummy image"
-        />
-      </Caption>
-    </Example>
-    <Cite>
-      {`View `}
-      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Caption">{`code`}</Link>
-      {` and `}
-      <Link href="https://github.com/barnardos/design-system/issues/300">{`research`}</Link>
-      {` on GitHub.`}
-    </Cite>
-    <Heading>{`Fact`}</Heading>
-    <Paragraph>{`Use this component for facts.`}</Paragraph>
-    <Paragraph>{`When using this component you should:`}</Paragraph>
-    <BulletedList>
-      <ListItem>{`use data that’s compelling and easy to understand`}</ListItem>
-      <ListItem>{`limit the number on each page`}</ListItem>
-    </BulletedList>
-    <Example>
-      <Fact label="children supported through our school-based programmes">{`23,500`}</Fact>
-    </Example>
-    <Example>
-      <Fact colour="purple" label="had improved self-esteem">{`73%`}</Fact>
-    </Example>
-    <Cite>
-      {`View `}
-      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Fact">{`code`}</Link>
-      {` and `}
-      <Link href="https://github.com/barnardos/design-system/issues/212">{`research`}</Link>
-      {` on GitHub.`}
-    </Cite>
     <Heading>{`Quotes`}</Heading>
     <Paragraph>{`Use these components for quotes, for example an excerpt from an article or quotation from a person.`}</Paragraph>
     <Subheading>{`Quote`}</Subheading>
@@ -272,6 +230,48 @@ const Page = () => (
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/AttentionGrabbingQuote">{`code`}</Link>
       {` and `}
       <Link href="https://github.com/barnardos/design-system/issues/321">{`research`}</Link>
+      {` on GitHub.`}
+    </Cite>
+    <Heading>{`Caption`}</Heading>
+    <Paragraph>{`Use this component to add a caption, for example to images and videos.`}</Paragraph>
+    <Paragraph>{`When using this component you should:`}</Paragraph>
+    <BulletedList>
+      <ListItem>{`be clear and concise`}</ListItem>
+      <ListItem>{`provide a description that makes sense out of context`}</ListItem>
+    </BulletedList>
+    <Example>
+      <Caption label="Participants receiving their certificate">
+        <Image
+          src="https://dummyimage.com/1200x675/bbbbbb/d2d2d2.png&amp;text=16:9"
+          alt="A 6:9 dummy image"
+        />
+      </Caption>
+    </Example>
+    <Cite>
+      {`View `}
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Caption">{`code`}</Link>
+      {` and `}
+      <Link href="https://github.com/barnardos/design-system/issues/300">{`research`}</Link>
+      {` on GitHub.`}
+    </Cite>
+    <Heading>{`Fact`}</Heading>
+    <Paragraph>{`Use this component for facts.`}</Paragraph>
+    <Paragraph>{`When using this component you should:`}</Paragraph>
+    <BulletedList>
+      <ListItem>{`use data that’s compelling and easy to understand`}</ListItem>
+      <ListItem>{`limit the number on each page`}</ListItem>
+    </BulletedList>
+    <Example>
+      <Fact label="children supported through our school-based programmes">{`23,500`}</Fact>
+    </Example>
+    <Example>
+      <Fact colour="purple" label="had improved self-esteem">{`73%`}</Fact>
+    </Example>
+    <Cite>
+      {`View `}
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Fact">{`code`}</Link>
+      {` and `}
+      <Link href="https://github.com/barnardos/design-system/issues/212">{`research`}</Link>
       {` on GitHub.`}
     </Cite>
     <Heading>{`Section`}</Heading>

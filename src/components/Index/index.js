@@ -16,16 +16,11 @@ const Link = ({ index, level, text, to }) => {
 };
 
 const Index = ({ items }) => (
-  <div className="Index">
-    <div className="Index-inner">
-      <p className="Index-section">{`In this section:`}</p>
-      <ul className="Index-items">
-        {items.map(({ level, text, to }, index) =>
-          Link({ index, level, text, to })
-        )}
-      </ul>
-    </div>
-  </div>
+  <ul className="Index">
+    {items.map(({ level, text, to }, index) =>
+      Link({ index, level, text, to })
+    )}
+  </ul>
 );
 
 Link.propTypes = {
