@@ -6,7 +6,9 @@ import Layout from "../Layout";
 import Link from "../Link";
 
 const DesignSystemLayout = ({ children }) => (
-  <Layout footer={<div>{`© Barnardo's ${new Date(Date.now()).getFullYear()}`}</div>}>
+  <Layout
+    footer={<div>{`© Barnardo's ${new Date(Date.now()).getFullYear()}`}</div>}
+  >
     {children}
     <Feedback title="Give feedback">
       {`Email the Design System team on `}
