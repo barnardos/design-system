@@ -10,6 +10,7 @@ import ListItem from "../components/ListItem";
 import Paragraph from "../components/Paragraph";
 import Title from "../components/Title";
 import BulletedList from "../components/BulletedList";
+import Topic from "../components/Topic";
 
 const Page = () => (
   <DesignSystemLayout>
@@ -24,6 +25,7 @@ const Page = () => (
         }
       ]}
     />
+    <Topic>{`Assets`}</Topic>
     <Title>{`Iconography`}</Title>
     <Paragraph>{`When using iconography you should:`}</Paragraph>
     <BulletedList>

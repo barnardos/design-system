@@ -26,6 +26,7 @@ import Figures from "../components/Figures";
 import Figure from "../components/Figure";
 import Submit from "../components/Submit";
 import Command from "../components/Command";
+import Topic from "../components/Topic";
 
 export const indexItems = [
   {
@@ -118,6 +119,7 @@ const Page = () => (
         }
       ]}
     />
+    <Topic>{`Components`}</Topic>
     <Title>{`Forms`}</Title>
     <DesignSystemIndex items={indexItems} />
     <Paragraph>{`When gathering information you should:`}</Paragraph>

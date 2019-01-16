@@ -8,6 +8,7 @@ import Link from "../components/Link";
 import ListItem from "../components/ListItem";
 import Title from "../components/Title";
 import BulletedList from "../components/BulletedList";
+import Topic from "../components/Topic";
 
 const Page = () => (
   <DesignSystemLayout>
@@ -22,6 +23,7 @@ const Page = () => (
         }
       ]}
     />
+    <Topic>{`Writing standards`}</Topic>
     <Title>{`Spelling`}</Title>
     <BulletedList>
       <ListItem>{`Barnardo’s (always with apostrophe)`}</ListItem>

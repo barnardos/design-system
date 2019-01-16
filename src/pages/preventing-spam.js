@@ -9,6 +9,7 @@ import Link from "../components/Link";
 import ListItem from "../components/ListItem";
 import Paragraph from "../components/Paragraph";
 import Title from "../components/Title";
+import Topic from "../components/Topic";
 
 const Page = () => (
   <DesignSystemLayout>
@@ -23,6 +24,7 @@ const Page = () => (
         }
       ]}
     />
+    <Topic>{`Patterns`}</Topic>
     <Title>{`Preventing spam`}</Title>
     <Paragraph>{`You could try:`}</Paragraph>
     <BulletedList>

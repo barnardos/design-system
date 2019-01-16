@@ -12,6 +12,7 @@ import ListItem from "../components/ListItem";
 import Paragraph from "../components/Paragraph";
 import TextInput from "../components/TextInput";
 import Title from "../components/Title";
+import Topic from "../components/Topic";
 
 const Page = () => (
   <DesignSystemLayout>
@@ -26,6 +27,7 @@ const Page = () => (
         }
       ]}
     />
+    <Topic>{`Patterns`}</Topic>
     <Title>{`Asking for names`}</Title>
     <Paragraph>{`You should:`}</Paragraph>
     <BulletedList>

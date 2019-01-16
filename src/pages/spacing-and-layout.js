@@ -12,6 +12,7 @@ import DemoItem from "../components/DemoItem";
 import Figures from "../components/Figures";
 import Figure from "../components/Figure";
 import SpacingFigure from "../components/SpacingFigure";
+import Topic from "../components/Topic";
 
 const Page = () => (
   <DesignSystemLayout>
@@ -26,6 +27,7 @@ const Page = () => (
         }
       ]}
     />
+    <Topic>{`Design standards`}</Topic>
     <Title>{`Spacing and layout`}</Title>
     <Paragraph>{`You should:`}</Paragraph>
     <BulletedList>

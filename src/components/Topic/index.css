@@ -1,0 +1,13 @@
+@import "../../custom-properties.css";
+
+/** @define Topic; */
+
+.Topic {
+  color: color-mod(var(--black) tint(50%));
+  font: 300 var(--type-3) proxima-nova, sans-serif;
+  margin-bottom: -1rem;
+
+  &:not(:first-child) {
+    margin-top: 1rem;
+  }
+}
