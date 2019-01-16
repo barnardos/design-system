@@ -2,13 +2,14 @@ import Helmet from "react-helmet";
 import React from "react";
 
 import Breadcrumbs from "../components/Breadcrumbs";
+import BulletedList from "../components/BulletedList";
 import Cite from "../components/Cite";
 import DesignSystemLayout from "../components/DesignSystemLayout";
 import Link from "../components/Link";
 import ListItem from "../components/ListItem";
+import Pagination from "../components/Pagination";
 import Paragraph from "../components/Paragraph";
 import Title from "../components/Title";
-import BulletedList from "../components/BulletedList";
 import Topic from "../components/Topic";
 
 const Page = () => (
@@ -47,6 +48,12 @@ const Page = () => (
       <Link href="https://github.com/barnardos/design-system/issues/183">{`research`}</Link>
       {` on GitHub.`}
     </Cite>
+    <Pagination
+      previous={{
+        to: "/code-quality",
+        label: "Code quality"
+      }}
+    />
   </DesignSystemLayout>
 );
 

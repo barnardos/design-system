@@ -2,17 +2,18 @@ import Helmet from "react-helmet";
 import React from "react";
 
 import Breadcrumbs from "../components/Breadcrumbs";
-import DesignSystemLayout from "../components/DesignSystemLayout";
-import ListItem from "../components/ListItem";
-import Paragraph from "../components/Paragraph";
-import Title from "../components/Title";
 import BulletedList from "../components/BulletedList";
 import Demo from "../components/Demo";
 import DemoItem from "../components/DemoItem";
-import Figures from "../components/Figures";
+import DesignSystemLayout from "../components/DesignSystemLayout";
 import Figure from "../components/Figure";
+import Figures from "../components/Figures";
+import ListItem from "../components/ListItem";
+import Pagination from "../components/Pagination";
+import Paragraph from "../components/Paragraph";
 import SpacingFigure from "../components/SpacingFigure";
 import Topic from "../components/Topic";
+import Title from "../components/Title";
 
 const Page = () => (
   <DesignSystemLayout>
@@ -54,6 +55,12 @@ const Page = () => (
         </Demo>
       </Figure>
     </Figures>
+    <Pagination
+      previous={{
+        to: "/typography",
+        label: "Typography"
+      }}
+    />
   </DesignSystemLayout>
 );
 

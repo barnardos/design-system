@@ -2,6 +2,12 @@
 
 /** @define Pagination; */
 
+.Pagination {
+  &:not(:first-child) {
+    margin-top: 1.5rem;
+  }
+}
+
 .Pagination-item {
   list-style: none;
 
@@ -13,18 +19,17 @@
 .Pagination-link {
   color: color-mod(var(--green) shade(20%));
   display: block;
-  padding-left: 1rem;
+  padding-left: 1.25rem;
   position: relative;
 
   &::before {
-    background: transparent url("./triangle.svg") 0 0 no-repeat;
-    background-size: 0.75rem 0.75rem;
-    content: "";
-    height: 1rem;
+    content: "‹";
+    display: inline-block;
+    font: 300 var(--type-8) proxima-nova, sans-serif;
     left: 0;
+    line-height: 0;
     position: absolute;
-    top: 0.5rem;
-    width: 1rem;
+    top: 0.75rem;
   }
 
   &:hover {
@@ -34,8 +39,7 @@
 
 .Pagination-link--next {
   &::before {
-    transform: rotate(180deg) translate(-0.75rem, 0.25rem);
-    transform-origin: left;
+    content: "›";
   }
 }
 

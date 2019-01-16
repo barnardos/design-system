@@ -2,20 +2,21 @@ import Helmet from "react-helmet";
 import React from "react";
 
 import Breadcrumbs from "../components/Breadcrumbs";
+import BulletedList from "../components/BulletedList";
 import Cite from "../components/Cite";
-import Heading from "../components/Heading";
+import DesignSystemIndex from "../components/DesignSystemIndex";
 import DesignSystemLayout from "../components/DesignSystemLayout";
+import Figure from "../components/Figure";
+import Figures from "../components/Figures";
+import Heading from "../components/Heading";
 import Link from "../components/Link";
 import ListItem from "../components/ListItem";
+import Pagination from "../components/Pagination";
 import Paragraph from "../components/Paragraph";
-import TextInput from "../components/TextInput/index";
-import Swatches from "../components/Swatches";
 import Submit from "../components/Submit";
-import DesignSystemIndex from "../components/DesignSystemIndex";
+import Swatches from "../components/Swatches";
+import TextInput from "../components/TextInput/index";
 import Title from "../components/Title";
-import BulletedList from "../components/BulletedList";
-import Figures from "../components/Figures";
-import Figure from "../components/Figure";
 import Topic from "../components/Topic";
 
 const Page = () => (
@@ -110,6 +111,12 @@ const Page = () => (
       <Link href="https://github.com/barnardos/design-system/issues/14">{`research`}</Link>
       {` on GitHub.`}
     </Cite>
+    <Pagination
+      next={{
+        to: "/typography",
+        label: "Typography"
+      }}
+    />
   </DesignSystemLayout>
 );
 

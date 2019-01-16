@@ -368,11 +368,11 @@ const Page = () => (
     <Example>
       <Pagination
         previous={{
-          href: "http://example.org",
+          to: "/",
           label: "Overview"
         }}
         next={{
-          href: "http://example.org",
+          to: "/",
           label: "Register as a foster carer"
         }}
       />

@@ -12,6 +12,7 @@ import Figures from "../components/Figures";
 import Heading from "../components/Heading";
 import Link from "../components/Link";
 import ListItem from "../components/ListItem";
+import Pagination from "../components/Pagination";
 import Paragraph from "../components/Paragraph";
 import Title from "../components/Title";
 import Topic from "../components/Topic";
@@ -121,6 +122,21 @@ const Page = () => (
         {` generic font family`}
       </ListItem>
     </BulletedList>
+    <Cite>
+      {`View `}
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/custom-properties.css">{`code`}</Link>
+      {` on GitHub.`}
+    </Cite>
+    <Pagination
+      previous={{
+        to: "/colour",
+        label: "Colour"
+      }}
+      next={{
+        to: "/spacing-and-layout",
+        label: "Spacing and layout"
+      }}
+    />
   </DesignSystemLayout>
 );
 
