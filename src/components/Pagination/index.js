@@ -1,3 +1,4 @@
+import { Link as GatsbyLink } from "gatsby";
 import PropTypes from "prop-types";
 import React from "react";
 
@@ -7,20 +8,23 @@ const Pagination = ({ previous, next }) => (
   <ul className="Pagination">
     {previous && (
       <li className="Pagination-item">
-        <a className="Pagination-link" href={previous.href}>
+        <GatsbyLink className="Pagination-link" to={previous.to}>
           <div className="Pagination-text">{`Previous`}</div>
           {previous.label && (
             <div className="Pagination-label">{previous.label}</div>
           )}
-        </a>
+        </GatsbyLink>
       </li>
     )}
     {next && (
       <li className="Pagination-item">
-        <a className="Pagination-link Pagination-link--next" href={next.href}>
+        <GatsbyLink
+          className="Pagination-link Pagination-link--next"
+          to={next.to}
+        >
           <div className="Pagination-text">{`Next`}</div>
           {next.label && <div className="Pagination-label">{next.label}</div>}
-        </a>
+        </GatsbyLink>
       </li>
     )}
   </ul>
@@ -28,11 +32,11 @@ const Pagination = ({ previous, next }) => (
 
 Pagination.propTypes = {
   previous: PropTypes.shape({
-    href: PropTypes.string.isRequired,
+    to: PropTypes.string.isRequired,
     label: PropTypes.string
   }),
   next: PropTypes.shape({
-    href: PropTypes.string.isRequired,
+    to: PropTypes.string.isRequired,
     label: PropTypes.string
   })
 };

@@ -8,6 +8,7 @@ import Cite from "../components/Cite";
 import DesignSystemLayout from "../components/DesignSystemLayout";
 import Link from "../components/Link";
 import ListItem from "../components/ListItem";
+import Pagination from "../components/Pagination";
 import Paragraph from "../components/Paragraph";
 import Title from "../components/Title";
 import Topic from "../components/Topic";
@@ -50,6 +51,12 @@ const Page = () => (
       <Link href="https://github.com/barnardos/design-system/issues/168">{`research`}</Link>
       {` on GitHub.`}
     </Cite>
+    <Pagination
+      next={{
+        to: "/viewport-scale",
+        label: "Viewport scale"
+      }}
+    />
   </DesignSystemLayout>
 );
 
