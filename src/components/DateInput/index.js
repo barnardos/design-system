@@ -13,33 +13,39 @@ const DateInput = ({ hint, id, legend, error }) => (
     {hint && <Hint>{hint}</Hint>}
     {error && <Error>{error}</Error>}
     <div className="DateInput-labelsAndInputs">
-      <Label inlined htmlFor={`${id}-day`}>
-        Day
-      </Label>
-      <input
-        className="DateInput-input"
-        id={`${id}-day`}
-        name={`${id}-day`}
-        type="number"
-      />
-      <Label inlined htmlFor={`${id}-month`}>
-        Month
-      </Label>
-      <input
-        className="DateInput-input"
-        id={`${id}-month`}
-        name={`${id}-month`}
-        type="number"
-      />
-      <Label inlined htmlFor={`${id}-year`}>
-        Year
-      </Label>
-      <input
-        className="DateInput-input"
-        id={`${id}-year`}
-        name={`${id}-year`}
-        type="number"
-      />
+      <div className="DateInput-labelsAndInput">
+        <Label inlined htmlFor={`${id}-day`}>
+          Day
+        </Label>
+        <input
+          className="DateInput-input"
+          id={`${id}-day`}
+          name={`${id}-day`}
+          type="number"
+        />
+      </div>
+      <div className="DateInput-labelsAndInput">
+        <Label inlined htmlFor={`${id}-month`}>
+          Month
+        </Label>
+        <input
+          className="DateInput-input"
+          id={`${id}-month`}
+          name={`${id}-month`}
+          type="number"
+        />
+      </div>
+      <div className="DateInput-labelsAndInput">
+        <Label inlined htmlFor={`${id}-year`}>
+          Year
+        </Label>
+        <input
+          className="DateInput-input"
+          id={`${id}-year`}
+          name={`${id}-year`}
+          type="number"
+        />
+      </div>
     </div>
   </Fieldset>
 );

@@ -336,22 +336,22 @@ const Page = () => (
           {
             level: 1,
             text: "Who can adopt?",
-            to: "/"
+            to: "/example/index/1"
           },
           {
             level: 2,
             text: "If you have children",
-            to: "/"
+            to: "/example/index/2"
           },
           {
             level: 2,
             text: "If you have a partner",
-            to: "/"
+            to: "/example/index/3"
           },
           {
             level: 1,
             text: "Types of adoption",
-            to: "/"
+            to: "/example/index/4"
           }
         ]}
       />
@@ -368,11 +368,11 @@ const Page = () => (
     <Example>
       <Pagination
         previous={{
-          to: "/",
+          to: "/example/pagination/previous",
           label: "Overview"
         }}
         next={{
-          to: "/",
+          to: "/example/pagination/next",
           label: "Register as a foster carer"
         }}
       />

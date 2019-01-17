@@ -3,10 +3,6 @@
 /** @define Index; */
 
 .Index {
-  /* autoprefixer: off */
-  display: grid;
-  grid-gap: 0.25rem;
-
   &:not(:first-child) {
     margin-top: 1rem;
   }
@@ -14,6 +10,7 @@
 
 .Index-item {
   list-style: none;
+  margin-top: 0.25rem;
 }
 
 .Index-link {
