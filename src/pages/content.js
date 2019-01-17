@@ -24,8 +24,8 @@ import Section from "../components/Section";
 export const indexItems = [
   {
     level: 1,
-    text: "Type hierarchy",
-    to: "/content/#type-hierarchy"
+    text: "Type styles",
+    to: "/content/#type-styles"
   },
   {
     level: 2,
@@ -51,6 +51,11 @@ export const indexItems = [
     level: 2,
     text: "Paragraph",
     to: "/content/#paragraph"
+  },
+  {
+    level: 2,
+    text: "Cite",
+    to: "/content/#cite"
   },
   {
     level: 1,
@@ -113,45 +118,59 @@ const Page = () => (
     <BulletedList>
       <ListItem>{`provide a meaningful content hierarchy`}</ListItem>
     </BulletedList>
-    <Heading>{`Type hierarchy`}</Heading>
+    <Heading>{`Type styles`}</Heading>
+    <Subheading>{`Title`}</Subheading>
     <Example>
-      <Title>{`Title`}</Title>
+      <Title>{`What we do`}</Title>
     </Example>
     <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Title">{`code`}</Link>
       {` on GitHub.`}
     </Cite>
+    <Subheading>{`Lede`}</Subheading>
     <Example>
-      <Lede>{`Lede`}</Lede>
+      <Lede>{`How we support children and families`}</Lede>
     </Example>
     <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Lede">{`code`}</Link>
       {` on GitHub.`}
     </Cite>
+    <Subheading>{`Heading`}</Subheading>
     <Example>
-      <Heading>{`Heading`}</Heading>
+      <Heading>{`Fostering and adoption`}</Heading>
     </Example>
     <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Heading">{`code`}</Link>
       {` on GitHub.`}
     </Cite>
+    <Subheading>{`Subheading`}</Subheading>
     <Example>
-      <Subheading>{`Subheading`}</Subheading>
+      <Subheading>{`Foster a children`}</Subheading>
     </Example>
     <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Subheading">{`code`}</Link>
       {` on GitHub.`}
     </Cite>
+    <Subheading>{`Paragraph`}</Subheading>
     <Example>
-      <Paragraph>{`Paragraph`}</Paragraph>
+      <Paragraph>{`We build stronger families, safer childhoods and positive futures.`}</Paragraph>
     </Example>
     <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Paragraph">{`code`}</Link>
+      {` on GitHub.`}
+    </Cite>
+    <Subheading>{`Cite`}</Subheading>
+    <Example>
+      <Cite>{`© Barnardo's`}</Cite>
+    </Example>
+    <Cite>
+      {`View `}
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Cite">{`code`}</Link>
       {` on GitHub.`}
     </Cite>
     <Heading>{`Lists`}</Heading>
