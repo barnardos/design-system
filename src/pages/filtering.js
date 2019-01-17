@@ -15,6 +15,7 @@ import RadioButtons from "../components/RadioButtons";
 import Form from "../components/Form";
 import Submit from "../components/Submit";
 import Example from "../components/Example";
+import Topic from "../components/Topic";
 
 const Page = () => (
   <DesignSystemLayout>
@@ -29,6 +30,7 @@ const Page = () => (
         }
       ]}
     />
+    <Topic>{`Patterns`}</Topic>
     <Title>{`Filtering`}</Title>
     <Paragraph>{`You should:`}</Paragraph>
     <BulletedList>

@@ -26,6 +26,7 @@ import Subheading from "../components/Subheading";
 import Index from "../components/Index";
 import Title from "../components/Title";
 import BulletedList from "../components/BulletedList";
+import Topic from "../components/Topic";
 
 export const indexItems = [
   {
@@ -128,6 +129,7 @@ const Page = () => (
         }
       ]}
     />
+    <Topic>{`Components`}</Topic>
     <Title>{`Navigation`}</Title>
     <DesignSystemIndex items={indexItems} />
     <Heading>{`Links`}</Heading>
@@ -299,6 +301,7 @@ const Page = () => (
     <Paragraph>{`When using this component you should:`}</Paragraph>
     <BulletedList>
       <ListItem>{`place it directly above the page title`}</ListItem>
+      <ListItem>{`only use to represent individual pages`}</ListItem>
     </BulletedList>
     <Example>
       <Breadcrumbs

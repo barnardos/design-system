@@ -20,6 +20,7 @@ import DesignSystemIndex from "../components/DesignSystemIndex";
 import Title from "../components/Title";
 import BulletedList from "../components/BulletedList";
 import Section from "../components/Section";
+import Topic from "../components/Topic";
 
 export const indexItems = [
   {
@@ -112,6 +113,7 @@ const Page = () => (
         }
       ]}
     />
+    <Topic>{`Components`}</Topic>
     <Title>{`Content`}</Title>
     <DesignSystemIndex items={indexItems} />
     <Paragraph>{`When displaying content you should:`}</Paragraph>

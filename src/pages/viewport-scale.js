@@ -9,6 +9,7 @@ import ListItem from "../components/ListItem";
 import Paragraph from "../components/Paragraph";
 import Title from "../components/Title";
 import BulletedList from "../components/BulletedList";
+import Topic from "../components/Topic";
 
 const Page = () => (
   <DesignSystemLayout>
@@ -23,6 +24,7 @@ const Page = () => (
         }
       ]}
     />
+    <Topic>{`Accessibility standards`}</Topic>
     <Title>{`Viewport scale`}</Title>
     <Paragraph>{`The layout and type can be proportionally scaled to maintain an optimal line length at any viewport size.`}</Paragraph>
     <Paragraph>{`For example, you could scale the base of 1rem (roughly 16px):`}</Paragraph>

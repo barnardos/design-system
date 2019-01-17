@@ -16,6 +16,7 @@ import Title from "../components/Title";
 import BulletedList from "../components/BulletedList";
 import Figures from "../components/Figures";
 import Figure from "../components/Figure";
+import Topic from "../components/Topic";
 
 const Page = () => (
   <DesignSystemLayout>
@@ -30,6 +31,7 @@ const Page = () => (
         }
       ]}
     />
+    <Topic>{`Design standards`}</Topic>
     <Title>{`Colour`}</Title>
     <DesignSystemIndex
       items={[

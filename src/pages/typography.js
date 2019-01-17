@@ -14,6 +14,7 @@ import Link from "../components/Link";
 import ListItem from "../components/ListItem";
 import Paragraph from "../components/Paragraph";
 import Title from "../components/Title";
+import Topic from "../components/Topic";
 import TypeFigures from "../components/TypeFigures";
 
 const Page = () => (
@@ -29,6 +30,7 @@ const Page = () => (
         }
       ]}
     />
+    <Topic>{`Design standards`}</Topic>
     <Title>{`Typography`}</Title>
     <DesignSystemIndex
       items={[
