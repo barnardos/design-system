@@ -8,7 +8,6 @@
     0.25rem 0.25rem color-mod(var(--black) tint(40%));
   color: var(--black);
   display: block;
-  margin-top: 1.5rem;
   text-decoration: none;
 }
 

@@ -7,11 +7,6 @@
   padding: 0.5rem 1rem;
 }
 
-.Header-logo {
-  grid-column: 1;
-  grid-row: 1;
-}
-
 .Header-logoInner {
   display: block;
   height: 2.5rem;

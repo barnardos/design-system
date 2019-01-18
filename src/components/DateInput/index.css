@@ -3,11 +3,20 @@
 /** @define DateInput; */
 
 .DateInput-labelsAndInputs {
-  display: grid;
-  /* autoprefixer: off */
-  grid-gap: 0.5rem 1rem;
-  grid-template-columns: 4rem 4rem 6rem;
+  display: flex;
   margin-top: 0.5rem;
+}
+
+.DateInput-labelsAndInput {
+  flex: 0 0 3rem;
+
+  &:not(:first-child) {
+    margin-left: 1rem;
+  }
+
+  &:nth-child(3) {
+    flex-basis: 5rem;
+  }
 }
 
 .DateInput-input {
@@ -18,9 +27,9 @@
   box-shadow: inset 0 0 0 1px var(--black),
     inset 0.25rem 0.25rem color-mod(var(--black) tint(80%));
   font: 300 var(--type-2) system-ui;
-  grid-row: 2;
-  max-width: 100%;
+  margin-top: 0.5rem;
   padding: 0.5rem 0.75rem;
+  width: 100%;
 
   &::-webkit-inner-spin-button,
   &::-webkit-outer-spin-button {

@@ -23,17 +23,27 @@
   position: relative;
 
   &::before {
+    text-decoration: underline; /* ie11 fix */
+  }
+
+  /* stylelint-disable-next-line no-duplicate-selectors */
+  &::before {
     content: "‹";
     display: inline-block;
     font: 300 var(--type-8) proxima-nova, sans-serif;
     left: 0;
     line-height: 0;
     position: absolute;
+    text-decoration: none;
     top: 0.75rem;
   }
 
   &:hover {
     text-decoration: none;
+  }
+
+  &:visited {
+    color: color-mod(var(--purple) shade(20%));
   }
 }
 

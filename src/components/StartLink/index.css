@@ -12,6 +12,11 @@
   text-align: center;
 
   &::after {
+    text-decoration: underline; /* ie11 fix */
+  }
+
+  /* stylelint-disable-next-line no-duplicate-selectors */
+  &::after {
     content: "›";
     display: inline-block;
     font: 300 var(--type-8) proxima-nova, sans-serif;
@@ -20,7 +25,6 @@
     position: absolute;
     text-decoration: none;
     top: 0.125rem;
-    white-space: pre-wrap;
   }
 
   &:hover {
