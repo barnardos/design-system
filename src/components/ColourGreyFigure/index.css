@@ -1,0 +1,9 @@
+@import "../../custom-properties.css";
+
+/** @define ColourGreyFigure; */
+
+.ColourGreyFigure {
+  background: color-mod(var(--black) tint(95%));
+  height: 3rem;
+  width: 100%;
+}

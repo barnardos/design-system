@@ -134,10 +134,7 @@ const Page = () => (
     <DesignSystemIndex items={indexItems} />
     <Heading>{`Links`}</Heading>
     <Subheading>{`Link`}</Subheading>
-    <Paragraph>{`When using this component you should:`}</Paragraph>
-    <BulletedList>
-      <ListItem>{`use a meaningful phrase that makes sense out of context`}</ListItem>
-    </BulletedList>
+    <Paragraph>{`When using this component you should use a meaningful phrase that makes sense out of context.`}</Paragraph>
     <Example>
       <Paragraph>
         {`This is a paragraph, and it includes even more text to give a good
@@ -193,10 +190,7 @@ const Page = () => (
     </Cite>
     <Subheading>{`Donate Link`}</Subheading>
     <Paragraph>{`Use this component to link to the service to donate.`}</Paragraph>
-    <Paragraph>{`When using this component you should:`}</Paragraph>
-    <BulletedList>
-      <ListItem>{`only use the Green colour`}</ListItem>
-    </BulletedList>
+    <Paragraph>{`When using this component you should only use the Green colour.`}</Paragraph>
     <Example>
       <DonateLink href="http://example.org" />
     </Example>
@@ -469,10 +463,7 @@ const Page = () => (
       {` on GitHub.`}
     </Cite>
     <Heading>{`Header`}</Heading>
-    <Paragraph>{`When using this component you should:`}</Paragraph>
-    <BulletedList>
-      <ListItem>{`link the Barnardo's logo to the homepage`}</ListItem>
-    </BulletedList>
+    <Paragraph>{`When using this component you should link the Barnardo's logo to the homepage.`}</Paragraph>
     <Example>
       <Header />
     </Example>

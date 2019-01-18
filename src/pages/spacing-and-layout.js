@@ -30,10 +30,7 @@ const Page = () => (
     />
     <Topic>{`Design standards`}</Topic>
     <Title>{`Spacing and layout`}</Title>
-    <Paragraph>{`You should:`}</Paragraph>
-    <BulletedList>
-      <ListItem>{`use multiples of 0.25rem (roughly 4px) for spacing`}</ListItem>
-    </BulletedList>
+    <Paragraph>{`You should use multiples of 0.25rem (roughly 4px) for spacing.`}</Paragraph>
     <Figures>
       <SpacingFigure />
     </Figures>

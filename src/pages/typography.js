@@ -82,10 +82,7 @@ const Page = () => (
       {` on GitHub.`}
     </Cite>
     <Heading>{`Line height`}</Heading>
-    <Paragraph>{`You should use:`}</Paragraph>
-    <BulletedList>
-      <ListItem>{`multiples of 0.25rem (roughly 4px) `}</ListItem>
-    </BulletedList>
+    <Paragraph>{`You should use multiples of 0.25rem (roughly 4px).`}</Paragraph>
     <Heading>{`Line length`}</Heading>
     <Paragraph>{`The optimal line length of text is around:`}</Paragraph>
     <BulletedList>
@@ -93,10 +90,7 @@ const Page = () => (
       <ListItem>{`40–95 characters for body copy`}</ListItem>
     </BulletedList>
     <Heading>{`Brand font`}</Heading>
-    <Paragraph>{`You should use:`}</Paragraph>
-    <BulletedList>
-      <ListItem>{`Proxima Nova`}</ListItem>
-    </BulletedList>
+    <Paragraph>{`You should use Proxima Nova.`}</Paragraph>
     <Paragraph>{`You should only use the weights:`}</Paragraph>
     <BulletedList>
       <ListItem>{`semi-bold`}</ListItem>
@@ -112,16 +106,13 @@ const Page = () => (
       {`. This code is valid for all of Barnardo's products.`}
     </Paragraph>
     <Heading>{`Body copy`}</Heading>
-    <Paragraph>{`You should use:`}</Paragraph>
-    <BulletedList>
-      <ListItem>
-        {`the `}
-        <Link href="https://www.w3.org/TR/css-fonts-4/#system-ui-def">
-          {`system-ui`}
-        </Link>
-        {` generic font family`}
-      </ListItem>
-    </BulletedList>
+    <Paragraph>
+      {`You should use the `}
+      <Link href="https://www.w3.org/TR/css-fonts-4/#system-ui-def">
+        {`system-ui`}
+      </Link>
+      {` generic font family.`}
+    </Paragraph>
     <Cite>
       {`View `}
       <Link href="https://github.com/barnardos/design-system/tree/master/src/custom-properties.css">{`code`}</Link>
