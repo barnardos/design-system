@@ -45,6 +45,7 @@ const Page = () => (
       <ListItem>{`make page titles unique and descriptive`}</ListItem>
       <ListItem>{`allow users to navigate only with a keyboard`}</ListItem>
       <ListItem>{`enable the viewport to be zoomed to at least 200%`}</ListItem>
+      <ListItem>{`avoid relying on colour to convey important information`}</ListItem>
     </BulletedList>
     <Cite>
       {`View `}

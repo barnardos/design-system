@@ -116,10 +116,7 @@ const Page = () => (
     <Topic>{`Components`}</Topic>
     <Title>{`Content`}</Title>
     <DesignSystemIndex items={indexItems} />
-    <Paragraph>{`When displaying content you should:`}</Paragraph>
-    <BulletedList>
-      <ListItem>{`provide a meaningful content hierarchy`}</ListItem>
-    </BulletedList>
+    <Paragraph>{`When displaying content you should provide a meaningful content hierarchy.`}</Paragraph>
     <Heading>{`Type styles`}</Heading>
     <Subheading>{`Title`}</Subheading>
     <Example>
@@ -232,10 +229,7 @@ const Page = () => (
       {` on GitHub.`}
     </Cite>
     <Subheading>{`Attention Grabbing Quote`}</Subheading>
-    <Paragraph>{`When using this component you should:`}</Paragraph>
-    <BulletedList>
-      <ListItem>{`only use it once on each page`}</ListItem>
-    </BulletedList>
+    <Paragraph>{`When using this component you should only use it once on each page.`}</Paragraph>
     <Example>
       <AttentionGrabbingQuote
         colour="green"

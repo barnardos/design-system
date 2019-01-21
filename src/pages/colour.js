@@ -4,18 +4,19 @@ import React from "react";
 import Breadcrumbs from "../components/Breadcrumbs";
 import BulletedList from "../components/BulletedList";
 import Cite from "../components/Cite";
+import ColourFigure from "../components/ColourFigure";
+import ColourGreyFigure from "../components/ColourGreyFigure";
 import DesignSystemIndex from "../components/DesignSystemIndex";
 import DesignSystemLayout from "../components/DesignSystemLayout";
 import Figure from "../components/Figure";
 import Figures from "../components/Figures";
 import Heading from "../components/Heading";
+import Subheading from "../components/Subheading";
 import Link from "../components/Link";
 import ListItem from "../components/ListItem";
 import Pagination from "../components/Pagination";
 import Paragraph from "../components/Paragraph";
-import Submit from "../components/Submit";
 import Swatches from "../components/Swatches";
-import TextInput from "../components/TextInput/index";
 import Title from "../components/Title";
 import Topic from "../components/Topic";
 
@@ -43,25 +44,26 @@ const Page = () => (
         },
         {
           level: 1,
-          text: "Using colours",
-          to: "/colour/#using-colours"
+          text: "Colour scale",
+          to: "/colour/#colour-scale"
+        },
+        {
+          level: 1,
+          text: "Light grey",
+          to: "/colour/#light-grey"
         }
       ]}
     />
-    <Paragraph>{`To apply colour you should:`}</Paragraph>
+    <Paragraph>{`You should use:`}</Paragraph>
     <BulletedList>
-      <ListItem>{`only use the brand colours`}</ListItem>
-      <ListItem>{`add white (tint) or black (shade) in 10% increments`}</ListItem>
+      <ListItem>{`the brand colours`}</ListItem>
+      <ListItem>{`a 10% increment scale for tints and shades`}</ListItem>
     </BulletedList>
     <Heading>{`Brand colours`}</Heading>
+    <Subheading>{`Primary`}</Subheading>
     <Swatches
       swatches={[
         [{ label: "Green", hex: "#6aa300", primary: true }],
-        [{ label: "Orange", hex: "#e86c00", primary: true }],
-        [{ label: "Pink", hex: "#cc0070", primary: true }],
-        [{ label: "Purple", hex: "#6e2066", primary: true }],
-        [{ label: "Teal", hex: "#0099a9", primary: true }],
-        [{ label: "Red", hex: "#c30000", primary: true }],
         [{ label: "Black", hex: "#1d1d1d", primary: true }],
         [
           {
@@ -74,36 +76,32 @@ const Page = () => (
         ]
       ]}
     />
-    <Heading>{`Using colours`}</Heading>
-    <Paragraph>{`You should:`}</Paragraph>
-    <BulletedList>
-      <ListItem>
-        {`use `}
-        <Link href="https://webaim.org/resources/contrastchecker/">{`accessible`}</Link>
-        {` colour combinations for text`}
-      </ListItem>
-      <ListItem>{`use Black for titles and headings`}</ListItem>
-      <ListItem>{`avoid tints and shades for backgrounds`}</ListItem>
-      <ListItem>{`avoid relying on colour to convey important information`}</ListItem>
-    </BulletedList>
-    <Paragraph>{`Also consider meaningful use of colour, for example:`}</Paragraph>
-    <BulletedList>
-      <ListItem>{`greens for positive actions like submit or continue`}</ListItem>
-      <ListItem>{`oranges for cautionary actions like load or warn`}</ListItem>
-      <ListItem>{`reds for destructive actions like delete or error`}</ListItem>
-    </BulletedList>
+    <Subheading>{`Secondary`}</Subheading>
+    <Swatches
+      swatches={[
+        [{ label: "Orange", hex: "#e86c00", primary: true }],
+        [{ label: "Pink", hex: "#cc0070", primary: true }],
+        [{ label: "Purple", hex: "#6e2066", primary: true }],
+        [{ label: "Teal", hex: "#0099a9", primary: true }]
+      ]}
+    />
+    <Subheading>{`Errors`}</Subheading>
+    <Swatches swatches={[[{ label: "Red", hex: "#c30000", primary: true }]]} />
+    <Paragraph>{`If your product is not Barnardo's branded, you should still use the colour scale.`}</Paragraph>
+    <Heading>{`Colour scale`}</Heading>
     <Figures>
-      <Figure caption="Black for labels and 30% tint for hint text. Red for errors with 80% tint for inset shadows.">
-        <TextInput
-          hint="As it appears on your ID."
-          id="text-control-full-name-example"
-          label="Full name"
-          size={48}
-          error="Enter your full name"
-        />
+      <Figure caption="Green with black (shade) applied in 10% increments.">
+        <ColourFigure type="shade" />
       </Figure>
-      <Figure caption="White text on Green with 10% shade on hover and 40% shade for drop shadows.">
-        <Submit text="Continue" />
+      <Figure caption="Green with white (tint) applied in 10% increments.">
+        <ColourFigure type="tint" />
+      </Figure>
+    </Figures>
+    <Heading>{`Light grey`}</Heading>
+    <Paragraph>{`You can use a 95% tint of Black for backgrounds.`}</Paragraph>
+    <Figures>
+      <Figure caption="95% tint of Black">
+        <ColourGreyFigure />
       </Figure>
     </Figures>
     <Cite>

@@ -232,10 +232,7 @@ const Page = () => (
       {` on GitHub.`}
     </Cite>
     <Subheading>{`Check Boxes`}</Subheading>
-    <Paragraph>{`When using this component you should:`}</Paragraph>
-    <BulletedList>
-      <ListItem>{`provide an option that excludes the others`}</ListItem>
-    </BulletedList>
+    <Paragraph>{`When using this component you should provide an option that excludes the others.`}</Paragraph>
     <Example>
       <CheckBoxes
         items={[

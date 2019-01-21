@@ -1,0 +1,99 @@
+@import "../../custom-properties.css";
+
+/** @define ColourFigure; */
+
+.ColourFigure {
+  display: flex;
+  max-width: 30rem;
+}
+
+.ColourFigure-item {
+  background: var(--green);
+  display: block;
+  flex: 1 1 3rem;
+  height: 3rem;
+  list-style: none;
+}
+
+@media (min-width: 30rem) {
+  .ColourFigure {
+    max-width: none;
+  }
+
+  .ColourFigure-item {
+    flex-basis: 4.5rem;
+    height: 4.5rem;
+  }
+}
+
+.ColourFigure-item--10tint {
+  background-color: color-mod(var(--green) tint(10%));
+}
+
+.ColourFigure-item--20tint {
+  background-color: color-mod(var(--green) tint(20%));
+}
+
+.ColourFigure-item--30tint {
+  background-color: color-mod(var(--green) tint(30%));
+}
+
+.ColourFigure-item--40tint {
+  background-color: color-mod(var(--green) tint(40%));
+}
+
+.ColourFigure-item--50tint {
+  background-color: color-mod(var(--green) tint(50%));
+}
+
+.ColourFigure-item--60tint {
+  background-color: color-mod(var(--green) tint(60%));
+}
+
+.ColourFigure-item--70tint {
+  background-color: color-mod(var(--green) tint(70%));
+}
+
+.ColourFigure-item--80tint {
+  background-color: color-mod(var(--green) tint(80%));
+}
+
+.ColourFigure-item--90tint {
+  background-color: color-mod(var(--green) tint(90%));
+}
+
+.ColourFigure-item--10shade {
+  background-color: color-mod(var(--green) shade(10%));
+}
+
+.ColourFigure-item--20shade {
+  background-color: color-mod(var(--green) shade(20%));
+}
+
+.ColourFigure-item--30shade {
+  background-color: color-mod(var(--green) shade(30%));
+}
+
+.ColourFigure-item--40shade {
+  background-color: color-mod(var(--green) shade(40%));
+}
+
+.ColourFigure-item--50shade {
+  background-color: color-mod(var(--green) shade(50%));
+}
+
+.ColourFigure-item--60shade {
+  background-color: color-mod(var(--green) shade(60%));
+}
+
+.ColourFigure-item--70shade {
+  background-color: color-mod(var(--green) shade(70%));
+}
+
+.ColourFigure-item--80shade {
+  background-color: color-mod(var(--green) shade(80%));
+}
+
+.ColourFigure-item--90shade {
+  background-color: color-mod(var(--green) shade(90%));
+}
