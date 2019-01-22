@@ -20,9 +20,15 @@
   }
 }
 
+.Header-logo {
+  display: block;
+  width: 5rem;
+}
+
 .Header-logoInner {
   display: block;
-  height: 2.5rem;
+  height: auto;
+  width: 100%;
 }
 
 @media (min-width: 48rem) {
@@ -30,8 +36,7 @@
     padding: 1rem 2rem;
   }
 
-  .Header-logoInner {
-    height: 3.5rem;
-    width: 8rem;
+  .Header-logo {
+    width: 7.5rem;
   }
 }
