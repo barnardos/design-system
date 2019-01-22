@@ -5,18 +5,18 @@ import React from "react";
 import "./index.css";
 
 const Link = ({ index, level, text, to }) => {
-  const className = `Index-item Index-item--level${level}`;
+  const className = `ContentsMenu-item ContentsMenu-item--level${level}`;
   return (
     <li className={className} key={index}>
-      <GatsbyLink className="Index-link" data-test-link={text} to={to}>
+      <GatsbyLink className="ContentsMenu-link" data-test-link={text} to={to}>
         {text}
       </GatsbyLink>
     </li>
   );
 };
 
-const Index = ({ items }) => (
-  <ul className="Index">
+const ContentsMenu = ({ items }) => (
+  <ul className="ContentsMenu">
     {items.map(({ level, text, to }, index) =>
       Link({ index, level, text, to })
     )}
@@ -30,8 +30,8 @@ Link.propTypes = {
   to: PropTypes.string.isRequired
 };
 
-Index.propTypes = {
+ContentsMenu.propTypes = {
   items: PropTypes.array.isRequired
 };
 
-export default Index;
+export default ContentsMenu;

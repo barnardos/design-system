@@ -1,21 +1,14 @@
 import PropTypes from "prop-types";
 import React from "react";
 
-import App from "../App";
-import Footer from "../Footer";
-import Header from "../Header";
-import Main from "../Main";
+import Site from "../Site";
 
 import "./index.css";
 
-const Layout = ({ children, footer }) => (
-  <App>
-    <div className="Layout">
-      <Header />
-      <Main>{children}</Main>
-      <Footer>{footer}</Footer>
-    </div>
-  </App>
+const Layout = ({ children }) => (
+  <Site>
+    <div className="Layout">{children}</div>
+  </Site>
 );
 
 Layout.propTypes = {

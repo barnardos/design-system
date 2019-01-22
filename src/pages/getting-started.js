@@ -7,6 +7,7 @@ import DesignSystemLayout from "../components/DesignSystemLayout";
 import ListItem from "../components/ListItem";
 import Paragraph from "../components/Paragraph";
 import SignpostLink from "../components/SignpostLink";
+import SignpostLinks from "../components/SignpostLinks";
 import Title from "../components/Title";
 
 const Page = () => (
@@ -40,7 +41,10 @@ const Page = () => (
     <Paragraph>
       {`If something isn't in the Design System, don't let it stop you. Design a solution, test it and use it in your product. If you think it solves a common problem let the Design System team know.`}
     </Paragraph>
-    <SignpostLink to="/#principles">{`View our principles`}</SignpostLink>
+    <SignpostLinks>
+      <SignpostLink to="/#principles">{`View our principles`}</SignpostLink>
+      <SignpostLink href="https://github.com/barnardos/design-system/">{`Installation guide on GitHub (technical)`}</SignpostLink>
+    </SignpostLinks>
   </DesignSystemLayout>
 );
 

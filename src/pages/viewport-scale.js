@@ -36,7 +36,7 @@ const Page = () => (
     </BulletedList>
     <Cite>
       {`View `}
-      <Link href="https://github.com/barnardos/design-system/tree/master/src/proportional-scale.css">{`code`}</Link>
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Site/viewport-scale.css">{`code`}</Link>
       {` and `}
       <Link href="https://github.com/barnardos/design-system/issues/1">{`research`}</Link>
       {` on GitHub.`}

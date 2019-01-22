@@ -1,12 +1,11 @@
 import PropTypes from "prop-types";
 import React from "react";
-
-import slugifyNode from "../../utils/slugifyNode";
+import slugify from "@sindresorhus/slugify";
 
 import "./index.css";
 
 const Heading = ({ children }) => (
-  <h2 className="Heading" id={slugifyNode(children)}>
+  <h2 className="Heading" id={slugify(children.toString())}>
     {children}
   </h2>
 );

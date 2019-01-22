@@ -6,7 +6,7 @@ import Breadcrumbs from "../components/Breadcrumbs";
 import BulletedList from "../components/BulletedList";
 import Cite from "../components/Cite";
 import Code from "../components/Code";
-import DesignSystemIndex from "../components/DesignSystemIndex";
+import DesignSystemContentsMenu from "../components/DesignSystemContentsMenu";
 import DesignSystemLayout from "../components/DesignSystemLayout";
 import Figures from "../components/Figures";
 import Heading from "../components/Heading";
@@ -33,7 +33,7 @@ const Page = () => (
     />
     <Topic>{`Design standards`}</Topic>
     <Title>{`Typography`}</Title>
-    <DesignSystemIndex
+    <DesignSystemContentsMenu
       items={[
         {
           level: 1,

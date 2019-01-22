@@ -17,7 +17,7 @@ import ListItem from "../components/ListItem";
 import Paragraph from "../components/Paragraph";
 import RadioButtons from "../components/RadioButtons";
 import Subheading from "../components/Subheading";
-import DesignSystemIndex from "../components/DesignSystemIndex";
+import DesignSystemContentsMenu from "../components/DesignSystemContentsMenu";
 import TextArea from "../components/TextArea";
 import TextInput from "../components/TextInput";
 import Title from "../components/Title";
@@ -121,7 +121,7 @@ const Page = () => (
     />
     <Topic>{`Components`}</Topic>
     <Title>{`Forms`}</Title>
-    <DesignSystemIndex items={indexItems} />
+    <DesignSystemContentsMenu items={indexItems} />
     <Paragraph>{`When gathering information you should:`}</Paragraph>
     <BulletedList>
       <ListItem>{`only ask for information which is absolutely needed`}</ListItem>

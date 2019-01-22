@@ -1,26 +1,26 @@
-@import "../../custom-properties.css";
+@import "../custom-properties.css";
 
-/** @define DesignSystemIndex; */
+/** @define DesignSystemContentsMenu; */
 
-.DesignSystemIndex {
+.DesignSystemContentsMenu {
   &:not(:first-child) {
     margin-top: 1rem;
   }
 }
 
-.DesignSystemIndex-section {
+.DesignSystemContentsMenu-section {
   color: var(--black);
   font: 300 var(--type-0) system-ui;
 }
 
 @media (min-width: 78rem) and (min-height: 40rem) {
-  .DesignSystemIndex {
+  .DesignSystemContentsMenu {
     margin-top: 0;
     position: sticky;
     top: 1rem;
   }
 
-  .DesignSystemIndex-inner {
+  .DesignSystemContentsMenu-inner {
     position: absolute;
     right: 4rem;
     width: 14rem;

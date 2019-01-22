@@ -1,33 +1,45 @@
-# design-system
+# Design System
 
-The website for the Design System.
+## Installation
 
-## Getting started
+1. Install latest LTS [Node.js](https://nodejs.org/en/).
+2. Install the Barnardo's Design System components using:
 
-First, install [Node.js](https://nodejs.org/en/).
+```shell
+npm install @barnardos/components
+```
 
-Then, run these commands:
+3. Import the components you need. You can either import:
 
-- `npm install` - install all dependencies
-- `npm start` - start a development server
+- the React components (recommended)
+- just the CSS of the components
 
-Use `npm run` to see a list of all the available commands.
+### Importing the React components
 
-## Known issues
+Use named imports.
 
-If you encounter an error, try deleting the `.cache` folder in the root of the project and run `npm start` again.
+For example, to import the `BackLink` and `Pagination` components:
 
-## Services
+```javascript
+// MyComponent/index.js
+import { BackLink, Pagination } from "@barnardos/components";
+```
 
-The providers are:
+### Importing the CSS only
 
-- [CircleCI](https://circleci.com) - continuous integration
-- [Netlify](https://www.netlify.com) - continuous deployment
-- [Google Analytics](https://analytics.google.com) - user analytics
-- [Project Wallace](https://www.projectwallace.com/~barnardos/design-system) - CSS analytics
+If you aren't using [React](https://reactjs.org), you can still use the CSS of each component.
 
-### Netlify
+For example, to import the CSS of the `BackLink` and `Pagination` components:
 
-Deployment URLs:
+```css
+/* src/index.css */
+@import "node_modules/@barnardos/components/custom-properties.css";
+@import "node_modules/@barnardos/components/BackLink/index.css";
+@import "node_modules/@barnardos/components/Pagination/index.css";
+```
 
-- [Site](https://barnardos-design-system.netlify.com)
+You'll need to use [`postcss-present-env`](https://preset-env.cssdb.org) to transpile the CSS using the Design System's [PostCSS](https://github.com/barnardos/design-system/blob/master/postcss.config.js) and [browserslist](https://github.com/barnardos/design-system/blob/master/.browserslistrc) configurations.
+
+---
+
+Looking to contribute? View the [contributing guide](.github/CONTRIBUTING.md).
