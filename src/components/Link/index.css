@@ -1,4 +1,4 @@
-@import "../../custom-properties.css";
+@import "../custom-properties.css";
 
 .Link {
   color: color-mod(var(--green) shade(20%));

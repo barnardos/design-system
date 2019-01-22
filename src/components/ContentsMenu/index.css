@@ -1,19 +1,19 @@
-@import "../../custom-properties.css";
+@import "../custom-properties.css";
 
-/** @define Index; */
+/** @define ContentsMenu; */
 
-.Index {
+.ContentsMenu {
   &:not(:first-child) {
     margin-top: 1rem;
   }
 }
 
-.Index-item {
+.ContentsMenu-item {
   list-style: none;
   margin-top: 0.25rem;
 }
 
-.Index-link {
+.ContentsMenu-link {
   color: color-mod(var(--green) shade(20%));
   font: 600 var(--type-0) system-ui;
 
@@ -26,23 +26,23 @@
   }
 }
 
-.Index-item--level2 {
+.ContentsMenu-item--level2 {
   &::before {
     content: "– ";
   }
 
-  & .Index-link {
+  & .ContentsMenu-link {
     font-weight: 300;
   }
 }
 
-.Index-item--level3 {
+.ContentsMenu-item--level3 {
   &::before {
     content: "– ";
     padding-left: 0.75rem;
   }
 
-  & .Index-link {
+  & .ContentsMenu-link {
     font: 300 var(--type--1) system-ui;
   }
 }

@@ -1,8 +1,14 @@
 {
-  "name": "design-system",
-  "version": "0.0.0",
+  "version": "0.1.0",
+  "name": "@barnardos/components",
+  "description": "Components of the Barnardo's Design System",
+  "license": "MIT",
   "repository": "https://github.com/barnardos/design-system.git",
-  "private": true,
+  "main": "src/components/index.js",
+  "files": [
+    "src/components",
+    "!*DS_Store"
+  ],
   "scripts": {
     "check-format": "prettier '**/*.{css,json,js,md}' --list-different --ignore-path .gitignore",
     "format": "prettier '**/*.{css,json,js,md}' --write --ignore-path .gitignore",
@@ -22,28 +28,28 @@
     "@barnardos/eslint-config-barnardos": "^0.1.0",
     "@barnardos/stylelint-config-barnardos": "^0.3.7",
     "babel-eslint": "^10.0.1",
-    "eslint": "^5.12.0",
     "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-react": "^7.12.3",
-    "jest": "^23.6.0",
-    "npm-run-all": "^4.1.5",
-    "prettier": "1.15.3",
-    "puppeteer": "^1.11.0",
-    "remark-cli": "^6.0.1",
-    "remark-preset-lint-itgalaxy": "^13.0.0",
-    "stylelint": "^9.9.0"
-  },
-  "dependencies": {
-    "gatsby": "^2.0.91",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint": "^5.12.1",
     "gatsby-plugin-google-analytics": "^2.0.9",
     "gatsby-plugin-postcss": "^2.0.2",
+    "gatsby": "^2.0.91",
+    "jest": "^23.6.0",
+    "npm-run-all": "^4.1.5",
     "postcss-browser-reporter": "^0.5.0",
     "postcss-import": "^12.0.1",
     "postcss-preset-env": "^6.5.0",
     "postcss-reporter": "^6.0.1",
-    "react": "^16.7.0",
+    "prettier": "1.16.0",
+    "puppeteer": "^1.11.0",
     "react-dom": "^16.7.0",
     "react-helmet": "^5.2.0",
-    "slugify": "^1.3.4"
+    "react": "^16.7.0",
+    "remark-cli": "^6.0.1",
+    "remark-preset-lint-itgalaxy": "^13.0.0",
+    "stylelint": "^9.10.1"
+  },
+  "dependencies": {
+    "@sindresorhus/slugify": "^0.8.0"
   }
 }

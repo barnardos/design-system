@@ -2,21 +2,22 @@ import { Link as GatsbyLink } from "gatsby";
 import Helmet from "react-helmet";
 import React from "react";
 
-import DesignSystemNavigations from "../components/DesignSystemNavigations";
+import BulletedList from "../components/BulletedList";
+import ComponentsIndex from "../components/ComponentsIndex";
 import DesignSystemLayout from "../components/DesignSystemLayout";
-import Lede from "../components/Lede";
-import Title from "../components/Title";
+import DesignSystemNavigation from "../components/DesignSystemNavigation";
+import DesignSystemNavigations from "../components/DesignSystemNavigations";
 import Heading from "../components/Heading";
+import Hero from "../components/Hero";
+import Lede from "../components/Lede";
+import ListItem from "../components/ListItem";
+import Paragraph from "../components/Paragraph";
 import Promo from "../components/Promo";
 import Promos from "../components/Promos";
-import Hero from "../components/Hero";
 import Section from "../components/Section";
 import SignpostLink from "../components/SignpostLink";
-import Paragraph from "../components/Paragraph";
-import DesignSystemNavigation from "../components/DesignSystemNavigation";
-import ComponentsIndex from "../components/ComponentsIndex";
-import BulletedList from "../components/BulletedList";
-import ListItem from "../components/ListItem";
+import SignpostLinks from "../components/SignpostLinks";
+import Title from "../components/Title";
 
 import { indexItems as contentItems } from "./content";
 import { indexItems as navigationItems } from "./navigation";
@@ -30,10 +31,12 @@ const Page = () => (
     <Hero>
       <Title>{`Barnardo’s Design System`}</Title>
       <Lede>{`Designing and developing digital products for everyone, especially children and young people.`}</Lede>
-      <SignpostLink
-        inverted
-        to="/getting-started/"
-      >{`Getting started`}</SignpostLink>
+      <SignpostLinks>
+        <SignpostLink
+          inverted
+          to="/getting-started/"
+        >{`Getting started`}</SignpostLink>
+      </SignpostLinks>
     </Hero>
     <Section>
       <Heading>{`Patterns`}</Heading>

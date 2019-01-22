@@ -6,7 +6,7 @@ import BulletedList from "../components/BulletedList";
 import Cite from "../components/Cite";
 import ColourFigure from "../components/ColourFigure";
 import ColourGreyFigure from "../components/ColourGreyFigure";
-import DesignSystemIndex from "../components/DesignSystemIndex";
+import DesignSystemContentsMenu from "../components/DesignSystemContentsMenu";
 import DesignSystemLayout from "../components/DesignSystemLayout";
 import Figure from "../components/Figure";
 import Figures from "../components/Figures";
@@ -35,7 +35,7 @@ const Page = () => (
     />
     <Topic>{`Design standards`}</Topic>
     <Title>{`Colour`}</Title>
-    <DesignSystemIndex
+    <DesignSystemContentsMenu
       items={[
         {
           level: 1,

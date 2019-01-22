@@ -1,0 +1,9 @@
+@import "../custom-properties.css";
+
+/** @define SignpostLinks; */
+
+.SignpostLinks {
+  &:not(:first-child) {
+    margin-top: 1.5rem;
+  }
+}

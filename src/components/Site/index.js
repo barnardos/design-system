@@ -6,8 +6,8 @@ import favicon from "./favicon.ico";
 
 import "./index.css";
 
-const App = ({ children }) => (
-  <div className="App">
+const Site = ({ children }) => (
+  <div className="Site">
     <Helmet titleTemplate="%s - Barnardo's">
       <html lang="en" />
       <link rel="shortcut icon" type="image/x-icon" href={favicon} />
@@ -16,9 +16,9 @@ const App = ({ children }) => (
   </div>
 );
 
-App.propTypes = {
+Site.propTypes = {
   children: PropTypes.node,
   footer: PropTypes.node
 };
 
-export default App;
+export default Site;

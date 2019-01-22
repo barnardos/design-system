@@ -1,31 +1,31 @@
 import Helmet from "react-helmet";
 import React from "react";
 
-import AttentionGrabbingPromo from "../components/AttentionGrabbingPromo";
 import AttentionGrabbingLink from "../components/AttentionGrabbingLink";
+import AttentionGrabbingPromo from "../components/AttentionGrabbingPromo";
 import BackLink from "../components/BackLink";
 import Breadcrumbs from "../components/Breadcrumbs";
-import Example from "../components/Example";
-import Promo from "../components/Promo";
+import BulletedList from "../components/BulletedList";
 import Cite from "../components/Cite";
+import ContentsMenu from "../components/ContentsMenu";
+import DesignSystemContentsMenu from "../components/DesignSystemContentsMenu";
+import DesignSystemLayout from "../components/DesignSystemLayout";
 import DonateLink from "../components/DonateLink";
-import DesignSystemIndex from "../components/DesignSystemIndex";
+import Example from "../components/Example";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Heading from "../components/Heading";
-import DesignSystemLayout from "../components/DesignSystemLayout";
 import Link from "../components/Link";
 import ListItem from "../components/ListItem";
 import Menu from "../components/Menu";
 import Pagination from "../components/Pagination";
 import Paragraph from "../components/Paragraph";
-import SignpostLink from "../components/SignpostLink";
+import Promo from "../components/Promo";
 import Search from "../components/Search";
+import SignpostLink from "../components/SignpostLink";
 import StartLink from "../components/StartLink";
 import Subheading from "../components/Subheading";
-import Index from "../components/Index";
 import Title from "../components/Title";
-import BulletedList from "../components/BulletedList";
 import Topic from "../components/Topic";
 
 export const indexItems = [
@@ -86,11 +86,6 @@ export const indexItems = [
   },
   {
     level: 1,
-    text: "Index",
-    to: "/navigation/#index"
-  },
-  {
-    level: 1,
     text: "Pagination",
     to: "/navigation/#pagination"
   },
@@ -98,6 +93,11 @@ export const indexItems = [
     level: 1,
     text: "Menu",
     to: "/navigation/#menu"
+  },
+  {
+    level: 1,
+    text: "Contents Menu",
+    to: "/navigation/#contents-menu"
   },
   {
     level: 1,
@@ -131,7 +131,7 @@ const Page = () => (
     />
     <Topic>{`Components`}</Topic>
     <Title>{`Navigation`}</Title>
-    <DesignSystemIndex items={indexItems} />
+    <DesignSystemContentsMenu items={indexItems} />
     <Heading>{`Links`}</Heading>
     <Subheading>{`Link`}</Subheading>
     <Paragraph>{`When using this component you should use a meaningful phrase that makes sense out of context.`}</Paragraph>
@@ -322,41 +322,6 @@ const Page = () => (
       <Link href="https://github.com/barnardos/design-system/issues/2">{`research`}</Link>
       {` on GitHub.`}
     </Cite>
-    <Heading>{`Index`}</Heading>
-    <Paragraph>{`Use this component to navigate within a page or section of pages.`}</Paragraph>
-    <Example>
-      <Index
-        items={[
-          {
-            level: 1,
-            text: "Who can adopt?",
-            to: "/example/index/1"
-          },
-          {
-            level: 2,
-            text: "If you have children",
-            to: "/example/index/2"
-          },
-          {
-            level: 2,
-            text: "If you have a partner",
-            to: "/example/index/3"
-          },
-          {
-            level: 1,
-            text: "Types of adoption",
-            to: "/example/index/4"
-          }
-        ]}
-      />
-    </Example>
-    <Cite>
-      {`View `}
-      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Index">{`code`}</Link>
-      {` and `}
-      <Link href="https://github.com/barnardos/design-system/issues/251">{`research`}</Link>
-      {` on GitHub.`}
-    </Cite>
     <Heading>{`Pagination`}</Heading>
     <Paragraph>{`Use this component to break large pieces of content across multiple pages.`}</Paragraph>
     <Example>
@@ -451,6 +416,41 @@ const Page = () => (
       <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Menu">{`code`}</Link>
       {` and `}
       <Link href="https://github.com/barnardos/design-system/issues/2">{`research`}</Link>
+      {` on GitHub.`}
+    </Cite>
+    <Heading>{`Contents Menu`}</Heading>
+    <Paragraph>{`Use this component to navigate within a page or section of pages.`}</Paragraph>
+    <Example>
+      <ContentsMenu
+        items={[
+          {
+            level: 1,
+            text: "Who can adopt?",
+            to: "/example/index/1"
+          },
+          {
+            level: 2,
+            text: "If you have children",
+            to: "/example/index/2"
+          },
+          {
+            level: 2,
+            text: "If you have a partner",
+            to: "/example/index/3"
+          },
+          {
+            level: 1,
+            text: "Types of adoption",
+            to: "/example/index/4"
+          }
+        ]}
+      />
+    </Example>
+    <Cite>
+      {`View `}
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/ContentsMenu">{`code`}</Link>
+      {` and `}
+      <Link href="https://github.com/barnardos/design-system/issues/251">{`research`}</Link>
       {` on GitHub.`}
     </Cite>
     <Heading>{`Search`}</Heading>
