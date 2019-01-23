@@ -10,3 +10,7 @@
 .Label--inlined {
   font: 300 var(--type-2) system-ui;
 }
+
+.Label--positioned {
+  padding-left: 2.75rem;
+}

@@ -6,7 +6,7 @@ import Label from "../Label";
 import "./index.css";
 
 const Switch = ({ checked, id, label, name, type = "checkbox" }) => (
-  <div className="Switch">
+  <div className={`Switch Switch--${type}`}>
     <input
       checked={checked}
       className="Switch-input"
@@ -14,9 +14,11 @@ const Switch = ({ checked, id, label, name, type = "checkbox" }) => (
       name={name}
       type={type}
     />
-    <Label id={id} inlined>
-      {label}
-    </Label>
+    <div className="Switch-label">
+      <Label id={id} inlined positioned>
+        {label}
+      </Label>
+    </div>
   </div>
 );
 
