@@ -263,9 +263,9 @@ const Page = () => (
     </Example>
     <Cite>
       {`View `}
-      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/BackLink">{`code`}</Link>
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/SkipLink">{`code`}</Link>
       {` and `}
-      <Link href="https://github.com/barnardos/design-system/issues/166">{`research`}</Link>
+      <Link href="https://github.com/barnardos/design-system/issues/479">{`research`}</Link>
       {` on GitHub.`}
     </Cite>
     <Heading>{`Promos`}</Heading>
