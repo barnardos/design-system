@@ -1,0 +1,22 @@
+@import "../custom-properties.css";
+
+/** @define SkipLink; */
+
+.SkipLink {
+  background-color: var(--orange);
+  color: var(--white);
+  display: block;
+  font: 300 var(--type-0) system-ui;
+  left: -100vw;
+  padding: 0.5rem 2rem;
+  position: absolute;
+  text-align: center;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:focus {
+    position: static;
+  }
+}

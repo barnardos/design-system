@@ -8,9 +8,11 @@ import Layout from "../Layout";
 import Link from "../Link";
 import Main from "../Main";
 import Paragraph from "../Paragraph";
+import SkipLink from "../SkipLink";
 
 const DesignSystemLayout = ({ children }) => (
   <Layout>
+    <SkipLink />
     <Header />
     <Main>
       {children}
