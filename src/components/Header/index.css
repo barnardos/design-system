@@ -6,6 +6,7 @@
   box-shadow: inset 0 -1px 0 0 color-mod(var(--black) tint(90%));
   padding: 0.5rem 1rem;
   position: relative;
+  overflow-x: hidden;
 
   &::after {
     bottom: 0;
