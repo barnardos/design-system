@@ -23,6 +23,7 @@ import Paragraph from "../components/Paragraph";
 import Promo from "../components/Promo";
 import Search from "../components/Search";
 import SignpostLink from "../components/SignpostLink";
+import SkipLink from "../components/SkipLink";
 import StartLink from "../components/StartLink";
 import Subheading from "../components/Subheading";
 import Title from "../components/Title";
@@ -63,6 +64,11 @@ export const indexItems = [
     level: 2,
     text: "Back Link",
     to: "/navigation/#back-link"
+  },
+  {
+    level: 2,
+    text: "Skip Link",
+    to: "/navigation/#skip-link"
   },
   {
     level: 1,
@@ -241,6 +247,19 @@ const Page = () => (
     </BulletedList>
     <Example>
       <BackLink href="http://example.org" />
+    </Example>
+    <Cite>
+      {`View `}
+      <Link href="https://github.com/barnardos/design-system/tree/master/src/components/BackLink">{`code`}</Link>
+      {` and `}
+      <Link href="https://github.com/barnardos/design-system/issues/166">{`research`}</Link>
+      {` on GitHub.`}
+    </Cite>
+    <Subheading>{`Skip Link`}</Subheading>
+    <Paragraph>{`Use this component to skip to the main content.`}</Paragraph>
+    <Example>
+      <SkipLink />
+      <Cite>{`Focus component to reveal.`}</Cite>
     </Example>
     <Cite>
       {`View `}
