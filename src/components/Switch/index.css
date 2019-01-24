@@ -1,3 +1,5 @@
+@import "../custom-properties.css";
+
 /** @define Switch; */
 
 .Switch {
@@ -5,6 +7,64 @@
   display: flex;
 }
 
-.Switch-input {
-  margin-right: 1rem;
+.Switch-label {
+  display: block;
+  position: relative;
+
+  &::before {
+    align-items: center;
+    box-shadow: inset 0 0 0 1px var(--black);
+    content: "";
+    display: flex;
+    height: 2rem;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 2rem;
+    z-index: -1;
+  }
 }
+
+.Switch-input {
+  opacity: 0;
+  position: absolute;
+
+  &:checked {
+    & + .Switch-label {
+      &::before {
+        content: "✔";
+      }
+    }
+  }
+
+  &:focus {
+    & + .Switch-label {
+      &::before {
+        box-shadow: inset 0 0 0 1px var(--black), 0 0 0 0.25rem var(--orange);
+      }
+    }
+  }
+}
+
+/* stylelint-disable no-descending-specificity, selector-max-class */
+.Switch--radio {
+  & .Switch-label {
+    &::before {
+      border-radius: 50%;
+    }
+  }
+
+  & .Switch-input {
+    &:checked {
+      & + .Switch-label {
+        &::before {
+          content: "●";
+          font-size: 2rem;
+          line-height: 1;
+        }
+      }
+    }
+  }
+}
+/* stylelint-enable no-descending-specificity, selector-max-class */
