@@ -147,7 +147,7 @@ const Page = () => (
     </Cite>
     <Subheading>{`Subheading`}</Subheading>
     <Example>
-      <Subheading>{`Foster a children`}</Subheading>
+      <Subheading>{`Foster a child`}</Subheading>
     </Example>
     <Cite>
       {`View `}
