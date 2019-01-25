@@ -3,7 +3,11 @@
 /** @define Breadcrumbs; */
 
 .Breadcrumbs {
-  margin-top: 1.5rem;
+  padding: 0 1rem;
+
+  &:not(:first-child) {
+    margin-top: 1.25rem;
+  }
 }
 
 .Breadcrumbs-items {
@@ -36,5 +40,11 @@
 
   &:hover {
     text-decoration: none;
+  }
+}
+
+@media (min-width: 48rem) {
+  .Breadcrumbs {
+    padding: 0 2rem;
   }
 }

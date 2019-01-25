@@ -6,10 +6,8 @@ import "./index.css";
 
 const DesignSystemContentsMenu = props => (
   <div className="DesignSystemContentsMenu">
-    <div className="DesignSystemContentsMenu-inner">
-      <p className="DesignSystemContentsMenu-section">{`In this section:`}</p>
-      <ContentsMenu {...props} />
-    </div>
+    <p className="DesignSystemContentsMenu-section">{`In this section:`}</p>
+    <ContentsMenu {...props} />
   </div>
 );
 

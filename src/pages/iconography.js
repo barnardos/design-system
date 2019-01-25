@@ -9,6 +9,8 @@ import Link from "../components/Link";
 import ListItem from "../components/ListItem";
 import Paragraph from "../components/Paragraph";
 import Title from "../components/Title";
+import Main from "../components/Main";
+import Content from "../components/Content";
 import BulletedList from "../components/BulletedList";
 import Topic from "../components/Topic";
 
@@ -25,25 +27,29 @@ const Page = () => (
         }
       ]}
     />
-    <Topic>{`Assets`}</Topic>
-    <Title>{`Iconography`}</Title>
-    <Paragraph>{`When using iconography you should:`}</Paragraph>
-    <BulletedList>
-      <ListItem>{`choose a flat graphic style`}</ListItem>
-      <ListItem>
-        {`use the `}
-        <GatsbyLink
-          className="Link"
-          to="/colour/#brand-colours"
-        >{`brand colours`}</GatsbyLink>
-      </ListItem>
-      <ListItem>{`avoid relying on icons to convey important information`}</ListItem>
-    </BulletedList>
-    <Cite>
-      {`View `}
-      <Link href="https://github.com/barnardos/design-system/issues/226">{`research`}</Link>
-      {` on GitHub.`}
-    </Cite>
+    <Main>
+      <Content>
+        <Topic>{`Assets`}</Topic>
+        <Title>{`Iconography`}</Title>
+        <Paragraph>{`When using iconography you should:`}</Paragraph>
+        <BulletedList>
+          <ListItem>{`choose a flat graphic style`}</ListItem>
+          <ListItem>
+            {`use the `}
+            <GatsbyLink
+              className="Link"
+              to="/colour/#brand-colours"
+            >{`brand colours`}</GatsbyLink>
+          </ListItem>
+          <ListItem>{`avoid relying on icons to convey important information`}</ListItem>
+        </BulletedList>
+        <Cite>
+          {`View `}
+          <Link href="https://github.com/barnardos/design-system/issues/226">{`research`}</Link>
+          {` on GitHub.`}
+        </Cite>
+      </Content>
+    </Main>
   </DesignSystemLayout>
 );
 

@@ -19,6 +19,7 @@ const Footer = ({ children, items }) => (
       </ul>
     )}
     <div className="Footer-children">{children}</div>
+    <p className="Footer-copyright">{`© Barnardo's`}</p>
   </footer>
 );
 
