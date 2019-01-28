@@ -11,7 +11,7 @@ const DesignSystemNavigation = ({ description, items, title, isFlex }) => {
 
   return (
     <nav className={className}>
-      {title && <p className="DesignSystemNavigation-title">{title}</p>}
+      {title && <h3 className="DesignSystemNavigation-title">{title}</h3>}
       {description && (
         <p className="DesignSystemNavigation-description">{description}</p>
       )}

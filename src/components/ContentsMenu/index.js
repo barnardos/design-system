@@ -16,11 +16,14 @@ const Link = ({ index, level, text, to }) => {
 };
 
 const ContentsMenu = ({ items }) => (
-  <ul className="ContentsMenu">
-    {items.map(({ level, text, to }, index) =>
-      Link({ index, level, text, to })
-    )}
-  </ul>
+  <nav className="ContentsMenu">
+    <p className="ContentsMenu-title">{`In this section:`}</p>
+    <ul className="ContentsMenu-items">
+      {items.map(({ level, text, to }, index) =>
+        Link({ index, level, text, to })
+      )}
+    </ul>
+  </nav>
 );
 
 Link.propTypes = {

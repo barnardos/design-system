@@ -8,6 +8,15 @@
   }
 }
 
+.ContentsMenu-title {
+  color: var(--black);
+  font: 300 var(--type-0) system-ui;
+}
+
+.ContentsMenu-items {
+  margin-top: 0.5rem;
+}
+
 .ContentsMenu-item {
   list-style: none;
   margin-top: 0.25rem;
@@ -44,5 +53,13 @@
 
   & .ContentsMenu-link {
     font: 300 var(--type--1) system-ui;
+  }
+}
+
+@media (min-width: 48rem) and (min-height: 42rem) {
+  .ContentsMenu {
+    height: 100%;
+    position: sticky;
+    top: 1rem;
   }
 }

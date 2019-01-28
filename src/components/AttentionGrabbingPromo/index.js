@@ -23,8 +23,8 @@ const AttentionGrabbingPromo = ({
         </div>
       )}
       <div className="AttentionGrabbingPromo-text">
-        <h2 className="AttentionGrabbingPromo-title">{title}</h2>
-        {meta && <h3 className="AttentionGrabbingPromo-meta">{meta}</h3>}
+        <p className="AttentionGrabbingPromo-title">{title}</p>
+        {meta && <p className="AttentionGrabbingPromo-meta">{meta}</p>}
         <div className="AttentionGrabbingPromo-children">{children}</div>
         <div className="AttentionGrabbingPromo-link">
           <AttentionGrabbingLink

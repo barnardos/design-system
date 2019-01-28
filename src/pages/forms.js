@@ -20,7 +20,7 @@ import ListItem from "../components/ListItem";
 import Paragraph from "../components/Paragraph";
 import RadioButtons from "../components/RadioButtons";
 import Subheading from "../components/Subheading";
-import DesignSystemContentsMenu from "../components/DesignSystemContentsMenu";
+import ContentsMenu from "../components/ContentsMenu";
 import TextArea from "../components/TextArea";
 import TextInput from "../components/TextInput";
 import Title from "../components/Title";
@@ -129,7 +129,7 @@ const Page = () => (
           <Topic>{`Components`}</Topic>
           <Title>{`Forms`}</Title>
         </ContentHeader>
-        <DesignSystemContentsMenu items={indexItems} />
+        <ContentsMenu items={indexItems} />
         <Content>
           <Paragraph>{`When gathering information you should:`}</Paragraph>
           <BulletedList>

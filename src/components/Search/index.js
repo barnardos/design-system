@@ -8,14 +8,14 @@ const Search = () => (
   <form className="Search">
     <input
       className="Search-input"
-      id="search"
-      name="search"
+      id="search-input"
+      name="search-input"
       size="8"
-      type="text"
+      type="search"
     />
     <button className="Search-button" type="submit">
       <img
-        alt="Submit search"
+        alt="Search"
         className="SubmitSearchControl-buttonSvg"
         src={glassSvg}
       />
