@@ -15,7 +15,7 @@ const Switch = ({ checked, id, label, name, type = "checkbox" }) => (
       type={type}
     />
     <div className="Switch-label">
-      <Label id={id} inlined positioned>
+      <Label htmlFor={id} inlined positioned>
         {label}
       </Label>
     </div>
