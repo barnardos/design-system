@@ -10,7 +10,7 @@ import "./index.css";
 
 const CurrencyInput = ({ currency, error, hint, id, label, max, min }) => (
   <Field errored={error}>
-    <Label id={id}>{label}</Label>
+    <Label htmlFor={id}>{label}</Label>
     {hint && <Hint>{hint}</Hint>}
     {error && <Error>{error}</Error>}
     <div className="CurrencyInput-prefixAndInput">

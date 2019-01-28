@@ -10,7 +10,7 @@ import "./index.css";
 
 const TextInput = ({ hint, id, label, size, error }) => (
   <Field errored={error}>
-    <Label id={id}>{label}</Label>
+    <Label htmlFor={id}>{label}</Label>
     {hint && <Hint>{hint}</Hint>}
     {error && <Error>{error}</Error>}
     <input
