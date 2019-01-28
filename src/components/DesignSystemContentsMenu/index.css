@@ -13,16 +13,10 @@
   font: 300 var(--type-0) system-ui;
 }
 
-@media (min-width: 78rem) and (min-height: 40rem) {
+@media (min-width: 48rem) and (min-height: 42rem) {
   .DesignSystemContentsMenu {
-    margin-top: 0;
+    height: 80vh;
     position: sticky;
     top: 1rem;
-  }
-
-  .DesignSystemContentsMenu-inner {
-    position: absolute;
-    right: 4rem;
-    width: 14rem;
   }
 }
