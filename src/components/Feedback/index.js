@@ -5,7 +5,7 @@ import "./index.css";
 
 const Feedback = ({ children, title }) => (
   <aside className="Feedback">
-    <h1 className="Feedback-title">{title}</h1>
+    <h2 className="Feedback-title">{title}</h2>
     <div className="Feedback-children">{children}</div>
   </aside>
 );

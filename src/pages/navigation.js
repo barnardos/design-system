@@ -11,7 +11,6 @@ import Content from "../components/Content";
 import ContentHeader from "../components/ContentHeader";
 import ContentWithMenu from "../components/ContentWithMenu";
 import ContentsMenu from "../components/ContentsMenu";
-import DesignSystemContentsMenu from "../components/DesignSystemContentsMenu";
 import DesignSystemLayout from "../components/DesignSystemLayout";
 import DonateLink from "../components/DonateLink";
 import Example from "../components/Example";
@@ -145,7 +144,7 @@ const Page = () => (
           <Topic>{`Components`}</Topic>
           <Title>{`Navigation`}</Title>
         </ContentHeader>
-        <DesignSystemContentsMenu items={indexItems} />
+        <ContentsMenu items={indexItems} />
         <Content>
           <Heading>{`Links`}</Heading>
           <Subheading>{`Link`}</Subheading>

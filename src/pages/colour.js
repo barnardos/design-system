@@ -9,7 +9,7 @@ import ColourGreyFigure from "../components/ColourGreyFigure";
 import Content from "../components/Content";
 import ContentHeader from "../components/ContentHeader";
 import ContentWithMenu from "../components/ContentWithMenu";
-import DesignSystemContentsMenu from "../components/DesignSystemContentsMenu";
+import ContentsMenu from "../components/ContentsMenu";
 import DesignSystemLayout from "../components/DesignSystemLayout";
 import Figure from "../components/Figure";
 import Figures from "../components/Figures";
@@ -43,7 +43,7 @@ const Page = () => (
           <Topic>{`Design standards`}</Topic>
           <Title>{`Colour`}</Title>
         </ContentHeader>
-        <DesignSystemContentsMenu
+        <ContentsMenu
           items={[
             {
               level: 1,

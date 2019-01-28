@@ -19,7 +19,7 @@ import Link from "../components/Link";
 import ListItem from "../components/ListItem";
 import Paragraph from "../components/Paragraph";
 import Quote from "../components/Quote";
-import DesignSystemContentsMenu from "../components/DesignSystemContentsMenu";
+import ContentsMenu from "../components/ContentsMenu";
 import Title from "../components/Title";
 import Main from "../components/Main";
 import BulletedList from "../components/BulletedList";
@@ -123,7 +123,7 @@ const Page = () => (
           <Topic>{`Components`}</Topic>
           <Title>{`Content`}</Title>
         </ContentHeader>
-        <DesignSystemContentsMenu items={indexItems} />
+        <ContentsMenu items={indexItems} />
         <Content>
           <Paragraph>{`When displaying content you should provide a meaningful content hierarchy.`}</Paragraph>
           <Heading>{`Type styles`}</Heading>

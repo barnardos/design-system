@@ -12,8 +12,8 @@ const Promo = ({ children, to, title, meta, src }) => (
       </div>
     )}
     <div className="Promo-text">
-      <h2 className="Promo-title">{title}</h2>
-      {meta && <h3 className="Promo-meta">{meta}</h3>}
+      <p className="Promo-title">{title}</p>
+      {meta && <p className="Promo-meta">{meta}</p>}
       <div className="Promo-children">{children}</div>
     </div>
   </GatsbyLink>

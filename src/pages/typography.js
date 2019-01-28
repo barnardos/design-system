@@ -9,7 +9,7 @@ import Code from "../components/Code";
 import Content from "../components/Content";
 import ContentHeader from "../components/ContentHeader";
 import ContentWithMenu from "../components/ContentWithMenu";
-import DesignSystemContentsMenu from "../components/DesignSystemContentsMenu";
+import ContentsMenu from "../components/ContentsMenu";
 import DesignSystemLayout from "../components/DesignSystemLayout";
 import Figures from "../components/Figures";
 import Heading from "../components/Heading";
@@ -41,7 +41,7 @@ const Page = () => (
           <Topic>{`Design standards`}</Topic>
           <Title>{`Typography`}</Title>
         </ContentHeader>
-        <DesignSystemContentsMenu
+        <ContentsMenu
           items={[
             {
               level: 1,
