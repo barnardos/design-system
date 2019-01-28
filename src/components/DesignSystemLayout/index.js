@@ -9,7 +9,7 @@ import SkipLink from "../SkipLink";
 const DesignSystemLayout = ({ children }) => (
   <Layout>
     <SkipLink />
-    <Header />
+    <Header title="Go to the Barnardo's Design System homepage" />
     {children}
     <Footer />
   </Layout>
