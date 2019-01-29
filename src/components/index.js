@@ -1,7 +1,7 @@
 // Published components
-import AttentionGrabbingLink from "./AttentionGrabbingLink";
-import AttentionGrabbingPromo from "./AttentionGrabbingPromo";
-import AttentionGrabbingQuote from "./AttentionGrabbingQuote";
+import ProminentLink from "./ProminentLink";
+import ProminentPromo from "./ProminentPromo";
+import ProminentBlockQuote from "./ProminentBlockQuote";
 import BackLink from "./BackLink";
 import Breadcrumbs from "./Breadcrumbs";
 import BulletedList from "./BulletedList";
@@ -41,7 +41,8 @@ import Pagination from "./Pagination";
 import Paragraph from "./Paragraph";
 import Promo from "./Promo";
 import Promos from "./Promos";
-import Quote from "./Quote";
+import PullQuote from "./PullQuote";
+import BlockQuote from "./BlockQuote";
 import RadioButtons from "./RadioButtons";
 import Search from "./Search";
 import Section from "./Section";
@@ -57,9 +58,9 @@ import Title from "./Title";
 import Topic from "./Topic";
 
 export {
-  AttentionGrabbingLink,
-  AttentionGrabbingPromo,
-  AttentionGrabbingQuote,
+  ProminentLink,
+  ProminentPromo,
+  ProminentBlockQuote,
   BackLink,
   Breadcrumbs,
   BulletedList,
@@ -99,7 +100,8 @@ export {
   Paragraph,
   Promo,
   Promos,
-  Quote,
+  PullQuote,
+  BlockQuote,
   RadioButtons,
   Search,
   Section,

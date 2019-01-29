@@ -1,8 +1,8 @@
 @import "../custom-properties.css";
 
-/** @define AttentionGrabbingPromo; */
+/** @define ProminentPromo; */
 
-.AttentionGrabbingPromo {
+.ProminentPromo {
   background-color: var(--black);
   box-shadow: inset 0 0 0 2px var(--black), 0.25rem 0.25rem currentColor;
   color: var(--white);
@@ -10,55 +10,55 @@
   text-decoration: none;
 }
 
-.AttentionGrabbingPromo-image {
+.ProminentPromo-image {
   display: block;
   max-width: 100%;
   padding: 2px; /* stylelint-disable-line declaration-property-unit-whitelist */
 }
 
-.AttentionGrabbingPromo-text {
+.ProminentPromo-text {
   padding: 1rem;
 }
 
-.AttentionGrabbingPromo-meta {
+.ProminentPromo-meta {
   color: color-mod(var(--white) shade(30%));
   font: 300 var(--type-0) system-ui;
   margin-top: 0.5rem;
 }
 
-.AttentionGrabbingPromo-title {
+.ProminentPromo-title {
   color: var(--white);
   font: 600 var(--type-5) proxima-nova, sans-serif;
 }
 
-.AttentionGrabbingPromo-children {
+.ProminentPromo-children {
   color: var(--white);
   font: 300 var(--type-0) system-ui;
   margin-top: 1rem;
 }
 
-.AttentionGrabbingPromo-link {
+.ProminentPromo-link {
   margin-top: 1.5rem;
 }
 
 @media (min-width: 30rem) {
-  .AttentionGrabbingPromo-link {
+  .ProminentPromo-link {
     display: inline-block;
   }
 }
 
-.AttentionGrabbingPromo--orange {
+.ProminentPromo--orange {
   color: var(--orange);
 }
 
-.AttentionGrabbingPromo--pink {
+.ProminentPromo--pink {
   color: var(--pink);
 }
 
-.AttentionGrabbingPromo--purple {
+.ProminentPromo--purple {
   color: var(--purple);
 }
 
-.AttentionGrabbingPromo--teal {
+.ProminentPromo--teal {
   color: var(--teal);
 }

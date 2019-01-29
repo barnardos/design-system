@@ -1,15 +1,15 @@
 @import "../custom-properties.css";
 
-/** @define AttentionGrabbingQuote; */
+/** @define ProminentBlockQuote; */
 
-.AttentionGrabbingQuote {
+.ProminentBlockQuote {
   background-color: var(--green);
   color: var(--white);
   padding: 2rem 1rem;
   text-align: center;
 }
 
-.AttentionGrabbingQuote-children {
+.ProminentBlockQuote-children {
   font: 300 var(--type-4) proxima-nova, sans-serif;
   margin: 0 auto;
   max-width: 43rem;
@@ -32,41 +32,41 @@
   }
 }
 
-.AttentionGrabbingQuote-cite {
+.ProminentBlockQuote-cite {
   display: block;
   margin-top: 1rem;
 }
 
-.AttentionGrabbingQuote-role {
+.ProminentBlockQuote-role {
   font: 300 var(--type-2) system-ui;
 }
 
-.AttentionGrabbingQuote-name {
+.ProminentBlockQuote-name {
   font: 600 var(--type-2) system-ui;
 }
 
-.AttentionGrabbingQuote--black {
+.ProminentBlockQuote--black {
   background-color: var(--black);
 }
 
-.AttentionGrabbingQuote--orange {
+.ProminentBlockQuote--orange {
   background-color: var(--orange);
 }
 
-.AttentionGrabbingQuote--pink {
+.ProminentBlockQuote--pink {
   background-color: var(--pink);
 }
 
-.AttentionGrabbingQuote--purple {
+.ProminentBlockQuote--purple {
   background-color: var(--purple);
 }
 
-.AttentionGrabbingQuote--teal {
+.ProminentBlockQuote--teal {
   background-color: var(--teal);
 }
 
 @media (min-width: 32rem) {
-  .AttentionGrabbingQuote {
+  .ProminentBlockQuote {
     padding-left: 2rem;
     padding-right: 2rem;
   }
