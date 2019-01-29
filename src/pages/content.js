@@ -1,29 +1,30 @@
 import Helmet from "react-helmet";
 import React from "react";
 
-import AttentionGrabbingQuote from "../components/AttentionGrabbingQuote";
+import BlockQuote from "../components/BlockQuote";
 import Breadcrumbs from "../components/Breadcrumbs";
+import BulletedList from "../components/BulletedList";
+import Caption from "../components/Caption";
 import Cite from "../components/Cite";
 import Content from "../components/Content";
 import ContentHeader from "../components/ContentHeader";
+import ContentsMenu from "../components/ContentsMenu";
 import ContentWithMenu from "../components/ContentWithMenu";
-import Fact from "../components/Fact";
-import Example from "../components/Example";
-import Caption from "../components/Caption";
-import Heading from "../components/Heading";
-import Subheading from "../components/Subheading";
-import Image from "../components/Image";
 import DesignSystemLayout from "../components/DesignSystemLayout";
+import Example from "../components/Example";
+import Fact from "../components/Fact";
+import Heading from "../components/Heading";
+import Image from "../components/Image";
 import Lede from "../components/Lede";
 import Link from "../components/Link";
 import ListItem from "../components/ListItem";
-import Paragraph from "../components/Paragraph";
-import Quote from "../components/Quote";
-import ContentsMenu from "../components/ContentsMenu";
-import Title from "../components/Title";
 import Main from "../components/Main";
-import BulletedList from "../components/BulletedList";
+import Paragraph from "../components/Paragraph";
+import ProminentBlockQuote from "../components/ProminentBlockQuote";
+import PullQuote from "../components/PullQuote";
 import Section from "../components/Section";
+import Subheading from "../components/Subheading";
+import Title from "../components/Title";
 import Topic from "../components/Topic";
 
 export const indexItems = [
@@ -79,13 +80,18 @@ export const indexItems = [
   },
   {
     level: 2,
-    text: "Quote",
-    to: "/content/#quote"
+    text: "Pull Quote",
+    to: "/content/#pull-quote"
   },
   {
     level: 2,
-    text: "Attention Grabbing Quote",
-    to: "/content/#attention-grabbing-quote"
+    text: "Block Quote",
+    to: "/content/#block-quote"
+  },
+  {
+    level: 2,
+    text: "Prominent Block Quote",
+    to: "/content/#prominent-block-quote"
   },
   {
     level: 1,
@@ -206,52 +212,58 @@ const Page = () => (
             {` on GitHub.`}
           </Cite>
           <Heading>{`Quotes`}</Heading>
-          <Paragraph>{`Use these components for quotes, for example an excerpt from an article or quotation from a person.`}</Paragraph>
-          <Subheading>{`Quote`}</Subheading>
-          <Paragraph>{`When using this component you should:`}</Paragraph>
+          <Paragraph>{`When using these components you should:`}</Paragraph>
           <BulletedList>
-            <ListItem>{`use a short sentence with one main idea`}</ListItem>
+            <ListItem>{`choose short sentences with one main idea`}</ListItem>
             <ListItem>{`limit the number on each page`}</ListItem>
           </BulletedList>
+          <Subheading>{`Pull Quote`}</Subheading>
+          <Paragraph>{`Use this component to emphasise an excerpt from the main content.`}</Paragraph>
           <Example>
-            <Quote>{`Parents needed more support with their emotional wellbeing, boundaries, behaviour, home and money.`}</Quote>
+            <PullQuote>{`Parents needed more support with their emotional wellbeing, boundaries, behaviour, home and money.`}</PullQuote>
           </Example>
+          <Cite>
+            {`View `}
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/PullQuote">{`code`}</Link>
+            {` and `}
+            <Link href="https://github.com/barnardos/design-system/issues/321">{`research`}</Link>
+            {` on GitHub.`}
+          </Cite>
+          <Subheading>{`Block Quote`}</Subheading>
+          <Paragraph>{`Use this component to display a quotation from a person.`}</Paragraph>
           <Example>
-            <Quote
+            <BlockQuote
               colour="pink"
               role="Young person"
-            >{`Someone believed in me once and now it’s time for me to do the same.`}</Quote>
+            >{`Someone believed in me once and now it’s time for me to do the same.`}</BlockQuote>
           </Example>
           <Example>
-            <Quote
+            <BlockQuote
               colour="orange"
               name="John Smith"
               role="Teacher"
               src="https://dummyimage.com/480x480/bbbbbb/d2d2d2.png&amp;text=1:1"
-            >{`The family support worker is able to engage and build positive relationships with families who previously kept their distance from school.`}</Quote>
+            >{`The family support worker is able to engage and build positive relationships with families who previously kept their distance from school.`}</BlockQuote>
           </Example>
           <Cite>
             {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Quote">{`code`}</Link>
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/BlockQuote">{`code`}</Link>
             {` and `}
             <Link href="https://github.com/barnardos/design-system/issues/252">{`research`}</Link>
             {` on GitHub.`}
           </Cite>
-          <Subheading>{`Attention Grabbing Quote`}</Subheading>
+          <Subheading>{`Prominent Block Quote`}</Subheading>
           <Paragraph>{`When using this component you should only use it once on each page.`}</Paragraph>
           <Example>
-            <AttentionGrabbingQuote
+            <ProminentBlockQuote
               colour="green"
               role="Young person"
               name="James Roberts"
-            >{`By tackling the causes as well as the symptoms, we can create better outcomes for more children.`}</AttentionGrabbingQuote>
-          </Example>
-          <Example>
-            <AttentionGrabbingQuote colour="black">{`I just needed a push in the right direction, and a stepping stone to act as a bridge across to adulthood. I finally feel that I'm closer to being happy.`}</AttentionGrabbingQuote>
+            >{`By tackling the causes as well as the symptoms, we can create better outcomes for more children.`}</ProminentBlockQuote>
           </Example>
           <Cite>
             {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/AttentionGrabbingQuote">{`code`}</Link>
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/ProminentBlockQuote">{`code`}</Link>
             {` and `}
             <Link href="https://github.com/barnardos/design-system/issues/321">{`research`}</Link>
             {` on GitHub.`}

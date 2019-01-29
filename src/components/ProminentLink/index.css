@@ -1,8 +1,8 @@
 @import "../custom-properties.css";
 
-/** @define AttentionGrabbingLink; */
+/** @define ProminentLink; */
 
-.AttentionGrabbingLink {
+.ProminentLink {
   color: var(--white);
   display: inline-block;
   font: 600 var(--type-2) proxima-nova, sans-serif;
@@ -16,26 +16,26 @@
   }
 }
 
-.AttentionGrabbingLink--full {
+.ProminentLink--full {
   width: 100%;
 }
 
-.AttentionGrabbingLink--black {
+.ProminentLink--black {
   background-color: var(--black);
 }
 
-.AttentionGrabbingLink--orange {
+.ProminentLink--orange {
   background-color: var(--orange);
 }
 
-.AttentionGrabbingLink--pink {
+.ProminentLink--pink {
   background-color: var(--pink);
 }
 
-.AttentionGrabbingLink--purple {
+.ProminentLink--purple {
   background-color: var(--purple);
 }
 
-.AttentionGrabbingLink--teal {
+.ProminentLink--teal {
   background-color: var(--teal);
 }

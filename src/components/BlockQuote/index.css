@@ -1,28 +1,28 @@
 @import "../custom-properties.css";
 
-/** @define Quote; */
+/** @define BlockQuote; */
 
-.Quote {
+.BlockQuote {
   color: var(--green);
 }
 
-.Quote-media {
+.BlockQuote-media {
   max-width: 20rem;
   padding: 0 1.5rem;
 }
 
-.Quote-image {
+.BlockQuote-image {
   border-radius: 50%;
   display: block;
   max-width: 100%;
 }
 
-.Quote-text {
+.BlockQuote-text {
   box-shadow: inset 0.25rem 0 0 currentColor;
   padding-left: 1.5rem;
 }
 
-.Quote-children {
+.BlockQuote-children {
   font: 600 var(--type-4) proxima-nova, sans-serif;
   padding-top: 4.5rem;
   position: relative;
@@ -42,41 +42,41 @@
   }
 }
 
-.Quote-cite {
+.BlockQuote-cite {
   display: block;
   margin-top: 1rem;
 }
 
-.Quote-role {
+.BlockQuote-role {
   font: 300 var(--type-2) system-ui;
 }
 
-.Quote-name {
+.BlockQuote-name {
   font: 600 var(--type-2) system-ui;
 }
 
-.Quote--orange {
+.BlockQuote--orange {
   color: var(--orange);
 }
 
-.Quote--pink {
+.BlockQuote--pink {
   color: var(--pink);
 }
 
-.Quote--purple {
+.BlockQuote--purple {
   color: var(--purple);
 }
 
-.Quote--teal {
+.BlockQuote--teal {
   color: var(--teal);
 }
 
 @media (min-width: 56rem) {
-  .Quote {
+  .BlockQuote {
     display: flex;
   }
 
-  .Quote-media {
+  .BlockQuote-media {
     flex: 0 0 20rem;
     margin-right: 1.5rem;
   }

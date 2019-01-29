@@ -1,8 +1,8 @@
 import Helmet from "react-helmet";
 import React from "react";
 
-import AttentionGrabbingLink from "../components/AttentionGrabbingLink";
-import AttentionGrabbingPromo from "../components/AttentionGrabbingPromo";
+import ProminentLink from "../components/ProminentLink";
+import ProminentPromo from "../components/ProminentPromo";
 import BackLink from "../components/BackLink";
 import Breadcrumbs from "../components/Breadcrumbs";
 import BulletedList from "../components/BulletedList";
@@ -60,8 +60,8 @@ export const indexItems = [
   },
   {
     level: 2,
-    text: "Attention Grabbing Link",
-    to: "/navigation/#attention-grabbing-link"
+    text: "Prominent Link",
+    to: "/navigation/#prominent-link"
   },
   {
     level: 2,
@@ -85,8 +85,8 @@ export const indexItems = [
   },
   {
     level: 2,
-    text: "Attention Grabbing Promo",
-    to: "/navigation/#attention-grabbing-promo"
+    text: "Prominent Promo",
+    to: "/navigation/#prominent-promo"
   },
   {
     level: 1,
@@ -215,7 +215,7 @@ const Page = () => (
             <Link href="https://github.com/barnardos/design-system/issues/353">{`research`}</Link>
             {` on GitHub.`}
           </Cite>
-          <Subheading>{`Attention Grabbing Link`}</Subheading>
+          <Subheading>{`Prominent Link`}</Subheading>
           <Paragraph>{`Use this component within featured content.`}</Paragraph>
           <Paragraph>{`When using this component you should:`}</Paragraph>
           <BulletedList>
@@ -226,14 +226,14 @@ const Page = () => (
             <ListItem>{`not use terms like "Read more" and "Find out more"`}</ListItem>
           </BulletedList>
           <Example>
-            <AttentionGrabbingLink
+            <ProminentLink
               colour="pink"
               href="http://example.org"
               text="Volunteer with us"
             />
           </Example>
           <Example>
-            <AttentionGrabbingLink
+            <ProminentLink
               colour="black"
               href="http://example.org"
               text="Shop online"
@@ -241,7 +241,7 @@ const Page = () => (
           </Example>
           <Cite>
             {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/AttentionGrabbingLink">{`code`}</Link>
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/ProminentLink">{`code`}</Link>
             {` and `}
             <Link href="https://github.com/barnardos/design-system/issues/47">{`research`}</Link>
             {` on GitHub.`}
@@ -300,19 +300,19 @@ const Page = () => (
             <Link href="https://github.com/barnardos/design-system/issues/91">{`research`}</Link>
             {` on GitHub.`}
           </Cite>
-          <Subheading>{`Attention Grabbing Promo`}</Subheading>
+          <Subheading>{`Prominent Promo`}</Subheading>
           <Example>
-            <AttentionGrabbingPromo
+            <ProminentPromo
               colour="pink"
               href="http://example.org"
               meta="14 April 2019"
               title="Brighton Marathon"
               text="Sign up"
-            >{`Taking in the sights and sounds of the coast, this fantastic 26.2 mile route covers Hove and finishes at the famous Brighton Pier.`}</AttentionGrabbingPromo>
+            >{`Taking in the sights and sounds of the coast, this fantastic 26.2 mile route covers Hove and finishes at the famous Brighton Pier.`}</ProminentPromo>
           </Example>
           <Cite>
             {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/AttentionGrabbingPromo">{`code`}</Link>
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/ProminentPromo">{`code`}</Link>
             {` and `}
             <Link href="https://github.com/barnardos/design-system/issues/401">{`research`}</Link>
             {` on GitHub.`}
