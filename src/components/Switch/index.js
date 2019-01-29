@@ -1,8 +1,6 @@
 import PropTypes from "prop-types";
 import React from "react";
 
-import Label from "../Label";
-
 import "./index.css";
 
 const Switch = ({ checked, id, label, name, type = "checkbox" }) => (
@@ -14,11 +12,9 @@ const Switch = ({ checked, id, label, name, type = "checkbox" }) => (
       name={name}
       type={type}
     />
-    <div className="Switch-label">
-      <Label htmlFor={id} inlined positioned>
-        {label}
-      </Label>
-    </div>
+    <label className={`Switch-label`} htmlFor={id}>
+      {label}
+    </label>
   </div>
 );
 
