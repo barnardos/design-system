@@ -3,37 +3,57 @@
 /** @define Switch; */
 
 .Switch {
-  align-items: center;
-  display: flex;
+  min-height: 2rem;
+  padding-left: 3rem;
+  position: relative;
 }
 
 .Switch-label {
   display: block;
-  position: relative;
+  font: 300 var(--type-2) system-ui;
 
   &::before {
-    align-items: center;
-    box-shadow: inset 0 0 0 1px var(--black);
+    box-shadow: 0 0 0 1px var(--black);
     content: "";
-    display: flex;
     height: 2rem;
-    justify-content: center;
     left: 0;
     position: absolute;
     top: 0;
     width: 2rem;
-    z-index: -1;
+    z-index: 1;
   }
+
+  /* stylelint-disable property-whitelist, declaration-property-value-whitelist, function-whitelist */
+  &::after {
+    background: transparent;
+    border: solid var(--black);
+    border-top-color: transparent;
+    border-width: 0 0 0.25rem 0.25rem;
+    content: "";
+    height: 0.5rem;
+    left: 0.25rem;
+    opacity: 0;
+    position: absolute;
+    top: 0.5rem;
+    transform: rotate(-45deg) scale(0.75);
+    width: 1.25rem;
+  }
+  /* stylelint-enable property-whitelist, declaration-property-value-whitelist, function-whitelist */
 }
 
 .Switch-input {
+  height: 2rem;
+  left: 0;
   opacity: 0;
   position: absolute;
+  top: 0;
+  width: 2rem;
+  z-index: 1;
 
   &:checked {
     & + .Switch-label {
-      &::before {
-        content: "✔";
+      &::after {
+        opacity: 1;
       }
     }
   }
@@ -41,30 +61,30 @@
   &:focus {
     & + .Switch-label {
       &::before {
-        box-shadow: inset 0 0 0 1px var(--black), 0 0 0 0.25rem var(--orange);
+        box-shadow: 0 0 0 1px var(--black), 0 0 0 0.25rem var(--orange);
       }
     }
   }
 }
 
-/* stylelint-disable no-descending-specificity, selector-max-class */
+/* stylelint-disable no-descending-specificity */
 .Switch--radio {
   & .Switch-label {
     &::before {
       border-radius: 50%;
     }
-  }
 
-  & .Switch-input {
-    &:checked {
-      & + .Switch-label {
-        &::before {
-          content: "●";
-          font-size: 2rem;
-          line-height: 1;
-        }
-      }
+    &::after {
+      background: var(--black);
+      /* stylelint-disable-next-line declaration-property-value-whitelist */
+      border: 0.5rem solid var(--white);
+      border-radius: 50%;
+      height: 1rem;
+      left: 0rem;
+      top: 0rem;
+      transform: none;
+      width: 1rem;
     }
   }
 }
-/* stylelint-enable no-descending-specificity, selector-max-class */
+/* stylelint-enable no-descending-specificity */
