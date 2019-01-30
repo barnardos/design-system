@@ -33,9 +33,9 @@ For example, to import the CSS of the `BackLink` and `Pagination` components:
 
 ```css
 /* src/index.css */
-@import "node_modules/@barnardos/components/custom-properties.css";
-@import "node_modules/@barnardos/components/BackLink/index.css";
-@import "node_modules/@barnardos/components/Pagination/index.css";
+@import "node_modules/@barnardos/components/src/components/custom-properties.css";
+@import "node_modules/@barnardos/components/src/components/BackLink/index.css";
+@import "node_modules/@barnardos/components/src/components/Pagination/index.css";
 ```
 
 You'll need to use [`postcss-present-env`](https://preset-env.cssdb.org) to transpile the CSS using the Design System's [PostCSS](https://github.com/barnardos/design-system/blob/master/postcss.config.js) and [browserslist](https://github.com/barnardos/design-system/blob/master/.browserslistrc) configurations.
