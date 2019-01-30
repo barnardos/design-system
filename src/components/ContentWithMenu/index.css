@@ -2,21 +2,24 @@
 
 @media (min-width: 48rem) {
   .ContentWithMenu {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template: auto auto / 12rem 1fr;
 
     & > *:nth-child(1) {
-      flex: 0 0 100%;
+      grid-column: 1 / span 2;
+      grid-row: 1;
     }
 
     & > *:nth-child(2) {
-      flex: 0 0 13rem;
-      padding: 1rem 0 0;
+      grid-column: 1;
+      grid-row: 2;
+      padding: 0.75rem 0 0 0;
     }
 
     & > *:nth-child(3) {
-      flex: 1;
-      padding: 0 0 0 1.5rem;
+      grid-column: 2;
+      grid-row: 2;
+      padding-left: 1rem;
     }
   }
 }
