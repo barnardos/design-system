@@ -23,7 +23,7 @@
     margin-left: 1.5rem;
 
     &::before {
-      color: color-mod(var(--black) tint(90%));
+      color: color-mod(var(--black) tint(80%));
       content: "›";
       font: 300 var(--type-6) proxima-nova, sans-serif;
       line-height: 0;
