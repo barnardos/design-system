@@ -24,5 +24,11 @@
       "version": "16.0"
     }
   },
-  "globals": { "graphql": true }
+  "globals": {
+    "browser": true,
+    "context": true,
+    "graphql": true,
+    "jestPuppeteer": true,
+    "page": true
+  }
 }

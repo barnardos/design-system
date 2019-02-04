@@ -18,7 +18,7 @@
 
 .DesignSystemNavigation-link {
   box-shadow: inset 0 -0.25rem 0 0 color-mod(var(--black) tint(95%));
-  color: var(--green);
+  color: color-mod(var(--green) shade(20%));
   display: block;
   font: 300 var(--type-2) system-ui;
   padding: 0.5rem 0 0.5rem;
@@ -31,7 +31,7 @@
   }
 
   &:visited {
-    color: var(--purple);
+    color: color-mod(var(--purple) shade(20%));
   }
 }
 

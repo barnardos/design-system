@@ -1,5 +1,6 @@
 /* eslint-disable import/unambiguous */
 module.exports = {
+  preset: "jest-puppeteer",
   moduleNameMapper: {
     "\\.(jpg|jpeg|png|svg|woff|woff2)$": "<rootDir>/__mocks__/fileMock.js",
     "^(?!.*\\.module\\.css$).*\\.css$": "<rootDir>/__mocks__/styleMock.js"
