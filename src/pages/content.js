@@ -139,7 +139,7 @@ const Page = () => (
           </Example>
           <Cite>
             {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Title">{`code`}</Link>
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Title">{`Title code`}</Link>
             {` on GitHub.`}
           </Cite>
           <Subheading>{`Lede`}</Subheading>
@@ -148,7 +148,7 @@ const Page = () => (
           </Example>
           <Cite>
             {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Lede">{`code`}</Link>
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Lede">{`Lede code`}</Link>
             {` on GitHub.`}
           </Cite>
           <Subheading>{`Heading`}</Subheading>
@@ -157,7 +157,7 @@ const Page = () => (
           </Example>
           <Cite>
             {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Heading">{`code`}</Link>
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Heading">{`Heading code`}</Link>
             {` on GitHub.`}
           </Cite>
           <Subheading>{`Subheading`}</Subheading>
@@ -166,7 +166,7 @@ const Page = () => (
           </Example>
           <Cite>
             {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Subheading">{`code`}</Link>
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Subheading">{`Subheading code`}</Link>
             {` on GitHub.`}
           </Cite>
           <Subheading>{`Paragraph`}</Subheading>
@@ -175,7 +175,7 @@ const Page = () => (
           </Example>
           <Cite>
             {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Paragraph">{`code`}</Link>
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Paragraph">{`Paragraph code`}</Link>
             {` on GitHub.`}
           </Cite>
           <Subheading>{`Cite`}</Subheading>
@@ -184,7 +184,7 @@ const Page = () => (
           </Example>
           <Cite>
             {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Cite">{`code`}</Link>
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Cite">{`Cite code`}</Link>
             {` on GitHub.`}
           </Cite>
           <Heading>{`Lists`}</Heading>
@@ -206,9 +206,9 @@ const Page = () => (
           </Example>
           <Cite>
             {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/BulletedListItem">{`code`}</Link>
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/BulletedListItem">{`Bulleted List code`}</Link>
             {` and `}
-            <Link href="https://github.com/barnardos/design-system/issues/325">{`research`}</Link>
+            <Link href="https://github.com/barnardos/design-system/issues/325">{`Bulleted List research`}</Link>
             {` on GitHub.`}
           </Cite>
           <Heading>{`Quotes`}</Heading>
@@ -224,9 +224,9 @@ const Page = () => (
           </Example>
           <Cite>
             {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/PullQuote">{`code`}</Link>
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/PullQuote">{`Pull Quote code`}</Link>
             {` and `}
-            <Link href="https://github.com/barnardos/design-system/issues/321">{`research`}</Link>
+            <Link href="https://github.com/barnardos/design-system/issues/321">{`Pull Quote research`}</Link>
             {` on GitHub.`}
           </Cite>
           <Subheading>{`Block Quote`}</Subheading>
@@ -247,9 +247,9 @@ const Page = () => (
           </Example>
           <Cite>
             {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/BlockQuote">{`code`}</Link>
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/BlockQuote">{`Block Quote code`}</Link>
             {` and `}
-            <Link href="https://github.com/barnardos/design-system/issues/252">{`research`}</Link>
+            <Link href="https://github.com/barnardos/design-system/issues/252">{`Block Quote research`}</Link>
             {` on GitHub.`}
           </Cite>
           <Subheading>{`Prominent Block Quote`}</Subheading>
@@ -262,9 +262,9 @@ const Page = () => (
           </Example>
           <Cite>
             {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/ProminentBlockQuote">{`code`}</Link>
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/ProminentBlockQuote">{`Prominent Block Quote code`}</Link>
             {` and `}
-            <Link href="https://github.com/barnardos/design-system/issues/321">{`research`}</Link>
+            <Link href="https://github.com/barnardos/design-system/issues/321">{`Prominent Block Quote research`}</Link>
             {` on GitHub.`}
           </Cite>
           <Heading>{`Caption`}</Heading>
@@ -284,9 +284,9 @@ const Page = () => (
           </Example>
           <Cite>
             {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Caption">{`code`}</Link>
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Caption">{`Caption code`}</Link>
             {` and `}
-            <Link href="https://github.com/barnardos/design-system/issues/300">{`research`}</Link>
+            <Link href="https://github.com/barnardos/design-system/issues/300">{`Caption research`}</Link>
             {` on GitHub.`}
           </Cite>
           <Heading>{`Fact`}</Heading>
@@ -307,9 +307,9 @@ const Page = () => (
           </Example>
           <Cite>
             {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Fact">{`code`}</Link>
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Fact">{`Fact code`}</Link>
             {` and `}
-            <Link href="https://github.com/barnardos/design-system/issues/212">{`research`}</Link>
+            <Link href="https://github.com/barnardos/design-system/issues/212">{`Fact research`}</Link>
             {` on GitHub.`}
           </Cite>
           <Heading>{`Section`}</Heading>
@@ -327,9 +327,9 @@ const Page = () => (
           </Example>
           <Cite>
             {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Section">{`code`}</Link>
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Section">{`Section code`}</Link>
             {` and `}
-            <Link href="https://github.com/barnardos/design-system/issues/462">{`research`}</Link>
+            <Link href="https://github.com/barnardos/design-system/issues/462">{`Section research`}</Link>
             {` on GitHub.`}
           </Cite>
         </Content>
