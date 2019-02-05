@@ -53,7 +53,7 @@ const Page = () => (
             size={48}
           />
           <Filter>
-            <Form>
+            <Form action="#">
               <RadioButtons
                 items={[
                   {

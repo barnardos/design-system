@@ -8,7 +8,7 @@ import "./index.css";
 const ProminentPromo = ({ children, colour, href, text, title, meta, src }) => {
   const className = `ProminentPromo ProminentPromo--${colour}`;
   return (
-    <a className={className} href={href}>
+    <div className={className}>
       {src && (
         <div className="ProminentPromo-media">
           <img alt="" className="ProminentPromo-image" src={src} />
@@ -22,7 +22,7 @@ const ProminentPromo = ({ children, colour, href, text, title, meta, src }) => {
           <ProminentLink colour={colour} href={href} isFull text={text} />
         </div>
       </div>
-    </a>
+    </div>
   );
 };
 

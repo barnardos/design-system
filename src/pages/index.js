@@ -6,6 +6,7 @@ import Link from "../components/Link";
 import Feedback from "../components/Feedback";
 import BulletedList from "../components/BulletedList";
 import ComponentsIndex from "../components/ComponentsIndex";
+import ComponentsIndexes from "../components/ComponentsIndexes";
 import DesignSystemLayout from "../components/DesignSystemLayout";
 import DesignSystemNavigation from "../components/DesignSystemNavigation";
 import DesignSystemNavigations from "../components/DesignSystemNavigations";
@@ -66,18 +67,19 @@ const Page = () => (
       <Section>
         <Heading>{`Components`}</Heading>
         <Paragraph>{`Following our standards to create reusable parts.`}</Paragraph>
-        <Promos>
-          <Promo to="/content/" title="Content">
-            {<ComponentsIndex items={contentItems} />}
-          </Promo>
-          <Promo to="/navigation/" title="Navigation">
-            {<ComponentsIndex items={navigationItems} />}
-          </Promo>
-          <Promo to="/forms/" title="Forms">
-            {" "}
-            {<ComponentsIndex items={formsItems} />}
-          </Promo>
-        </Promos>
+        <ComponentsIndexes>
+          <ComponentsIndex
+            items={contentItems}
+            to="/content/"
+            title="Content"
+          />
+          <ComponentsIndex
+            items={navigationItems}
+            to="/navigation/"
+            title="Navigation"
+          />
+          {<ComponentsIndex items={formsItems} to="/forms/" title="Forms" />}
+        </ComponentsIndexes>
       </Section>
       <Section>
         <Heading>{`Standards`}</Heading>

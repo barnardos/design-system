@@ -11,7 +11,7 @@ const Command = ({ onClick, children }) => (
 
 Command.propTypes = {
   children: PropTypes.node.isRequired,
-  onClick: PropTypes.func.isRequired
+  onClick: PropTypes.func
 };
 
 export default Command;

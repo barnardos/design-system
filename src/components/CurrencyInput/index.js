@@ -9,7 +9,7 @@ import Label from "../Label";
 import "./index.css";
 
 const CurrencyInput = ({ currency, error, hint, id, label, max, min }) => (
-  <Field errored={error}>
+  <Field errored={error ? true : false}>
     <Label htmlFor={id}>{label}</Label>
     {hint && <Hint>{hint}</Hint>}
     {error && <Error>{error}</Error>}

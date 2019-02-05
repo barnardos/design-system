@@ -6,9 +6,13 @@ import "./index.css";
 const Hero = ({ children, src }) => (
   <div
     className={`Hero ${src ? "Hero--withImage" : ""}`}
-    style={{
-      backgroundImage: `url(${src})`
-    }}
+    style={
+      src
+        ? {
+            backgroundImage: `url(${src})`
+          }
+        : {}
+    }
   >
     <div className="Hero-children">{children}</div>
   </div>
