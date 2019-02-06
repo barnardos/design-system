@@ -363,6 +363,7 @@ const Page = () => (
             <ListItem>{`only use it once on each page`}</ListItem>
             <ListItem>{`use a verb, for example save`}</ListItem>
             <ListItem>{`only use the Green colour`}</ListItem>
+            <ListItem>{`not use a disabled state`}</ListItem>
           </BulletedList>
           <Example>
             <Submit text="Send application" />
