@@ -2,7 +2,7 @@
 
 /** @define Field; */
 
-.Field-children {
+.Field {
   &:not(:first-child) {
     margin-top: 1rem;
   }
