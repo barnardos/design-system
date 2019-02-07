@@ -3,12 +3,28 @@
 /** @define BackLink; */
 
 .BackLink {
-  background: transparent url("./triangle.svg") left center no-repeat;
-  background-size: 0.75rem 0.75rem;
   color: color-mod(var(--green) shade(20%));
   display: inline-block;
   font: 300 var(--type-0) system-ui;
   padding-left: 1rem;
+  position: relative;
+
+  &::before {
+    text-decoration: underline; /* ie11 fix */
+  }
+
+  /* stylelint-disable-next-line no-duplicate-selectors */
+  &::before {
+    content: "‹";
+    display: inline-block;
+    font: 300 var(--type-6) proxima-nova, sans-serif;
+    left: 0;
+    line-height: 0;
+    margin-top: 0.125rem;
+    position: absolute;
+    text-decoration: none;
+    top: 0.5rem;
+  }
 
   &:hover {
     text-decoration: none;
