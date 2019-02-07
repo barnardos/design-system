@@ -53,7 +53,7 @@ const Page = () => (
         </BulletedList>
         <Cite>
           {`View `}
-          <Link href="https://github.com/barnardos/design-system/issues/168">{`research`}</Link>
+          <Link href="https://github.com/barnardos/design-system/issues/168">{`accessibility research`}</Link>
           {` on GitHub.`}
         </Cite>
         <Pagination

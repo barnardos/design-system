@@ -117,7 +117,7 @@ const Page = () => (
           </Figures>
           <Cite>
             {`View `}
-            <Link href="https://github.com/barnardos/design-system/issues/14">{`research`}</Link>
+            <Link href="https://github.com/barnardos/design-system/issues/14">{`colour research`}</Link>
             {` on GitHub.`}
           </Cite>
           <Pagination

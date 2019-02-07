@@ -63,7 +63,7 @@ const Page = () => (
         </Figures>
         <Cite>
           {`View `}
-          <Link href="https://github.com/barnardos/design-system/issues/404">{`research`}</Link>
+          <Link href="https://github.com/barnardos/design-system/issues/404">{`asking for names research`}</Link>
           {` on GitHub.`}
         </Cite>
       </Content>

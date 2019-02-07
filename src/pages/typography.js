@@ -78,7 +78,10 @@ const Page = () => (
           </BulletedList>
           <Paragraph>
             {`Typography is subject to the `}
-            <GatsbyLink to="/viewport-scale/">{`viewport scale`}</GatsbyLink>
+            <GatsbyLink
+              className="Link"
+              to="/viewport-scale/"
+            >{`viewport scale`}</GatsbyLink>
             {`.`}
           </Paragraph>
           <Heading>{`Type scale`}</Heading>
@@ -87,9 +90,9 @@ const Page = () => (
           </Figures>
           <Cite>
             {`View `}
-            <Link href="https://github.com/barnardos/design-system/blob/master/src/custom-properties.css#L5-L22">{`code`}</Link>
+            <Link href="https://github.com/barnardos/design-system/blob/master/src/custom-properties.css#L5-L22">{`type scale code`}</Link>
             {` and `}
-            <Link href="https://github.com/barnardos/design-system/issues/3">{`research`}</Link>
+            <Link href="https://github.com/barnardos/design-system/issues/3">{`type scale research`}</Link>
             {` on GitHub.`}
           </Cite>
           <Heading>{`Line height`}</Heading>
@@ -124,11 +127,6 @@ const Page = () => (
             </Link>
             {` generic font family.`}
           </Paragraph>
-          <Cite>
-            {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/custom-properties.css">{`code`}</Link>
-            {` on GitHub.`}
-          </Cite>
           <Pagination
             previous={{
               to: "/colour",

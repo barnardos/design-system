@@ -160,9 +160,9 @@ const Page = () => (
           </Example>
           <Cite>
             {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Link">{`code`}</Link>
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Link">{`Link code`}</Link>
             {` and `}
-            <Link href="https://github.com/barnardos/design-system/issues/47">{`research`}</Link>
+            <Link href="https://github.com/barnardos/design-system/issues/47">{`Link research`}</Link>
             {` on GitHub.`}
           </Cite>
           <Subheading>{`Signpost Link`}</Subheading>
@@ -180,9 +180,9 @@ const Page = () => (
           </Example>
           <Cite>
             {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/SignpostLink">{`code`}</Link>
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/SignpostLink">{`Signpost Link code`}</Link>
             {` and `}
-            <Link href="https://github.com/barnardos/design-system/issues/282">{`research`}</Link>
+            <Link href="https://github.com/barnardos/design-system/issues/282">{`Signpost Link research`}</Link>
             {` on GitHub.`}
           </Cite>
           <Subheading>{`Start Link`}</Subheading>
@@ -197,9 +197,9 @@ const Page = () => (
           </Example>
           <Cite>
             {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/StartLink">{`code`}</Link>
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/StartLink">{`Start Link code`}</Link>
             {` and `}
-            <Link href="https://github.com/barnardos/design-system/issues/167">{`research`}</Link>
+            <Link href="https://github.com/barnardos/design-system/issues/167">{`Start Link research`}</Link>
             {` on GitHub.`}
           </Cite>
           <Subheading>{`Donate Link`}</Subheading>
@@ -210,9 +210,9 @@ const Page = () => (
           </Example>
           <Cite>
             {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/DonateLink">{`code`}</Link>
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/DonateLink">{`Donate Link code`}</Link>
             {` and `}
-            <Link href="https://github.com/barnardos/design-system/issues/353">{`research`}</Link>
+            <Link href="https://github.com/barnardos/design-system/issues/353">{`Donate Link research`}</Link>
             {` on GitHub.`}
           </Cite>
           <Subheading>{`Prominent Link`}</Subheading>
@@ -241,9 +241,9 @@ const Page = () => (
           </Example>
           <Cite>
             {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/ProminentLink">{`code`}</Link>
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/ProminentLink">{`Prominent Link code`}</Link>
             {` and `}
-            <Link href="https://github.com/barnardos/design-system/issues/47">{`research`}</Link>
+            <Link href="https://github.com/barnardos/design-system/issues/47">{`Prominent Link research`}</Link>
             {` on GitHub.`}
           </Cite>
           <Subheading>{`Back Link`}</Subheading>
@@ -258,9 +258,9 @@ const Page = () => (
           </Example>
           <Cite>
             {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/BackLink">{`code`}</Link>
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/BackLink">{`Back Link code`}</Link>
             {` and `}
-            <Link href="https://github.com/barnardos/design-system/issues/166">{`research`}</Link>
+            <Link href="https://github.com/barnardos/design-system/issues/166">{`Back Link research`}</Link>
             {` on GitHub.`}
           </Cite>
           <Subheading>{`Skip Link`}</Subheading>
@@ -271,9 +271,9 @@ const Page = () => (
           </Example>
           <Cite>
             {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/SkipLink">{`code`}</Link>
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/SkipLink">{`Skip Link code`}</Link>
             {` and `}
-            <Link href="https://github.com/barnardos/design-system/issues/479">{`research`}</Link>
+            <Link href="https://github.com/barnardos/design-system/issues/479">{`Skip Link research`}</Link>
             {` on GitHub.`}
           </Cite>
           <Heading>{`Promos`}</Heading>
@@ -295,9 +295,9 @@ const Page = () => (
           </Example>
           <Cite>
             {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Promo">{`code`}</Link>
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Promo">{`Promo code`}</Link>
             {` and `}
-            <Link href="https://github.com/barnardos/design-system/issues/91">{`research`}</Link>
+            <Link href="https://github.com/barnardos/design-system/issues/91">{`Promo research`}</Link>
             {` on GitHub.`}
           </Cite>
           <Subheading>{`Prominent Promo`}</Subheading>
@@ -312,9 +312,9 @@ const Page = () => (
           </Example>
           <Cite>
             {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/ProminentPromo">{`code`}</Link>
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/ProminentPromo">{`Prominent Promo code`}</Link>
             {` and `}
-            <Link href="https://github.com/barnardos/design-system/issues/401">{`research`}</Link>
+            <Link href="https://github.com/barnardos/design-system/issues/401">{`Prominent Promo research`}</Link>
             {` on GitHub.`}
           </Cite>
           <Heading>{`Breadcrumbs`}</Heading>
@@ -344,9 +344,9 @@ const Page = () => (
           </Example>
           <Cite>
             {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Breadcrumbs">{`code`}</Link>
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Breadcrumbs">{`Breadcrumbs code`}</Link>
             {` and `}
-            <Link href="https://github.com/barnardos/design-system/issues/2">{`research`}</Link>
+            <Link href="https://github.com/barnardos/design-system/issues/2">{`Breadcrumbs research`}</Link>
             {` on GitHub.`}
           </Cite>
           <Heading>{`Pagination`}</Heading>
@@ -365,9 +365,9 @@ const Page = () => (
           </Example>
           <Cite>
             {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Pagination">{`code`}</Link>
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Pagination">{`Pagination code`}</Link>
             {` and `}
-            <Link href="https://github.com/barnardos/design-system/issues/250">{`research`}</Link>
+            <Link href="https://github.com/barnardos/design-system/issues/250">{`Pagination research`}</Link>
             {` on GitHub.`}
           </Cite>
           <Heading>{`Menu`}</Heading>
@@ -440,9 +440,9 @@ const Page = () => (
           </Example>
           <Cite>
             {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Menu">{`code`}</Link>
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Menu">{`Menu code`}</Link>
             {` and `}
-            <Link href="https://github.com/barnardos/design-system/issues/2">{`research`}</Link>
+            <Link href="https://github.com/barnardos/design-system/issues/2">{`Menu research`}</Link>
             {` on GitHub.`}
           </Cite>
           <Heading>{`Contents Menu`}</Heading>
@@ -475,9 +475,9 @@ const Page = () => (
           </Example>
           <Cite>
             {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/ContentsMenu">{`code`}</Link>
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/ContentsMenu">{`Contents Menu code`}</Link>
             {` and `}
-            <Link href="https://github.com/barnardos/design-system/issues/251">{`research`}</Link>
+            <Link href="https://github.com/barnardos/design-system/issues/251">{`Contents Menu research`}</Link>
             {` on GitHub.`}
           </Cite>
           <Heading>{`Search`}</Heading>
@@ -486,7 +486,7 @@ const Page = () => (
           </Example>
           <Cite>
             {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Search">{`code`}</Link>
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Search">{`Search code`}</Link>
             {` on GitHub.`}
           </Cite>
           <Heading>{`Header`}</Heading>
@@ -496,9 +496,9 @@ const Page = () => (
           </Example>
           <Cite>
             {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Header">{`code`}</Link>
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Header">{`Header code`}</Link>
             {` and `}
-            <Link href="https://github.com/barnardos/design-system/issues/2">{`research`}</Link>
+            <Link href="https://github.com/barnardos/design-system/issues/2">{`Header research`}</Link>
             {` on GitHub.`}
           </Cite>
           <Heading>{`Footer`}</Heading>
@@ -533,9 +533,9 @@ const Page = () => (
           </Example>
           <Cite>
             {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Footer">{`code`}</Link>
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Footer">{`Footer code`}</Link>
             {` and `}
-            <Link href="https://github.com/barnardos/design-system/issues/301">{`research`}</Link>
+            <Link href="https://github.com/barnardos/design-system/issues/301">{`Footer research`}</Link>
             {` on GitHub.`}
           </Cite>
         </Content>

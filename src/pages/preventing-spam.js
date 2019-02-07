@@ -39,7 +39,7 @@ const Page = () => (
         <Paragraph>{`Avoid using CAPTCHAs, as they cause usability an accessibility issues.`}</Paragraph>
         <Cite>
           {`View `}
-          <Link href="https://github.com/barnardos/design-system/issues/411">{`research`}</Link>
+          <Link href="https://github.com/barnardos/design-system/issues/411">{`preventing spam research`}</Link>
           {` on GitHub.`}
         </Cite>
       </Content>

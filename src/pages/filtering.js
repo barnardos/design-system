@@ -79,9 +79,9 @@ const Page = () => (
         </Example>
         <Cite>
           {`View `}
-          <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Filter">{`code`}</Link>
+          <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Filter">{`Filter code`}</Link>
           {` and `}
-          <Link href="https://github.com/barnardos/design-system/issues/79">{`research`}</Link>
+          <Link href="https://github.com/barnardos/design-system/issues/79">{`Filter research`}</Link>
           {` on GitHub.`}
         </Cite>
       </Content>
