@@ -16,6 +16,8 @@ import Topic from "../components/Topic";
 import Title from "../components/Title";
 import Main from "../components/Main";
 import Content from "../components/Content";
+import Cite from "../components/Cite";
+import Link from "../components/Link";
 
 const Page = () => (
   <DesignSystemLayout>
@@ -56,6 +58,11 @@ const Page = () => (
             </Demo>
           </Figure>
         </Figures>
+        <Cite>
+          {`View `}
+          <Link href="https://github.com/barnardos/design-system/issues/576">{`research`}</Link>
+          {` on GitHub.`}
+        </Cite>
         <Pagination
           previous={{
             to: "/typography",

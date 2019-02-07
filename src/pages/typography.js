@@ -88,6 +88,8 @@ const Page = () => (
           <Cite>
             {`View `}
             <Link href="https://github.com/barnardos/design-system/blob/master/src/custom-properties.css#L5-L22">{`code`}</Link>
+            {` and `}
+            <Link href="https://github.com/barnardos/design-system/issues/3">{`research`}</Link>
             {` on GitHub.`}
           </Cite>
           <Heading>{`Line height`}</Heading>
