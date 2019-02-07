@@ -38,11 +38,7 @@ const Menu = ({ items }) => (
 );
 
 Menu.propTypes = {
-  items: PropTypes.shape({
-    isActive: PropTypes.bool,
-    text: PropTypes.string.isRequired,
-    to: PropTypes.string.isRequired
-  })
+  items: PropTypes.array.isRequired
 };
 
 export default Menu;

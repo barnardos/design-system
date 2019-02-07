@@ -18,13 +18,13 @@ const Footer = ({ children, items }) => (
         ))}
       </ul>
     )}
-    <div className="Footer-children">{children}</div>
+    {children && <div className="Footer-children">{children}</div>}
     <p className="Footer-copyright">{`© Barnardo's`}</p>
   </footer>
 );
 
 Footer.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
   items: PropTypes.array
 };
 

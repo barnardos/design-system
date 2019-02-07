@@ -21,7 +21,7 @@ const ProminentBlockQuote = ({ children, colour, name, role }) => {
 ProminentBlockQuote.propTypes = {
   children: PropTypes.node.isRequired,
   colour: PropTypes.oneOf(["black", "orange", "pink", "purple", "teal"]),
-  name: PropTypes.string.isRequired,
+  name: PropTypes.string,
   role: PropTypes.string
 };
 

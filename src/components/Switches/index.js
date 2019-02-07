@@ -9,7 +9,7 @@ import Hint from "../Hint";
 import "./index.css";
 
 const Switches = ({ hint, id, items, legend, error, type, name }) => (
-  <Fieldset errored={error} legend={legend} id={id}>
+  <Fieldset errored={error ? true : false} legend={legend} id={id}>
     {hint && <Hint>{hint}</Hint>}
     {error && <Error>{error}</Error>}
     <div className="Switches-items">

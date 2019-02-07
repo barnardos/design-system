@@ -9,7 +9,7 @@ import Label from "../Label";
 import "./index.css";
 
 const DateInput = ({ hint, id, legend, error }) => (
-  <Fieldset errored={error} legend={legend} id={id}>
+  <Fieldset errored={error ? true : false} legend={legend} id={id}>
     {hint && <Hint>{hint}</Hint>}
     {error && <Error>{error}</Error>}
     <div className="DateInput-labelsAndInputs">

@@ -256,7 +256,6 @@ const Page = () => (
           <Paragraph>{`When using this component you should only use it once on each page.`}</Paragraph>
           <Example>
             <ProminentBlockQuote
-              colour="green"
               role="Young person"
               name="James Roberts"
             >{`By tackling the causes as well as the symptoms, we can create better outcomes for more children.`}</ProminentBlockQuote>

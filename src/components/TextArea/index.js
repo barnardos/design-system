@@ -9,7 +9,7 @@ import Label from "../Label";
 import "./index.css";
 
 const TextArea = ({ error, hint, id, label, size, verticalSize }) => (
-  <Field errored={error}>
+  <Field errored={error ? true : false}>
     <Label htmlFor={id}>{label}</Label>
     {hint && <Hint>{hint}</Hint>}
     {error && <Error>{error}</Error>}

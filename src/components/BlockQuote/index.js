@@ -26,7 +26,7 @@ const BlockQuote = ({ children, colour, name, role, src }) => {
 BlockQuote.propTypes = {
   children: PropTypes.node.isRequired,
   colour: PropTypes.oneOf(["orange", "pink", "purple", "teal"]),
-  name: PropTypes.string.isRequired,
+  name: PropTypes.string,
   role: PropTypes.string,
   src: PropTypes.string
 };
