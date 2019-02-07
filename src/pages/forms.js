@@ -155,7 +155,7 @@ const Page = () => (
               hint="So that we can send you the certificate."
               id="text-input-email-example"
               label="Email"
-              size={48}
+              size={40}
             />
           </Example>
           <Example>
@@ -177,7 +177,7 @@ const Page = () => (
             <TextArea
               id="text-area-example"
               label="What's on your mind?"
-              size={48}
+              size={40}
               verticalSize={4}
             />
           </Example>
@@ -333,7 +333,7 @@ const Page = () => (
                   <TextInput
                     id="conditional-input-singleline-text-input-example"
                     label="Email"
-                    size={48}
+                    size={40}
                   />
                 }
               />
@@ -401,7 +401,7 @@ const Page = () => (
             <TextInput
               id="text-input-validation-example"
               label="Name of the meal"
-              size={48}
+              size={40}
               error="Enter the name of the meal"
             />
           </Example>
