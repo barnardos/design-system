@@ -4,6 +4,7 @@ module.exports = () => ({
     require("postcss-preset-env")({
       autoprefixer: { grid: "autoplace" },
       features: {
+        "focus-within": true,
         "nesting-rules": true,
         "color-mod-function": {
           unresolved: "warn"

@@ -5,7 +5,6 @@ module.exports = {
     "^(?!.*\\.module\\.css$).*\\.css$": "<rootDir>/__mocks__/styleMock.js"
   },
   modulePathIgnorePatterns: ["<rootDir>/.cache", "<rootDir>/public"],
-  setupFiles: ["<rootDir>jest-setup.js"],
   testMatch: [
     "<rootDir>/src/**/__tests__/**/*.js",
     "<rootDir>/src/**/?(*.)test.js"
