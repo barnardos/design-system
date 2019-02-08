@@ -35,16 +35,5 @@ jobs:
           key: v2-dependencies-{{ checksum "package-lock.json" }}
 
       - run:
-          name: Build app and serve
-          command: npm run build-serve
-          background: true
-
-      - run:
-          shell: /bin/sh
-          command: |
-            wget --retry-connrefused --waitretry=1 --read-timeout=20 --timeout=15 -t 120 http://localhost:9000
-            :
-
-      - run:
           name: Run tests
-          command: NODE_ENV=CI npm test
+          command: npm test

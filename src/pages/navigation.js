@@ -482,7 +482,7 @@ const Page = () => (
           </Cite>
           <Heading>{`Search`}</Heading>
           <Example>
-            <Search />
+            <Search id="example-search" />
           </Example>
           <Cite>
             {`View `}

@@ -381,10 +381,11 @@ const Page = () => (
             <ErrorSummary
               items={[
                 {
-                  id: "submit-inputs-text-input-example",
+                  id: "text-input-validation-example",
                   error: "Enter the name of the meal"
                 },
                 {
+                  id: "radio-buttons-example-validation",
                   error: "Select whether the meal contains nuts or not"
                 }
               ]}
