@@ -49,7 +49,7 @@ const Page = () => (
         </Paragraph>
         <Cite>
           {`View `}
-          <Link href="https://github.com/barnardos/design-system/issues/183">{`future-proof code research`}</Link>
+          <Link href="https://github.com/barnardos/design-system/issues/585">{`future-proof code research`}</Link>
           {` on GitHub.`}
         </Cite>
         <Pagination
