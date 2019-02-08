@@ -1,8 +1,6 @@
 // Published components
-import ProminentLink from "./ProminentLink";
-import ProminentPromo from "./ProminentPromo";
-import ProminentBlockQuote from "./ProminentBlockQuote";
 import BackLink from "./BackLink";
+import BlockQuote from "./BlockQuote";
 import Breadcrumbs from "./Breadcrumbs";
 import BulletedList from "./BulletedList";
 import Caption from "./Caption";
@@ -39,16 +37,19 @@ import Main from "./Main";
 import Menu from "./Menu";
 import Pagination from "./Pagination";
 import Paragraph from "./Paragraph";
+import ProminentBlockQuote from "./ProminentBlockQuote";
+import ProminentLink from "./ProminentLink";
+import ProminentPromo from "./ProminentPromo";
 import Promo from "./Promo";
 import Promos from "./Promos";
 import PullQuote from "./PullQuote";
-import BlockQuote from "./BlockQuote";
 import RadioButtons from "./RadioButtons";
 import Search from "./Search";
 import Section from "./Section";
 import SignpostLink from "./SignpostLink";
 import SignpostLinks from "./SignpostLinks";
 import Site from "./Site";
+import SkipLink from "./SkipLink";
 import StartLink from "./StartLink";
 import Subheading from "./Subheading";
 import Submit from "./Submit";
@@ -58,10 +59,8 @@ import Title from "./Title";
 import Topic from "./Topic";
 
 export {
-  ProminentLink,
-  ProminentPromo,
-  ProminentBlockQuote,
   BackLink,
+  BlockQuote,
   Breadcrumbs,
   BulletedList,
   Caption,
@@ -98,16 +97,19 @@ export {
   Menu,
   Pagination,
   Paragraph,
+  ProminentBlockQuote,
+  ProminentLink,
+  ProminentPromo,
   Promo,
   Promos,
   PullQuote,
-  BlockQuote,
   RadioButtons,
   Search,
   Section,
   SignpostLink,
   SignpostLinks,
   Site,
+  SkipLink,
   StartLink,
   Subheading,
   Submit,
