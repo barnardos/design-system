@@ -3,15 +3,12 @@ import React from "react";
 
 import "./index.css";
 
-const Fact = ({ children, colour, label }) => {
-  const className = `Fact ${colour ? `Fact--${colour}` : ""}`;
-  return (
-    <div className={className}>
-      <div className="Fact-children">{children}</div>
-      <p className="Fact-label">{label}</p>
-    </div>
-  );
-};
+const Fact = ({ children, colour, label }) => (
+  <div className={`Fact ${colour ? `Fact--${colour}` : ""}`}>
+    <div className="Fact-children">{children}</div>
+    <p className="Fact-label">{label}</p>
+  </div>
+);
 
 Fact.propTypes = {
   children: PropTypes.node.isRequired,

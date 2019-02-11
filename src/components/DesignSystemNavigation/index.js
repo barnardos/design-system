@@ -4,33 +4,31 @@ import React from "react";
 
 import "./index.css";
 
-const DesignSystemNavigation = ({ description, items, title, isFlex }) => {
-  const className = `DesignSystemNavigation ${
-    isFlex ? "DesignSystemNavigation--flex" : ""
-  }`;
-
-  return (
-    <nav className={className}>
-      {title && <h3 className="DesignSystemNavigation-title">{title}</h3>}
-      {description && (
-        <p className="DesignSystemNavigation-description">{description}</p>
-      )}
-      <ul className="DesignSystemNavigation-items">
-        {items.map(({ text, to }, index) => (
-          <li className="DesignSystemNavigation-item" key={index}>
-            <GatsbyLink
-              className="DesignSystemNavigation-link"
-              data-test-link={text}
-              to={to}
-            >
-              {text}
-            </GatsbyLink>
-          </li>
-        ))}
-      </ul>
-    </nav>
-  );
-};
+const DesignSystemNavigation = ({ description, items, title, isFlex }) => (
+  <nav
+    className={`DesignSystemNavigation ${
+      isFlex ? "DesignSystemNavigation--flex" : ""
+    }`}
+  >
+    {title && <h3 className="DesignSystemNavigation-title">{title}</h3>}
+    {description && (
+      <p className="DesignSystemNavigation-description">{description}</p>
+    )}
+    <ul className="DesignSystemNavigation-items">
+      {items.map(({ text, to }, index) => (
+        <li className="DesignSystemNavigation-item" key={index}>
+          <GatsbyLink
+            className="DesignSystemNavigation-link"
+            data-test-link={text}
+            to={to}
+          >
+            {text}
+          </GatsbyLink>
+        </li>
+      ))}
+    </ul>
+  </nav>
+);
 
 DesignSystemNavigation.propTypes = {
   items: PropTypes.array.isRequired,

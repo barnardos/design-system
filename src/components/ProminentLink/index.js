@@ -3,16 +3,16 @@ import React from "react";
 
 import "./index.css";
 
-const ProminentLink = ({ colour, href, isFull, text }) => {
-  const className = `ProminentLink ProminentLink--${colour} ${
-    isFull ? "ProminentLink--full" : ""
-  }`;
-  return (
-    <a className={className} href={href}>
-      {text}
-    </a>
-  );
-};
+const ProminentLink = ({ colour, href, isFull, text }) => (
+  <a
+    className={`ProminentLink ProminentLink--${colour} ${
+      isFull ? "ProminentLink--full" : ""
+    }`}
+    href={href}
+  >
+    {text}
+  </a>
+);
 
 ProminentLink.propTypes = {
   colour: PropTypes.oneOf(["black", "orange", "pink", "purple", "teal"]),
