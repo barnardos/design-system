@@ -4,16 +4,16 @@ import React from "react";
 
 import "./index.css";
 
-const Link = ({ index, level, text, to }) => {
-  const className = `ContentsMenu-item ContentsMenu-item--level${level}`;
-  return (
-    <li className={className} key={index}>
-      <GatsbyLink className="ContentsMenu-link" data-test-link={text} to={to}>
-        {text}
-      </GatsbyLink>
-    </li>
-  );
-};
+const Link = ({ index, level, text, to }) => (
+  <li
+    className={`ContentsMenu-item ContentsMenu-item--level${level}`}
+    key={index}
+  >
+    <GatsbyLink className="ContentsMenu-link" data-test-link={text} to={to}>
+      {text}
+    </GatsbyLink>
+  </li>
+);
 
 const ContentsMenu = ({ items }) => (
   <nav className="ContentsMenu">
