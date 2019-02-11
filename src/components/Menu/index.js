@@ -1,30 +1,31 @@
 import PropTypes from "prop-types";
-import { Link } from "gatsby";
 import React from "react";
+
+import Link from "../Link";
 
 import "./index.css";
 
 const Menu = ({ items }) => (
   <nav className="Menu">
     <ul className="Menu-items">
-      {items.map(({ isActive, text, to, items }, index) => (
+      {items.map(({ active, text, href, items }, index) => (
         <li
-          className={`Menu-item ${isActive ? "Menu-item--active" : ""}`}
+          className={`Menu-item ${active ? "Menu-item--active" : ""}`}
           key={index}
         >
-          <Link to={to} className="Menu-link">
+          <Link href={href} className="Menu-link">
             {text}
           </Link>
           {items && (
             <ul className="Menu-secondaryItems">
-              {items.map(({ isActive, text, to }, index) => (
+              {items.map(({ active, text, href }, index) => (
                 <li
                   className={`Menu-secondaryItem ${
-                    isActive ? "Menu-secondaryItem--active" : ""
+                    active ? "Menu-secondaryItem--active" : ""
                   }`}
                   key={index}
                 >
-                  <Link to={to} className="Menu-secondaryLink">
+                  <Link href={href} className="Menu-secondaryLink">
                     {text}
                   </Link>
                 </li>
@@ -38,7 +39,20 @@ const Menu = ({ items }) => (
 );
 
 Menu.propTypes = {
-  items: PropTypes.array.isRequired
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      active: PropTypes.bool,
+      href: PropTypes.string.isRequired,
+      text: PropTypes.string.isRequired,
+      items: PropTypes.arrayOf(
+        PropTypes.shape({
+          active: PropTypes.bool,
+          href: PropTypes.string.isRequired,
+          text: PropTypes.string.isRequired
+        })
+      )
+    })
+  ).isRequired
 };
 
 export default Menu;

@@ -17,8 +17,7 @@ const Site = ({ children }) => (
 );
 
 Site.propTypes = {
-  children: PropTypes.node,
-  footer: PropTypes.node
+  children: PropTypes.node
 };
 
 export default Site;

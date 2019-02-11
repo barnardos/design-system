@@ -25,7 +25,12 @@ const Footer = ({ children, items }) => (
 
 Footer.propTypes = {
   children: PropTypes.node,
-  items: PropTypes.array
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      href: PropTypes.string.isRequired,
+      text: PropTypes.string.isRequired
+    })
+  )
 };
 
 export default Footer;

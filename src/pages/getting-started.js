@@ -21,7 +21,7 @@ const Page = () => (
       items={[
         {
           text: "Home",
-          to: "/"
+          href: "/"
         }
       ]}
     />
@@ -46,7 +46,7 @@ const Page = () => (
           {`If something isn't in the Design System, don't let it stop you. Design a solution, test it and use it in your product. If you think it solves a common problem let the Design System team know.`}
         </Paragraph>
         <SignpostLinks>
-          <SignpostLink to="/#principles">{`View our principles`}</SignpostLink>
+          <SignpostLink href="/#principles">{`View our principles`}</SignpostLink>
           <SignpostLink href="https://github.com/barnardos/design-system/">{`Installation guide on GitHub (technical)`}</SignpostLink>
         </SignpostLinks>
       </Content>

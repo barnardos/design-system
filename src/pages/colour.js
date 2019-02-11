@@ -33,7 +33,7 @@ const Page = () => (
       items={[
         {
           text: "Home",
-          to: "/"
+          href: "/"
         }
       ]}
     />
@@ -48,17 +48,17 @@ const Page = () => (
             {
               level: 1,
               text: "Brand colours",
-              to: "/colour/#brand-colours"
+              href: "/colour/#brand-colours"
             },
             {
               level: 1,
               text: "Colour scale",
-              to: "/colour/#colour-scale"
+              href: "/colour/#colour-scale"
             },
             {
               level: 1,
               text: "Light grey",
-              to: "/colour/#light-grey"
+              href: "/colour/#light-grey"
             }
           ]}
         />
@@ -122,7 +122,7 @@ const Page = () => (
           </Cite>
           <Pagination
             next={{
-              to: "/typography",
+              href: "/typography",
               label: "Typography"
             }}
           />

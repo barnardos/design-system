@@ -1,12 +1,14 @@
 import PropTypes from "prop-types";
 import React from "react";
 
+import Link from "../Link";
+
 import "./index.css";
 
 const BackLink = ({ href }) => (
-  <a className="BackLink" href={href}>
+  <Link className="BackLink" href={href}>
     {`Back`}
-  </a>
+  </Link>
 );
 
 BackLink.propTypes = {

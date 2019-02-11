@@ -1,17 +1,18 @@
-import { Link as GatsbyLink } from "gatsby";
 import PropTypes from "prop-types";
 import React from "react";
+
+import Link from "../Link";
 
 import "./index.css";
 
 const Breadcrumbs = ({ items }) => (
   <nav className="Breadcrumbs">
     <ul className="Breadcrumbs-items">
-      {items.map(({ text, to }, index) => (
+      {items.map(({ text, href }, index) => (
         <li className="Breadcrumbs-item" key={index}>
-          <GatsbyLink className="Breadcrumbs-link" to={to}>
+          <Link className="Breadcrumbs-link" href={href}>
             {text}
-          </GatsbyLink>
+          </Link>
         </li>
       ))}
     </ul>
@@ -19,7 +20,12 @@ const Breadcrumbs = ({ items }) => (
 );
 
 Breadcrumbs.propTypes = {
-  items: PropTypes.array.isRequired
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      href: PropTypes.string.isRequired,
+      text: PropTypes.string.isRequired
+    })
+  ).isRequired
 };
 
 export default Breadcrumbs;

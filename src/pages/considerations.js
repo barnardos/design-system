@@ -1,4 +1,3 @@
-import { Link as GatsbyLink } from "gatsby";
 import Helmet from "react-helmet";
 import React from "react";
 
@@ -24,7 +23,7 @@ const Page = () => (
       items={[
         {
           text: "Home",
-          to: "/"
+          href: "/"
         }
       ]}
     />
@@ -34,10 +33,7 @@ const Page = () => (
         <Title>{`Considerations`}</Title>
         <Paragraph>
           {`When considering accessibility, follow the principle `}
-          <GatsbyLink
-            className="Link"
-            to="/principles/#be-inclusive"
-          >{`'be inclusive'`}</GatsbyLink>
+          <Link href="/principles/#be-inclusive">{`'be inclusive'`}</Link>
           {`.`}
         </Paragraph>
         <Paragraph>{`You should:`}</Paragraph>
@@ -58,7 +54,7 @@ const Page = () => (
         </Cite>
         <Pagination
           next={{
-            to: "/viewport-scale",
+            href: "/viewport-scale",
             label: "Viewport scale"
           }}
         />

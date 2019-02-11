@@ -1,23 +1,25 @@
 import PropTypes from "prop-types";
 import React from "react";
 
+import Link from "../Link";
+
 import "./index.css";
 
-const ProminentLink = ({ colour, href, isFull, text }) => (
-  <a
+const ProminentLink = ({ colour, href, full, text }) => (
+  <Link
     className={`ProminentLink ProminentLink--${colour} ${
-      isFull ? "ProminentLink--full" : ""
+      full ? "ProminentLink--full" : ""
     }`}
     href={href}
   >
     {text}
-  </a>
+  </Link>
 );
 
 ProminentLink.propTypes = {
   colour: PropTypes.oneOf(["black", "orange", "pink", "purple", "teal"]),
   href: PropTypes.string.isRequired,
-  isFull: PropTypes.bool,
+  full: PropTypes.bool,
   text: PropTypes.string.isRequired
 };
 

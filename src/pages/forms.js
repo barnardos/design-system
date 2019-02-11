@@ -36,77 +36,77 @@ export const indexItems = [
   {
     level: 1,
     text: "Text inputs",
-    to: "/forms/#text-inputs"
+    href: "/forms/#text-inputs"
   },
   {
     level: 2,
     text: "Text Input",
-    to: "/forms/#text-input"
+    href: "/forms/#text-input"
   },
   {
     level: 2,
     text: "Text Area",
-    to: "/forms/#text-area"
+    href: "/forms/#text-area"
   },
   {
     level: 2,
     text: "Currency Input",
-    to: "/forms/#currency-input"
+    href: "/forms/#currency-input"
   },
   {
     level: 2,
     text: "Date Input",
-    to: "/forms/#date-input"
+    href: "/forms/#date-input"
   },
   {
     level: 1,
     text: "Choices",
-    to: "/forms/#choices"
+    href: "/forms/#choices"
   },
   {
     level: 2,
     text: "Check Box",
-    to: "/forms/#check-box"
+    href: "/forms/#check-box"
   },
   {
     level: 2,
     text: "Check Boxes",
-    to: "/forms/#check-boxes"
+    href: "/forms/#check-boxes"
   },
   {
     level: 2,
     text: "Radio Buttons",
-    to: "/forms/#radio-buttons"
+    href: "/forms/#radio-buttons"
   },
   {
     level: 2,
     text: "Conditional",
-    to: "/forms/#conditional"
+    href: "/forms/#conditional"
   },
   {
     level: 1,
     text: "Command",
-    to: "/forms/#command"
+    href: "/forms/#command"
   },
   {
     level: 1,
     text: "Submit",
-    to: "/forms/#submit"
+    href: "/forms/#submit"
   },
   {
     level: 1,
     text: "Validation",
-    to: "/forms/#validation"
+    href: "/forms/#validation"
   },
   {
     level: 2,
     text: "Error Summary",
-    to: "/forms/#error-summary"
+    href: "/forms/#error-summary"
   },
   {
     level: 2,
     text: "Errors",
-    to: "/forms/#errors"
+    href: "/forms/#errors"
   }
 ];
 
@@ -119,7 +119,7 @@ const Page = () => (
       items={[
         {
           text: "Home",
-          to: "/"
+          href: "/"
         }
       ]}
     />
@@ -155,7 +155,7 @@ const Page = () => (
               hint="So that we can send you the certificate."
               id="text-input-email-example"
               label="Email"
-              size={40}
+              size={48}
             />
           </Example>
           <Example>
@@ -177,7 +177,7 @@ const Page = () => (
             <TextArea
               id="text-area-example"
               label="What's on your mind?"
-              size={40}
+              size={48}
               verticalSize={4}
             />
           </Example>
@@ -333,7 +333,7 @@ const Page = () => (
                   <TextInput
                     id="conditional-input-singleline-text-input-example"
                     label="Email"
-                    size={40}
+                    size={48}
                   />
                 }
               />
@@ -403,7 +403,7 @@ const Page = () => (
             <TextInput
               id="text-input-validation-example"
               label="Name of the meal"
-              size={40}
+              size={48}
               error="Enter the name of the meal"
             />
           </Example>

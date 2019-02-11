@@ -1,17 +1,15 @@
-import { Link as GatsbyLink } from "gatsby";
 import PropTypes from "prop-types";
 import React from "react";
 
+import Link from "../Link";
+
 import "./index.css";
 
-const Link = ({ index, level, text, to }) => (
-  <li
-    className={`ContentsMenu-item ContentsMenu-item--level${level}`}
-    key={index}
-  >
-    <GatsbyLink className="ContentsMenu-link" data-test-link={text} to={to}>
+const ContentsMenuItem = ({ level, text, href }) => (
+  <li className={`ContentsMenu-item ContentsMenu-item--level${level}`}>
+    <Link className="ContentsMenu-link" data-test-link={text} href={href}>
       {text}
-    </GatsbyLink>
+    </Link>
   </li>
 );
 
@@ -19,18 +17,17 @@ const ContentsMenu = ({ items }) => (
   <nav className="ContentsMenu">
     <p className="ContentsMenu-title">{`In this section:`}</p>
     <ul className="ContentsMenu-items">
-      {items.map(({ level, text, to }, index) =>
-        Link({ index, level, text, to })
-      )}
+      {items.map((item, index) => (
+        <ContentsMenuItem key={index} {...item} />
+      ))}
     </ul>
   </nav>
 );
 
-Link.propTypes = {
-  index: PropTypes.number.isRequired,
-  level: PropTypes.string.isRequired,
+ContentsMenuItem.propTypes = {
+  level: PropTypes.number.isRequired,
   text: PropTypes.string.isRequired,
-  to: PropTypes.string.isRequired
+  href: PropTypes.string.isRequired
 };
 
 ContentsMenu.propTypes = {

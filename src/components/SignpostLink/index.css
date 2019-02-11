@@ -3,12 +3,6 @@
 /** @define SignpostLink; */
 
 .SignpostLink {
-  &:not(:first-child) {
-    margin-top: 0.5rem;
-  }
-}
-
-.SignpostLink-link {
   color: var(--green);
   display: inline-block;
   font: 600 var(--type-2) proxima-nova, sans-serif;
@@ -43,7 +37,7 @@
   }
 }
 
-.SignpostLink-link--inverted {
+.SignpostLink--inverted {
   color: var(--white);
 
   &:visited {

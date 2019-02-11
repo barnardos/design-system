@@ -1,24 +1,25 @@
-import { Link as GatsbyLink } from "gatsby";
 import PropTypes from "prop-types";
 import React from "react";
 
+import Link from "../Link";
+
 import "./index.css";
 
-const ComponentsIndex = ({ items, title, to }) => (
+const ComponentsIndex = ({ href, items, title }) => (
   <div className="ComponentsIndex">
     <p className="ComponentsIndex-title">
-      <GatsbyLink className="ComponentsIndex-titleLink" to={to}>
+      <Link className="ComponentsIndex-titleLink" href={href}>
         {title}
-      </GatsbyLink>
+      </Link>
     </p>
     <ul className="ComponentsIndex-items">
       {items
         .filter(item => item.level === 1)
-        .map(({ text, to }, index) => (
+        .map(({ href, text }, index) => (
           <li className="ComponentsIndex-item" key={index}>
-            <GatsbyLink className="ComponentsIndex-link" to={to}>
+            <Link className="ComponentsIndex-link" href={href}>
               {text}
-            </GatsbyLink>
+            </Link>
           </li>
         ))}
     </ul>
@@ -28,7 +29,7 @@ const ComponentsIndex = ({ items, title, to }) => (
 ComponentsIndex.propTypes = {
   items: PropTypes.array.isRequired,
   title: PropTypes.string.isRequired,
-  to: PropTypes.string.isRequired
+  href: PropTypes.string.isRequired
 };
 
 export default ComponentsIndex;

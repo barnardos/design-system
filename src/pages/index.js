@@ -1,4 +1,3 @@
-import { Link as GatsbyLink } from "gatsby";
 import Helmet from "react-helmet";
 import React from "react";
 
@@ -39,7 +38,7 @@ const Page = () => (
         <SignpostLinks>
           <SignpostLink
             inverted
-            to="/getting-started/"
+            href="/getting-started/"
           >{`Getting started`}</SignpostLink>
         </SignpostLinks>
       </Hero>
@@ -51,15 +50,15 @@ const Page = () => (
           items={[
             {
               text: "Asking for names",
-              to: "/asking-for-names/"
+              href: "/asking-for-names/"
             },
             {
               text: "Filtering",
-              to: "/filtering/"
+              href: "/filtering/"
             },
             {
               text: "Preventing spam",
-              to: "/preventing-spam/"
+              href: "/preventing-spam/"
             }
           ]}
         />
@@ -70,15 +69,15 @@ const Page = () => (
         <ComponentsIndexes>
           <ComponentsIndex
             items={contentItems}
-            to="/content/"
+            href="/content/"
             title="Content"
           />
           <ComponentsIndex
             items={navigationItems}
-            to="/navigation/"
+            href="/navigation/"
             title="Navigation"
           />
-          {<ComponentsIndex items={formsItems} to="/forms/" title="Forms" />}
+          {<ComponentsIndex items={formsItems} href="/forms/" title="Forms" />}
         </ComponentsIndexes>
       </Section>
       <Section>
@@ -91,11 +90,11 @@ const Page = () => (
               items: [
                 {
                   text: "Considerations",
-                  to: "/considerations/"
+                  href: "/considerations/"
                 },
                 {
                   text: "Viewport scale",
-                  to: "/viewport-scale/"
+                  href: "/viewport-scale/"
                 }
               ]
             },
@@ -104,15 +103,15 @@ const Page = () => (
               items: [
                 {
                   text: "Colour",
-                  to: "/colour/"
+                  href: "/colour/"
                 },
                 {
                   text: "Typography",
-                  to: "/typography/"
+                  href: "/typography/"
                 },
                 {
                   text: "Spacing and layout",
-                  to: "/spacing-and-layout/"
+                  href: "/spacing-and-layout/"
                 }
               ]
             },
@@ -121,11 +120,11 @@ const Page = () => (
               items: [
                 {
                   text: "Style",
-                  to: "/style/"
+                  href: "/style/"
                 },
                 {
                   text: "Spelling",
-                  to: "/spelling/"
+                  href: "/spelling/"
                 }
               ]
             },
@@ -134,11 +133,11 @@ const Page = () => (
               items: [
                 {
                   text: "Code quality",
-                  to: "/code-quality/"
+                  href: "/code-quality/"
                 },
                 {
                   text: "Future-proof code",
-                  to: "/future-proof-code/"
+                  href: "/future-proof-code/"
                 }
               ]
             }
@@ -149,27 +148,27 @@ const Page = () => (
         <Heading>{`Principles`}</Heading>
         <Promos>
           <Promo
-            to="/principles/#start-small"
+            href="/principles/#start-small"
             title="Start small"
           >{`Put work in front of real people early and often.`}</Promo>
           <Promo
-            to="/principles/#be-inclusive"
+            href="/principles/#be-inclusive"
             title="Be inclusive"
           >{`Strive to support all who need the product.`}</Promo>
           <Promo
-            to="/principles/#keep-it-simple"
+            href="/principles/#keep-it-simple"
             title="Keep it simple"
           >{`Do the hard work so the user doesn't have to.`}</Promo>
           <Promo
-            to="/principles/#embrace-digital"
+            href="/principles/#embrace-digital"
             title="Embrace digital"
           >{`Make the most of the medium's benefits.`}</Promo>
           <Promo
-            to="/principles/#be-consistent"
+            href="/principles/#be-consistent"
             title="Be consistent"
           >{`Build trust and familiarity across products.`}</Promo>
           <Promo
-            to="/principles/#be-open"
+            href="/principles/#be-open"
             title="Be open"
           >{`Be part of the open digital community.`}</Promo>
         </Promos>
@@ -178,23 +177,13 @@ const Page = () => (
         <Heading>{`Assets`}</Heading>
         <BulletedList>
           <ListItem>
-            <GatsbyLink
-              to="/brand-assets/"
-              className="Link"
-            >{`Brand assets`}</GatsbyLink>
-          </ListItem>
-
-          <ListItem>
-            <GatsbyLink
-              to="/film-and-photography/"
-              className="Link"
-            >{`Film and photography`}</GatsbyLink>
+            <Link href="/brand-assets/">{`Brand assets`}</Link>
           </ListItem>
           <ListItem>
-            <GatsbyLink
-              to="/iconography/"
-              className="Link"
-            >{`Iconography`}</GatsbyLink>
+            <Link href="/film-and-photography/">{`Film and photography`}</Link>
+          </ListItem>
+          <ListItem>
+            <Link href="/iconography/">{`Iconography`}</Link>
           </ListItem>
         </BulletedList>
       </Section>

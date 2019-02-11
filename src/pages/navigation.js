@@ -36,92 +36,92 @@ export const indexItems = [
   {
     level: 1,
     text: "Links",
-    to: "/navigation/#links"
+    href: "/navigation/#links"
   },
   {
     level: 2,
     text: "Link",
-    to: "/navigation/#link"
+    href: "/navigation/#link"
   },
   {
     level: 2,
     text: "Signpost Link",
-    to: "/navigation/#signpost-link"
+    href: "/navigation/#signpost-link"
   },
   {
     level: 2,
     text: "Start Link",
-    to: "/navigation/#start-link"
+    href: "/navigation/#start-link"
   },
   {
     level: 2,
     text: "Donate Link",
-    to: "/navigation/#donate-link"
+    href: "/navigation/#donate-link"
   },
   {
     level: 2,
     text: "Prominent Link",
-    to: "/navigation/#prominent-link"
+    href: "/navigation/#prominent-link"
   },
   {
     level: 2,
     text: "Back Link",
-    to: "/navigation/#back-link"
+    href: "/navigation/#back-link"
   },
   {
     level: 2,
     text: "Skip Link",
-    to: "/navigation/#skip-link"
+    href: "/navigation/#skip-link"
   },
   {
     level: 1,
     text: "Promos",
-    to: "/navigation/#promos"
+    href: "/navigation/#promos"
   },
   {
     level: 2,
     text: "Promo",
-    to: "/navigation/#promo"
+    href: "/navigation/#promo"
   },
   {
     level: 2,
     text: "Prominent Promo",
-    to: "/navigation/#prominent-promo"
+    href: "/navigation/#prominent-promo"
   },
   {
     level: 1,
     text: "Breadcrumbs",
-    to: "/navigation/#breadcrumbs"
+    href: "/navigation/#breadcrumbs"
   },
   {
     level: 1,
     text: "Pagination",
-    to: "/navigation/#pagination"
+    href: "/navigation/#pagination"
   },
   {
     level: 1,
     text: "Menu",
-    to: "/navigation/#menu"
+    href: "/navigation/#menu"
   },
   {
     level: 1,
     text: "Contents Menu",
-    to: "/navigation/#contents-menu"
+    href: "/navigation/#contents-menu"
   },
   {
     level: 1,
     text: "Search",
-    to: "/navigation/#search"
+    href: "/navigation/#search"
   },
   {
     level: 1,
     text: "Header",
-    to: "/navigation/#header"
+    href: "/navigation/#header"
   },
   {
     level: 1,
     text: "Footer",
-    to: "/navigation/#footer"
+    href: "/navigation/#footer"
   }
 ];
 
@@ -134,7 +134,7 @@ const Page = () => (
       items={[
         {
           text: "Home",
-          to: "/"
+          href: "/"
         }
       ]}
     />
@@ -153,7 +153,7 @@ const Page = () => (
             <Paragraph>
               {`This is a paragraph, and it includes even more text to give a good
             representation of a more `}
-              <Link href="http://example.org">{`average length paragraph`}</Link>
+              <Link href="#">{`average length paragraph`}</Link>
               {`.
             That way you can see more than one line wrapping.`}
             </Paragraph>
@@ -176,7 +176,7 @@ const Page = () => (
             <ListItem>{`not use terms like "Read more" and "Find out more"`}</ListItem>
           </BulletedList>
           <Example>
-            <SignpostLink href="http://example.org">{`Search and apply for jobs`}</SignpostLink>
+            <SignpostLink href="#">{`Search and apply for jobs`}</SignpostLink>
           </Example>
           <Cite>
             {`View `}
@@ -193,7 +193,7 @@ const Page = () => (
             <ListItem>{`only use the Green colour`}</ListItem>
           </BulletedList>
           <Example>
-            <StartLink href="http://example.org" />
+            <StartLink href="#" />
           </Example>
           <Cite>
             {`View `}
@@ -206,7 +206,7 @@ const Page = () => (
           <Paragraph>{`Use this component to link to the service to donate.`}</Paragraph>
           <Paragraph>{`When using this component you should only use the Green colour.`}</Paragraph>
           <Example>
-            <DonateLink href="http://example.org" />
+            <DonateLink href="#" />
           </Example>
           <Cite>
             {`View `}
@@ -226,18 +226,10 @@ const Page = () => (
             <ListItem>{`not use terms like "Read more" and "Find out more"`}</ListItem>
           </BulletedList>
           <Example>
-            <ProminentLink
-              colour="pink"
-              href="http://example.org"
-              text="Volunteer with us"
-            />
+            <ProminentLink colour="pink" href="#" text="Volunteer with us" />
           </Example>
           <Example>
-            <ProminentLink
-              colour="black"
-              href="http://example.org"
-              text="Shop online"
-            />
+            <ProminentLink colour="black" href="#" text="Shop online" />
           </Example>
           <Cite>
             {`View `}
@@ -254,7 +246,7 @@ const Page = () => (
             <ListItem>{`place it as the first interactive element`}</ListItem>
           </BulletedList>
           <Example>
-            <BackLink href="http://example.org" />
+            <BackLink href="#" />
           </Example>
           <Cite>
             {`View `}
@@ -281,14 +273,14 @@ const Page = () => (
           <Subheading>{`Promo`}</Subheading>
           <Example>
             <Promo
-              href="http://example.org"
+              href="#"
               meta="20 October 2019"
               title="Barnardo’s celebrates National Adoption Week"
             >{`This year’s campaign calls on people to welcome an older child into their family.`}</Promo>
           </Example>
           <Example>
             <Promo
-              href="http://example.org"
+              href="#"
               src="https://donate.barnardos.org.uk/sites/default/files/styles/b_lg/public/uploads/IMG_8550.jpg"
               title="Other ways to donate"
             >{`Find out ways to help support vulnerable children including making one-off or regular donations.`}</Promo>
@@ -304,7 +296,7 @@ const Page = () => (
           <Example>
             <ProminentPromo
               colour="pink"
-              href="http://example.org"
+              href="#"
               meta="14 April 2019"
               title="Brighton Marathon"
               text="Sign up"
@@ -329,15 +321,15 @@ const Page = () => (
               items={[
                 {
                   text: "Home",
-                  to: "/"
+                  href: "#"
                 },
                 {
                   text: "What we do",
-                  to: "/"
+                  href: "#"
                 },
                 {
                   text: "Supporting young people",
-                  to: "/"
+                  href: "#"
                 }
               ]}
             />
@@ -354,11 +346,11 @@ const Page = () => (
           <Example>
             <Pagination
               previous={{
-                to: "/example/pagination/previous",
+                href: "#",
                 label: "Overview"
               }}
               next={{
-                to: "/example/pagination/next",
+                href: "#",
                 label: "Register as a foster carer"
               }}
             />
@@ -388,49 +380,49 @@ const Page = () => (
                 items={[
                   {
                     text: "About us",
-                    to: "/",
+                    href: "#",
                     items: [
                       {
                         text: "Our history",
-                        to: "/"
+                        href: "#"
                       },
                       {
                         text: "Annual report",
-                        to: "/"
+                        href: "#"
                       },
                       {
                         text: "How we're funded",
-                        to: "/"
+                        href: "#"
                       }
                     ]
                   },
                   {
                     isActive: true,
                     text: "What we do",
-                    to: "/",
+                    href: "#",
                     items: [
                       {
                         isActive: true,
                         text: "Fostering & adoption",
-                        to: "/"
+                        href: "#"
                       },
                       {
                         text: "Supporting young adults",
-                        to: "/"
+                        href: "#"
                       }
                     ]
                   },
                   {
                     text: "Work with us",
-                    to: "/",
+                    href: "#",
                     items: [
                       {
                         text: "Jobs",
-                        to: "/"
+                        href: "#"
                       },
                       {
                         text: "Commission us",
-                        to: "/"
+                        href: "#"
                       }
                     ]
                   }
@@ -453,22 +445,22 @@ const Page = () => (
                 {
                   level: 1,
                   text: "Who can adopt?",
-                  to: "/example/index/1"
+                  href: "#"
                 },
                 {
                   level: 2,
                   text: "If you have children",
-                  to: "/example/index/2"
+                  href: "#"
                 },
                 {
                   level: 2,
                   text: "If you have a partner",
-                  to: "/example/index/3"
+                  href: "#"
                 },
                 {
                   level: 1,
                   text: "Types of adoption",
-                  to: "/example/index/4"
+                  href: "#"
                 }
               ]}
             />
@@ -508,49 +500,49 @@ const Page = () => (
                     items={[
                       {
                         text: "About us",
-                        to: "/",
+                        href: "#",
                         items: [
                           {
                             text: "Our history",
-                            to: "/"
+                            href: "#"
                           },
                           {
                             text: "Annual report",
-                            to: "/"
+                            href: "#"
                           },
                           {
                             text: "How we're funded",
-                            to: "/"
+                            href: "#"
                           }
                         ]
                       },
                       {
                         isActive: true,
                         text: "What we do",
-                        to: "/",
+                        href: "#",
                         items: [
                           {
                             isActive: true,
                             text: "Fostering & adoption",
-                            to: "/"
+                            href: "#"
                           },
                           {
                             text: "Supporting young adults",
-                            to: "/"
+                            href: "#"
                           }
                         ]
                       },
                       {
                         text: "Work with us",
-                        to: "/",
+                        href: "#",
                         items: [
                           {
                             text: "Jobs",
-                            to: "/"
+                            href: "#"
                           },
                           {
                             text: "Commission us",
-                            to: "/"
+                            href: "#"
                           }
                         ]
                       }
@@ -578,19 +570,19 @@ const Page = () => (
               <Footer
                 items={[
                   {
-                    href: "http://example.org",
+                    href: "#",
                     text: "Contact us"
                   },
                   {
-                    href: "http://example.org",
+                    href: "#",
                     text: "Privacy notice"
                   },
                   {
-                    href: "http://example.org",
+                    href: "#",
                     text: "Terms & conditions"
                   },
                   {
-                    href: "http://example.org",
+                    href: "#",
                     text: "Cookie policy"
                   }
                 ]}

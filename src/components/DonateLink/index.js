@@ -1,12 +1,14 @@
 import PropTypes from "prop-types";
 import React from "react";
 
+import Link from "../Link";
+
 import "./index.css";
 
 const DonateLink = ({ href }) => (
-  <a className="DonateLink" href={href}>
+  <Link className="DonateLink" href={href}>
     {`Donate`}
-  </a>
+  </Link>
 );
 
 DonateLink.propTypes = {

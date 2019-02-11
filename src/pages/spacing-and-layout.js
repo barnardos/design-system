@@ -28,7 +28,7 @@ const Page = () => (
       items={[
         {
           text: "Home",
-          to: "/"
+          href: "/"
         }
       ]}
     />
@@ -65,7 +65,7 @@ const Page = () => (
         </Cite>
         <Pagination
           previous={{
-            to: "/typography",
+            href: "/typography",
             label: "Typography"
           }}
         />
