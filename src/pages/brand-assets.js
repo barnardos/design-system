@@ -33,7 +33,7 @@ const Page = () => (
         <Paragraph>{`Download the:`}</Paragraph>
         <BulletedList>
           <ListItem>
-            <Link href="https://github.com/barnardos/design-system/blob/master/src/components/Layout/favicon.ico">{`favicon (11kb)`}</Link>
+            <Link href="https://github.com/barnardos/design-system/blob/master/src/components/Site/favicon.ico">{`favicon (11kb)`}</Link>
           </ListItem>
           <ListItem>
             <Link href="https://github.com/barnardos/design-system/blob/master/src/components/Header/logo.svg">{`logo (12kb)`}</Link>
