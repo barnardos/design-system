@@ -8,9 +8,10 @@
 
 ### Changed
 
+- All `to` props were renamed `href`
+- `Label` `id` prop was renamed `htmlFor`
 - `AttentionGrabbingLink` was renamed `ProminentLink`
 - `AttentionGrabbingPromo` was renamed `ProminentPromo`
-- `Label` `id` prop was renamed `htmlFor`
 
 ### Added
 
