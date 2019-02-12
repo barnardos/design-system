@@ -31,82 +31,82 @@ export const indexItems = [
   {
     level: 1,
     text: "Type styles",
-    to: "/content/#type-styles"
+    href: "/content/#type-styles"
   },
   {
     level: 2,
     text: "Title",
-    to: "/content/#title"
+    href: "/content/#title"
   },
   {
     level: 2,
     text: "Lede",
-    to: "/content/#lede"
+    href: "/content/#lede"
   },
   {
     level: 2,
     text: "Heading",
-    to: "/content/#heading"
+    href: "/content/#heading"
   },
   {
     level: 2,
     text: "Subheading",
-    to: "/content/#subheading"
+    href: "/content/#subheading"
   },
   {
     level: 2,
     text: "Paragraph",
-    to: "/content/#paragraph"
+    href: "/content/#paragraph"
   },
   {
     level: 2,
     text: "Cite",
-    to: "/content/#cite"
+    href: "/content/#cite"
   },
   {
     level: 1,
     text: "Lists",
-    to: "/content/#lists"
+    href: "/content/#lists"
   },
   {
     level: 2,
     text: "Bulleted List",
-    to: "/content/#bulleted-list"
+    href: "/content/#bulleted-list"
   },
   {
     level: 1,
     text: "Quotes",
-    to: "/content/#quotes"
+    href: "/content/#quotes"
   },
   {
     level: 2,
     text: "Pull Quote",
-    to: "/content/#pull-quote"
+    href: "/content/#pull-quote"
   },
   {
     level: 2,
     text: "Block Quote",
-    to: "/content/#block-quote"
+    href: "/content/#block-quote"
   },
   {
     level: 2,
     text: "Prominent Block Quote",
-    to: "/content/#prominent-block-quote"
+    href: "/content/#prominent-block-quote"
   },
   {
     level: 1,
     text: "Caption",
-    to: "/content/#caption"
+    href: "/content/#caption"
   },
   {
     level: 1,
     text: "Fact",
-    to: "/content/#fact"
+    href: "/content/#fact"
   },
   {
     level: 1,
     text: "Section",
-    to: "/content/#section"
+    href: "/content/#section"
   }
 ];
 
@@ -119,7 +119,7 @@ const Page = () => (
       items={[
         {
           text: "Home",
-          to: "/"
+          href: "/"
         }
       ]}
     />

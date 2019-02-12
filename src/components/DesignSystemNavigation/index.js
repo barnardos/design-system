@@ -1,6 +1,7 @@
-import { Link as GatsbyLink } from "gatsby";
 import PropTypes from "prop-types";
 import React from "react";
+
+import Link from "../Link";
 
 import "./index.css";
 
@@ -15,15 +16,15 @@ const DesignSystemNavigation = ({ description, items, title, isFlex }) => (
       <p className="DesignSystemNavigation-description">{description}</p>
     )}
     <ul className="DesignSystemNavigation-items">
-      {items.map(({ text, to }, index) => (
+      {items.map(({ href, text }, index) => (
         <li className="DesignSystemNavigation-item" key={index}>
-          <GatsbyLink
+          <Link
             className="DesignSystemNavigation-link"
             data-test-link={text}
-            to={to}
+            href={href}
           >
             {text}
-          </GatsbyLink>
+          </Link>
         </li>
       ))}
     </ul>

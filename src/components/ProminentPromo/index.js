@@ -17,7 +17,7 @@ const ProminentPromo = ({ children, colour, href, text, title, meta, src }) => (
       {meta && <p className="ProminentPromo-meta">{meta}</p>}
       <div className="ProminentPromo-children">{children}</div>
       <div className="ProminentPromo-link">
-        <ProminentLink colour={colour} href={href} isFull text={text} />
+        <ProminentLink colour={colour} href={href} full text={text} />
       </div>
     </div>
   </div>

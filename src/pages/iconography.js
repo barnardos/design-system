@@ -1,4 +1,3 @@
-import { Link as GatsbyLink } from "gatsby";
 import Helmet from "react-helmet";
 import React from "react";
 
@@ -23,7 +22,7 @@ const Page = () => (
       items={[
         {
           text: "Home",
-          to: "/"
+          href: "/"
         }
       ]}
     />
@@ -36,10 +35,7 @@ const Page = () => (
           <ListItem>{`choose a flat graphic style`}</ListItem>
           <ListItem>
             {`use the `}
-            <GatsbyLink
-              className="Link"
-              to="/colour/#brand-colours"
-            >{`brand colours`}</GatsbyLink>
+            <Link href="/colour/#brand-colours">{`brand colours`}</Link>
           </ListItem>
           <ListItem>{`avoid relying on icons to convey important information`}</ListItem>
         </BulletedList>

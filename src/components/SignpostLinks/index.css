@@ -3,6 +3,10 @@
 /** @define SignpostLinks; */
 
 .SignpostLinks {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+
   &:not(:first-child) {
     margin-top: 1.5rem;
   }

@@ -1,4 +1,3 @@
-import { Link as GatsbyLink } from "gatsby";
 import Helmet from "react-helmet";
 import React from "react";
 
@@ -31,7 +30,7 @@ const Page = () => (
       items={[
         {
           text: "Home",
-          to: "/"
+          href: "/"
         }
       ]}
     />
@@ -46,27 +45,27 @@ const Page = () => (
             {
               level: 1,
               text: "Type scale",
-              to: "/typography/#type-scale"
+              href: "/typography/#type-scale"
             },
             {
               level: 1,
               text: "Line height",
-              to: "/typography/#line-height"
+              href: "/typography/#line-height"
             },
             {
               level: 1,
               text: "Line length",
-              to: "/typography/#line-length"
+              href: "/typography/#line-length"
             },
             {
               level: 1,
               text: "Brand font",
-              to: "/typography/#brand-font"
+              href: "/typography/#brand-font"
             },
             {
               level: 1,
               text: "Body copy",
-              to: "/typography/#body-copy"
+              href: "/typography/#body-copy"
             }
           ]}
         />
@@ -78,10 +77,7 @@ const Page = () => (
           </BulletedList>
           <Paragraph>
             {`Typography is subject to the `}
-            <GatsbyLink
-              className="Link"
-              to="/viewport-scale/"
-            >{`viewport scale`}</GatsbyLink>
+            <Link href="/viewport-scale/">{`viewport scale`}</Link>
             {`.`}
           </Paragraph>
           <Heading>{`Type scale`}</Heading>
@@ -129,11 +125,11 @@ const Page = () => (
           </Paragraph>
           <Pagination
             previous={{
-              to: "/colour",
+              href: "/colour",
               label: "Colour"
             }}
             next={{
-              to: "/spacing-and-layout",
+              href: "/spacing-and-layout",
               label: "Spacing and layout"
             }}
           />
