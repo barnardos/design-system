@@ -3,4 +3,11 @@
 .Layout {
   margin: 0 auto;
   max-width: 80rem;
+  padding: 0.5rem 1rem;
+}
+
+@media (min-width: 48rem) {
+  .Layout {
+    padding: 1rem 2rem;
+  }
 }

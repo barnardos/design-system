@@ -3,8 +3,6 @@
 /** @define Breadcrumbs; */
 
 .Breadcrumbs {
-  padding: 0 1rem;
-
   &:not(:first-child) {
     margin-top: 1.25rem;
   }
@@ -41,11 +39,5 @@
 
   &:hover {
     text-decoration: none;
-  }
-}
-
-@media (min-width: 48rem) {
-  .Breadcrumbs {
-    padding: 0 2rem;
   }
 }
