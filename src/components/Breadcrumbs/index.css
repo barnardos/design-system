@@ -17,10 +17,11 @@
 
 .Breadcrumbs-item {
   list-style: none;
+  margin-right: 0.5rem;
   position: relative;
 
   &:not(:first-child) {
-    margin-left: 1.5rem;
+    padding-left: 1rem;
 
     &::before {
       color: color-mod(var(--black) tint(80%));
