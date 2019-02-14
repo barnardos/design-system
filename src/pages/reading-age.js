@@ -8,6 +8,7 @@ import DesignSystemLayout from "../components/DesignSystemLayout";
 import Link from "../components/Link";
 import ListItem from "../components/ListItem";
 import Pagination from "../components/Pagination";
+import Paragraph from "../components/Paragraph";
 import Title from "../components/Title";
 import Main from "../components/Main";
 import Content from "../components/Content";
@@ -16,7 +17,7 @@ import Topic from "../components/Topic";
 const Page = () => (
   <DesignSystemLayout>
     <Helmet>
-      <title>{`Spelling`}</title>
+      <title>{`Reading age`}</title>
     </Helmet>
     <Breadcrumbs
       items={[
@@ -29,29 +30,29 @@ const Page = () => (
     <Main>
       <Content>
         <Topic>{`Writing standards`}</Topic>
-        <Title>{`Spelling`}</Title>
+        <Title>{`Reading age`}</Title>
+        <Paragraph>{`Aim for a reading age of about 9. For technical and professional content, aim for 12.`}</Paragraph>
+        <Paragraph>{`You can check the reading age of content using:`}</Paragraph>
         <BulletedList>
-          <ListItem>{`Barnardo’s (always with apostrophe)`}</ListItem>
-          <ListItem>{`email (no hyphen)`}</ListItem>
-          <ListItem>{`http:// (is not required, begin web addresses with www)`}</ListItem>
-          <ListItem>{`online (one word)`}</ListItem>
-          <ListItem>{`per cent (should be spelt in words, unless used in tables)`}</ListItem>
-          <ListItem>{`postcode (no hyphen)`}</ListItem>
-          <ListItem>{`website (no hyphen)`}</ListItem>
+          <ListItem>
+            <Link href="http://www.hemingwayapp.com/">{`the Hemingway app`}</Link>
+          </ListItem>
+          <ListItem>
+            <Link href="https://support.office.com/en-gb/article/Test-your-document-s-readability-85b4969e-e80a-4777-8dd3-f7fc3c8b3fd2">{`Microsoft Word`}</Link>
+          </ListItem>
+          <ListItem>
+            <Link href="https://readable.io/">{`Readable`}</Link>
+          </ListItem>
         </BulletedList>
         <Cite>
           {`View `}
-          <Link href="https://github.com/barnardos/design-system/issues/87">{`spelling research`}</Link>
+          <Link href="https://github.com/barnardos/design-system/issues/510">{`reading age research`}</Link>
           {` on GitHub.`}
         </Cite>
         <Pagination
-          previous={{
-            href: "/formatting",
-            label: "Formatting"
-          }}
           next={{
-            href: "/maintenance",
-            label: "Maintenance"
+            href: "/style-and-spelling",
+            label: "Style and spelling"
           }}
         />
       </Content>
