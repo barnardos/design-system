@@ -561,33 +561,26 @@ const Page = () => (
           </Cite>
           <Heading>{`Footer`}</Heading>
           <Example>
-            <div
-              style={{
-                overflow: "hidden",
-                position: "relative"
-              }}
-            >
-              <Footer
-                items={[
-                  {
-                    href: "#",
-                    text: "Contact us"
-                  },
-                  {
-                    href: "#",
-                    text: "Privacy notice"
-                  },
-                  {
-                    href: "#",
-                    text: "Terms & conditions"
-                  },
-                  {
-                    href: "#",
-                    text: "Cookie policy"
-                  }
-                ]}
-              />
-            </div>
+            <Footer
+              items={[
+                {
+                  href: "#",
+                  text: "Contact us"
+                },
+                {
+                  href: "#",
+                  text: "Privacy notice"
+                },
+                {
+                  href: "#",
+                  text: "Terms & conditions"
+                },
+                {
+                  href: "#",
+                  text: "Cookie policy"
+                }
+              ]}
+            />
           </Example>
           <Cite>
             {`View `}

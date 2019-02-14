@@ -8,6 +8,7 @@
   display: block;
   font: 300 var(--type-0) system-ui;
   left: -100vw;
+  margin-bottom: 0.75rem;
   padding: 0.5rem 2rem;
   position: absolute;
   text-align: center;

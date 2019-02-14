@@ -6,7 +6,7 @@
   background-color: color-mod(var(--black) tint(95%));
   box-shadow: 0 50vh 0 50vh color-mod(var(--black) tint(95%));
   margin-top: 2rem;
-  padding: 1rem;
+  padding: 1rem 0 0.5rem;
 }
 
 .Footer-items {
@@ -44,7 +44,7 @@
 
 @media (min-width: 48rem) {
   .Footer {
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 0 0.5rem;
   }
 
   .Footer-items {
