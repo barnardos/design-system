@@ -6,6 +6,7 @@ import Breadcrumbs from "../components/Breadcrumbs";
 import BulletedList from "../components/BulletedList";
 import Caption from "../components/Caption";
 import Cite from "../components/Cite";
+import Code from "../components/Code";
 import Content from "../components/Content";
 import ContentHeader from "../components/ContentHeader";
 import ContentsMenu from "../components/ContentsMenu";
@@ -72,6 +73,17 @@ export const indexItems = [
     level: 2,
     text: "Bulleted List",
     href: "/content/#bulleted-list"
+  },
+  {
+    level: 1,
+    text: "Images",
+    href: "/content/#images"
+  },
+
+  {
+    level: 1,
+    text: "Videos",
+    href: "/content/#videos"
   },
   {
     level: 1,
@@ -211,6 +223,20 @@ const Page = () => (
             <Link href="https://github.com/barnardos/design-system/issues/325">{`Bulleted List research`}</Link>
             {` on GitHub.`}
           </Cite>
+          <Heading>{`Images`}</Heading>
+          <Paragraph>{`When displaying images you should:`}</Paragraph>
+          <BulletedList>
+            <ListItem>{`match the tone of the surrounding copy`}</ListItem>
+            <ListItem>
+              {`include descriptive`} <Code>{`alt`}</Code> {`tags in the code`}
+            </ListItem>
+          </BulletedList>
+          <Heading>{`Videos`}</Heading>
+          <Paragraph>{`When displaying videos you should:`}</Paragraph>
+          <BulletedList>
+            <ListItem>{`include subtitles`}</ListItem>
+            <ListItem>{`include a transcription`}</ListItem>
+          </BulletedList>
           <Heading>{`Quotes`}</Heading>
           <Paragraph>{`When using these components you should:`}</Paragraph>
           <BulletedList>
@@ -231,6 +257,7 @@ const Page = () => (
           </Cite>
           <Subheading>{`Block Quote`}</Subheading>
           <Paragraph>{`Use this component to display a quotation from a person.`}</Paragraph>
+          <Paragraph>{`When quoting authoritative adults, ensure they have experience working with young people.`}</Paragraph>
           <Example>
             <BlockQuote
               colour="pink"

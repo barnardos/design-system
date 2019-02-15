@@ -180,7 +180,7 @@ const Page = () => (
             <Link href="/brand-assets/">{`Brand assets`}</Link>
           </ListItem>
           <ListItem>
-            <Link href="/film-and-photography/">{`Film and photography`}</Link>
+            <Link href="/images-and-videos/">{`Images and videos`}</Link>
           </ListItem>
           <ListItem>
             <Link href="/iconography/">{`Iconography`}</Link>
