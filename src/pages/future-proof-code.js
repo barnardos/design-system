@@ -57,6 +57,10 @@ const Page = () => (
             href: "/code-quality",
             label: "Code quality"
           }}
+          next={{
+            href: "/performance",
+            label: "Performance"
+          }}
         />
       </Content>
     </Main>

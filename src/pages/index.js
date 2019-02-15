@@ -138,6 +138,10 @@ const Page = () => (
                 {
                   text: "Future-proof code",
                   href: "/future-proof-code/"
+                },
+                {
+                  text: "Performance",
+                  href: "/performance/"
                 }
               ]
             }
