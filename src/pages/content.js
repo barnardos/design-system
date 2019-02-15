@@ -252,7 +252,7 @@ const Page = () => (
             {`View `}
             <Link href="https://github.com/barnardos/design-system/tree/master/src/components/PullQuote">{`Pull Quote code`}</Link>
             {` and `}
-            <Link href="https://github.com/barnardos/design-system/issues/321">{`Pull Quote research`}</Link>
+            <Link href="https://github.com/barnardos/design-system/issues/252">{`Pull Quote research`}</Link>
             {` on GitHub.`}
           </Cite>
           <Subheading>{`Block Quote`}</Subheading>
