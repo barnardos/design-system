@@ -32,16 +32,12 @@ const Page = () => (
         <Topic>{`Accessibility standards`}</Topic>
         <Title>{`Considerations`}</Title>
         <Paragraph>
-          {`When considering accessibility, follow the principle `}
-          <Link href="/principles/#be-inclusive">{`'be inclusive'`}</Link>
+          {`You should pass the accessibility checks in `}
+          <Link href="https://www.deque.com/axe/">{`aXe`}</Link>
           {`.`}
         </Paragraph>
-        <Paragraph>{`You should:`}</Paragraph>
+        <Paragraph>{`You should also:`}</Paragraph>
         <BulletedList>
-          <ListItem>
-            {`use accessibility tools to test your work, for example `}
-            <Link href="https://www.deque.com/axe/">{`aXe`}</Link>
-          </ListItem>
           <ListItem>{`make page titles unique and descriptive`}</ListItem>
           <ListItem>{`allow users to navigate only with a keyboard`}</ListItem>
           <ListItem>{`enable the viewport to be zoomed to at least 200%`}</ListItem>
