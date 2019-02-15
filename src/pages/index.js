@@ -181,7 +181,10 @@ const Page = () => (
         <Heading>{`Assets`}</Heading>
         <BulletedList>
           <ListItem>
-            <Link href="/brand-assets/">{`Brand assets`}</Link>
+            <Link href="/web-assets/">{`Web assets`}</Link>
+          </ListItem>
+          <ListItem>
+            <Link href="/sketch-assets/">{`Sketch assets`}</Link>
           </ListItem>
           <ListItem>
             <Link href="/images-and-videos/">{`Images and videos`}</Link>
