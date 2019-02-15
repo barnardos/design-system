@@ -15,7 +15,7 @@ import Topic from "../components/Topic";
 const Page = () => (
   <DesignSystemLayout>
     <Helmet>
-      <title>{`Brand assets`}</title>
+      <title>{`Web assets`}</title>
     </Helmet>
     <Breadcrumbs
       items={[
@@ -29,7 +29,7 @@ const Page = () => (
     <Main>
       <Content>
         <Topic>{`Assets`}</Topic>
-        <Title>{`Brand assets`}</Title>
+        <Title>{`Web assets`}</Title>
         <Paragraph>{`Download the:`}</Paragraph>
         <BulletedList>
           <ListItem>

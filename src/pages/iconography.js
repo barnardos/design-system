@@ -37,7 +37,6 @@ const Page = () => (
             {`use the `}
             <Link href="/colour/#brand-colours">{`brand colours`}</Link>
           </ListItem>
-          <ListItem>{`avoid relying on icons to convey important information`}</ListItem>
         </BulletedList>
         <Cite>
           {`View `}

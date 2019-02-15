@@ -47,7 +47,7 @@ const Page = () => (
         </Paragraph>
         <SignpostLinks>
           <SignpostLink href="/#principles">{`View our principles`}</SignpostLink>
-          <SignpostLink href="https://github.com/barnardos/design-system/">{`Installation guide on GitHub (technical)`}</SignpostLink>
+          <SignpostLink href="https://www.npmjs.com/package/@barnardos/components">{`Installation guide on NPM (technical)`}</SignpostLink>
         </SignpostLinks>
       </Content>
     </Main>
