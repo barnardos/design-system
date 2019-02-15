@@ -135,10 +135,18 @@ const Page = () => (
           <BulletedList>
             <ListItem>{`only ask for information which is absolutely needed`}</ListItem>
             <ListItem>{`ask for required information first`}</ListItem>
+            <ListItem>{`group related fields together, for example "Email" and "Phone"`}</ListItem>
             <ListItem>{`add '(optional)' to labels of information that isn't required`}</ListItem>
             <ListItem>{`avoid unnecessary words like 'Please' or 'Enter' in labels`}</ListItem>
-            <ListItem>{`group related fields together, for example "Email" and "Phone"`}</ListItem>
             <ListItem>{`minimise the number of fields on each page`}</ListItem>
+            <ListItem>{`avoid manipulative design patterns`}</ListItem>
+          </BulletedList>
+          <Paragraph>{`When gathering information from young people you should:`}</Paragraph>
+          <BulletedList>
+            <ListItem>{`explain why information is being asked for`}</ListItem>
+            <ListItem>{`explain who will see any personal information`}</ListItem>
+            <ListItem>{`allow them to remain anonymous where possible`}</ListItem>
+            <ListItem>{`ensure they have privacy and are safeguarded`}</ListItem>
           </BulletedList>
           <Heading>{`Text inputs`}</Heading>
           <Paragraph>{`Use the components below for text entry. You should:`}</Paragraph>

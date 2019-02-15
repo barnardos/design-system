@@ -16,7 +16,7 @@ import Topic from "../components/Topic";
 const Page = () => (
   <DesignSystemLayout>
     <Helmet>
-      <title>{`Film and photography`}</title>
+      <title>{`Images and videos`}</title>
     </Helmet>
     <Breadcrumbs
       items={[
@@ -29,15 +29,16 @@ const Page = () => (
     <Main>
       <Content>
         <Topic>{`Assets`}</Topic>
-        <Title>{`Film and photography`}</Title>
-        <Paragraph>{`When shooting film and photography you should:`}</Paragraph>
+        <Title>{`Images and videos`}</Title>
+        <Paragraph>{`When creating images and videos you should:`}</Paragraph>
         <BulletedList>
           <ListItem>{`have consent from all subjects`}</ListItem>
           <ListItem>{`have the subjects look into the camera`}</ListItem>
           <ListItem>{`use natural light in a real location`}</ListItem>
           <ListItem>{`avoid using actors`}</ListItem>
+          <ListItem>{`avoid adding soundtracks to videos`}</ListItem>
         </BulletedList>
-        <Paragraph>{`Your film and photography should show:`}</Paragraph>
+        <Paragraph>{`Images and videos should show:`}</Paragraph>
         <BulletedList>
           <ListItem>{`diversity`}</ListItem>
           <ListItem>{`strength`}</ListItem>
@@ -47,7 +48,7 @@ const Page = () => (
         </BulletedList>
         <Cite>
           {`View `}
-          <Link href="https://github.com/barnardos/design-system/issues/227">{`film and photography research`}</Link>
+          <Link href="https://github.com/barnardos/design-system/issues/227">{`images and videos research`}</Link>
           {` on GitHub.`}
         </Cite>
       </Content>
