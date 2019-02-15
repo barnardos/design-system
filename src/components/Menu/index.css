@@ -14,18 +14,15 @@
 .Menu-link {
   color: var(--black);
   display: block;
-  font: 500 var(--type-1) system-ui;
+  font: 500 var(--type-0) system-ui;
   padding: 0.75rem 1rem;
   text-decoration: none;
   white-space: nowrap;
 
-  &:hover {
-    box-shadow: inset 0 -0.25rem 0 0 var(--orange);
-    color: var(--orange);
-  }
-
+  &:hover,
   &:active {
-    box-shadow: inset 0 -0.25rem 0 0 var(--green);
+    background: color-mod(var(--black) tint(95%));
+    box-shadow: inset 0 0.25rem 0 0 var(--green);
     color: var(--green);
   }
 }
@@ -35,11 +32,11 @@
   display: block;
   font: 300 var(--type-0) system-ui;
   margin: 0 1rem;
-  padding: 0.25rem 0.5rem;
+  padding: 0.125rem 0.5rem;
   text-decoration: none;
 
   &:hover {
-    color: var(--orange);
+    text-decoration: underline;
   }
 
   &:active {
@@ -61,6 +58,17 @@
   }
 }
 
+.Menu-item {
+  &:hover {
+    background: color-mod(var(--black) tint(95%));
+
+    & .Menu-link {
+      box-shadow: inset 0 0.25rem 0 0 var(--green);
+      color: var(--green);
+    }
+  }
+}
+
 .Menu-secondaryItem--active {
   & .Menu-secondaryLink {
     color: var(--green);
@@ -75,8 +83,8 @@
   }
 
   .Menu-secondaryItems {
-    background: color-mod(var(--black) tint(90%));
-    box-shadow: 0.25rem 0.25rem color-mod(var(--black) tint(60%));
+    background: color-mod(var(--black) tint(95%));
+    box-shadow: 0 0 0 -1px color-mod(var(--black) tint(60%));
     left: -100vh;
     min-width: 12rem;
     padding: 0.75rem 0;
@@ -96,11 +104,6 @@
     text-align: center;
 
     &:hover {
-      & .Menu-link {
-        box-shadow: inset 0 -0.25rem 0 0 var(--orange);
-        color: var(--orange);
-      }
-
       & .Menu-secondaryItems {
         left: auto;
       }

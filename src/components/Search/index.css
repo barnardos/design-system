@@ -30,12 +30,10 @@
   appearance: none;
   background: var(--green);
   border: none;
-  border-radius: 0;
-  box-shadow: 0.25rem 0.25rem color-mod(var(--green) shade(40%));
+  border-radius: 0 50% 50% 0;
   display: flex;
   justify-content: center;
-  margin-left: 0.5rem;
-  padding: 0 0.5rem;
+  padding: 0 0.75rem 0 0.5rem;
   white-space: normal;
 
   &:hover {
