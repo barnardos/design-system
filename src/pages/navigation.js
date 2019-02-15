@@ -379,49 +379,49 @@ const Page = () => (
               <Menu
                 items={[
                   {
-                    text: "About us",
+                    text: "Breakfast",
                     href: "#",
                     items: [
                       {
-                        text: "Our history",
+                        text: "Cereal",
                         href: "#"
                       },
                       {
-                        text: "Annual report",
+                        text: "Fruit",
                         href: "#"
                       },
                       {
-                        text: "How we're funded",
+                        text: "Tea",
                         href: "#"
                       }
                     ]
                   },
                   {
                     isActive: true,
-                    text: "What we do",
+                    text: "Lunch",
                     href: "#",
                     items: [
                       {
                         isActive: true,
-                        text: "Fostering & adoption",
+                        text: "Sandwich",
                         href: "#"
                       },
                       {
-                        text: "Supporting young adults",
+                        text: "Juice",
                         href: "#"
                       }
                     ]
                   },
                   {
-                    text: "Work with us",
+                    text: "Dinner",
                     href: "#",
                     items: [
                       {
-                        text: "Jobs",
+                        text: "Pasta",
                         href: "#"
                       },
                       {
-                        text: "Commission us",
+                        text: "Salad",
                         href: "#"
                       }
                     ]
@@ -499,49 +499,49 @@ const Page = () => (
                   <Menu
                     items={[
                       {
-                        text: "About us",
+                        text: "Breakfast",
                         href: "#",
                         items: [
                           {
-                            text: "Our history",
+                            text: "Cereal",
                             href: "#"
                           },
                           {
-                            text: "Annual report",
+                            text: "Fruit",
                             href: "#"
                           },
                           {
-                            text: "How we're funded",
+                            text: "Tea",
                             href: "#"
                           }
                         ]
                       },
                       {
                         isActive: true,
-                        text: "What we do",
+                        text: "Lunch",
                         href: "#",
                         items: [
                           {
                             isActive: true,
-                            text: "Fostering & adoption",
+                            text: "Sandwich",
                             href: "#"
                           },
                           {
-                            text: "Supporting young adults",
+                            text: "Juice",
                             href: "#"
                           }
                         ]
                       },
                       {
-                        text: "Work with us",
+                        text: "Dinner",
                         href: "#",
                         items: [
                           {
-                            text: "Jobs",
+                            text: "Pasta",
                             href: "#"
                           },
                           {
-                            text: "Commission us",
+                            text: "Salad",
                             href: "#"
                           }
                         ]
