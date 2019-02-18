@@ -4,7 +4,7 @@ import React from "react";
 import Breadcrumbs from "../components/Breadcrumbs";
 import BulletedList from "../components/BulletedList";
 import Cite from "../components/Cite";
-import DesignSystemLayout from "../components/DesignSystemLayout";
+import Page from "../components/Page";
 import Link from "../components/Link";
 import ListItem from "../components/ListItem";
 import Pagination from "../components/Pagination";
@@ -14,8 +14,8 @@ import Main from "../components/Main";
 import Content from "../components/Content";
 import Topic from "../components/Topic";
 
-const Page = () => (
-  <DesignSystemLayout>
+export default () => (
+  <Page>
     <Helmet>
       <title>{`Future-proof code`}</title>
     </Helmet>
@@ -64,7 +64,5 @@ const Page = () => (
         />
       </Content>
     </Main>
-  </DesignSystemLayout>
+  </Page>
 );
-
-export default Page;

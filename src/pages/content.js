@@ -11,7 +11,7 @@ import Content from "../components/Content";
 import ContentHeader from "../components/ContentHeader";
 import ContentsMenu from "../components/ContentsMenu";
 import ContentWithMenu from "../components/ContentWithMenu";
-import DesignSystemLayout from "../components/DesignSystemLayout";
+import Page from "../components/Page";
 import Example from "../components/Example";
 import Fact from "../components/Fact";
 import Heading from "../components/Heading";
@@ -122,8 +122,8 @@ export const indexItems = [
   }
 ];
 
-const Page = () => (
-  <DesignSystemLayout>
+export default () => (
+  <Page>
     <Helmet>
       <title>{`Content`}</title>
     </Helmet>
@@ -362,7 +362,5 @@ const Page = () => (
         </Content>
       </ContentWithMenu>
     </Main>
-  </DesignSystemLayout>
+  </Page>
 );
-
-export default Page;

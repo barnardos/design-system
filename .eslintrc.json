@@ -30,5 +30,13 @@
     "graphql": true,
     "jestPuppeteer": true,
     "page": true
-  }
+  },
+  "overrides": [
+    {
+      "files": ["src/pages/**/*.js"],
+      "rules": {
+        "react/display-name": "off"
+      }
+    }
+  ]
 }

@@ -10,7 +10,7 @@ import Content from "../components/Content";
 import ContentHeader from "../components/ContentHeader";
 import ContentWithMenu from "../components/ContentWithMenu";
 import ContentsMenu from "../components/ContentsMenu";
-import DesignSystemLayout from "../components/DesignSystemLayout";
+import Page from "../components/Page";
 import Figure from "../components/Figure";
 import Figures from "../components/Figures";
 import Heading from "../components/Heading";
@@ -24,8 +24,8 @@ import Swatches from "../components/Swatches";
 import Title from "../components/Title";
 import Topic from "../components/Topic";
 
-const Page = () => (
-  <DesignSystemLayout>
+export default () => (
+  <Page>
     <Helmet>
       <title>{`Colour`}</title>
     </Helmet>
@@ -129,7 +129,5 @@ const Page = () => (
         </Content>
       </ContentWithMenu>
     </Main>
-  </DesignSystemLayout>
+  </Page>
 );
-
-export default Page;

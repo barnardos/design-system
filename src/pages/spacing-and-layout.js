@@ -5,7 +5,7 @@ import Breadcrumbs from "../components/Breadcrumbs";
 import BulletedList from "../components/BulletedList";
 import Demo from "../components/Demo";
 import DemoItem from "../components/DemoItem";
-import DesignSystemLayout from "../components/DesignSystemLayout";
+import Page from "../components/Page";
 import Figure from "../components/Figure";
 import Figures from "../components/Figures";
 import ListItem from "../components/ListItem";
@@ -19,8 +19,8 @@ import Content from "../components/Content";
 import Cite from "../components/Cite";
 import Link from "../components/Link";
 
-const Page = () => (
-  <DesignSystemLayout>
+export default () => (
+  <Page>
     <Helmet>
       <title>{`Spacing and layout`}</title>
     </Helmet>
@@ -71,7 +71,5 @@ const Page = () => (
         />
       </Content>
     </Main>
-  </DesignSystemLayout>
+  </Page>
 );
-
-export default Page;

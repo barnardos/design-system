@@ -6,7 +6,7 @@ import Feedback from "../components/Feedback";
 import BulletedList from "../components/BulletedList";
 import ComponentsIndex from "../components/ComponentsIndex";
 import ComponentsIndexes from "../components/ComponentsIndexes";
-import DesignSystemLayout from "../components/DesignSystemLayout";
+import Page from "../components/Page";
 import DesignSystemNavigation from "../components/DesignSystemNavigation";
 import DesignSystemNavigations from "../components/DesignSystemNavigations";
 import Heading from "../components/Heading";
@@ -26,8 +26,8 @@ import { indexItems as contentItems } from "./content";
 import { indexItems as navigationItems } from "./navigation";
 import { indexItems as formsItems } from "./forms";
 
-const Page = () => (
-  <DesignSystemLayout>
+export default () => (
+  <Page>
     <Helmet>
       <title>{`Barnardo’s Design System`}</title>
     </Helmet>
@@ -217,7 +217,5 @@ const Page = () => (
         </Paragraph>
       </Feedback>
     </Main>
-  </DesignSystemLayout>
+  </Page>
 );
-
-export default Page;

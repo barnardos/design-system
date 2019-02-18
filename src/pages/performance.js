@@ -3,7 +3,7 @@ import React from "react";
 
 import Breadcrumbs from "../components/Breadcrumbs";
 import Cite from "../components/Cite";
-import DesignSystemLayout from "../components/DesignSystemLayout";
+import Page from "../components/Page";
 import Link from "../components/Link";
 import Pagination from "../components/Pagination";
 import Paragraph from "../components/Paragraph";
@@ -12,8 +12,8 @@ import Main from "../components/Main";
 import Content from "../components/Content";
 import Topic from "../components/Topic";
 
-const Page = () => (
-  <DesignSystemLayout>
+export default () => (
+  <Page>
     <Helmet>
       <title>{`Performance`}</title>
     </Helmet>
@@ -47,7 +47,5 @@ const Page = () => (
         />
       </Content>
     </Main>
-  </DesignSystemLayout>
+  </Page>
 );
-
-export default Page;

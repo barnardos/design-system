@@ -14,7 +14,7 @@ import DateInput from "../components/DateInput";
 import Example from "../components/Example";
 import ErrorSummary from "../components/ErrorSummary";
 import Heading from "../components/Heading";
-import DesignSystemLayout from "../components/DesignSystemLayout";
+import Page from "../components/Page";
 import Link from "../components/Link";
 import ListItem from "../components/ListItem";
 import Paragraph from "../components/Paragraph";
@@ -110,8 +110,8 @@ export const indexItems = [
   }
 ];
 
-const Page = () => (
-  <DesignSystemLayout>
+export default () => (
+  <Page>
     <Helmet>
       <title>{`Forms`}</title>
     </Helmet>
@@ -441,7 +441,5 @@ const Page = () => (
         </Content>
       </ContentWithMenu>
     </Main>
-  </DesignSystemLayout>
+  </Page>
 );
-
-export default Page;
