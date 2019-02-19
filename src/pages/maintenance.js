@@ -8,6 +8,7 @@ import DesignSystemLayout from "../components/DesignSystemLayout";
 import Link from "../components/Link";
 import ListItem from "../components/ListItem";
 import Pagination from "../components/Pagination";
+import Paragraph from "../components/Paragraph";
 import Title from "../components/Title";
 import Main from "../components/Main";
 import Content from "../components/Content";
@@ -16,7 +17,7 @@ import Topic from "../components/Topic";
 const Page = () => (
   <DesignSystemLayout>
     <Helmet>
-      <title>{`Spelling`}</title>
+      <title>{`Maintenance`}</title>
     </Helmet>
     <Breadcrumbs
       items={[
@@ -29,29 +30,24 @@ const Page = () => (
     <Main>
       <Content>
         <Topic>{`Writing standards`}</Topic>
-        <Title>{`Spelling`}</Title>
+        <Title>{`Maintenance`}</Title>
+        <Paragraph>{`When content is published, you should review it at a later date to check:`}</Paragraph>
         <BulletedList>
-          <ListItem>{`Barnardo’s (always with apostrophe)`}</ListItem>
-          <ListItem>{`email (no hyphen)`}</ListItem>
-          <ListItem>{`http:// (is not required, begin web addresses with www)`}</ListItem>
-          <ListItem>{`online (one word)`}</ListItem>
-          <ListItem>{`per cent (should be spelt in words, unless used in tables)`}</ListItem>
-          <ListItem>{`postcode (no hyphen)`}</ListItem>
-          <ListItem>{`website (no hyphen)`}</ListItem>
+          <ListItem>{`people are using it`}</ListItem>
+          <ListItem>{`it’s still in the best place`}</ListItem>
+          <ListItem>{`it’s factually accurate`}</ListItem>
+          <ListItem>{`external links still work`}</ListItem>
+          <ListItem>{`the language is still correct`}</ListItem>
         </BulletedList>
         <Cite>
           {`View `}
-          <Link href="https://github.com/barnardos/design-system/issues/87">{`spelling research`}</Link>
+          <Link href="https://github.com/barnardos/design-system/issues/510">{`maintenance research`}</Link>
           {` on GitHub.`}
         </Cite>
         <Pagination
           previous={{
-            href: "/formatting",
-            label: "Formatting"
-          }}
-          next={{
-            href: "/maintenance",
-            label: "Maintenance"
+            href: "/spelling",
+            label: "Spelling"
           }}
         />
       </Content>

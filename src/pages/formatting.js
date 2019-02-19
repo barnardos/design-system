@@ -17,7 +17,7 @@ import Topic from "../components/Topic";
 const Page = () => (
   <DesignSystemLayout>
     <Helmet>
-      <title>{`Style`}</title>
+      <title>{`Formatting`}</title>
     </Helmet>
     <Breadcrumbs
       items={[
@@ -30,22 +30,13 @@ const Page = () => (
     <Main>
       <Content>
         <Topic>{`Writing standards`}</Topic>
-        <Title>{`Style`}</Title>
-        <Paragraph>
-          {`When writing content use inclusive language and imagine you're talking to the reader.`}
-        </Paragraph>
-        <Paragraph>{`To be clear and concise you should:`}</Paragraph>
-        <BulletedList>
-          <ListItem>{`avoid jargon`}</ListItem>
-          <ListItem>{`avoid the passive`}</ListItem>
-          <ListItem>{`use short sentences with one main idea`}</ListItem>
-          <ListItem>{`use bulleted lists when paragraphs have more than four points`}</ListItem>
-        </BulletedList>
-        <Paragraph>{`When styling your writing you should:`}</Paragraph>
+        <Title>{`Formatting`}</Title>
+        <Paragraph>{`When formatting your writing you should:`}</Paragraph>
         <BulletedList>
           <ListItem>{`use sentence case`}</ListItem>
           <ListItem>{`avoid use of bold`}</ListItem>
           <ListItem>{`use italics for general emphasis`}</ListItem>
+          <ListItem>{`use bulleted lists when paragraphs have more than four points`}</ListItem>
           <ListItem>{`use words for single-figure numbers`}</ListItem>
           <ListItem>{`use single quotation marks for quoted speech`}</ListItem>
           <ListItem>{`only use the ampersand when space is tight`}</ListItem>
@@ -55,10 +46,14 @@ const Page = () => (
         </BulletedList>
         <Cite>
           {`View `}
-          <Link href="https://github.com/barnardos/design-system/issues/87">{`writing style research`}</Link>
+          <Link href="https://github.com/barnardos/design-system/issues/87">{`formatting research`}</Link>
           {` on GitHub.`}
         </Cite>
         <Pagination
+          previous={{
+            href: "/voice-and-tone",
+            label: "Voice and tone"
+          }}
           next={{
             href: "/spelling",
             label: "Spelling"

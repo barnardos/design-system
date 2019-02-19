@@ -119,12 +119,20 @@ const Page = () => (
               title: "Writing",
               items: [
                 {
-                  text: "Style",
-                  href: "/style/"
+                  text: "Voice and tone",
+                  href: "/voice-and-tone/"
+                },
+                {
+                  text: "Formatting",
+                  href: "/formatting/"
                 },
                 {
                   text: "Spelling",
                   href: "/spelling/"
+                },
+                {
+                  text: "Maintenance",
+                  href: "/maintenance/"
                 }
               ]
             },
