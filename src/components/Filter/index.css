@@ -8,11 +8,11 @@
   }
 }
 
-.Filter-details {
+.Filter-target {
   display: none;
 }
 
-.Filter-details--active {
+.Filter-target--active {
   display: block;
 }
 

@@ -1,48 +1,27 @@
 import PropTypes from "prop-types";
-import React, { Component } from "react";
+import React, { useState } from "react";
 
 import Command from "../Command";
 
-import crossSvg from "./cross.svg";
+import cross from "./cross.svg";
 
 import "./index.css";
 
-class Filter extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { isActive: false };
-    this.handleClick = this.handleClick.bind(this);
-  }
-
-  handleClick() {
-    this.setState(prevState => ({
-      isActive: !prevState.isActive
-    }));
-  }
-
-  render() {
-    const { children } = this.props;
-    const { isActive } = this.state;
-    return (
-      <div className="Filter">
-        <Command onClick={this.handleClick}>
-          {isActive ? (
-            <img alt="Close menu" src={crossSvg} style={{ width: "1.5rem" }} />
-          ) : (
-            `Filter`
-          )}
-        </Command>
-        <div
-          className={`Filter-details ${
-            isActive ? "Filter-details--active" : ""
-          }`}
-        >
-          <div className="Filter-children">{children}</div>
-        </div>
+const Filter = ({ children }) => {
+  const [isActive, setActive] = useState(false);
+  return (
+    <div className="Filter">
+      <Command onClick={() => setActive(!isActive)}>
+        {isActive ? <img alt="Close" src={cross} /> : `Filter`}
+      </Command>
+      <div
+        className={`Filter-target ${isActive ? "Filter-target--active" : ""}`}
+      >
+        <div className="Filter-children">{children}</div>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
 Filter.propTypes = {
   children: PropTypes.node.isRequired
