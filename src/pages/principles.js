@@ -3,7 +3,7 @@ import React from "react";
 
 import Breadcrumbs from "../components/Breadcrumbs";
 import BulletedList from "../components/BulletedList";
-import DesignSystemLayout from "../components/DesignSystemLayout";
+import Page from "../components/Page";
 import Heading from "../components/Heading";
 import ListItem from "../components/ListItem";
 import Paragraph from "../components/Paragraph";
@@ -11,8 +11,8 @@ import Title from "../components/Title";
 import Main from "../components/Main";
 import Content from "../components/Content";
 
-const Page = () => (
-  <DesignSystemLayout>
+export default () => (
+  <Page>
     <Helmet>
       <title>{`Principles`}</title>
     </Helmet>
@@ -86,7 +86,5 @@ const Page = () => (
         </BulletedList>
       </Content>
     </Main>
-  </DesignSystemLayout>
+  </Page>
 );
-
-export default Page;

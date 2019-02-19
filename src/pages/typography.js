@@ -9,7 +9,7 @@ import Content from "../components/Content";
 import ContentHeader from "../components/ContentHeader";
 import ContentWithMenu from "../components/ContentWithMenu";
 import ContentsMenu from "../components/ContentsMenu";
-import DesignSystemLayout from "../components/DesignSystemLayout";
+import Page from "../components/Page";
 import Figures from "../components/Figures";
 import Heading from "../components/Heading";
 import Link from "../components/Link";
@@ -21,8 +21,8 @@ import Main from "../components/Main";
 import Topic from "../components/Topic";
 import TypeFigures from "../components/TypeFigures";
 
-const Page = () => (
-  <DesignSystemLayout>
+export default () => (
+  <Page>
     <Helmet>
       <title>{`Typography`}</title>
     </Helmet>
@@ -136,7 +136,5 @@ const Page = () => (
         </Content>
       </ContentWithMenu>
     </Main>
-  </DesignSystemLayout>
+  </Page>
 );
-
-export default Page;

@@ -6,7 +6,7 @@ import Cite from "../components/Cite";
 import Title from "../components/Title";
 import Main from "../components/Main";
 import Content from "../components/Content";
-import DesignSystemLayout from "../components/DesignSystemLayout";
+import Page from "../components/Page";
 import Link from "../components/Link";
 import Filter from "../components/Filter";
 import ListItem from "../components/ListItem";
@@ -19,8 +19,8 @@ import Submit from "../components/Submit";
 import Example from "../components/Example";
 import Topic from "../components/Topic";
 
-const Page = () => (
-  <DesignSystemLayout>
+export default () => (
+  <Page>
     <Helmet>
       <title>{`Filtering`}</title>
     </Helmet>
@@ -86,7 +86,5 @@ const Page = () => (
         </Cite>
       </Content>
     </Main>
-  </DesignSystemLayout>
+  </Page>
 );
-
-export default Page;

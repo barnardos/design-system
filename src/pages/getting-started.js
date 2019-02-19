@@ -4,7 +4,7 @@ import React from "react";
 import Breadcrumbs from "../components/Breadcrumbs";
 import BulletedList from "../components/BulletedList";
 import Content from "../components/Content";
-import DesignSystemLayout from "../components/DesignSystemLayout";
+import Page from "../components/Page";
 import ListItem from "../components/ListItem";
 import Main from "../components/Main";
 import Paragraph from "../components/Paragraph";
@@ -12,8 +12,8 @@ import SignpostLink from "../components/SignpostLink";
 import SignpostLinks from "../components/SignpostLinks";
 import Title from "../components/Title";
 
-const Page = () => (
-  <DesignSystemLayout>
+export default () => (
+  <Page>
     <Helmet>
       <title>{`Getting started`}</title>
     </Helmet>
@@ -51,7 +51,5 @@ const Page = () => (
         </SignpostLinks>
       </Content>
     </Main>
-  </DesignSystemLayout>
+  </Page>
 );
-
-export default Page;

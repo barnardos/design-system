@@ -4,7 +4,7 @@ import React from "react";
 import Breadcrumbs from "../components/Breadcrumbs";
 import BulletedList from "../components/BulletedList";
 import Cite from "../components/Cite";
-import DesignSystemLayout from "../components/DesignSystemLayout";
+import Page from "../components/Page";
 import Figure from "../components/Figure";
 import Figures from "../components/Figures";
 import Link from "../components/Link";
@@ -16,8 +16,8 @@ import Main from "../components/Main";
 import Content from "../components/Content";
 import Topic from "../components/Topic";
 
-const Page = () => (
-  <DesignSystemLayout>
+export default () => (
+  <Page>
     <Helmet>
       <title>{`Asking for names`}</title>
     </Helmet>
@@ -68,7 +68,5 @@ const Page = () => (
         </Cite>
       </Content>
     </Main>
-  </DesignSystemLayout>
+  </Page>
 );
-
-export default Page;

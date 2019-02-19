@@ -4,7 +4,7 @@ import React from "react";
 import Breadcrumbs from "../components/Breadcrumbs";
 import Cite from "../components/Cite";
 import NumberedList from "../components/NumberedList";
-import DesignSystemLayout from "../components/DesignSystemLayout";
+import Page from "../components/Page";
 import Link from "../components/Link";
 import ListItem from "../components/ListItem";
 import Paragraph from "../components/Paragraph";
@@ -13,8 +13,8 @@ import Main from "../components/Main";
 import Content from "../components/Content";
 import Topic from "../components/Topic";
 
-const Page = () => (
-  <DesignSystemLayout>
+export default () => (
+  <Page>
     <Helmet>
       <title>{`Sketch assets`}</title>
     </Helmet>
@@ -54,7 +54,5 @@ const Page = () => (
         </Cite>
       </Content>
     </Main>
-  </DesignSystemLayout>
+  </Page>
 );
-
-export default Page;
