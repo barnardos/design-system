@@ -1,17 +1,16 @@
 import Helmet from "react-helmet";
 import React from "react";
 
-import Breadcrumbs from "../components/Breadcrumbs";
-import Cite from "../components/Cite";
-import NumberedList from "../components/NumberedList";
-import Page from "../components/Page";
-import Link from "../components/Link";
-import ListItem from "../components/ListItem";
-import Paragraph from "../components/Paragraph";
-import Title from "../components/Title";
-import Main from "../components/Main";
-import Content from "../components/Content";
-import Topic from "../components/Topic";
+import Breadcrumbs from "../../components/Breadcrumbs";
+import Cite from "../../components/Cite";
+import NumberedList from "../../components/NumberedList";
+import Page from "../../components/Page";
+import Link from "../../components/Link";
+import ListItem from "../../components/ListItem";
+import Paragraph from "../../components/Paragraph";
+import Title from "../../components/Title";
+import Main from "../../components/Main";
+import Content from "../../components/Content";
 
 export default () => (
   <Page>
@@ -23,13 +22,15 @@ export default () => (
         {
           text: "Home",
           href: "/"
+        },
+        {
+          text: "Assets",
+          href: "/assets/"
         }
       ]}
     />
-
     <Main>
       <Content>
-        <Topic>{`Assets`}</Topic>
         <Title>{`Sketch assets`}</Title>
         <Paragraph>
           {`When designing your product you should `}

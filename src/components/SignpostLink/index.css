@@ -7,7 +7,6 @@
   display: inline-block;
   font: 600 var(--type-2) proxima-nova, sans-serif;
   position: relative;
-  text-align: center;
 
   &::after {
     text-decoration: underline; /* ie11 fix */

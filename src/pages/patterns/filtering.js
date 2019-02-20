@@ -1,23 +1,22 @@
 import Helmet from "react-helmet";
 import React from "react";
 
-import Breadcrumbs from "../components/Breadcrumbs";
-import Cite from "../components/Cite";
-import Title from "../components/Title";
-import Main from "../components/Main";
-import Content from "../components/Content";
-import Page from "../components/Page";
-import Link from "../components/Link";
-import Filter from "../components/Filter";
-import ListItem from "../components/ListItem";
-import Paragraph from "../components/Paragraph";
-import BulletedList from "../components/BulletedList";
-import TextInput from "../components/TextInput";
-import RadioButtons from "../components/RadioButtons";
-import Form from "../components/Form";
-import Submit from "../components/Submit";
-import Example from "../components/Example";
-import Topic from "../components/Topic";
+import Breadcrumbs from "../../components/Breadcrumbs";
+import Cite from "../../components/Cite";
+import Title from "../../components/Title";
+import Main from "../../components/Main";
+import Content from "../../components/Content";
+import Page from "../../components/Page";
+import Link from "../../components/Link";
+import Filter from "../../components/Filter";
+import ListItem from "../../components/ListItem";
+import Paragraph from "../../components/Paragraph";
+import BulletedList from "../../components/BulletedList";
+import TextInput from "../../components/TextInput";
+import RadioButtons from "../../components/RadioButtons";
+import Form from "../../components/Form";
+import Submit from "../../components/Submit";
+import Example from "../../components/Example";
 
 export default () => (
   <Page>
@@ -29,12 +28,15 @@ export default () => (
         {
           text: "Home",
           href: "/"
+        },
+        {
+          text: "Patterns",
+          href: "/patterns/"
         }
       ]}
     />
     <Main>
       <Content>
-        <Topic>{`Patterns`}</Topic>
         <Title>{`Filtering`}</Title>
         <Paragraph>{`You should:`}</Paragraph>
         <BulletedList>

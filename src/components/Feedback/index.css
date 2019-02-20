@@ -7,6 +7,10 @@
   display: block;
   max-width: 46rem;
   padding: 1.5rem 1.5rem 1.75rem;
+
+  &:not(:first-child) {
+    margin-top: 2rem;
+  }
 }
 
 .Feedback-title {
