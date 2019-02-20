@@ -11,3 +11,11 @@
     color: color-mod(var(--purple) shade(20%));
   }
 }
+
+.Link--inverted {
+  color: white;
+
+  &:visited {
+    color: white;
+  }
+}

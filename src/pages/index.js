@@ -3,16 +3,13 @@ import React from "react";
 
 import Link from "../components/Link";
 import Feedback from "../components/Feedback";
-import BulletedList from "../components/BulletedList";
 import ComponentsIndex from "../components/ComponentsIndex";
 import ComponentsIndexes from "../components/ComponentsIndexes";
 import Page from "../components/Page";
-import DesignSystemNavigation from "../components/DesignSystemNavigation";
 import DesignSystemNavigations from "../components/DesignSystemNavigations";
 import Heading from "../components/Heading";
 import Hero from "../components/Hero";
 import Lede from "../components/Lede";
-import ListItem from "../components/ListItem";
 import Main from "../components/Main";
 import Paragraph from "../components/Paragraph";
 import Promo from "../components/Promo";
@@ -43,46 +40,8 @@ export default () => (
         </SignpostLinks>
       </Hero>
       <Section>
-        <Heading>{`Patterns`}</Heading>
-        <Paragraph>{`Using our components to solve common problems.`}</Paragraph>
-        <DesignSystemNavigation
-          isFlex
-          items={[
-            {
-              text: "Asking for names",
-              href: "/asking-for-names/"
-            },
-            {
-              text: "Filtering",
-              href: "/filtering/"
-            },
-            {
-              text: "Preventing spam",
-              href: "/preventing-spam/"
-            }
-          ]}
-        />
-      </Section>
-      <Section>
-        <Heading>{`Components`}</Heading>
-        <Paragraph>{`Following our standards to create reusable parts.`}</Paragraph>
-        <ComponentsIndexes>
-          <ComponentsIndex
-            items={contentItems}
-            href="/content/"
-            title="Content"
-          />
-          <ComponentsIndex
-            items={navigationItems}
-            href="/navigation/"
-            title="Navigation"
-          />
-          {<ComponentsIndex items={formsItems} href="/forms/" title="Forms" />}
-        </ComponentsIndexes>
-      </Section>
-      <Section>
         <Heading>{`Standards`}</Heading>
-        <Paragraph>{`Building on our principles to maintain quality and consistency.`}</Paragraph>
+        <Paragraph>{`Guidelines on how to adopt our ways of working.`}</Paragraph>
         <DesignSystemNavigations
           items={[
             {
@@ -157,7 +116,40 @@ export default () => (
         />
       </Section>
       <Section>
+        <Heading>{`Components`}</Heading>
+        <Paragraph>{`Build consistent and assessible products with these reusable building blocks.`}</Paragraph>
+        <ComponentsIndexes>
+          <ComponentsIndex
+            items={contentItems}
+            href="/content/"
+            title="Content"
+          />
+          <ComponentsIndex
+            items={navigationItems}
+            href="/navigation/"
+            title="Navigation"
+          />
+          {<ComponentsIndex items={formsItems} href="/forms/" title="Forms" />}
+        </ComponentsIndexes>
+        <SignpostLinks>
+          <SignpostLink href="https://www.npmjs.com/package/@barnardos/components">{`Install components (technical)`}</SignpostLink>
+        </SignpostLinks>
+      </Section>
+      <Section>
+        <Promos>
+          <Promo
+            href="/patterns"
+            title="Patterns"
+          >{`Put the building blocks together to help users complete common tasks.`}</Promo>
+          <Promo
+            href="/assets"
+            title="Assets"
+          >{`Downloadable resources and guidance on creating your own assets.`}</Promo>
+        </Promos>
+      </Section>
+      <Section>
         <Heading>{`Principles`}</Heading>
+        <Paragraph>{`How we think about design.`}</Paragraph>
         <Promos>
           <Promo
             href="/principles/#start-small"
@@ -184,23 +176,6 @@ export default () => (
             title="Be open"
           >{`Be part of the open digital community.`}</Promo>
         </Promos>
-      </Section>
-      <Section>
-        <Heading>{`Assets`}</Heading>
-        <BulletedList>
-          <ListItem>
-            <Link href="/web-assets/">{`Web assets`}</Link>
-          </ListItem>
-          <ListItem>
-            <Link href="/sketch-assets/">{`Sketch assets`}</Link>
-          </ListItem>
-          <ListItem>
-            <Link href="/images-and-videos/">{`Images and videos`}</Link>
-          </ListItem>
-          <ListItem>
-            <Link href="/iconography/">{`Iconography`}</Link>
-          </ListItem>
-        </BulletedList>
       </Section>
       <Feedback title="Give feedback">
         <Paragraph>

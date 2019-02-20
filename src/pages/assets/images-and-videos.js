@@ -1,17 +1,16 @@
 import Helmet from "react-helmet";
 import React from "react";
 
-import Breadcrumbs from "../components/Breadcrumbs";
-import Cite from "../components/Cite";
-import Page from "../components/Page";
-import Link from "../components/Link";
-import ListItem from "../components/ListItem";
-import Paragraph from "../components/Paragraph";
-import Title from "../components/Title";
-import Main from "../components/Main";
-import Content from "../components/Content";
-import BulletedList from "../components/BulletedList";
-import Topic from "../components/Topic";
+import Breadcrumbs from "../../components/Breadcrumbs";
+import Cite from "../../components/Cite";
+import Page from "../../components/Page";
+import Link from "../../components/Link";
+import ListItem from "../../components/ListItem";
+import Paragraph from "../../components/Paragraph";
+import Title from "../../components/Title";
+import Main from "../../components/Main";
+import Content from "../../components/Content";
+import BulletedList from "../../components/BulletedList";
 
 export default () => (
   <Page>
@@ -23,12 +22,15 @@ export default () => (
         {
           text: "Home",
           href: "/"
+        },
+        {
+          text: "Assets",
+          href: "/assets/"
         }
       ]}
     />
     <Main>
       <Content>
-        <Topic>{`Assets`}</Topic>
         <Title>{`Images and videos`}</Title>
         <Paragraph>{`When creating images and videos you should:`}</Paragraph>
         <BulletedList>

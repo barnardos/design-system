@@ -4,12 +4,13 @@ import { Link as GatsbyLink } from "gatsby";
 
 import "./index.css";
 
-const Link = ({ children, href, activeClassName, ...other }) => {
+const Link = ({ children, inverted, href, activeClassName, ...other }) => {
+  const className = `Link ${inverted ? "Link--inverted" : ""}`;
   // Assume internal links start with exactly one slash
   if (/^\/(?!\/)/.test(href)) {
     return (
       <GatsbyLink
-        className="Link"
+        className={className}
         to={href}
         activeClassName={activeClassName}
         {...other}
@@ -19,7 +20,7 @@ const Link = ({ children, href, activeClassName, ...other }) => {
     );
   }
   return (
-    <a className="Link" href={href} {...other}>
+    <a className={className} href={href} {...other}>
       {children}
     </a>
   );
@@ -28,6 +29,7 @@ const Link = ({ children, href, activeClassName, ...other }) => {
 Link.propTypes = {
   activeClassName: PropTypes.string,
   href: PropTypes.string.isRequired,
+  inverted: PropTypes.bool,
   children: PropTypes.node.isRequired
 };
 

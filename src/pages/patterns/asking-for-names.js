@@ -1,20 +1,19 @@
 import Helmet from "react-helmet";
 import React from "react";
 
-import Breadcrumbs from "../components/Breadcrumbs";
-import BulletedList from "../components/BulletedList";
-import Cite from "../components/Cite";
-import Page from "../components/Page";
-import Figure from "../components/Figure";
-import Figures from "../components/Figures";
-import Link from "../components/Link";
-import ListItem from "../components/ListItem";
-import Paragraph from "../components/Paragraph";
-import TextInput from "../components/TextInput";
-import Title from "../components/Title";
-import Main from "../components/Main";
-import Content from "../components/Content";
-import Topic from "../components/Topic";
+import Breadcrumbs from "../../components/Breadcrumbs";
+import BulletedList from "../../components/BulletedList";
+import Cite from "../../components/Cite";
+import Page from "../../components/Page";
+import Figure from "../../components/Figure";
+import Figures from "../../components/Figures";
+import Link from "../../components/Link";
+import ListItem from "../../components/ListItem";
+import Paragraph from "../../components/Paragraph";
+import TextInput from "../../components/TextInput";
+import Title from "../../components/Title";
+import Main from "../../components/Main";
+import Content from "../../components/Content";
 
 export default () => (
   <Page>
@@ -26,12 +25,15 @@ export default () => (
         {
           text: "Home",
           href: "/"
+        },
+        {
+          text: "Patterns",
+          href: "/patterns/"
         }
       ]}
     />
     <Main>
       <Content>
-        <Topic>{`Patterns`}</Topic>
         <Title>{`Asking for names`}</Title>
         <Paragraph>{`You should:`}</Paragraph>
         <BulletedList>

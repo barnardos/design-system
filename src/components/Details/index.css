@@ -1,0 +1,17 @@
+@import "../custom-properties.css";
+
+/** @define Details; */
+
+.Details {
+  &:not(:first-child) {
+    margin-top: 1.5rem;
+  }
+}
+
+.Details-summary {
+  font: 300 var(--type-0) system-ui;
+}
+
+.Details-children {
+  margin-top: 1.5rem;
+}
