@@ -11,7 +11,6 @@ import Page from "../components/Page";
 import Heading from "../components/Heading";
 import Link from "../components/Link";
 import ListItem from "../components/ListItem";
-import Pagination from "../components/Pagination";
 import Paragraph from "../components/Paragraph";
 import Title from "../components/Title";
 import Main from "../components/Main";
