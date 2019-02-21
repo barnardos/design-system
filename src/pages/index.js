@@ -22,6 +22,7 @@ import Title from "../components/Title";
 import { indexItems as contentItems } from "./content";
 import { indexItems as navigationItems } from "./navigation";
 import { indexItems as formsItems } from "./forms";
+import { indexItems as structureItems } from "./structure";
 
 export default () => (
   <Page>
@@ -120,16 +121,21 @@ export default () => (
         <Paragraph>{`Build consistent and assessible products with these reusable building blocks.`}</Paragraph>
         <ComponentsIndexes>
           <ComponentsIndex
-            items={contentItems}
-            href="/content/"
-            title="Content"
+            items={structureItems}
+            href="/structure/"
+            title="Structure"
           />
           <ComponentsIndex
             items={navigationItems}
             href="/navigation/"
             title="Navigation"
           />
-          {<ComponentsIndex items={formsItems} href="/forms/" title="Forms" />}
+          <ComponentsIndex
+            items={contentItems}
+            href="/content/"
+            title="Content"
+          />
+          <ComponentsIndex items={formsItems} href="/forms/" title="Forms" />
         </ComponentsIndexes>
         <SignpostLinks>
           <SignpostLink href="https://www.npmjs.com/package/@barnardos/components">{`Install components (technical)`}</SignpostLink>

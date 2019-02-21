@@ -59,7 +59,8 @@
 }
 
 .Menu-item {
-  &:hover {
+  &:hover,
+  &:focus-within {
     background: color-mod(var(--black) tint(95%));
 
     & .Menu-link {

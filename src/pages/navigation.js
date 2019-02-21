@@ -15,23 +15,18 @@ import ContentsMenu from "../components/ContentsMenu";
 import Page from "../components/Page";
 import DonateLink from "../components/DonateLink";
 import Example from "../components/Example";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
 import Heading from "../components/Heading";
 import Link from "../components/Link";
 import ListItem from "../components/ListItem";
-import Menu from "../components/Menu";
-import Pagination from "../components/Pagination";
 import Paragraph from "../components/Paragraph";
 import Promo from "../components/Promo";
-import Search from "../components/Search";
 import SignpostLink from "../components/SignpostLink";
-import SkipLink from "../components/SkipLink";
 import StartLink from "../components/StartLink";
 import Subheading from "../components/Subheading";
 import Title from "../components/Title";
 import Main from "../components/Main";
 import Topic from "../components/Topic";
+import Pagination from "../components/Pagination";
 
 export const indexItems = [
   {
@@ -70,11 +65,6 @@ export const indexItems = [
     href: "/navigation/#back-link"
   },
   {
-    level: 2,
-    text: "Skip Link",
-    href: "/navigation/#skip-link"
-  },
-  {
     level: 1,
     text: "Promos",
     href: "/navigation/#promos"
@@ -91,38 +81,13 @@ export const indexItems = [
   },
   {
     level: 1,
-    text: "Breadcrumbs",
-    href: "/navigation/#breadcrumbs"
-  },
-  {
-    level: 1,
-    text: "Pagination",
-    href: "/navigation/#pagination"
-  },
-  {
-    level: 1,
-    text: "Menu",
-    href: "/navigation/#menu"
-  },
-  {
-    level: 1,
     text: "Contents Menu",
     href: "/navigation/#contents-menu"
   },
   {
     level: 1,
-    text: "Search",
-    href: "/navigation/#search"
-  },
-  {
-    level: 1,
-    text: "Header",
-    href: "/navigation/#header"
-  },
-  {
-    level: 1,
-    text: "Footer",
-    href: "/navigation/#footer"
+    text: "Pagination",
+    href: "/navigation/#pagination"
   }
 ];
 
@@ -256,19 +221,6 @@ export default () => (
             <Link href="https://github.com/barnardos/design-system/issues/166">{`Back Link research`}</Link>
             {` on GitHub.`}
           </Cite>
-          <Subheading>{`Skip Link`}</Subheading>
-          <Paragraph>{`Use this component to skip to the main content.`}</Paragraph>
-          <Example>
-            <SkipLink />
-            <Cite>{`Focus component to reveal.`}</Cite>
-          </Example>
-          <Cite>
-            {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/SkipLink">{`Skip Link code`}</Link>
-            {` and `}
-            <Link href="https://github.com/barnardos/design-system/issues/479">{`Skip Link research`}</Link>
-            {` on GitHub.`}
-          </Cite>
           <Heading>{`Promos`}</Heading>
           <Paragraph>{`Use these components to provide a summary that links to additional details.`}</Paragraph>
           <Subheading>{`Promo`}</Subheading>
@@ -310,134 +262,6 @@ export default () => (
             <Link href="https://github.com/barnardos/design-system/issues/401">{`Prominent Promo research`}</Link>
             {` on GitHub.`}
           </Cite>
-          <Heading>{`Breadcrumbs`}</Heading>
-          <Paragraph>{`Use this component to help a user identify their current location.`}</Paragraph>
-          <Paragraph>{`When using this component you should:`}</Paragraph>
-          <BulletedList>
-            <ListItem>{`place it directly above the page title`}</ListItem>
-            <ListItem>{`only use to represent individual pages`}</ListItem>
-          </BulletedList>
-          <Example>
-            <Breadcrumbs
-              items={[
-                {
-                  text: "Home",
-                  href: "#"
-                },
-                {
-                  text: "What we do",
-                  href: "#"
-                },
-                {
-                  text: "Supporting young people",
-                  href: "#"
-                }
-              ]}
-            />
-          </Example>
-          <Cite>
-            {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Breadcrumbs">{`Breadcrumbs code`}</Link>
-            {` and `}
-            <Link href="https://github.com/barnardos/design-system/issues/2">{`Breadcrumbs research`}</Link>
-            {` on GitHub.`}
-          </Cite>
-          <Heading>{`Pagination`}</Heading>
-          <Paragraph>{`Use this component to break large pieces of content across multiple pages.`}</Paragraph>
-          <Example>
-            <Pagination
-              previous={{
-                href: "#",
-                label: "Overview"
-              }}
-              next={{
-                href: "#",
-                label: "Register as a foster carer"
-              }}
-            />
-          </Example>
-          <Cite>
-            {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Pagination">{`Pagination code`}</Link>
-            {` and `}
-            <Link href="https://github.com/barnardos/design-system/issues/250">{`Pagination research`}</Link>
-            {` on GitHub.`}
-          </Cite>
-          <Heading>{`Menu`}</Heading>
-          <Paragraph>{`Use this component to navigate to top and secondary level items.`}</Paragraph>
-          <Paragraph>{`When using this component you should:`}</Paragraph>
-          <BulletedList>
-            <ListItem>{`aim to have the items visible`}</ListItem>
-            <ListItem>{`avoid collapsing items into a Command on larger viewports`}</ListItem>
-          </BulletedList>
-          <Example>
-            <div
-              style={{
-                paddingBottom: "8rem",
-                position: "relative"
-              }}
-            >
-              <Menu
-                items={[
-                  {
-                    text: "Breakfast",
-                    href: "#",
-                    items: [
-                      {
-                        text: "Cereal",
-                        href: "#"
-                      },
-                      {
-                        text: "Fruit",
-                        href: "#"
-                      },
-                      {
-                        text: "Tea",
-                        href: "#"
-                      }
-                    ]
-                  },
-                  {
-                    isActive: true,
-                    text: "Lunch",
-                    href: "#",
-                    items: [
-                      {
-                        isActive: true,
-                        text: "Sandwich",
-                        href: "#"
-                      },
-                      {
-                        text: "Juice",
-                        href: "#"
-                      }
-                    ]
-                  },
-                  {
-                    text: "Dinner",
-                    href: "#",
-                    items: [
-                      {
-                        text: "Pasta",
-                        href: "#"
-                      },
-                      {
-                        text: "Salad",
-                        href: "#"
-                      }
-                    ]
-                  }
-                ]}
-              />
-            </div>
-          </Example>
-          <Cite>
-            {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Menu">{`Menu code`}</Link>
-            {` and `}
-            <Link href="https://github.com/barnardos/design-system/issues/2">{`Menu research`}</Link>
-            {` on GitHub.`}
-          </Cite>
           <Heading>{`Contents Menu`}</Heading>
           <Paragraph>{`Use this component to navigate within a page or section of pages.`}</Paragraph>
           <Example>
@@ -473,121 +297,25 @@ export default () => (
             <Link href="https://github.com/barnardos/design-system/issues/251">{`Contents Menu research`}</Link>
             {` on GitHub.`}
           </Cite>
-          <Heading>{`Search`}</Heading>
+          <Heading>{`Pagination`}</Heading>
+          <Paragraph>{`Use this component to break large pieces of content across multiple pages.`}</Paragraph>
           <Example>
-            <Search id="example-search" />
-          </Example>
-          <Cite>
-            {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Search">{`Search code`}</Link>
-            {` on GitHub.`}
-          </Cite>
-          <Heading>{`Header`}</Heading>
-          <Paragraph>{`When using this component you should link the Barnardo's logo to the homepage.`}</Paragraph>
-          <Example>
-            <Header />
-          </Example>
-          <Example>
-            <div
-              style={{
-                paddingBottom: "8rem",
-                position: "relative"
+            <Pagination
+              previous={{
+                href: "#",
+                label: "Overview"
               }}
-            >
-              <Header
-                search
-                menu={
-                  <Menu
-                    items={[
-                      {
-                        text: "Breakfast",
-                        href: "#",
-                        items: [
-                          {
-                            text: "Cereal",
-                            href: "#"
-                          },
-                          {
-                            text: "Fruit",
-                            href: "#"
-                          },
-                          {
-                            text: "Tea",
-                            href: "#"
-                          }
-                        ]
-                      },
-                      {
-                        isActive: true,
-                        text: "Lunch",
-                        href: "#",
-                        items: [
-                          {
-                            isActive: true,
-                            text: "Sandwich",
-                            href: "#"
-                          },
-                          {
-                            text: "Juice",
-                            href: "#"
-                          }
-                        ]
-                      },
-                      {
-                        text: "Dinner",
-                        href: "#",
-                        items: [
-                          {
-                            text: "Pasta",
-                            href: "#"
-                          },
-                          {
-                            text: "Salad",
-                            href: "#"
-                          }
-                        ]
-                      }
-                    ]}
-                  />
-                }
-              />
-            </div>
-          </Example>
-          <Cite>
-            {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Header">{`Header code`}</Link>
-            {` and `}
-            <Link href="https://github.com/barnardos/design-system/issues/2">{`Header research`}</Link>
-            {` on GitHub.`}
-          </Cite>
-          <Heading>{`Footer`}</Heading>
-          <Example>
-            <Footer
-              items={[
-                {
-                  href: "#",
-                  text: "Contact us"
-                },
-                {
-                  href: "#",
-                  text: "Privacy notice"
-                },
-                {
-                  href: "#",
-                  text: "Terms & conditions"
-                },
-                {
-                  href: "#",
-                  text: "Cookie policy"
-                }
-              ]}
+              next={{
+                href: "#",
+                label: "Register as a foster carer"
+              }}
             />
           </Example>
           <Cite>
             {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Footer">{`Footer code`}</Link>
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Pagination">{`Pagination code`}</Link>
             {` and `}
-            <Link href="https://github.com/barnardos/design-system/issues/301">{`Footer research`}</Link>
+            <Link href="https://github.com/barnardos/design-system/issues/250">{`Pagination research`}</Link>
             {` on GitHub.`}
           </Cite>
         </Content>

@@ -4,7 +4,7 @@ import React from "react";
 import "./index.css";
 
 const Main = ({ children }) => (
-  <main className="Main" id="main">
+  <main className="Main" id="main-anchor">
     {children}
   </main>
 );
