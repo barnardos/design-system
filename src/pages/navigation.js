@@ -1,5 +1,6 @@
 import Helmet from "react-helmet";
 import React from "react";
+import { withPrefix } from "gatsby";
 
 import ProminentLink from "../components/ProminentLink";
 import ProminentPromo from "../components/ProminentPromo";
@@ -281,7 +282,7 @@ export default () => (
           <Example>
             <Promo
               href="#"
-              src="https://donate.barnardos.org.uk/sites/default/files/styles/b_lg/public/uploads/IMG_8550.jpg"
+              src={withPrefix("/image-for-promo-example.jpg")}
               title="Other ways to donate"
             >{`Find out ways to help support vulnerable children including making one-off or regular donations.`}</Promo>
           </Example>

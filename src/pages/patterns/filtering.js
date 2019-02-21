@@ -38,14 +38,15 @@ export default () => (
     <Main>
       <Content>
         <Title>{`Filtering`}</Title>
+        <Paragraph>{`Use this pattern to narrow down results to the most relevant.`}</Paragraph>
         <Paragraph>{`You should:`}</Paragraph>
         <BulletedList>
-          <ListItem>{`avoid too many filters`}</ListItem>
+          <ListItem>{`display the number of results`}</ListItem>
+          <ListItem>{`show what filters are currently active`}</ListItem>
+          <ListItem>{`include a way to clear each filter option`}</ListItem>
           <ListItem>{`show common filters at all times`}</ListItem>
-          <ListItem>{`dynamically remove filters that have no results`}</ListItem>
-          <ListItem>{`show the active filters`}</ListItem>
-          <ListItem>{`include a way to undo each filter`}</ListItem>
-          <ListItem>{`show the number of results`}</ListItem>
+          <ListItem>{`hide filters that have no results`}</ListItem>
+          <ListItem>{`avoid too many filters options`}</ListItem>
         </BulletedList>
         <Example>
           <TextInput

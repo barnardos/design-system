@@ -34,11 +34,20 @@ export default () => (
         <Title>{`Preventing spam`}</Title>
         <Paragraph>{`You could try:`}</Paragraph>
         <BulletedList>
-          <ListItem>{`rate and connection limiting`}</ListItem>
-          <ListItem>{`using honey pots`}</ListItem>
+          <ListItem>
+            <Link href="https://en.wikipedia.org/wiki/Rate_limiting">{`rate and connection limiting`}</Link>
+          </ListItem>
+          <ListItem>
+            {`using `}
+            <Link href="https://en.wikipedia.org/wiki/Honeypot_(computing)">{`honeypots`}</Link>
+          </ListItem>
           <ListItem>{`transaction monitoring`}</ListItem>
         </BulletedList>
-        <Paragraph>{`Avoid using CAPTCHAs, as they cause usability an accessibility issues.`}</Paragraph>
+        <Paragraph>
+          {`Avoid using `}
+          <Link href="https://en.wikipedia.org/wiki/CAPTCHA">{`CAPTCHAs`}</Link>
+          {`, as they cause usability an accessibility issues.`}
+        </Paragraph>
         <Cite>
           {`View `}
           <Link href="https://github.com/barnardos/design-system/issues/411">{`preventing spam research`}</Link>
