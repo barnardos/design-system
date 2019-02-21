@@ -10,11 +10,11 @@
   margin-top: 1.5rem;
 }
 
-@media (min-width: 56rem) {
+@media (min-width: 58rem) {
   .ComponentIndexes {
     display: grid;
     grid-gap: 2rem;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
   }
 }
