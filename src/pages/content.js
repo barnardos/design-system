@@ -20,6 +20,7 @@ import Lede from "../components/Lede";
 import Link from "../components/Link";
 import ListItem from "../components/ListItem";
 import Main from "../components/Main";
+import NumberedList from "../components/NumberedList";
 import Paragraph from "../components/Paragraph";
 import ProminentBlockQuote from "../components/ProminentBlockQuote";
 import PullQuote from "../components/PullQuote";
@@ -31,7 +32,7 @@ import Topic from "../components/Topic";
 export const indexItems = [
   {
     level: 1,
-    text: "Type styles",
+    text: "Type",
     href: "/content/#type-styles"
   },
   {
@@ -73,6 +74,11 @@ export const indexItems = [
     level: 2,
     text: "Bulleted List",
     href: "/content/#bulleted-list"
+  },
+  {
+    level: 2,
+    text: "Numbered List",
+    href: "/content/#numbered-list"
   },
   {
     level: 1,
@@ -144,7 +150,13 @@ export default () => (
         <ContentsMenu items={indexItems} />
         <Content>
           <Paragraph>{`When displaying content you should provide a meaningful content hierarchy.`}</Paragraph>
-          <Heading>{`Type styles`}</Heading>
+          <Heading>{`Type`}</Heading>
+          <Paragraph>{`Use these components to create a type hierarchy.`}</Paragraph>
+          <Paragraph>
+            {`If your product has additional needs, follow the standards in `}
+            <Link href="/typography/">{`Typography`}</Link>
+            {`.`}
+          </Paragraph>
           <Subheading>{`Title`}</Subheading>
           <Example>
             <Title>{`What we do`}</Title>
@@ -208,19 +220,39 @@ export default () => (
             <ListItem>{`avoid starting items with the same word`}</ListItem>
           </BulletedList>
           <Subheading>{`Bulleted List`}</Subheading>
-          <Paragraph>{`Use this component when the sequence or count of items isn’t important.`}</Paragraph>
+          <Paragraph>{`Use this component when there is no specific sequence or order to the items.`}</Paragraph>
           <Example>
-            <Paragraph>{`There has been particular improvements in: `}</Paragraph>
+            <Paragraph>{`When talking with a professional you should mention:`}</Paragraph>
             <BulletedList>
-              <ListItem>{`families feeling less isolated`}</ListItem>
-              <ListItem>{`reduced parental stress`}</ListItem>
+              <ListItem>{`when the problems started`}</ListItem>
+              <ListItem>{`if there’s a pattern in the problems`}</ListItem>
+              <ListItem>{`any difficulties in school or with friends`}</ListItem>
+              <ListItem>{`any big family issues like divorce or bereavement`}</ListItem>
             </BulletedList>
           </Example>
           <Cite>
             {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/BulletedListItem">{`Bulleted List code`}</Link>
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/BulletedList">{`Bulleted List code`}</Link>
             {` and `}
             <Link href="https://github.com/barnardos/design-system/issues/325">{`Bulleted List research`}</Link>
+            {` on GitHub.`}
+          </Cite>
+          <Subheading>{`Numbered List`}</Subheading>
+          <Paragraph>{`Use this component when the items have a specific sequence or count.`}</Paragraph>
+          <Example>
+            <Paragraph>{`If you think your child may be suffering from mental health difficulties:`}</Paragraph>
+            <NumberedList>
+              <ListItem>{`Lean on your support network.`}</ListItem>
+              <ListItem>{`Tell your child about childline.`}</ListItem>
+              <ListItem>{`Talk to your child’s school.`}</ListItem>
+              <ListItem>{`Visit your child’s GP.`}</ListItem>
+            </NumberedList>
+          </Example>
+          <Cite>
+            {`View `}
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/NumberedList">{`Numbered List code`}</Link>
+            {` and `}
+            <Link href="https://github.com/barnardos/design-system/issues/623">{`Numbered List research`}</Link>
             {` on GitHub.`}
           </Cite>
           <Heading>{`Images`}</Heading>
