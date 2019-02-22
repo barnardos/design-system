@@ -31,6 +31,6 @@
   }
 
   &:visited {
-    color: color-mod(var(--purple) shade(20%));
+    color: var(--purple);
   }
 }
