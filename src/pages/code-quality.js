@@ -37,21 +37,19 @@ export default () => (
           <ListItem>
             {`format your code with `}
             <Link href="https://prettier.io/">{`Prettier`}</Link>
-            {` (default settings)`}
+            {` using the default settings`}
           </ListItem>
           <ListItem>
             {`lint your JavaScript with `}
             <Link href="https://eslint.org/">{`ESLint`}</Link>
-            {` (`}
+            {` using `}
             <Link href="https://github.com/barnardos/eslint-config-barnardos">{`eslint-config-barnardos`}</Link>
-            {`)`}
           </ListItem>
           <ListItem>
             {`lint your CSS with `}
             <Link href="https://stylelint.io/">{`stylelint`}</Link>
-            {` (`}
+            {` using `}
             <Link href="https://github.com/barnardos/stylelint-config-barnardos">{`stylelint-config-barnardos`}</Link>
-            {`)`}
           </ListItem>
         </BulletedList>
         <Cite>
