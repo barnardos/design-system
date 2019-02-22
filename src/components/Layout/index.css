@@ -1,8 +1,6 @@
 /** @define Layout */
 
 .Layout {
-  margin: 0 auto;
-  max-width: 80rem;
   padding: 0.5rem 1rem;
 }
 

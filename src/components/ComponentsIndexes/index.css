@@ -8,6 +8,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, auto);
   margin-top: 1.5rem;
+  max-width: 80rem;
 }
 
 @media (min-width: 58rem) {
