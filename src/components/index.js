@@ -35,6 +35,7 @@ import Link from "./Link";
 import ListItem from "./ListItem";
 import Main from "./Main";
 import Menu from "./Menu";
+import NumberedList from "./NumberedList";
 import Pagination from "./Pagination";
 import Paragraph from "./Paragraph";
 import ProminentBlockQuote from "./ProminentBlockQuote";
@@ -95,6 +96,7 @@ export {
   ListItem,
   Main,
   Menu,
+  NumberedList,
   Pagination,
   Paragraph,
   ProminentBlockQuote,
