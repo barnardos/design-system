@@ -61,7 +61,7 @@
   &:focus {
     & + .Switch-label {
       &::before {
-        box-shadow: 0 0 0 1px var(--black), 0 0 0 0.25rem var(--orange);
+        box-shadow: 0 0 0 1px var(--black), 0 0 0 0.25rem var(--yellow);
       }
     }
   }
