@@ -9,13 +9,13 @@
 .Caption-children {
   display: block;
   position: relative;
-}
 
-.Caption-children::before {
-  content: "";
-  display: block;
-  padding-bottom: 56.25%; /* stylelint-disable-line declaration-property-unit-whitelist */
-  width: 100%;
+  &::before {
+    content: "";
+    display: block;
+    padding-bottom: 56.25%; /* stylelint-disable-line declaration-property-unit-whitelist */
+    width: 100%;
+  }
 }
 
 .Caption-childrenInner {
