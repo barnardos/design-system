@@ -11,10 +11,10 @@ const PaginationItem = ({ direction, href, label }) => (
       className={`Pagination-link Pagination-link--${direction}`}
       href={href}
     >
-      <div className="Pagination-text">{`${direction[0].toUpperCase()}${direction.slice(
+      <span className="Pagination-text">{`${direction[0].toUpperCase()}${direction.slice(
         1
-      )}`}</div>
-      {label && <div className="Pagination-label">{label}</div>}
+      )}`}</span>
+      {label && <span className="Pagination-label"> {label}</span>}
     </Link>
   </li>
 );

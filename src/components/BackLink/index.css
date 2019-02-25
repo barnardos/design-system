@@ -6,8 +6,6 @@
   color: color-mod(var(--green) shade(20%));
   display: inline-block;
   font: 300 var(--type-0) system-ui;
-  padding-left: 1rem;
-  position: relative;
 
   &::before {
     text-decoration: underline; /* ie11 fix */
@@ -18,12 +16,11 @@
     content: "‹";
     display: inline-block;
     font: 300 var(--type-6) proxima-nova, sans-serif;
-    left: 0;
     line-height: 0;
-    margin-top: 0.125rem;
-    position: absolute;
+    margin-right: 0.5rem;
+    position: relative;
     text-decoration: none;
-    top: 0.5rem;
+    top: 0.125rem;
   }
 
   &:hover {
