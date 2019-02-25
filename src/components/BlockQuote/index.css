@@ -27,10 +27,6 @@
   padding-top: 4.5rem;
   position: relative;
 
-  &::after {
-    content: "”";
-  }
-
   &::before {
     content: "“";
     font: 600 var(--type-20) proxima-nova, sans-serif;
@@ -42,12 +38,17 @@
   }
 }
 
+.BlockQuote-childrenInner {
+  color: var(--black);
+}
+
 .BlockQuote-cite {
   display: block;
   margin-top: 1rem;
 }
 
 .BlockQuote-role {
+  color: var(--black);
   font: 300 var(--type-2) system-ui;
 }
 
