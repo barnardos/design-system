@@ -48,7 +48,6 @@ import RadioButtons from "./RadioButtons";
 import Search from "./Search";
 import Section from "./Section";
 import SignpostLink from "./SignpostLink";
-import SignpostLinks from "./SignpostLinks";
 import Site from "./Site";
 import SkipLink from "./SkipLink";
 import StartLink from "./StartLink";
@@ -109,7 +108,6 @@ export {
   Search,
   Section,
   SignpostLink,
-  SignpostLinks,
   Site,
   SkipLink,
   StartLink,
