@@ -157,6 +157,16 @@ export default () => (
             <Link href="/typography/">{`Typography`}</Link>
             {`.`}
           </Paragraph>
+          <Subheading>{`Topic`}</Subheading>
+          <Example>
+            <div
+              style={{
+                paddingBottom: "1rem"
+              }}
+            >
+              <Topic>{`Raising awareness`}</Topic>
+            </div>
+          </Example>
           <Subheading>{`Title`}</Subheading>
           <Example>
             <Title>{`What we do`}</Title>
