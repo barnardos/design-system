@@ -5,9 +5,8 @@ about: "Report a bug"
 
 ## Description
 
-Include detail about your issue and, if applicable, possible solutions or screenshots.
+## Expected behaviour
 
-## Step to reproduce
+## Actual behaviour
 
-1. Go to ...
-2. ...
+## Steps to reproduce
