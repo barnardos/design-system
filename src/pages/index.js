@@ -16,7 +16,6 @@ import Promo from "../components/Promo";
 import Promos from "../components/Promos";
 import Section from "../components/Section";
 import SignpostLink from "../components/SignpostLink";
-import SignpostLinks from "../components/SignpostLinks";
 import Title from "../components/Title";
 
 import { indexItems as contentItems } from "./content";
@@ -33,12 +32,10 @@ export default () => (
       <Hero>
         <Title>{`Barnardo’s Design System`}</Title>
         <Lede>{`Designing and developing digital products for everyone, especially children and young people.`}</Lede>
-        <SignpostLinks>
-          <SignpostLink
-            inverted
-            href="/getting-started/"
-          >{`Getting started`}</SignpostLink>
-        </SignpostLinks>
+        <SignpostLink
+          inverted
+          href="/getting-started/"
+        >{`Getting started`}</SignpostLink>
       </Hero>
       <Section>
         <Heading>{`Standards`}</Heading>
@@ -137,9 +134,7 @@ export default () => (
           />
           <ComponentsIndex items={formsItems} href="/forms/" title="Forms" />
         </ComponentsIndexes>
-        <SignpostLinks>
-          <SignpostLink href="https://www.npmjs.com/package/@barnardos/components">{`Install components (technical)`}</SignpostLink>
-        </SignpostLinks>
+        <SignpostLink href="https://www.npmjs.com/package/@barnardos/components">{`Install components (technical)`}</SignpostLink>
       </Section>
       <Section>
         <Promos>
