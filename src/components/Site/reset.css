@@ -11,7 +11,7 @@
   padding: 0;
 
   &:focus {
-    outline: 0.25rem solid var(--orange);
+    outline: 0.25rem solid var(--yellow);
     outline-offset: 0;
   }
 }

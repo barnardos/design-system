@@ -94,6 +94,10 @@ export default () => (
               [{ label: "Teal", hex: "#0099a9", primary: true }]
             ]}
           />
+          <Subheading>{`Focus`}</Subheading>
+          <Swatches
+            swatches={[[{ label: "Yellow", hex: "#ffbf47", primary: true }]]}
+          />
           <Subheading>{`Errors`}</Subheading>
           <Swatches
             swatches={[[{ label: "Red", hex: "#c30000", primary: true }]]}

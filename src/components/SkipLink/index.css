@@ -3,8 +3,8 @@
 /** @define SkipLink; */
 
 .SkipLink {
-  background-color: var(--orange);
-  color: var(--white);
+  background-color: var(--yellow);
+  color: var(--black);
   display: block;
   font: 300 var(--type-0) system-ui;
   left: -100vw;
