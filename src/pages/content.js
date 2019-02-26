@@ -12,6 +12,7 @@ import ContentHeader from "../components/ContentHeader";
 import ContentsMenu from "../components/ContentsMenu";
 import ContentWithMenu from "../components/ContentWithMenu";
 import Page from "../components/Page";
+import Callout from "../components/Callout";
 import Example from "../components/Example";
 import Fact from "../components/Fact";
 import Heading from "../components/Heading";
@@ -121,6 +122,12 @@ export const indexItems = [
     text: "Fact",
     href: "/content/#fact"
   },
+  {
+    level: 1,
+    text: "Callout",
+    href: "/content/#callout"
+  },
+
   {
     level: 1,
     text: "Section",
@@ -379,6 +386,28 @@ export default () => (
             <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Fact">{`Fact code`}</Link>
             {` and `}
             <Link href="https://github.com/barnardos/design-system/issues/212">{`Fact research`}</Link>
+            {` on GitHub.`}
+          </Cite>
+          <Heading>{`Callout`}</Heading>
+          <Paragraph>{`Use this component to callout parts of the content.`}</Paragraph>
+          <Example>
+            <Callout>
+              <Subheading>{`Barnardo’s The Triangle`}</Subheading>
+              <Paragraph>
+                {`2 Coxwell Road`}
+                <br />
+                {`London`}
+                <br />
+                {`SE19 3BG`}
+              </Paragraph>
+              <Paragraph>{`02097710907`}</Paragraph>
+            </Callout>
+          </Example>
+          <Cite>
+            {`View `}
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Callout">{`Callout code`}</Link>
+            {` and `}
+            <Link href="https://github.com/barnardos/design-system/issues/500">{`Callout research`}</Link>
             {` on GitHub.`}
           </Cite>
           <Heading>{`Section`}</Heading>
