@@ -6,7 +6,6 @@
   color: var(--green);
   display: inline-block;
   font: 600 var(--type-2) proxima-nova, sans-serif;
-  position: relative;
 
   &::after {
     text-decoration: underline; /* ie11 fix */
@@ -15,12 +14,13 @@
   /* stylelint-disable-next-line no-duplicate-selectors */
   &::after {
     content: "›";
+    display: inline-block;
     font: 300 var(--type-8) proxima-nova, sans-serif;
+    left: 0.5rem;
     line-height: 0;
-    margin: 0.75rem 0 0 0.5rem;
-    position: absolute;
+    position: relative;
     text-decoration: none;
-    top: 0.125rem;
+    top: 0.25rem;
   }
 
   &:hover {

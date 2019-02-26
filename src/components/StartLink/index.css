@@ -7,9 +7,7 @@
   color: var(--white);
   display: inline-block;
   font: 600 var(--type-2) proxima-nova, sans-serif;
-  padding: 0.5rem 2.25rem 0.5rem 1rem;
-  position: relative;
-  text-align: center;
+  padding: 0.5rem 1rem;
 
   &::after {
     text-decoration: underline; /* ie11 fix */
@@ -21,10 +19,10 @@
     display: inline-block;
     font: 300 var(--type-8) proxima-nova, sans-serif;
     line-height: 0;
-    margin: 1.25rem 0 0 0.5rem;
-    position: absolute;
+    padding-left: 0.5rem;
+    position: relative;
     text-decoration: none;
-    top: 0.125rem;
+    top: 0.25rem;
   }
 
   &:hover {
