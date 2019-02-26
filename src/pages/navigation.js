@@ -12,6 +12,7 @@ import Content from "../components/Content";
 import ContentHeader from "../components/ContentHeader";
 import ContentWithMenu from "../components/ContentWithMenu";
 import ContentsMenu from "../components/ContentsMenu";
+import DownloadLink from "../components/DownloadLink";
 import Page from "../components/Page";
 import DonateLink from "../components/DonateLink";
 import Example from "../components/Example";
@@ -43,6 +44,12 @@ export const indexItems = [
     level: 2,
     text: "Signpost Link",
     href: "/navigation/#signpost-link"
+  },
+
+  {
+    level: 2,
+    text: "Download Link",
+    href: "/navigation/#download-link"
   },
   {
     level: 2,
@@ -149,6 +156,23 @@ export default () => (
             <Link href="https://github.com/barnardos/design-system/tree/master/src/components/SignpostLink">{`Signpost Link code`}</Link>
             {` and `}
             <Link href="https://github.com/barnardos/design-system/issues/282">{`Signpost Link research`}</Link>
+            {` on GitHub.`}
+          </Cite>
+          <Subheading>{`Download Link`}</Subheading>
+          <Paragraph>{`Use this component to link to a downloadable file.`}</Paragraph>
+          <Paragraph>{`When using this component you should use a meaningful phrase that makes sense out of context.`}</Paragraph>
+          <Example>
+            <DownloadLink
+              href="#"
+              format="PDF"
+              size="258KB"
+            >{`Guide to fostering and adoption`}</DownloadLink>
+          </Example>
+          <Cite>
+            {`View `}
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/DownloadLink">{`Download Link code`}</Link>
+            {` and `}
+            <Link href="https://github.com/barnardos/design-system/issues/476">{`Download Link research`}</Link>
             {` on GitHub.`}
           </Cite>
           <Subheading>{`Start Link`}</Subheading>
