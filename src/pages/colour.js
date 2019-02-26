@@ -66,7 +66,7 @@ export default () => (
           <Paragraph>{`You should use:`}</Paragraph>
           <BulletedList>
             <ListItem>{`the brand colours`}</ListItem>
-            <ListItem>{`a 10% increment scale for tints and shades`}</ListItem>
+            <ListItem>{`a 10% increment scale for tints, shades and opacity`}</ListItem>
           </BulletedList>
           <Heading>{`Brand colours`}</Heading>
           <Subheading>{`Primary`}</Subheading>
