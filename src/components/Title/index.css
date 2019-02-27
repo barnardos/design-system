@@ -8,10 +8,8 @@
   &:not(:first-child) {
     margin-top: 1rem;
   }
-}
 
-@media (min-width: 40rem) {
-  .Title {
+  @media (min-width: 40rem) {
     font: 600 var(--type-9) proxima-nova, sans-serif;
   }
 }

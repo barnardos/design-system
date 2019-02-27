@@ -13,7 +13,6 @@
 .ProminentPromo-image {
   display: block;
   max-width: 100%;
-  padding: 2px; /* stylelint-disable-line declaration-property-unit-whitelist */
 }
 
 .ProminentPromo-text {
@@ -39,10 +38,8 @@
 
 .ProminentPromo-link {
   margin-top: 1.5rem;
-}
 
-@media (min-width: 30rem) {
-  .ProminentPromo-link {
+  @media (min-width: 30rem) {
     display: inline-block;
   }
 }

@@ -2,10 +2,8 @@
 
 .Layout {
   padding: 0.5rem 1rem;
-}
 
-@media (min-width: 48rem) {
-  .Layout {
+  @media (min-width: 48rem) {
     padding: 1rem 2rem;
   }
 }

@@ -4,7 +4,6 @@
  * Minimal reset
  */
 
-/* stylelint-disable selector-max-universal */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -16,8 +15,7 @@
   }
 }
 
-/* stylelint-disable selector-max-type, property-whitelist */
-html {
+:root {
   background: var(--white);
   color: var(--black);
   scroll-behavior: smooth;

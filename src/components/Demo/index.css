@@ -1,7 +1,6 @@
 @import "../custom-properties.css";
 
 /** @define Demo; weak; */
-/* stylelint-disable selector-max-universal, selector-pseudo-class-whitelist */
 
 .Demo--thirds {
   margin: -2rem 0 0 -2rem;

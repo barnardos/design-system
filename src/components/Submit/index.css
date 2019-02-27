@@ -37,10 +37,8 @@
   &:not(:first-child) {
     margin-top: 1.5rem;
   }
-}
 
-@media (min-width: 32rem) {
-  .Submit {
+  @media (min-width: 32rem) {
     width: auto;
   }
 }

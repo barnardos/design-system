@@ -6,10 +6,8 @@
   box-shadow: inset 0 -0.25rem 0 0 color-mod(var(--black) tint(95%));
   margin-top: 1rem;
   padding-bottom: 1rem;
-}
 
-@media (min-width: 48rem) {
-  .ContentHeader {
+  @media (min-width: 48rem) {
     padding-bottom: 1.75rem;
   }
 }
