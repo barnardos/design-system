@@ -4,20 +4,8 @@
 
 .Header {
   box-shadow: inset 0 -1px 0 0 color-mod(var(--black) tint(90%));
-  padding-bottom: 0.5rem;
-  position: relative;
-
-  &::after {
-    bottom: 0;
-    box-shadow: inset 0 -1px 0 0 color-mod(var(--black) tint(90%));
-    content: "";
-    height: 1px;
-    left: 0;
-    margin-left: calc(50% - 50vw);
-    margin-right: calc(50% - 50vw);
-    position: absolute;
-    right: 0;
-  }
+  margin: 0 -1rem;
+  padding: 0 1rem 0.5rem;
 }
 
 .Header-actions {
@@ -90,7 +78,8 @@
   .Header {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 1rem;
+    margin: 0 -2rem;
+    padding: 0 2rem 1rem;
   }
 
   .Header-logo {

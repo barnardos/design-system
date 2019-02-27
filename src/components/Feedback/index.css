@@ -6,6 +6,7 @@
   border-radius: 0;
   box-shadow: inset 0 0 0 0.25rem var(--green);
   display: block;
+  max-width: 80rem;
   padding: 1.5rem 1.5rem 1.75rem;
 
   &:not(:first-child) {

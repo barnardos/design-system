@@ -5,11 +5,12 @@
 .Promos {
   display: flex;
   flex-wrap: wrap;
-  margin: -1.5rem 0 0 -1.5rem;
+  margin: -0.75rem;
+  max-width: 81.5rem;
 
   & > * {
     flex: 1 1 18rem;
-    margin: 1.5rem 0 0 1.5rem;
+    margin: 0.75rem;
   }
 
   &:not(:first-child) {

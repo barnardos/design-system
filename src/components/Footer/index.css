@@ -4,22 +4,11 @@
 
 .Footer {
   background-color: color-mod(var(--black) tint(95%));
-  box-shadow: 0 50vh 0 50vh color-mod(var(--black) tint(95%));
-  margin-top: 2rem;
-  padding: 1rem 0 0.5rem;
+  box-shadow: 0 50vh 0 50vh color-mod(var(--black) tint(95%)),
+    inset 0 0.25rem 0 0 color-mod(var(--black) tint(90%));
+  margin: 2rem -1rem 0;
+  padding: 1rem 1rem 0.5rem;
   position: relative;
-
-  &::before {
-    box-shadow: inset 0 0.25rem 0 0 color-mod(var(--black) tint(90%));
-    content: "";
-    height: 0.25rem;
-    left: 0;
-    margin-left: calc(50% - 50vw);
-    margin-right: calc(50% - 50vw);
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
 }
 
 .Footer-items {
@@ -57,7 +46,8 @@
 
 @media (min-width: 48rem) {
   .Footer {
-    padding: 1.5rem 0 0.5rem;
+    margin: 2rem -2rem 0;
+    padding: 1.5rem 2rem 0.5rem;
   }
 
   .Footer-items {
