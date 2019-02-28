@@ -3,6 +3,7 @@ import BackLink from "./BackLink";
 import BlockQuote from "./BlockQuote";
 import Breadcrumbs from "./Breadcrumbs";
 import BulletedList from "./BulletedList";
+import Callout from "./Callout";
 import Caption from "./Caption";
 import CheckBox from "./CheckBox";
 import CheckBoxes from "./CheckBoxes";
@@ -63,6 +64,7 @@ export {
   BlockQuote,
   Breadcrumbs,
   BulletedList,
+  Callout,
   Caption,
   CheckBox,
   CheckBoxes,

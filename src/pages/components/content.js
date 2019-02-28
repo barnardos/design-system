@@ -1,137 +1,135 @@
 import Helmet from "react-helmet";
 import React from "react";
 
-import BlockQuote from "../components/BlockQuote";
-import Breadcrumbs from "../components/Breadcrumbs";
-import BulletedList from "../components/BulletedList";
-import Caption from "../components/Caption";
-import Cite from "../components/Cite";
-import Code from "../components/Code";
-import Content from "../components/Content";
-import ContentHeader from "../components/ContentHeader";
-import ContentsMenu from "../components/ContentsMenu";
-import ContentWithMenu from "../components/ContentWithMenu";
-import Page from "../components/Page";
-import Callout from "../components/Callout";
-import Example from "../components/Example";
-import Fact from "../components/Fact";
-import Heading from "../components/Heading";
-import Image from "../components/Image";
-import Lede from "../components/Lede";
-import Link from "../components/Link";
-import ListItem from "../components/ListItem";
-import Main from "../components/Main";
-import NumberedList from "../components/NumberedList";
-import Paragraph from "../components/Paragraph";
-import ProminentBlockQuote from "../components/ProminentBlockQuote";
-import PullQuote from "../components/PullQuote";
-import Section from "../components/Section";
-import Subheading from "../components/Subheading";
-import Title from "../components/Title";
-import Topic from "../components/Topic";
+import BlockQuote from "../../components/BlockQuote";
+import Breadcrumbs from "../../components/Breadcrumbs";
+import BulletedList from "../../components/BulletedList";
+import Caption from "../../components/Caption";
+import Cite from "../../components/Cite";
+import Code from "../../components/Code";
+import Content from "../../components/Content";
+import ContentsMenu from "../../components/ContentsMenu";
+import Contents from "../../components/Contents";
+import Page from "../../components/Page";
+import Callout from "../../components/Callout";
+import Example from "../../components/Example";
+import Fact from "../../components/Fact";
+import Heading from "../../components/Heading";
+import Image from "../../components/Image";
+import Lede from "../../components/Lede";
+import Link from "../../components/Link";
+import ListItem from "../../components/ListItem";
+import Main from "../../components/Main";
+import NumberedList from "../../components/NumberedList";
+import Paragraph from "../../components/Paragraph";
+import ProminentBlockQuote from "../../components/ProminentBlockQuote";
+import PullQuote from "../../components/PullQuote";
+import Section from "../../components/Section";
+import Subheading from "../../components/Subheading";
+import Title from "../../components/Title";
+import Topic from "../../components/Topic";
 
 export const indexItems = [
   {
     level: 1,
     text: "Type",
-    href: "/content/#type-styles"
+    href: "/components/content/#type-styles"
   },
   {
     level: 2,
     text: "Title",
-    href: "/content/#title"
+    href: "/components/content/#title"
   },
   {
     level: 2,
     text: "Lede",
-    href: "/content/#lede"
+    href: "/components/content/#lede"
   },
   {
     level: 2,
     text: "Heading",
-    href: "/content/#heading"
+    href: "/components/content/#heading"
   },
   {
     level: 2,
     text: "Subheading",
-    href: "/content/#subheading"
+    href: "/components/content/#subheading"
   },
   {
     level: 2,
     text: "Paragraph",
-    href: "/content/#paragraph"
+    href: "/components/content/#paragraph"
   },
   {
     level: 2,
     text: "Cite",
-    href: "/content/#cite"
+    href: "/components/content/#cite"
   },
   {
     level: 1,
     text: "Lists",
-    href: "/content/#lists"
+    href: "/components/content/#lists"
   },
   {
     level: 2,
     text: "Bulleted List",
-    href: "/content/#bulleted-list"
+    href: "/components/content/#bulleted-list"
   },
   {
     level: 2,
     text: "Numbered List",
-    href: "/content/#numbered-list"
+    href: "/components/content/#numbered-list"
   },
   {
     level: 1,
     text: "Images",
-    href: "/content/#images"
+    href: "/components/content/#images"
   },
-
   {
     level: 1,
     text: "Videos",
-    href: "/content/#videos"
+    href: "/components/content/#videos"
   },
   {
     level: 1,
     text: "Quotes",
-    href: "/content/#quotes"
+    href: "/components/content/#quotes"
   },
   {
     level: 2,
     text: "Pull Quote",
-    href: "/content/#pull-quote"
+    href: "/components/content/#pull-quote"
   },
   {
     level: 2,
     text: "Block Quote",
-    href: "/content/#block-quote"
+    href: "/components/content/#block-quote"
   },
   {
     level: 2,
     text: "Prominent Block Quote",
-    href: "/content/#prominent-block-quote"
+    href: "/components/content/#prominent-block-quote"
   },
   {
     level: 1,
     text: "Caption",
-    href: "/content/#caption"
+    href: "/components/content/#caption"
   },
   {
     level: 1,
     text: "Fact",
-    href: "/content/#fact"
+    href: "/components/content/#fact"
   },
   {
     level: 1,
     text: "Callout",
-    href: "/content/#callout"
+    href: "/components/content/#callout"
   },
 
   {
     level: 1,
     text: "Section",
-    href: "/content/#section"
+    href: "/components/content/#section"
   }
 ];
 
@@ -145,15 +143,16 @@ export default () => (
         {
           text: "Home",
           href: "/"
+        },
+        {
+          text: "Components",
+          href: "/components/"
         }
       ]}
     />
     <Main>
-      <ContentWithMenu>
-        <ContentHeader>
-          <Topic>{`Components`}</Topic>
-          <Title>{`Content`}</Title>
-        </ContentHeader>
+      <Title>{`Content`}</Title>
+      <Contents>
         <ContentsMenu items={indexItems} />
         <Content>
           <Paragraph>{`When displaying content you should provide a meaningful content hierarchy.`}</Paragraph>
@@ -161,7 +160,7 @@ export default () => (
           <Paragraph>{`Use these components to create a type hierarchy.`}</Paragraph>
           <Paragraph>
             {`If your product has additional needs, follow the standards in `}
-            <Link href="/typography/">{`Typography`}</Link>
+            <Link href="/standards/typography/">{`Typography`}</Link>
             {`.`}
           </Paragraph>
           <Subheading>{`Topic`}</Subheading>
@@ -413,15 +412,21 @@ export default () => (
           <Heading>{`Section`}</Heading>
           <Paragraph>{`Use this component to section parts of content.`}</Paragraph>
           <Example>
-            <Section>
-              <Paragraph>{`1st section`}</Paragraph>
-            </Section>
-            <Section>
-              <Paragraph>{`2nd section`}</Paragraph>
-            </Section>
-            <Section>
-              <Paragraph>{`3rd section`}</Paragraph>
-            </Section>
+            <div
+              style={{
+                paddingBottom: "4rem"
+              }}
+            >
+              <Section>
+                <Paragraph>{`1st section`}</Paragraph>
+              </Section>
+              <Section>
+                <Paragraph>{`2nd section`}</Paragraph>
+              </Section>
+              <Section>
+                <Paragraph>{`3rd section`}</Paragraph>
+              </Section>
+            </div>
           </Example>
           <Cite>
             {`View `}
@@ -431,7 +436,7 @@ export default () => (
             {` on GitHub.`}
           </Cite>
         </Content>
-      </ContentWithMenu>
+      </Contents>
     </Main>
   </Page>
 );

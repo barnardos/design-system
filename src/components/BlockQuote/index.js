@@ -14,7 +14,7 @@ const BlockQuote = ({ children, colour, name, role, src }) => (
       <div className="BlockQuote-children">{children}</div>
       <cite className="BlockQuote-cite">
         <p className="BlockQuote-name">{name}</p>
-        <p className="BlockQuote-role">{role}</p>
+        {role && <p className="BlockQuote-role">{role}</p>}
       </cite>
     </div>
   </blockquote>
@@ -23,7 +23,7 @@ const BlockQuote = ({ children, colour, name, role, src }) => (
 BlockQuote.propTypes = {
   children: PropTypes.node.isRequired,
   colour: PropTypes.oneOf(["orange", "pink", "purple", "teal"]),
-  name: PropTypes.string,
+  name: PropTypes.string.isRequired,
   role: PropTypes.string,
   src: PropTypes.string
 };

@@ -2,7 +2,7 @@ module.exports = () => ({
   plugins: [
     require("postcss-import"),
     require("postcss-preset-env")({
-      autoprefixer: { grid: "autoplace" },
+      autoprefixer: {},
       features: {
         "focus-within": true,
         "nesting-rules": true,

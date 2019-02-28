@@ -4,8 +4,6 @@
 
 .Example {
   box-shadow: 0 0 0 1px color-mod(var(--black) tint(60%));
-  margin-top: 1.5rem;
-  max-width: 46rem;
   overflow: hidden;
   padding: 2.5rem 1rem 1rem;
   position: relative;
@@ -21,5 +19,9 @@
     padding: 0.25rem 0.5rem;
     position: absolute;
     top: 0;
+  }
+
+  &:not(:first-child) {
+    margin-top: 1.5rem;
   }
 }

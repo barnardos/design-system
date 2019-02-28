@@ -13,7 +13,6 @@ import Paragraph from "../../components/Paragraph";
 import TextInput from "../../components/TextInput";
 import Title from "../../components/Title";
 import Main from "../../components/Main";
-import Content from "../../components/Content";
 
 export default () => (
   <Page>
@@ -33,42 +32,40 @@ export default () => (
       ]}
     />
     <Main>
-      <Content>
-        <Title>{`Asking for names`}</Title>
-        <Paragraph>{`You should:`}</Paragraph>
-        <BulletedList>
-          <ListItem>{`only ask for names when absolutely needed`}</ListItem>
-          <ListItem>{`support all characters users may need to enter`}</ListItem>
-          <ListItem>{`avoid asking for title`}</ListItem>
-        </BulletedList>
-        <Figures>
-          <Figure caption="Where possible use a single name field to accommodates the broadest range of name types.">
-            <TextInput
-              id="text-input-full-name-example"
-              label="Full name"
-              size={48}
-            />
-          </Figure>
-          <Figure caption="If your product needs to reliably extract first name and last name, use multiple name fields.">
-            <TextInput
-              id="text-input-first-name-example"
-              label="First name"
-              size={48}
-            />
+      <Title>{`Asking for names`}</Title>
+      <Paragraph>{`You should:`}</Paragraph>
+      <BulletedList>
+        <ListItem>{`only ask for names when absolutely needed`}</ListItem>
+        <ListItem>{`support all characters users may need to enter`}</ListItem>
+        <ListItem>{`avoid asking for title`}</ListItem>
+      </BulletedList>
+      <Figures>
+        <Figure caption="Where possible use a single name field to accommodates the broadest range of name types.">
+          <TextInput
+            id="text-input-full-name-example"
+            label="Full name"
+            size={48}
+          />
+        </Figure>
+        <Figure caption="If your product needs to reliably extract first name and last name, use multiple name fields.">
+          <TextInput
+            id="text-input-first-name-example"
+            label="First name"
+            size={48}
+          />
 
-            <TextInput
-              id="text-input-last-name-example"
-              label="Last name"
-              size={48}
-            />
-          </Figure>
-        </Figures>
-        <Cite>
-          {`View `}
-          <Link href="https://github.com/barnardos/design-system/issues/404">{`asking for names research`}</Link>
-          {` on GitHub.`}
-        </Cite>
-      </Content>
+          <TextInput
+            id="text-input-last-name-example"
+            label="Last name"
+            size={48}
+          />
+        </Figure>
+      </Figures>
+      <Cite>
+        {`View `}
+        <Link href="https://github.com/barnardos/design-system/issues/404">{`asking for names research`}</Link>
+        {` on GitHub.`}
+      </Cite>
     </Main>
   </Page>
 );

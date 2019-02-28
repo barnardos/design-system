@@ -1,5 +1,11 @@
 /** @define Content; */
 
 .Content {
-  margin-top: 1.75rem;
+  margin-top: 2rem;
+
+  @supports (display: grid) {
+    @media (min-width: 48rem) {
+      margin-top: 0;
+    }
+  }
 }

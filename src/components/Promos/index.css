@@ -2,18 +2,30 @@
 
 /** @define Promos; weak; */
 
+/* Uses flex fallback for IE11 */
+
 .Promos {
   display: flex;
   flex-wrap: wrap;
-  margin: -0.75rem;
-  max-width: 81.5rem;
+  margin: -1rem;
 
   & > * {
-    flex: 1 1 18rem;
-    margin: 0.75rem;
+    flex: 0 0 18rem;
+    margin: 1rem;
   }
 
   &:not(:first-child) {
-    margin-top: 0;
+    margin-top: 1rem;
+  }
+
+  @supports (display: grid) {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+    margin: 0;
+
+    & > * {
+      margin: 0;
+    }
   }
 }

@@ -1,25 +1,24 @@
 import Helmet from "react-helmet";
 import React from "react";
 
-import Breadcrumbs from "../components/Breadcrumbs";
-import BulletedList from "../components/BulletedList";
-import Cite from "../components/Cite";
-import Code from "../components/Code";
-import Content from "../components/Content";
-import ContentHeader from "../components/ContentHeader";
-import ContentWithMenu from "../components/ContentWithMenu";
-import ContentsMenu from "../components/ContentsMenu";
-import Page from "../components/Page";
-import Figures from "../components/Figures";
-import Heading from "../components/Heading";
-import Link from "../components/Link";
-import ListItem from "../components/ListItem";
-import Pagination from "../components/Pagination";
-import Paragraph from "../components/Paragraph";
-import Title from "../components/Title";
-import Main from "../components/Main";
-import Topic from "../components/Topic";
-import TypeFigures from "../components/TypeFigures";
+import Breadcrumbs from "../../components/Breadcrumbs";
+import BulletedList from "../../components/BulletedList";
+import Cite from "../../components/Cite";
+import Code from "../../components/Code";
+import Content from "../../components/Content";
+import Contents from "../../components/Contents";
+import ContentsMenu from "../../components/ContentsMenu";
+import Page from "../../components/Page";
+import Figures from "../../components/Figures";
+import Heading from "../../components/Heading";
+import Link from "../../components/Link";
+import ListItem from "../../components/ListItem";
+import Pagination from "../../components/Pagination";
+import Paragraph from "../../components/Paragraph";
+import Title from "../../components/Title";
+import Main from "../../components/Main";
+import Topic from "../../components/Topic";
+import TypeFigures from "../../components/TypeFigures";
 
 export default () => (
   <Page>
@@ -31,41 +30,43 @@ export default () => (
         {
           text: "Home",
           href: "/"
+        },
+        {
+          text: "Standards",
+          href: "/standards/"
         }
       ]}
     />
     <Main>
-      <ContentWithMenu>
-        <ContentHeader>
-          <Topic>{`Design standards`}</Topic>
-          <Title>{`Typography`}</Title>
-        </ContentHeader>
+      <Topic>{`Design`}</Topic>
+      <Title>{`Typography`}</Title>
+      <Contents>
         <ContentsMenu
           items={[
             {
               level: 1,
               text: "Type scale",
-              href: "/typography/#type-scale"
+              href: "/standards/typography/#type-scale"
             },
             {
               level: 1,
               text: "Line height",
-              href: "/typography/#line-height"
+              href: "/standards/typography/#line-height"
             },
             {
               level: 1,
               text: "Line length",
-              href: "/typography/#line-length"
+              href: "/standards/typography/#line-length"
             },
             {
               level: 1,
               text: "Brand font",
-              href: "/typography/#brand-font"
+              href: "/standards/typography/#brand-font"
             },
             {
               level: 1,
               text: "Body copy",
-              href: "/typography/#body-copy"
+              href: "/standards/typography/#body-copy"
             }
           ]}
         />
@@ -77,7 +78,7 @@ export default () => (
           </BulletedList>
           <Paragraph>
             {`Typography is subject to the `}
-            <Link href="/viewport-scale/">{`viewport scale`}</Link>
+            <Link href="/standards/viewport-scale/">{`viewport scale`}</Link>
             {`.`}
           </Paragraph>
           <Heading>{`Type scale`}</Heading>
@@ -125,16 +126,16 @@ export default () => (
           </Paragraph>
           <Pagination
             previous={{
-              href: "/colour",
+              href: "/standards/colour",
               label: "Colour"
             }}
             next={{
-              href: "/spacing-and-layout",
+              href: "/standards/spacing-and-layout",
               label: "Spacing and layout"
             }}
           />
         </Content>
-      </ContentWithMenu>
+      </Contents>
     </Main>
   </Page>
 );

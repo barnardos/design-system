@@ -10,7 +10,6 @@ import ListItem from "../../components/ListItem";
 import Paragraph from "../../components/Paragraph";
 import Title from "../../components/Title";
 import Main from "../../components/Main";
-import Content from "../../components/Content";
 
 export default () => (
   <Page>
@@ -30,30 +29,28 @@ export default () => (
       ]}
     />
     <Main>
-      <Content>
-        <Title>{`Preventing spam`}</Title>
-        <Paragraph>{`You could try:`}</Paragraph>
-        <BulletedList>
-          <ListItem>
-            <Link href="https://en.wikipedia.org/wiki/Rate_limiting">{`rate and connection limiting`}</Link>
-          </ListItem>
-          <ListItem>
-            {`using `}
-            <Link href="https://en.wikipedia.org/wiki/Honeypot_(computing)">{`honeypots`}</Link>
-          </ListItem>
-          <ListItem>{`transaction monitoring`}</ListItem>
-        </BulletedList>
-        <Paragraph>
-          {`Avoid using `}
-          <Link href="https://en.wikipedia.org/wiki/CAPTCHA">{`CAPTCHAs`}</Link>
-          {`, as they cause usability an accessibility issues.`}
-        </Paragraph>
-        <Cite>
-          {`View `}
-          <Link href="https://github.com/barnardos/design-system/issues/411">{`preventing spam research`}</Link>
-          {` on GitHub.`}
-        </Cite>
-      </Content>
+      <Title>{`Preventing spam`}</Title>
+      <Paragraph>{`You could try:`}</Paragraph>
+      <BulletedList>
+        <ListItem>
+          <Link href="https://en.wikipedia.org/wiki/Rate_limiting">{`rate and connection limiting`}</Link>
+        </ListItem>
+        <ListItem>
+          {`using `}
+          <Link href="https://en.wikipedia.org/wiki/Honeypot_(computing)">{`honeypots`}</Link>
+        </ListItem>
+        <ListItem>{`transaction monitoring`}</ListItem>
+      </BulletedList>
+      <Paragraph>
+        {`Avoid using `}
+        <Link href="https://en.wikipedia.org/wiki/CAPTCHA">{`CAPTCHAs`}</Link>
+        {`, as they cause usability an accessibility issues.`}
+      </Paragraph>
+      <Cite>
+        {`View `}
+        <Link href="https://github.com/barnardos/design-system/issues/411">{`preventing spam research`}</Link>
+        {` on GitHub.`}
+      </Cite>
     </Main>
   </Page>
 );

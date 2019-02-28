@@ -11,8 +11,9 @@ const ProminentBlockQuote = ({ children, colour, name, role }) => (
   >
     <div className="ProminentBlockQuote-children">{children}</div>
     <cite className="ProminentBlockQuote-cite">
-      <p className="ProminentBlockQuote-name">{name}</p>
-      <p className="ProminentBlockQuote-role">{role}</p>
+      <p className="ProminentBlockQuote-nameAndRole">
+        {`${role ? `${name} – ${role}` : name}`}
+      </p>
     </cite>
   </blockquote>
 );
@@ -20,7 +21,7 @@ const ProminentBlockQuote = ({ children, colour, name, role }) => (
 ProminentBlockQuote.propTypes = {
   children: PropTypes.node.isRequired,
   colour: PropTypes.oneOf(["black", "orange", "pink", "purple", "teal"]),
-  name: PropTypes.string,
+  name: PropTypes.string.isRequired,
   role: PropTypes.string
 };
 

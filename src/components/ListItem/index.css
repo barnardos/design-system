@@ -5,4 +5,8 @@
 .ListItem {
   font: 300 var(--type-0) system-ui;
   margin-left: 0.25rem;
+
+  &:not(:first-child) {
+    margin-top: 0.25rem;
+  }
 }

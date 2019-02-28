@@ -9,7 +9,6 @@ import ListItem from "../../components/ListItem";
 import Paragraph from "../../components/Paragraph";
 import Title from "../../components/Title";
 import Main from "../../components/Main";
-import Content from "../../components/Content";
 import BulletedList from "../../components/BulletedList";
 
 export default () => (
@@ -30,22 +29,20 @@ export default () => (
       ]}
     />
     <Main>
-      <Content>
-        <Title>{`Iconography`}</Title>
-        <Paragraph>{`When using iconography you should:`}</Paragraph>
-        <BulletedList>
-          <ListItem>{`choose a flat graphic style`}</ListItem>
-          <ListItem>
-            {`use the `}
-            <Link href="/colour/#brand-colours">{`brand colours`}</Link>
-          </ListItem>
-        </BulletedList>
-        <Cite>
-          {`View `}
-          <Link href="https://github.com/barnardos/design-system/issues/226">{`iconography research`}</Link>
-          {` on GitHub.`}
-        </Cite>
-      </Content>
+      <Title>{`Iconography`}</Title>
+      <Paragraph>{`When using iconography you should:`}</Paragraph>
+      <BulletedList>
+        <ListItem>{`choose a flat graphic style`}</ListItem>
+        <ListItem>
+          {`use the `}
+          <Link href="/standards/colour/#brand-colours">{`brand colours`}</Link>
+        </ListItem>
+      </BulletedList>
+      <Cite>
+        {`View `}
+        <Link href="https://github.com/barnardos/design-system/issues/226">{`iconography research`}</Link>
+        {` on GitHub.`}
+      </Cite>
     </Main>
   </Page>
 );

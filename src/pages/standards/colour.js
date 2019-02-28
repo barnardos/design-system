@@ -1,28 +1,27 @@
 import Helmet from "react-helmet";
 import React from "react";
 
-import Breadcrumbs from "../components/Breadcrumbs";
-import BulletedList from "../components/BulletedList";
-import Cite from "../components/Cite";
-import ColourFigure from "../components/ColourFigure";
-import ColourGreyFigure from "../components/ColourGreyFigure";
-import Content from "../components/Content";
-import ContentHeader from "../components/ContentHeader";
-import ContentWithMenu from "../components/ContentWithMenu";
-import ContentsMenu from "../components/ContentsMenu";
-import Page from "../components/Page";
-import Figure from "../components/Figure";
-import Figures from "../components/Figures";
-import Heading from "../components/Heading";
-import Link from "../components/Link";
-import ListItem from "../components/ListItem";
-import Main from "../components/Main";
-import Pagination from "../components/Pagination";
-import Paragraph from "../components/Paragraph";
-import Subheading from "../components/Subheading";
-import Swatches from "../components/Swatches";
-import Title from "../components/Title";
-import Topic from "../components/Topic";
+import Breadcrumbs from "../../components/Breadcrumbs";
+import BulletedList from "../../components/BulletedList";
+import Cite from "../../components/Cite";
+import ColourFigure from "../../components/ColourFigure";
+import ColourGreyFigure from "../../components/ColourGreyFigure";
+import Content from "../../components/Content";
+import Contents from "../../components/Contents";
+import ContentsMenu from "../../components/ContentsMenu";
+import Page from "../../components/Page";
+import Figure from "../../components/Figure";
+import Figures from "../../components/Figures";
+import Heading from "../../components/Heading";
+import Link from "../../components/Link";
+import ListItem from "../../components/ListItem";
+import Main from "../../components/Main";
+import Pagination from "../../components/Pagination";
+import Paragraph from "../../components/Paragraph";
+import Subheading from "../../components/Subheading";
+import Swatches from "../../components/Swatches";
+import Title from "../../components/Title";
+import Topic from "../../components/Topic";
 
 export default () => (
   <Page>
@@ -34,31 +33,33 @@ export default () => (
         {
           text: "Home",
           href: "/"
+        },
+        {
+          text: "Standards",
+          href: "/standards/"
         }
       ]}
     />
     <Main>
-      <ContentWithMenu>
-        <ContentHeader>
-          <Topic>{`Design standards`}</Topic>
-          <Title>{`Colour`}</Title>
-        </ContentHeader>
+      <Topic>{`Design`}</Topic>
+      <Title>{`Colour`}</Title>
+      <Contents>
         <ContentsMenu
           items={[
             {
               level: 1,
               text: "Brand colours",
-              href: "/colour/#brand-colours"
+              href: "/standards/colour/#brand-colours"
             },
             {
               level: 1,
               text: "Colour scale",
-              href: "/colour/#colour-scale"
+              href: "/standards/colour/#colour-scale"
             },
             {
               level: 1,
               text: "Light grey",
-              href: "/colour/#light-grey"
+              href: "/standards/colour/#light-grey"
             }
           ]}
         />
@@ -126,12 +127,12 @@ export default () => (
           </Cite>
           <Pagination
             next={{
-              href: "/typography",
+              href: "/standards/typography",
               label: "Typography"
             }}
           />
         </Content>
-      </ContentWithMenu>
+      </Contents>
     </Main>
   </Page>
 );

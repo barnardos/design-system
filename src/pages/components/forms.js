@@ -1,112 +1,110 @@
 import Helmet from "react-helmet";
 import React from "react";
 
-import Breadcrumbs from "../components/Breadcrumbs";
-import CheckBox from "../components/CheckBox";
-import CheckBoxes from "../components/CheckBoxes";
-import Cite from "../components/Cite";
-import Conditional from "../components/Conditional";
-import Content from "../components/Content";
-import ContentHeader from "../components/ContentHeader";
-import ContentWithMenu from "../components/ContentWithMenu";
-import CurrencyInput from "../components/CurrencyInput";
-import DateInput from "../components/DateInput";
-import Example from "../components/Example";
-import ErrorSummary from "../components/ErrorSummary";
-import Heading from "../components/Heading";
-import Page from "../components/Page";
-import Link from "../components/Link";
-import ListItem from "../components/ListItem";
-import Paragraph from "../components/Paragraph";
-import RadioButtons from "../components/RadioButtons";
-import Subheading from "../components/Subheading";
-import ContentsMenu from "../components/ContentsMenu";
-import TextArea from "../components/TextArea";
-import TextInput from "../components/TextInput";
-import Title from "../components/Title";
-import Main from "../components/Main";
-import BulletedList from "../components/BulletedList";
-import Figures from "../components/Figures";
-import Figure from "../components/Figure";
-import Submit from "../components/Submit";
-import Command from "../components/Command";
-import Topic from "../components/Topic";
+import Breadcrumbs from "../../components/Breadcrumbs";
+import CheckBox from "../../components/CheckBox";
+import CheckBoxes from "../../components/CheckBoxes";
+import Cite from "../../components/Cite";
+import Conditional from "../../components/Conditional";
+import Content from "../../components/Content";
+import Contents from "../../components/Contents";
+import CurrencyInput from "../../components/CurrencyInput";
+import DateInput from "../../components/DateInput";
+import Example from "../../components/Example";
+import ErrorSummary from "../../components/ErrorSummary";
+import Heading from "../../components/Heading";
+import Page from "../../components/Page";
+import Link from "../../components/Link";
+import ListItem from "../../components/ListItem";
+import Paragraph from "../../components/Paragraph";
+import RadioButtons from "../../components/RadioButtons";
+import Subheading from "../../components/Subheading";
+import ContentsMenu from "../../components/ContentsMenu";
+import TextArea from "../../components/TextArea";
+import TextInput from "../../components/TextInput";
+import Title from "../../components/Title";
+import Main from "../../components/Main";
+import BulletedList from "../../components/BulletedList";
+import Figures from "../../components/Figures";
+import Figure from "../../components/Figure";
+import Submit from "../../components/Submit";
+import Command from "../../components/Command";
 
 export const indexItems = [
   {
     level: 1,
     text: "Text inputs",
-    href: "/forms/#text-inputs"
+    href: "/components/forms/#text-inputs"
   },
   {
     level: 2,
     text: "Text Input",
-    href: "/forms/#text-input"
+    href: "/components/forms/#text-input"
   },
   {
     level: 2,
     text: "Text Area",
-    href: "/forms/#text-area"
-  },
-  {
-    level: 2,
-    text: "Currency Input",
-    href: "/forms/#currency-input"
+    href: "/components/forms/#text-area"
   },
   {
     level: 2,
     text: "Date Input",
-    href: "/forms/#date-input"
+    href: "/components/forms/#date-input"
+  },
+  {
+    level: 2,
+    text: "Currency Input",
+    href: "/components/forms/#currency-input"
   },
   {
     level: 1,
     text: "Choices",
-    href: "/forms/#choices"
+    href: "/components/forms/#choices"
   },
   {
     level: 2,
     text: "Check Box",
-    href: "/forms/#check-box"
+    href: "/components/forms/#check-box"
   },
   {
     level: 2,
     text: "Check Boxes",
-    href: "/forms/#check-boxes"
+    href: "/components/forms/#check-boxes"
   },
   {
     level: 2,
     text: "Radio Buttons",
-    href: "/forms/#radio-buttons"
+    href: "/components/forms/#radio-buttons"
   },
   {
     level: 2,
     text: "Conditional",
-    href: "/forms/#conditional"
+    href: "/components/forms/#conditional"
   },
   {
     level: 1,
     text: "Command",
-    href: "/forms/#command"
+    href: "/components/forms/#command"
   },
   {
     level: 1,
     text: "Submit",
-    href: "/forms/#submit"
+    href: "/components/forms/#submit"
   },
   {
     level: 1,
     text: "Validation",
-    href: "/forms/#validation"
+    href: "/components/forms/#validation"
   },
   {
     level: 2,
     text: "Error Summary",
-    href: "/forms/#error-summary"
+    href: "/components/forms/#error-summary"
   },
   {
     level: 2,
     text: "Errors",
-    href: "/forms/#errors"
+    href: "/components/forms/#errors"
   }
 ];
 
@@ -120,15 +118,16 @@ export default () => (
         {
           text: "Home",
           href: "/"
+        },
+        {
+          text: "Components",
+          href: "/components/"
         }
       ]}
     />
     <Main>
-      <ContentWithMenu>
-        <ContentHeader>
-          <Topic>{`Components`}</Topic>
-          <Title>{`Forms`}</Title>
-        </ContentHeader>
+      <Title>{`Forms`}</Title>
+      <Contents>
         <ContentsMenu items={indexItems} />
         <Content>
           <Paragraph>{`When gathering information you should:`}</Paragraph>
@@ -196,21 +195,6 @@ export default () => (
             <Link href="https://github.com/barnardos/design-system/issues/65">{`Text Area research`}</Link>
             {` on GitHub.`}
           </Cite>
-          <Subheading>{`Currency Input`}</Subheading>
-          <Example>
-            <CurrencyInput
-              currency="£"
-              id="currency-input-example"
-              label="Amount"
-            />
-          </Example>
-          <Cite>
-            {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/CurrencyInput">{`Currency Input code`}</Link>
-            {` and `}
-            <Link href="https://github.com/barnardos/design-system/issues/160">{`Currency Input research`}</Link>
-            {` on GitHub.`}
-          </Cite>
           <Subheading>{`Date Input`}</Subheading>
           <Paragraph>{`Use this component for date entry. You should:`}</Paragraph>
           <BulletedList>
@@ -229,6 +213,21 @@ export default () => (
             <Link href="https://github.com/barnardos/design-system/tree/master/src/components/DateInput">{`Date Input code`}</Link>
             {` and `}
             <Link href="https://github.com/barnardos/design-system/issues/75">{`Date Input research`}</Link>
+            {` on GitHub.`}
+          </Cite>
+          <Subheading>{`Currency Input`}</Subheading>
+          <Example>
+            <CurrencyInput
+              currency="£"
+              id="currency-input-example"
+              label="Amount"
+            />
+          </Example>
+          <Cite>
+            {`View `}
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/CurrencyInput">{`Currency Input code`}</Link>
+            {` and `}
+            <Link href="https://github.com/barnardos/design-system/issues/160">{`Currency Input research`}</Link>
             {` on GitHub.`}
           </Cite>
           <Heading>{`Choices`}</Heading>
@@ -439,7 +438,7 @@ export default () => (
             />
           </Example>
         </Content>
-      </ContentWithMenu>
+      </Contents>
     </Main>
   </Page>
 );

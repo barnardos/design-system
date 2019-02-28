@@ -3,7 +3,7 @@
 /** @define Subheading; */
 
 .Subheading {
-  font: 300 var(--type-4) proxima-nova, sans-serif;
+  font: 300 var(--type-5) proxima-nova, sans-serif;
 
   &:not(:first-child) {
     margin-top: 2rem;

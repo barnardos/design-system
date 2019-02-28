@@ -4,62 +4,57 @@
 
 .ContentsMenu {
   &:not(:first-child) {
-    margin-top: 1rem;
+    margin-top: 2.5rem;
+  }
+}
+
+.ContentsMenu-inner {
+  background: color-mod(var(--black) tint(95%));
+  box-shadow: inset 0 0.25rem 0 0 var(--green);
+
+  @media (min-width: 48rem) and (min-height: 42rem) {
+    position: sticky;
+    top: 1rem;
   }
 }
 
 .ContentsMenu-title {
-  color: var(--black);
-  font: 300 var(--type-0) system-ui;
+  font: 600 var(--type-0) system-ui;
+  padding: 1.25rem 0 0 1rem;
 }
 
 .ContentsMenu-items {
-  margin-top: 0.5rem;
+  padding: 0.75rem 0 1rem 1rem;
 }
 
 .ContentsMenu-item {
   list-style: none;
-  margin-top: 0.25rem;
+
+  &:not(:first-child) {
+    margin-top: 0.25rem;
+  }
 }
 
 .ContentsMenu-link {
-  color: color-mod(var(--green) shade(20%));
-  font: 600 var(--type-0) system-ui;
+  color: var(--black);
+  font: 300 var(--type-0) system-ui;
+  text-decoration: none;
 
   &:hover {
-    text-decoration: none;
+    text-decoration: underline;
   }
 
-  &:visited {
-    color: var(--purple);
+  &:active {
+    color: var(--green);
   }
 }
 
 .ContentsMenu-item--level2 {
-  &::before {
-    content: "– ";
-  }
-
-  & .ContentsMenu-link {
-    font-weight: 300;
-  }
-}
-
-.ContentsMenu-item--level3 {
-  &::before {
-    content: "– ";
-    padding-left: 0.75rem;
-  }
-
   & .ContentsMenu-link {
     font: 300 var(--type--1) system-ui;
   }
-}
 
-@media (min-width: 48rem) and (min-height: 42rem) {
-  .ContentsMenu {
-    height: 100%;
-    position: sticky;
-    top: 1rem;
+  &::before {
+    content: "– ";
   }
 }

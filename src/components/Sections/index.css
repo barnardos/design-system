@@ -1,0 +1,13 @@
+@import "../custom-properties.css";
+
+/** @define Sections; */
+
+.Sections {
+  &:not(:first-child) {
+    margin-top: 2.5rem;
+
+    @media (min-width: 48rem) {
+      margin-top: 3.5rem;
+    }
+  }
+}
