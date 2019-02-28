@@ -30,16 +30,16 @@
   }
 }
 
-@media (min-width: 38rem) {
-  .DesignSystemNavigation--flex {
-    & .DesignSystemNavigation-items {
+.DesignSystemNavigation--flex {
+  @media (min-width: 38rem) {
+    .DesignSystemNavigation-items {
       display: flex;
       flex-wrap: wrap;
       margin-left: -2rem;
       margin-top: -1rem;
     }
 
-    & .DesignSystemNavigation-item {
+    .DesignSystemNavigation-item {
       flex-basis: calc(33% - 2rem);
       margin-left: 2rem;
       margin-top: 2rem;

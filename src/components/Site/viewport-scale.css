@@ -1,39 +1,21 @@
 /**
  * Spacing and type sizes can be proportionally scaled by:
  * - using the `rem` unit within components
- * - specifying a percentage value for the `font-size` property on the `html` selector
+ * - specifying a percentage value for the `font-size` property on the `:root` selector
 */
 
-/**
- * stylelint is used to:
- * - disallow the use of type selectors
- * - enforce the use of CSS variables for `font-size` properties
- *
- * Both these rules are not applicable here.
-*/
-
-/* stylelint-disable declaration-property-unit-whitelist, plugin/font-size-whitelist, selector-max-type */
-
-html {
+:root {
   font-size: 93.75%;
-}
 
-@media (min-width: 36rem) {
-  html {
+  @media (min-width: 36rem) {
     font-size: 100%;
   }
-}
 
-@media (min-width: 40rem) {
-  html {
+  @media (min-width: 40rem) {
     font-size: 106.25%;
   }
-}
 
-@media (min-width: 44rem) {
-  html {
+  @media (min-width: 44rem) {
     font-size: 112.5%;
   }
 }
-
-/* stylelint-enable */

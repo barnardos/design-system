@@ -10,10 +10,8 @@
   &:nth-of-type(even) {
     background: color-mod(var(--black) tint(95%));
   }
-}
 
-@media (min-width: 48rem) {
-  .Section {
+  @media (min-width: 48rem) {
     margin: 0 -2rem;
     padding: 2.5rem 2rem;
   }

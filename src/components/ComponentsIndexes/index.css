@@ -9,10 +9,8 @@
   grid-template-rows: repeat(3, auto);
   margin-top: 1.5rem;
   max-width: 80rem;
-}
 
-@media (min-width: 58rem) {
-  .ComponentIndexes {
+  @media (min-width: 58rem) {
     display: grid;
     grid-gap: 2rem;
     grid-template-columns: repeat(4, 1fr);
