@@ -23,10 +23,17 @@
   white-space: normal;
 
   &:hover {
-    background-image: none;
+    background-image: linear-gradient(
+      color-mod(var(--black) tint(80%)),
+      color-mod(var(--black) tint(60%))
+    );
   }
 
   &:active {
-    background: var(--white);
+    background-image: linear-gradient(
+      var(--black),
+      color-mod(var(--black) tint(30%))
+    );
+    color: var(--white);
   }
 }
