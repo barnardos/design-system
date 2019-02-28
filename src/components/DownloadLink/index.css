@@ -1,0 +1,28 @@
+@import "../custom-properties.css";
+
+/** @define DownloadLink; */
+
+.DownloadLink-link {
+  color: var(--green);
+  display: inline-block;
+  font: 600 var(--type-2) proxima-nova, sans-serif;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:visited {
+    color: var(--purple);
+  }
+
+  &:not(:first-child) {
+    margin-top: 1.5rem;
+  }
+}
+
+.DownloadLink-meta {
+  color: var(--black);
+  display: inline-block;
+  font: 300 var(--type-2) proxima-nova, sans-serif;
+  margin-left: 0.5rem;
+}
