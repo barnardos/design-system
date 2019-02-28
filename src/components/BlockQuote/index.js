@@ -11,9 +11,7 @@ const BlockQuote = ({ children, colour, name, role, src }) => (
       </div>
     )}
     <div className="BlockQuote-text">
-      <div className="BlockQuote-children">
-        <span className="BlockQuote-childrenInner">{children}</span>
-      </div>
+      <div className="BlockQuote-children">{children}</div>
       <cite className="BlockQuote-cite">
         <p className="BlockQuote-name">{name}</p>
         <p className="BlockQuote-role">{role}</p>
