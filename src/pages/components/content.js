@@ -23,6 +23,7 @@ import Main from "../../components/Main";
 import NumberedList from "../../components/NumberedList";
 import Paragraph from "../../components/Paragraph";
 import ProminentBlockQuote from "../../components/ProminentBlockQuote";
+import ProminentCallout from "../../components/ProminentCallout";
 import PullQuote from "../../components/PullQuote";
 import Section from "../../components/Section";
 import Subheading from "../../components/Subheading";
@@ -125,7 +126,11 @@ export const indexItems = [
     text: "Callout",
     href: "/components/content/#callout"
   },
-
+  {
+    level: 1,
+    text: "Prominent Callout",
+    href: "/components/content/#prominent-callout"
+  },
   {
     level: 1,
     text: "Section",
@@ -407,6 +412,25 @@ export default () => (
             <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Callout">{`Callout code`}</Link>
             {` and `}
             <Link href="https://github.com/barnardos/design-system/issues/500">{`Callout research`}</Link>
+            {` on GitHub.`}
+          </Cite>
+          <Heading>{`Prominent Callout`}</Heading>
+          <Paragraph>{`Use this component to prominently callout parts of the content.`}</Paragraph>
+          <Example>
+            <ProminentCallout title="Tips for dealing with stress:">
+              <BulletedList>
+                <ListItem>listen to calming music</ListItem>
+                <ListItem>write or draw what you want to happen</ListItem>
+                <ListItem>go for a walk or do some exercise</ListItem>
+                <ListItem>play a game</ListItem>
+              </BulletedList>
+            </ProminentCallout>
+          </Example>
+          <Cite>
+            {`View `}
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/ProminentCallout">{`Prominent Callout code`}</Link>
+            {` and `}
+            <Link href="https://github.com/barnardos/design-system/issues/665">{`Prominent Callout research`}</Link>
             {` on GitHub.`}
           </Cite>
           <Heading>{`Section`}</Heading>
