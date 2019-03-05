@@ -5,14 +5,22 @@
 .Section {
   display: block;
   margin: 0 -1rem;
-  padding: 1.5rem 1rem 2rem;
+  padding: 2.5rem 1rem;
 
-  &:nth-of-type(even) {
+  &:nth-of-type(odd) {
     background: color-mod(var(--black) tint(95%));
+  }
+
+  &:last-child {
+    margin-bottom: -4rem;
   }
 
   @media (min-width: 48rem) {
     margin: 0 -2rem;
-    padding: 2.5rem 2rem;
+    padding: 3.5rem 2rem;
+
+    &:first-child {
+      margin-top: 3rem;
+    }
   }
 }

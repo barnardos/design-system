@@ -13,9 +13,9 @@ import Heading from "../../components/Heading";
 import Paragraph from "../../components/Paragraph";
 import Title from "../../components/Title";
 import Main from "../../components/Main";
+import Image from "../../components/Image";
 import Content from "../../components/Content";
-import ContentHeader from "../../components/ContentHeader";
-import ContentWithMenu from "../../components/ContentWithMenu";
+import Contents from "../../components/Contents";
 import ContentsMenu from "../../components/ContentsMenu";
 
 export default () => (
@@ -36,10 +36,8 @@ export default () => (
       ]}
     />
     <Main>
-      <ContentWithMenu>
-        <ContentHeader>
-          <Title>{`Web assets`}</Title>
-        </ContentHeader>
+      <Title>{`Web assets`}</Title>
+      <Contents>
         <ContentsMenu
           items={[
             {
@@ -67,7 +65,7 @@ export default () => (
           </BulletedList>
           <Figures>
             <Figure caption="Example of the logo">
-              <img
+              <Image
                 alt="The Barnardo's logo"
                 src={withPrefix("/logo-for-figure.svg")}
               />
@@ -81,7 +79,7 @@ export default () => (
           <Paragraph>{`When using this asset you should avoid changing the colour.`}</Paragraph>
           <Figures>
             <Figure caption="Example of the favicon">
-              <img
+              <Image
                 alt="The Barnardo's favicon"
                 src={withPrefix("/favicon-for-figure.svg")}
               />
@@ -91,7 +89,7 @@ export default () => (
             <Link href="https://raw.githubusercontent.com/barnardos/design-system/master/src/components/Site/favicon.ico">{`Download favicon (11kb)`}</Link>
           </Paragraph>
         </Content>
-      </ContentWithMenu>
+      </Contents>
     </Main>
   </Page>
 );

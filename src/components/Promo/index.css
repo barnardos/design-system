@@ -6,7 +6,7 @@
   background-color: var(--white);
   border-radius: 0.25rem;
   box-shadow: 0 0 0 1px color-mod(var(--black) tint(80%)),
-    0 0.25rem color-mod(var(--black) alpha(20%));
+    inset 0 -0.25rem color-mod(var(--black) alpha(20%));
   color: var(--black);
   display: block;
   text-decoration: none;
@@ -25,7 +25,7 @@
 }
 
 .Promo-text {
-  padding: 1rem;
+  padding: 1.25rem;
 }
 
 .Promo-title {
@@ -46,6 +46,6 @@
 
 .Promo-children {
   color: var(--black);
-  font: 300 var(--type-0) system-ui;
+  font: 300 var(--type-1) system-ui;
   margin-top: 1rem;
 }

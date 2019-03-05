@@ -1,7 +1,7 @@
 @import "../custom-properties.css";
 
 .Link {
-  color: color-mod(var(--green) shade(20%));
+  color: color-mod(var(--green) shade(30%));
 
   &:hover {
     text-decoration: none;

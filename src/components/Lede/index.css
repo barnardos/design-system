@@ -4,8 +4,9 @@
 
 .Lede {
   font: 300 var(--type-4) proxima-nova, sans-serif;
+  max-width: 42rem;
 
   &:not(:first-child) {
-    margin-top: 1rem;
+    margin-top: 1.25rem;
   }
 }

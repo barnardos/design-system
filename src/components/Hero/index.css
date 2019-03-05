@@ -7,14 +7,22 @@
   background-position: top center;
   background-size: cover;
   color: var(--white);
-  margin: 0 -1rem;
+  margin: -1.5rem -1rem 0;
   position: relative;
+
+  @media (min-width: 48rem) {
+    margin-left: -2rem;
+    margin-right: -2rem;
+  }
 }
 
 .Hero-children {
-  background-color: var(--green);
   max-width: 48rem;
-  padding: 2rem 1rem 2.5rem;
+  padding: 2rem 1rem;
+
+  @media (min-width: 48rem) {
+    padding: 3rem 2rem;
+  }
 }
 
 .Hero--withImage {
@@ -27,20 +35,8 @@
     position: absolute;
     right: 1rem;
   }
-}
 
-@media (min-width: 48rem) {
-  .Hero {
-    margin-left: -2rem;
-    margin-right: -2rem;
-  }
-
-  .Hero-children {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-
-  .Hero--withImage {
+  @media (min-width: 48rem) {
     height: 60vmin;
 
     & .Hero-children {

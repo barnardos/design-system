@@ -4,9 +4,9 @@
 
 .Paragraph {
   font: 300 var(--type-0) system-ui;
-  max-width: 46rem;
+  max-width: 42rem;
 
   &:not(:first-child) {
-    margin-top: 1rem;
+    margin-top: 1.25rem;
   }
 }

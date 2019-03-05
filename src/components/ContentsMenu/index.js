@@ -15,12 +15,14 @@ const ContentsMenuItem = ({ level, text, href }) => (
 
 const ContentsMenu = ({ items }) => (
   <nav className="ContentsMenu">
-    <p className="ContentsMenu-title">{`In this section:`}</p>
-    <ul className="ContentsMenu-items">
-      {items.map((item, index) => (
-        <ContentsMenuItem key={index} {...item} />
-      ))}
-    </ul>
+    <div className="ContentsMenu-inner">
+      <p className="ContentsMenu-title">{`In this section:`}</p>
+      <ul className="ContentsMenu-items">
+        {items.map((item, index) => (
+          <ContentsMenuItem key={index} {...item} />
+        ))}
+      </ul>
+    </div>
   </nav>
 );
 

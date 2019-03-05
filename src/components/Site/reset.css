@@ -18,5 +18,4 @@
 :root {
   background: var(--white);
   color: var(--black);
-  scroll-behavior: smooth;
 }

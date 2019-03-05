@@ -2,99 +2,97 @@ import Helmet from "react-helmet";
 import React from "react";
 import { withPrefix } from "gatsby";
 
-import ProminentLink from "../components/ProminentLink";
-import ProminentPromo from "../components/ProminentPromo";
-import BackLink from "../components/BackLink";
-import Breadcrumbs from "../components/Breadcrumbs";
-import BulletedList from "../components/BulletedList";
-import Cite from "../components/Cite";
-import Content from "../components/Content";
-import ContentHeader from "../components/ContentHeader";
-import ContentWithMenu from "../components/ContentWithMenu";
-import ContentsMenu from "../components/ContentsMenu";
-import DownloadLink from "../components/DownloadLink";
-import Page from "../components/Page";
-import DonateLink from "../components/DonateLink";
-import Example from "../components/Example";
-import Heading from "../components/Heading";
-import Link from "../components/Link";
-import ListItem from "../components/ListItem";
-import Paragraph from "../components/Paragraph";
-import Promo from "../components/Promo";
-import SignpostLink from "../components/SignpostLink";
-import StartLink from "../components/StartLink";
-import Subheading from "../components/Subheading";
-import Title from "../components/Title";
-import Main from "../components/Main";
-import Topic from "../components/Topic";
-import Pagination from "../components/Pagination";
+import ProminentLink from "../../components/ProminentLink";
+import ProminentPromo from "../../components/ProminentPromo";
+import BackLink from "../../components/BackLink";
+import Breadcrumbs from "../../components/Breadcrumbs";
+import BulletedList from "../../components/BulletedList";
+import Cite from "../../components/Cite";
+import Content from "../../components/Content";
+import Contents from "../../components/Contents";
+import ContentsMenu from "../../components/ContentsMenu";
+import DownloadLink from "../../components/DownloadLink";
+import Page from "../../components/Page";
+import DonateLink from "../../components/DonateLink";
+import Example from "../../components/Example";
+import Heading from "../../components/Heading";
+import Link from "../../components/Link";
+import ListItem from "../../components/ListItem";
+import Paragraph from "../../components/Paragraph";
+import Promo from "../../components/Promo";
+import SignpostLink from "../../components/SignpostLink";
+import StartLink from "../../components/StartLink";
+import Subheading from "../../components/Subheading";
+import Title from "../../components/Title";
+import Main from "../../components/Main";
+import Pagination from "../../components/Pagination";
 
 export const indexItems = [
   {
     level: 1,
     text: "Links",
-    href: "/navigation/#links"
+    href: "/components/navigation/#links"
   },
   {
     level: 2,
     text: "Link",
-    href: "/navigation/#link"
+    href: "/components/navigation/#link"
   },
   {
     level: 2,
     text: "Signpost Link",
-    href: "/navigation/#signpost-link"
+    href: "/components/navigation/#signpost-link"
   },
 
   {
     level: 2,
     text: "Download Link",
-    href: "/navigation/#download-link"
+    href: "/components/navigation/#download-link"
   },
   {
     level: 2,
     text: "Start Link",
-    href: "/navigation/#start-link"
+    href: "/components/navigation/#start-link"
   },
   {
     level: 2,
     text: "Donate Link",
-    href: "/navigation/#donate-link"
+    href: "/components/navigation/#donate-link"
   },
   {
     level: 2,
     text: "Prominent Link",
-    href: "/navigation/#prominent-link"
+    href: "/components/navigation/#prominent-link"
   },
   {
     level: 2,
     text: "Back Link",
-    href: "/navigation/#back-link"
+    href: "/components/navigation/#back-link"
   },
   {
     level: 1,
     text: "Promos",
-    href: "/navigation/#promos"
+    href: "/components/navigation/#promos"
   },
   {
     level: 2,
     text: "Promo",
-    href: "/navigation/#promo"
+    href: "/components/navigation/#promo"
   },
   {
     level: 2,
     text: "Prominent Promo",
-    href: "/navigation/#prominent-promo"
+    href: "/components/navigation/#prominent-promo"
   },
   {
     level: 1,
     text: "Contents Menu",
-    href: "/navigation/#contents-menu"
+    href: "/components/navigation/#contents-menu"
   },
   {
     level: 1,
     text: "Pagination",
-    href: "/navigation/#pagination"
+    href: "/components/navigation/#pagination"
   }
 ];
 
@@ -108,15 +106,16 @@ export default () => (
         {
           text: "Home",
           href: "/"
+        },
+        {
+          text: "Components",
+          href: "/components/"
         }
       ]}
     />
     <Main>
-      <ContentWithMenu>
-        <ContentHeader>
-          <Topic>{`Components`}</Topic>
-          <Title>{`Navigation`}</Title>
-        </ContentHeader>
+      <Title>{`Navigation`}</Title>
+      <Contents>
         <ContentsMenu items={indexItems} />
         <Content>
           <Heading>{`Links`}</Heading>
@@ -253,7 +252,7 @@ export default () => (
               href="#"
               meta="20 October 2019"
               title="Barnardo’s celebrates National Adoption Week"
-            >{`This year’s campaign calls on people to welcome an older child into their family.`}</Promo>
+            >{`This year’s campaign calls on people to welcome an older child into their family. Find out ways to help support vulnerable children including making one-off or regular donations.`}</Promo>
           </Example>
           <Example>
             <Promo
@@ -343,7 +342,7 @@ export default () => (
             {` on GitHub.`}
           </Cite>
         </Content>
-      </ContentWithMenu>
+      </Contents>
     </Main>
   </Page>
 );

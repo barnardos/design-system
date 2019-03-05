@@ -3,7 +3,7 @@
 /** @define Hint; */
 
 .Hint {
-  color: color-mod(var(--black) tint(50%));
+  color: color-mod(var(--black) tint(30%));
   font: 300 var(--type-0) system-ui;
   margin-top: 0.25rem;
 }

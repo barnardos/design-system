@@ -4,10 +4,10 @@
 
 .NumberedList {
   font: 300 var(--type-0) system-ui;
-  max-width: 46rem;
+  max-width: 42rem;
   padding-left: 1rem;
 
   &:not(:first-child) {
-    margin-top: 1rem;
+    margin-top: 0.75rem;
   }
 }

@@ -37,11 +37,7 @@
   margin-top: 1rem;
 }
 
-.ProminentBlockQuote-role {
-  font: 300 var(--type-2) system-ui;
-}
-
-.ProminentBlockQuote-name {
+.ProminentBlockQuote-nameAndRole {
   font: 600 var(--type-2) system-ui;
 }
 

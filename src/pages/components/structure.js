@@ -1,77 +1,75 @@
 import Helmet from "react-helmet";
 import React from "react";
 
-import Breadcrumbs from "../components/Breadcrumbs";
-import BulletedList from "../components/BulletedList";
-import Cite from "../components/Cite";
-import Content from "../components/Content";
-import ContentHeader from "../components/ContentHeader";
-import ContentsMenu from "../components/ContentsMenu";
-import ContentWithMenu from "../components/ContentWithMenu";
-import Page from "../components/Page";
-import Heading from "../components/Heading";
-import Link from "../components/Link";
-import ListItem from "../components/ListItem";
-import Main from "../components/Main";
-import Paragraph from "../components/Paragraph";
-import Title from "../components/Title";
-import Topic from "../components/Topic";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
-import SkipLink from "../components/SkipLink";
-import Example from "../components/Example";
-import Menu from "../components/Menu";
-import Search from "../components/Search";
-import Figure from "../components/Figure";
-import Figures from "../components/Figures";
-import Code from "../components/Code";
-import Preformatted from "../components/Preformatted";
+import Breadcrumbs from "../../components/Breadcrumbs";
+import BulletedList from "../../components/BulletedList";
+import Cite from "../../components/Cite";
+import Content from "../../components/Content";
+import ContentsMenu from "../../components/ContentsMenu";
+import Contents from "../../components/Contents";
+import Page from "../../components/Page";
+import Heading from "../../components/Heading";
+import Link from "../../components/Link";
+import ListItem from "../../components/ListItem";
+import Main from "../../components/Main";
+import Paragraph from "../../components/Paragraph";
+import Title from "../../components/Title";
+import Footer from "../../components/Footer";
+import Header from "../../components/Header";
+import SkipLink from "../../components/SkipLink";
+import Example from "../../components/Example";
+import Menu from "../../components/Menu";
+import Search from "../../components/Search";
+import Figure from "../../components/Figure";
+import Figures from "../../components/Figures";
+import Code from "../../components/Code";
+import Preformatted from "../../components/Preformatted";
 
 export const indexItems = [
   {
     level: 1,
     text: "Site",
-    href: "/structure/#site"
+    href: "/components/structure/#site"
   },
   {
     level: 1,
     text: "Layout",
-    href: "/structure/#layout"
+    href: "/components/structure/#layout"
   },
   {
     level: 1,
     text: "Skip Link",
-    href: "/structure/#skip-link"
+    href: "/components/structure/#skip-link"
   },
   {
     level: 1,
     text: "Menu",
-    href: "/structure/#menu"
+    href: "/components/structure/#menu"
   },
   {
     level: 1,
     text: "Search",
-    href: "/structure/#search"
+    href: "/components/structure/#search"
   },
   {
     level: 1,
     text: "Header",
-    href: "/structure/#header"
+    href: "/components/structure/#header"
   },
   {
     level: 1,
     text: "Breadcrumbs",
-    href: "/structure/#breadcrumbs"
+    href: "/components/structure/#breadcrumbs"
   },
   {
     level: 1,
     text: "Main",
-    href: "/structure/#main"
+    href: "/components/structure/#main"
   },
   {
     level: 1,
     text: "Footer",
-    href: "/structure/#footer"
+    href: "/components/structure/#footer"
   }
 ];
 
@@ -98,15 +96,16 @@ export default () => (
         {
           text: "Home",
           href: "/"
+        },
+        {
+          text: "Components",
+          href: "/components/"
         }
       ]}
     />
     <Main>
-      <ContentWithMenu>
-        <ContentHeader>
-          <Topic>{`Components`}</Topic>
-          <Title>{`Structure`}</Title>
-        </ContentHeader>
+      <Title>{`Structure`}</Title>
+      <Contents>
         <ContentsMenu items={indexItems} />
         <Content>
           <Figures>
@@ -122,11 +121,11 @@ export default () => (
             <ListItem>{`set the page title and description`}</ListItem>
             <ListItem>
               {`load the `}
-              <Link href="/typography/#brand-font">{`brand font`}</Link>
+              <Link href="/standards/typography/#brand-font">{`brand font`}</Link>
             </ListItem>
             <ListItem>
               {`import the `}
-              <Link href="/viewport-scale/">{`viewport scale`}</Link>
+              <Link href="/standards/viewport-scale/">{`viewport scale`}</Link>
             </ListItem>
             <ListItem>{`normalise CSS styles`}</ListItem>
           </BulletedList>
@@ -384,7 +383,7 @@ export default () => (
             {` on GitHub.`}
           </Cite>
         </Content>
-      </ContentWithMenu>
+      </Contents>
     </Main>
   </Page>
 );

@@ -3,9 +3,9 @@
 /** @define Topic; */
 
 .Topic {
-  color: color-mod(var(--black) tint(50%));
+  color: color-mod(var(--black) tint(30%));
   font: 300 var(--type-3) proxima-nova, sans-serif;
-  margin-bottom: -1rem;
+  margin-bottom: -0.75rem;
 
   &:not(:first-child) {
     margin-top: 1rem;

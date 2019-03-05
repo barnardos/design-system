@@ -3,10 +3,14 @@ import React from "react";
 
 import Breadcrumbs from "../components/Breadcrumbs";
 import Page from "../components/Page";
-import DesignSystemNavigation from "../components/DesignSystemNavigation";
+import BulletedList from "../components/BulletedList";
+import Lede from "../components/Lede";
+import Link from "../components/Link";
+import ListItem from "../components/ListItem";
 import Title from "../components/Title";
 import Main from "../components/Main";
-import Content from "../components/Content";
+import Section from "../components/Section";
+import Sections from "../components/Sections";
 
 export default () => (
   <Page>
@@ -22,25 +26,23 @@ export default () => (
       ]}
     />
     <Main>
-      <Content>
-        <Title>{`Patterns`}</Title>
-        <DesignSystemNavigation
-          items={[
-            {
-              text: "Asking for names",
-              href: "/patterns/asking-for-names/"
-            },
-            {
-              text: "Filtering",
-              href: "/patterns/filtering/"
-            },
-            {
-              text: "Preventing spam",
-              href: "/patterns/preventing-spam/"
-            }
-          ]}
-        />
-      </Content>
+      <Title>{`Patterns`}</Title>
+      <Lede>{`Put the building blocks together to help users complete common tasks.`}</Lede>
+      <Sections>
+        <Section>
+          <BulletedList>
+            <ListItem>
+              <Link href="/patterns/asking-for-names/">{`Asking for names`}</Link>
+            </ListItem>
+            <ListItem>
+              <Link href="/patterns/filtering/">{`Filtering`}</Link>
+            </ListItem>
+            <ListItem>
+              <Link href="/patterns/preventing-spam/">{`Preventing spam`}</Link>
+            </ListItem>
+          </BulletedList>
+        </Section>
+      </Sections>
     </Main>
   </Page>
 );
