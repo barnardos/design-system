@@ -7,6 +7,7 @@ import NumberedList from "../../components/NumberedList";
 import Page from "../../components/Page";
 import Link from "../../components/Link";
 import ListItem from "../../components/ListItem";
+import Pagination from "../../components/Pagination";
 import Paragraph from "../../components/Paragraph";
 import Title from "../../components/Title";
 import Main from "../../components/Main";
@@ -51,6 +52,16 @@ export default () => (
         <Link href="https://github.com/barnardos/design-system/issues/582">{`sketch assets research`}</Link>
         {` on GitHub.`}
       </Cite>
+      <Pagination
+        previous={{
+          href: "/assets/web-assets",
+          label: "Web assets"
+        }}
+        next={{
+          href: "/assets/images-and-videos",
+          label: "Images and videos"
+        }}
+      />
     </Main>
   </Page>
 );

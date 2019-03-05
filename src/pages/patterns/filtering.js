@@ -10,6 +10,7 @@ import Link from "../../components/Link";
 import Filter from "../../components/Filter";
 import ListItem from "../../components/ListItem";
 import Paragraph from "../../components/Paragraph";
+import Pagination from "../../components/Pagination";
 import BulletedList from "../../components/BulletedList";
 import TextInput from "../../components/TextInput";
 import RadioButtons from "../../components/RadioButtons";
@@ -83,6 +84,16 @@ export default () => (
         <Link href="https://github.com/barnardos/design-system/issues/79">{`filtering research`}</Link>
         {` on GitHub.`}
       </Cite>
+      <Pagination
+        previous={{
+          href: "/patterns/asking-for-names",
+          label: "Asking for names"
+        }}
+        next={{
+          href: "/patterns/preventing-spam",
+          label: "Preventing spam"
+        }}
+      />
     </Main>
   </Page>
 );

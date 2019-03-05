@@ -11,6 +11,7 @@ import Link from "../../components/Link";
 import ListItem from "../../components/ListItem";
 import Heading from "../../components/Heading";
 import Paragraph from "../../components/Paragraph";
+import Pagination from "../../components/Pagination";
 import Title from "../../components/Title";
 import Main from "../../components/Main";
 import Image from "../../components/Image";
@@ -88,6 +89,12 @@ export default () => (
           <Paragraph>
             <Link href="https://raw.githubusercontent.com/barnardos/design-system/master/src/components/Site/favicon.ico">{`Download favicon (11kb)`}</Link>
           </Paragraph>
+          <Pagination
+            next={{
+              href: "/assets/sketch-assets",
+              label: "Sketch assets"
+            }}
+          />
         </Content>
       </Contents>
     </Main>
