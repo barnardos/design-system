@@ -271,7 +271,7 @@ export default () => (
               }}
             >
               <Header
-                search
+                search={<Search />}
                 menu={
                   <Menu
                     items={[

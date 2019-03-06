@@ -6,12 +6,16 @@ import Header from "../Header";
 import Layout from "../Layout";
 import SkipLink from "../SkipLink";
 import Site from "../Site";
+import DocSearch from "../DocSearch";
 
 const Page = ({ children }) => (
   <Site description="The Barnardo’s Design System website.">
     <Layout>
       <SkipLink />
-      <Header title="Go to the Barnardo’s Design System homepage" />
+      <Header
+        search={<DocSearch />}
+        title="Go to the Barnardo’s Design System homepage"
+      />
       {children}
       <Footer />
     </Layout>

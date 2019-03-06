@@ -1,8 +1,6 @@
 import PropTypes from "prop-types";
 import React, { useState } from "react";
 
-import Search from "../Search";
-
 import burger from "./burger.svg";
 import cross from "./cross.svg";
 import glass from "./glass.svg";
@@ -18,6 +16,8 @@ const Header = ({ href = "/", menu, search, title = "Go to the homepage" }) => {
     setActive(!isActive);
     if (!isActive) ref.current.focus();
   }
+
+  const searchWithRef = React.cloneElement(search, { ref: ref });
 
   return (
     <header className="Header">
@@ -47,11 +47,7 @@ const Header = ({ href = "/", menu, search, title = "Go to the homepage" }) => {
       <div
         className={`Header-target ${isActive ? "Header-target--active" : ""}`}
       >
-        {search && (
-          <div className="Header-search">
-            <Search ref={ref} />
-          </div>
-        )}
+        {search && <div className="Header-search">{searchWithRef}</div>}
         {menu && <div className="Header-menu">{menu}</div>}
       </div>
     </header>
@@ -61,7 +57,7 @@ const Header = ({ href = "/", menu, search, title = "Go to the homepage" }) => {
 Header.propTypes = {
   href: PropTypes.string,
   menu: PropTypes.node,
-  search: PropTypes.bool,
+  search: PropTypes.node,
   title: PropTypes.string
 };
 

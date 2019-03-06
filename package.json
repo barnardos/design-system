@@ -52,6 +52,7 @@
     "stylelint": "^9.10.1"
   },
   "dependencies": {
-    "@sindresorhus/slugify": "^0.8.0"
+    "@sindresorhus/slugify": "^0.8.0",
+    "url-polyfill": "^1.1.5"
   }
 }
