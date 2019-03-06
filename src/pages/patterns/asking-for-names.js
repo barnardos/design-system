@@ -9,6 +9,7 @@ import Figure from "../../components/Figure";
 import Figures from "../../components/Figures";
 import Link from "../../components/Link";
 import ListItem from "../../components/ListItem";
+import Pagination from "../../components/Pagination";
 import Paragraph from "../../components/Paragraph";
 import TextInput from "../../components/TextInput";
 import Title from "../../components/Title";
@@ -66,6 +67,12 @@ export default () => (
         <Link href="https://github.com/barnardos/design-system/issues/404">{`asking for names research`}</Link>
         {` on GitHub.`}
       </Cite>
+      <Pagination
+        next={{
+          href: "/patterns/filtering",
+          label: "Filtering"
+        }}
+      />
     </Main>
   </Page>
 );

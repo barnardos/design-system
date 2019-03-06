@@ -6,6 +6,7 @@ import Cite from "../../components/Cite";
 import Page from "../../components/Page";
 import Link from "../../components/Link";
 import ListItem from "../../components/ListItem";
+import Pagination from "../../components/Pagination";
 import Paragraph from "../../components/Paragraph";
 import Title from "../../components/Title";
 import Main from "../../components/Main";
@@ -44,5 +45,11 @@ export default () => (
         {` on GitHub.`}
       </Cite>
     </Main>
+    <Pagination
+      previous={{
+        href: "/assets/images-and-videos",
+        label: "Images and videos"
+      }}
+    />
   </Page>
 );

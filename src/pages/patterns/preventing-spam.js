@@ -7,6 +7,7 @@ import Cite from "../../components/Cite";
 import Page from "../../components/Page";
 import Link from "../../components/Link";
 import ListItem from "../../components/ListItem";
+import Pagination from "../../components/Pagination";
 import Paragraph from "../../components/Paragraph";
 import Title from "../../components/Title";
 import Main from "../../components/Main";
@@ -51,6 +52,12 @@ export default () => (
         <Link href="https://github.com/barnardos/design-system/issues/411">{`preventing spam research`}</Link>
         {` on GitHub.`}
       </Cite>
+      <Pagination
+        previous={{
+          href: "/patterns/filtering",
+          label: "Filtering"
+        }}
+      />
     </Main>
   </Page>
 );
