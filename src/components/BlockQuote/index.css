@@ -73,13 +73,9 @@
   color: var(--teal);
 }
 
-@media (min-width: 56rem) {
-  .BlockQuote {
-    display: flex;
-  }
-
-  .BlockQuote-media {
-    flex: 0 0 20rem;
-    margin-right: 1.5rem;
+.BlockQuote--withImage {
+  @supports (display: grid) {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, max-content));
   }
 }

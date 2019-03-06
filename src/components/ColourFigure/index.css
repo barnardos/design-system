@@ -5,6 +5,10 @@
 .ColourFigure {
   display: flex;
   max-width: 30rem;
+
+  @media (min-width: 30rem) {
+    max-width: none;
+  }
 }
 
 .ColourFigure-item {
@@ -13,14 +17,8 @@
   flex: 1 1 3rem;
   height: 3rem;
   list-style: none;
-}
 
-@media (min-width: 30rem) {
-  .ColourFigure {
-    max-width: none;
-  }
-
-  .ColourFigure-item {
+  @media (min-width: 30rem) {
     flex-basis: 4.5rem;
     height: 4.5rem;
   }
