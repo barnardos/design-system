@@ -15,7 +15,7 @@ import Main from "../../components/Main";
 export default () => (
   <Page>
     <Helmet>
-      <title>{`Sketch assets`}</title>
+      <title>Sketch assets</title>
     </Helmet>
     <Breadcrumbs
       items={[
@@ -30,27 +30,34 @@ export default () => (
       ]}
     />
     <Main>
-      <Title>{`Sketch assets`}</Title>
+      <Title>Sketch assets</Title>
       <Paragraph>
-        {`When designing your product you should `}
-        <Link href="https://www.npmjs.com/package/@barnardos/components">{`install the components`}</Link>
-        {` and design in the browser.`}
+        When designing your product you should{" "}
+        <Link href="https://www.npmjs.com/package/@barnardos/components">
+          install the components
+        </Link>{" "}
+        and design in the browser.
       </Paragraph>
       <Paragraph>
-        {`Alternatively, you can import components into Sketch using the `}
-        <Link href="https://kimdal-hyeong.github.io/html-to-sketch-electron/download-analyst/">{`HTML to Sketch app`}</Link>
-        {` by following these steps:`}
+        Alternatively, you can import components into Sketch using the{" "}
+        <Link href="https://kimdal-hyeong.github.io/html-to-sketch-electron/download-analyst/">
+          HTML to Sketch app
+        </Link>{" "}
+        by following these steps:
       </Paragraph>
       <NumberedList>
-        <ListItem>{`Paste
-        'design-system.barnardos.org.uk' into the address bar`}</ListItem>
-        <ListItem>{`Pick the component you need`}</ListItem>
-        <ListItem>{`Click the 'Draw' button`}</ListItem>
+        <ListItem>
+          Paste ‘design-system.barnardos.org.uk’ into the address bar
+        </ListItem>
+        <ListItem>Pick the component you need</ListItem>
+        <ListItem>Click the ‘Draw’ button</ListItem>
       </NumberedList>
       <Cite>
-        {`View `}
-        <Link href="https://github.com/barnardos/design-system/issues/582">{`sketch assets research`}</Link>
-        {` on GitHub.`}
+        View{" "}
+        <Link href="https://github.com/barnardos/design-system/issues/582">
+          sketch assets research
+        </Link>{" "}
+        on GitHub.
       </Cite>
       <Pagination
         previous={{

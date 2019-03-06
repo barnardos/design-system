@@ -16,7 +16,7 @@ import Title from "../components/Title";
 export default () => (
   <Page>
     <Helmet>
-      <title>{`Components`}</title>
+      <title>Components</title>
     </Helmet>
     <Breadcrumbs
       items={[
@@ -27,65 +27,69 @@ export default () => (
       ]}
     />
     <Main>
-      <Title>{`Standards`}</Title>
-      <Lede>{`Guidelines on how to adopt our ways of working.`}</Lede>
+      <Title>Standards</Title>
+      <Lede>Guidelines on how to adopt our ways of working.</Lede>
       <Sections>
         <Section>
-          <Heading>{`Accessibility`}</Heading>
+          <Heading>Accessibility</Heading>
           <BulletedList>
             <ListItem>
-              <Link href="/standards/considerations/">{`Considerations`}</Link>
+              <Link href="/standards/considerations/">Considerations</Link>
             </ListItem>
             <ListItem>
-              <Link href="/standards/viewport-scale/">{`Viewport scale`}</Link>
+              <Link href="/standards/viewport-scale/">Viewport scale</Link>
             </ListItem>
           </BulletedList>
         </Section>
         <Section>
-          <Heading>{`Design`}</Heading>
+          <Heading>Design</Heading>
           <BulletedList>
             <ListItem>
-              <Link href="/standards/colour/">{`Colour`}</Link>
+              <Link href="/standards/colour/">Colour</Link>
             </ListItem>
             <ListItem>
-              <Link href="/standards/typography/">{`Typography`}</Link>
+              <Link href="/standards/typography/">Typography</Link>
             </ListItem>
             <ListItem>
-              <Link href="/standards/spacing-and-layout/">{`Spacing and layout`}</Link>
+              <Link href="/standards/spacing-and-layout/">
+                Spacing and layout
+              </Link>
             </ListItem>
           </BulletedList>
         </Section>
         <Section>
-          <Heading>{`Writing`}</Heading>
+          <Heading>Writing</Heading>
           <BulletedList>
             <ListItem>
-              <Link href="/standards/voice-and-tone/">{`Voice and tone`}</Link>
+              <Link href="/standards/voice-and-tone/">Voice and tone</Link>
             </ListItem>
             <ListItem>
-              <Link href="/standards/reading-age/">{`Reading age`}</Link>
+              <Link href="/standards/reading-age/">Reading age</Link>
             </ListItem>
             <ListItem>
-              <Link href="/standards/formatting/">{`Formatting`}</Link>
+              <Link href="/standards/formatting/">Formatting</Link>
             </ListItem>
             <ListItem>
-              <Link href="/standards/spelling/">{`Spelling`}</Link>
+              <Link href="/standards/spelling/">Spelling</Link>
             </ListItem>
             <ListItem>
-              <Link href="/standards/maintenance/">{`Maintenance`}</Link>
+              <Link href="/standards/maintenance/">Maintenance</Link>
             </ListItem>
           </BulletedList>
         </Section>
         <Section>
-          <Heading>{`Development`}</Heading>
+          <Heading>Development</Heading>
           <BulletedList>
             <ListItem>
-              <Link href="/standards/code-quality/">{`Code quality`}</Link>
+              <Link href="/standards/code-quality/">Code quality</Link>
             </ListItem>
             <ListItem>
-              <Link href="/standards/future-proof-code/">{`Future-proof code`}</Link>
+              <Link href="/standards/future-proof-code/">
+                Future-proof code
+              </Link>
             </ListItem>
             <ListItem>
-              <Link href="/standards/performance/">{`Performance`}</Link>
+              <Link href="/standards/performance/">Performance</Link>
             </ListItem>
           </BulletedList>
         </Section>

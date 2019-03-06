@@ -16,7 +16,7 @@ import Topic from "../../components/Topic";
 export default () => (
   <Page>
     <Helmet>
-      <title>{`Future-proof code`}</title>
+      <title>Future-proof code</title>
     </Helmet>
     <Breadcrumbs
       items={[
@@ -31,28 +31,34 @@ export default () => (
       ]}
     />
     <Main>
-      <Topic>{`Development`}</Topic>
-      <Title>{`Future-proof code`}</Title>
-      <Paragraph>{`You should transpile modern standards for:`}</Paragraph>
+      <Topic>Development</Topic>
+      <Title>Future-proof code</Title>
+      <Paragraph>You should transpile modern standards for:</Paragraph>
       <BulletedList>
         <ListItem>
-          {`JavaScript with `}
-          <Link href="https://babeljs.io/docs/en/babel-preset-env">{`babel-preset-env`}</Link>
+          JavaScript with{" "}
+          <Link href="https://babeljs.io/docs/en/babel-preset-env">
+            babel-preset-env
+          </Link>
         </ListItem>
         <ListItem>
-          {`CSS with `}
-          <Link href="https://preset-env.cssdb.org/">{`postcss-preset-env`}</Link>
+          CSS with{" "}
+          <Link href="https://preset-env.cssdb.org/">postcss-preset-env</Link>
         </ListItem>
       </BulletedList>
       <Paragraph>
-        {`You should use the `}
-        <Link href="https://github.com/browserslist/browserslist">{`browserslist`}</Link>
-        {` defaults to configure both.`}
+        You should use the{" "}
+        <Link href="https://github.com/browserslist/browserslist">
+          browserslist
+        </Link>{" "}
+        defaults to configure both.
       </Paragraph>
       <Cite>
-        {`View `}
-        <Link href="https://github.com/barnardos/design-system/issues/585">{`future-proof code research`}</Link>
-        {` on GitHub.`}
+        View{" "}
+        <Link href="https://github.com/barnardos/design-system/issues/585">
+          future-proof code research
+        </Link>{" "}
+        on GitHub.
       </Cite>
       <Pagination
         previous={{

@@ -21,7 +21,7 @@ import Example from "../../components/Example";
 export default () => (
   <Page>
     <Helmet>
-      <title>{`Filtering`}</title>
+      <title>Filtering</title>
     </Helmet>
     <Breadcrumbs
       items={[
@@ -36,16 +36,18 @@ export default () => (
       ]}
     />
     <Main>
-      <Title>{`Filtering`}</Title>
-      <Paragraph>{`Use this pattern to narrow down results to the most relevant.`}</Paragraph>
-      <Paragraph>{`You should:`}</Paragraph>
+      <Title>Filtering</Title>
+      <Paragraph>
+        Use this pattern to narrow down results to the most relevant.
+      </Paragraph>
+      <Paragraph>You should:</Paragraph>
       <BulletedList>
-        <ListItem>{`display the number of results`}</ListItem>
-        <ListItem>{`show what filters are currently active`}</ListItem>
-        <ListItem>{`include a way to clear each filter option`}</ListItem>
-        <ListItem>{`show common filters at all times`}</ListItem>
-        <ListItem>{`hide filters that have no results`}</ListItem>
-        <ListItem>{`avoid too many filters options`}</ListItem>
+        <ListItem>display the number of results</ListItem>
+        <ListItem>show what filters are currently active</ListItem>
+        <ListItem>include a way to clear each filter option</ListItem>
+        <ListItem>show common filters at all times</ListItem>
+        <ListItem>hide filters that have no results</ListItem>
+        <ListItem>avoid too many filters options</ListItem>
       </BulletedList>
       <Example>
         <TextInput
@@ -80,9 +82,11 @@ export default () => (
         <Submit text="Find" />
       </Example>
       <Cite>
-        {`View `}
-        <Link href="https://github.com/barnardos/design-system/issues/79">{`filtering research`}</Link>
-        {` on GitHub.`}
+        View{" "}
+        <Link href="https://github.com/barnardos/design-system/issues/79">
+          filtering research
+        </Link>{" "}
+        on GitHub.
       </Cite>
       <Pagination
         previous={{

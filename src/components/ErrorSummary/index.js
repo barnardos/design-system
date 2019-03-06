@@ -5,7 +5,7 @@ import "./index.css";
 const ErrorSummary = ({ items }) => {
   return (
     <div className="ErrorSummary">
-      <p className="ErrorSummary-title">{`There is a problem`}</p>
+      <p className="ErrorSummary-title">There is a problem</p>
       <ul className="ErrorSummary-items">
         {items.map(({ id, error }, index) => (
           <li className="ErrorSummary-item" key={index}>

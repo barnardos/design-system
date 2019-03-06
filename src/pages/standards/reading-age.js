@@ -16,7 +16,7 @@ import Topic from "../../components/Topic";
 export default () => (
   <Page>
     <Helmet>
-      <title>{`Reading age`}</title>
+      <title>Reading age</title>
     </Helmet>
     <Breadcrumbs
       items={[
@@ -31,25 +31,32 @@ export default () => (
       ]}
     />
     <Main>
-      <Topic>{`Writing`}</Topic>
-      <Title>{`Reading age`}</Title>
-      <Paragraph>{`Aim for a reading age of about 9. For technical and professional content, aim for 12.`}</Paragraph>
-      <Paragraph>{`You can check the reading age of content using:`}</Paragraph>
+      <Topic>Writing</Topic>
+      <Title>Reading age</Title>
+      <Paragraph>
+        Aim for a reading age of about 9. For technical and professional
+        content, aim for 12.
+      </Paragraph>
+      <Paragraph>You can check the reading age of content using:</Paragraph>
       <BulletedList>
         <ListItem>
-          <Link href="http://www.hemingwayapp.com/">{`the Hemingway app`}</Link>
+          <Link href="http://www.hemingwayapp.com/">the Hemingway app</Link>
         </ListItem>
         <ListItem>
-          <Link href="https://support.office.com/en-gb/article/Test-your-document-s-readability-85b4969e-e80a-4777-8dd3-f7fc3c8b3fd2">{`Microsoft Word`}</Link>
+          <Link href="https://support.office.com/en-gb/article/Test-your-document-s-readability-85b4969e-e80a-4777-8dd3-f7fc3c8b3fd2">
+            Microsoft Word
+          </Link>
         </ListItem>
         <ListItem>
-          <Link href="https://readable.io/">{`Readable`}</Link>
+          <Link href="https://readable.io/">Readable</Link>
         </ListItem>
       </BulletedList>
       <Cite>
-        {`View `}
-        <Link href="https://github.com/barnardos/design-system/issues/510">{`reading age research`}</Link>
-        {` on GitHub.`}
+        View{" "}
+        <Link href="https://github.com/barnardos/design-system/issues/510">
+          reading age research
+        </Link>{" "}
+        on GitHub.
       </Cite>
       <Pagination
         previous={{

@@ -15,7 +15,7 @@ import Main from "../components/Main";
 export default () => (
   <Page>
     <Helmet>
-      <title>{`Assets`}</title>
+      <title>Assets</title>
     </Helmet>
     <Breadcrumbs
       items={[
@@ -26,22 +26,24 @@ export default () => (
       ]}
     />
     <Main>
-      <Title>{`Assets`}</Title>
-      <Lede>{`Downloadable resources and guidance on creating your own assets.`}</Lede>
+      <Title>Assets</Title>
+      <Lede>
+        Downloadable resources and guidance on creating your own assets.
+      </Lede>
       <Sections>
         <Section>
           <BulletedList>
             <ListItem>
-              <Link href="/assets/web-assets/">{`Web assets`}</Link>
+              <Link href="/assets/web-assets/">Web assets</Link>
             </ListItem>
             <ListItem>
-              <Link href="/assets/sketch-assets">{`Sketch assets`}</Link>
+              <Link href="/assets/sketch-assets">Sketch assets</Link>
             </ListItem>
             <ListItem>
-              <Link href="/assets/images-and-videos/">{`Images and videos`}</Link>
+              <Link href="/assets/images-and-videos/">Images and videos</Link>
             </ListItem>
             <ListItem>
-              <Link href="/assets/iconography/">{`Iconography`}</Link>
+              <Link href="/assets/iconography/">Iconography</Link>
             </ListItem>
           </BulletedList>
         </Section>

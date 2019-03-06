@@ -16,7 +16,7 @@ import Topic from "../../components/Topic";
 export default () => (
   <Page>
     <Helmet>
-      <title>{`Formatting`}</title>
+      <title>Formatting</title>
     </Helmet>
     <Breadcrumbs
       items={[
@@ -31,25 +31,31 @@ export default () => (
       ]}
     />
     <Main>
-      <Topic>{`Writing`}</Topic>
-      <Title>{`Formatting`}</Title>
-      <Paragraph>{`When formatting your writing you should:`}</Paragraph>
+      <Topic>Writing</Topic>
+      <Title>Formatting</Title>
+      <Paragraph>When formatting your writing you should:</Paragraph>
       <BulletedList>
-        <ListItem>{`use sentence case`}</ListItem>
-        <ListItem>{`avoid use of bold`}</ListItem>
-        <ListItem>{`use italics for general emphasis`}</ListItem>
-        <ListItem>{`use bulleted lists when paragraphs have more than four points`}</ListItem>
-        <ListItem>{`use words for single-figure numbers`}</ListItem>
-        <ListItem>{`use single quotation marks for quoted speech`}</ListItem>
-        <ListItem>{`only use the ampersand when space is tight`}</ListItem>
-        <ListItem>{`write dates as 9 January 2018`}</ListItem>
-        <ListItem>{`use the 12-hour clock, for example 10am and 2.30pm`}</ListItem>
-        <ListItem>{`use noon and midnight instead of 12 noon and 12 midnight`}</ListItem>
+        <ListItem>use sentence case</ListItem>
+        <ListItem>avoid use of bold</ListItem>
+        <ListItem>use italics for general emphasis</ListItem>
+        <ListItem>
+          use bulleted lists when paragraphs have more than four points
+        </ListItem>
+        <ListItem>use words for single-figure numbers</ListItem>
+        <ListItem>use single quotation marks for quoted speech</ListItem>
+        <ListItem>only use the ampersand when space is tight</ListItem>
+        <ListItem>write dates as 9 January 2018</ListItem>
+        <ListItem>use the 12-hour clock, for example 10am and 2.30pm</ListItem>
+        <ListItem>
+          use noon and midnight instead of 12 noon and 12 midnight
+        </ListItem>
       </BulletedList>
       <Cite>
-        {`View `}
-        <Link href="https://github.com/barnardos/design-system/issues/87">{`formatting research`}</Link>
-        {` on GitHub.`}
+        View{" "}
+        <Link href="https://github.com/barnardos/design-system/issues/87">
+          formatting research
+        </Link>{" "}
+        on GitHub.
       </Cite>
       <Pagination
         previous={{

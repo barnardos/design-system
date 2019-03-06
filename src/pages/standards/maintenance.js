@@ -16,7 +16,7 @@ import Topic from "../../components/Topic";
 export default () => (
   <Page>
     <Helmet>
-      <title>{`Maintenance`}</title>
+      <title>Maintenance</title>
     </Helmet>
     <Breadcrumbs
       items={[
@@ -31,20 +31,25 @@ export default () => (
       ]}
     />
     <Main>
-      <Topic>{`Writing`}</Topic>
-      <Title>{`Maintenance`}</Title>
-      <Paragraph>{`When content is published, you should review it at a later date to check:`}</Paragraph>
+      <Topic>Writing</Topic>
+      <Title>Maintenance</Title>
+      <Paragraph>
+        When content is published, you should review it at a later date to
+        check:
+      </Paragraph>
       <BulletedList>
-        <ListItem>{`people are using it`}</ListItem>
-        <ListItem>{`it’s still in the best place`}</ListItem>
-        <ListItem>{`it’s factually accurate`}</ListItem>
-        <ListItem>{`external links still work`}</ListItem>
-        <ListItem>{`the language is still correct`}</ListItem>
+        <ListItem>people are using it</ListItem>
+        <ListItem>it’s still in the best place</ListItem>
+        <ListItem>it’s factually accurate</ListItem>
+        <ListItem>external links still work</ListItem>
+        <ListItem>the language is still correct</ListItem>
       </BulletedList>
       <Cite>
-        {`View `}
-        <Link href="https://github.com/barnardos/design-system/issues/510">{`maintenance research`}</Link>
-        {` on GitHub.`}
+        View{" "}
+        <Link href="https://github.com/barnardos/design-system/issues/510">
+          maintenance research
+        </Link>{" "}
+        on GitHub.
       </Cite>
       <Pagination
         previous={{

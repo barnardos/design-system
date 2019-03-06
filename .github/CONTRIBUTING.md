@@ -1,11 +1,11 @@
 # Contributing
 
-Thank you for wanting to contribute. We welcome contributions from everyone, both inside and outside Barnardo's.
+Thank you for wanting to contribute. We welcome contributions from everyone, both inside and outside Barnardo’s.
 
-If you're unfamiliar with:
+If you’re unfamiliar with:
 
 - open source projects, refer to guidance on [how to contribute](https://opensource.guide/how-to-contribute)
-- the Barnardo's development process, refer to the [developer manual](https://github.com/barnardos/developer-manual#contributing-code)
+- the Barnardo’s development process, refer to the [developer manual](https://github.com/barnardos/developer-manual#contributing-code)
 
 ## Getting started
 

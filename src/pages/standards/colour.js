@@ -26,7 +26,7 @@ import Topic from "../../components/Topic";
 export default () => (
   <Page>
     <Helmet>
-      <title>{`Colour`}</title>
+      <title>Colour</title>
     </Helmet>
     <Breadcrumbs
       items={[
@@ -41,8 +41,8 @@ export default () => (
       ]}
     />
     <Main>
-      <Topic>{`Design`}</Topic>
-      <Title>{`Colour`}</Title>
+      <Topic>Design</Topic>
+      <Title>Colour</Title>
       <Contents>
         <ContentsMenu
           items={[
@@ -64,13 +64,15 @@ export default () => (
           ]}
         />
         <Content>
-          <Paragraph>{`You should use:`}</Paragraph>
+          <Paragraph>You should use:</Paragraph>
           <BulletedList>
-            <ListItem>{`the brand colours`}</ListItem>
-            <ListItem>{`a 10% increment scale for tints, shades and opacity`}</ListItem>
+            <ListItem>the brand colours</ListItem>
+            <ListItem>
+              a 10% increment scale for tints, shades and opacity
+            </ListItem>
           </BulletedList>
-          <Heading>{`Brand colours`}</Heading>
-          <Subheading>{`Primary`}</Subheading>
+          <Heading>Brand colours</Heading>
+          <Subheading>Primary</Subheading>
           <Swatches
             swatches={[
               [{ label: "Green", hex: "#6aa300", primary: true }],
@@ -86,7 +88,7 @@ export default () => (
               ]
             ]}
           />
-          <Subheading>{`Secondary`}</Subheading>
+          <Subheading>Secondary</Subheading>
           <Swatches
             swatches={[
               [{ label: "Orange", hex: "#e86c00", primary: true }],
@@ -95,16 +97,19 @@ export default () => (
               [{ label: "Teal", hex: "#0099a9", primary: true }]
             ]}
           />
-          <Subheading>{`Focus`}</Subheading>
+          <Subheading>Focus</Subheading>
           <Swatches
             swatches={[[{ label: "Yellow", hex: "#ffbf47", primary: true }]]}
           />
-          <Subheading>{`Errors`}</Subheading>
+          <Subheading>Errors</Subheading>
           <Swatches
             swatches={[[{ label: "Red", hex: "#c30000", primary: true }]]}
           />
-          <Paragraph>{`If your product is not Barnardo's branded, you should still use the colour scale.`}</Paragraph>
-          <Heading>{`Colour scale`}</Heading>
+          <Paragraph>
+            If your product is not Barnardo’s branded, you should still use the
+            colour scale.
+          </Paragraph>
+          <Heading>Colour scale</Heading>
           <Figures>
             <Figure caption="Green with black (shade) applied in 10% increments.">
               <ColourFigure type="shade" />
@@ -113,17 +118,21 @@ export default () => (
               <ColourFigure type="tint" />
             </Figure>
           </Figures>
-          <Heading>{`Light grey`}</Heading>
-          <Paragraph>{`You can use a 95% tint of Black for backgrounds.`}</Paragraph>
+          <Heading>Light grey</Heading>
+          <Paragraph>
+            You can use a 95% tint of Black for backgrounds.
+          </Paragraph>
           <Figures>
             <Figure caption="95% tint of Black">
               <ColourGreyFigure />
             </Figure>
           </Figures>
           <Cite>
-            {`View `}
-            <Link href="https://github.com/barnardos/design-system/issues/14">{`colour research`}</Link>
-            {` on GitHub.`}
+            View{" "}
+            <Link href="https://github.com/barnardos/design-system/issues/14">
+              colour research
+            </Link>{" "}
+            on GitHub.
           </Cite>
           <Pagination
             next={{

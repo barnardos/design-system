@@ -7,7 +7,9 @@ import "./index.css";
 
 const Search = forwardRef(({ id = "search-input" }, ref) => (
   <form className="Search">
-    <label className="Search-label" htmlFor={id}>{`Search`}</label>
+    <label className="Search-label" htmlFor={id}>
+      Search
+    </label>
     <input
       className="Search-input"
       id={id}

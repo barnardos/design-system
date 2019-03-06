@@ -15,7 +15,7 @@ import Topic from "../../components/Topic";
 export default () => (
   <Page>
     <Helmet>
-      <title>{`Spelling`}</title>
+      <title>Spelling</title>
     </Helmet>
     <Breadcrumbs
       items={[
@@ -30,21 +30,27 @@ export default () => (
       ]}
     />
     <Main>
-      <Topic>{`Writing`}</Topic>
-      <Title>{`Spelling`}</Title>
+      <Topic>Writing</Topic>
+      <Title>Spelling</Title>
       <BulletedList>
-        <ListItem>{`Barnardo’s (always with apostrophe)`}</ListItem>
-        <ListItem>{`email (no hyphen)`}</ListItem>
-        <ListItem>{`http:// (is not required, begin web addresses with www)`}</ListItem>
-        <ListItem>{`online (one word)`}</ListItem>
-        <ListItem>{`per cent (should be spelt in words, unless used in tables)`}</ListItem>
-        <ListItem>{`postcode (no hyphen)`}</ListItem>
-        <ListItem>{`website (no hyphen)`}</ListItem>
+        <ListItem>Barnardo’s (always with apostrophe)</ListItem>
+        <ListItem>email (no hyphen)</ListItem>
+        <ListItem>
+          http:// (is not required, begin web addresses with www)
+        </ListItem>
+        <ListItem>online (one word)</ListItem>
+        <ListItem>
+          per cent (should be spelt in words, unless used in tables)
+        </ListItem>
+        <ListItem>postcode (no hyphen)</ListItem>
+        <ListItem>website (no hyphen)</ListItem>
       </BulletedList>
       <Cite>
-        {`View `}
-        <Link href="https://github.com/barnardos/design-system/issues/87">{`spelling research`}</Link>
-        {` on GitHub.`}
+        View{" "}
+        <Link href="https://github.com/barnardos/design-system/issues/87">
+          spelling research
+        </Link>{" "}
+        on GitHub.
       </Cite>
       <Pagination
         previous={{

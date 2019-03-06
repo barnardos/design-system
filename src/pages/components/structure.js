@@ -89,7 +89,7 @@ const structureForFigure = `<Site>
 export default () => (
   <Page>
     <Helmet>
-      <title>{`Structure`}</title>
+      <title>Structure</title>
     </Helmet>
     <Breadcrumbs
       items={[
@@ -104,7 +104,7 @@ export default () => (
       ]}
     />
     <Main>
-      <Title>{`Structure`}</Title>
+      <Title>Structure</Title>
       <Contents>
         <ContentsMenu items={indexItems} />
         <Content>
@@ -115,52 +115,65 @@ export default () => (
               </Preformatted>
             </Figure>
           </Figures>
-          <Heading>{`Site`}</Heading>
-          <Paragraph>{`Use this component to:`}</Paragraph>
+          <Heading>Site</Heading>
+          <Paragraph>Use this component to:</Paragraph>
           <BulletedList>
-            <ListItem>{`set the page title and description`}</ListItem>
+            <ListItem>set the page title and description</ListItem>
             <ListItem>
-              {`load the `}
-              <Link href="/standards/typography/#brand-font">{`brand font`}</Link>
+              load the{" "}
+              <Link href="/standards/typography/#brand-font">brand font</Link>
             </ListItem>
             <ListItem>
-              {`import the `}
-              <Link href="/standards/viewport-scale/">{`viewport scale`}</Link>
+              import the{" "}
+              <Link href="/standards/viewport-scale/">viewport scale</Link>
             </ListItem>
-            <ListItem>{`normalise CSS styles`}</ListItem>
+            <ListItem>normalise CSS styles</ListItem>
           </BulletedList>
           <Cite>
-            {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Site">{`Site code`}</Link>
-            {` on GitHub.`}
+            View{" "}
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Site">
+              Site code
+            </Link>{" "}
+            on GitHub.
           </Cite>
-          <Heading>{`Layout`}</Heading>
-          <Paragraph>{`Use this component to:`}</Paragraph>
+          <Heading>Layout</Heading>
+          <Paragraph>Use this component to:</Paragraph>
           <BulletedList>
-            <ListItem>{`add space around the page`}</ListItem>
-            <ListItem>{`limit the width of the page`}</ListItem>
+            <ListItem>add space around the page</ListItem>
+            <ListItem>limit the width of the page</ListItem>
           </BulletedList>
           <Cite>
-            {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Layout">{`Layout code`}</Link>
-            {` on GitHub.`}
+            View{" "}
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Layout">
+              Layout code
+            </Link>{" "}
+            on GitHub.
           </Cite>
-          <Heading>{`Skip Link`}</Heading>
-          <Paragraph>{`Use this component to skip to the main content.`}</Paragraph>
+          <Heading>Skip Link</Heading>
+          <Paragraph>Use this component to skip to the main content.</Paragraph>
           <Example>
             <SkipLink />
-            <Cite>{`Focus component to reveal.`}</Cite>
+            <Cite>Focus component to reveal.</Cite>
           </Example>
           <Cite>
-            {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/SkipLink">{`Skip Link code`}</Link>
-            {` and `}
-            <Link href="https://github.com/barnardos/design-system/issues/479">{`Skip Link research`}</Link>
-            {` on GitHub.`}
+            View{" "}
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/SkipLink">
+              Skip Link code
+            </Link>{" "}
+            and{" "}
+            <Link href="https://github.com/barnardos/design-system/issues/479">
+              Skip Link research
+            </Link>{" "}
+            on GitHub.
           </Cite>
-          <Heading>{`Menu`}</Heading>
-          <Paragraph>{`Use this component to navigate to top and secondary level items.`}</Paragraph>
-          <Paragraph>{`When using this component you should aim to have the items visible on all viewport sizes.`}</Paragraph>
+          <Heading>Menu</Heading>
+          <Paragraph>
+            Use this component to navigate to top and secondary level items.
+          </Paragraph>
+          <Paragraph>
+            When using this component you should aim to have the items visible
+            on all viewport sizes.
+          </Paragraph>
           <Example>
             <div
               style={{
@@ -223,26 +236,33 @@ export default () => (
             </div>
           </Example>
           <Cite>
-            {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Menu">{`Menu code`}</Link>
-            {` and `}
-            <Link href="https://github.com/barnardos/design-system/issues/2">{`Menu research`}</Link>
-            {` on GitHub.`}
+            View{" "}
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Menu">
+              Menu code
+            </Link>{" "}
+            and{" "}
+            <Link href="https://github.com/barnardos/design-system/issues/2">
+              Menu research
+            </Link>{" "}
+            on GitHub.
           </Cite>
-          <Heading>{`Search`}</Heading>
-          <Paragraph>{`Use this component for searches.`}</Paragraph>
+          <Heading>Search</Heading>
+          <Paragraph>Use this component for searches.</Paragraph>
           <Example>
             <Search id="example-search" />
           </Example>
           <Cite>
-            {`View `}
+            View{" "}
             <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Search">
-              {`Search code`}
-            </Link>
-            {` on GitHub.`}
+              Search code
+            </Link>{" "}
+            on GitHub.
           </Cite>
-          <Heading>{`Header`}</Heading>
-          <Paragraph>{`Use this component to display the Barnardo's logo and optional Search and Menu.`}</Paragraph>
+          <Heading>Header</Heading>
+          <Paragraph>
+            Use this component to display the Barnardo’s logo and optional
+            Search and Menu.
+          </Paragraph>
           <Example>
             <div
               style={{
@@ -310,15 +330,24 @@ export default () => (
             </div>
           </Example>
           <Cite>
-            {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Header">{`Header code`}</Link>
-            {` and `}
-            <Link href="https://github.com/barnardos/design-system/issues/2">{`Header research`}</Link>
-            {` on GitHub.`}
+            View{" "}
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Header">
+              Header code
+            </Link>{" "}
+            and{" "}
+            <Link href="https://github.com/barnardos/design-system/issues/2">
+              Header research
+            </Link>{" "}
+            on GitHub.
           </Cite>
-          <Heading>{`Breadcrumbs`}</Heading>
-          <Paragraph>{`Use this component to help a user identify their current location.`}</Paragraph>
-          <Paragraph>{`When using this component you should only represent individual pages.`}</Paragraph>
+          <Heading>Breadcrumbs</Heading>
+          <Paragraph>
+            Use this component to help a user identify their current location.
+          </Paragraph>
+          <Paragraph>
+            When using this component you should only represent individual
+            pages.
+          </Paragraph>
           <Example>
             <Breadcrumbs
               items={[
@@ -338,21 +367,31 @@ export default () => (
             />
           </Example>
           <Cite>
-            {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Breadcrumbs">{`Breadcrumbs code`}</Link>
-            {` and `}
-            <Link href="https://github.com/barnardos/design-system/issues/2">{`Breadcrumbs research`}</Link>
-            {` on GitHub.`}
+            View{" "}
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Breadcrumbs">
+              Breadcrumbs code
+            </Link>{" "}
+            and{" "}
+            <Link href="https://github.com/barnardos/design-system/issues/2">
+              Breadcrumbs research
+            </Link>{" "}
+            on GitHub.
           </Cite>
-          <Heading>{`Main`}</Heading>
-          <Paragraph>{`Use this component for the main content of a page.`}</Paragraph>
+          <Heading>Main</Heading>
+          <Paragraph>
+            Use this component for the main content of a page.
+          </Paragraph>
           <Cite>
-            {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Main">{`Main code`}</Link>
-            {` on GitHub.`}
+            View{" "}
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Main">
+              Main code
+            </Link>{" "}
+            on GitHub.
           </Cite>
-          <Heading>{`Footer`}</Heading>
-          <Paragraph>{`Use this component for the copyright notice and optional links.`}</Paragraph>
+          <Heading>Footer</Heading>
+          <Paragraph>
+            Use this component for the copyright notice and optional links.
+          </Paragraph>
           <Example>
             <Footer
               items={[
@@ -376,11 +415,15 @@ export default () => (
             />
           </Example>
           <Cite>
-            {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Footer">{`Footer code`}</Link>
-            {` and `}
-            <Link href="https://github.com/barnardos/design-system/issues/301">{`Footer research`}</Link>
-            {` on GitHub.`}
+            View{" "}
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Footer">
+              Footer code
+            </Link>{" "}
+            and{" "}
+            <Link href="https://github.com/barnardos/design-system/issues/301">
+              Footer research
+            </Link>{" "}
+            on GitHub.
           </Cite>
         </Content>
       </Contents>
