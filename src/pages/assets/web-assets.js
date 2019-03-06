@@ -22,7 +22,7 @@ import ContentsMenu from "../../components/ContentsMenu";
 export default () => (
   <Page>
     <Helmet>
-      <title>{`Web assets`}</title>
+      <title>Web assets</title>
     </Helmet>
     <Breadcrumbs
       items={[
@@ -37,7 +37,7 @@ export default () => (
       ]}
     />
     <Main>
-      <Title>{`Web assets`}</Title>
+      <Title>Web assets</Title>
       <Contents>
         <ContentsMenu
           items={[
@@ -54,40 +54,51 @@ export default () => (
           ]}
         />
         <Content>
-          <Heading>{`Logo`}</Heading>
-          <Paragraph>{`Use this asset to display the Barnardo's logo.`}</Paragraph>
-          <Paragraph>{`When using this asset you should:`}</Paragraph>
+          <Heading>Logo</Heading>
+          <Paragraph>Use this asset to display the Barnardo’s logo.</Paragraph>
+          <Paragraph>When using this asset you should:</Paragraph>
           <BulletedList>
-            <ListItem>{`use adequate white space around it`}</ListItem>
-            <ListItem>{`not break it up in any way`}</ListItem>
-            <ListItem>{`not create variations of it for products or campaigns`}</ListItem>
-            <ListItem>{`not change the colour`}</ListItem>
-            <ListItem>{`not scale it to less than 4.5rem (roughly 72px)`}</ListItem>
+            <ListItem>use adequate white space around it</ListItem>
+            <ListItem>not break it up in any way</ListItem>
+            <ListItem>
+              not create variations of it for products or campaigns
+            </ListItem>
+            <ListItem>not change the colour</ListItem>
+            <ListItem>not scale it to less than 4.5rem (roughly 72px)</ListItem>
           </BulletedList>
           <Figures>
             <Figure caption="Example of the logo">
               <Image
-                alt="The Barnardo's logo"
+                alt="The Barnardo’s logo"
                 src={withPrefix("/logo-for-figure.svg")}
               />
             </Figure>
           </Figures>
           <Paragraph>
-            <Link href="https://github.com/barnardos/design-system/blob/master/src/components/Header/logo.svg">{`Download logo (12kb)`}</Link>
+            <Link href="https://github.com/barnardos/design-system/blob/master/src/components/Header/logo.svg">
+              Download logo (12kb)
+            </Link>
           </Paragraph>
-          <Heading>{`Favicon`}</Heading>
-          <Paragraph>{`Use this asset to display an icon in the address bar or tab of a browser.`}</Paragraph>
-          <Paragraph>{`When using this asset you should avoid changing the colour.`}</Paragraph>
+          <Heading>Favicon</Heading>
+          <Paragraph>
+            Use this asset to display an icon in the address bar or tab of a
+            browser.
+          </Paragraph>
+          <Paragraph>
+            When using this asset you should avoid changing the colour.
+          </Paragraph>
           <Figures>
             <Figure caption="Example of the favicon">
               <Image
-                alt="The Barnardo's favicon"
+                alt="The Barnardo’s favicon"
                 src={withPrefix("/favicon-for-figure.svg")}
               />
             </Figure>
           </Figures>
           <Paragraph>
-            <Link href="https://raw.githubusercontent.com/barnardos/design-system/master/src/components/Site/favicon.ico">{`Download favicon (11kb)`}</Link>
+            <Link href="https://raw.githubusercontent.com/barnardos/design-system/master/src/components/Site/favicon.ico">
+              Download favicon (11kb)
+            </Link>
           </Paragraph>
           <Pagination
             next={{

@@ -111,7 +111,7 @@ export const indexItems = [
 export default () => (
   <Page>
     <Helmet>
-      <title>{`Forms`}</title>
+      <title>Forms</title>
     </Helmet>
     <Breadcrumbs
       items={[
@@ -126,37 +126,49 @@ export default () => (
       ]}
     />
     <Main>
-      <Title>{`Forms`}</Title>
+      <Title>Forms</Title>
       <Contents>
         <ContentsMenu items={indexItems} />
         <Content>
-          <Paragraph>{`When gathering information you should:`}</Paragraph>
-          <BulletedList>
-            <ListItem>{`only ask for information which is absolutely needed`}</ListItem>
-            <ListItem>{`ask for required information first`}</ListItem>
-            <ListItem>{`group related fields together, for example "Email" and "Phone"`}</ListItem>
-            <ListItem>{`add '(optional)' to labels of information that isn't required`}</ListItem>
-            <ListItem>{`avoid unnecessary words like 'Please' or 'Enter' in labels`}</ListItem>
-            <ListItem>{`minimise the number of fields on each page`}</ListItem>
-            <ListItem>{`avoid manipulative design patterns`}</ListItem>
-          </BulletedList>
-          <Paragraph>{`When gathering information from young people you should:`}</Paragraph>
-          <BulletedList>
-            <ListItem>{`explain why information is being asked for`}</ListItem>
-            <ListItem>{`explain who will see any personal information`}</ListItem>
-            <ListItem>{`allow them to remain anonymous where possible`}</ListItem>
-            <ListItem>{`ensure they have privacy and are safeguarded`}</ListItem>
-          </BulletedList>
-          <Heading>{`Text inputs`}</Heading>
-          <Paragraph>{`Use the components below for text entry. You should:`}</Paragraph>
+          <Paragraph>When gathering information you should:</Paragraph>
           <BulletedList>
             <ListItem>
-              {`make the size appropriate to the amount of information requested`}
+              only ask for information which is absolutely needed
             </ListItem>
-            <ListItem>{`use multiples of 8 for setting the size`}</ListItem>
-            <ListItem>{`use hint text rather than placeholder text`}</ListItem>
+            <ListItem>ask for required information first</ListItem>
+            <ListItem>
+              group related fields together, for example ‘Email’ and ‘Phone’
+            </ListItem>
+            <ListItem>
+              add ‘(optional)’ to labels of information that isn’t required
+            </ListItem>
+            <ListItem>
+              avoid unnecessary words like ‘Please’ or ‘Enter’ in labels
+            </ListItem>
+            <ListItem>minimise the number of fields on each page</ListItem>
+            <ListItem>avoid manipulative design patterns</ListItem>
           </BulletedList>
-          <Subheading>{`Text Input`}</Subheading>
+          <Paragraph>
+            When gathering information from young people you should:
+          </Paragraph>
+          <BulletedList>
+            <ListItem>explain why information is being asked for</ListItem>
+            <ListItem>explain who will see any personal information</ListItem>
+            <ListItem>allow them to remain anonymous where possible</ListItem>
+            <ListItem>ensure they have privacy and are safeguarded</ListItem>
+          </BulletedList>
+          <Heading>Text inputs</Heading>
+          <Paragraph>
+            Use the components below for text entry. You should:
+          </Paragraph>
+          <BulletedList>
+            <ListItem>
+              make the size appropriate to the amount of information requested
+            </ListItem>
+            <ListItem>use multiples of 8 for setting the size</ListItem>
+            <ListItem>use hint text rather than placeholder text</ListItem>
+          </BulletedList>
+          <Subheading>Text Input</Subheading>
           <Example>
             <TextInput
               hint="So that we can send you the certificate."
@@ -173,49 +185,60 @@ export default () => (
             />
           </Example>
           <Cite>
-            {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/TextInput">{`Text Input code`}</Link>
-            {` and `}
-            <Link href="https://github.com/barnardos/design-system/issues/65">{`Text Input research`}</Link>
-            {` on GitHub.`}
+            View{" "}
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/TextInput">
+              Text Input code
+            </Link>{" "}
+            and{" "}
+            <Link href="https://github.com/barnardos/design-system/issues/65">
+              Text Input research
+            </Link>{" "}
+            on GitHub.
           </Cite>
-          <Subheading>{`Text Area`}</Subheading>
+          <Subheading>Text Area</Subheading>
           <Example>
             <TextArea
               id="text-area-example"
-              label="What's on your mind?"
+              label="What’s on your mind?"
               size={48}
               verticalSize={4}
             />
           </Example>
           <Cite>
-            {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/TextArea">{`Text Area code`}</Link>
-            {` and `}
-            <Link href="https://github.com/barnardos/design-system/issues/65">{`Text Area research`}</Link>
-            {` on GitHub.`}
+            View{" "}
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/TextArea">
+              Text Area code
+            </Link>{" "}
+            and{" "}
+            <Link href="https://github.com/barnardos/design-system/issues/65">
+              Text Area research
+            </Link>{" "}
+            on GitHub.
           </Cite>
-          <Subheading>{`Date Input`}</Subheading>
-          <Paragraph>{`Use this component for date entry. You should:`}</Paragraph>
+          <Subheading>Date Input</Subheading>
+          <Paragraph>Use this component for date entry. You should:</Paragraph>
           <BulletedList>
-            <ListItem>{`use it instead of dropdowns`}</ListItem>
-            <ListItem>{`allow flexible data entry, for
-    example 01 and 1`}</ListItem>
-            <ListItem>{`trigger a numeric keyboard when available`}</ListItem>
-            <ListItem>{`avoid auto-tabbing between fields`}</ListItem>
-            <ListItem>{`avoid using calendar pickers`}</ListItem>
+            <ListItem>use it instead of dropdowns</ListItem>
+            <ListItem>allow flexible data entry, for example 01 and 1</ListItem>
+            <ListItem>trigger a numeric keyboard when available</ListItem>
+            <ListItem>avoid auto-tabbing between fields</ListItem>
+            <ListItem>avoid using calendar pickers</ListItem>
           </BulletedList>
           <Example>
             <DateInput id="date-input-example" legend="Date of birth" />
           </Example>
           <Cite>
-            {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/DateInput">{`Date Input code`}</Link>
-            {` and `}
-            <Link href="https://github.com/barnardos/design-system/issues/75">{`Date Input research`}</Link>
-            {` on GitHub.`}
+            View{" "}
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/DateInput">
+              Date Input code
+            </Link>{" "}
+            and{" "}
+            <Link href="https://github.com/barnardos/design-system/issues/75">
+              Date Input research
+            </Link>{" "}
+            on GitHub.
           </Cite>
-          <Subheading>{`Currency Input`}</Subheading>
+          <Subheading>Currency Input</Subheading>
           <Example>
             <CurrencyInput
               currency="£"
@@ -224,19 +247,25 @@ export default () => (
             />
           </Example>
           <Cite>
-            {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/CurrencyInput">{`Currency Input code`}</Link>
-            {` and `}
-            <Link href="https://github.com/barnardos/design-system/issues/160">{`Currency Input research`}</Link>
-            {` on GitHub.`}
+            View{" "}
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/CurrencyInput">
+              Currency Input code
+            </Link>{" "}
+            and{" "}
+            <Link href="https://github.com/barnardos/design-system/issues/160">
+              Currency Input research
+            </Link>{" "}
+            on GitHub.
           </Cite>
-          <Heading>{`Choices`}</Heading>
-          <Paragraph>{`Use the components below for choices. You should:`}</Paragraph>
+          <Heading>Choices</Heading>
+          <Paragraph>
+            Use the components below for choices. You should:
+          </Paragraph>
           <BulletedList>
-            <ListItem>{`use them instead of dropdowns`}</ListItem>
-            <ListItem>{`limit the options to eight or less`}</ListItem>
+            <ListItem>use them instead of dropdowns</ListItem>
+            <ListItem>limit the options to eight or less</ListItem>
           </BulletedList>
-          <Subheading>{`Check Box`}</Subheading>
+          <Subheading>Check Box</Subheading>
           <Example>
             <CheckBox
               id="check-box-example"
@@ -245,19 +274,26 @@ export default () => (
             />
           </Example>
           <Cite>
-            {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/CheckBox">{`Check Box code`}</Link>
-            {` and `}
-            <Link href="https://github.com/barnardos/design-system/issues/68">{`Check Box research`}</Link>
-            {` on GitHub.`}
+            View{" "}
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/CheckBox">
+              Check Box code
+            </Link>{" "}
+            and{" "}
+            <Link href="https://github.com/barnardos/design-system/issues/68">
+              Check Box research
+            </Link>{" "}
+            on GitHub.
           </Cite>
-          <Subheading>{`Check Boxes`}</Subheading>
-          <Paragraph>{`When using this component you should provide an option that excludes the others.`}</Paragraph>
+          <Subheading>Check Boxes</Subheading>
+          <Paragraph>
+            When using this component you should provide an option that excludes
+            the others.
+          </Paragraph>
           <Example>
             <CheckBoxes
               items={[
                 {
-                  label: "It won't be",
+                  label: "It won’t be",
                   id: "check-boxes-example-no-record"
                 },
                 {
@@ -280,13 +316,17 @@ export default () => (
             />
           </Example>
           <Cite>
-            {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/CheckBoxes">{`Check Boxes code`}</Link>
-            {` and `}
-            <Link href="https://github.com/barnardos/design-system/issues/68">{`Check Boxes research`}</Link>
-            {` on GitHub.`}
+            View{" "}
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/CheckBoxes">
+              Check Boxes code
+            </Link>{" "}
+            and{" "}
+            <Link href="https://github.com/barnardos/design-system/issues/68">
+              Check Boxes research
+            </Link>{" "}
+            on GitHub.
           </Cite>
-          <Subheading>{`Radio Buttons`}</Subheading>
+          <Subheading>Radio Buttons</Subheading>
           <Example>
             <RadioButtons
               items={[
@@ -309,13 +349,17 @@ export default () => (
             />
           </Example>
           <Cite>
-            {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/RadioButtons">{`Radio Buttons code`}</Link>
-            {` and `}
-            <Link href="https://github.com/barnardos/design-system/issues/68">{`Radio Buttons research`}</Link>
-            {` on GitHub.`}
+            View{" "}
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/RadioButtons">
+              Radio Buttons code
+            </Link>{" "}
+            and{" "}
+            <Link href="https://github.com/barnardos/design-system/issues/68">
+              Radio Buttons research
+            </Link>{" "}
+            on GitHub.
           </Cite>
-          <Subheading>{`Conditional`}</Subheading>
+          <Subheading>Conditional</Subheading>
           <Figures>
             <Figure caption="Select an option to reveal">
               <Conditional
@@ -347,43 +391,57 @@ export default () => (
             </Figure>
           </Figures>
           <Cite>
-            {`View `}
-            <Link href="https://github.com/barnardos/design-system/issues/86">{`Conditional research`}</Link>
-            {` on GitHub.`}
+            View{" "}
+            <Link href="https://github.com/barnardos/design-system/issues/86">
+              Conditional research
+            </Link>{" "}
+            on GitHub.
           </Cite>
-          <Heading>{`Command`}</Heading>
-          <Paragraph>{`Use this component for interactive triggers that don't submit data.`}</Paragraph>
+          <Heading>Command</Heading>
+          <Paragraph>
+            Use this component for interactive triggers that don’t submit data.
+          </Paragraph>
           <Example>
-            <Command>{`Print page`}</Command>
+            <Command>Print page</Command>
           </Example>
           <Cite>
-            {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Command">{`Command code`}</Link>
-            {` and `}
-            <Link href="https://github.com/barnardos/design-system/issues/33">{`Command research`}</Link>
-            {` on GitHub.`}
+            View{" "}
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Command">
+              Command code
+            </Link>{" "}
+            and{" "}
+            <Link href="https://github.com/barnardos/design-system/issues/33">
+              Command research
+            </Link>{" "}
+            on GitHub.
           </Cite>
-          <Heading>{`Submit`}</Heading>
-          <Paragraph>{`Use this component to trigger the submitting of form data.`}</Paragraph>
-          <Paragraph>{`When using this component you should:`}</Paragraph>
+          <Heading>Submit</Heading>
+          <Paragraph>
+            Use this component to trigger the submitting of form data.
+          </Paragraph>
+          <Paragraph>When using this component you should:</Paragraph>
           <BulletedList>
-            <ListItem>{`only use it once on each page`}</ListItem>
-            <ListItem>{`use a verb, for example save`}</ListItem>
-            <ListItem>{`only use the Green colour`}</ListItem>
-            <ListItem>{`not use a disabled state`}</ListItem>
+            <ListItem>only use it once on each page</ListItem>
+            <ListItem>use a verb, for example save</ListItem>
+            <ListItem>only use the Green colour</ListItem>
+            <ListItem>not use a disabled state</ListItem>
           </BulletedList>
           <Example>
             <Submit text="Send application" />
           </Example>
           <Cite>
-            {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Submit">{`Submit code`}</Link>
-            {` and `}
-            <Link href="https://github.com/barnardos/design-system/issues/33">{`Submit research`}</Link>
-            {` on GitHub.`}
+            View{" "}
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Submit">
+              Submit code
+            </Link>{" "}
+            and{" "}
+            <Link href="https://github.com/barnardos/design-system/issues/33">
+              Submit research
+            </Link>{" "}
+            on GitHub.
           </Cite>
-          <Heading>{`Validation`}</Heading>
-          <Subheading>{`Error Summary`}</Subheading>
+          <Heading>Validation</Heading>
+          <Subheading>Error Summary</Subheading>
           <Example>
             <ErrorSummary
               items={[
@@ -399,13 +457,17 @@ export default () => (
             />
           </Example>
           <Cite>
-            {`View `}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/ErrorSummary">{`Error Summary code`}</Link>
-            {` and `}
-            <Link href="https://github.com/barnardos/design-system/issues/67">{`Error Summary research`}</Link>
-            {` on GitHub.`}
+            View{" "}
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/ErrorSummary">
+              Error Summary code
+            </Link>{" "}
+            and{" "}
+            <Link href="https://github.com/barnardos/design-system/issues/67">
+              Error Summary research
+            </Link>{" "}
+            on GitHub.
           </Cite>
-          <Subheading>{`Errors`}</Subheading>
+          <Subheading>Errors</Subheading>
           <Example>
             <TextInput
               id="text-input-validation-example"
@@ -426,12 +488,12 @@ export default () => (
                   id: "radio-buttons-example-validation-no"
                 },
                 {
-                  label: "I'm not sure",
+                  label: "I’m not sure",
                   id: "radio-buttons-example-validation-unsure"
                 }
               ]}
               error="Select whether the meal contains nuts or not"
-              hint="Nut allergies can be dangerous. Only choose 'No' if you're completely sure"
+              hint="Nut allergies can be dangerous. Only choose ’No’ if you’re completely sure"
               id="radio-buttons-example-validation"
               legend="Does the meal include nuts?"
               name="radio-buttons-example-validation"

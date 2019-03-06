@@ -18,7 +18,7 @@ import Main from "../../components/Main";
 export default () => (
   <Page>
     <Helmet>
-      <title>{`Asking for names`}</title>
+      <title>Asking for names</title>
     </Helmet>
     <Breadcrumbs
       items={[
@@ -33,12 +33,12 @@ export default () => (
       ]}
     />
     <Main>
-      <Title>{`Asking for names`}</Title>
-      <Paragraph>{`You should:`}</Paragraph>
+      <Title>Asking for names</Title>
+      <Paragraph>You should:</Paragraph>
       <BulletedList>
-        <ListItem>{`only ask for names when absolutely needed`}</ListItem>
-        <ListItem>{`support all characters users may need to enter`}</ListItem>
-        <ListItem>{`avoid asking for title`}</ListItem>
+        <ListItem>only ask for names when absolutely needed</ListItem>
+        <ListItem>support all characters users may need to enter</ListItem>
+        <ListItem>avoid asking for title</ListItem>
       </BulletedList>
       <Figures>
         <Figure caption="Where possible use a single name field to accommodates the broadest range of name types.">
@@ -63,9 +63,11 @@ export default () => (
         </Figure>
       </Figures>
       <Cite>
-        {`View `}
-        <Link href="https://github.com/barnardos/design-system/issues/404">{`asking for names research`}</Link>
-        {` on GitHub.`}
+        View{" "}
+        <Link href="https://github.com/barnardos/design-system/issues/404">
+          asking for names research
+        </Link>{" "}
+        on GitHub.
       </Cite>
       <Pagination
         next={{

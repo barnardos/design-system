@@ -17,49 +17,55 @@ import Title from "../components/Title";
 export default () => (
   <Page>
     <Helmet>
-      <title>{`Barnardo’s Design System`}</title>
+      <title>Barnardo’s Design System</title>
     </Helmet>
     <Main>
       <Hero>
-        <Title>{`Barnardo’s Design System`}</Title>
-        <Lede>{`Designing and developing digital products for everyone, especially children and young people.`}</Lede>
-        <SignpostLink
-          inverted
-          href="/getting-started/"
-        >{`Getting started`}</SignpostLink>
+        <Title>Barnardo’s Design System</Title>
+        <Lede>
+          Designing and developing digital products for everyone, especially
+          children and young people.
+        </Lede>
+        <SignpostLink inverted href="/getting-started/">
+          Getting started
+        </SignpostLink>
       </Hero>
       <Section>
         <Promos>
           <Promo href="/standards/" title="Standards">
-            {`Guidelines on how to adopt our ways of working.`}
+            Guidelines on how to adopt our ways of working.
           </Promo>
           <Promo href="/components/" title="Components">
-            {`Create consistent and assessible products with these reusable building blocks.`}
+            Create consistent and assessible products with these reusable
+            building blocks.
           </Promo>
           <Promo href="/patterns/" title="Patterns">
-            {`Put the building blocks together to help users complete common tasks.`}
+            Put the building blocks together to help users complete common
+            tasks.
           </Promo>
           <Promo href="/principles/" title="Principles">
-            {`How we think about design.`}
+            How we think about design.
           </Promo>
           <Promo href="/assets/" title="Assets">
-            {`Downloadable resources and guidance on creating your own assets.`}
+            Downloadable resources and guidance on creating your own assets.
           </Promo>
         </Promos>
       </Section>
       <Section>
         <Feedback title="Give feedback">
           <Paragraph>
-            {`Email the Design System team on `}
+            Email the Design System team on{" "}
             <Link href="mailto:designsystem@barnardos.org.uk">
-              {`designsystem@barnardos.org.uk`}
+              designsystem@barnardos.org.uk
             </Link>
-            {`.`}
+            .
           </Paragraph>
           <Paragraph>
-            {`Contribute to the discussion on `}
-            <Link href="https://barnardos.facebook.com/groups/design.system/">{`Workplace`}</Link>
-            {`.`}
+            Contribute to the discussion on{" "}
+            <Link href="https://barnardos.facebook.com/groups/design.system/">
+              Workplace
+            </Link>
+            .
           </Paragraph>
         </Feedback>
       </Section>

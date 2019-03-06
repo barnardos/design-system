@@ -22,7 +22,7 @@ import { indexItems as structureItems } from "./components/structure";
 export default () => (
   <Page>
     <Helmet>
-      <title>{`Components`}</title>
+      <title>Components</title>
     </Helmet>
     <Breadcrumbs
       items={[
@@ -33,35 +33,44 @@ export default () => (
       ]}
     />
     <Main>
-      <Title>{`Components`}</Title>
-      <Lede>{`Create consistent and assessible products with these reusable building blocks.`}</Lede>
-      <SignpostLink href="https://www.npmjs.com/package/@barnardos/components">{`Install components (technical)`}</SignpostLink>
+      <Title>Components</Title>
+      <Lede>
+        Create consistent and assessible products with these reusable building
+        blocks.
+      </Lede>
+      <SignpostLink href="https://www.npmjs.com/package/@barnardos/components">
+        Install components (technical)
+      </SignpostLink>
       <Sections>
         <Section>
           <Heading>Structure</Heading>
           <Paragraph>
-            <Link href="/components/structure/">{`View all Structure components`}</Link>
+            <Link href="/components/structure/">
+              View all Structure components
+            </Link>
           </Paragraph>
           <ComponentsIndex items={structureItems} />
         </Section>
         <Section>
           <Heading>Navigation</Heading>
           <Paragraph>
-            <Link href="/components/navigation/">{`View all Navigation components`}</Link>
+            <Link href="/components/navigation/">
+              View all Navigation components
+            </Link>
           </Paragraph>
           <ComponentsIndex items={navigationItems} />
         </Section>
         <Section>
           <Heading>Content</Heading>
           <Paragraph>
-            <Link href="/components/content/">{`View all Content components`}</Link>
+            <Link href="/components/content/">View all Content components</Link>
           </Paragraph>
           <ComponentsIndex items={contentItems} />
         </Section>
         <Section>
           <Heading>Forms</Heading>
           <Paragraph>
-            <Link href="/components/forms/">{`View all Forms components`}</Link>
+            <Link href="/components/forms/">View all Forms components</Link>
           </Paragraph>
           <ComponentsIndex items={formsItems} />
         </Section>

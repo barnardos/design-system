@@ -15,7 +15,7 @@
 
 - `Breadcrumbs` indent when wrapped onto multiple lines
 - `Link` to use `GatsbyLink` for internal links
-- `Header`, `Menu` and `Search` look and feel to align with the developing Barnardo's look and feel
+- `Header`, `Menu` and `Search` look and feel to align with the developing Barnardo’s look and feel
 - `Footer` look and feel to distinguish it from `Section`
 
 ## 0.2.0

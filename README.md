@@ -3,7 +3,7 @@
 ## Installation
 
 1. Install latest LTS [Node.js](https://nodejs.org/en/).
-2. Install the Barnardo's Design System components using:
+2. Install the Barnardo’s Design System components using:
 
 ```shell
 npm install @barnardos/components
@@ -27,7 +27,7 @@ import { BackLink, Pagination } from "@barnardos/components";
 
 ### Importing the CSS only
 
-If you aren't using [React](https://reactjs.org), you can still use the CSS of each component.
+If you aren’t using [React](https://reactjs.org), you can still use the CSS of each component.
 
 For example, to import the CSS of the `BackLink` and `Pagination` components:
 
@@ -38,7 +38,7 @@ For example, to import the CSS of the `BackLink` and `Pagination` components:
 @import "node_modules/@barnardos/components/src/components/Pagination/index.css";
 ```
 
-You'll need to use [`postcss-present-env`](https://preset-env.cssdb.org) to transpile the CSS using the Design System's [PostCSS](https://github.com/barnardos/design-system/blob/master/postcss.config.js) and [browserslist](https://github.com/barnardos/design-system/blob/master/.browserslistrc) configurations.
+You’ll need to use [`postcss-present-env`](https://preset-env.cssdb.org) to transpile the CSS using the Design System’s [PostCSS](https://github.com/barnardos/design-system/blob/master/postcss.config.js) and [browserslist](https://github.com/barnardos/design-system/blob/master/.browserslistrc) configurations.
 
 ---
 

@@ -15,7 +15,7 @@ import Main from "../../components/Main";
 export default () => (
   <Page>
     <Helmet>
-      <title>{`Preventing spam`}</title>
+      <title>Preventing spam</title>
     </Helmet>
     <Breadcrumbs
       items={[
@@ -30,27 +30,33 @@ export default () => (
       ]}
     />
     <Main>
-      <Title>{`Preventing spam`}</Title>
-      <Paragraph>{`You could try:`}</Paragraph>
+      <Title>Preventing spam</Title>
+      <Paragraph>You could try:</Paragraph>
       <BulletedList>
         <ListItem>
-          <Link href="https://en.wikipedia.org/wiki/Rate_limiting">{`rate and connection limiting`}</Link>
+          <Link href="https://en.wikipedia.org/wiki/Rate_limiting">
+            rate and connection limiting
+          </Link>
         </ListItem>
         <ListItem>
-          {`using `}
-          <Link href="https://en.wikipedia.org/wiki/Honeypot_(computing)">{`honeypots`}</Link>
+          using{" "}
+          <Link href="https://en.wikipedia.org/wiki/Honeypot_(computing)">
+            honeypots
+          </Link>
         </ListItem>
-        <ListItem>{`transaction monitoring`}</ListItem>
+        <ListItem>transaction monitoring</ListItem>
       </BulletedList>
       <Paragraph>
-        {`Avoid using `}
-        <Link href="https://en.wikipedia.org/wiki/CAPTCHA">{`CAPTCHAs`}</Link>
-        {`, as they cause usability an accessibility issues.`}
+        Avoid using{" "}
+        <Link href="https://en.wikipedia.org/wiki/CAPTCHA">CAPTCHAs</Link>, as
+        they cause usability an accessibility issues.
       </Paragraph>
       <Cite>
-        {`View `}
-        <Link href="https://github.com/barnardos/design-system/issues/411">{`preventing spam research`}</Link>
-        {` on GitHub.`}
+        View{" "}
+        <Link href="https://github.com/barnardos/design-system/issues/411">
+          preventing spam research
+        </Link>{" "}
+        on GitHub.
       </Cite>
       <Pagination
         previous={{

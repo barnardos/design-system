@@ -15,7 +15,7 @@ import BulletedList from "../../components/BulletedList";
 export default () => (
   <Page>
     <Helmet>
-      <title>{`Iconography`}</title>
+      <title>Iconography</title>
     </Helmet>
     <Breadcrumbs
       items={[
@@ -30,19 +30,21 @@ export default () => (
       ]}
     />
     <Main>
-      <Title>{`Iconography`}</Title>
-      <Paragraph>{`When using iconography you should:`}</Paragraph>
+      <Title>Iconography</Title>
+      <Paragraph>When using iconography you should:</Paragraph>
       <BulletedList>
-        <ListItem>{`choose a flat graphic style`}</ListItem>
+        <ListItem>choose a flat graphic style</ListItem>
         <ListItem>
-          {`use the `}
-          <Link href="/standards/colour/#brand-colours">{`brand colours`}</Link>
+          use the{" "}
+          <Link href="/standards/colour/#brand-colours">brand colours</Link>
         </ListItem>
       </BulletedList>
       <Cite>
-        {`View `}
-        <Link href="https://github.com/barnardos/design-system/issues/226">{`iconography research`}</Link>
-        {` on GitHub.`}
+        View{" "}
+        <Link href="https://github.com/barnardos/design-system/issues/226">
+          iconography research
+        </Link>{" "}
+        on GitHub.
       </Cite>
     </Main>
     <Pagination

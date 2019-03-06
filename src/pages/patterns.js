@@ -15,7 +15,7 @@ import Sections from "../components/Sections";
 export default () => (
   <Page>
     <Helmet>
-      <title>{`Patterns`}</title>
+      <title>Patterns</title>
     </Helmet>
     <Breadcrumbs
       items={[
@@ -26,19 +26,21 @@ export default () => (
       ]}
     />
     <Main>
-      <Title>{`Patterns`}</Title>
-      <Lede>{`Put the building blocks together to help users complete common tasks.`}</Lede>
+      <Title>Patterns</Title>
+      <Lede>
+        Put the building blocks together to help users complete common tasks.
+      </Lede>
       <Sections>
         <Section>
           <BulletedList>
             <ListItem>
-              <Link href="/patterns/asking-for-names/">{`Asking for names`}</Link>
+              <Link href="/patterns/asking-for-names/">Asking for names</Link>
             </ListItem>
             <ListItem>
-              <Link href="/patterns/filtering/">{`Filtering`}</Link>
+              <Link href="/patterns/filtering/">Filtering</Link>
             </ListItem>
             <ListItem>
-              <Link href="/patterns/preventing-spam/">{`Preventing spam`}</Link>
+              <Link href="/patterns/preventing-spam/">Preventing spam</Link>
             </ListItem>
           </BulletedList>
         </Section>

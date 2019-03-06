@@ -4,7 +4,7 @@ import "./index.css";
 
 const SkipLink = () => (
   <a className="SkipLink" href="#main-anchor">
-    {`Skip to main content`}
+    Skip to main content
   </a>
 );
 

@@ -8,7 +8,7 @@ import "./index.css";
 
 const Site = ({ children, description = "" }) => (
   <div className="Site">
-    <Helmet titleTemplate="%s - Barnardo's">
+    <Helmet titleTemplate="%s - Barnardo’s">
       <html lang="en" />
       <link rel="preconnect" href="https://p.typekit.com" />
       <link rel="stylesheet" href="https://use.typekit.net/djy7snj.css" />

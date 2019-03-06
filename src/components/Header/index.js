@@ -40,7 +40,7 @@ const Header = ({ href = "/", menu, search, title = "Go to the homepage" }) => {
               className="Header-triggerIcon"
               src={isActive ? cross : menu ? burger : glass}
             />
-            {menu && <span className="Header-triggerText">{`Menu`}</span>}
+            {menu && <span className="Header-triggerText">Menu</span>}
           </button>
         )}
       </div>

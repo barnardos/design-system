@@ -7,7 +7,7 @@ import "./index.css";
 
 const StartLink = ({ href }) => (
   <Link className="StartLink" href={href}>
-    {`Start now`}
+    Start now
   </Link>
 );
 

@@ -14,7 +14,7 @@ import Topic from "../../components/Topic";
 export default () => (
   <Page>
     <Helmet>
-      <title>{`Performance`}</title>
+      <title>Performance</title>
     </Helmet>
     <Breadcrumbs
       items={[
@@ -29,17 +29,21 @@ export default () => (
       ]}
     />
     <Main>
-      <Topic>{`Development`}</Topic>
-      <Title>{`Performance`}</Title>
+      <Topic>Development</Topic>
+      <Title>Performance</Title>
       <Paragraph>
         {`You should pass the performance checks in `}
-        <Link href="https://developers.google.com/web/tools/lighthouse/">{`Lighthouse`}</Link>
+        <Link href="https://developers.google.com/web/tools/lighthouse/">
+          Lighthouse
+        </Link>
         {`. `}
       </Paragraph>
       <Cite>
-        {`View `}
-        <Link href="https://github.com/barnardos/design-system/issues/451">{`performance research`}</Link>
-        {` on GitHub.`}
+        View{" "}
+        <Link href="https://github.com/barnardos/design-system/issues/451">
+          performance research
+        </Link>{" "}
+        on GitHub.
       </Cite>
       <Pagination
         previous={{

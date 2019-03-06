@@ -45,12 +45,11 @@ const SpacingFigure = () => (
       }}
     >
       <figure className="SpacingFigure-figure">
-        <Subheading>{`Contact details`}</Subheading>
+        <Subheading>Contact details</Subheading>
         <figcaption className="SpacingFigure-caption" style={{ top: 0 }}>
-          <p
-            className="SpacingFigure-captionItem"
-            style={{ top: "0.5rem" }}
-          >{`2.25rem`}</p>
+          <p className="SpacingFigure-captionItem" style={{ top: "0.5rem" }}>
+            2.25rem
+          </p>
         </figcaption>
       </figure>
       <figure className="SpacingFigure-figure">
@@ -59,17 +58,15 @@ const SpacingFigure = () => (
             marginTop: "1rem"
           }}
         >
-          <Paragraph>{`So that we can send you the certificate.`}</Paragraph>
+          <Paragraph>So that we can send you the certificate.</Paragraph>
         </div>
         <figcaption className="SpacingFigure-caption" style={{ top: "-1rem" }}>
-          <p
-            className="SpacingFigure-captionItem"
-            style={{ top: "0" }}
-          >{`2rem`}</p>
-          <p
-            className="SpacingFigure-captionItem"
-            style={{ top: "0.5rem" }}
-          >{`3rem`}</p>
+          <p className="SpacingFigure-captionItem" style={{ top: "0" }}>
+            2rem
+          </p>
+          <p className="SpacingFigure-captionItem" style={{ top: "0.5rem" }}>
+            3rem
+          </p>
         </figcaption>
       </figure>
       <figure className="SpacingFigure-figure">
@@ -84,22 +81,18 @@ const SpacingFigure = () => (
           className="SpacingFigure-caption"
           style={{ top: "-1.75rem" }}
         >
-          <p
-            className="SpacingFigure-captionItem"
-            style={{ top: "0.75rem" }}
-          >{`2rem`}</p>
-          <p
-            className="SpacingFigure-captionItem"
-            style={{ top: "1rem" }}
-          >{`2.25rem`}</p>
-          <p
-            className="SpacingFigure-captionItem"
-            style={{ top: "1.25rem" }}
-          >{`1rem`}</p>
-          <p
-            className="SpacingFigure-captionItem"
-            style={{ top: "1.5rem" }}
-          >{`3rem`}</p>
+          <p className="SpacingFigure-captionItem" style={{ top: "0.75rem" }}>
+            2rem
+          </p>
+          <p className="SpacingFigure-captionItem" style={{ top: "1rem" }}>
+            2.25rem
+          </p>
+          <p className="SpacingFigure-captionItem" style={{ top: "1.25rem" }}>
+            1rem
+          </p>
+          <p className="SpacingFigure-captionItem" style={{ top: "1.5rem" }}>
+            3rem
+          </p>
         </figcaption>
       </figure>
     </div>

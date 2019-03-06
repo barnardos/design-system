@@ -16,7 +16,7 @@ import Topic from "../../components/Topic";
 export default () => (
   <Page>
     <Helmet>
-      <title>{`Code quality`}</title>
+      <title>Code quality</title>
     </Helmet>
     <Breadcrumbs
       items={[
@@ -31,32 +31,36 @@ export default () => (
       ]}
     />
     <Main>
-      <Topic>{`Development`}</Topic>
-      <Title>{`Code quality`}</Title>
-      <Paragraph>{`You should:`}</Paragraph>
+      <Topic>Development</Topic>
+      <Title>Code quality</Title>
+      <Paragraph>You should:</Paragraph>
       <BulletedList>
         <ListItem>
-          {`format your code with `}
-          <Link href="https://prettier.io/">{`Prettier`}</Link>
-          {` using the default settings`}
+          format your code with{" "}
+          <Link href="https://prettier.io/">Prettier</Link> using the default
+          settings
         </ListItem>
         <ListItem>
-          {`lint your JavaScript with `}
-          <Link href="https://eslint.org/">{`ESLint`}</Link>
-          {` using `}
-          <Link href="https://github.com/barnardos/eslint-config-barnardos">{`eslint-config-barnardos`}</Link>
+          lint your JavaScript with{" "}
+          <Link href="https://eslint.org/">ESLint</Link> using{" "}
+          <Link href="https://github.com/barnardos/eslint-config-barnardos">
+            eslint-config-barnardos
+          </Link>
         </ListItem>
         <ListItem>
-          {`lint your CSS with `}
-          <Link href="https://stylelint.io/">{`stylelint`}</Link>
-          {` using `}
-          <Link href="https://github.com/barnardos/stylelint-config-barnardos">{`stylelint-config-barnardos`}</Link>
+          lint your CSS with <Link href="https://stylelint.io/">stylelint</Link>{" "}
+          using{" "}
+          <Link href="https://github.com/barnardos/stylelint-config-barnardos">
+            stylelint-config-barnardos
+          </Link>
         </ListItem>
       </BulletedList>
       <Cite>
-        {`View `}
-        <Link href="https://github.com/barnardos/design-system/issues/183">{`code quality research`}</Link>
-        {` on GitHub.`}
+        View{" "}
+        <Link href="https://github.com/barnardos/design-system/issues/183">
+          code quality research
+        </Link>{" "}
+        on GitHub.
       </Cite>
       <Pagination
         next={{

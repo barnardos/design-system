@@ -7,7 +7,7 @@ import "./index.css";
 
 const DonateLink = ({ href }) => (
   <Link className="DonateLink" href={href}>
-    {`Donate`}
+    Donate
   </Link>
 );
 

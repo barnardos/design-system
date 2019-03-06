@@ -7,7 +7,7 @@ import "./index.css";
 
 const BackLink = ({ href }) => (
   <Link className="BackLink" href={href}>
-    {`Back`}
+    Back
   </Link>
 );
 
