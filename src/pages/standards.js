@@ -34,7 +34,7 @@ export default () => (
           <Heading>Accessibility</Heading>
           <BulletedList>
             <ListItem>
-              <Link href="/standards/considerations/">Considerations</Link>
+              <Link href="/standards/testing/">Testing</Link>
             </ListItem>
             <ListItem>
               <Link href="/standards/viewport-scale/">Viewport scale</Link>

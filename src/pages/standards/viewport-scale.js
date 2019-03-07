@@ -65,8 +65,8 @@ export default () => (
       </Cite>
       <Pagination
         previous={{
-          href: "/standards/considerations",
-          label: "Considerations"
+          href: "/standards/testing",
+          label: "Testing"
         }}
       />
     </Main>

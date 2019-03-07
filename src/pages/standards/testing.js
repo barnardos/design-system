@@ -16,7 +16,7 @@ import Topic from "../../components/Topic";
 export default () => (
   <Page>
     <Helmet>
-      <title>Considerations</title>
+      <title>Testing</title>
     </Helmet>
     <Breadcrumbs
       items={[
@@ -32,7 +32,7 @@ export default () => (
     />
     <Main>
       <Topic>Accessibility</Topic>
-      <Title>Considerations</Title>
+      <Title>Testing</Title>
       <Paragraph>
         You should pass the accessibility checks in{" "}
         <Link href="https://www.deque.com/axe/">aXe</Link>.
