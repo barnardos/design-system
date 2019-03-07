@@ -1,10 +1,10 @@
 @import "../custom-properties.css";
 
-/** @define Promos; weak; */
+/** @define Teasers; weak; */
 
 /* Uses flex fallback for IE11 */
 
-.Promos {
+.Teasers {
   display: flex;
   flex-wrap: wrap;
   margin: -1rem;

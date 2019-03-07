@@ -1,8 +1,8 @@
 @import "../custom-properties.css";
 
-/** @define Promo; */
+/** @define Teaser; */
 
-.Promo {
+.Teaser {
   background-color: var(--white);
   border-radius: 0.25rem;
   box-shadow: 0 0 0 1px color-mod(var(--black) tint(80%)),
@@ -18,17 +18,17 @@
   }
 }
 
-.Promo-image {
+.Teaser-image {
   border-radius: 0.25rem;
   display: block;
   max-width: 100%;
 }
 
-.Promo-text {
+.Teaser-text {
   padding: 1.25rem;
 }
 
-.Promo-title {
+.Teaser-title {
   color: var(--green);
   font: 600 var(--type-5) proxima-nova, sans-serif;
   text-decoration: underline;
@@ -38,13 +38,13 @@
   }
 }
 
-.Promo-meta {
+.Teaser-meta {
   color: color-mod(var(--black) tint(30%));
   font: 300 var(--type-0) system-ui;
   margin-top: 0.5rem;
 }
 
-.Promo-children {
+.Teaser-children {
   color: var(--black);
   font: 300 var(--type-1) system-ui;
   margin-top: 1rem;

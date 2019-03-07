@@ -41,9 +41,9 @@ import Pagination from "./Pagination";
 import Paragraph from "./Paragraph";
 import ProminentBlockQuote from "./ProminentBlockQuote";
 import ProminentLink from "./ProminentLink";
-import ProminentPromo from "./ProminentPromo";
-import Promo from "./Promo";
-import Promos from "./Promos";
+import ProminentTeaser from "./ProminentTeaser";
+import Teaser from "./Teaser";
+import Teasers from "./Teasers";
 import PullQuote from "./PullQuote";
 import RadioButtons from "./RadioButtons";
 import Search from "./Search";
@@ -102,9 +102,9 @@ export {
   Paragraph,
   ProminentBlockQuote,
   ProminentLink,
-  ProminentPromo,
-  Promo,
-  Promos,
+  ProminentTeaser,
+  Teaser,
+  Teasers,
   PullQuote,
   RadioButtons,
   Search,

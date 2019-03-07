@@ -3,7 +3,7 @@ import React from "react";
 import { withPrefix } from "gatsby";
 
 import ProminentLink from "../../components/ProminentLink";
-import ProminentPromo from "../../components/ProminentPromo";
+import ProminentTeaser from "../../components/ProminentTeaser";
 import BackLink from "../../components/BackLink";
 import Breadcrumbs from "../../components/Breadcrumbs";
 import BulletedList from "../../components/BulletedList";
@@ -19,7 +19,7 @@ import Heading from "../../components/Heading";
 import Link from "../../components/Link";
 import ListItem from "../../components/ListItem";
 import Paragraph from "../../components/Paragraph";
-import Promo from "../../components/Promo";
+import Teaser from "../../components/Teaser";
 import SignpostLink from "../../components/SignpostLink";
 import StartLink from "../../components/StartLink";
 import Subheading from "../../components/Subheading";
@@ -71,18 +71,18 @@ export const indexItems = [
   },
   {
     level: 1,
-    text: "Promos",
-    href: "/components/navigation/#promos"
+    text: "Teasers",
+    href: "/components/navigation/#teasers"
   },
   {
     level: 2,
-    text: "Promo",
-    href: "/components/navigation/#promo"
+    text: "Teaser",
+    href: "/components/navigation/#teaser"
   },
   {
     level: 2,
-    text: "Prominent Promo",
-    href: "/components/navigation/#prominent-promo"
+    text: "Prominent Teaser",
+    href: "/components/navigation/#prominent-teaser"
   },
   {
     level: 1,
@@ -294,14 +294,14 @@ export default () => (
             </Link>{" "}
             on GitHub.
           </Cite>
-          <Heading>Promos</Heading>
+          <Heading>Teasers</Heading>
           <Paragraph>
             Use these components to provide a summary that links to additional
             details.
           </Paragraph>
-          <Subheading>Promo</Subheading>
+          <Subheading>Teaser</Subheading>
           <Example>
-            <Promo
+            <Teaser
               href="#"
               meta="20 October 2019"
               title="Barnardo’s celebrates National Adoption Week"
@@ -309,32 +309,32 @@ export default () => (
               This year’s campaign calls on people to welcome an older child
               into their family. Find out ways to help support vulnerable
               children including making one-off or regular donations.
-            </Promo>
+            </Teaser>
           </Example>
           <Example>
-            <Promo
+            <Teaser
               href="#"
-              src={withPrefix("/image-for-promo-example.jpg")}
+              src={withPrefix("/image-for-teaser-example.jpg")}
               title="Other ways to donate"
             >
               Find out ways to help support vulnerable children including making
               one-off or regular donations.
-            </Promo>
+            </Teaser>
           </Example>
           <Cite>
             View{" "}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Promo">
-              Promo code
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Teaser">
+              Teaser code
             </Link>{" "}
             and{" "}
             <Link href="https://github.com/barnardos/design-system/issues/91">
-              Promo research
+              Teaser research
             </Link>{" "}
             on GitHub.
           </Cite>
-          <Subheading>Prominent Promo</Subheading>
+          <Subheading>Prominent Teaser</Subheading>
           <Example>
-            <ProminentPromo
+            <ProminentTeaser
               colour="pink"
               href="#"
               meta="14 April 2019"
@@ -343,16 +343,16 @@ export default () => (
             >
               Taking in the sights and sounds of the coast, this fantastic 26.2
               mile route covers Hove and finishes at the famous Brighton Pier.
-            </ProminentPromo>
+            </ProminentTeaser>
           </Example>
           <Cite>
             View{" "}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/ProminentPromo">
-              Prominent Promo code
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/ProminentTeaser">
+              Prominent Teaser code
             </Link>{" "}
             and{" "}
             <Link href="https://github.com/barnardos/design-system/issues/401">
-              Prominent Promo research
+              Prominent Teaser research
             </Link>{" "}
             on GitHub.
           </Cite>
