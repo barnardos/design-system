@@ -28,14 +28,16 @@
       line-height: 0;
       margin: 0.5rem 0 0 -1rem;
       position: absolute;
-      top: 0.125rem;
+      top: 0.5rem;
     }
   }
 }
 
 .Breadcrumbs-link {
   color: color-mod(var(--green) shade(20%));
+  display: inline-block;
   font: 300 var(--type-0) system-ui;
+  padding: 0.25rem 0;
 
   &:hover {
     text-decoration: none;
