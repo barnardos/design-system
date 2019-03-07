@@ -15,7 +15,7 @@ import Main from "../../components/Main";
 export default () => (
   <Page>
     <Helmet>
-      <title>Preventing spam</title>
+      <title>Gathering information</title>
     </Helmet>
     <Breadcrumbs
       items={[
@@ -30,37 +30,30 @@ export default () => (
       ]}
     />
     <Main>
-      <Title>Preventing spam</Title>
-      <Paragraph>Use this pattern to prevent spam.</Paragraph>
-      <Paragraph>You should try:</Paragraph>
-      <BulletedList>
-        <ListItem>
-          <Link href="https://en.wikipedia.org/wiki/Rate_limiting">
-            rate and connection limiting
-          </Link>
-        </ListItem>
-        <ListItem>
-          using{" "}
-          <Link href="https://en.wikipedia.org/wiki/Honeypot_(computing)">
-            honeypots
-          </Link>
-        </ListItem>
-        <ListItem>transaction monitoring</ListItem>
-      </BulletedList>
+      <Title>Gathering information</Title>
       <Paragraph>
-        You should avoid using{" "}
-        <Link href="https://en.wikipedia.org/wiki/CAPTCHA">CAPTCHAs</Link>, as
-        they cause usability an accessibility issues.
+        Use this pattern to gather information from young people.
       </Paragraph>
+      <Paragraph>You should:</Paragraph>
+      <BulletedList>
+        <ListItem>explain why information is being asked for</ListItem>
+        <ListItem>explain who will see any personal information</ListItem>
+        <ListItem>allow them to remain anonymous where possible</ListItem>
+        <ListItem>ensure they have privacy and are safeguarded</ListItem>
+      </BulletedList>
       <Cite>
         View{" "}
-        <Link href="https://github.com/barnardos/design-system/issues/411">
-          preventing spam research
+        <Link href="https://github.com/barnardos/design-system/issues/294">
+          gathering information research
         </Link>{" "}
         on GitHub.
       </Cite>
       <Pagination
         previous={{
+          href: "/patterns/asking-for-names",
+          label: "Asking for names"
+        }}
+        next={{
           href: "/patterns/filtering",
           label: "Filtering"
         }}

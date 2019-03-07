@@ -148,19 +148,9 @@ export default () => (
             <ListItem>minimise the number of fields on each page</ListItem>
             <ListItem>avoid manipulative design patterns</ListItem>
           </BulletedList>
-          <Paragraph>
-            When gathering information from young people you should:
-          </Paragraph>
-          <BulletedList>
-            <ListItem>explain why information is being asked for</ListItem>
-            <ListItem>explain who will see any personal information</ListItem>
-            <ListItem>allow them to remain anonymous where possible</ListItem>
-            <ListItem>ensure they have privacy and are safeguarded</ListItem>
-          </BulletedList>
           <Heading>Text inputs</Heading>
-          <Paragraph>
-            Use the components below for text entry. You should:
-          </Paragraph>
+          <Paragraph>Use the components below for text entry.</Paragraph>
+          <Paragraph>You should:</Paragraph>
           <BulletedList>
             <ListItem>
               make the size appropriate to the amount of information requested
@@ -216,7 +206,8 @@ export default () => (
             on GitHub.
           </Cite>
           <Subheading>Date Input</Subheading>
-          <Paragraph>Use this component for date entry. You should:</Paragraph>
+          <Paragraph>Use this component for date entry.</Paragraph>
+          <Paragraph>You should:</Paragraph>
           <BulletedList>
             <ListItem>use it instead of dropdowns</ListItem>
             <ListItem>allow flexible data entry, for example 01 and 1</ListItem>
@@ -258,9 +249,8 @@ export default () => (
             on GitHub.
           </Cite>
           <Heading>Choices</Heading>
-          <Paragraph>
-            Use the components below for choices. You should:
-          </Paragraph>
+          <Paragraph>Use the components below for choices.</Paragraph>
+          <Paragraph>You should:</Paragraph>
           <BulletedList>
             <ListItem>use them instead of dropdowns</ListItem>
             <ListItem>limit the options to eight or less</ListItem>
@@ -419,7 +409,7 @@ export default () => (
           <Paragraph>
             Use this component to trigger the submitting of form data.
           </Paragraph>
-          <Paragraph>When using this component you should:</Paragraph>
+          <Paragraph>You should:</Paragraph>
           <BulletedList>
             <ListItem>only use it once on each page</ListItem>
             <ListItem>use a verb, for example save</ListItem>
