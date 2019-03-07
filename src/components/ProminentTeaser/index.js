@@ -8,9 +8,9 @@ import "./index.css";
 const ProminentTeaser = ({
   children,
   colour,
+  heading,
   href,
   text,
-  title,
   meta,
   src
 }) => (
@@ -21,7 +21,7 @@ const ProminentTeaser = ({
       </div>
     )}
     <div className="ProminentTeaser-text">
-      <p className="ProminentTeaser-title">{title}</p>
+      <p className="ProminentTeaser-heading">{heading}</p>
       {meta && <p className="ProminentTeaser-meta">{meta}</p>}
       <div className="ProminentTeaser-children">{children}</div>
       <div className="ProminentTeaser-link">
@@ -34,9 +34,9 @@ const ProminentTeaser = ({
 ProminentTeaser.propTypes = {
   colour: PropTypes.node.isRequired,
   children: PropTypes.node.isRequired,
+  heading: PropTypes.string.isRequired,
   href: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
   meta: PropTypes.string,
   src: PropTypes.string
 };

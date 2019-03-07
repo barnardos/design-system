@@ -32,27 +32,27 @@ export default () => (
       </Hero>
       <Section>
         <Teasers>
-          <Teaser href="/standards/" title="Standards">
+          <Teaser href="/standards/" heading="Standards">
             Guidelines on how to adopt our ways of working.
           </Teaser>
-          <Teaser href="/components/" title="Components">
+          <Teaser href="/components/" heading="Components">
             Create consistent and assessible products with these reusable
             building blocks.
           </Teaser>
-          <Teaser href="/patterns/" title="Patterns">
+          <Teaser href="/patterns/" heading="Patterns">
             Put the building blocks together to help users complete common
             tasks.
           </Teaser>
-          <Teaser href="/principles/" title="Principles">
+          <Teaser href="/principles/" heading="Principles">
             How we think about design.
           </Teaser>
-          <Teaser href="/assets/" title="Assets">
+          <Teaser href="/assets/" heading="Assets">
             Downloadable resources and guidance on creating your own assets.
           </Teaser>
         </Teasers>
       </Section>
       <Section>
-        <Feedback title="Give feedback">
+        <Feedback heading="Give feedback">
           <Paragraph>
             Email the Design System team on{" "}
             <Link href="mailto:designsystem@barnardos.org.uk">

@@ -16,7 +16,7 @@ const ContentsMenuItem = ({ level, text, href }) => (
 const ContentsMenu = ({ items }) => (
   <nav className="ContentsMenu">
     <div className="ContentsMenu-inner">
-      <p className="ContentsMenu-title">In this section:</p>
+      <p className="ContentsMenu-heading">In this section:</p>
       <ul className="ContentsMenu-items">
         {items.map((item, index) => (
           <ContentsMenuItem key={index} {...item} />

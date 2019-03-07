@@ -5,7 +5,7 @@ import Link from "../Link";
 
 import "./index.css";
 
-const Teaser = ({ children, href, title, meta, src }) => (
+const Teaser = ({ children, heading, href, meta, src }) => (
   <Link className="Teaser" href={href}>
     {src && (
       <div className="Teaser-media">
@@ -13,7 +13,7 @@ const Teaser = ({ children, href, title, meta, src }) => (
       </div>
     )}
     <div className="Teaser-text">
-      <p className="Teaser-title">{title}</p>
+      <p className="Teaser-heading">{heading}</p>
       {meta && <p className="Teaser-meta">{meta}</p>}
       <div className="Teaser-children">{children}</div>
     </div>
@@ -22,10 +22,10 @@ const Teaser = ({ children, href, title, meta, src }) => (
 
 Teaser.propTypes = {
   children: PropTypes.node.isRequired,
+  heading: PropTypes.string.isRequired,
+  href: PropTypes.string.isRequired,
   meta: PropTypes.string,
-  src: PropTypes.string,
-  title: PropTypes.string.isRequired,
-  href: PropTypes.string.isRequired
+  src: PropTypes.string
 };
 
 export default Teaser;

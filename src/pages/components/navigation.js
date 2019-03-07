@@ -304,7 +304,7 @@ export default () => (
             <Teaser
               href="#"
               meta="20 October 2019"
-              title="Barnardo’s celebrates National Adoption Week"
+              heading="Barnardo’s celebrates National Adoption Week"
             >
               This year’s campaign calls on people to welcome an older child
               into their family. Find out ways to help support vulnerable
@@ -315,7 +315,7 @@ export default () => (
             <Teaser
               href="#"
               src={withPrefix("/image-for-teaser-example.jpg")}
-              title="Other ways to donate"
+              heading="Other ways to donate"
             >
               Find out ways to help support vulnerable children including making
               one-off or regular donations.
@@ -338,7 +338,7 @@ export default () => (
               colour="pink"
               href="#"
               meta="14 April 2019"
-              title="Brighton Marathon"
+              heading="Brighton Marathon"
               text="Sign up"
             >
               Taking in the sights and sounds of the coast, this fantastic 26.2

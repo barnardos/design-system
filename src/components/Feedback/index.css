@@ -14,7 +14,7 @@
   }
 }
 
-.Feedback-title {
+.Feedback-heading {
   color: var(--green);
   font: 600 var(--type-5) proxima-nova, sans-serif;
 }
