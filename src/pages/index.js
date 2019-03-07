@@ -8,8 +8,8 @@ import Hero from "../components/Hero";
 import Lede from "../components/Lede";
 import Main from "../components/Main";
 import Paragraph from "../components/Paragraph";
-import Promo from "../components/Promo";
-import Promos from "../components/Promos";
+import Teaser from "../components/Teaser";
+import Teasers from "../components/Teasers";
 import Section from "../components/Section";
 import SignpostLink from "../components/SignpostLink";
 import Title from "../components/Title";
@@ -31,25 +31,25 @@ export default () => (
         </SignpostLink>
       </Hero>
       <Section>
-        <Promos>
-          <Promo href="/standards/" title="Standards">
+        <Teasers>
+          <Teaser href="/standards/" title="Standards">
             Guidelines on how to adopt our ways of working.
-          </Promo>
-          <Promo href="/components/" title="Components">
+          </Teaser>
+          <Teaser href="/components/" title="Components">
             Create consistent and assessible products with these reusable
             building blocks.
-          </Promo>
-          <Promo href="/patterns/" title="Patterns">
+          </Teaser>
+          <Teaser href="/patterns/" title="Patterns">
             Put the building blocks together to help users complete common
             tasks.
-          </Promo>
-          <Promo href="/principles/" title="Principles">
+          </Teaser>
+          <Teaser href="/principles/" title="Principles">
             How we think about design.
-          </Promo>
-          <Promo href="/assets/" title="Assets">
+          </Teaser>
+          <Teaser href="/assets/" title="Assets">
             Downloadable resources and guidance on creating your own assets.
-          </Promo>
-        </Promos>
+          </Teaser>
+        </Teasers>
       </Section>
       <Section>
         <Feedback title="Give feedback">

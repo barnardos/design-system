@@ -1,8 +1,8 @@
 @import "../custom-properties.css";
 
-/** @define ProminentPromo; */
+/** @define ProminentTeaser; */
 
-.ProminentPromo {
+.ProminentTeaser {
   background-color: var(--black);
   border-radius: 0.25rem;
   box-shadow: inset 0 0.25rem currentColor;
@@ -10,33 +10,33 @@
   display: block;
 }
 
-.ProminentPromo-image {
+.ProminentTeaser-image {
   display: block;
   max-width: 100%;
 }
 
-.ProminentPromo-text {
+.ProminentTeaser-text {
   padding: 1.25rem;
 }
 
-.ProminentPromo-meta {
+.ProminentTeaser-meta {
   color: color-mod(var(--white) shade(30%));
   font: 300 var(--type-0) system-ui;
   margin-top: 0.5rem;
 }
 
-.ProminentPromo-title {
+.ProminentTeaser-title {
   color: var(--white);
   font: 600 var(--type-5) proxima-nova, sans-serif;
 }
 
-.ProminentPromo-children {
+.ProminentTeaser-children {
   color: var(--white);
   font: 300 var(--type-0) system-ui;
   margin-top: 1rem;
 }
 
-.ProminentPromo-link {
+.ProminentTeaser-link {
   margin-top: 1.5rem;
 
   @media (min-width: 30rem) {
@@ -44,18 +44,18 @@
   }
 }
 
-.ProminentPromo--orange {
+.ProminentTeaser--orange {
   color: var(--orange);
 }
 
-.ProminentPromo--pink {
+.ProminentTeaser--pink {
   color: var(--pink);
 }
 
-.ProminentPromo--purple {
+.ProminentTeaser--purple {
   color: var(--purple);
 }
 
-.ProminentPromo--teal {
+.ProminentTeaser--teal {
   color: var(--teal);
 }

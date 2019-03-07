@@ -3,10 +3,10 @@ import React from "react";
 
 import "./index.css";
 
-const Promos = ({ children }) => <div className="Promos">{children}</div>;
+const Teasers = ({ children }) => <div className="Teasers">{children}</div>;
 
-Promos.propTypes = {
+Teasers.propTypes = {
   children: PropTypes.node.isRequired
 };
 
-export default Promos;
+export default Teasers;
