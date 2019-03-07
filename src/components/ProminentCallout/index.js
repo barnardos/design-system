@@ -3,14 +3,14 @@ import React from "react";
 
 import "./index.css";
 
-const ProminentCallout = ({ colour, children, id, title }) => (
+const ProminentCallout = ({ colour, children, heading, id }) => (
   <div
     className={`ProminentCallout ${
       colour ? `ProminentCallout--${colour}` : ""
     }`}
     id={id}
   >
-    <h2 className="ProminentCallout-title">{title}</h2>
+    <h2 className="ProminentCallout-heading">{heading}</h2>
     <div className="ProminentCallout-children">{children}</div>
   </div>
 );
@@ -18,8 +18,8 @@ const ProminentCallout = ({ colour, children, id, title }) => (
 ProminentCallout.propTypes = {
   colour: PropTypes.oneOf(["orange", "pink", "purple", "teal"]),
   children: PropTypes.node.isRequired,
-  id: PropTypes.string,
-  title: PropTypes.string.isRequired
+  heading: PropTypes.string.isRequired,
+  id: PropTypes.string
 };
 
 export default ProminentCallout;

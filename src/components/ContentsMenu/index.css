@@ -18,7 +18,7 @@
   }
 }
 
-.ContentsMenu-title {
+.ContentsMenu-heading {
   font: 600 var(--type-0) system-ui;
   padding: 1.25rem 0 0 1rem;
 }

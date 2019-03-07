@@ -6,6 +6,13 @@
   box-shadow: inset 0 -1px 0 0 color-mod(var(--black) tint(90%));
   margin: 0 -1rem;
   padding: 0 1rem 0.5rem;
+
+  @media (min-width: 48rem) {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -2rem;
+    padding: 0 2rem 1rem;
+  }
 }
 
 .Header-actions {
@@ -16,6 +23,10 @@
 .Header-logo {
   display: block;
   width: 5rem;
+
+  @media (min-width: 48rem) {
+    width: 7.5rem;
+  }
 }
 
 .Header-logoInner {
@@ -47,6 +58,10 @@
     position: relative;
     top: 0.125rem;
   }
+
+  @media (min-width: 48rem) {
+    display: none;
+  }
 }
 
 .Header-triggerText {
@@ -60,6 +75,13 @@
   &:focus-within {
     position: static;
   }
+
+  @media (min-width: 48rem) {
+    align-self: center;
+    flex: 0 1 30rem;
+    margin-left: 4rem;
+    position: static;
+  }
 }
 
 .Header-target--active {
@@ -68,40 +90,16 @@
 
 .Header-search {
   padding: 1.5rem 0 1rem;
+
+  @media (min-width: 48rem) {
+    padding: 0;
+  }
 }
 
 .Header-menu {
   margin: 0 -1rem;
-}
 
-@media (min-width: 48rem) {
-  .Header {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 -2rem;
-    padding: 0 2rem 1rem;
-  }
-
-  .Header-logo {
-    width: 7.5rem;
-  }
-
-  .Header-trigger {
-    display: none;
-  }
-
-  .Header-target {
-    align-self: center;
-    flex: 0 1 30rem;
-    margin-left: 4rem;
-    position: static;
-  }
-
-  .Header-search {
-    padding: 0;
-  }
-
-  .Header-menu {
+  @media (min-width: 48rem) {
     margin: 0.5rem 0 -1rem 0;
   }
 }

@@ -28,7 +28,7 @@
   padding: 1.25rem;
 }
 
-.Teaser-title {
+.Teaser-heading {
   color: var(--green);
   font: 600 var(--type-5) proxima-nova, sans-serif;
   text-decoration: underline;

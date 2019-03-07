@@ -16,7 +16,7 @@
   }
 }
 
-.ProminentCallout-title {
+.ProminentCallout-heading {
   color: currentcolor;
   font: 600 var(--type-5) proxima-nova, sans-serif;
 }

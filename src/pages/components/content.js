@@ -507,7 +507,7 @@ export default () => (
             Use this component to prominently callout parts of the content.
           </Paragraph>
           <Example>
-            <ProminentCallout title="Tips for dealing with stress:">
+            <ProminentCallout heading="Tips for dealing with stress:">
               <BulletedList>
                 <ListItem>listen to calming music</ListItem>
                 <ListItem>write or draw what you want to happen</ListItem>

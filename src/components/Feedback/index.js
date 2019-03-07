@@ -3,16 +3,16 @@ import React from "react";
 
 import "./index.css";
 
-const Feedback = ({ children, title }) => (
+const Feedback = ({ children, heading }) => (
   <aside className="Feedback" id="feedback">
-    <h2 className="Feedback-title">{title}</h2>
+    <h2 className="Feedback-heading">{heading}</h2>
     <div className="Feedback-children">{children}</div>
   </aside>
 );
 
 Feedback.propTypes = {
   children: PropTypes.node.isRequired,
-  title: PropTypes.string.isRequired
+  heading: PropTypes.string.isRequired
 };
 
 export default Feedback;

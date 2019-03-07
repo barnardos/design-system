@@ -7,7 +7,7 @@
   padding: 1rem;
 }
 
-.ErrorSummary-title {
+.ErrorSummary-heading {
   font: 600 var(--type-3) system-ui;
 }
 
