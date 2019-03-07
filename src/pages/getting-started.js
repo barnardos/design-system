@@ -7,6 +7,7 @@ import Lede from "../components/Lede";
 import Link from "../components/Link";
 import Main from "../components/Main";
 import Paragraph from "../components/Paragraph";
+import SignpostLink from "../components/SignpostLink";
 import Title from "../components/Title";
 
 export default () => (
@@ -42,6 +43,7 @@ export default () => (
         common problem{" "}
         <Link href="/#feedback">let the Design System team know</Link>.
       </Paragraph>
+      <SignpostLink href="/">Explore the Design System</SignpostLink>
     </Main>
   </Page>
 );
