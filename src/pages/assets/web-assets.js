@@ -1,4 +1,3 @@
-import Helmet from "react-helmet";
 import React from "react";
 import { withPrefix } from "gatsby";
 
@@ -20,10 +19,7 @@ import Contents from "../../components/Contents";
 import ContentsMenu from "../../components/ContentsMenu";
 
 export default () => (
-  <Page>
-    <Helmet>
-      <title>Web assets</title>
-    </Helmet>
+  <Page title="Web assets">
     <Breadcrumbs
       items={[
         {

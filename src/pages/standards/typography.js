@@ -1,4 +1,3 @@
-import Helmet from "react-helmet";
 import React from "react";
 
 import Breadcrumbs from "../../components/Breadcrumbs";
@@ -21,10 +20,7 @@ import Topic from "../../components/Topic";
 import TypeFigures from "../../components/TypeFigures";
 
 export default () => (
-  <Page>
-    <Helmet>
-      <title>Typography</title>
-    </Helmet>
+  <Page title="Typography">
     <Breadcrumbs
       items={[
         {

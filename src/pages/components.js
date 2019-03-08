@@ -1,4 +1,3 @@
-import Helmet from "react-helmet";
 import React from "react";
 
 import Breadcrumbs from "../components/Breadcrumbs";
@@ -20,10 +19,7 @@ import { indexItems as formsItems } from "./components/forms";
 import { indexItems as structureItems } from "./components/structure";
 
 export default () => (
-  <Page>
-    <Helmet>
-      <title>Components</title>
-    </Helmet>
+  <Page title="Components">
     <Breadcrumbs
       items={[
         {

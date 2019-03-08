@@ -1,4 +1,3 @@
-import Helmet from "react-helmet";
 import React from "react";
 
 import BlockQuote from "../../components/BlockQuote";
@@ -144,10 +143,7 @@ export const indexItems = [
 ];
 
 export default () => (
-  <Page>
-    <Helmet>
-      <title>Content</title>
-    </Helmet>
+  <Page title="Content">
     <Breadcrumbs
       items={[
         {

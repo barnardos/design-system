@@ -1,4 +1,3 @@
-import Helmet from "react-helmet";
 import React from "react";
 
 import Breadcrumbs from "../../components/Breadcrumbs";
@@ -16,10 +15,7 @@ import Title from "../../components/Title";
 import Main from "../../components/Main";
 
 export default () => (
-  <Page>
-    <Helmet>
-      <title>Asking for names</title>
-    </Helmet>
+  <Page title="Asking for names">
     <Breadcrumbs
       items={[
         {

@@ -1,4 +1,3 @@
-import Helmet from "react-helmet";
 import React from "react";
 
 import Link from "../components/Link";
@@ -15,10 +14,7 @@ import SignpostLink from "../components/SignpostLink";
 import Title from "../components/Title";
 
 export default () => (
-  <Page>
-    <Helmet>
-      <title>Barnardo’s Design System</title>
-    </Helmet>
+  <Page title="Barnardo’s Design System">
     <Main>
       <Hero>
         <Title>Barnardo’s Design System</Title>

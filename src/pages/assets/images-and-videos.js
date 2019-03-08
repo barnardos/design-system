@@ -1,4 +1,3 @@
-import Helmet from "react-helmet";
 import React from "react";
 
 import Breadcrumbs from "../../components/Breadcrumbs";
@@ -13,10 +12,7 @@ import Main from "../../components/Main";
 import BulletedList from "../../components/BulletedList";
 
 export default () => (
-  <Page>
-    <Helmet>
-      <title>Images and videos</title>
-    </Helmet>
+  <Page title="Images and videos">
     <Breadcrumbs
       items={[
         {
