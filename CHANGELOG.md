@@ -1,5 +1,38 @@
 # Changelog
 
+## Head
+
+### Removed
+
+- `SignpostLinks` as the `SignpostLink` component should be used singularly
+
+### Changed
+
+- `postcss.config.js` to disable autoprefixer’s IE11 `grid` support, use manual grid fallbacks instead
+- `Promo` to `Teaser`
+- `Promos` to `Teasers`
+- `ProminentPromo` to `ProminentTeaser`
+- `ContentsMenu`, `ErrorSummary`, `ProminentTeaser`, and `Teaser` `title` props to be `heading`
+- `BlockQuote` and `ProminentBlockQuote` `name` prop to be required
+- `Header` `search` prop to be of type `node`
+
+### Added
+
+- `DownloadLink` component
+- `Callout` component
+- `ProminentCallout` component
+
+### Fixed
+
+- focus state colour to improve contrast
+- line heights on the type scale to improve readability
+- horizontal scroll bar regression
+- `BlockQuote`, `Command`, `ContentsMenu`, `CurrencyInput` and `Submit` look and feel to align with the developing Barnardo's look and feel
+- `Cite`, `Fact`, `Hint`, `Link`, `ProminentBlockQuote` and `Topic` colour contrast accessibility
+- `Breadcrumbs`, `ContentsMenu`, `Footer`, `Menu`, `Search` and `SignpostLink` hit size accessibility
+- `SignpostLink` wrapping on smaller viewports
+- `Site` scrolling behaviour to reduce motion
+
 ## 0.3.0
 
 ### Changed
