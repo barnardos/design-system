@@ -1,4 +1,3 @@
-import Helmet from "react-helmet";
 import React from "react";
 
 import Breadcrumbs from "../../components/Breadcrumbs";
@@ -109,10 +108,7 @@ export const indexItems = [
 ];
 
 export default () => (
-  <Page>
-    <Helmet>
-      <title>Forms</title>
-    </Helmet>
+  <Page title="Forms">
     <Breadcrumbs
       items={[
         {

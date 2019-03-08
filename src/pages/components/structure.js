@@ -1,4 +1,3 @@
-import Helmet from "react-helmet";
 import React from "react";
 
 import Breadcrumbs from "../../components/Breadcrumbs";
@@ -87,10 +86,7 @@ const structureForFigure = `<Site>
 </Site>`;
 
 export default () => (
-  <Page>
-    <Helmet>
-      <title>Structure</title>
-    </Helmet>
+  <Page title="Structure">
     <Breadcrumbs
       items={[
         {

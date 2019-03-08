@@ -1,4 +1,3 @@
-import Helmet from "react-helmet";
 import React from "react";
 import { withPrefix } from "gatsby";
 
@@ -98,10 +97,7 @@ export const indexItems = [
 ];
 
 export default () => (
-  <Page>
-    <Helmet>
-      <title>Navigation</title>
-    </Helmet>
+  <Page title="Navigation">
     <Breadcrumbs
       items={[
         {

@@ -1,4 +1,3 @@
-import Helmet from "react-helmet";
 import React from "react";
 
 import Breadcrumbs from "../../components/Breadcrumbs";
@@ -19,10 +18,7 @@ import Cite from "../../components/Cite";
 import Link from "../../components/Link";
 
 export default () => (
-  <Page>
-    <Helmet>
-      <title>Spacing and layout</title>
-    </Helmet>
+  <Page title="Spacing and layout">
     <Breadcrumbs
       items={[
         {

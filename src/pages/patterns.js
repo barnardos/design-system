@@ -1,4 +1,3 @@
-import Helmet from "react-helmet";
 import React from "react";
 
 import Breadcrumbs from "../components/Breadcrumbs";
@@ -13,10 +12,7 @@ import Section from "../components/Section";
 import Sections from "../components/Sections";
 
 export default () => (
-  <Page>
-    <Helmet>
-      <title>Patterns</title>
-    </Helmet>
+  <Page title="Patterns">
     <Breadcrumbs
       items={[
         {

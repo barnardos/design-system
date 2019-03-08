@@ -1,3 +1,4 @@
+import Helmet from "react-helmet";
 import PropTypes from "prop-types";
 import React from "react";
 
@@ -8,8 +9,11 @@ import SkipLink from "../SkipLink";
 import Site from "../Site";
 import DocSearch from "../DocSearch";
 
-const Page = ({ children }) => (
+const Page = ({ children, title }) => (
   <Site description="The Barnardo’s Design System website.">
+    <Helmet>
+      <title>{title}</title>
+    </Helmet>
     <Layout>
       <SkipLink />
       <Header
@@ -23,7 +27,8 @@ const Page = ({ children }) => (
 );
 
 Page.propTypes = {
-  children: PropTypes.any
+  children: PropTypes.any,
+  title: PropTypes.string
 };
 
 export default Page;
