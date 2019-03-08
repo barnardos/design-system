@@ -39,7 +39,9 @@
 
 .Footer-link {
   color: var(--black);
+  display: inline-block;
   font: 300 var(--type--1) system-ui;
+  padding: 0.25rem 0;
 
   &:hover {
     text-decoration: none;

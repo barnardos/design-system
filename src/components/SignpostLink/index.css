@@ -6,6 +6,7 @@
   color: var(--green);
   display: inline-block;
   font: 600 var(--type-2) proxima-nova, sans-serif;
+  padding: 0.25rem 0;
 
   &::after {
     text-decoration: underline; /* ie11 fix */
@@ -16,8 +17,8 @@
     content: "›";
     display: inline-block;
     font: 300 var(--type-8) proxima-nova, sans-serif;
-    left: 0.5rem;
     line-height: 0;
+    margin-left: 0.5rem;
     position: relative;
     text-decoration: none;
     top: 0.25rem;
@@ -32,7 +33,7 @@
   }
 
   &:not(:first-child) {
-    margin-top: 1.25rem;
+    margin-top: 1.5rem;
   }
 }
 
