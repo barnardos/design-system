@@ -34,6 +34,7 @@ export default () => (
     />
     <Main>
       <Title>Asking for names</Title>
+      <Paragraph>Use this pattern to ask for names.</Paragraph>
       <Paragraph>You should:</Paragraph>
       <BulletedList>
         <ListItem>only ask for names when absolutely needed</ListItem>
@@ -71,8 +72,8 @@ export default () => (
       </Cite>
       <Pagination
         next={{
-          href: "/patterns/filtering",
-          label: "Filtering"
+          href: "/patterns/gathering-information",
+          label: "Gathering information"
         }}
       />
     </Main>

@@ -11,12 +11,11 @@ import Pagination from "../../components/Pagination";
 import Paragraph from "../../components/Paragraph";
 import Title from "../../components/Title";
 import Main from "../../components/Main";
-import Topic from "../../components/Topic";
 
 export default () => (
   <Page>
     <Helmet>
-      <title>Considerations</title>
+      <title>Gathering information</title>
     </Helmet>
     <Breadcrumbs
       items={[
@@ -25,38 +24,38 @@ export default () => (
           href: "/"
         },
         {
-          text: "Standards",
-          href: "/standards/"
+          text: "Patterns",
+          href: "/patterns/"
         }
       ]}
     />
     <Main>
-      <Topic>Accessibility</Topic>
-      <Title>Considerations</Title>
+      <Title>Gathering information</Title>
       <Paragraph>
-        You should pass the accessibility checks in{" "}
-        <Link href="https://www.deque.com/axe/">aXe</Link>.
+        Use this pattern to gather information from young people.
       </Paragraph>
-      <Paragraph>You should also:</Paragraph>
+      <Paragraph>You should:</Paragraph>
       <BulletedList>
-        <ListItem>make page titles unique and descriptive</ListItem>
-        <ListItem>allow users to navigate only with a keyboard</ListItem>
-        <ListItem>enable the viewport to be zoomed to at least 200%</ListItem>
-        <ListItem>
-          avoid relying on colour or icons to convey important information
-        </ListItem>
+        <ListItem>explain why information is being asked for</ListItem>
+        <ListItem>explain who will see any personal information</ListItem>
+        <ListItem>allow them to remain anonymous where possible</ListItem>
+        <ListItem>ensure they have privacy and are safeguarded</ListItem>
       </BulletedList>
       <Cite>
         View{" "}
-        <Link href="https://github.com/barnardos/design-system/issues/168">
-          accessibility research
+        <Link href="https://github.com/barnardos/design-system/issues/294">
+          gathering information research
         </Link>{" "}
         on GitHub.
       </Cite>
       <Pagination
+        previous={{
+          href: "/patterns/asking-for-names",
+          label: "Asking for names"
+        }}
         next={{
-          href: "/standards/viewport-scale",
-          label: "Viewport scale"
+          href: "/patterns/filtering",
+          label: "Filtering"
         }}
       />
     </Main>

@@ -272,9 +272,7 @@ export default () => (
             on GitHub.
           </Cite>
           <Subheading>Back Link</Subheading>
-          <Paragraph>
-            Use this component to link back within a transactional service.
-          </Paragraph>
+          <Paragraph>Use this component to link back.</Paragraph>
           <Paragraph>When using this component you should:</Paragraph>
           <BulletedList>
             <ListItem>only use it once on each page</ListItem>

@@ -31,7 +31,8 @@ export default () => (
     />
     <Main>
       <Title>Preventing spam</Title>
-      <Paragraph>You could try:</Paragraph>
+      <Paragraph>Use this pattern to prevent spam.</Paragraph>
+      <Paragraph>You should try:</Paragraph>
       <BulletedList>
         <ListItem>
           <Link href="https://en.wikipedia.org/wiki/Rate_limiting">
@@ -47,7 +48,7 @@ export default () => (
         <ListItem>transaction monitoring</ListItem>
       </BulletedList>
       <Paragraph>
-        Avoid using{" "}
+        You should avoid using{" "}
         <Link href="https://en.wikipedia.org/wiki/CAPTCHA">CAPTCHAs</Link>, as
         they cause usability an accessibility issues.
       </Paragraph>

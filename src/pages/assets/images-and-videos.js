@@ -57,8 +57,8 @@ export default () => (
     </Main>
     <Pagination
       previous={{
-        href: "/assets/sketch-assets",
-        label: "Sketch assets"
+        href: "/assets/generating-sketch-assets",
+        label: "Generating Sketch assets"
       }}
       next={{
         href: "/assets/iconography",

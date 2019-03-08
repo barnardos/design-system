@@ -56,7 +56,7 @@ export default () => (
         <Content>
           <Heading>Logo</Heading>
           <Paragraph>Use this asset to display the Barnardo’s logo.</Paragraph>
-          <Paragraph>When using this asset you should:</Paragraph>
+          <Paragraph>You should:</Paragraph>
           <BulletedList>
             <ListItem>use adequate white space around it</ListItem>
             <ListItem>not break it up in any way</ListItem>
@@ -84,9 +84,7 @@ export default () => (
             Use this asset to display an icon in the address bar or tab of a
             browser.
           </Paragraph>
-          <Paragraph>
-            When using this asset you should avoid changing the colour.
-          </Paragraph>
+          <Paragraph>You should avoid changing the colour.</Paragraph>
           <Figures>
             <Figure caption="Example of the favicon">
               <Image
@@ -102,8 +100,8 @@ export default () => (
           </Paragraph>
           <Pagination
             next={{
-              href: "/assets/sketch-assets",
-              label: "Sketch assets"
+              href: "/assets/generating-sketch-assets",
+              label: "Generating Sketch assets"
             }}
           />
         </Content>

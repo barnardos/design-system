@@ -37,7 +37,9 @@ export default () => (
               <Link href="/assets/web-assets/">Web assets</Link>
             </ListItem>
             <ListItem>
-              <Link href="/assets/sketch-assets">Sketch assets</Link>
+              <Link href="/assets/generating-sketch-assets">
+                Generating Sketch assets
+              </Link>
             </ListItem>
             <ListItem>
               <Link href="/assets/images-and-videos/">Images and videos</Link>

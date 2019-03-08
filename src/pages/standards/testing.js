@@ -16,7 +16,7 @@ import Topic from "../../components/Topic";
 export default () => (
   <Page>
     <Helmet>
-      <title>Viewport scale</title>
+      <title>Testing</title>
     </Helmet>
     <Breadcrumbs
       items={[
@@ -32,41 +32,31 @@ export default () => (
     />
     <Main>
       <Topic>Accessibility</Topic>
-      <Title>Viewport scale</Title>
+      <Title>Testing</Title>
       <Paragraph>
-        The layout and type can be proportionally scaled to maintain an optimal
-        line length at any viewport size.
+        You should pass the accessibility checks in{" "}
+        <Link href="https://www.deque.com/axe/">aXe</Link>.
       </Paragraph>
-      <Paragraph>
-        For example, you could scale the base of 1rem (roughly 16px):
-      </Paragraph>
+      <Paragraph>You should also:</Paragraph>
       <BulletedList>
+        <ListItem>make page titles unique and descriptive</ListItem>
+        <ListItem>allow users to navigate only with a keyboard</ListItem>
+        <ListItem>enable the viewport to be zoomed to at least 200%</ListItem>
         <ListItem>
-          down to 93.75% to give a paragraph size and gutters of roughly 15px
-        </ListItem>
-        <ListItem>
-          up to 106.25% to give a paragraph size and gutters of roughly 17px
-        </ListItem>
-        <ListItem>
-          further up to 112.5% to give a paragraph size and gutters of roughly
-          18px
+          avoid relying on colour or icons to convey important information
         </ListItem>
       </BulletedList>
       <Cite>
         View{" "}
-        <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Site/viewport-scale.css">
-          viewport scale code
-        </Link>{" "}
-        and{" "}
-        <Link href="https://github.com/barnardos/design-system/issues/1">
-          viewport scale research
+        <Link href="https://github.com/barnardos/design-system/issues/168">
+          accessibility research
         </Link>{" "}
         on GitHub.
       </Cite>
       <Pagination
-        previous={{
-          href: "/standards/testing",
-          label: "Testing"
+        next={{
+          href: "/standards/viewport-scale",
+          label: "Viewport scale"
         }}
       />
     </Main>

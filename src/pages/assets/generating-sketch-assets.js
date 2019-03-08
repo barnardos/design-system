@@ -15,7 +15,7 @@ import Main from "../../components/Main";
 export default () => (
   <Page>
     <Helmet>
-      <title>Sketch assets</title>
+      <title>Generating Sketch assets</title>
     </Helmet>
     <Breadcrumbs
       items={[
@@ -30,24 +30,25 @@ export default () => (
       ]}
     />
     <Main>
-      <Title>Sketch assets</Title>
+      <Title>Generating Sketch assets</Title>
       <Paragraph>
-        When designing your product you should{" "}
+        The Design System allows designers and developers to{" "}
         <Link href="https://www.npmjs.com/package/@barnardos/components">
           install the components
         </Link>{" "}
         and design in the browser.
       </Paragraph>
       <Paragraph>
-        Alternatively, you can import components into Sketch using the{" "}
+        Alternatively, you can use the{" "}
         <Link href="https://kimdal-hyeong.github.io/html-to-sketch-electron/download-analyst/">
           HTML to Sketch app
         </Link>{" "}
-        by following these steps:
+        to import components into Sketch.
       </Paragraph>
+      <Paragraph>Following these steps:</Paragraph>
       <NumberedList>
         <ListItem>
-          Paste ‘design-system.barnardos.org.uk’ into the address bar
+          Paste ‘design-system.barnardos.org.uk’ into the address bar of the app
         </ListItem>
         <ListItem>Pick the component you need</ListItem>
         <ListItem>Click the ‘Draw’ button</ListItem>

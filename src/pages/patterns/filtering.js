@@ -90,8 +90,8 @@ export default () => (
       </Cite>
       <Pagination
         previous={{
-          href: "/patterns/asking-for-names",
-          label: "Asking for names"
+          href: "/patterns/gathering-information",
+          label: "Gathering information"
         }}
         next={{
           href: "/patterns/preventing-spam",

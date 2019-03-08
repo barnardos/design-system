@@ -37,6 +37,11 @@ export default () => (
               <Link href="/patterns/asking-for-names/">Asking for names</Link>
             </ListItem>
             <ListItem>
+              <Link href="/patterns/gathering-information/">
+                Gathering information
+              </Link>
+            </ListItem>
+            <ListItem>
               <Link href="/patterns/filtering/">Filtering</Link>
             </ListItem>
             <ListItem>

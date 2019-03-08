@@ -160,10 +160,6 @@ export default () => (
       <Contents>
         <ContentsMenu items={indexItems} />
         <Content>
-          <Paragraph>
-            When displaying content you should provide a meaningful content
-            hierarchy.
-          </Paragraph>
           <Heading>Type</Heading>
           <Paragraph>
             Use these components to create a type hierarchy.
@@ -251,7 +247,8 @@ export default () => (
             on GitHub.
           </Cite>
           <Heading>Lists</Heading>
-          <Paragraph>Use the component below for lists. You should:</Paragraph>
+          <Paragraph>Use the component below for lists.</Paragraph>
+          <Paragraph>You should:</Paragraph>
           <BulletedList>
             <ListItem>limit the number on each page</ListItem>
             <ListItem>introduce with a descriptive sentence</ListItem>
@@ -418,7 +415,7 @@ export default () => (
             Use this component to add a caption, for example to images and
             videos.
           </Paragraph>
-          <Paragraph>When using this component you should:</Paragraph>
+          <Paragraph>You should:</Paragraph>
           <BulletedList>
             <ListItem>be clear and concise</ListItem>
             <ListItem>
@@ -446,7 +443,7 @@ export default () => (
           </Cite>
           <Heading>Fact</Heading>
           <Paragraph>Use this component for facts.</Paragraph>
-          <Paragraph>When using this component you should:</Paragraph>
+          <Paragraph>You should:</Paragraph>
           <BulletedList>
             <ListItem>
               use data that’s compelling and easy to understand
