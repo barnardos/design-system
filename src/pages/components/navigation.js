@@ -20,6 +20,7 @@ import Link from "../../components/Link";
 import ListItem from "../../components/ListItem";
 import Paragraph from "../../components/Paragraph";
 import Teaser from "../../components/Teaser";
+import Teasers from "../../components/Teasers";
 import SignpostLink from "../../components/SignpostLink";
 import StartLink from "../../components/StartLink";
 import Subheading from "../../components/Subheading";
@@ -71,8 +72,8 @@ export const indexItems = [
   },
   {
     level: 1,
-    text: "Teasers",
-    href: "/components/navigation/#teasers"
+    text: "Teaser links",
+    href: "/components/navigation/#teaser-links"
   },
   {
     level: 2,
@@ -292,11 +293,38 @@ export default () => (
             </Link>{" "}
             on GitHub.
           </Cite>
-          <Heading>Teasers</Heading>
+          <Heading>Teaser links</Heading>
           <Paragraph>
             Use these components to provide a summary that links to additional
             details.
           </Paragraph>
+          <Subheading>Teasers</Subheading>
+          <Paragraph>
+            Use this component to display more than one Teaser.
+          </Paragraph>
+          <Example>
+            <Teasers>
+              <Teaser href="#" heading="Coping with stress">
+                The different causes stress and tips on how you can deal with
+                it.
+              </Teaser>
+              <Teaser href="#" heading="Seeking help">
+                Places you can visit in person and online for help, advice and
+                support.
+              </Teaser>
+            </Teasers>
+          </Example>
+          <Cite>
+            View{" "}
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Teasers">
+              Teasers code
+            </Link>{" "}
+            and{" "}
+            <Link href="https://github.com/barnardos/design-system/issues/676">
+              Teasers research
+            </Link>{" "}
+            on GitHub.
+          </Cite>
           <Subheading>Teaser</Subheading>
           <Example>
             <Teaser
