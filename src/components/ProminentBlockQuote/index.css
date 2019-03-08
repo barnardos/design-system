@@ -7,6 +7,11 @@
   color: var(--white);
   padding: 2rem 1rem;
   text-align: center;
+
+  @media (min-width: 32rem) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 
 .ProminentBlockQuote-children {
@@ -59,11 +64,4 @@
 
 .ProminentBlockQuote--teal {
   background-color: var(--teal);
-}
-
-@media (min-width: 32rem) {
-  .ProminentBlockQuote {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
 }

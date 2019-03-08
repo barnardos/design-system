@@ -4,7 +4,11 @@ import React from "react";
 import "./index.css";
 
 const BlockQuote = ({ children, colour, name, role, src }) => (
-  <blockquote className={`BlockQuote ${colour ? `BlockQuote--${colour}` : ""}`}>
+  <blockquote
+    className={`BlockQuote ${colour ? `BlockQuote--${colour}` : ""} ${
+      src ? `BlockQuote--withImage` : ""
+    }`}
+  >
     {src && (
       <div className="BlockQuote-media">
         <img alt="" className="BlockQuote-image" src={src} />
