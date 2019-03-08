@@ -17,8 +17,6 @@ const Header = ({ href = "/", menu, search, title = "Go to the homepage" }) => {
     if (!isActive) ref.current.focus();
   }
 
-  const searchWithRef = React.cloneElement(search, { ref: ref });
-
   return (
     <header className="Header">
       <div className="Header-actions">
@@ -47,7 +45,11 @@ const Header = ({ href = "/", menu, search, title = "Go to the homepage" }) => {
       <div
         className={`Header-target ${isActive ? "Header-target--active" : ""}`}
       >
-        {search && <div className="Header-search">{searchWithRef}</div>}
+        {search && (
+          <div className="Header-search">
+            {React.cloneElement(search, { ref: ref })}
+          </div>
+        )}
         {menu && <div className="Header-menu">{menu}</div>}
       </div>
     </header>
