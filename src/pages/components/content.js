@@ -123,11 +123,16 @@ export const indexItems = [
   },
   {
     level: 1,
+    text: "Callouts",
+    href: "/components/content/#callouts"
+  },
+  {
+    level: 2,
     text: "Callout",
     href: "/components/content/#callout"
   },
   {
-    level: 1,
+    level: 2,
     text: "Prominent Callout",
     href: "/components/content/#prominent-callout"
   },
@@ -471,7 +476,8 @@ export default () => (
             </Link>{" "}
             on GitHub.
           </Cite>
-          <Heading>Callout</Heading>
+          <Heading>Callouts</Heading>
+          <Subheading>Callout</Subheading>
           <Paragraph>
             Use this component to callout parts of the content.
           </Paragraph>
@@ -499,7 +505,7 @@ export default () => (
             </Link>{" "}
             on GitHub.
           </Cite>
-          <Heading>Prominent Callout</Heading>
+          <Subheading>Prominent Callout</Subheading>
           <Paragraph>
             Use this component to prominently callout parts of the content.
           </Paragraph>
