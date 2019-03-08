@@ -8,6 +8,7 @@ describe("accessibility", () => {
       await page.goto(`http://localhost:8000/components/${href}`);
       const { violations } = await new AxePuppeteer(page)
         .disableRules("heading-order")
+        .exclude(".algolia-autocomplete")
         .analyze();
       expect(violations).toHaveLength(0);
     }

@@ -1,3 +1,5 @@
+import "url-polyfill";
+
 // :focus-within polyfil
 function focusWithin(e, t) {
   var n = Object(t).className,

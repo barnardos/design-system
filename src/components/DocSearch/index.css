@@ -1,0 +1,122 @@
+@import "../custom-properties.css";
+
+/**
+ * Adapted 3rd party code from Algolia
+**/
+
+/* stylelint-disable declaration-no-important, property-whitelist, selector-max-class */
+
+.DocSearch {
+  & .algolia-autocomplete {
+    width: 100%;
+  }
+
+  & .ds-input {
+    width: 100%;
+  }
+
+  & .ds-dropdown-menu {
+    background-color: var(--white);
+    border-radius: 0.25rem;
+    box-shadow: inset 0 0 0 1px color-mod(var(--black) tint(80%)),
+      0 0 0.25rem 0.125rem color-mod(var(--black) alpha(10%));
+    margin-top: 1rem;
+    max-width: 38rem;
+    padding: 1rem 1.25rem 1.25rem;
+    width: calc(100vw - 2rem);
+
+    &::before {
+      background: var(--white);
+      border-radius: 2px;
+      border-right: 1px solid color-mod(var(--black) tint(70%));
+      border-top: 1px solid color-mod(var(--black) tint(70%));
+      content: "";
+      display: block;
+      height: 14px;
+      left: 25px;
+      position: absolute;
+      top: -7px;
+      transform: rotate(-45deg);
+      width: 14px;
+      z-index: 1000;
+    }
+  }
+
+  & .algolia-autocomplete-right .ds-dropdown-menu {
+    left: inherit !important;
+    right: 0 !important;
+
+    &::before {
+      left: auto;
+      right: 3rem;
+    }
+  }
+
+  & .algolia-docsearch-suggestion--content {
+    margin-left: 0.25rem;
+  }
+
+  & .algolia-docsearch-suggestion {
+    text-decoration: none;
+
+    &:hover {
+      & .algolia-docsearch-suggestion--content {
+        color: var(--black);
+        text-decoration: underline;
+      }
+    }
+  }
+
+  & .algolia-docsearch-suggestion--category-header {
+    display: none;
+  }
+
+  & .algolia-docsearch-suggestion--wrapper {
+    display: flex;
+    padding-top: 0.5rem;
+  }
+
+  & .algolia-docsearch-suggestion--subcategory-column {
+    color: color-mod(var(--black) tint(40%));
+    font: 600 var(--type-0) system-ui;
+    white-space: nowrap;
+
+    &::after {
+      content: "|";
+    }
+  }
+
+  & .algolia-docsearch-suggestion--subcategory-inline {
+    display: none;
+  }
+
+  & .algolia-docsearch-suggestion--title {
+    color: var(--black);
+    font: 300 var(--type-0) system-ui;
+  }
+
+  & .algolia-docsearch-suggestion--text {
+    color: var(--black);
+    font: 300 var(--type--1) system-ui;
+  }
+
+  & .algolia-docsearch-suggestion--highlight {
+    background: color-mod(var(--green) alpha(10%));
+  }
+
+  & .algolia-docsearch-suggestion--no-results {
+    text-align: center;
+    text-decoration: none !important;
+    width: 100%;
+  }
+
+  & .algolia-docsearch-footer {
+    font: 300 var(--type--2) system-ui;
+    margin-top: 0.75rem;
+    text-align: right;
+  }
+
+  & .algolia-docsearch-footer--logo {
+    color: var(--green);
+  }
+}
