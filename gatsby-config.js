@@ -1,4 +1,7 @@
 module.exports = {
+  siteMetadata: {
+    siteUrl: `https://design-system.barnardos.org.uk`
+  },
   plugins: [
     "gatsby-plugin-postcss",
     {
@@ -13,6 +16,7 @@ module.exports = {
         anonymize: true,
         respectDNT: true
       }
-    }
+    },
+    `gatsby-plugin-sitemap`
   ]
 };
