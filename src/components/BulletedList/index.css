@@ -4,7 +4,7 @@
 
 .BulletedList {
   font: 300 var(--type-0) system-ui;
-  max-width: 42rem;
+  max-width: 36rem;
   padding-left: 1rem;
 
   &:not(:first-child) {
