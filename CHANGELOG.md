@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.4.1
+
+### Fixed
+
+- `ContentsMenu` content being hidden on short viewports
+- `Header` error when `Search` isn't passed as prop
+
 ## 0.4.0
 
 ### Removed
