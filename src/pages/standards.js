@@ -1,16 +1,16 @@
 import React from "react";
 
 import Breadcrumbs from "../components/Breadcrumbs";
-import BulletedList from "../components/BulletedList";
 import Page from "../components/Page";
 import Main from "../components/Main";
+import LandingMenu from "../components/LandingMenu";
 import Lede from "../components/Lede";
-import Link from "../components/Link";
-import ListItem from "../components/ListItem";
 import Section from "../components/Section";
 import Sections from "../components/Sections";
-import Heading from "../components/Heading";
 import Title from "../components/Title";
+
+import { items as colourItems } from "./standards/colour";
+import { items as typographyItems } from "./standards/typography";
 
 export default () => (
   <Page title="Components">
@@ -27,67 +27,86 @@ export default () => (
       <Lede>Guidelines on how to adopt our ways of working.</Lede>
       <Sections>
         <Section>
-          <Heading>Accessibility</Heading>
-          <BulletedList>
-            <ListItem>
-              <Link href="/standards/testing/">Testing</Link>
-            </ListItem>
-            <ListItem>
-              <Link href="/standards/viewport-scale/">Viewport scale</Link>
-            </ListItem>
-          </BulletedList>
+          <LandingMenu
+            heading="Accessibility"
+            items={[
+              {
+                text: "Testing",
+                href: "/standards/testing/"
+              },
+              {
+                text: "Viewport scale",
+                href: "/standards/viewport-scale/"
+              }
+            ]}
+          />
         </Section>
         <Section>
-          <Heading>Design</Heading>
-          <BulletedList>
-            <ListItem>
-              <Link href="/standards/colour/">Colour</Link>
-            </ListItem>
-            <ListItem>
-              <Link href="/standards/typography/">Typography</Link>
-            </ListItem>
-            <ListItem>
-              <Link href="/standards/spacing-and-layout/">
-                Spacing and layout
-              </Link>
-            </ListItem>
-          </BulletedList>
+          <LandingMenu
+            heading="Design"
+            items={[
+              {
+                text: "Colour",
+                href: "/standards/colour/",
+                items: colourItems
+              },
+              {
+                text: "Typography",
+                href: "/standards/typography/",
+                items: typographyItems
+              },
+              {
+                text: "Spacing and layout",
+                href: "/standards/spacing-and-layout/"
+              }
+            ]}
+          />
         </Section>
         <Section>
-          <Heading>Writing</Heading>
-          <BulletedList>
-            <ListItem>
-              <Link href="/standards/voice-and-tone/">Voice and tone</Link>
-            </ListItem>
-            <ListItem>
-              <Link href="/standards/reading-age/">Reading age</Link>
-            </ListItem>
-            <ListItem>
-              <Link href="/standards/formatting/">Formatting</Link>
-            </ListItem>
-            <ListItem>
-              <Link href="/standards/spelling/">Spelling</Link>
-            </ListItem>
-            <ListItem>
-              <Link href="/standards/maintenance/">Maintenance</Link>
-            </ListItem>
-          </BulletedList>
+          <LandingMenu
+            heading="Writing"
+            items={[
+              {
+                text: "Voice and tone",
+                href: "/standards/voice-and-tone/"
+              },
+              {
+                text: "Reading age",
+                href: "/standards/reading-age/"
+              },
+              {
+                text: "Formatting",
+                href: "/standards/formatting/"
+              },
+              {
+                text: "Spelling",
+                href: "/standards/spelling/"
+              },
+              {
+                text: "Maintenance",
+                href: "/standards/maintenance/"
+              }
+            ]}
+          />
         </Section>
         <Section>
-          <Heading>Development</Heading>
-          <BulletedList>
-            <ListItem>
-              <Link href="/standards/code-quality/">Code quality</Link>
-            </ListItem>
-            <ListItem>
-              <Link href="/standards/future-proof-code/">
-                Future-proof code
-              </Link>
-            </ListItem>
-            <ListItem>
-              <Link href="/standards/performance/">Performance</Link>
-            </ListItem>
-          </BulletedList>
+          <LandingMenu
+            heading="Development"
+            items={[
+              {
+                text: "Code quality",
+                href: "/standards/code-quality/"
+              },
+              {
+                text: "Future-proof code",
+                href: "/standards/future-proof-code/"
+              },
+              {
+                text: "Performance",
+                href: "/standards/performance/"
+              }
+            ]}
+          />
         </Section>
       </Sections>
     </Main>

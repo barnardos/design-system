@@ -29,116 +29,124 @@ import Subheading from "../../components/Subheading";
 import Title from "../../components/Title";
 import Topic from "../../components/Topic";
 
-export const indexItems = [
+export const items = [
   {
-    level: 1,
     text: "Type",
-    href: "/components/content/#type-styles"
+    href: "/components/content/#type-styles",
+    items: [
+      {
+        text: "Topic",
+        href: "/components/content/#topic"
+      },
+      {
+        text: "Title",
+        href: "/components/content/#title"
+      },
+      {
+        text: "Lede",
+        href: "/components/content/#lede"
+      },
+      {
+        text: "Heading",
+        href: "/components/content/#heading"
+      },
+      {
+        text: "Subheading",
+        href: "/components/content/#subheading"
+      },
+      {
+        text: "Paragraph",
+        href: "/components/content/#paragraph"
+      },
+      {
+        text: "Cite",
+        href: "/components/content/#cite"
+      }
+    ]
   },
   {
-    level: 2,
-    text: "Title",
-    href: "/components/content/#title"
-  },
-  {
-    level: 2,
-    text: "Lede",
-    href: "/components/content/#lede"
-  },
-  {
-    level: 2,
-    text: "Heading",
-    href: "/components/content/#heading"
-  },
-  {
-    level: 2,
-    text: "Subheading",
-    href: "/components/content/#subheading"
-  },
-  {
-    level: 2,
-    text: "Paragraph",
-    href: "/components/content/#paragraph"
-  },
-  {
-    level: 2,
-    text: "Cite",
-    href: "/components/content/#cite"
-  },
-  {
-    level: 1,
     text: "Lists",
-    href: "/components/content/#lists"
+    href: "/components/content/#lists",
+    items: [
+      {
+        text: "Bulleted List",
+        href: "/components/content/#bulleted-list"
+      },
+      {
+        text: "Numbered List",
+        href: "/components/content/#numbered-list"
+      }
+    ]
   },
   {
-    level: 2,
-    text: "Bulleted List",
-    href: "/components/content/#bulleted-list"
+    text: "Media",
+    href: "/components/content/#media",
+    items: [
+      {
+        text: "Images",
+        href: "/components/content/#images"
+      },
+      {
+        text: "Videos",
+        href: "/components/content/#videos"
+      },
+      {
+        text: "Caption",
+        href: "/components/content/#caption"
+      }
+    ]
   },
   {
-    level: 2,
-    text: "Numbered List",
-    href: "/components/content/#numbered-list"
-  },
-  {
-    level: 1,
-    text: "Images",
-    href: "/components/content/#images"
-  },
-  {
-    level: 1,
-    text: "Videos",
-    href: "/components/content/#videos"
-  },
-  {
-    level: 1,
     text: "Quotes",
-    href: "/components/content/#quotes"
+    href: "/components/content/#quotes",
+    items: [
+      {
+        text: "Pull Quote",
+        href: "/components/content/#pull-quote"
+      },
+      {
+        text: "Block Quote",
+        href: "/components/content/#block-quote"
+      },
+      {
+        text: "Prominent Block Quote",
+        href: "/components/content/#prominent-block-quote"
+      }
+    ]
   },
   {
-    level: 2,
-    text: "Pull Quote",
-    href: "/components/content/#pull-quote"
+    text: "Facts",
+    href: "/components/content/#facts",
+    items: [
+      {
+        text: "Fact",
+        href: "/components/content/#fact"
+      }
+    ]
   },
   {
-    level: 2,
-    text: "Block Quote",
-    href: "/components/content/#block-quote"
-  },
-  {
-    level: 2,
-    text: "Prominent Block Quote",
-    href: "/components/content/#prominent-block-quote"
-  },
-  {
-    level: 1,
-    text: "Caption",
-    href: "/components/content/#caption"
-  },
-  {
-    level: 1,
-    text: "Fact",
-    href: "/components/content/#fact"
-  },
-  {
-    level: 1,
     text: "Callouts",
-    href: "/components/content/#callouts"
+    href: "/components/content/#callouts",
+    items: [
+      {
+        text: "Callout",
+        href: "/components/content/#callout"
+      },
+      {
+        text: "Prominent Callout",
+        href: "/components/content/#prominent-callout"
+      }
+    ]
   },
   {
-    level: 2,
-    text: "Callout",
-    href: "/components/content/#callout"
-  },
-  {
-    level: 2,
-    text: "Prominent Callout",
-    href: "/components/content/#prominent-callout"
-  },
-  {
-    level: 1,
-    text: "Section",
-    href: "/components/content/#section"
+    text: "Sectioning",
+    href: "/components/content/#sectioning",
+    items: [
+      {
+        text: "Section",
+        href: "/components/content/#section"
+      }
+    ]
   }
 ];
 
@@ -159,7 +167,7 @@ export default () => (
     <Main>
       <Title>Content</Title>
       <Contents>
-        <ContentsMenu items={indexItems} />
+        <ContentsMenu items={items} />
         <Content>
           <Heading>Type</Heading>
           <Paragraph>
@@ -312,7 +320,8 @@ export default () => (
             </Link>{" "}
             on GitHub.
           </Cite>
-          <Heading>Images</Heading>
+          <Heading>Media</Heading>
+          <Subheading>Images</Subheading>
           <Paragraph>When displaying images you should:</Paragraph>
           <BulletedList>
             <ListItem>match the tone of the surrounding copy</ListItem>
@@ -320,12 +329,43 @@ export default () => (
               include descriptive <Code>alt</Code> tags in the code
             </ListItem>
           </BulletedList>
-          <Heading>Videos</Heading>
+          <Subheading>Videos</Subheading>
           <Paragraph>When displaying videos you should:</Paragraph>
           <BulletedList>
             <ListItem>include subtitles</ListItem>
             <ListItem>include a transcription</ListItem>
           </BulletedList>
+          <Subheading>Caption</Subheading>
+          <Paragraph>
+            Use this component to add a caption, for example to images and
+            videos.
+          </Paragraph>
+          <Paragraph>You should:</Paragraph>
+          <BulletedList>
+            <ListItem>be clear and concise</ListItem>
+            <ListItem>
+              provide a description that makes sense out of context
+            </ListItem>
+          </BulletedList>
+          <Example>
+            <Caption label="Participants receiving their certificate">
+              <Image
+                src="https://dummyimage.com/1200x675/bbbbbb/d2d2d2.png&amp;text=16:9"
+                alt="A 6:9 dummy image"
+              />
+            </Caption>
+          </Example>
+          <Cite>
+            View{" "}
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Caption">
+              Caption code
+            </Link>{" "}
+            and{" "}
+            <Link href="https://github.com/barnardos/design-system/issues/300">
+              Caption research
+            </Link>{" "}
+            on GitHub.
+          </Cite>
           <Heading>Quotes</Heading>
           <Paragraph>When using these components you should:</Paragraph>
           <BulletedList>
@@ -411,38 +451,8 @@ export default () => (
             </Link>{" "}
             on GitHub.
           </Cite>
-          <Heading>Caption</Heading>
-          <Paragraph>
-            Use this component to add a caption, for example to images and
-            videos.
-          </Paragraph>
-          <Paragraph>You should:</Paragraph>
-          <BulletedList>
-            <ListItem>be clear and concise</ListItem>
-            <ListItem>
-              provide a description that makes sense out of context
-            </ListItem>
-          </BulletedList>
-          <Example>
-            <Caption label="Participants receiving their certificate">
-              <Image
-                src="https://dummyimage.com/1200x675/bbbbbb/d2d2d2.png&amp;text=16:9"
-                alt="A 6:9 dummy image"
-              />
-            </Caption>
-          </Example>
-          <Cite>
-            View{" "}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Caption">
-              Caption code
-            </Link>{" "}
-            and{" "}
-            <Link href="https://github.com/barnardos/design-system/issues/300">
-              Caption research
-            </Link>{" "}
-            on GitHub.
-          </Cite>
-          <Heading>Fact</Heading>
+          <Heading>Facts</Heading>
+          <Subheading>Fact</Subheading>
           <Paragraph>Use this component for facts.</Paragraph>
           <Paragraph>You should:</Paragraph>
           <BulletedList>
@@ -526,7 +536,8 @@ export default () => (
             </Link>{" "}
             on GitHub.
           </Cite>
-          <Heading>Section</Heading>
+          <Heading>Sectioning</Heading>
+          <Subheading>Section</Subheading>
           <Paragraph>Use this component to section parts of content.</Paragraph>
           <Example>
             <div

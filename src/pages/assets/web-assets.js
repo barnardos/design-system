@@ -18,6 +18,17 @@ import Content from "../../components/Content";
 import Contents from "../../components/Contents";
 import ContentsMenu from "../../components/ContentsMenu";
 
+export const items = [
+  {
+    text: "Logo",
+    href: "/assets/web-assets/#logo"
+  },
+  {
+    text: "Favicon",
+    href: "/assets/web-assets/#favicon"
+  }
+];
+
 export default () => (
   <Page title="Web assets">
     <Breadcrumbs
@@ -35,20 +46,7 @@ export default () => (
     <Main>
       <Title>Web assets</Title>
       <Contents>
-        <ContentsMenu
-          items={[
-            {
-              level: 1,
-              text: "Logo",
-              href: "/assets/web-assets/#logo"
-            },
-            {
-              level: 1,
-              text: "Favicon",
-              href: "/assets/web-assets/#favicon"
-            }
-          ]}
-        />
+        <ContentsMenu items={items} />
         <Content>
           <Heading>Logo</Heading>
           <Paragraph>Use this asset to display the Barnardo’s logo.</Paragraph>

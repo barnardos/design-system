@@ -2,10 +2,8 @@ import React from "react";
 
 import Breadcrumbs from "../components/Breadcrumbs";
 import Page from "../components/Page";
-import BulletedList from "../components/BulletedList";
+import LandingMenu from "../components/LandingMenu";
 import Lede from "../components/Lede";
-import Link from "../components/Link";
-import ListItem from "../components/ListItem";
 import Title from "../components/Title";
 import Main from "../components/Main";
 import Section from "../components/Section";
@@ -28,22 +26,26 @@ export default () => (
       </Lede>
       <Sections>
         <Section>
-          <BulletedList>
-            <ListItem>
-              <Link href="/patterns/asking-for-names/">Asking for names</Link>
-            </ListItem>
-            <ListItem>
-              <Link href="/patterns/gathering-information/">
-                Gathering information
-              </Link>
-            </ListItem>
-            <ListItem>
-              <Link href="/patterns/filtering/">Filtering</Link>
-            </ListItem>
-            <ListItem>
-              <Link href="/patterns/preventing-spam/">Preventing spam</Link>
-            </ListItem>
-          </BulletedList>
+          <LandingMenu
+            items={[
+              {
+                text: "Asking for names",
+                href: "/patterns/asking-for-names/"
+              },
+              {
+                text: "Gathering information",
+                href: "/patterns/gathering-information/"
+              },
+              {
+                text: "Filtering",
+                href: "/patterns/filtering/"
+              },
+              {
+                text: "Preventing spam",
+                href: "/patterns/preventing-spam/"
+              }
+            ]}
+          />
         </Section>
       </Sections>
     </Main>

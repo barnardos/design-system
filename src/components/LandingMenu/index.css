@@ -1,0 +1,39 @@
+@import "../custom-properties.css";
+
+/** @define LandingMenu; */
+
+.LandingMenu-items--level1 {
+  margin-top: 1rem;
+}
+
+.LandingMenu-item {
+  list-style: none;
+}
+
+.LandingMenu-link {
+  color: var(--black);
+  display: block;
+  font: 300 var(--type-0) system-ui;
+  margin: 0 -0.25rem;
+  max-width: 20rem;
+  padding: 0.25rem;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.LandingMenu-items--level2 {
+  & .LandingMenu-item {
+    &:last-child {
+      margin-bottom: 1rem;
+    }
+  }
+
+  & .LandingMenu-link {
+    box-shadow: inset 0.25rem 0 0 color-mod(var(--black) tint(90%));
+    font: 300 var(--type-0) system-ui;
+    padding-left: 0.75rem;
+  }
+}

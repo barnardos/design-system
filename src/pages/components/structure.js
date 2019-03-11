@@ -24,49 +24,40 @@ import Figures from "../../components/Figures";
 import Code from "../../components/Code";
 import Preformatted from "../../components/Preformatted";
 
-export const indexItems = [
+export const items = [
   {
-    level: 1,
     text: "Site",
     href: "/components/structure/#site"
   },
   {
-    level: 1,
     text: "Layout",
     href: "/components/structure/#layout"
   },
   {
-    level: 1,
     text: "Skip Link",
     href: "/components/structure/#skip-link"
   },
   {
-    level: 1,
     text: "Menu",
     href: "/components/structure/#menu"
   },
   {
-    level: 1,
     text: "Search",
     href: "/components/structure/#search"
   },
   {
-    level: 1,
     text: "Header",
     href: "/components/structure/#header"
   },
   {
-    level: 1,
     text: "Breadcrumbs",
     href: "/components/structure/#breadcrumbs"
   },
   {
-    level: 1,
     text: "Main",
     href: "/components/structure/#main"
   },
   {
-    level: 1,
     text: "Footer",
     href: "/components/structure/#footer"
   }
@@ -102,7 +93,7 @@ export default () => (
     <Main>
       <Title>Structure</Title>
       <Contents>
-        <ContentsMenu items={indexItems} />
+        <ContentsMenu items={items} />
         <Content>
           <Figures>
             <Figure caption="The relationship between the structure components">

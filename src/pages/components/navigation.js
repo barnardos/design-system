@@ -27,72 +27,78 @@ import Title from "../../components/Title";
 import Main from "../../components/Main";
 import Pagination from "../../components/Pagination";
 
-export const indexItems = [
+export const items = [
   {
-    level: 1,
     text: "Links",
-    href: "/components/navigation/#links"
+    href: "/components/navigation/#links",
+    items: [
+      {
+        text: "Link",
+        href: "/components/navigation/#link"
+      },
+      {
+        text: "Signpost Link",
+        href: "/components/navigation/#signpost-link"
+      },
+      {
+        text: "Download Link",
+        href: "/components/navigation/#download-link"
+      },
+      {
+        text: "Start Link",
+        href: "/components/navigation/#start-link"
+      },
+      {
+        text: "Donate Link",
+        href: "/components/navigation/#donate-link"
+      },
+      {
+        text: "Prominent Link",
+        href: "/components/navigation/#prominent-link"
+      },
+      {
+        text: "Back Link",
+        href: "/components/navigation/#back-link"
+      }
+    ]
   },
   {
-    level: 2,
-    text: "Link",
-    href: "/components/navigation/#link"
-  },
-  {
-    level: 2,
-    text: "Signpost Link",
-    href: "/components/navigation/#signpost-link"
-  },
-
-  {
-    level: 2,
-    text: "Download Link",
-    href: "/components/navigation/#download-link"
-  },
-  {
-    level: 2,
-    text: "Start Link",
-    href: "/components/navigation/#start-link"
-  },
-  {
-    level: 2,
-    text: "Donate Link",
-    href: "/components/navigation/#donate-link"
-  },
-  {
-    level: 2,
-    text: "Prominent Link",
-    href: "/components/navigation/#prominent-link"
-  },
-  {
-    level: 2,
-    text: "Back Link",
-    href: "/components/navigation/#back-link"
-  },
-  {
-    level: 1,
     text: "Teaser links",
-    href: "/components/navigation/#teaser-links"
+    href: "/components/navigation/#teaser-links",
+    items: [
+      {
+        text: "Teaser",
+        href: "/components/navigation/#teaser"
+      },
+      {
+        text: "Prominent Teaser",
+        href: "/components/navigation/#prominent-teaser"
+      }
+    ]
   },
   {
-    level: 2,
-    text: "Teaser",
-    href: "/components/navigation/#teaser"
+    text: "Menus",
+    href: "/components/navigation/#menus",
+    items: [
+      {
+        text: "Menu",
+        href: "/components/navigation/#menu"
+      },
+      {
+        text: "Contents Menu",
+        href: "/components/navigation/#contents-menu"
+      }
+    ]
   },
   {
-    level: 2,
-    text: "Prominent Teaser",
-    href: "/components/navigation/#prominent-teaser"
-  },
-  {
-    level: 1,
-    text: "Contents Menu",
-    href: "/components/navigation/#contents-menu"
-  },
-  {
-    level: 1,
-    text: "Pagination",
-    href: "/components/navigation/#pagination"
+    text: "Paginating",
+    href: "/components/navigation/#pagination",
+    items: [
+      {
+        text: "Pagination",
+        href: "/components/navigation/#pagination"
+      }
+    ]
   }
 ];
 
@@ -113,7 +119,7 @@ export default () => (
     <Main>
       <Title>Navigation</Title>
       <Contents>
-        <ContentsMenu items={indexItems} />
+        <ContentsMenu items={items} />
         <Content>
           <Heading>Links</Heading>
           <Subheading>Link</Subheading>
@@ -378,7 +384,15 @@ export default () => (
             </Link>{" "}
             on GitHub.
           </Cite>
-          <Heading>Contents Menu</Heading>
+          <Heading>Menus</Heading>
+          <Subheading>Menu</Subheading>
+          <Paragraph>
+            <Link href="/components/structure/#menu">
+              View Menu guidance in Structure
+            </Link>
+            .
+          </Paragraph>
+          <Subheading>Contents Menu</Subheading>
           <Paragraph>
             Use this component to navigate within a page or section of pages.
           </Paragraph>
@@ -386,22 +400,18 @@ export default () => (
             <ContentsMenu
               items={[
                 {
-                  level: 1,
                   text: "Who can adopt?",
                   href: "#"
                 },
                 {
-                  level: 2,
                   text: "If you have children",
                   href: "#"
                 },
                 {
-                  level: 2,
                   text: "If you have a partner",
                   href: "#"
                 },
                 {
-                  level: 1,
                   text: "Types of adoption",
                   href: "#"
                 }
@@ -419,7 +429,8 @@ export default () => (
             </Link>{" "}
             on GitHub.
           </Cite>
-          <Heading>Pagination</Heading>
+          <Heading>Paginating</Heading>
+          <Subheading>Pagination</Subheading>
           <Paragraph>
             Use this component to break large pieces of content across multiple
             pages.

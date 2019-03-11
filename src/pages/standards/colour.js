@@ -22,6 +22,21 @@ import Swatches from "../../components/Swatches";
 import Title from "../../components/Title";
 import Topic from "../../components/Topic";
 
+export const items = [
+  {
+    text: "Brand colours",
+    href: "/standards/colour/#brand-colours"
+  },
+  {
+    text: "Colour scale",
+    href: "/standards/colour/#colour-scale"
+  },
+  {
+    text: "Light grey",
+    href: "/standards/colour/#light-grey"
+  }
+];
+
 export default () => (
   <Page title="Colour">
     <Breadcrumbs
@@ -40,25 +55,7 @@ export default () => (
       <Topic>Design</Topic>
       <Title>Colour</Title>
       <Contents>
-        <ContentsMenu
-          items={[
-            {
-              level: 1,
-              text: "Brand colours",
-              href: "/standards/colour/#brand-colours"
-            },
-            {
-              level: 1,
-              text: "Colour scale",
-              href: "/standards/colour/#colour-scale"
-            },
-            {
-              level: 1,
-              text: "Light grey",
-              href: "/standards/colour/#light-grey"
-            }
-          ]}
-        />
+        <ContentsMenu items={items} />
         <Content>
           <Paragraph>You should use:</Paragraph>
           <BulletedList>

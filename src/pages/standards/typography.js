@@ -19,6 +19,29 @@ import Main from "../../components/Main";
 import Topic from "../../components/Topic";
 import TypeFigures from "../../components/TypeFigures";
 
+export const items = [
+  {
+    text: "Type scale",
+    href: "/standards/typography/#type-scale"
+  },
+  {
+    text: "Line height",
+    href: "/standards/typography/#line-height"
+  },
+  {
+    text: "Line length",
+    href: "/standards/typography/#line-length"
+  },
+  {
+    text: "Brand font",
+    href: "/standards/typography/#brand-font"
+  },
+  {
+    text: "Body copy",
+    href: "/standards/typography/#body-copy"
+  }
+];
+
 export default () => (
   <Page title="Typography">
     <Breadcrumbs
@@ -37,35 +60,7 @@ export default () => (
       <Topic>Design</Topic>
       <Title>Typography</Title>
       <Contents>
-        <ContentsMenu
-          items={[
-            {
-              level: 1,
-              text: "Type scale",
-              href: "/standards/typography/#type-scale"
-            },
-            {
-              level: 1,
-              text: "Line height",
-              href: "/standards/typography/#line-height"
-            },
-            {
-              level: 1,
-              text: "Line length",
-              href: "/standards/typography/#line-length"
-            },
-            {
-              level: 1,
-              text: "Brand font",
-              href: "/standards/typography/#brand-font"
-            },
-            {
-              level: 1,
-              text: "Body copy",
-              href: "/standards/typography/#body-copy"
-            }
-          ]}
-        />
+        <ContentsMenu items={items} />
         <Content>
           <Paragraph>You should use:</Paragraph>
           <BulletedList>

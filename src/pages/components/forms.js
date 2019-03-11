@@ -29,81 +29,74 @@ import Figure from "../../components/Figure";
 import Submit from "../../components/Submit";
 import Command from "../../components/Command";
 
-export const indexItems = [
+export const items = [
   {
-    level: 1,
     text: "Text inputs",
-    href: "/components/forms/#text-inputs"
+    href: "/components/forms/#text-inputs",
+    items: [
+      {
+        text: "Text Input",
+        href: "/components/forms/#text-input"
+      },
+      {
+        text: "Text Area",
+        href: "/components/forms/#text-area"
+      },
+      {
+        text: "Date Input",
+        href: "/components/forms/#date-input"
+      },
+      {
+        text: "Currency Input",
+        href: "/components/forms/#currency-input"
+      }
+    ]
   },
   {
-    level: 2,
-    text: "Text Input",
-    href: "/components/forms/#text-input"
-  },
-  {
-    level: 2,
-    text: "Text Area",
-    href: "/components/forms/#text-area"
-  },
-  {
-    level: 2,
-    text: "Date Input",
-    href: "/components/forms/#date-input"
-  },
-  {
-    level: 2,
-    text: "Currency Input",
-    href: "/components/forms/#currency-input"
-  },
-  {
-    level: 1,
     text: "Choices",
-    href: "/components/forms/#choices"
+    href: "/components/forms/#choices",
+    items: [
+      {
+        text: "Check Box",
+        href: "/components/forms/#check-box"
+      },
+      {
+        text: "Check Boxes",
+        href: "/components/forms/#check-boxes"
+      },
+      {
+        text: "Radio Buttons",
+        href: "/components/forms/#radio-buttons"
+      },
+      {
+        text: "Conditional",
+        href: "/components/forms/#conditional"
+      }
+    ]
   },
   {
-    level: 2,
-    text: "Check Box",
-    href: "/components/forms/#check-box"
+    text: "Actions",
+    href: "/components/forms/#actions",
+    items: [
+      {
+        text: "Command",
+        href: "/components/forms/#command"
+      },
+      {
+        text: "Submit",
+        href: "/components/forms/#submit"
+      }
+    ]
   },
   {
-    level: 2,
-    text: "Check Boxes",
-    href: "/components/forms/#check-boxes"
-  },
-  {
-    level: 2,
-    text: "Radio Buttons",
-    href: "/components/forms/#radio-buttons"
-  },
-  {
-    level: 2,
-    text: "Conditional",
-    href: "/components/forms/#conditional"
-  },
-  {
-    level: 1,
-    text: "Command",
-    href: "/components/forms/#command"
-  },
-  {
-    level: 1,
-    text: "Submit",
-    href: "/components/forms/#submit"
-  },
-  {
-    level: 1,
     text: "Validation",
-    href: "/components/forms/#validation"
-  },
-  {
-    level: 2,
-    text: "Error Summary",
-    href: "/components/forms/#error-summary"
-  },
-  {
-    level: 2,
-    text: "Errors",
-    href: "/components/forms/#errors"
+    href: "/components/forms/#validation",
+    items: [
+      {
+        text: "Error Summary",
+        href: "/components/forms/#error-summary"
+      }
+    ]
   }
 ];
 
@@ -124,7 +117,7 @@ export default () => (
     <Main>
       <Title>Forms</Title>
       <Contents>
-        <ContentsMenu items={indexItems} />
+        <ContentsMenu items={items} />
         <Content>
           <Paragraph>When gathering information you should:</Paragraph>
           <BulletedList>
@@ -383,7 +376,8 @@ export default () => (
             </Link>{" "}
             on GitHub.
           </Cite>
-          <Heading>Command</Heading>
+          <Heading>Actions</Heading>
+          <Subheading>Command</Subheading>
           <Paragraph>
             Use this component for interactive triggers that don’t submit data.
           </Paragraph>
@@ -401,7 +395,7 @@ export default () => (
             </Link>{" "}
             on GitHub.
           </Cite>
-          <Heading>Submit</Heading>
+          <Subheading>Submit</Subheading>
           <Paragraph>
             Use this component to trigger the submitting of form data.
           </Paragraph>
@@ -453,16 +447,8 @@ export default () => (
             </Link>{" "}
             on GitHub.
           </Cite>
-          <Subheading>Errors</Subheading>
-          <Example>
-            <TextInput
-              id="text-input-validation-example"
-              label="Name of the meal"
-              size={48}
-              error="Enter the name of the meal"
-            />
-          </Example>
-          <Example>
+
+          <Figures>
             <RadioButtons
               items={[
                 {
@@ -484,7 +470,14 @@ export default () => (
               legend="Does the meal include nuts?"
               name="radio-buttons-example-validation"
             />
-          </Example>
+            <TextInput
+              id="text-input-validation-example"
+              label="Name of the meal"
+              size={48}
+              error="Enter the name of the meal"
+            />
+            <Figure caption="Form with errors connected to Error Summary" />
+          </Figures>
         </Content>
       </Contents>
     </Main>
