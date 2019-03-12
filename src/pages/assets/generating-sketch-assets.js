@@ -2,14 +2,14 @@ import React from "react";
 
 import Breadcrumbs from "../../components/Breadcrumbs";
 import Cite from "../../components/Cite";
-import NumberedList from "../../components/NumberedList";
-import Page from "../../components/Page";
 import Link from "../../components/Link";
 import ListItem from "../../components/ListItem";
+import Main from "../../components/Main";
+import NumberedList from "../../components/NumberedList";
+import Page from "../../components/Page";
 import Pagination from "../../components/Pagination";
 import Paragraph from "../../components/Paragraph";
 import Title from "../../components/Title";
-import Main from "../../components/Main";
 
 export default () => (
   <Page title="Generating Sketch assets">

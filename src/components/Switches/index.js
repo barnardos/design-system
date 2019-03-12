@@ -1,10 +1,10 @@
 import PropTypes from "prop-types";
 import React from "react";
 
-import Switch from "../Switch";
 import Error from "../Error";
 import Fieldset from "../Fieldset";
 import Hint from "../Hint";
+import Switch from "../Switch";
 
 import "./index.css";
 

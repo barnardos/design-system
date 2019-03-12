@@ -1,6 +1,6 @@
+import { navigate } from "gatsby";
 import PropTypes from "prop-types";
 import React, { forwardRef, useEffect } from "react";
-import { navigate } from "gatsby";
 
 import Search from "../Search";
 

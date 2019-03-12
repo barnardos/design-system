@@ -1,33 +1,33 @@
 import React from "react";
 
 import Breadcrumbs from "../../components/Breadcrumbs";
+import BulletedList from "../../components/BulletedList";
 import CheckBox from "../../components/CheckBox";
 import CheckBoxes from "../../components/CheckBoxes";
 import Cite from "../../components/Cite";
+import Command from "../../components/Command";
 import Conditional from "../../components/Conditional";
 import Content from "../../components/Content";
 import Contents from "../../components/Contents";
+import ContentsMenu from "../../components/ContentsMenu";
 import CurrencyInput from "../../components/CurrencyInput";
 import DateInput from "../../components/DateInput";
-import Example from "../../components/Example";
 import ErrorSummary from "../../components/ErrorSummary";
+import Example from "../../components/Example";
+import Figure from "../../components/Figure";
+import Figures from "../../components/Figures";
 import Heading from "../../components/Heading";
-import Page from "../../components/Page";
 import Link from "../../components/Link";
 import ListItem from "../../components/ListItem";
+import Main from "../../components/Main";
+import Page from "../../components/Page";
 import Paragraph from "../../components/Paragraph";
 import RadioButtons from "../../components/RadioButtons";
 import Subheading from "../../components/Subheading";
-import ContentsMenu from "../../components/ContentsMenu";
+import Submit from "../../components/Submit";
 import TextArea from "../../components/TextArea";
 import TextInput from "../../components/TextInput";
 import Title from "../../components/Title";
-import Main from "../../components/Main";
-import BulletedList from "../../components/BulletedList";
-import Figures from "../../components/Figures";
-import Figure from "../../components/Figure";
-import Submit from "../../components/Submit";
-import Command from "../../components/Command";
 
 export const items = [
   {

@@ -1,36 +1,5 @@
 {
-  "parser": "babel-eslint",
-  "plugins": ["import", "react"],
-  "extends": [
-    "@barnardos/eslint-config-barnardos",
-    "plugin:react/recommended",
-    "plugin:import/recommended"
-  ],
-  "rules": {
-    "import/order": ["warn", { "newlines-between": "always" }]
-  },
-  "env": {
-    "browser": true,
-    "es6": true,
-    "jest": true,
-    "node": true
-  },
-  "parserOptions": {
-    "ecmaVersion": 6,
-    "sourceType": "module"
-  },
-  "settings": {
-    "react": {
-      "version": "16.0"
-    }
-  },
-  "globals": {
-    "browser": true,
-    "context": true,
-    "graphql": true,
-    "jestPuppeteer": true,
-    "page": true
-  },
+  "extends": ["@barnardos/eslint-config-barnardos"],
   "overrides": [
     {
       "files": ["src/pages/**/*.js"],

@@ -1,8 +1,6 @@
-import React from "react";
 import { withPrefix } from "gatsby";
+import React from "react";
 
-import ProminentLink from "../../components/ProminentLink";
-import ProminentTeaser from "../../components/ProminentTeaser";
 import BackLink from "../../components/BackLink";
 import Breadcrumbs from "../../components/Breadcrumbs";
 import BulletedList from "../../components/BulletedList";
@@ -10,22 +8,24 @@ import Cite from "../../components/Cite";
 import Content from "../../components/Content";
 import Contents from "../../components/Contents";
 import ContentsMenu from "../../components/ContentsMenu";
-import DownloadLink from "../../components/DownloadLink";
-import Page from "../../components/Page";
 import DonateLink from "../../components/DonateLink";
+import DownloadLink from "../../components/DownloadLink";
 import Example from "../../components/Example";
 import Heading from "../../components/Heading";
 import Link from "../../components/Link";
 import ListItem from "../../components/ListItem";
+import Main from "../../components/Main";
+import Page from "../../components/Page";
+import Pagination from "../../components/Pagination";
 import Paragraph from "../../components/Paragraph";
-import Teaser from "../../components/Teaser";
-import Teasers from "../../components/Teasers";
+import ProminentLink from "../../components/ProminentLink";
+import ProminentTeaser from "../../components/ProminentTeaser";
 import SignpostLink from "../../components/SignpostLink";
 import StartLink from "../../components/StartLink";
 import Subheading from "../../components/Subheading";
+import Teaser from "../../components/Teaser";
+import Teasers from "../../components/Teasers";
 import Title from "../../components/Title";
-import Main from "../../components/Main";
-import Pagination from "../../components/Pagination";
 
 export const items = [
   {

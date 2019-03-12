@@ -1,22 +1,22 @@
-import React from "react";
 import { withPrefix } from "gatsby";
+import React from "react";
 
 import Breadcrumbs from "../../components/Breadcrumbs";
 import BulletedList from "../../components/BulletedList";
-import Figures from "../../components/Figures";
-import Figure from "../../components/Figure";
-import Page from "../../components/Page";
-import Link from "../../components/Link";
-import ListItem from "../../components/ListItem";
-import Heading from "../../components/Heading";
-import Paragraph from "../../components/Paragraph";
-import Pagination from "../../components/Pagination";
-import Title from "../../components/Title";
-import Main from "../../components/Main";
-import Image from "../../components/Image";
 import Content from "../../components/Content";
 import Contents from "../../components/Contents";
 import ContentsMenu from "../../components/ContentsMenu";
+import Figure from "../../components/Figure";
+import Figures from "../../components/Figures";
+import Heading from "../../components/Heading";
+import Image from "../../components/Image";
+import Link from "../../components/Link";
+import ListItem from "../../components/ListItem";
+import Main from "../../components/Main";
+import Page from "../../components/Page";
+import Pagination from "../../components/Pagination";
+import Paragraph from "../../components/Paragraph";
+import Title from "../../components/Title";
 
 export const items = [
   {

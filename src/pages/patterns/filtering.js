@@ -1,21 +1,21 @@
 import React from "react";
 
 import Breadcrumbs from "../../components/Breadcrumbs";
+import BulletedList from "../../components/BulletedList";
 import Cite from "../../components/Cite";
-import Title from "../../components/Title";
+import Example from "../../components/Example";
+import Filter from "../../components/Filter";
+import Form from "../../components/Form";
+import Link from "../../components/Link";
+import ListItem from "../../components/ListItem";
 import Main from "../../components/Main";
 import Page from "../../components/Page";
-import Link from "../../components/Link";
-import Filter from "../../components/Filter";
-import ListItem from "../../components/ListItem";
-import Paragraph from "../../components/Paragraph";
 import Pagination from "../../components/Pagination";
-import BulletedList from "../../components/BulletedList";
-import TextInput from "../../components/TextInput";
+import Paragraph from "../../components/Paragraph";
 import RadioButtons from "../../components/RadioButtons";
-import Form from "../../components/Form";
 import Submit from "../../components/Submit";
-import Example from "../../components/Example";
+import TextInput from "../../components/TextInput";
+import Title from "../../components/Title";
 
 export default () => (
   <Page title="Filtering">

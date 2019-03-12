@@ -1,7 +1,7 @@
 import React from "react";
 
-import Subheading from "../Subheading";
 import Paragraph from "../Paragraph";
+import Subheading from "../Subheading";
 import TextInput from "../TextInput";
 
 import "./index.css";
