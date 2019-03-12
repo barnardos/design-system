@@ -1,22 +1,19 @@
 import React from "react";
 
 import Breadcrumbs from "../components/Breadcrumbs";
-import Heading from "../components/Heading";
-import Link from "../components/Link";
 import Page from "../components/Page";
 import SignpostLink from "../components/SignpostLink";
 import Main from "../components/Main";
-import Paragraph from "../components/Paragraph";
 import Title from "../components/Title";
-import ComponentsIndex from "../components/ComponentsIndex";
+import LandingMenu from "../components/LandingMenu";
 import Lede from "../components/Lede";
 import Section from "../components/Section";
 import Sections from "../components/Sections";
 
-import { indexItems as contentItems } from "./components/content";
-import { indexItems as navigationItems } from "./components/navigation";
-import { indexItems as formsItems } from "./components/forms";
-import { indexItems as structureItems } from "./components/structure";
+import { items as contentItems } from "./components/content";
+import { items as navigationItems } from "./components/navigation";
+import { items as formsItems } from "./components/forms";
+import { items as structureItems } from "./components/structure";
 
 export default () => (
   <Page title="Components">
@@ -39,36 +36,44 @@ export default () => (
       </SignpostLink>
       <Sections>
         <Section>
-          <Heading>Structure</Heading>
-          <Paragraph>
-            <Link href="/components/structure/">
-              View all Structure components
-            </Link>
-          </Paragraph>
-          <ComponentsIndex items={structureItems} />
+          <LandingMenu
+            heading="Structure"
+            items={structureItems}
+            link={{
+              href: "/components/structure/",
+              text: "View all Structure components"
+            }}
+          />
         </Section>
         <Section>
-          <Heading>Navigation</Heading>
-          <Paragraph>
-            <Link href="/components/navigation/">
-              View all Navigation components
-            </Link>
-          </Paragraph>
-          <ComponentsIndex items={navigationItems} />
+          <LandingMenu
+            heading="Navigation"
+            items={navigationItems}
+            link={{
+              href: "/components/navigation/",
+              text: "View all Navigation components"
+            }}
+          />
         </Section>
         <Section>
-          <Heading>Content</Heading>
-          <Paragraph>
-            <Link href="/components/content/">View all Content components</Link>
-          </Paragraph>
-          <ComponentsIndex items={contentItems} />
+          <LandingMenu
+            heading="Content"
+            items={contentItems}
+            link={{
+              href: "/components/content/",
+              text: "View all Content components"
+            }}
+          />
         </Section>
         <Section>
-          <Heading>Forms</Heading>
-          <Paragraph>
-            <Link href="/components/forms/">View all Forms components</Link>
-          </Paragraph>
-          <ComponentsIndex items={formsItems} />
+          <LandingMenu
+            heading="Forms"
+            items={formsItems}
+            link={{
+              href: "/components/forms/",
+              text: "View all Forms components"
+            }}
+          />
         </Section>
       </Sections>
     </Main>
