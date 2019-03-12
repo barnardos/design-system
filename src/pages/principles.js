@@ -2,15 +2,15 @@ import React from "react";
 
 import Breadcrumbs from "../components/Breadcrumbs";
 import BulletedList from "../components/BulletedList";
-import Page from "../components/Page";
 import Heading from "../components/Heading";
 import Lede from "../components/Lede";
 import ListItem from "../components/ListItem";
+import Main from "../components/Main";
+import Page from "../components/Page";
 import Paragraph from "../components/Paragraph";
 import Section from "../components/Section";
 import Sections from "../components/Sections";
 import Title from "../components/Title";
-import Main from "../components/Main";
 
 export default () => (
   <Page title="Principles">

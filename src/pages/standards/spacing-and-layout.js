@@ -2,20 +2,20 @@ import React from "react";
 
 import Breadcrumbs from "../../components/Breadcrumbs";
 import BulletedList from "../../components/BulletedList";
+import Cite from "../../components/Cite";
 import Demo from "../../components/Demo";
 import DemoItem from "../../components/DemoItem";
-import Page from "../../components/Page";
 import Figure from "../../components/Figure";
 import Figures from "../../components/Figures";
+import Link from "../../components/Link";
 import ListItem from "../../components/ListItem";
+import Main from "../../components/Main";
+import Page from "../../components/Page";
 import Pagination from "../../components/Pagination";
 import Paragraph from "../../components/Paragraph";
 import SpacingFigure from "../../components/SpacingFigure";
-import Topic from "../../components/Topic";
 import Title from "../../components/Title";
-import Main from "../../components/Main";
-import Cite from "../../components/Cite";
-import Link from "../../components/Link";
+import Topic from "../../components/Topic";
 
 export default () => (
   <Page title="Spacing and layout">

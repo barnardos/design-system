@@ -1,6 +1,6 @@
+import slugify from "@sindresorhus/slugify";
 import PropTypes from "prop-types";
 import React from "react";
-import slugify from "@sindresorhus/slugify";
 
 import "./index.css";
 

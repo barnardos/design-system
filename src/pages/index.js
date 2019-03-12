@@ -1,16 +1,16 @@
 import React from "react";
 
-import Link from "../components/Link";
 import Feedback from "../components/Feedback";
-import Page from "../components/Page";
 import Hero from "../components/Hero";
 import Lede from "../components/Lede";
+import Link from "../components/Link";
 import Main from "../components/Main";
+import Page from "../components/Page";
 import Paragraph from "../components/Paragraph";
-import Teaser from "../components/Teaser";
-import Teasers from "../components/Teasers";
 import Section from "../components/Section";
 import SignpostLink from "../components/SignpostLink";
+import Teaser from "../components/Teaser";
+import Teasers from "../components/Teasers";
 import Title from "../components/Title";
 
 export default () => (

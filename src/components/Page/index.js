@@ -1,13 +1,13 @@
-import Helmet from "react-helmet";
 import PropTypes from "prop-types";
 import React from "react";
+import Helmet from "react-helmet";
 
+import DocSearch from "../DocSearch";
 import Footer from "../Footer";
 import Header from "../Header";
 import Layout from "../Layout";
-import SkipLink from "../SkipLink";
 import Site from "../Site";
-import DocSearch from "../DocSearch";
+import SkipLink from "../SkipLink";
 
 const Page = ({ children, title }) => (
   <Site description="The Barnardo’s Design System website.">

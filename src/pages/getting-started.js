@@ -1,10 +1,10 @@
 import React from "react";
 
 import Breadcrumbs from "../components/Breadcrumbs";
-import Page from "../components/Page";
 import Lede from "../components/Lede";
 import Link from "../components/Link";
 import Main from "../components/Main";
+import Page from "../components/Page";
 import Paragraph from "../components/Paragraph";
 import SignpostLink from "../components/SignpostLink";
 import Title from "../components/Title";

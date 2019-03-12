@@ -1,10 +1,10 @@
 import React from "react";
 
 import Breadcrumbs from "../components/Breadcrumbs";
-import Page from "../components/Page";
-import Main from "../components/Main";
 import LandingMenu from "../components/LandingMenu";
 import Lede from "../components/Lede";
+import Main from "../components/Main";
+import Page from "../components/Page";
 import Section from "../components/Section";
 import Sections from "../components/Sections";
 import Title from "../components/Title";

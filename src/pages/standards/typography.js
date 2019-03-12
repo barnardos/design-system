@@ -7,15 +7,15 @@ import Code from "../../components/Code";
 import Content from "../../components/Content";
 import Contents from "../../components/Contents";
 import ContentsMenu from "../../components/ContentsMenu";
-import Page from "../../components/Page";
 import Figures from "../../components/Figures";
 import Heading from "../../components/Heading";
 import Link from "../../components/Link";
 import ListItem from "../../components/ListItem";
+import Main from "../../components/Main";
+import Page from "../../components/Page";
 import Pagination from "../../components/Pagination";
 import Paragraph from "../../components/Paragraph";
 import Title from "../../components/Title";
-import Main from "../../components/Main";
 import Topic from "../../components/Topic";
 import TypeFigures from "../../components/TypeFigures";
 

@@ -3,26 +3,26 @@ import React from "react";
 import Breadcrumbs from "../../components/Breadcrumbs";
 import BulletedList from "../../components/BulletedList";
 import Cite from "../../components/Cite";
+import Code from "../../components/Code";
 import Content from "../../components/Content";
-import ContentsMenu from "../../components/ContentsMenu";
 import Contents from "../../components/Contents";
-import Page from "../../components/Page";
+import ContentsMenu from "../../components/ContentsMenu";
+import Example from "../../components/Example";
+import Figure from "../../components/Figure";
+import Figures from "../../components/Figures";
+import Footer from "../../components/Footer";
+import Header from "../../components/Header";
 import Heading from "../../components/Heading";
 import Link from "../../components/Link";
 import ListItem from "../../components/ListItem";
 import Main from "../../components/Main";
-import Paragraph from "../../components/Paragraph";
-import Title from "../../components/Title";
-import Footer from "../../components/Footer";
-import Header from "../../components/Header";
-import SkipLink from "../../components/SkipLink";
-import Example from "../../components/Example";
 import Menu from "../../components/Menu";
-import Search from "../../components/Search";
-import Figure from "../../components/Figure";
-import Figures from "../../components/Figures";
-import Code from "../../components/Code";
+import Page from "../../components/Page";
+import Paragraph from "../../components/Paragraph";
 import Preformatted from "../../components/Preformatted";
+import Search from "../../components/Search";
+import SkipLink from "../../components/SkipLink";
+import Title from "../../components/Title";
 
 export const items = [
   {
