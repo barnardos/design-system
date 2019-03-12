@@ -29,12 +29,16 @@ export default () => (
           <LandingMenu
             items={[
               {
+                text: "Gathering information",
+                href: "/patterns/gathering-information/"
+              },
+              {
                 text: "Asking for names",
                 href: "/patterns/asking-for-names/"
               },
               {
-                text: "Gathering information",
-                href: "/patterns/gathering-information/"
+                text: "Interacting with young people in real time",
+                href: "/patterns/interacting-with-young-people/"
               },
               {
                 text: "Filtering",

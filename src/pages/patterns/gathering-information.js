@@ -45,13 +45,9 @@ export default () => (
         on GitHub.
       </Cite>
       <Pagination
-        previous={{
+        next={{
           href: "/patterns/asking-for-names",
           label: "Asking for names"
-        }}
-        next={{
-          href: "/patterns/filtering",
-          label: "Filtering"
         }}
       />
     </Main>

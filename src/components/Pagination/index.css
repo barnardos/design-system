@@ -5,6 +5,7 @@
 .Pagination {
   &:not(:first-child) {
     margin-top: 2rem;
+    max-width: 20rem;
   }
 }
 

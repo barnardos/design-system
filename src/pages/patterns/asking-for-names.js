@@ -67,9 +67,13 @@ export default () => (
         on GitHub.
       </Cite>
       <Pagination
-        next={{
+        previous={{
           href: "/patterns/gathering-information",
           label: "Gathering information"
+        }}
+        next={{
+          href: "/patterns/interacting-with-young-people",
+          label: "Interacting with young people in real time"
         }}
       />
     </Main>
