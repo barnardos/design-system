@@ -71,6 +71,10 @@ export const items = [
         href: "/components/navigation/#teaser"
       },
       {
+        text: "Teasers",
+        href: "/components/navigation/#teasers"
+      },
+      {
         text: "Prominent Teaser",
         href: "/components/navigation/#prominent-teaser"
       }
@@ -296,38 +300,11 @@ export default () => (
             on GitHub.
           </Cite>
           <Heading>Teaser links</Heading>
+          <Subheading>Teaser</Subheading>
           <Paragraph>
-            Use these components to provide a summary that links to additional
+            Use this component to provide a summary that links to additional
             details.
           </Paragraph>
-          <Subheading>Teasers</Subheading>
-          <Paragraph>
-            Use this component to display more than one Teaser.
-          </Paragraph>
-          <Example>
-            <Teasers>
-              <Teaser href="#" heading="Coping with stress">
-                The different causes stress and tips on how you can deal with
-                it.
-              </Teaser>
-              <Teaser href="#" heading="Seeking help">
-                Places you can visit in person and online for help, advice and
-                support.
-              </Teaser>
-            </Teasers>
-          </Example>
-          <Cite>
-            View{" "}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Teasers">
-              Teasers code
-            </Link>{" "}
-            and{" "}
-            <Link href="https://github.com/barnardos/design-system/issues/676">
-              Teasers research
-            </Link>{" "}
-            on GitHub.
-          </Cite>
-          <Subheading>Teaser</Subheading>
           <Example>
             <Teaser
               href="#"
@@ -360,7 +337,39 @@ export default () => (
             </Link>{" "}
             on GitHub.
           </Cite>
+          <Subheading>Teasers</Subheading>
+          <Paragraph>
+            Use this component to provide a more than one summary that links to
+            additional details.
+          </Paragraph>
+          <Example>
+            <Teasers>
+              <Teaser href="#" heading="Coping with stress">
+                The different causes stress and tips on how you can deal with
+                it.
+              </Teaser>
+              <Teaser href="#" heading="Seeking help">
+                Places you can visit in person and online for help, advice and
+                support.
+              </Teaser>
+            </Teasers>
+          </Example>
+          <Cite>
+            View{" "}
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Teasers">
+              Teasers code
+            </Link>{" "}
+            and{" "}
+            <Link href="https://github.com/barnardos/design-system/issues/676">
+              Teasers research
+            </Link>{" "}
+            on GitHub.
+          </Cite>
           <Subheading>Prominent Teaser</Subheading>
+          <Paragraph>
+            Use this component to provide a prominent summary that links to
+            additional details.
+          </Paragraph>
           <Example>
             <ProminentTeaser
               colour="pink"
