@@ -3,8 +3,8 @@ import React from "react";
 
 import "./index.css";
 
-const Form = ({ action, children, onSubmit, ...props }) => (
-  <form className="Form" action={action} onSubmit={onSubmit} {...props}>
+const Form = ({ action, children, ...props }) => (
+  <form className="Form" action={action} {...props}>
     {children}
   </form>
 );

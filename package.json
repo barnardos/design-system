@@ -54,6 +54,7 @@
   },
   "dependencies": {
     "@sindresorhus/slugify": "^0.9.0",
+    "formik": "^1.5.1",
     "url-polyfill": "^1.1.5"
   }
 }
