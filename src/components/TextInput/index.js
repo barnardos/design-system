@@ -8,7 +8,7 @@ import Label from "../Label";
 
 import "./index.css";
 
-const TextInput = ({ hint, id, label, size, error }) => (
+const TextInput = ({ hint, id, label, size, error, value, onChange }) => (
   <Field errored={error ? true : false}>
     <Label htmlFor={id}>{label}</Label>
     {hint && <Hint>{hint}</Hint>}
@@ -19,6 +19,8 @@ const TextInput = ({ hint, id, label, size, error }) => (
       name={id}
       size={size}
       type="text"
+      value={value}
+      onChange={onChange}
     />
   </Field>
 );
@@ -28,7 +30,9 @@ TextInput.propTypes = {
   id: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
   size: PropTypes.oneOf([1, 2, 4, 8, 16, 32, 48, 64]).isRequired,
-  error: PropTypes.string
+  error: PropTypes.string,
+  value: PropTypes.string,
+  onChange: PropTypes.func
 };
 
 export default TextInput;
