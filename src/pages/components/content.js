@@ -11,6 +11,7 @@ import Code from "../../components/Code";
 import Content from "../../components/Content";
 import Contents from "../../components/Contents";
 import ContentsMenu from "../../components/ContentsMenu";
+import Details from "../../components/Details";
 import Example from "../../components/Example";
 import Fact from "../../components/Fact";
 import Heading from "../../components/Heading";
@@ -82,20 +83,12 @@ export const items = [
     ]
   },
   {
-    text: "Media",
-    href: "/components/content/#media",
+    text: "Disclosure",
+    href: "/components/content/#disclosure",
     items: [
       {
-        text: "Image",
-        href: "/components/content/#image"
-      },
-      {
-        text: "Video",
-        href: "/components/content/#video"
-      },
-      {
-        text: "Caption",
-        href: "/components/content/#caption"
+        text: "Details",
+        href: "/components/content/#details"
       }
     ]
   },
@@ -124,6 +117,24 @@ export const items = [
       {
         text: "Fact",
         href: "/components/content/#fact"
+      }
+    ]
+  },
+  {
+    text: "Media",
+    href: "/components/content/#media",
+    items: [
+      {
+        text: "Image",
+        href: "/components/content/#image"
+      },
+      {
+        text: "Video",
+        href: "/components/content/#video"
+      },
+      {
+        text: "Caption",
+        href: "/components/content/#caption"
       }
     ]
   },
@@ -330,85 +341,41 @@ export default () => (
             </Link>{" "}
             on GitHub.
           </Cite>
-          <Heading>Media</Heading>
-          <Subheading>Image</Subheading>
-          <Paragraph>Use this component to display an image.</Paragraph>
-          <Paragraph>You should:</Paragraph>
-          <BulletedList>
-            <ListItem>match the tone of the surrounding copy</ListItem>
-            <ListItem>
-              include descriptive <Code>alt</Code> tags in the code
-            </ListItem>
-          </BulletedList>
-          <Example>
-            <Image
-              alt="Group collecting donations for Barnardo's"
-              src={withPrefix("/image-for-image-example.jpg")}
-            />
-          </Example>
-          <Cite>
-            View{" "}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Image">
-              Image code
-            </Link>{" "}
-            and{" "}
-            <Link href="https://github.com/barnardos/design-system/issues/396">
-              Image research
-            </Link>{" "}
-            on GitHub.
-          </Cite>
-          <Subheading>Video</Subheading>
-          <Paragraph>Use this component to display a video.</Paragraph>
-          <Paragraph>You should:</Paragraph>
-          <BulletedList>
-            <ListItem>include subtitles</ListItem>
-            <ListItem>include a transcription</ListItem>
-          </BulletedList>
-          <Example>
-            <Video
-              title="Believe in me TV advert"
-              src="https://www.youtube.com/embed/XnIcd4uJHao"
-            />
-          </Example>
-          <Cite>
-            View{" "}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Video">
-              Video code
-            </Link>{" "}
-            and{" "}
-            <Link href="https://github.com/barnardos/design-system/issues/395">
-              Video research
-            </Link>{" "}
-            on GitHub.
-          </Cite>
-          <Subheading>Caption</Subheading>
+          <Heading>Disclosure</Heading>
+          <Subheading>Details</Subheading>
           <Paragraph>
-            Use this component to add a caption, for example to images and
-            videos.
+            Use this component to reveal extra information in situ.
           </Paragraph>
-          <Paragraph>You should:</Paragraph>
-          <BulletedList>
-            <ListItem>be clear and concise</ListItem>
-            <ListItem>
-              provide a description that makes sense out of context
-            </ListItem>
-          </BulletedList>
           <Example>
-            <Caption label="Participants receiving their certificate">
-              <Image
-                alt="Lady holding a baby"
-                src={withPrefix("/image-for-caption-example.jpg")}
-              />
-            </Caption>
+            <Paragraph>There are many methods to donate.</Paragraph>
+            <Details summary="How to donate by post?">
+              <Paragraph>
+                If you’d like to donate by post, simply send a cheque made
+                payable to Barnardo’s to:
+              </Paragraph>
+              <Paragraph>
+                Supporter Services [OPD]
+                <br />
+                Barnardo’s
+                <br />
+                Tanners Lane
+                <br />
+                Barkingside
+                <br />
+                Essex
+                <br />
+                IG6 1QG
+              </Paragraph>
+            </Details>
           </Example>
           <Cite>
             View{" "}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Caption">
-              Caption code
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Details">
+              Details code
             </Link>{" "}
             and{" "}
-            <Link href="https://github.com/barnardos/design-system/issues/300">
-              Caption research
+            <Link href="https://github.com/barnardos/design-system/issues/534">
+              Details research
             </Link>{" "}
             on GitHub.
           </Cite>
@@ -525,6 +492,88 @@ export default () => (
             and{" "}
             <Link href="https://github.com/barnardos/design-system/issues/212">
               Fact research
+            </Link>{" "}
+            on GitHub.
+          </Cite>
+          <Heading>Media</Heading>
+          <Subheading>Image</Subheading>
+          <Paragraph>Use this component to display an image.</Paragraph>
+          <Paragraph>You should:</Paragraph>
+          <BulletedList>
+            <ListItem>match the tone of the surrounding copy</ListItem>
+            <ListItem>
+              include descriptive <Code>alt</Code> tags in the code
+            </ListItem>
+          </BulletedList>
+          <Example>
+            <Image
+              alt="Group collecting donations for Barnardo's"
+              src={withPrefix("/image-for-image-example.jpg")}
+            />
+          </Example>
+          <Cite>
+            View{" "}
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Image">
+              Image code
+            </Link>{" "}
+            and{" "}
+            <Link href="https://github.com/barnardos/design-system/issues/396">
+              Image research
+            </Link>{" "}
+            on GitHub.
+          </Cite>
+          <Subheading>Video</Subheading>
+          <Paragraph>Use this component to display a video.</Paragraph>
+          <Paragraph>You should:</Paragraph>
+          <BulletedList>
+            <ListItem>include subtitles</ListItem>
+            <ListItem>include a transcription</ListItem>
+          </BulletedList>
+          <Example>
+            <Video
+              title="Believe in me TV advert"
+              src="https://www.youtube.com/embed/XnIcd4uJHao"
+            />
+          </Example>
+          <Cite>
+            View{" "}
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Video">
+              Video code
+            </Link>{" "}
+            and{" "}
+            <Link href="https://github.com/barnardos/design-system/issues/395">
+              Video research
+            </Link>{" "}
+            on GitHub.
+          </Cite>
+          <Subheading>Caption</Subheading>
+          <Paragraph>
+            Use this component to add a caption, for example to images and
+            videos.
+          </Paragraph>
+          <Paragraph>You should:</Paragraph>
+          <BulletedList>
+            <ListItem>be clear and concise</ListItem>
+            <ListItem>
+              provide a description that makes sense out of context
+            </ListItem>
+          </BulletedList>
+          <Example>
+            <Caption label="Participants receiving their certificate">
+              <Image
+                alt="Lady holding a baby"
+                src={withPrefix("/image-for-caption-example.jpg")}
+              />
+            </Caption>
+          </Example>
+          <Cite>
+            View{" "}
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Caption">
+              Caption code
+            </Link>{" "}
+            and{" "}
+            <Link href="https://github.com/barnardos/design-system/issues/300">
+              Caption research
             </Link>{" "}
             on GitHub.
           </Cite>
