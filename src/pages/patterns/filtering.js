@@ -86,8 +86,8 @@ export default () => (
       </Cite>
       <Pagination
         previous={{
-          href: "/patterns/gathering-information",
-          label: "Gathering information"
+          href: "/patterns/interacting-with-young-people",
+          label: "Interacting with young people in real time"
         }}
         next={{
           href: "/patterns/preventing-spam",
