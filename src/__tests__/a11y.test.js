@@ -12,5 +12,5 @@ describe("accessibility", () => {
         .analyze();
       expect(violations).toHaveLength(0);
     }
-  }, 10000);
+  }, 100000);
 });

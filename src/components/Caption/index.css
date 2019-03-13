@@ -6,29 +6,6 @@
   display: block;
 }
 
-.Caption-children {
-  display: block;
-  position: relative;
-
-  &::before {
-    content: "";
-    display: block;
-    padding-bottom: 56.25%; /* stylelint-disable-line declaration-property-unit-whitelist */
-    width: 100%;
-  }
-}
-
-.Caption-childrenInner {
-  border: none;
-  bottom: 0;
-  height: 100%;
-  left: 0;
-  max-width: 100%;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-
 .Caption-label {
   background-color: color-mod(var(--black) tint(95%));
   color: var(--black);
