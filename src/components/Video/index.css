@@ -1,0 +1,27 @@
+@import "../custom-properties.css";
+
+/** @define Video; */
+
+.Video {
+  display: block;
+  max-width: 100%;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    padding-bottom: calc(9 / 16 * 100%);
+    width: 100%;
+  }
+}
+
+.Video-media {
+  border: none;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}

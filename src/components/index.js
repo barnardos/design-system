@@ -58,6 +58,7 @@ import TextArea from "./TextArea";
 import TextInput from "./TextInput";
 import Title from "./Title";
 import Topic from "./Topic";
+import Video from "./Video";
 
 export {
   BackLink,
@@ -118,5 +119,6 @@ export {
   TextArea,
   TextInput,
   Title,
-  Topic
+  Topic,
+  Video
 };
