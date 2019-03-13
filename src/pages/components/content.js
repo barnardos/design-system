@@ -345,7 +345,10 @@ export default () => (
             <ListItem>include a transcription</ListItem>
           </BulletedList>
           <Example>
-            <Video src="https://www.youtube.com/embed/XnIcd4uJHao" />
+            <Video
+              title="Believe in me TV advert"
+              src="https://www.youtube.com/embed/XnIcd4uJHao"
+            />
           </Example>
           <Cite>
             View{" "}
