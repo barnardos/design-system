@@ -9,6 +9,7 @@
 }
 
 .Details-summary {
+  cursor: pointer;
   font: 300 var(--type-0) system-ui;
 }
 
