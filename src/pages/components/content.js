@@ -29,6 +29,7 @@ import Sections from "../../components/Sections";
 import Subheading from "../../components/Subheading";
 import Title from "../../components/Title";
 import Topic from "../../components/Topic";
+import Video from "../../components/Video";
 
 export const items = [
   {
@@ -343,6 +344,20 @@ export default () => (
             <ListItem>include subtitles</ListItem>
             <ListItem>include a transcription</ListItem>
           </BulletedList>
+          <Example>
+            <Video src="https://www.youtube.com/embed/XnIcd4uJHao" />
+          </Example>
+          <Cite>
+            View{" "}
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Video">
+              Video code
+            </Link>{" "}
+            and{" "}
+            <Link href="https://github.com/barnardos/design-system/issues/395">
+              Video research
+            </Link>{" "}
+            on GitHub.
+          </Cite>
           <Subheading>Caption</Subheading>
           <Paragraph>
             Use this component to add a caption, for example to images and
