@@ -25,6 +25,7 @@ import ProminentBlockQuote from "../../components/ProminentBlockQuote";
 import ProminentCallout from "../../components/ProminentCallout";
 import PullQuote from "../../components/PullQuote";
 import Section from "../../components/Section";
+import Sections from "../../components/Sections";
 import Subheading from "../../components/Subheading";
 import Title from "../../components/Title";
 import Topic from "../../components/Topic";
@@ -145,6 +146,10 @@ export const items = [
       {
         text: "Section",
         href: "/components/content/#section"
+      },
+      {
+        text: "Sections",
+        href: "/components/content/#sections"
       }
     ]
   }
@@ -485,7 +490,7 @@ export default () => (
           <Heading>Callouts</Heading>
           <Subheading>Callout</Subheading>
           <Paragraph>
-            Use this component to callout parts of the content.
+            Use this component to callout part of the content.
           </Paragraph>
           <Example>
             <Callout>
@@ -513,7 +518,7 @@ export default () => (
           </Cite>
           <Subheading>Prominent Callout</Subheading>
           <Paragraph>
-            Use this component to prominently callout parts of the content.
+            Use this component to prominently callout part of the content.
           </Paragraph>
           <Example>
             <ProminentCallout heading="Tips for dealing with stress:">
@@ -538,7 +543,9 @@ export default () => (
           </Cite>
           <Heading>Sectioning</Heading>
           <Subheading>Section</Subheading>
-          <Paragraph>Use this component to section parts of content.</Paragraph>
+          <Paragraph>
+            Use this component to section part of the content.
+          </Paragraph>
           <Example>
             <div
               style={{
@@ -546,13 +553,12 @@ export default () => (
               }}
             >
               <Section>
-                <Paragraph>1st section</Paragraph>
-              </Section>
-              <Section>
-                <Paragraph>2nd section</Paragraph>
-              </Section>
-              <Section>
-                <Paragraph>3rd section</Paragraph>
+                <Subheading>Going into care</Subheading>
+                <Paragraph>
+                  Going into care is a big step. This option will be looked at
+                  after checking whether there’s any other ways you could be
+                  properly cared for and feel safe at home.
+                </Paragraph>
               </Section>
             </div>
           </Example>
@@ -564,6 +570,40 @@ export default () => (
             and{" "}
             <Link href="https://github.com/barnardos/design-system/issues/462">
               Section research
+            </Link>{" "}
+            on GitHub.
+          </Cite>
+          <Subheading>Sections</Subheading>
+          <Paragraph>
+            Use this component to section more than one part of content.
+          </Paragraph>
+          <Example>
+            <div
+              style={{
+                paddingBottom: "4rem"
+              }}
+            >
+              <Sections>
+                <Section>
+                  <Paragraph>1st section</Paragraph>
+                </Section>
+                <Section>
+                  <Paragraph>2nd section</Paragraph>
+                </Section>
+                <Section>
+                  <Paragraph>3rd section</Paragraph>
+                </Section>
+              </Sections>
+            </div>
+          </Example>
+          <Cite>
+            View{" "}
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Sections">
+              Sections code
+            </Link>{" "}
+            and{" "}
+            <Link href="https://github.com/barnardos/design-system/issues/723">
+              Sections research
             </Link>{" "}
             on GitHub.
           </Cite>
