@@ -1,3 +1,4 @@
+import { withPrefix } from "gatsby";
 import React from "react";
 
 import BlockQuote from "../../components/BlockQuote";
@@ -85,12 +86,12 @@ export const items = [
     href: "/components/content/#media",
     items: [
       {
-        text: "Images",
-        href: "/components/content/#images"
+        text: "Image",
+        href: "/components/content/#image"
       },
       {
-        text: "Videos",
-        href: "/components/content/#videos"
+        text: "Video",
+        href: "/components/content/#video"
       },
       {
         text: "Caption",
@@ -330,16 +331,35 @@ export default () => (
             on GitHub.
           </Cite>
           <Heading>Media</Heading>
-          <Subheading>Images</Subheading>
-          <Paragraph>When displaying images you should:</Paragraph>
+          <Subheading>Image</Subheading>
+          <Paragraph>Use this component to display an image.</Paragraph>
+          <Paragraph>You should:</Paragraph>
           <BulletedList>
             <ListItem>match the tone of the surrounding copy</ListItem>
             <ListItem>
               include descriptive <Code>alt</Code> tags in the code
             </ListItem>
           </BulletedList>
-          <Subheading>Videos</Subheading>
-          <Paragraph>When displaying videos you should:</Paragraph>
+          <Example>
+            <Image
+              alt="Group collecting donations for Barnardo's"
+              src={withPrefix("/image-for-image-example.jpg")}
+            />
+          </Example>
+          <Cite>
+            View{" "}
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Image">
+              Image code
+            </Link>{" "}
+            and{" "}
+            <Link href="https://github.com/barnardos/design-system/issues/396">
+              Image research
+            </Link>{" "}
+            on GitHub.
+          </Cite>
+          <Subheading>Video</Subheading>
+          <Paragraph>Use this component to display a video.</Paragraph>
+          <Paragraph>You should:</Paragraph>
           <BulletedList>
             <ListItem>include subtitles</ListItem>
             <ListItem>include a transcription</ListItem>
@@ -376,8 +396,8 @@ export default () => (
           <Example>
             <Caption label="Participants receiving their certificate">
               <Image
-                src="https://dummyimage.com/1200x675/bbbbbb/d2d2d2.png&amp;text=16:9"
-                alt="A 6:9 dummy image"
+                alt="Lady holding a baby"
+                src={withPrefix("/image-for-caption-example.jpg")}
               />
             </Caption>
           </Example>
