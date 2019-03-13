@@ -72,6 +72,13 @@ export default () => (
             </ListItem>
           </BulletedList>
           <Paragraph>
+            To create a heirarchy following these standards,{" "}
+            <Link href="/components/content/#type-styles">
+              view the type components
+            </Link>
+            .
+          </Paragraph>
+          <Paragraph>
             Typography is subject to the{" "}
             <Link href="/standards/viewport-scale/">viewport scale</Link>.
           </Paragraph>

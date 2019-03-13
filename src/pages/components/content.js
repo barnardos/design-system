@@ -174,8 +174,11 @@ export default () => (
             Use these components to create a type hierarchy.
           </Paragraph>
           <Paragraph>
-            If your product has additional needs, follow the standards in{" "}
-            <Link href="/standards/typography/">Typography</Link>.
+            If your product has additional needs,{" "}
+            <Link href="/standards/typography/">
+              follow the typography standards
+            </Link>
+            .
           </Paragraph>
           <Subheading>Topic</Subheading>
           <Example>
