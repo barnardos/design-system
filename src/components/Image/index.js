@@ -3,7 +3,11 @@ import React from "react";
 
 import "./index.css";
 
-const Image = ({ alt, src }) => <img className="Image" alt={alt} src={src} />;
+const Image = ({ alt, src }) => (
+  <div className="Image">
+    <img className="Image-media" alt={alt} src={src} />
+  </div>
+);
 
 Image.propTypes = {
   alt: PropTypes.string.isRequired,
