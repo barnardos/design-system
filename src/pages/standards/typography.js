@@ -104,8 +104,8 @@ export default () => (
           <Paragraph>You should use Proxima Nova.</Paragraph>
           <Paragraph>You should only use the weights:</Paragraph>
           <BulletedList>
-            <ListItem>semi-bold</ListItem>
-            <ListItem>light</ListItem>
+            <ListItem>300 (light)</ListItem>
+            <ListItem>600 (semi-bold)</ListItem>
           </BulletedList>
           <Paragraph>
             Use ‘<Code>djy7snj</Code>’ for the{" "}
@@ -114,7 +114,7 @@ export default () => (
             </Link>
             . This code is valid for all of Barnardo’s products.
           </Paragraph>
-          <Heading>Body copy</Heading>
+          <Heading>Body copy font</Heading>
           <Paragraph>
             You should use the{" "}
             <Link href="https://www.w3.org/TR/css-fonts-4/#system-ui-def">
@@ -122,6 +122,11 @@ export default () => (
             </Link>{" "}
             generic font family.
           </Paragraph>
+          <Paragraph>You should only use the weights:</Paragraph>
+          <BulletedList>
+            <ListItem>300 (light)</ListItem>
+            <ListItem>600 (semi-bold)</ListItem>
+          </BulletedList>
           <Pagination
             previous={{
               href: "/standards/colour",
