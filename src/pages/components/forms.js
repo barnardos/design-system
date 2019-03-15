@@ -407,7 +407,7 @@ export default () => (
             <ListItem>not use a disabled state</ListItem>
           </BulletedList>
           <Example>
-            <Submit text="Send application" />
+            <Submit>Send application</Submit>
           </Example>
           <Cite>
             View{" "}

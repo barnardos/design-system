@@ -3,12 +3,14 @@ import React from "react";
 
 import "./index.css";
 
-const Submit = ({ text }) => (
-  <input className="Submit" type="submit" value={text} />
+const Submit = ({ children }) => (
+  <button className="Submit" type="submit">
+    {children}
+  </button>
 );
 
 Submit.propTypes = {
-  text: PropTypes.string.isRequired
+  children: PropTypes.node.isRequired
 };
 
 export default Submit;

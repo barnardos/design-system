@@ -75,7 +75,7 @@ export default () => (
             />
           </Form>
         </Filter>
-        <Submit text="Find" />
+        <Submit>Find</Submit>
       </Example>
       <Cite>
         View{" "}
