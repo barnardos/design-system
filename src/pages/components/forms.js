@@ -6,6 +6,7 @@ import CheckBox from "../../components/CheckBox";
 import CheckBoxes from "../../components/CheckBoxes";
 import Cite from "../../components/Cite";
 import Conditional from "../../components/Conditional";
+import Confirmation from "../../components/Confirmation";
 import Content from "../../components/Content";
 import Contents from "../../components/Contents";
 import ContentsMenu from "../../components/ContentsMenu";
@@ -95,6 +96,16 @@ export const items = [
       {
         text: "Error Summary",
         href: "/components/forms/#error-summary"
+      }
+    ]
+  },
+  {
+    text: "Confirmations",
+    href: "/components/forms/#confirmations",
+    items: [
+      {
+        text: "Confirmation",
+        href: "/components/forms/#confirmation"
       }
     ]
   }
@@ -479,6 +490,30 @@ export default () => (
               />
             </Figure>
           </Figures>
+          <Heading>Confirmations</Heading>
+          <Subheading>Confirmation</Subheading>
+          <Paragraph>
+            Use this component to provide a confirmation and reference number at
+            the end of a transaction.
+          </Paragraph>
+          <Example>
+            <Confirmation
+              title="Application complete"
+              lede="Your reference number"
+              reference="BE62KP08"
+            />
+          </Example>
+          <Cite>
+            View{" "}
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Confirmation">
+              Confirmation code
+            </Link>{" "}
+            and{" "}
+            <Link href="https://github.com/barnardos/design-system/issues/122">
+              Confirmation research
+            </Link>{" "}
+            on GitHub.
+          </Cite>
         </Content>
       </Contents>
     </Main>
