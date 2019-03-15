@@ -3,15 +3,15 @@ import React from "react";
 
 import "./index.css";
 
-const Command = ({ onClick, children }) => (
-  <button className="Command" onClick={onClick}>
+const Trigger = ({ onClick, children }) => (
+  <button className="Trigger" onClick={onClick}>
     {children}
   </button>
 );
 
-Command.propTypes = {
+Trigger.propTypes = {
   children: PropTypes.node.isRequired,
   onClick: PropTypes.func
 };
 
-export default Command;
+export default Trigger;

@@ -9,7 +9,6 @@ import CheckBox from "./CheckBox";
 import CheckBoxes from "./CheckBoxes";
 import Cite from "./Cite";
 import Code from "./Code";
-import Command from "./Command";
 import Conditional from "./Conditional";
 import ContentsMenu from "./ContentsMenu";
 import CurrencyInput from "./CurrencyInput";
@@ -58,6 +57,7 @@ import TextArea from "./TextArea";
 import TextInput from "./TextInput";
 import Title from "./Title";
 import Topic from "./Topic";
+import Trigger from "./Trigger";
 import Video from "./Video";
 
 export {
@@ -71,7 +71,6 @@ export {
   CheckBoxes,
   Cite,
   Code,
-  Command,
   Conditional,
   ContentsMenu,
   CurrencyInput,
@@ -120,5 +119,6 @@ export {
   TextInput,
   Title,
   Topic,
+  Trigger,
   Video
 };

@@ -1,8 +1,8 @@
 @import "../custom-properties.css";
 
-/** @define Command; */
+/** @define Trigger; */
 
-.Command {
+.Trigger {
   align-items: center;
   appearance: none;
   background: color-mod(var(--black) tint(80%));

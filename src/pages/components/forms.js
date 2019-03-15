@@ -5,7 +5,6 @@ import BulletedList from "../../components/BulletedList";
 import CheckBox from "../../components/CheckBox";
 import CheckBoxes from "../../components/CheckBoxes";
 import Cite from "../../components/Cite";
-import Command from "../../components/Command";
 import Conditional from "../../components/Conditional";
 import Content from "../../components/Content";
 import Contents from "../../components/Contents";
@@ -28,6 +27,7 @@ import Submit from "../../components/Submit";
 import TextArea from "../../components/TextArea";
 import TextInput from "../../components/TextInput";
 import Title from "../../components/Title";
+import Trigger from "../../components/Trigger";
 
 export const items = [
   {
@@ -79,8 +79,8 @@ export const items = [
     href: "/components/forms/#actions",
     items: [
       {
-        text: "Command",
-        href: "/components/forms/#command"
+        text: "Trigger",
+        href: "/components/forms/#trigger"
       },
       {
         text: "Submit",
@@ -377,21 +377,21 @@ export default () => (
             on GitHub.
           </Cite>
           <Heading>Actions</Heading>
-          <Subheading>Command</Subheading>
+          <Subheading>Trigger</Subheading>
           <Paragraph>
             Use this component for interactive triggers that don’t submit data.
           </Paragraph>
           <Example>
-            <Command>Print page</Command>
+            <Trigger>Print page</Trigger>
           </Example>
           <Cite>
             View{" "}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Command">
-              Command code
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Trigger">
+              Trigger code
             </Link>{" "}
             and{" "}
             <Link href="https://github.com/barnardos/design-system/issues/33">
-              Command research
+              Trigger research
             </Link>{" "}
             on GitHub.
           </Cite>

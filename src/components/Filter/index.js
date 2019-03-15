@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import React, { useState } from "react";
 
-import Command from "../Command";
+import Trigger from "../Trigger";
 
 import cross from "./cross.svg";
 
@@ -11,9 +11,9 @@ const Filter = ({ children }) => {
   const [isActive, setActive] = useState(false);
   return (
     <div className="Filter">
-      <Command onClick={() => setActive(!isActive)}>
+      <Trigger onClick={() => setActive(!isActive)}>
         {isActive ? <img alt="Close" src={cross} /> : `Filter`}
-      </Command>
+      </Trigger>
       <div
         className={`Filter-target ${isActive ? "Filter-target--active" : ""}`}
       >
