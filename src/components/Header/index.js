@@ -34,7 +34,7 @@ const Header = ({ href = "/", menu, search, title = "Go to the homepage" }) => {
             tabIndex="-1"
           >
             <img
-              alt=""
+              alt="Open"
               className="Header-triggerIcon"
               src={isActive ? cross : menu ? burger : glass}
             />
