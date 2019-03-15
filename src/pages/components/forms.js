@@ -449,34 +449,35 @@ export default () => (
           </Cite>
 
           <Figures>
-            <RadioButtons
-              items={[
-                {
-                  label: "Yes",
-                  id: "radio-buttons-example-validation-yes"
-                },
-                {
-                  label: "No",
-                  id: "radio-buttons-example-validation-no"
-                },
-                {
-                  label: "I’m not sure",
-                  id: "radio-buttons-example-validation-unsure"
-                }
-              ]}
-              error="Select whether the meal contains nuts or not"
-              hint="Nut allergies can be dangerous. Only choose ’No’ if you’re completely sure"
-              id="radio-buttons-example-validation"
-              legend="Does the meal include nuts?"
-              name="radio-buttons-example-validation"
-            />
-            <TextInput
-              id="text-input-validation-example"
-              label="Name of the meal"
-              size={48}
-              error="Enter the name of the meal"
-            />
-            <Figure caption="Form with errors connected to Error Summary" />
+            <Figure caption="Form with errors connected to Error Summary">
+              <TextInput
+                id="text-input-validation-example"
+                label="Name of the meal"
+                size={48}
+                error="Enter the name of the meal"
+              />
+              <RadioButtons
+                items={[
+                  {
+                    label: "Yes",
+                    id: "radio-buttons-example-validation-yes"
+                  },
+                  {
+                    label: "No",
+                    id: "radio-buttons-example-validation-no"
+                  },
+                  {
+                    label: "I’m not sure",
+                    id: "radio-buttons-example-validation-unsure"
+                  }
+                ]}
+                error="Select whether the meal contains nuts or not"
+                hint="Nut allergies can be dangerous. Only choose ’No’ if you’re completely sure"
+                id="radio-buttons-example-validation"
+                legend="Does the meal include nuts?"
+                name="radio-buttons-example-validation"
+              />
+            </Figure>
           </Figures>
         </Content>
       </Contents>
