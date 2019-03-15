@@ -1,0 +1,19 @@
+@import "../custom-properties.css";
+
+/** @define Confirmation; */
+
+.Confirmation {
+  background-color: var(--green);
+  color: var(--white);
+  padding: 1rem;
+  text-align: center;
+}
+
+.Confirmation-inner {
+  margin: 0 auto;
+  max-width: 36rem;
+}
+
+.Confirmation-reference {
+  display: block;
+}
