@@ -9,7 +9,7 @@ import CheckBox from "./CheckBox";
 import CheckBoxes from "./CheckBoxes";
 import Cite from "./Cite";
 import Code from "./Code";
-import Conditional from "./Conditional";
+import Confirmation from "./Confirmation";
 import ContentsMenu from "./ContentsMenu";
 import CurrencyInput from "./CurrencyInput";
 import DateInput from "./DateInput";
@@ -71,7 +71,7 @@ export {
   CheckBoxes,
   Cite,
   Code,
-  Conditional,
+  Confirmation,
   ContentsMenu,
   CurrencyInput,
   DateInput,
