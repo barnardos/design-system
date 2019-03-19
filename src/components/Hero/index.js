@@ -1,9 +1,12 @@
 import PropTypes from "prop-types";
 import React from "react";
 
+import Lede from "../Lede";
+import Title from "../Title";
+
 import "./index.css";
 
-const Hero = ({ children, src }) => (
+const Hero = ({ children, lede, src, title }) => (
   <div
     className={`Hero ${src ? "Hero--withImage" : ""}`}
     style={
@@ -14,13 +17,19 @@ const Hero = ({ children, src }) => (
         : {}
     }
   >
-    <div className="Hero-children">{children}</div>
+    <div className="Hero-inner">
+      {title && <Title>{title}</Title>}
+      {lede && <Lede>{lede}</Lede>}
+      {children && <div className="Hero-children">{children}</div>}
+    </div>
   </div>
 );
 
 Hero.propTypes = {
-  children: PropTypes.node.isRequired,
-  src: PropTypes.string
+  children: PropTypes.node,
+  lede: PropTypes.string,
+  src: PropTypes.string,
+  title: PropTypes.string.isRequired
 };
 
 export default Hero;
