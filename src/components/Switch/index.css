@@ -6,6 +6,10 @@
   min-height: 2rem;
   padding-left: 3rem;
   position: relative;
+
+  &:not(:first-child) {
+    margin-top: 2.5rem;
+  }
 }
 
 .Switch-label {

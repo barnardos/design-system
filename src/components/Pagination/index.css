@@ -3,9 +3,10 @@
 /** @define Pagination; */
 
 .Pagination {
+  max-width: 20rem;
+
   &:not(:first-child) {
-    margin-top: 2rem;
-    max-width: 20rem;
+    margin-top: 2.5rem;
   }
 }
 

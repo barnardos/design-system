@@ -7,4 +7,8 @@
   box-shadow: inset 0 0 0 1px color-mod(var(--black) tint(80%));
   color: var(--black);
   padding: 1rem;
+
+  &:not(:first-child) {
+    margin-top: 2.5rem;
+  }
 }

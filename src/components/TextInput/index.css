@@ -9,7 +9,7 @@
   box-shadow: inset 0 0 0 1px var(--black),
     inset 0 0.25rem color-mod(var(--black) alpha(20%));
   font: 300 var(--type-2) system-ui;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   max-width: 100%;
   padding: 0.5rem 0.75rem;
 }

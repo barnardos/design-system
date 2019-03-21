@@ -6,6 +6,7 @@
   color: color-mod(var(--green) shade(20%));
   display: inline-block;
   font: 300 var(--type-0) system-ui;
+  padding: 0.25rem 0;
 
   &::before {
     text-decoration: underline; /* ie11 fix */
@@ -29,5 +30,9 @@
 
   &:visited {
     color: var(--purple);
+  }
+
+  &:not(:first-child) {
+    margin-top: 1.25rem;
   }
 }

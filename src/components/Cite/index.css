@@ -5,7 +5,7 @@
 .Cite {
   color: color-mod(var(--black) tint(30%));
   font: 300 var(--type--1) system-ui;
-  max-width: 46rem;
+  max-width: 36rem;
 
   &:not(:first-child) {
     margin-top: 1.25rem;

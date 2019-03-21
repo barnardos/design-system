@@ -4,9 +4,10 @@
 
 .Fieldset {
   border: none;
+  max-width: 36rem;
 
   &:not(:first-child) {
-    margin-top: 1rem;
+    margin-top: 2.5rem;
   }
 }
 

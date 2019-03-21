@@ -9,13 +9,13 @@
   flex-wrap: wrap;
   margin: -1rem;
 
+  &:not(:first-child) {
+    margin-top: 2.5rem;
+  }
+
   & > * {
     flex: 0 0 20rem;
     margin: 1rem;
-  }
-
-  &:not(:first-child) {
-    margin-top: 1rem;
   }
 
   @supports (display: grid) {
