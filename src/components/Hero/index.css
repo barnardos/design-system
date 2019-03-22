@@ -16,7 +16,7 @@
   }
 }
 
-.Hero-children {
+.Hero-inner {
   max-width: 48rem;
   padding: 2rem 1rem;
 
@@ -25,11 +25,17 @@
   }
 }
 
+.Hero-children {
+  &:not(:first-child) {
+    margin-top: 1.5rem;
+  }
+}
+
 .Hero--withImage {
   height: 60vmin;
   min-height: 20rem;
 
-  & .Hero-children {
+  & .Hero-inner {
     bottom: -2rem;
     left: 1rem;
     position: absolute;
@@ -39,7 +45,7 @@
   @media (min-width: 48rem) {
     height: 60vmin;
 
-    & .Hero-children {
+    & .Hero-inner {
       left: 2rem;
       right: auto;
     }

@@ -2,7 +2,6 @@ import React from "react";
 
 import Feedback from "../components/Feedback";
 import Hero from "../components/Hero";
-import Lede from "../components/Lede";
 import Link from "../components/Link";
 import Main from "../components/Main";
 import Page from "../components/Page";
@@ -11,17 +10,14 @@ import Section from "../components/Section";
 import SignpostLink from "../components/SignpostLink";
 import Teaser from "../components/Teaser";
 import Teasers from "../components/Teasers";
-import Title from "../components/Title";
 
 export default () => (
   <Page title="Barnardo’s Design System">
     <Main>
-      <Hero>
-        <Title>Barnardo’s Design System</Title>
-        <Lede>
-          Designing and developing digital products for everyone, especially
-          children and young people.
-        </Lede>
+      <Hero
+        title="Barnardo’s Design System"
+        lede="Designing and developing digital products for everyone, especially children and young people."
+      >
         <SignpostLink inverted href="/getting-started/">
           Getting started
         </SignpostLink>
