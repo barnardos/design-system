@@ -47,6 +47,10 @@ export default () => (
               {
                 text: "Preventing spam",
                 href: "/patterns/preventing-spam/"
+              },
+              {
+                text: "Start page",
+                href: "/patterns/start-page/"
               }
             ]}
           />

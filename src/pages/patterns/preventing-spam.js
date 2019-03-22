@@ -60,6 +60,10 @@ export default () => (
           href: "/patterns/filtering",
           label: "Filtering"
         }}
+        next={{
+          href: "/patterns/start-page",
+          label: "Start page"
+        }}
       />
     </Main>
   </Page>

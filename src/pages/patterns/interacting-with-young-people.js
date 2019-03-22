@@ -66,20 +66,21 @@ export default () => (
             <ListItem>provide background information to build trust</ListItem>
           </BulletedList>
           <Figures>
-            <Callout>
-              <Image
-                src="https://dummyimage.com/1200x675/bbbbbb/d2d2d2.png&amp;text=16:9"
-                alt="A 6:9 dummy image"
-              />
-              <Heading>Sienna Stokes</Heading>
-              <Lede>Female, 49</Lede>
-              <Paragraph>
-                <strong>Children’s Services Manager</strong>
-                <br />
-                Fostering and adoption – South East Region
-              </Paragraph>
-            </Callout>
-            <Figure caption="Background information of who the young person is speaking to." />
+            <Figure caption="Background information of who the young person is speaking to.">
+              <Callout>
+                <Image
+                  src="https://dummyimage.com/1200x675/bbbbbb/d2d2d2.png&amp;text=16:9"
+                  alt="A 6:9 dummy image"
+                />
+                <Heading>Sienna Stokes</Heading>
+                <Lede>Female, 49</Lede>
+                <Paragraph>
+                  <strong>Children’s Services Manager</strong>
+                  <br />
+                  Fostering and adoption – South East Region
+                </Paragraph>
+              </Callout>
+            </Figure>
           </Figures>
           <Heading>Tone of voice</Heading>
           <Paragraph>You should:</Paragraph>
