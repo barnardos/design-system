@@ -1,5 +1,11 @@
 # Changelog
 
+## Head
+
+### Fixed
+
+- `Hero` spacing
+
 ## 0.5.0
 
 ### Changed
