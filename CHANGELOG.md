@@ -1,5 +1,26 @@
 # Changelog
 
+## Head
+
+### Changed
+
+- `Command` to `Trigger`
+- `ContentsMenu` `items` prop to accept nested `items` rather than `level`
+- `Hero` to explicitly accept `title` and `lede` props
+
+### Added
+
+- `Confirmation` component
+- `Details` component
+- `Image` component
+- `Video` component
+
+### Fixed
+
+- `BackLink`, `BlockQuote`, `Callouts`, `Caption`, `Cite`, `CurrencyInput`, `Details`, `DonateLink`, `ErrorSummary`, `Fact`, `Field`, `Fieldset`, `Form`, `Hint`, `Label`, `Pagination`, `ProminentBlockQuote`, `ProminentCallout`, `ProminentLink`, `PullQuote`, `StartLink`, `Subheading`, `Switch`, `Switches`, `Teasers`, `TextArea`, `TextInput`, `Title`, `Topic` and `Trigger` spacing
+- `BackLink` touch target size
+- `Header` and `Submit` HTML semantics
+
 ## 0.4.1
 
 ### Fixed
