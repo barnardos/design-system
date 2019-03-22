@@ -1,6 +1,6 @@
 # Changelog
 
-## Head
+## 0.5.1
 
 ### Fixed
 
