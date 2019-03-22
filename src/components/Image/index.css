@@ -13,6 +13,10 @@
     padding-bottom: calc(2 / 3 * 100%);
     width: 100%;
   }
+
+  &:not(:first-child) {
+    margin-top: 2.5rem;
+  }
 }
 
 .Image-media {

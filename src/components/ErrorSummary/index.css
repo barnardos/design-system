@@ -4,7 +4,12 @@
 
 .ErrorSummary {
   box-shadow: inset 0 0 0 0.25rem var(--red);
-  padding: 1rem;
+  max-width: 36rem;
+  padding: 1.25rem;
+
+  &:not(:first-child) {
+    margin-top: 2.5rem;
+  }
 }
 
 .ErrorSummary-heading {

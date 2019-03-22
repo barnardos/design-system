@@ -5,6 +5,7 @@
 .Label {
   display: block;
   font: 600 var(--type-3) system-ui;
+  max-width: 36rem;
 }
 
 .Label--inlined {

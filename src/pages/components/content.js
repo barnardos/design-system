@@ -202,7 +202,7 @@ export default () => (
           <Example>
             <div
               style={{
-                paddingBottom: "1rem"
+                paddingBottom: "2rem"
               }}
             >
               <Topic>Raising awareness</Topic>

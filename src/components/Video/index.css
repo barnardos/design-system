@@ -13,6 +13,10 @@
     padding-bottom: calc(9 / 16 * 100%);
     width: 100%;
   }
+
+  &:not(:first-child) {
+    margin-top: 2.5rem;
+  }
 }
 
 .Video-media {

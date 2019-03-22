@@ -36,7 +36,7 @@
   }
 
   &:not(:first-child) {
-    margin-top: 1.5rem;
+    margin-top: 2.5rem;
   }
 
   @media (min-width: 32rem) {

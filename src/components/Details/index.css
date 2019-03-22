@@ -3,6 +3,8 @@
 /** @define Details; */
 
 .Details {
+  max-width: 36rem;
+
   &:not(:first-child) {
     margin-top: 1.5rem;
   }

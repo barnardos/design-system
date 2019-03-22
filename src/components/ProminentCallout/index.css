@@ -11,7 +11,7 @@
   padding: 1.25rem;
 
   &:not(:first-child) {
-    margin-top: 2rem;
+    margin-top: 2.5rem;
   }
 }
 

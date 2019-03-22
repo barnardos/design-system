@@ -5,8 +5,13 @@
 .ProminentBlockQuote {
   background-color: var(--green);
   color: var(--white);
-  padding: 2rem 1rem;
+  max-width: 36rem;
+  padding: 2rem 1rem 3rem;
   text-align: center;
+
+  &:not(:first-child) {
+    margin-top: 2.5rem;
+  }
 
   @media (min-width: 32rem) {
     padding-left: 2rem;

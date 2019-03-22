@@ -5,8 +5,13 @@
 .Confirmation {
   background-color: var(--green);
   color: var(--white);
-  padding: 1rem;
+  max-width: 36rem;
+  padding: 2rem 1rem;
   text-align: center;
+
+  &:not(:first-child) {
+    margin-top: 2.5rem;
+  }
 }
 
 .Confirmation-inner {

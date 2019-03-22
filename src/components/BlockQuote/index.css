@@ -4,6 +4,10 @@
 
 .BlockQuote {
   color: var(--green);
+
+  &:not(:first-child) {
+    margin-top: 2.5rem;
+  }
 }
 
 .BlockQuote-media {
