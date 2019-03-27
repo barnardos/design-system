@@ -30,22 +30,29 @@ export default () => (
       <Topic>Accessibility</Topic>
       <Title>Testing</Title>
       <Paragraph>
-        You should pass the accessibility checks in{" "}
-        <Link href="https://www.deque.com/axe/">aXe</Link>.
+        Test your product using{" "}
+        <Link href="https://developers.google.com/web/tools/lighthouse/">
+          Lighthouse
+        </Link>
+        .
       </Paragraph>
+      <Paragraph>You should:</Paragraph>
+      <ListItem>pass the automated testing checks</ListItem>
+      <ListItem>
+        run through their ‘additional items to manually check’
+      </ListItem>
       <Paragraph>You should also:</Paragraph>
       <BulletedList>
         <ListItem>make page titles unique and descriptive</ListItem>
-        <ListItem>allow users to navigate only with a keyboard</ListItem>
-        <ListItem>enable the viewport to be zoomed to at least 200%</ListItem>
         <ListItem>
           avoid relying on colour or icons to convey important information
         </ListItem>
+        <ListItem>enable the viewport to be zoomed to at least 200%</ListItem>
       </BulletedList>
       <Cite>
         View{" "}
         <Link href="https://github.com/barnardos/design-system/issues/168">
-          accessibility research
+          testing research
         </Link>{" "}
         on GitHub.
       </Cite>
