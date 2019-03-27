@@ -24,7 +24,7 @@
 
 .Demo--constrained {
   & > * {
-    box-shadow: 0.25rem 0.25rem 0 color-mod(var(--teal) tint(20%));
+    box-shadow: 0 0.25rem 0 color-mod(var(--teal) tint(20%));
     margin: 0 auto;
     max-width: 28rem;
   }
