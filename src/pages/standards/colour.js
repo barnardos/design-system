@@ -113,7 +113,8 @@ export default () => (
           </Figures>
           <Heading>Light grey</Heading>
           <Paragraph>
-            You can use a 95% tint of Black for backgrounds.
+            As an exception to the colour scale, you can use a 95% tint of Black
+            for backgrounds.
           </Paragraph>
           <Figures>
             <Figure caption="95% tint of Black">
