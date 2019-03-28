@@ -57,12 +57,12 @@ export default () => (
       </Cite>
       <Pagination
         previous={{
-          href: "/patterns/filtering",
-          label: "Filtering"
+          href: "/patterns/gathering-information",
+          label: "Gathering information"
         }}
         next={{
-          href: "/patterns/start-page",
-          label: "Start page"
+          href: "/patterns/filtering",
+          label: "Filtering"
         }}
       />
     </Main>

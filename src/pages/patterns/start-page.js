@@ -70,9 +70,9 @@ export default () => (
         on GitHub.
       </Cite>
       <Pagination
-        previous={{
-          href: "/patterns/preventing-spam",
-          label: "Preventing spam"
+        next={{
+          href: "/patterns/gathering-information",
+          label: "Gathering information"
         }}
       />
     </Main>
