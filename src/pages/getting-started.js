@@ -1,8 +1,8 @@
 import React from "react";
 
 import Breadcrumbs from "../components/Breadcrumbs";
+import Link from "../components/DesignSystemLink";
 import Lede from "../components/Lede";
-import Link from "../components/Link";
 import Main from "../components/Main";
 import Page from "../components/Page";
 import Paragraph from "../components/Paragraph";

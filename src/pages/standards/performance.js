@@ -2,7 +2,7 @@ import React from "react";
 
 import Breadcrumbs from "../../components/Breadcrumbs";
 import Cite from "../../components/Cite";
-import Link from "../../components/Link";
+import Link from "../../components/DesignSystemLink";
 import Main from "../../components/Main";
 import Page from "../../components/Page";
 import Pagination from "../../components/Pagination";
