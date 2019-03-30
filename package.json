@@ -4,9 +4,9 @@
   "description": "Components of the Barnardo's Design System",
   "license": "MIT",
   "repository": "https://github.com/barnardos/design-system.git",
-  "main": "src/components/index.js",
+  "main": "dist/index.js",
   "files": [
-    "src/components",
+    "dist",
     "!*DS_Store"
   ],
   "scripts": {
@@ -20,6 +20,8 @@
     "build": "gatsby build",
     "serve": "gatsby serve --port 8000",
     "build-serve": "npm-run-all --sequential build serve",
+    "transpile": "webpack",
+    "prepublishOnly": "npm run transpile",
     "pretest": "npm-run-all --parallel lint check-format",
     "test": "jest --ci --runInBand",
     "watch-tests": "jest --watch --onlyChanged"
@@ -29,9 +31,12 @@
     "@barnardos/stylelint-config-barnardos": "^0.5.3",
     "axe-puppeteer": "^1.0.0",
     "babel-eslint": "^10.0.1",
+    "babel-preset-gatsby-package": "^0.1.4",
+    "css-loader": "^2.1.1",
     "eslint": "^5.15.1",
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-react": "^7.12.4",
+    "file-loader": "^3.0.1",
     "gatsby": "^2.1.30",
     "gatsby-plugin-google-analytics": "^2.0.17",
     "gatsby-plugin-postcss": "^2.0.6",
@@ -41,6 +46,7 @@
     "npm-run-all": "^4.1.5",
     "postcss-browser-reporter": "^0.5.0",
     "postcss-import": "^12.0.1",
+    "postcss-loader": "^3.0.0",
     "postcss-preset-env": "^6.6.0",
     "postcss-reporter": "^6.0.1",
     "prettier": "1.16.4",
@@ -50,10 +56,18 @@
     "react-helmet": "^5.2.0",
     "remark-cli": "^6.0.1",
     "remark-preset-lint-itgalaxy": "^14.0.0",
-    "stylelint": "^9.10.1"
+    "style-loader": "^0.23.1",
+    "stylelint": "^9.10.1",
+    "svg-url-loader": "^2.3.2",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
   },
   "dependencies": {
     "@sindresorhus/slugify": "^0.9.0",
     "url-polyfill": "^1.1.5"
+  },
+  "peerDependencies": {
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
   }
 }
