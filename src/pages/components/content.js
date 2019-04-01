@@ -36,7 +36,7 @@ import Video from "../../components/Video";
 export const items = [
   {
     text: "Type",
-    href: "/components/content/#type-styles",
+    href: "/components/content/#type",
     items: [
       {
         text: "Topic",
@@ -65,6 +65,10 @@ export const items = [
       {
         text: "Cite",
         href: "/components/content/#cite"
+      },
+      {
+        text: "Code",
+        href: "/components/content/#code"
       }
     ]
   },
@@ -273,6 +277,17 @@ export default () => (
             View{" "}
             <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Cite">
               Cite code
+            </Link>{" "}
+            on GitHub.
+          </Cite>
+          <Subheading>Code</Subheading>
+          <Example>
+            <Code>{`href="https://www.barnardos.org.uk"`}</Code>
+          </Example>
+          <Cite>
+            View{" "}
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Code">
+              Code component code
             </Link>{" "}
             on GitHub.
           </Cite>
