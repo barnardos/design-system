@@ -9,6 +9,8 @@ import Section from "../components/Section";
 import Sections from "../components/Sections";
 import Title from "../components/Title";
 
+import { items as gatheringInformationItems } from "./patterns/gathering-information";
+
 export default () => (
   <Page title="Patterns">
     <Breadcrumbs
@@ -27,30 +29,35 @@ export default () => (
       <Sections>
         <Section>
           <LandingMenu
+            heading="Forms"
             items={[
               {
+                text: "Start page",
+                href: "/patterns/start-page/"
+              },
+              {
                 text: "Gathering information",
-                href: "/patterns/gathering-information/"
-              },
-              {
-                text: "Asking for names",
-                href: "/patterns/asking-for-names/"
-              },
-              {
-                text: "Interacting with young people in real time",
-                href: "/patterns/interacting-with-young-people/"
-              },
-              {
-                text: "Filtering",
-                href: "/patterns/filtering/"
+                href: "/patterns/gathering-information/",
+                items: gatheringInformationItems
               },
               {
                 text: "Preventing spam",
                 href: "/patterns/preventing-spam/"
               },
               {
-                text: "Start page",
-                href: "/patterns/start-page/"
+                text: "Filtering",
+                href: "/patterns/filtering/"
+              }
+            ]}
+          />
+        </Section>
+        <Section>
+          <LandingMenu
+            heading="Engagement"
+            items={[
+              {
+                text: "Interacting with young people in real time",
+                href: "/patterns/interacting-with-young-people/"
               }
             ]}
           />

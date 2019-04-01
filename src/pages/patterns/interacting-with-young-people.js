@@ -16,7 +16,6 @@ import Link from "../../components/Link";
 import ListItem from "../../components/ListItem";
 import Main from "../../components/Main";
 import Page from "../../components/Page";
-import Pagination from "../../components/Pagination";
 import Paragraph from "../../components/Paragraph";
 import PullQuote from "../../components/PullQuote";
 import Title from "../../components/Title";
@@ -122,16 +121,6 @@ export default () => (
             </Link>{" "}
             on GitHub.
           </Cite>
-          <Pagination
-            previous={{
-              href: "/patterns/asking-for-names",
-              label: "Asking for names"
-            }}
-            next={{
-              href: "/patterns/filtering",
-              label: "Filtering"
-            }}
-          />
         </Content>
       </Contents>
     </Main>
