@@ -5,7 +5,6 @@
 .ProminentBlockQuote {
   background-color: var(--green);
   color: var(--white);
-  max-width: 36rem;
   padding: 2rem 1rem 3rem;
   text-align: center;
 
