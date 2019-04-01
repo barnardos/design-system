@@ -3,5 +3,6 @@
 /** @define Code; */
 
 .Code {
-  font: 400 var(--type-0) monospace;
+  font: 400 var(--type-1) monospace;
+  line-height: inherit;
 }
