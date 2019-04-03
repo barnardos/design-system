@@ -21,6 +21,14 @@ import TypeFigures from "../../components/TypeFigures";
 
 export const items = [
   {
+    text: "Brand font",
+    href: "/standards/typography/#brand-font"
+  },
+  {
+    text: "Body copy",
+    href: "/standards/typography/#body-copy-font"
+  },
+  {
     text: "Type scale",
     href: "/standards/typography/#type-scale"
   },
@@ -31,14 +39,6 @@ export const items = [
   {
     text: "Line length",
     href: "/standards/typography/#line-length"
-  },
-  {
-    text: "Brand font",
-    href: "/standards/typography/#brand-font"
-  },
-  {
-    text: "Body copy",
-    href: "/standards/typography/#body-copy"
   }
 ];
 
@@ -62,6 +62,34 @@ export default () => (
       <Contents>
         <ContentsMenu items={items} />
         <Content>
+          <Heading>Brand font</Heading>
+          <Paragraph>You should use Proxima Nova.</Paragraph>
+          <Paragraph>You should only use the weights:</Paragraph>
+          <BulletedList>
+            <ListItem>300 (light)</ListItem>
+            <ListItem>600 (semi-bold)</ListItem>
+          </BulletedList>
+          <Paragraph>
+            Use ‘<Code>djy7snj</Code>’ for the{" "}
+            <Link href="https://helpx.adobe.com/uk/fonts/using/embed-codes.html">
+              Adobe Fonts embed code
+            </Link>
+            . This code is valid for all Barnardo’s products.
+          </Paragraph>
+          <Heading>Body copy font</Heading>
+          <Paragraph>
+            You should use the{" "}
+            <Link href="https://www.w3.org/TR/css-fonts-4/#system-ui-def">
+              system-ui
+            </Link>{" "}
+            generic font family.
+          </Paragraph>
+          <Paragraph>You should only use the weights:</Paragraph>
+          <BulletedList>
+            <ListItem>300 (light)</ListItem>
+            <ListItem>600 (semi-bold)</ListItem>
+          </BulletedList>
+          <Heading>Type scale</Heading>
           <Paragraph>You should use:</Paragraph>
           <BulletedList>
             <ListItem>
@@ -72,17 +100,14 @@ export default () => (
             </ListItem>
           </BulletedList>
           <Paragraph>
-            To create a heirarchy following these standards,{" "}
-            <Link href="/components/content/#type-styles">
-              view the type components
-            </Link>
-            .
+            To create a consistent type hierarchy using these standards, you
+            should use{" "}
+            <Link href="/components/content/#type">the type components</Link>.
           </Paragraph>
           <Paragraph>
             Typography is subject to the{" "}
             <Link href="/standards/viewport-scale/">viewport scale</Link>.
           </Paragraph>
-          <Heading>Type scale</Heading>
           <Figures>
             <TypeFigures />
           </Figures>
@@ -99,40 +124,14 @@ export default () => (
           </Cite>
           <Heading>Line height</Heading>
           <Paragraph>
-            You should use multiples of 0.25rem (roughly 4px).
+            To make layouts align, you should use multiples of 0.25rem (roughly
+            4px) for line height.
           </Paragraph>
           <Heading>Line length</Heading>
           <Paragraph>The optimal line length of text is around:</Paragraph>
           <BulletedList>
             <ListItem>15–40 characters for short lines</ListItem>
             <ListItem>40–95 characters for body copy</ListItem>
-          </BulletedList>
-          <Heading>Brand font</Heading>
-          <Paragraph>You should use Proxima Nova.</Paragraph>
-          <Paragraph>You should only use the weights:</Paragraph>
-          <BulletedList>
-            <ListItem>300 (light)</ListItem>
-            <ListItem>600 (semi-bold)</ListItem>
-          </BulletedList>
-          <Paragraph>
-            Use ‘<Code>djy7snj</Code>’ for the{" "}
-            <Link href="https://helpx.adobe.com/uk/fonts/using/embed-codes.html">
-              Adobe Fonts embed code
-            </Link>
-            . This code is valid for all of Barnardo’s products.
-          </Paragraph>
-          <Heading>Body copy font</Heading>
-          <Paragraph>
-            You should use the{" "}
-            <Link href="https://www.w3.org/TR/css-fonts-4/#system-ui-def">
-              system-ui
-            </Link>{" "}
-            generic font family.
-          </Paragraph>
-          <Paragraph>You should only use the weights:</Paragraph>
-          <BulletedList>
-            <ListItem>300 (light)</ListItem>
-            <ListItem>600 (semi-bold)</ListItem>
           </BulletedList>
           <Pagination
             previous={{

@@ -193,7 +193,7 @@ export default () => (
         <Content>
           <Heading>Type</Heading>
           <Paragraph>
-            Use these components to create a type hierarchy.
+            Use these components to create a consistent type hierarchy.
           </Paragraph>
           <Paragraph>
             If your product has additional needs,{" "}
