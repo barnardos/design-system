@@ -1,8 +1,8 @@
 import React from "react";
 
 import Breadcrumbs from "../../components/Breadcrumbs";
-import BulletedList from "../../components/BulletedList";
 import Cite from "../../components/Cite";
+import Code from "../../components/Code";
 import ColourFigure from "../../components/ColourFigure";
 import ColourGreyFigure from "../../components/ColourGreyFigure";
 import Content from "../../components/Content";
@@ -12,7 +12,6 @@ import Figure from "../../components/Figure";
 import Figures from "../../components/Figures";
 import Heading from "../../components/Heading";
 import Link from "../../components/Link";
-import ListItem from "../../components/ListItem";
 import Main from "../../components/Main";
 import Page from "../../components/Page";
 import Pagination from "../../components/Pagination";
@@ -29,7 +28,13 @@ export const items = [
   },
   {
     text: "Colour scale",
-    href: "/standards/colour/#colour-scale"
+    href: "/standards/colour/#colour-scale",
+    items: [
+      {
+        text: "Generating colour scale",
+        href: "/standards/colour/#generating-colour-scale"
+      }
+    ]
   },
   {
     text: "Light grey",
@@ -57,14 +62,8 @@ export default () => (
       <Contents>
         <ContentsMenu items={items} />
         <Content>
-          <Paragraph>You should use:</Paragraph>
-          <BulletedList>
-            <ListItem>the brand colours</ListItem>
-            <ListItem>
-              a 10% increment scale for tints, shades and opacity
-            </ListItem>
-          </BulletedList>
           <Heading>Brand colours</Heading>
+          <Paragraph>You should use the brand colours.</Paragraph>
           <Subheading>Primary</Subheading>
           <Swatches
             swatches={[
@@ -99,10 +98,14 @@ export default () => (
             swatches={[[{ label: "Red", hex: "#c30000", primary: true }]]}
           />
           <Paragraph>
-            If your product is not Barnardo’s branded, you should still use the
-            colour scale.
+            If your product isn’t Barnardo’s branded you don’t need to use the
+            brand colours, but you should follow the colour scale.
           </Paragraph>
           <Heading>Colour scale</Heading>
+          <Paragraph>
+            You should use a scale of 10% increments for tints, shades and alpha
+            (opacity).
+          </Paragraph>
           <Figures>
             <Figure caption="Green with black (shade) applied in 10% increments.">
               <ColourFigure type="shade" />
@@ -111,6 +114,26 @@ export default () => (
               <ColourFigure type="tint" />
             </Figure>
           </Figures>
+          <Subheading>Generating colour scale</Subheading>
+          <Paragraph>
+            You can use the <Code>color-mod</Code> function to generate this
+            scale in CSS.
+          </Paragraph>
+          <Figures>
+            <Figure caption="20% tint of the brand Green.">
+              <Paragraph>
+                <Code>color: color-mod(var(--green) tint(20%));</Code>
+              </Paragraph>
+            </Figure>
+          </Figures>
+          <Paragraph>
+            If you need to create hex values of the colour scale, you can use
+            the{" "}
+            <Link href="https://maketintsandshades.com/">
+              tint and shade generator
+            </Link>
+            .
+          </Paragraph>
           <Heading>Light grey</Heading>
           <Paragraph>
             As an exception to the colour scale, you can use a 95% tint of Black
