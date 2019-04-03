@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import React from "react";
 
+import Image from "../Image";
 import Link from "../Link";
 
 import "./index.css";
@@ -8,8 +9,8 @@ import "./index.css";
 const Teaser = ({ children, heading, href, meta, src }) => (
   <Link className="Teaser" href={href}>
     {src && (
-      <div className="Teaser-media">
-        <img alt="" className="Teaser-image" src={src} />
+      <div className="Teaser-image">
+        <Image alt="" src={src} />
       </div>
     )}
     <div className="Teaser-text">

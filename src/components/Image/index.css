@@ -19,6 +19,12 @@
   }
 }
 
+.Image--1by1 {
+  &::before {
+    padding-bottom: 100%;
+  }
+}
+
 .Image-media {
   border: none;
   bottom: 0;
