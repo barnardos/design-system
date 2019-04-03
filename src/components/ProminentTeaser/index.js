@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import React from "react";
 
+import Image from "../Image";
 import ProminentLink from "../ProminentLink";
 
 import "./index.css";
@@ -16,8 +17,8 @@ const ProminentTeaser = ({
 }) => (
   <div className={`ProminentTeaser ProminentTeaser--${colour}`}>
     {src && (
-      <div className="ProminentTeaser-media">
-        <img alt="" className="ProminentTeaser-image" src={src} />
+      <div className="ProminentTeaser-image">
+        <Image alt="" src={src} />
       </div>
     )}
     <div className="ProminentTeaser-text">

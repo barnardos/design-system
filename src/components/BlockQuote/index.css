@@ -10,15 +10,11 @@
   }
 }
 
-.BlockQuote-media {
-  max-width: 20rem;
-  padding: 0 1.5rem;
-}
-
 .BlockQuote-image {
   border-radius: 50%;
-  display: block;
-  max-width: 100%;
+  margin: 0 1.5rem;
+  max-width: 20rem;
+  overflow: hidden;
 }
 
 .BlockQuote-text {

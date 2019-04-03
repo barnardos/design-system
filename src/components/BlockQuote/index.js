@@ -1,6 +1,8 @@
 import PropTypes from "prop-types";
 import React from "react";
 
+import Image from "../Image";
+
 import "./index.css";
 
 const BlockQuote = ({ children, colour, name, role, src }) => (
@@ -11,7 +13,9 @@ const BlockQuote = ({ children, colour, name, role, src }) => (
   >
     {src && (
       <div className="BlockQuote-media">
-        <img alt="" className="BlockQuote-image" src={src} />
+        <div className="BlockQuote-image">
+          <Image alt="" src={src} ratio="1by1" />
+        </div>
       </div>
     )}
     <div className="BlockQuote-text">
