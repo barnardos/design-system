@@ -13,7 +13,7 @@ import { items as colourItems } from "./standards/colour";
 import { items as typographyItems } from "./standards/typography";
 
 export default () => (
-  <Page title="Components">
+  <Page title="Standards">
     <Breadcrumbs
       items={[
         {
