@@ -1,11 +1,11 @@
-import { Link as GatsbyLink } from "gatsby";
+import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import React from "react";
 
-import Link from "../Link";
+import DesignSystemLink from "../Link";
 import "../Link/index.css";
 
-const DesignSystemLink = ({
+const GatsbyLink = ({
   children,
   inverted,
   href,
@@ -16,28 +16,28 @@ const DesignSystemLink = ({
   // Assume internal links start with exactly one slash
   if (/^\/(?!\/)/.test(href)) {
     return (
-      <GatsbyLink
+      <Link
         className={className}
         to={href}
         activeClassName={activeClassName}
         {...other}
       >
         {children}
-      </GatsbyLink>
+      </Link>
     );
   }
   return (
-    <Link inverted={inverted} href={href} {...other}>
+    <DesignSystemLink inverted={inverted} href={href} {...other}>
       {children}
-    </Link>
+    </DesignSystemLink>
   );
 };
 
-DesignSystemLink.propTypes = {
+GatsbyLink.propTypes = {
   activeClassName: PropTypes.string,
   href: PropTypes.string.isRequired,
   inverted: PropTypes.bool,
   children: PropTypes.node.isRequired
 };
 
-export default DesignSystemLink;
+export default GatsbyLink;

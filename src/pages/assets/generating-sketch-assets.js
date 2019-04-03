@@ -2,7 +2,7 @@ import React from "react";
 
 import Breadcrumbs from "../../components/Breadcrumbs";
 import Cite from "../../components/Cite";
-import Link from "../../components/DesignSystemLink";
+import Link from "../../components/GatsbyLink";
 import ListItem from "../../components/ListItem";
 import Main from "../../components/Main";
 import NumberedList from "../../components/NumberedList";

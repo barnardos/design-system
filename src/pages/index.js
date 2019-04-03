@@ -1,7 +1,7 @@
 import React from "react";
 
-import Link from "../components/DesignSystemLink";
 import Feedback from "../components/Feedback";
+import Link from "../components/GatsbyLink";
 import Hero from "../components/Hero";
 import Main from "../components/Main";
 import Page from "../components/Page";
