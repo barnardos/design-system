@@ -33,12 +33,12 @@ const SpacingFigure = () => (
       className="SpacingFigure-key"
       style={{
         height: "3rem",
-        top: "9.5rem"
+        top: "10rem"
       }}
     />
     <div
       style={{
-        maxWidth: "19rem",
+        maxWidth: "33rem",
         paddingLeft: "6rem",
         position: "relative",
         zIndex: "1"
@@ -58,7 +58,9 @@ const SpacingFigure = () => (
             marginTop: "1rem"
           }}
         >
-          <Paragraph>So that we can send you the certificate.</Paragraph>
+          <Paragraph>
+            How would you like to receive your certificate of participation.
+          </Paragraph>
         </div>
         <figcaption className="SpacingFigure-caption" style={{ top: "-1rem" }}>
           <p className="SpacingFigure-captionItem" style={{ top: "0" }}>
@@ -90,7 +92,7 @@ const SpacingFigure = () => (
           <p className="SpacingFigure-captionItem" style={{ top: "1.25rem" }}>
             1rem
           </p>
-          <p className="SpacingFigure-captionItem" style={{ top: "1.5rem" }}>
+          <p className="SpacingFigure-captionItem" style={{ top: "2rem" }}>
             3rem
           </p>
         </figcaption>
