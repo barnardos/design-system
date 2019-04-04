@@ -7,6 +7,7 @@ import Demo from "../../components/Demo";
 import DemoItem from "../../components/DemoItem";
 import Figure from "../../components/Figure";
 import Figures from "../../components/Figures";
+import Heading from "../../components/Heading";
 import Link from "../../components/Link";
 import ListItem from "../../components/ListItem";
 import Main from "../../components/Main";
@@ -34,16 +35,22 @@ export default () => (
     <Main>
       <Topic>Design</Topic>
       <Title>Spacing and layout</Title>
+      <Heading>Spacing</Heading>
       <Paragraph>
         You should use multiples of 0.25rem (roughly 4px) for spacing.
       </Paragraph>
       <Figures>
         <SpacingFigure />
       </Figures>
-      <Paragraph>To create consistent layouts you should:</Paragraph>
+      <Heading>Layout</Heading>
+      <Paragraph>To create fluid and responsive layouts you should:</Paragraph>
       <BulletedList>
-        <ListItem>use plenty white space between elements</ListItem>
-        <ListItem>limit the use of keylines</ListItem>
+        <ListItem>start with the most constrained environment</ListItem>
+        <ListItem>
+          define how components react as the viewport size changes
+        </ListItem>
+        <ListItem>use plenty white space</ListItem>
+        <ListItem>avoid fixed column grids</ListItem>
       </BulletedList>
       <Figures>
         <Figure caption="Expands to two-thirds/one-third with gutter of 2rem">
