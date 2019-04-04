@@ -29,15 +29,26 @@ export default () => (
         common problems.
       </Paragraph>
       <Paragraph>
-        Try to adopt as much of the Design System as possible. Depending on your
-        needs and constraints, you may not be able to adopt all of it. It’s not
-        all or nothing.
+        Start by familiarising yourself with the{" "}
+        <Link href="/principles/">principles</Link>,{" "}
+        <Link href="/standards/">standards</Link>,{" "}
+        <Link href="/components/">components</Link> and{" "}
+        <Link href="/patterns/">patterns</Link>.
       </Paragraph>
       <Paragraph>
-        If something isn’t in the Design System, don’t let it stop you. Design a
-        solution, test it and use it in your product. If you think it solves a
-        common problem{" "}
-        <Link href="/#feedback">let the Design System team know</Link>.
+        Then <Link href="/product-kit/">use the product kit</Link> to start
+        designing and developing your product. If you can’t use the kit,{" "}
+        <Link href="https://www.npmjs.com/package/@barnardos/components">
+          install the components (technical)
+        </Link>{" "}
+        on their own. Both allow you to import and update the components rather
+        than copy and paste the code.
+      </Paragraph>
+      <Paragraph>
+        If you need something that’s not in the Design System create and test a
+        solution in your product, and{" "}
+        <Link href="/#feedback">contribute it back</Link> if it solves a common
+        problem.
       </Paragraph>
       <SignpostLink href="/">Explore the Design System</SignpostLink>
     </Main>
