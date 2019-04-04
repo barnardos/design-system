@@ -47,18 +47,25 @@ export default () => (
         </Teasers>
       </Section>
       <Section>
-        <Feedback heading="Give feedback">
+        <Feedback heading="Get involved!">
           <Paragraph>
-            Email the Design System team on{" "}
+            Email the team at{" "}
             <Link href="mailto:designsystem@barnardos.org.uk">
               designsystem@barnardos.org.uk
             </Link>
             .
           </Paragraph>
           <Paragraph>
-            Contribute to the discussion on{" "}
+            Participate in the discussion on{" "}
             <Link href="https://barnardos.facebook.com/groups/design.system/">
               Workplace
+            </Link>
+            .
+          </Paragraph>
+          <Paragraph>
+            Contribute to the Design System on{" "}
+            <Link href="https://github.com/barnardos/design-system/blob/master/.github/CONTRIBUTING.md">
+              Github
             </Link>
             .
           </Paragraph>
