@@ -33,3 +33,17 @@
     padding-left: 1rem;
   }
 }
+
+.LandingMenu-items--level3 {
+  & .LandingMenu-link {
+    box-shadow: inset 0.25rem 0 0 color-mod(var(--black) tint(90%));
+    font: 300 var(--type-0) system-ui;
+    padding-left: 1rem;
+
+    &::before {
+      content: "- ";
+      display: inline-block;
+      margin-right: 0.5rem;
+    }
+  }
+}
