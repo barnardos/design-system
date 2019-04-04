@@ -41,8 +41,8 @@ export default () => (
           <Teaser href="/assets/" heading="Assets">
             Downloadable resources and guidance on creating your own assets.
           </Teaser>
-          <Teaser href="/example-product/" heading="Example product">
-            Following the standards and components of the Design System.
+          <Teaser href="/product-kit/" heading="Product kit">
+            Providing a foundation to start developing your product.
           </Teaser>
         </Teasers>
       </Section>

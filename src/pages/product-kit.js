@@ -8,7 +8,7 @@ import SignpostLink from "../components/SignpostLink";
 import Title from "../components/Title";
 
 export default () => (
-  <Page title="Example product">
+  <Page title="Product kit">
     <Breadcrumbs
       items={[
         {
@@ -18,10 +18,10 @@ export default () => (
       ]}
     />
     <Main>
-      <Title>Example product</Title>
-      <Lede>Following the standards and components of the Design System.</Lede>
+      <Title>Product kit</Title>
+      <Lede>Providing a foundation to start developing your product.</Lede>
       <SignpostLink href="https://barnardos-example-product.netlify.com/">
-        Go to example product
+        View the product kit
       </SignpostLink>
     </Main>
   </Page>
