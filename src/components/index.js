@@ -45,6 +45,7 @@ import PullQuote from "./PullQuote";
 import RadioButtons from "./RadioButtons";
 import Search from "./Search";
 import Section from "./Section";
+import Sections from "./Sections";
 import SignpostLink from "./SignpostLink";
 import Site from "./Site";
 import SkipLink from "./SkipLink";
@@ -109,6 +110,7 @@ export {
   RadioButtons,
   Search,
   Section,
+  Sections,
   SignpostLink,
   Site,
   SkipLink,
