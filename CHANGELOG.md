@@ -1,6 +1,6 @@
 # Changelog
 
-## Head
+## 0.6.0
 
 ### Added
 
