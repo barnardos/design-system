@@ -1,5 +1,17 @@
 # Changelog
 
+## Head
+
+### Added
+
+- `Code` component
+- `Image` `ratio` prop
+
+### Fixed
+
+- `ContentsMenu`, `ProminentBlockQuote` and `ProminentTeaser` look and feel
+- `BlockQuote`, `Teaser` and `ProminentTeaser` to consume `Image`
+
 ## 0.5.1
 
 ### Fixed
