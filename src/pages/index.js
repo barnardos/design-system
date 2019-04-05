@@ -42,7 +42,7 @@ export default () => (
             Downloadable resources and guidance on creating your own assets.
           </Teaser>
           <Teaser href="/product-kit/" heading="Product kit">
-            Providing a foundation to start developing your product.
+            Design, prototype and build your product.
           </Teaser>
         </Teasers>
       </Section>
