@@ -7,6 +7,6 @@
 }
 
 .Error-inner {
-  color: var(--red);
+  color: var(--error-colour);
   font: 600 var(--type-0) var(--body-font);
 }

@@ -42,6 +42,6 @@
 }
 
 .CurrencyInput-input--errored {
-  box-shadow: inset 0 0 0 1px var(--red),
-    inset 0 0.25rem color-mod(var(--red) alpha(20%));
+  box-shadow: inset 0 0 0 1px var(--error-colour),
+    inset 0 0.25rem color-mod(var(--error-colour) alpha(20%));
 }

@@ -23,6 +23,6 @@
 }
 
 .Fieldset--errored {
-  box-shadow: inset 0.25rem 0 0 var(--red);
+  box-shadow: inset 0.25rem 0 0 var(--error-colour);
   padding-left: 1rem;
 }
