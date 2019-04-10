@@ -376,6 +376,7 @@ export default () => (
               href="#"
               meta="14 April 2019"
               heading="Brighton Marathon"
+              src={withPrefix("/image-for-prominent-teaser-example.jpg")}
               text="Sign up"
             >
               Taking in the sights and sounds of the coast, this fantastic 26.2
