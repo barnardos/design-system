@@ -1,6 +1,9 @@
 *.log
 .DS_Store
 .cache
+cypress/fixtures
+cypress/screenshots
+cypress/videos
 public
 node_modules
 yarn.lock

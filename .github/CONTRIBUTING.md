@@ -16,7 +16,12 @@ Then run these commands:
 - `npm install` - install all dependencies
 - `npm start` - start a development server
 
-Before creating a PR you should run these commands:
+You can watch tests using:
+
+- `npm run watch-unit-tests`
+- `npm run watch-e2e-tests`
+
+Before creating a PR you should run:
 
 - `npm run format`
 - `npm run test`
