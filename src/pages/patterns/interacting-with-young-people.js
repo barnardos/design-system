@@ -41,20 +41,26 @@ export default () => (
           items={[
             {
               level: 1,
+              text: "Background information",
+              href:
+                "/patterns/interacting-with-young-people/#background-information"
+            },
+            {
+              level: 1,
               text: "Tone of voice",
               href: "/patterns/interacting-with-young-people/#tone-of-voice"
             },
             {
               level: 1,
-              text: "Data",
-              href: "/patterns/interacting-with-young-people/#data"
+              text: "Handling data",
+              href: "/patterns/interacting-with-young-people/#handling-data"
             }
           ]}
         />
         <Content>
           <Paragraph>
-            Use this pattern to interact with young people in real time, for
-            example online counselling.
+            Use this pattern when interacting with young people in real time,
+            for example online counselling.
           </Paragraph>
           <Paragraph>You should:</Paragraph>
           <BulletedList>
@@ -62,23 +68,33 @@ export default () => (
             <ListItem>
               give alternative options in case they need immediate support
             </ListItem>
-            <ListItem>provide background information to build trust</ListItem>
           </BulletedList>
+          <Heading>Background information</Heading>
+          <Paragraph>
+            To build trust you should provide information on who the young
+            person is speaking to.
+          </Paragraph>
           <Figures>
-            <Figure caption="Background information of who the young person is speaking to.">
-              <Callout>
-                <Image
-                  src="https://dummyimage.com/1200x675/bbbbbb/d2d2d2.png&amp;text=16:9"
-                  alt="A 6:9 dummy image"
-                />
-                <Heading>Sienna Stokes</Heading>
-                <Lede>Female, 49</Lede>
-                <Paragraph>
-                  <strong>Children’s Services Manager</strong>
-                  <br />
-                  Fostering and adoption – South East Region
-                </Paragraph>
-              </Callout>
+            <Figure caption="Information on who the young person is speaking to.">
+              <div
+                style={{
+                  maxWidth: "18rem"
+                }}
+              >
+                <Callout>
+                  <Image
+                    src="/image-for-interacting-example.jpg"
+                    ratio="1by1"
+                  />
+                  <Heading>Sienna Stokes</Heading>
+                  <Lede>Female, 32</Lede>
+                  <Paragraph>
+                    <strong>Children’s Services Manager</strong>
+                    <br />
+                    Fostering and adoption – South East Region
+                  </Paragraph>
+                </Callout>
+              </div>
             </Figure>
           </Figures>
           <Heading>Tone of voice</Heading>
@@ -99,21 +115,23 @@ export default () => (
                 situation?
               </PullQuote>
             </Callout>
-            <Figure caption="Calm, helpful and positive tone of voice." />
+            <Figure caption="Speaking in a calm, helpful and positive tone of voice." />
           </Figures>
-          <Heading>Data</Heading>
+          <Heading>Handling data</Heading>
           <Paragraph>You should:</Paragraph>
           <BulletedList>
+            <ListItem>make sure you are compliant with GDPR</ListItem>
             <ListItem>
-              follow the pattern for{" "}
+              follow the guidance on{" "}
               <Link href="/patterns/gathering-information/">
                 Gathering information
               </Link>
             </ListItem>
-            <ListItem>
-              record the conversation for staff and the young person to access
-            </ListItem>
           </BulletedList>
+          <Paragraph>
+            You can record the conversation for staff and the young person to
+            access.
+          </Paragraph>
           <Cite>
             View{" "}
             <Link href="https://github.com/barnardos/design-system/issues/637">
