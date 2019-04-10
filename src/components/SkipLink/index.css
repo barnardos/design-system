@@ -3,7 +3,7 @@
 /** @define SkipLink; */
 
 .SkipLink {
-  background-color: var(--yellow);
+  background-color: var(--focus-colour);
   color: var(--black);
   display: block;
   font: 300 var(--type-0) var(--body-font);

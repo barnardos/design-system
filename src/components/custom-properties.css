@@ -38,4 +38,5 @@
   --brand-colour: var(--green);
   --brand-font: proxima-nova, sans-serif;
   --error-colour: var(--red);
+  --focus-colour: var(--yellow);
 }
