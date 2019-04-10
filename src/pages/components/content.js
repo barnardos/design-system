@@ -438,9 +438,9 @@ export default () => (
           <Example>
             <BlockQuote
               colour="orange"
-              name="John Smith"
+              name="Juliana Santos"
               role="Teacher"
-              src="https://dummyimage.com/480x480/bbbbbb/d2d2d2.png&amp;text=1:1"
+              src={withPrefix("/image-for-blockquote-example.jpg")}
             >
               The family support worker is able to engage and build positive
               relationships with families who previously kept their distance
