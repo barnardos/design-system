@@ -28,11 +28,9 @@ export default () => (
     <Main>
       <Title>Generating Sketch assets</Title>
       <Paragraph>
-        The Design System allows designers and developers to{" "}
-        <Link href="https://www.npmjs.com/package/@barnardos/components">
-          install the components
-        </Link>{" "}
-        and design in the browser.
+        Designers and developers can{" "}
+        <Link href="/product-kit/">use the product kit</Link> to design and
+        prototype in the browser.
       </Paragraph>
       <Paragraph>
         Alternatively, you can use the{" "}
