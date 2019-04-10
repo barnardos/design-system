@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import React from "react";
 
-import Link from "../Link";
+import Link from "../GatsbyLink";
 
 import "./index.css";
 

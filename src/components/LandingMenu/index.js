@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import React from "react";
 
 import Heading from "../Heading";
-import Link from "../Link";
+import Link from "../GatsbyLink";
 import Paragraph from "../Paragraph";
 import SignpostLink from "../SignpostLink";
 

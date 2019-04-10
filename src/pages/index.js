@@ -18,7 +18,7 @@ export default () => (
         title="Barnardo’s Design System"
         lede="Designing and developing digital products for everyone, especially children and young people."
       >
-        <SignpostLink inverted href="/getting-started/">
+        <SignpostLink inverted href="/getting-started/" LinkComponent={Link}>
           Getting started
         </SignpostLink>
       </Hero>
