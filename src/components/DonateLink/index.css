@@ -1,0 +1,21 @@
+@import "../custom-properties.css";
+
+/** @define DonateLink; */
+
+.DonateLink {
+  background-color: var(--brand-colour);
+  color: var(--white);
+  display: inline-block;
+  font: 600 var(--type-2) var(--brand-font);
+  padding: 0.5rem 1rem;
+  position: relative;
+  text-align: center;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:not(:first-child) {
+    margin-top: 1.5rem;
+  }
+}

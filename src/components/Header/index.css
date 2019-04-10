@@ -43,7 +43,7 @@
   border-radius: 0;
   color: var(--black);
   display: flex;
-  font: 600 var(--type-0) proxima-nova, sans-serif;
+  font: 600 var(--type-0) var(--brand-font);
   justify-content: center;
   margin-left: 0.5rem;
   padding: 0 0.5rem;

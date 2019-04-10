@@ -5,7 +5,7 @@
 .SignpostLink {
   color: var(--brand-colour);
   display: inline-block;
-  font: 600 var(--type-2) proxima-nova, sans-serif;
+  font: 600 var(--type-2) var(--brand-font);
   padding: 0.25rem 0;
 
   &::after {
@@ -16,7 +16,7 @@
   &::after {
     content: "›";
     display: inline-block;
-    font: 300 var(--type-8) proxima-nova, sans-serif;
+    font: 300 var(--type-8) var(--brand-font);
     line-height: 0;
     margin-left: 0.5rem;
     position: relative;

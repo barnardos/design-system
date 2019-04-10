@@ -4,7 +4,7 @@
 
 .Topic {
   color: color-mod(var(--black) tint(30%));
-  font: 300 var(--type-3) proxima-nova, sans-serif;
+  font: 300 var(--type-3) var(--brand-font);
   margin-bottom: -2.5rem;
 
   &:not(:first-child) {

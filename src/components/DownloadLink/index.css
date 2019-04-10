@@ -5,7 +5,7 @@
 .DownloadLink-link {
   color: var(--brand-colour);
   display: inline-block;
-  font: 600 var(--type-2) proxima-nova, sans-serif;
+  font: 600 var(--type-2) var(--brand-font);
 
   &:hover {
     text-decoration: none;
@@ -23,6 +23,6 @@
 .DownloadLink-meta {
   color: var(--black);
   display: inline-block;
-  font: 300 var(--type-2) proxima-nova, sans-serif;
+  font: 300 var(--type-2) var(--brand-font);
   margin-left: 0.5rem;
 }

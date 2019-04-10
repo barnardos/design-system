@@ -24,7 +24,7 @@
 
 .Teaser-heading {
   color: var(--brand-colour);
-  font: 600 var(--type-5) proxima-nova, sans-serif;
+  font: 600 var(--type-5) var(--brand-font);
   text-decoration: underline;
 
   &:hover {

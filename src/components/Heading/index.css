@@ -3,7 +3,7 @@
 /** @define Heading; */
 
 .Heading {
-  font: 600 var(--type-6) proxima-nova, sans-serif;
+  font: 600 var(--type-6) var(--brand-font);
   max-width: 36rem;
 
   &:not(:first-child) {
@@ -11,6 +11,6 @@
   }
 
   @media (min-width: 40rem) {
-    font: 600 var(--type-7) proxima-nova, sans-serif;
+    font: 600 var(--type-7) var(--brand-font);
   }
 }

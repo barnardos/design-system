@@ -16,7 +16,7 @@
   &::before {
     content: "‹";
     display: inline-block;
-    font: 300 var(--type-6) proxima-nova, sans-serif;
+    font: 300 var(--type-6) var(--brand-font);
     line-height: 0;
     margin-right: 0.5rem;
     position: relative;

@@ -14,7 +14,7 @@
 }
 
 .Fact-children {
-  font: 600 var(--type-12) proxima-nova, sans-serif;
+  font: 600 var(--type-12) var(--brand-font);
 }
 
 .Fact-label {

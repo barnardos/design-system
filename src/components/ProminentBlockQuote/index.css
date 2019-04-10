@@ -19,7 +19,7 @@
 }
 
 .ProminentBlockQuote-children {
-  font: 300 var(--type-4) proxima-nova, sans-serif;
+  font: 300 var(--type-4) var(--brand-font);
   margin: 0 auto;
   max-width: 43rem;
   padding-top: 6rem;
@@ -32,7 +32,7 @@
   &::before {
     content: "“";
     display: block;
-    font: 600 var(--type-20) proxima-nova, sans-serif;
+    font: 600 var(--type-20) var(--brand-font);
     left: 0;
     line-height: 0;
     position: absolute;
