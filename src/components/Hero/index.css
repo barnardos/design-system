@@ -3,7 +3,7 @@
 /** @define Hero; */
 
 .Hero {
-  background-color: var(--green);
+  background-color: var(--brand-colour);
   background-position: top center;
   background-size: cover;
   color: var(--white);

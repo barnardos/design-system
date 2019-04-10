@@ -34,7 +34,7 @@
 }
 
 .Breadcrumbs-link {
-  color: color-mod(var(--green) shade(20%));
+  color: color-mod(var(--brand-colour) shade(20%));
   display: inline-block;
   font: 300 var(--type-0) system-ui;
   padding: 0.25rem 0;

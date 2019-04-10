@@ -3,7 +3,7 @@
 /** @define SignpostLink; */
 
 .SignpostLink {
-  color: var(--green);
+  color: var(--brand-colour);
   display: inline-block;
   font: 600 var(--type-2) proxima-nova, sans-serif;
   padding: 0.25rem 0;

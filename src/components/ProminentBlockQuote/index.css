@@ -3,7 +3,7 @@
 /** @define ProminentBlockQuote; */
 
 .ProminentBlockQuote {
-  background-color: var(--green);
+  background-color: var(--brand-colour);
   color: var(--white);
   padding: 2rem 1rem 3rem;
   text-align: center;

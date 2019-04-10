@@ -3,7 +3,7 @@
 /** @define Confirmation; */
 
 .Confirmation {
-  background-color: var(--green);
+  background-color: var(--brand-colour);
   color: var(--white);
   max-width: 36rem;
   padding: 2rem 1rem;

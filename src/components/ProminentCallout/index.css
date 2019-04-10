@@ -6,7 +6,7 @@
   background-color: var(--white);
   border-radius: 0;
   box-shadow: inset 0 0 0 0.25rem currentcolor;
-  color: var(--green);
+  color: var(--brand-colour);
   display: block;
   padding: 1.25rem;
 

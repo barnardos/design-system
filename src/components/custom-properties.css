@@ -32,4 +32,7 @@
   --black: #1d1d1d;
   --white: #fff;
   --yellow: #ffbf47;
+
+  /* site properties */
+  --brand-colour: var(--green);
 }

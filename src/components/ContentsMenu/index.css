@@ -10,7 +10,7 @@
 
 .ContentsMenu-inner {
   background: color-mod(var(--black) tint(95%));
-  box-shadow: 0 -0.25rem 0 0 var(--green);
+  box-shadow: 0 -0.25rem 0 0 var(--brand-colour);
   padding: 1rem;
 
   @media (min-width: 48rem) {

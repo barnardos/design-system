@@ -3,7 +3,7 @@
 /** @define DownloadLink; */
 
 .DownloadLink-link {
-  color: var(--green);
+  color: var(--brand-colour);
   display: inline-block;
   font: 600 var(--type-2) proxima-nova, sans-serif;
 

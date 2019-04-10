@@ -101,7 +101,7 @@
   }
 
   & .algolia-docsearch-suggestion--highlight {
-    background: color-mod(var(--green) alpha(10%));
+    background: color-mod(var(--brand-colour) alpha(10%));
   }
 
   & .algolia-docsearch-suggestion--no-results {
@@ -117,6 +117,6 @@
   }
 
   & .algolia-docsearch-footer--logo {
-    color: var(--green);
+    color: var(--brand-colour);
   }
 }

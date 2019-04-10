@@ -23,7 +23,7 @@
 }
 
 .Teaser-heading {
-  color: var(--green);
+  color: var(--brand-colour);
   font: 600 var(--type-5) proxima-nova, sans-serif;
   text-decoration: underline;
 

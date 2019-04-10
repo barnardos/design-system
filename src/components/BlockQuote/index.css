@@ -3,7 +3,7 @@
 /** @define BlockQuote; */
 
 .BlockQuote {
-  color: var(--green);
+  color: var(--brand-colour);
 
   &:not(:first-child) {
     margin-top: 2.5rem;

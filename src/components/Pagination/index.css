@@ -19,7 +19,7 @@
 }
 
 .Pagination-link {
-  color: color-mod(var(--green) shade(20%));
+  color: color-mod(var(--brand-colour) shade(20%));
   display: block;
   padding-left: 1.25rem;
   position: relative;
