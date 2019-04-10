@@ -45,7 +45,7 @@
   }
 
   &:visited {
-    color: var(--purple);
+    color: var(--visited-link-colour);
   }
 }
 

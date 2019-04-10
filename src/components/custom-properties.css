@@ -39,4 +39,5 @@
   --brand-font: proxima-nova, sans-serif;
   --error-colour: var(--red);
   --focus-colour: var(--yellow);
+  --visited-link-colour: var(--purple);
 }
