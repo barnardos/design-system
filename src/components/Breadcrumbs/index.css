@@ -36,7 +36,7 @@
 .Breadcrumbs-link {
   color: color-mod(var(--brand-colour) shade(20%));
   display: inline-block;
-  font: 300 var(--type-0) system-ui;
+  font: 300 var(--type-0) var(--body-font);
   padding: 0.25rem 0;
 
   &:hover {

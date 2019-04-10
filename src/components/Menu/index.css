@@ -62,7 +62,7 @@
 .Menu-secondaryLink {
   color: var(--black);
   display: block;
-  font: 300 var(--type-1) system-ui;
+  font: 300 var(--type-1) var(--body-font);
   margin: 0.25rem 0;
   padding: 0.5rem 1rem;
   text-decoration: none;

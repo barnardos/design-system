@@ -34,12 +34,12 @@
 
 .Teaser-meta {
   color: color-mod(var(--black) tint(30%));
-  font: 300 var(--type-0) system-ui;
+  font: 300 var(--type-0) var(--body-font);
   margin-top: 0.5rem;
 }
 
 .Teaser-children {
   color: var(--black);
-  font: 300 var(--type-1) system-ui;
+  font: 300 var(--type-1) var(--body-font);
   margin-top: 1rem;
 }

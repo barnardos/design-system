@@ -20,7 +20,7 @@
     inset 0 0.25rem color-mod(var(--black) alpha(20%));
   display: block;
   flex: 1;
-  font: 300 var(--type-2) system-ui;
+  font: 300 var(--type-2) var(--body-font);
   padding: 0.5rem 0.75rem;
   z-index: 1;
 

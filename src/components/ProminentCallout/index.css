@@ -22,7 +22,7 @@
 
 .ProminentCallout-children {
   color: var(--black);
-  font: 300 var(--type-1) system-ui;
+  font: 300 var(--type-1) var(--body-font);
   margin-top: 1rem;
 }
 

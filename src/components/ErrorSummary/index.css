@@ -13,7 +13,7 @@
 }
 
 .ErrorSummary-heading {
-  font: 600 var(--type-3) system-ui;
+  font: 600 var(--type-3) var(--body-font);
 }
 
 .ErrorSummary-items {
@@ -29,7 +29,7 @@
 
 .ErrorSummary-link {
   color: var(--red);
-  font: 600 var(--type-0) system-ui;
+  font: 600 var(--type-0) var(--body-font);
 
   &:hover {
     text-decoration: none;

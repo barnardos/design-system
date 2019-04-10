@@ -18,7 +18,7 @@
 }
 
 .Fact-label {
-  font: 600 var(--type-2) system-ui;
+  font: 600 var(--type-2) var(--body-font);
 }
 
 .Fact--orange {

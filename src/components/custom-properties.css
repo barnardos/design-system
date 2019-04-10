@@ -36,4 +36,5 @@
   /* site properties */
   --brand-colour: var(--green);
   --brand-font: proxima-nova, sans-serif;
+  --body-font: system-ui;
 }

@@ -21,6 +21,6 @@
 
 .Feedback-children {
   color: var(--black);
-  font: 300 var(--type-0) system-ui;
+  font: 300 var(--type-0) var(--body-font);
   margin-top: 0.75rem;
 }

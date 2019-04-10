@@ -14,7 +14,7 @@
 
 .Switch-label {
   display: block;
-  font: 300 var(--type-2) system-ui;
+  font: 300 var(--type-2) var(--body-font);
 
   &::before {
     box-shadow: 0 0 0 1px var(--black);

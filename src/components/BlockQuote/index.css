@@ -50,11 +50,11 @@
 
 .BlockQuote-role {
   color: var(--black);
-  font: 300 var(--type-2) system-ui;
+  font: 300 var(--type-2) var(--body-font);
 }
 
 .BlockQuote-name {
-  font: 600 var(--type-2) system-ui;
+  font: 600 var(--type-2) var(--body-font);
 }
 
 .BlockQuote--orange {

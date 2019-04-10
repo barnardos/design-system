@@ -3,7 +3,7 @@
 /** @define NumberedList; */
 
 .NumberedList {
-  font: 300 var(--type-0) system-ui;
+  font: 300 var(--type-0) var(--body-font);
   max-width: 36rem;
   padding-left: 1rem;
 

@@ -14,7 +14,7 @@
 .Fieldset-legend {
   display: block;
   float: left;
-  font: 600 var(--type-3) system-ui;
+  font: 600 var(--type-3) var(--body-font);
 }
 
 .Fieldset-children {

@@ -61,5 +61,5 @@
 
 .Pagination-label {
   display: block;
-  font: 300 var(--type-0) system-ui;
+  font: 300 var(--type-0) var(--body-font);
 }

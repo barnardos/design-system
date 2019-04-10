@@ -13,7 +13,7 @@
     color: var(--white);
     content: "Example";
     display: block;
-    font: 300 var(--type--1) system-ui;
+    font: 300 var(--type--1) var(--body-font);
     left: 0;
     line-height: 1.25;
     padding: 0.25rem 0.5rem;

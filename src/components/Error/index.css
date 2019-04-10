@@ -8,5 +8,5 @@
 
 .Error-inner {
   color: var(--red);
-  font: 600 var(--type-0) system-ui;
+  font: 600 var(--type-0) var(--body-font);
 }
