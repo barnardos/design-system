@@ -8,7 +8,6 @@ import Cite from "../../components/Cite";
 import Content from "../../components/Content";
 import Contents from "../../components/Contents";
 import ContentsMenu from "../../components/ContentsMenu";
-import DonateLink from "../../components/DonateLink";
 import DownloadLink from "../../components/DownloadLink";
 import Example from "../../components/Example";
 import Heading from "../../components/Heading";
@@ -47,10 +46,6 @@ export const items = [
       {
         text: "Start Link",
         href: "/components/navigation/#start-link"
-      },
-      {
-        text: "Donate Link",
-        href: "/components/navigation/#donate-link"
       },
       {
         text: "Prominent Link",
@@ -228,27 +223,6 @@ export default () => (
             </Link>{" "}
             on GitHub.
           </Cite>
-          <Subheading>Donate Link</Subheading>
-          <Paragraph>
-            Use this component to link to the service to donate.
-          </Paragraph>
-          <Paragraph>
-            When using this component you should only use the Green colour.
-          </Paragraph>
-          <Example>
-            <DonateLink href="#" />
-          </Example>
-          <Cite>
-            View{" "}
-            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/DonateLink">
-              Donate Link code
-            </Link>{" "}
-            and{" "}
-            <Link href="https://github.com/barnardos/design-system/issues/353">
-              Donate Link research
-            </Link>{" "}
-            on GitHub.
-          </Cite>
           <Subheading>Prominent Link</Subheading>
           <Paragraph>Use this component within featured content.</Paragraph>
           <Paragraph>When using this component you should:</Paragraph>
@@ -256,16 +230,15 @@ export default () => (
             <ListItem>limit the number on each page</ListItem>
             <ListItem>use sentence case</ListItem>
             <ListItem>use a verb, for example donate</ListItem>
-            <ListItem>not use the Green colour</ListItem>
             <ListItem>
               not use terms like ‘Read more’ and ‘Find out more’
             </ListItem>
           </BulletedList>
           <Example>
-            <ProminentLink colour="pink" href="#" text="Volunteer with us" />
+            <ProminentLink href="#" text="Donate" />
           </Example>
           <Example>
-            <ProminentLink colour="black" href="#" text="Shop online" />
+            <ProminentLink colour="pink" href="#" text="Volunteer with us" />
           </Example>
           <Cite>
             View{" "}

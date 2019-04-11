@@ -13,7 +13,6 @@ import Confirmation from "./Confirmation";
 import ContentsMenu from "./ContentsMenu";
 import CurrencyInput from "./CurrencyInput";
 import DateInput from "./DateInput";
-import DonateLink from "./DonateLink";
 import Error from "./Error";
 import ErrorSummary from "./ErrorSummary";
 import Fact from "./Fact";
@@ -76,7 +75,6 @@ export {
   ContentsMenu,
   CurrencyInput,
   DateInput,
-  DonateLink,
   Error,
   ErrorSummary,
   Fact,
