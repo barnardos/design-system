@@ -25,8 +25,8 @@ export const items = [
     href: "/standards/typography/#brand-font"
   },
   {
-    text: "Body copy",
-    href: "/standards/typography/#body-copy-font"
+    text: "Body font",
+    href: "/standards/typography/#body-font"
   },
   {
     text: "Type scale",
@@ -76,7 +76,7 @@ export default () => (
             </Link>
             . This code is valid for all Barnardo’s products.
           </Paragraph>
-          <Heading>Body copy font</Heading>
+          <Heading>Body font</Heading>
           <Paragraph>
             You should use the{" "}
             <Link href="https://www.w3.org/TR/css-fonts-4/#system-ui-def">
