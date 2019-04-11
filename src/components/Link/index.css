@@ -8,7 +8,7 @@
   }
 
   &:visited {
-    color: var(--visited-link-colour);
+    color: var(--visited-colour);
   }
 }
 
