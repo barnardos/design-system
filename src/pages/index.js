@@ -24,6 +24,9 @@ export default () => (
       </Hero>
       <Section>
         <Teasers>
+          <Teaser href="/principles/" heading="Principles">
+            How we think about design.
+          </Teaser>
           <Teaser href="/standards/" heading="Standards">
             Guidelines on how to adopt our ways of working.
           </Teaser>
@@ -34,9 +37,6 @@ export default () => (
           <Teaser href="/patterns/" heading="Patterns">
             Put the building blocks together to help users complete common
             tasks.
-          </Teaser>
-          <Teaser href="/principles/" heading="Principles">
-            How we think about design.
           </Teaser>
           <Teaser href="/assets/" heading="Assets">
             Downloadable resources and guidance on creating your own assets.
