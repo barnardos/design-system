@@ -6,7 +6,7 @@
   color: var(--brand-colour);
   display: inline-block;
   font: 600 var(--type-2) var(--brand-font);
-  padding: 0.25rem 0;
+  padding: 0.25rem 1.5rem 0.25rem 0;
 
   &::after {
     text-decoration: underline; /* ie11 fix */
@@ -18,10 +18,11 @@
     display: inline-block;
     font: 300 var(--type-8) var(--brand-font);
     line-height: 0;
-    margin-left: 0.5rem;
+    margin: 0 -1.5rem 0 0.5rem;
     position: relative;
     text-decoration: none;
     top: 0.25rem;
+    width: 1rem;
   }
 
   &:hover {
