@@ -7,7 +7,7 @@ import "./index.css";
 
 const ProminentLink = ({ colour, href, full, text }) => (
   <Link
-    className={`ProminentLink ProminentLink--${colour} ${
+    className={`ProminentLink ${colour ? `ProminentLink--${colour}` : ""} ${
       full ? "ProminentLink--full" : ""
     }`}
     href={href}
