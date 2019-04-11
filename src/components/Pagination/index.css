@@ -19,7 +19,7 @@
 }
 
 .Pagination-link {
-  color: color-mod(var(--green) shade(20%));
+  color: color-mod(var(--brand-colour) shade(20%));
   display: block;
   padding-left: 1.25rem;
   position: relative;
@@ -32,7 +32,7 @@
   &::before {
     content: "‹";
     display: inline-block;
-    font: 300 var(--type-8) proxima-nova, sans-serif;
+    font: 300 var(--type-8) var(--brand-font);
     left: 0;
     line-height: 0;
     position: absolute;
@@ -45,7 +45,7 @@
   }
 
   &:visited {
-    color: var(--purple);
+    color: var(--visited-colour);
   }
 }
 
@@ -56,10 +56,10 @@
 }
 
 .Pagination-text {
-  font: 600 var(--type-2) proxima-nova, sans-serif;
+  font: 600 var(--type-2) var(--brand-font);
 }
 
 .Pagination-label {
   display: block;
-  font: 300 var(--type-0) system-ui;
+  font: 300 var(--type-0) var(--body-font);
 }

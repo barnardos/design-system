@@ -3,7 +3,7 @@
 /** @define ListItem; */
 
 .ListItem {
-  font: 300 var(--type-0) system-ui;
+  font: 300 var(--type-0) var(--body-font);
   margin-left: 0.25rem;
 
   &:not(:first-child) {

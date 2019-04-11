@@ -3,7 +3,7 @@
 /** @define Lede; */
 
 .Lede {
-  font: 300 var(--type-4) proxima-nova, sans-serif;
+  font: 300 var(--type-4) var(--brand-font);
   max-width: 36rem;
 
   &:not(:first-child) {

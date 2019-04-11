@@ -13,7 +13,7 @@
 .Figure-caption {
   background: color-mod(var(--black) tint(90%));
   display: block;
-  font: 300 var(--type--1) system-ui;
+  font: 300 var(--type--1) var(--body-font);
   font-variant-numeric: tabular-nums;
   margin-top: 1rem;
   padding: 0 0.5rem;

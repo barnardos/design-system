@@ -3,10 +3,9 @@
 /** @define SkipLink; */
 
 .SkipLink {
-  background-color: var(--yellow);
   color: var(--black);
   display: block;
-  font: 300 var(--type-0) system-ui;
+  font: 300 var(--type-0) var(--body-font);
   left: -100vw;
   margin-bottom: 0.75rem;
   padding: 0.5rem 2rem;
@@ -18,6 +17,7 @@
   }
 
   &:focus {
+    background-color: var(--focus-colour);
     position: static;
   }
 }

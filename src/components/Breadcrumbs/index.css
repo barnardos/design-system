@@ -24,7 +24,7 @@
     &::before {
       color: color-mod(var(--black) tint(80%));
       content: "›";
-      font: 300 var(--type-6) proxima-nova, sans-serif;
+      font: 300 var(--type-6) var(--brand-font);
       line-height: 0;
       margin: 0.5rem 0 0 -1rem;
       position: absolute;
@@ -34,9 +34,9 @@
 }
 
 .Breadcrumbs-link {
-  color: color-mod(var(--green) shade(20%));
+  color: color-mod(var(--brand-colour) shade(20%));
   display: inline-block;
-  font: 300 var(--type-0) system-ui;
+  font: 300 var(--type-0) var(--body-font);
   padding: 0.25rem 0;
 
   &:hover {

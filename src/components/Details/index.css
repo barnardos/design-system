@@ -12,7 +12,7 @@
 
 .Details-summary {
   cursor: pointer;
-  font: 300 var(--type-0) system-ui;
+  font: 300 var(--type-0) var(--body-font);
 }
 
 .Details-children {

@@ -4,17 +4,17 @@
 
 .Submit {
   appearance: none;
-  background-color: var(--green);
+  background-color: var(--brand-colour);
   background-image: linear-gradient(
-    color-mod(var(--green) tint(20%)),
-    var(--green)
+    color-mod(var(--brand-colour) tint(20%)),
+    var(--brand-colour)
   );
   border: none;
   border-radius: 2rem;
-  box-shadow: inset 0 0 0 1px color-mod(var(--green) shade(30%)),
-    inset 0 -0.25rem color-mod(var(--green) shade(60%) alpha(70%));
+  box-shadow: inset 0 0 0 1px color-mod(var(--brand-colour) shade(30%)),
+    inset 0 -0.25rem color-mod(var(--brand-colour) shade(60%) alpha(70%));
   color: var(--white);
-  font: 600 var(--type-2) proxima-nova, sans-serif;
+  font: 600 var(--type-2) var(--brand-font);
   min-height: 3.25rem;
   min-width: 6rem;
   padding: 0 3rem;
@@ -24,13 +24,13 @@
 
   &:hover {
     background-image: linear-gradient(
-      var(--green),
-      color-mod(var(--green) shade(20%))
+      var(--brand-colour),
+      color-mod(var(--brand-colour) shade(20%))
     );
   }
 
   &:active {
-    box-shadow: inset 0 0 0 1px color-mod(var(--green) shade(30%));
+    box-shadow: inset 0 0 0 1px color-mod(var(--brand-colour) shade(30%));
     position: relative;
     top: 0.25rem;
   }

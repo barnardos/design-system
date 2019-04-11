@@ -3,9 +3,9 @@
 /** @define BackLink; */
 
 .BackLink {
-  color: color-mod(var(--green) shade(20%));
+  color: color-mod(var(--brand-colour) shade(20%));
   display: inline-block;
-  font: 300 var(--type-0) system-ui;
+  font: 300 var(--type-0) var(--body-font);
   padding: 0.25rem 0;
 
   &::before {
@@ -16,7 +16,7 @@
   &::before {
     content: "‹";
     display: inline-block;
-    font: 300 var(--type-6) proxima-nova, sans-serif;
+    font: 300 var(--type-6) var(--brand-font);
     line-height: 0;
     margin-right: 0.5rem;
     position: relative;
@@ -29,7 +29,7 @@
   }
 
   &:visited {
-    color: var(--purple);
+    color: var(--visited-colour);
   }
 
   &:not(:first-child) {

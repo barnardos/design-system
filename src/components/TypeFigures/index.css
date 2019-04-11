@@ -3,41 +3,41 @@
 /** @define TypeFigures; */
 
 .TypeFigures-figure--slotMinus2 {
-  font: 300 var(--type--2) system-ui;
+  font: 300 var(--type--2) var(--body-font);
 }
 
 .TypeFigures-figure--slotMinus1 {
-  font: 300 var(--type--1) system-ui;
+  font: 300 var(--type--1) var(--body-font);
 }
 
 .TypeFigures-figure--slot0 {
-  font: 300 var(--type-0) system-ui;
+  font: 300 var(--type-0) var(--body-font);
 }
 
 .TypeFigures-figure--slot1 {
-  font: 300 var(--type-1) system-ui;
+  font: 300 var(--type-1) var(--body-font);
 }
 
 .TypeFigures-figure--slot2 {
-  font: 300 var(--type-2) system-ui;
+  font: 300 var(--type-2) var(--body-font);
 }
 
 .TypeFigures-figure--slot3 {
-  font: 300 var(--type-3) system-ui;
+  font: 300 var(--type-3) var(--body-font);
 }
 
 .TypeFigures-figure--slot4 {
-  font: 300 var(--type-4) system-ui;
+  font: 300 var(--type-4) var(--body-font);
 }
 
 .TypeFigures-figure--slot5 {
-  font: 300 var(--type-5) system-ui;
+  font: 300 var(--type-5) var(--body-font);
 }
 
 .TypeFigures-figure--slot6 {
-  font: 300 var(--type-6) system-ui;
+  font: 300 var(--type-6) var(--body-font);
 }
 
 .TypeFigures-figure--slot7 {
-  font: 300 var(--type-7) system-ui;
+  font: 300 var(--type-7) var(--body-font);
 }

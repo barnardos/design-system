@@ -3,7 +3,7 @@
 /** @define BlockQuote; */
 
 .BlockQuote {
-  color: var(--green);
+  color: var(--brand-colour);
 
   &:not(:first-child) {
     margin-top: 2.5rem;
@@ -25,7 +25,7 @@
 
   &::before {
     content: "“";
-    font: 600 var(--type-20) proxima-nova, sans-serif;
+    font: 600 var(--type-20) var(--brand-font);
     left: 1rem;
     line-height: 0;
     margin-top: 5rem;
@@ -36,7 +36,7 @@
 
 .BlockQuote-children {
   color: var(--black);
-  font: 600 var(--type-4) proxima-nova, sans-serif;
+  font: 600 var(--type-4) var(--brand-font);
 
   &::after {
     content: "”";
@@ -50,11 +50,11 @@
 
 .BlockQuote-role {
   color: var(--black);
-  font: 300 var(--type-2) system-ui;
+  font: 300 var(--type-2) var(--body-font);
 }
 
 .BlockQuote-name {
-  font: 600 var(--type-2) system-ui;
+  font: 600 var(--type-2) var(--body-font);
 }
 
 .BlockQuote--orange {

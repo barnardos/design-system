@@ -18,7 +18,7 @@
   background: color-mod(var(--black) tint(90%));
   bottom: 0;
   display: block;
-  font: 300 var(--type--1) system-ui;
+  font: 300 var(--type--1) var(--body-font);
   font-variant-numeric: tabular-nums;
   left: -6rem;
   margin-top: 0;
@@ -33,7 +33,7 @@
   background: color-mod(var(--teal) tint(80%));
   color: var(--black);
   display: flex;
-  font: 300 var(--type--2) system-ui;
+  font: 300 var(--type--2) var(--body-font);
   font-variant-numeric: tabular-nums;
   left: 6rem;
   position: absolute;

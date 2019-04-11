@@ -15,7 +15,7 @@
   box-shadow: inset 0 0 0 1px var(--black);
   color: var(--black);
   display: flex;
-  font: 600 var(--type-2) proxima-nova, sans-serif;
+  font: 600 var(--type-2) var(--brand-font);
   justify-content: center;
   min-height: 3.25rem;
   min-width: 3rem;

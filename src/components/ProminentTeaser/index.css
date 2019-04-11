@@ -19,18 +19,18 @@
 
 .ProminentTeaser-meta {
   color: color-mod(var(--white) shade(30%));
-  font: 300 var(--type-0) system-ui;
+  font: 300 var(--type-0) var(--body-font);
   margin-top: 0.5rem;
 }
 
 .ProminentTeaser-heading {
   color: var(--white);
-  font: 600 var(--type-5) proxima-nova, sans-serif;
+  font: 600 var(--type-5) var(--brand-font);
 }
 
 .ProminentTeaser-children {
   color: var(--white);
-  font: 300 var(--type-0) system-ui;
+  font: 300 var(--type-0) var(--body-font);
   margin-top: 1rem;
 }
 

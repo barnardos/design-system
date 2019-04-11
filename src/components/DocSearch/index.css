@@ -78,7 +78,7 @@
 
   & .algolia-docsearch-suggestion--subcategory-column {
     color: color-mod(var(--black) tint(40%));
-    font: 600 var(--type-0) system-ui;
+    font: 600 var(--type-0) var(--body-font);
     white-space: nowrap;
 
     &::after {
@@ -92,16 +92,16 @@
 
   & .algolia-docsearch-suggestion--title {
     color: var(--black);
-    font: 300 var(--type-0) system-ui;
+    font: 300 var(--type-0) var(--body-font);
   }
 
   & .algolia-docsearch-suggestion--text {
     color: var(--black);
-    font: 300 var(--type--1) system-ui;
+    font: 300 var(--type--1) var(--body-font);
   }
 
   & .algolia-docsearch-suggestion--highlight {
-    background: color-mod(var(--green) alpha(10%));
+    background: color-mod(var(--brand-colour) alpha(10%));
   }
 
   & .algolia-docsearch-suggestion--no-results {
@@ -111,12 +111,12 @@
   }
 
   & .algolia-docsearch-footer {
-    font: 300 var(--type--2) system-ui;
+    font: 300 var(--type--2) var(--body-font);
     margin-top: 0.75rem;
     text-align: right;
   }
 
   & .algolia-docsearch-footer--logo {
-    color: var(--green);
+    color: var(--brand-colour);
   }
 }

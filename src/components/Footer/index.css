@@ -28,7 +28,7 @@
 }
 
 .Footer-item {
-  font: 300 var(--type--1) system-ui;
+  font: 300 var(--type--1) var(--body-font);
 
   @media (min-width: 48rem) {
     &:not(:first-child) {
@@ -40,7 +40,7 @@
 .Footer-link {
   color: var(--black);
   display: inline-block;
-  font: 300 var(--type--1) system-ui;
+  font: 300 var(--type--1) var(--body-font);
   padding: 0.25rem 0;
 
   &:hover {
@@ -50,7 +50,7 @@
 
 .Footer-children {
   color: var(--black);
-  font: 300 var(--type--1) system-ui;
+  font: 300 var(--type--1) var(--body-font);
 
   &:not(:first-child) {
     margin-top: 1rem;
@@ -59,7 +59,7 @@
 
 .Footer-copyright {
   color: var(--black);
-  font: 300 var(--type--1) system-ui;
+  font: 300 var(--type--1) var(--body-font);
 
   &:not(:first-child) {
     margin-top: 1rem;

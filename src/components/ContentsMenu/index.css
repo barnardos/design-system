@@ -10,7 +10,7 @@
 
 .ContentsMenu-inner {
   background: color-mod(var(--black) tint(95%));
-  box-shadow: 0 -0.25rem 0 0 var(--green);
+  box-shadow: 0 -0.25rem 0 0 var(--brand-colour);
   padding: 1rem;
 
   @media (min-width: 48rem) {
@@ -22,7 +22,7 @@
 }
 
 .ContentsMenu-heading {
-  font: 600 var(--type-0) system-ui;
+  font: 600 var(--type-0) var(--body-font);
 }
 
 .ContentsMenu-items--level1 {
@@ -36,7 +36,7 @@
 .ContentsMenu-link {
   color: var(--black);
   display: block;
-  font: 300 var(--type-0) system-ui;
+  font: 300 var(--type-0) var(--body-font);
   margin: 0 -0.25rem;
   padding: 0.25rem;
   text-decoration: underline;
@@ -51,7 +51,7 @@
 
   & .ContentsMenu-link {
     box-shadow: inset 0.25rem 0 0 color-mod(var(--black) tint(90%));
-    font: 300 var(--type-0) system-ui;
+    font: 300 var(--type-0) var(--body-font);
     padding-left: 1rem;
   }
 }
