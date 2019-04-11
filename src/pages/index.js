@@ -1,8 +1,10 @@
 import React from "react";
 
+import BulletedList from "../components/BulletedList";
 import Feedback from "../components/Feedback";
 import Hero from "../components/Hero";
 import Link from "../components/Link";
+import ListItem from "../components/ListItem";
 import Main from "../components/Main";
 import Page from "../components/Page";
 import Paragraph from "../components/Paragraph";
@@ -48,27 +50,27 @@ export default () => (
       </Section>
       <Section>
         <Feedback heading="Get involved!">
-          <Paragraph>
-            Email the team at{" "}
-            <Link href="mailto:designsystem@barnardos.org.uk">
-              designsystem@barnardos.org.uk
-            </Link>
-            .
-          </Paragraph>
-          <Paragraph>
-            Participate in the discussion on{" "}
-            <Link href="https://barnardos.facebook.com/groups/design.system/">
-              Workplace
-            </Link>
-            .
-          </Paragraph>
-          <Paragraph>
-            Contribute to the Design System on{" "}
-            <Link href="https://github.com/barnardos/design-system/blob/master/.github/CONTRIBUTING.md">
-              Github
-            </Link>
-            .
-          </Paragraph>
+          <Paragraph>You can:</Paragraph>
+          <BulletedList>
+            <ListItem>
+              email the team at{" "}
+              <Link href="mailto:designsystem@barnardos.org.uk">
+                designsystem@barnardos.org.uk
+              </Link>
+            </ListItem>
+            <ListItem>
+              participate in the discussion on{" "}
+              <Link href="https://barnardos.facebook.com/groups/design.system/">
+                Workplace
+              </Link>
+            </ListItem>
+            <ListItem>
+              contribute to the Design System on{" "}
+              <Link href="https://github.com/barnardos/design-system/blob/master/.github/CONTRIBUTING.md">
+                Github
+              </Link>
+            </ListItem>
+          </BulletedList>
         </Feedback>
       </Section>
     </Main>
