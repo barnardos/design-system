@@ -3,7 +3,6 @@ module.exports = {
     siteUrl: `https://design-system.barnardos.org.uk`
   },
   plugins: [
-    "gatsby-plugin-postcss",
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -17,6 +16,8 @@ module.exports = {
         respectDNT: true
       }
     },
+    `gatsby-plugin-postcss`,
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`
   ]
 };
