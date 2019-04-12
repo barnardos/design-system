@@ -32,7 +32,7 @@ export default () => (
         blocks.
       </Lede>
       <SignpostLink href="https://www.npmjs.com/package/@barnardos/components">
-        Install components (technical)
+        Install components from GitHub
       </SignpostLink>
       <Sections>
         <Section>
