@@ -3,7 +3,9 @@ import React from "react";
 import Breadcrumbs from "../components/Breadcrumbs";
 import Lede from "../components/Lede";
 import Link from "../components/Link";
+import ListItem from "../components/ListItem";
 import Main from "../components/Main";
+import NumberedList from "../components/NumberedList";
 import Page from "../components/Page";
 import Paragraph from "../components/Paragraph";
 import SignpostLink from "../components/SignpostLink";
@@ -28,13 +30,21 @@ export default () => (
         It provides consistency and familiarity for our service users by solving
         common problems.
       </Paragraph>
-      <Paragraph>
-        Start by familiarising yourself with the{" "}
-        <Link href="/principles/">principles</Link>,{" "}
-        <Link href="/standards/">standards</Link>,{" "}
-        <Link href="/components/">components</Link> and{" "}
-        <Link href="/patterns/">patterns</Link>.
-      </Paragraph>
+      <Paragraph>Start by familiarising yourself with the:</Paragraph>
+      <NumberedList>
+        <ListItem>
+          <Link href="/principles/">principles</Link>
+        </ListItem>
+        <ListItem>
+          <Link href="/standards/">standards</Link>
+        </ListItem>
+        <ListItem>
+          <Link href="/components/">components</Link>
+        </ListItem>
+        <ListItem>
+          <Link href="/patterns/">patterns</Link>
+        </ListItem>
+      </NumberedList>
       <Paragraph>
         Then <Link href="/product-kit/">use the product kit</Link> to start
         designing and developing your product. If you can’t use the kit,{" "}
@@ -50,7 +60,7 @@ export default () => (
         <Link href="/#feedback">contribute it back</Link> if it solves a common
         problem.
       </Paragraph>
-      <SignpostLink href="/">Explore the Design System</SignpostLink>
+      <SignpostLink href="/">Go to the homepage</SignpostLink>
     </Main>
   </Page>
 );
