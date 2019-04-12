@@ -9,7 +9,6 @@ import ContentsMenu from "../../components/ContentsMenu";
 import Figure from "../../components/Figure";
 import Figures from "../../components/Figures";
 import Heading from "../../components/Heading";
-import Image from "../../components/Image";
 import Link from "../../components/Link";
 import ListItem from "../../components/ListItem";
 import Main from "../../components/Main";
@@ -62,7 +61,7 @@ export default () => (
           </BulletedList>
           <Figures>
             <Figure caption="Example of the logo">
-              <Image
+              <img
                 alt="The Barnardo’s logo"
                 src={withPrefix("/logo-for-figure.svg")}
               />
@@ -81,7 +80,7 @@ export default () => (
           <Paragraph>You should avoid changing the colour.</Paragraph>
           <Figures>
             <Figure caption="Example of the favicon">
-              <Image
+              <img
                 alt="The Barnardo’s favicon"
                 src={withPrefix("/favicon-for-figure.svg")}
               />
