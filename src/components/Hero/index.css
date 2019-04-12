@@ -4,11 +4,8 @@
 
 .Hero {
   background-color: var(--brand-colour);
-  background-position: top center;
-  background-size: cover;
   color: var(--white);
   margin: -2rem -1rem 0;
-  position: relative;
 
   @media (min-width: 48rem) {
     margin-left: -2rem;
@@ -17,11 +14,10 @@
 }
 
 .Hero-inner {
-  max-width: 48rem;
-  padding: 2rem 1rem;
+  padding: 3rem 1.5rem;
 
   @media (min-width: 48rem) {
-    padding: 3rem 2rem;
+    padding: 4rem 1.5rem;
   }
 }
 
@@ -32,22 +28,21 @@
 }
 
 .Hero--withImage {
-  height: 60vmin;
+  background-position: top right;
+  background-size: cover;
+  height: 50vmin;
+  margin-bottom: 4rem;
+  max-height: 30rem;
   min-height: 20rem;
+  position: relative;
 
   & .Hero-inner {
-    bottom: -2rem;
+    background-color: var(--brand-colour);
+    bottom: -4rem;
     left: 1rem;
+    max-width: 30rem;
+    padding: 1.5rem;
     position: absolute;
     right: 1rem;
-  }
-
-  @media (min-width: 48rem) {
-    height: 60vmin;
-
-    & .Hero-inner {
-      left: 2rem;
-      right: auto;
-    }
   }
 }

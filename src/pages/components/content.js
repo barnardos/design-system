@@ -15,6 +15,7 @@ import Details from "../../components/Details";
 import Example from "../../components/Example";
 import Fact from "../../components/Fact";
 import Heading from "../../components/Heading";
+import Hero from "../../components/Hero";
 import Image from "../../components/Image";
 import Lede from "../../components/Lede";
 import Link from "../../components/Link";
@@ -69,6 +70,16 @@ export const items = [
       {
         text: "Code",
         href: "/components/content/#code"
+      }
+    ]
+  },
+  {
+    text: "Heroes",
+    href: "/components/content/#heroes",
+    items: [
+      {
+        text: "Hero",
+        href: "/components/content/#hero"
       }
     ]
   },
@@ -288,6 +299,45 @@ export default () => (
             View{" "}
             <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Code">
               Code component code
+            </Link>{" "}
+            on GitHub.
+          </Cite>
+          <Heading>Heroes</Heading>
+          <Subheading>Hero</Subheading>
+          <Paragraph>Use this component for heroes.</Paragraph>
+          <Example>
+            <div
+              style={{
+                paddingLeft: "1rem",
+                paddingRight: "1rem",
+                paddingTop: "2rem"
+              }}
+            >
+              <Hero title="Young carers" />
+            </div>
+          </Example>
+          <Example>
+            <div
+              style={{
+                paddingLeft: "1rem",
+                paddingRight: "1rem",
+                paddingTop: "2rem"
+              }}
+            >
+              <Hero
+                title="Voice and influence of young people"
+                src="/image-for-hero-example.jpg"
+              />
+            </div>
+          </Example>
+          <Cite>
+            View{" "}
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Hero">
+              Hero code
+            </Link>{" "}
+            and{" "}
+            <Link href="https://github.com/barnardos/design-system/issues/631">
+              Hero research
             </Link>{" "}
             on GitHub.
           </Cite>
