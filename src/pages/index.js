@@ -43,7 +43,7 @@ export default () => (
           <Teaser href="/assets/" heading="Assets">
             Downloadable resources and guidance on creating your own assets.
           </Teaser>
-          <Teaser href="/product-kit/" heading="Product kit">
+          <Teaser href="/product-kit/" heading="Product Kit">
             Design, prototype and build your product.
           </Teaser>
         </Teasers>

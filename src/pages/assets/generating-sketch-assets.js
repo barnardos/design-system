@@ -29,7 +29,7 @@ export default () => (
       <Title>Generating Sketch assets</Title>
       <Paragraph>
         Designers and developers can{" "}
-        <Link href="/product-kit/">use the product kit</Link> to design and
+        <Link href="/product-kit/">use the Product Kit</Link> to design and
         prototype in the browser.
       </Paragraph>
       <Paragraph>
