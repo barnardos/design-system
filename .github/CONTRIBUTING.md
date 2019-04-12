@@ -46,3 +46,20 @@ The providers are:
 Deployment URLs:
 
 - [Site](https://barnardos-design-system.netlify.com)
+
+## Releasing
+
+You should first publish to npm:
+
+1. Run `npm --no-git-tag-version version major|minor|patch` to bump the version number in `package.json` and `package-lock.json`.
+2. Update `CHANGELOG.md` and replace "Head" with the new version number.
+3. Create a Pull Request with these changes.
+4. Merge the Pull Request.
+5. Run `npm publish`
+
+Then release to GitHub:
+
+1. Create a [new release](https://github.com/barnardos/design-system/releases/new).
+2. Enter the version number for the "Tag version" and "Release title".
+3. Copy and paste the version items from `CHANGELOG.md`.
+4. Publish release
