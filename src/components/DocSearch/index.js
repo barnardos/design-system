@@ -29,7 +29,7 @@ const DocSearch = forwardRef((props, ref) => {
   });
   return (
     <div className="DocSearch">
-      <Search id="algolia-docsearch" ref={ref} />
+      <Search id="algolia-docsearch" ref={ref} buttonless {...props} />
     </div>
   );
 });
