@@ -6,9 +6,9 @@ import favicon from "./favicon.ico";
 
 import "./index.css";
 
-const Site = ({ children, description = "" }) => (
+const Site = ({ children, description = "", name = "Barnardo’s" }) => (
   <div className="Site">
-    <Helmet titleTemplate="%s - Barnardo’s">
+    <Helmet titleTemplate={`%s - ${name}`}>
       <html lang="en" />
       <link rel="preconnect" href="https://p.typekit.com" />
       <link rel="stylesheet" href="https://use.typekit.net/djy7snj.css" />
@@ -21,7 +21,8 @@ const Site = ({ children, description = "" }) => (
 
 Site.propTypes = {
   children: PropTypes.node,
-  description: PropTypes.string
+  description: PropTypes.string,
+  name: PropTypes.string
 };
 
 export default Site;

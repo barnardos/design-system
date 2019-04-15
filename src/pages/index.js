@@ -14,7 +14,7 @@ import Teaser from "../components/Teaser";
 import Teasers from "../components/Teasers";
 
 export default () => (
-  <Page title="Barnardo’s Design System">
+  <Page title="Home">
     <Main>
       <Hero
         title="Barnardo’s Design System"
