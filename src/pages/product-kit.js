@@ -27,8 +27,8 @@ export default () => (
       </Lede>
       <Paragraph>It includes:</Paragraph>
       <BulletedList>
-        <ListItem>all the components of the Design System</ListItem>
-        <ListItem>tools that help you adhere to the standards</ListItem>
+        <ListItem>all the components</ListItem>
+        <ListItem>tools to enforce the standards</ListItem>
       </BulletedList>
       <SignpostLink href="https://barnardos-product-kit.netlify.com/">
         View the Product Kit (External)
