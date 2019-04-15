@@ -14,10 +14,10 @@
 }
 
 .Hero-inner {
-  padding: 3rem 1.5rem;
+  padding: 2rem 1rem;
 
   @media (min-width: 48rem) {
-    padding: 4rem 1.5rem;
+    padding: 3rem 2rem;
   }
 }
 
@@ -44,5 +44,9 @@
     padding: 1.5rem;
     position: absolute;
     right: 1rem;
+
+    @media (min-width: 48rem) {
+      left: 2rem;
+    }
   }
 }
