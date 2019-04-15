@@ -3,7 +3,6 @@ import React from "react";
 import Breadcrumbs from "../components/Breadcrumbs";
 import BulletedList from "../components/BulletedList";
 import Lede from "../components/Lede";
-import Link from "../components/Link";
 import ListItem from "../components/ListItem";
 import Main from "../components/Main";
 import Page from "../components/Page";
@@ -12,7 +11,7 @@ import SignpostLink from "../components/SignpostLink";
 import Title from "../components/Title";
 
 export default () => (
-  <Page title="Product kit">
+  <Page title="Product Kit">
     <Breadcrumbs
       items={[
         {
@@ -22,19 +21,17 @@ export default () => (
       ]}
     />
     <Main>
-      <Title>Product kit</Title>
-      <Lede>Design, prototype and build your product.</Lede>
+      <Title>Product Kit</Title>
+      <Lede>
+        Design, prototype and build your product using page templates.
+      </Lede>
       <Paragraph>It includes:</Paragraph>
       <BulletedList>
         <ListItem>all the components of the Design System</ListItem>
-        <ListItem>page templates that you can duplicate and use</ListItem>
-        <ListItem>
-          tools that help you adhere to the{" "}
-          <Link href="/standards/code-quality/">development standards</Link>
-        </ListItem>
+        <ListItem>tools that help you adhere to the standards</ListItem>
       </BulletedList>
       <SignpostLink href="https://barnardos-product-kit.netlify.com/">
-        View the product kit
+        View the Product Kit (External)
       </SignpostLink>
     </Main>
   </Page>
