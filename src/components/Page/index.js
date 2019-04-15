@@ -17,7 +17,7 @@ const Page = ({ children, title }) => (
     <Layout>
       <SkipLink />
       <Header
-        search={<DocSearch />}
+        search={<DocSearch placeholder="Search Design System" />}
         title="Go to the Barnardo’s Design System homepage"
       />
       {children}
