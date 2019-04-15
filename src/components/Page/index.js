@@ -10,7 +10,10 @@ import Site from "../Site";
 import SkipLink from "../SkipLink";
 
 const Page = ({ children, title }) => (
-  <Site description="The Barnardo’s Design System website.">
+  <Site
+    description="The Barnardo’s Design System website."
+    name="Barnardo’s Design System"
+  >
     <Helmet>
       <title>{title}</title>
     </Helmet>
