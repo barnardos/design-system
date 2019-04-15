@@ -23,9 +23,7 @@ export default () => (
     />
     <Main>
       <Title>Assets</Title>
-      <Lede>
-        Downloadable resources and guidance on creating your own assets.
-      </Lede>
+      <Lede>The downloadable resources you can use.</Lede>
       <Sections>
         <Section>
           <LandingMenu
@@ -36,16 +34,8 @@ export default () => (
                 items: webAssetsItems
               },
               {
-                text: "Generating Sketch assets",
-                href: "/assets/generating-sketch-assets"
-              },
-              {
-                text: "Images and videos",
-                href: "/assets/images-and-videos/"
-              },
-              {
-                text: "Iconography",
-                href: "/assets/iconography/"
+                text: "Sketch assets",
+                href: "/assets/sketch-assets"
               }
             ]}
           />

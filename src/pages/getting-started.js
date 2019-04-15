@@ -46,10 +46,10 @@ export default () => (
         </ListItem>
       </NumberedList>
       <Paragraph>
-        Then <Link href="/product-kit/">use the Product Kit</Link> to start
+        Then use the <Link href="/product-kit/">Product Kit</Link> to start
         designing and developing your product. If you can’t use the kit,{" "}
         <Link href="https://www.npmjs.com/package/@barnardos/components">
-          install the components (technical)
+          install the components from GitHub
         </Link>{" "}
         on their own. Both allow you to import and update the components rather
         than copy and paste the code.

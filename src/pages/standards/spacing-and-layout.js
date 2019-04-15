@@ -77,6 +77,10 @@ export default () => (
           href: "/standards/typography",
           label: "Typography"
         }}
+        next={{
+          href: "/standards/images-and-videos",
+          label: "Images and videos"
+        }}
       />
     </Main>
   </Page>

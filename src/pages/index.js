@@ -27,24 +27,22 @@ export default () => (
       <Section>
         <Teasers>
           <Teaser href="/principles/" heading="Principles">
-            How we think about design.
+            Approach to take.
           </Teaser>
           <Teaser href="/standards/" heading="Standards">
-            Guidelines on how to adopt our ways of working.
+            Rules to follow.
           </Teaser>
           <Teaser href="/components/" heading="Components">
-            Create consistent and assessible products with these reusable
-            building blocks.
+            Reusable building blocks.
           </Teaser>
           <Teaser href="/patterns/" heading="Patterns">
-            Put the building blocks together to help users complete common
-            tasks.
+            Solutions to common problems.
           </Teaser>
           <Teaser href="/assets/" heading="Assets">
-            Downloadable resources and guidance on creating your own assets.
+            Downloadable resources.
           </Teaser>
           <Teaser href="/product-kit/" heading="Product Kit">
-            Design, prototype and build your product.
+            Toolkit to create your product.
           </Teaser>
         </Teasers>
       </Section>
