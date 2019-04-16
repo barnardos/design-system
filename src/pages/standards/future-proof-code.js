@@ -9,24 +9,10 @@ import Main from "../../components/Main";
 import Page from "../../components/Page";
 import Pagination from "../../components/Pagination";
 import Paragraph from "../../components/Paragraph";
+import SectionMenu from "../../components/SectionMenu";
 import Title from "../../components/Title";
 import Topic from "../../components/Topic";
-import TopicMenu from "../../components/TopicMenu";
-
-export const items = [
-  {
-    text: "Code quality",
-    href: "/standards/code-quality"
-  },
-  {
-    text: "Future-proof code",
-    href: "/standards/future-proof-code"
-  },
-  {
-    text: "Performance",
-    href: "/standards/performance"
-  }
-];
+import { developmentItems } from "../standards";
 
 export default () => (
   <Page title="Future-proof code">
@@ -45,7 +31,6 @@ export default () => (
     <Main>
       <Topic>Development</Topic>
       <Title>Future-proof code</Title>
-      <TopicMenu items={items} />
       <Paragraph>You should transpile modern standards for:</Paragraph>
       <BulletedList>
         <ListItem>
@@ -83,6 +68,7 @@ export default () => (
           label: "Performance"
         }}
       />
+      <SectionMenu items={developmentItems} current="Future-proof code" />
     </Main>
   </Page>
 );

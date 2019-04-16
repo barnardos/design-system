@@ -25,7 +25,7 @@ const ContentsMenuItems = ({ items, level }) => (
 const ContentsMenu = ({ items }) => (
   <nav className="ContentsMenu">
     <div className="ContentsMenu-inner">
-      <p className="ContentsMenu-heading">In this section:</p>
+      <p className="ContentsMenu-heading">On this page:</p>
       <ContentsMenuItems items={items} level={1} />
     </div>
   </nav>

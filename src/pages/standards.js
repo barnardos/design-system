@@ -12,6 +12,21 @@ import Title from "../components/Title";
 import { items as colourItems } from "./standards/colour";
 import { items as typographyItems } from "./standards/typography";
 
+export const developmentItems = [
+  {
+    text: "Code quality",
+    href: "/standards/code-quality/"
+  },
+  {
+    text: "Future-proof code",
+    href: "/standards/future-proof-code/"
+  },
+  {
+    text: "Performance",
+    href: "/standards/performance/"
+  }
+];
+
 export default () => (
   <Page title="Standards">
     <Breadcrumbs
@@ -90,23 +105,7 @@ export default () => (
           />
         </Section>
         <Section>
-          <LandingMenu
-            heading="Development"
-            items={[
-              {
-                text: "Code quality",
-                href: "/standards/code-quality/"
-              },
-              {
-                text: "Future-proof code",
-                href: "/standards/future-proof-code/"
-              },
-              {
-                text: "Performance",
-                href: "/standards/performance/"
-              }
-            ]}
-          />
+          <LandingMenu heading="Development" items={developmentItems} />
         </Section>
       </Sections>
     </Main>
