@@ -1,5 +1,22 @@
 # Changelog
 
+## Head
+
+### Removed
+
+- `DonateLink`, use `ProminentLink` instead
+
+### Added
+
+- `Search` `buttonless` and `placeholder` props
+- `Site` `name` prop
+
+### Fixed
+
+- `Hero` look and feel
+- `ProminentLink` to default to the brand colour
+- `SignpostLink` chevron wrapping on small viewports
+
 ## 0.6.0
 
 ### Added
