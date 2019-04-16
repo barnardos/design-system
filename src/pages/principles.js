@@ -24,7 +24,7 @@ export default () => (
     />
     <Main>
       <Title>Principles</Title>
-      <Lede>How we think about design.</Lede>
+      <Lede>The approach you should take.</Lede>
       <Sections>
         <Section>
           <Heading>Start small</Heading>

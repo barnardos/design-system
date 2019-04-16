@@ -1,13 +1,15 @@
 import React from "react";
 
 import Breadcrumbs from "../components/Breadcrumbs";
+import Heading from "../components/Heading";
 import LandingMenu from "../components/LandingMenu";
 import Lede from "../components/Lede";
+import Link from "../components/Link";
 import Main from "../components/Main";
 import Page from "../components/Page";
+import Paragraph from "../components/Paragraph";
 import Section from "../components/Section";
 import Sections from "../components/Sections";
-import SignpostLink from "../components/SignpostLink";
 import Title from "../components/Title";
 
 import { items as contentItems } from "./components/content";
@@ -27,13 +29,7 @@ export default () => (
     />
     <Main>
       <Title>Components</Title>
-      <Lede>
-        Create consistent and assessible products with these reusable building
-        blocks.
-      </Lede>
-      <SignpostLink href="https://www.npmjs.com/package/@barnardos/components">
-        Install components from GitHub
-      </SignpostLink>
+      <Lede>The reusable building blocks you should use.</Lede>
       <Sections>
         <Section>
           <LandingMenu
@@ -74,6 +70,20 @@ export default () => (
               text: "View all Forms components"
             }}
           />
+        </Section>
+        <Section>
+          <Heading>Install the components</Heading>
+          <Paragraph>
+            Use the <Link href="/product-kit/">Product Kit</Link> to start
+            designing and developing your product.
+          </Paragraph>
+          <Paragraph>
+            If you can’t use the kit,{" "}
+            <Link href="https://www.npmjs.com/package/@barnardos/components">
+              install the components from GitHub
+            </Link>{" "}
+            on their own.
+          </Paragraph>
         </Section>
       </Sections>
     </Main>

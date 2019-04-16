@@ -23,7 +23,8 @@ export default () => (
     <Main>
       <Title>Product Kit</Title>
       <Lede>
-        Design, prototype and build your product using page templates.
+        A toolkit you should use to design, prototype and build your product
+        using page templates.
       </Lede>
       <Paragraph>It includes:</Paragraph>
       <BulletedList>

@@ -12,7 +12,7 @@ import Paragraph from "../../components/Paragraph";
 import Title from "../../components/Title";
 
 export default () => (
-  <Page title="Generating Sketch assets">
+  <Page title="Sketch assets">
     <Breadcrumbs
       items={[
         {
@@ -26,7 +26,7 @@ export default () => (
       ]}
     />
     <Main>
-      <Title>Generating Sketch assets</Title>
+      <Title>Sketch assets</Title>
       <Paragraph>
         Designers and developers can{" "}
         <Link href="/product-kit/">use the Product Kit</Link> to design and
@@ -58,10 +58,6 @@ export default () => (
         previous={{
           href: "/assets/web-assets",
           label: "Web assets"
-        }}
-        next={{
-          href: "/assets/images-and-videos",
-          label: "Images and videos"
         }}
       />
     </Main>

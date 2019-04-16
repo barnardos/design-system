@@ -93,8 +93,8 @@ export default () => (
           </Paragraph>
           <Pagination
             next={{
-              href: "/assets/generating-sketch-assets",
-              label: "Generating Sketch assets"
+              href: "/assets/sketch-assets",
+              label: "Sketch assets"
             }}
           />
         </Content>

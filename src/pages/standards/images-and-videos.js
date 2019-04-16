@@ -10,6 +10,7 @@ import Page from "../../components/Page";
 import Pagination from "../../components/Pagination";
 import Paragraph from "../../components/Paragraph";
 import Title from "../../components/Title";
+import Topic from "../../components/Topic";
 
 export default () => (
   <Page title="Images and videos">
@@ -20,12 +21,13 @@ export default () => (
           href: "/"
         },
         {
-          text: "Assets",
-          href: "/assets/"
+          text: "Standards",
+          href: "/standards/"
         }
       ]}
     />
     <Main>
+      <Topic>Design</Topic>
       <Title>Images and videos</Title>
       <Paragraph>When creating images and videos you should:</Paragraph>
       <BulletedList>
@@ -53,11 +55,11 @@ export default () => (
     </Main>
     <Pagination
       previous={{
-        href: "/assets/generating-sketch-assets",
-        label: "Generating Sketch assets"
+        href: "/standards/spacing-and-layout",
+        label: "Spacing and layout"
       }}
       next={{
-        href: "/assets/iconography",
+        href: "/standards/iconography",
         label: "Iconography"
       }}
     />

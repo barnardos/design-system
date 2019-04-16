@@ -10,6 +10,7 @@ import Page from "../../components/Page";
 import Pagination from "../../components/Pagination";
 import Paragraph from "../../components/Paragraph";
 import Title from "../../components/Title";
+import Topic from "../../components/Topic";
 
 export default () => (
   <Page title="Iconography">
@@ -20,12 +21,13 @@ export default () => (
           href: "/"
         },
         {
-          text: "Assets",
-          href: "/assets/"
+          text: "Standards",
+          href: "/standards/"
         }
       ]}
     />
     <Main>
+      <Topic>Design</Topic>
       <Title>Iconography</Title>
       <Paragraph>When using iconography you should:</Paragraph>
       <BulletedList>
@@ -45,7 +47,7 @@ export default () => (
     </Main>
     <Pagination
       previous={{
-        href: "/assets/images-and-videos",
+        href: "/standards/images-and-videos",
         label: "Images and videos"
       }}
     />

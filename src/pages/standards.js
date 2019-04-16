@@ -24,7 +24,7 @@ export default () => (
     />
     <Main>
       <Title>Standards</Title>
-      <Lede>Guidelines on how to adopt our ways of working.</Lede>
+      <Lede>The rules you should follow.</Lede>
       <Sections>
         <Section>
           <LandingMenu
@@ -58,6 +58,14 @@ export default () => (
               {
                 text: "Spacing and layout",
                 href: "/standards/spacing-and-layout/"
+              },
+              {
+                text: "Images and videos",
+                href: "/standards/images-and-videos/"
+              },
+              {
+                text: "Iconography",
+                href: "/standards/iconography/"
               }
             ]}
           />

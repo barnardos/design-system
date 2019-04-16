@@ -23,9 +23,7 @@ export default () => (
     />
     <Main>
       <Title>Patterns</Title>
-      <Lede>
-        Put the building blocks together to help users complete common tasks.
-      </Lede>
+      <Lede>The solutions you should adopt to common problems.</Lede>
       <Sections>
         <Section>
           <LandingMenu
