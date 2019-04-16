@@ -9,6 +9,22 @@ import Pagination from "../../components/Pagination";
 import Paragraph from "../../components/Paragraph";
 import Title from "../../components/Title";
 import Topic from "../../components/Topic";
+import TopicMenu from "../../components/TopicMenu";
+
+export const items = [
+  {
+    text: "Code quality",
+    href: "/standards/code-quality"
+  },
+  {
+    text: "Future-proof code",
+    href: "/standards/future-proof-code"
+  },
+  {
+    text: "Performance",
+    href: "/standards/performance"
+  }
+];
 
 export default () => (
   <Page title="Performance">
@@ -27,6 +43,7 @@ export default () => (
     <Main>
       <Topic>Development</Topic>
       <Title>Performance</Title>
+      <TopicMenu items={items} />
       <Paragraph>
         {`You should pass the performance checks in `}
         <Link href="https://developers.google.com/web/tools/lighthouse/">
