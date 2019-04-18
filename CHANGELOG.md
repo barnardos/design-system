@@ -1,6 +1,6 @@
 # Changelog
 
-## Head
+## 0.7.0
 
 ### Removed
 
