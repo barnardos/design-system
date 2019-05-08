@@ -29,7 +29,7 @@ export default () => (
     <Main>
       <Topic>Design</Topic>
       <Title>Iconography</Title>
-      <Paragraph>When using iconography you should:</Paragraph>
+      <Paragraph>When choosing iconography you should:</Paragraph>
       <BulletedList>
         <ListItem>choose a flat graphic style</ListItem>
         <ListItem>

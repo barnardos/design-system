@@ -157,10 +157,12 @@ export default () => (
           <Paragraph>
             Use this component to navigate to top and secondary level items.
           </Paragraph>
-          <Paragraph>
-            When using this component you should aim to have the items visible
-            on all viewport sizes.
-          </Paragraph>
+          <Paragraph>You should:</Paragraph>
+          <BulletedList>
+            <ListItem>
+              aim to have the items visible on all viewport sizes
+            </ListItem>
+          </BulletedList>
           <Example>
             <div
               style={{
@@ -331,10 +333,10 @@ export default () => (
           <Paragraph>
             Use this component to help a user identify their current location.
           </Paragraph>
-          <Paragraph>
-            When using this component you should only represent individual
-            pages.
-          </Paragraph>
+          <Paragraph>You should:</Paragraph>
+          <BulletedList>
+            <ListItem>only represent individual pages</ListItem>
+          </BulletedList>
           <Example>
             <Breadcrumbs
               items={[

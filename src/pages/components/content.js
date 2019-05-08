@@ -304,7 +304,6 @@ export default () => (
           </Cite>
           <Heading>Heroes</Heading>
           <Subheading>Hero</Subheading>
-          <Paragraph>Use this component for heroes.</Paragraph>
           <Example>
             <div
               style={{
@@ -342,13 +341,15 @@ export default () => (
             on GitHub.
           </Cite>
           <Heading>Lists</Heading>
-          <Paragraph>Use the component below for lists.</Paragraph>
           <Paragraph>You should:</Paragraph>
           <BulletedList>
             <ListItem>limit the number on each page</ListItem>
             <ListItem>introduce with a descriptive sentence</ListItem>
             <ListItem>aim to keep the length of items similar</ListItem>
-            <ListItem>avoid starting items with the same word</ListItem>
+          </BulletedList>
+          <Paragraph>You should avoid:</Paragraph>
+          <BulletedList>
+            <ListItem>starting items with the same word</ListItem>
           </BulletedList>
           <Subheading>Bulleted List</Subheading>
           <Paragraph>
@@ -445,7 +446,7 @@ export default () => (
             on GitHub.
           </Cite>
           <Heading>Quotes</Heading>
-          <Paragraph>When using these components you should:</Paragraph>
+          <Paragraph>You should:</Paragraph>
           <BulletedList>
             <ListItem>choose short sentences with one main idea</ListItem>
             <ListItem>limit the number on each page</ListItem>
@@ -509,9 +510,10 @@ export default () => (
             on GitHub.
           </Cite>
           <Subheading>Prominent Block Quote</Subheading>
-          <Paragraph>
-            When using this component you should only use it once on each page.
-          </Paragraph>
+          <Paragraph>You should:</Paragraph>
+          <BulletedList>
+            <ListItem>limit to one on each page</ListItem>
+          </BulletedList>
           <Example>
             <ProminentBlockQuote role="Young person" name="James Roberts">
               By tackling the causes as well as the symptoms, we can create
@@ -531,7 +533,6 @@ export default () => (
           </Cite>
           <Heading>Facts</Heading>
           <Subheading>Fact</Subheading>
-          <Paragraph>Use this component for facts.</Paragraph>
           <Paragraph>You should:</Paragraph>
           <BulletedList>
             <ListItem>
@@ -562,7 +563,6 @@ export default () => (
           </Cite>
           <Heading>Media</Heading>
           <Subheading>Image</Subheading>
-          <Paragraph>Use this component to display an image.</Paragraph>
           <Paragraph>You should:</Paragraph>
           <BulletedList>
             <ListItem>match the tone of the surrounding copy</ListItem>
@@ -588,7 +588,6 @@ export default () => (
             on GitHub.
           </Cite>
           <Subheading>Video</Subheading>
-          <Paragraph>Use this component to display a video.</Paragraph>
           <Paragraph>You should:</Paragraph>
           <BulletedList>
             <ListItem>include subtitles</ListItem>
