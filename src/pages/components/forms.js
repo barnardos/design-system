@@ -130,33 +130,42 @@ export default () => (
       <Contents>
         <ContentsMenu items={items} />
         <Content>
-          <Paragraph>When gathering information you should:</Paragraph>
+          <Paragraph>You should:</Paragraph>
           <BulletedList>
             <ListItem>
               only ask for information which is absolutely needed
             </ListItem>
-            <ListItem>ask for required information first</ListItem>
+            <ListItem>order required information first</ListItem>
+            <ListItem>
+              add ‘(optional)’ after labels of inputs that aren’t required
+            </ListItem>
             <ListItem>
               group related fields together, for example ‘Email’ and ‘Phone’
             </ListItem>
+            <ListItem>limit the number of fields on each page</ListItem>
+          </BulletedList>
+          <Paragraph>You should avoid:</Paragraph>
+          <BulletedList>
+            <ListItem>adding an asterisk on required inputs</ListItem>
             <ListItem>
-              add ‘(optional)’ to labels of information that isn’t required
+              unnecessary words in labels like ‘Please’ or ‘Enter’
             </ListItem>
-            <ListItem>
-              avoid unnecessary words like ‘Please’ or ‘Enter’ in labels
-            </ListItem>
-            <ListItem>minimise the number of fields on each page</ListItem>
-            <ListItem>avoid manipulative design patterns</ListItem>
+            <ListItem>manipulative design patterns</ListItem>
           </BulletedList>
           <Heading>Text inputs</Heading>
-          <Paragraph>Use the components below for text entry.</Paragraph>
           <Paragraph>You should:</Paragraph>
           <BulletedList>
             <ListItem>
-              make the size appropriate to the amount of information requested
+              set the width to fit the information being requested, using
+              multiples of 8
             </ListItem>
-            <ListItem>use multiples of 8 for setting the size</ListItem>
-            <ListItem>use hint text rather than placeholder text</ListItem>
+            <ListItem>
+              provide hint text under the label when necessary
+            </ListItem>
+          </BulletedList>
+          <Paragraph>You should avoid:</Paragraph>
+          <BulletedList>
+            <ListItem>putting hint text inside of the input field</ListItem>
           </BulletedList>
           <Subheading>Text Input</Subheading>
           <Example>
@@ -206,14 +215,22 @@ export default () => (
             on GitHub.
           </Cite>
           <Subheading>Date Input</Subheading>
-          <Paragraph>Use this component for date entry.</Paragraph>
           <Paragraph>You should:</Paragraph>
           <BulletedList>
-            <ListItem>use it instead of dropdowns</ListItem>
             <ListItem>allow flexible data entry, for example 01 and 1</ListItem>
-            <ListItem>trigger a numeric keyboard when available</ListItem>
-            <ListItem>avoid auto-tabbing between fields</ListItem>
-            <ListItem>avoid using calendar pickers</ListItem>
+            <ListItem>
+              trigger a numeric keyboard when available, for example on a smart
+              phone
+            </ListItem>
+          </BulletedList>
+          <Paragraph>You should avoid:</Paragraph>
+          <BulletedList>
+            <ListItem>using dropdowns</ListItem>
+            <ListItem>auto-tabbing between fields</ListItem>
+            <ListItem>
+              adding calendar pickers for memorable dates, for example date of
+              birth
+            </ListItem>
           </BulletedList>
           <Example>
             <DateInput id="date-input-example" legend="Date of birth" />
@@ -249,10 +266,8 @@ export default () => (
             on GitHub.
           </Cite>
           <Heading>Choices</Heading>
-          <Paragraph>Use the components below for choices.</Paragraph>
           <Paragraph>You should:</Paragraph>
           <BulletedList>
-            <ListItem>use them instead of dropdowns</ListItem>
             <ListItem>limit the options to eight or less</ListItem>
           </BulletedList>
           <Subheading>Check Box</Subheading>
@@ -275,10 +290,10 @@ export default () => (
             on GitHub.
           </Cite>
           <Subheading>Check Boxes</Subheading>
-          <Paragraph>
-            When using this component you should provide an option that excludes
-            the others.
-          </Paragraph>
+          <Paragraph>You should:</Paragraph>
+          <BulletedList>
+            <ListItem>provide an option that excludes the others</ListItem>
+          </BulletedList>
           <Example>
             <CheckBoxes
               items={[
@@ -317,6 +332,10 @@ export default () => (
             on GitHub.
           </Cite>
           <Subheading>Radio Buttons</Subheading>
+          <Paragraph>You should:</Paragraph>
+          <BulletedList>
+            <ListItem>use instead of dropdowns</ListItem>
+          </BulletedList>
           <Example>
             <RadioButtons
               items={[
@@ -412,10 +431,17 @@ export default () => (
           </Paragraph>
           <Paragraph>You should:</Paragraph>
           <BulletedList>
-            <ListItem>only use it once on each page</ListItem>
-            <ListItem>use a verb, for example save</ListItem>
+            <ListItem>limit to one on each page</ListItem>
+            <ListItem>use a verb, for example ’Save’</ListItem>
             <ListItem>only use the Green colour</ListItem>
-            <ListItem>not use a disabled state</ListItem>
+          </BulletedList>
+          <Paragraph>You should avoid:</Paragraph>
+          <BulletedList>
+            <ListItem>using a disabled state</ListItem>
+            <ListItem>
+              using a different colour unless your product isn’t Barnardo’s
+              branded
+            </ListItem>
           </BulletedList>
           <Example>
             <Submit>Send application</Submit>
@@ -458,7 +484,6 @@ export default () => (
             </Link>{" "}
             on GitHub.
           </Cite>
-
           <Figures>
             <Figure caption="Form with errors connected to Error Summary">
               <TextInput

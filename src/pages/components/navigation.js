@@ -122,10 +122,12 @@ export default () => (
         <Content>
           <Heading>Links</Heading>
           <Subheading>Link</Subheading>
-          <Paragraph>
-            When using this component you should use a meaningful phrase that
-            makes sense out of context.
-          </Paragraph>
+          <Paragraph>You should:</Paragraph>
+          <BulletedList>
+            <ListItem>
+              use a meaningful phrase that makes sense out of context
+            </ListItem>
+          </BulletedList>
           <Example>
             <Paragraph>
               This is a paragraph, and it includes even more text to give a good
@@ -150,17 +152,18 @@ export default () => (
             Use this component after a summary of content to signpost onto more
             detail.
           </Paragraph>
-          <Paragraph>When using this component you should:</Paragraph>
+          <Paragraph>You should:</Paragraph>
           <BulletedList>
             <ListItem>use sentence case</ListItem>
-            <ListItem>use a verb, for example search</ListItem>
+            <ListItem>use a verb, for example ‘Search‘</ListItem>
             <ListItem>
               use a meaningful phrase that makes sense out of context
             </ListItem>
             <ListItem>only use the Green colour</ListItem>
-            <ListItem>
-              not use terms like ‘Read more’ and ‘Find out more’
-            </ListItem>
+          </BulletedList>
+          <Paragraph>You should avoid:</Paragraph>
+          <BulletedList>
+            <ListItem>terms like ‘Read more’ and ‘Find out more’</ListItem>
           </BulletedList>
           <Example>
             <SignpostLink href="#">Search and apply for jobs</SignpostLink>
@@ -180,10 +183,12 @@ export default () => (
           <Paragraph>
             Use this component to link to a downloadable file.
           </Paragraph>
-          <Paragraph>
-            When using this component you should use a meaningful phrase that
-            makes sense out of context.
-          </Paragraph>
+          <Paragraph>You should:</Paragraph>
+          <BulletedList>
+            <ListItem>
+              use a meaningful phrase that makes sense out of context
+            </ListItem>
+          </BulletedList>
           <Example>
             <DownloadLink href="#" format="PDF" size="258KB">
               Guide to fostering and adoption
@@ -204,7 +209,7 @@ export default () => (
           <Paragraph>
             Use this component to link to the start of a transactional service.
           </Paragraph>
-          <Paragraph>When using this component you should:</Paragraph>
+          <Paragraph>You should:</Paragraph>
           <BulletedList>
             <ListItem>limit to one on each page</ListItem>
             <ListItem>only use the Green colour</ListItem>
@@ -225,17 +230,18 @@ export default () => (
           </Cite>
           <Subheading>Prominent Link</Subheading>
           <Paragraph>Use this component within featured content.</Paragraph>
-          <Paragraph>When using this component you should:</Paragraph>
+          <Paragraph>You should:</Paragraph>
           <BulletedList>
             <ListItem>limit the number on each page</ListItem>
             <ListItem>use sentence case</ListItem>
-            <ListItem>use a verb, for example donate</ListItem>
-            <ListItem>
-              not use terms like ‘Read more’ and ‘Find out more’
-            </ListItem>
+            <ListItem>use a verb, for example ‘Donate‘</ListItem>
+          </BulletedList>
+          <Paragraph>You should avoid:</Paragraph>
+          <BulletedList>
+            <ListItem>terms like ‘Read more’ and ‘Find out more’</ListItem>
           </BulletedList>
           <Example>
-            <ProminentLink href="#" text="Donate" />
+            <ProminentLink colour="teal" href="#" text="Donate" />
           </Example>
           <Example>
             <ProminentLink colour="pink" href="#" text="Volunteer with us" />
@@ -252,11 +258,12 @@ export default () => (
             on GitHub.
           </Cite>
           <Subheading>Back Link</Subheading>
-          <Paragraph>Use this component to link back.</Paragraph>
-          <Paragraph>When using this component you should:</Paragraph>
+          <Paragraph>You should:</Paragraph>
           <BulletedList>
-            <ListItem>only use it once on each page</ListItem>
-            <ListItem>place it as the first interactive element</ListItem>
+            <ListItem>limit to one on each page</ListItem>
+            <ListItem>
+              position it at the top as the first interactive element
+            </ListItem>
           </BulletedList>
           <Example>
             <BackLink href="#" />
