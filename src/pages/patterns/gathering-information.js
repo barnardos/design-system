@@ -62,12 +62,19 @@ export default () => (
             on GitHub.
           </Cite>
           <Heading>Asking for names</Heading>
-          <Paragraph>Use this pattern to ask for names.</Paragraph>
           <Paragraph>You should:</Paragraph>
           <BulletedList>
             <ListItem>only ask for names when absolutely needed</ListItem>
             <ListItem>support all characters users may need to enter</ListItem>
-            <ListItem>avoid asking for title</ListItem>
+          </BulletedList>
+          <Paragraph>You should avoid:</Paragraph>
+          <BulletedList>
+            <ListItem>asking for title</ListItem>
+            <ListItem>asking for middle name</ListItem>
+            <ListItem>asking for gender</ListItem>
+            <ListItem>
+              terms like ’given name’, ’forename’, and ’surname’
+            </ListItem>
           </BulletedList>
           <Figures>
             <Figure caption="Where possible use a single name field to accommodate the broadest range of name types.">
