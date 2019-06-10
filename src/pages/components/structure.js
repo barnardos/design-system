@@ -245,6 +245,10 @@ export default () => (
             <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Search">
               Search code
             </Link>{" "}
+            and{" "}
+            <Link href="https://github.com/barnardos/design-system/issues/454">
+              Search research
+            </Link>{" "}
             on GitHub.
           </Cite>
           <Heading>Header</Heading>

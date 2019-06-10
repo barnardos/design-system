@@ -257,7 +257,7 @@ export default () => (
               Prominent Link code
             </Link>{" "}
             and{" "}
-            <Link href="https://github.com/barnardos/design-system/issues/47">
+            <Link href="https://github.com/barnardos/design-system/issues/44">
               Prominent Link research
             </Link>{" "}
             on GitHub.

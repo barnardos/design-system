@@ -420,7 +420,7 @@ export default () => (
               Trigger code
             </Link>{" "}
             and{" "}
-            <Link href="https://github.com/barnardos/design-system/issues/33">
+            <Link href="https://github.com/barnardos/design-system/issues/857">
               Trigger research
             </Link>{" "}
             on GitHub.
