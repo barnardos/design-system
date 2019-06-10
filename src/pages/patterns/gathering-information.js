@@ -133,7 +133,7 @@ export default () => (
             <Figure>
               <TextInput
                 id="text-input-postcode-example"
-                label="Postcode (optional)"
+                label="Postcode"
                 size={16}
               />
               <Submit>Find address</Submit>
@@ -187,12 +187,12 @@ export default () => (
               />
               <TextInput
                 id="text-input-county-example"
-                label="County"
+                label="County (optional)"
                 size={48}
               />
               <TextInput
                 id="text-input-postcode-example"
-                label="Postcode (optional)"
+                label="Postcode"
                 size={16}
               />
             </Figure>
