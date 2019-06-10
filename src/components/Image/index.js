@@ -11,7 +11,7 @@ const Image = ({ alt, ratio, src }) => (
 
 Image.propTypes = {
   alt: PropTypes.string.isRequired,
-  ratio: PropTypes.oneOf["1by1"],
+  ratio: PropTypes.oneOf[("1by1", "16by9")],
   src: PropTypes.string.isRequired
 };
 

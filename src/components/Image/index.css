@@ -25,6 +25,12 @@
   }
 }
 
+.Image--16by9 {
+  &::before {
+    padding-bottom: 56.25%;
+  }
+}
+
 .Image-media {
   border: none;
   bottom: 0;

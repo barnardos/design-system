@@ -337,6 +337,10 @@ export default () => (
           <BulletedList>
             <ListItem>only represent individual pages</ListItem>
           </BulletedList>
+          <Paragraph>You should avoid:</Paragraph>
+          <BulletedList>
+            <ListItem>displaying the current page</ListItem>
+          </BulletedList>
           <Example>
             <Breadcrumbs
               items={[

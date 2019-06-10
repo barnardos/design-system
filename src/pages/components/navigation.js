@@ -122,6 +122,9 @@ export default () => (
         <Content>
           <Heading>Links</Heading>
           <Subheading>Link</Subheading>
+          <Paragraph>
+            Use this component to link to an internal or external page.
+          </Paragraph>
           <Paragraph>You should:</Paragraph>
           <BulletedList>
             <ListItem>
@@ -229,7 +232,9 @@ export default () => (
             on GitHub.
           </Cite>
           <Subheading>Prominent Link</Subheading>
-          <Paragraph>Use this component within featured content.</Paragraph>
+          <Paragraph>
+            Use this component to emphasise a link within featured content.
+          </Paragraph>
           <Paragraph>You should:</Paragraph>
           <BulletedList>
             <ListItem>limit the number on each page</ListItem>
@@ -383,9 +388,7 @@ export default () => (
             .
           </Paragraph>
           <Subheading>Contents Menu</Subheading>
-          <Paragraph>
-            Use this component to navigate within a page or section of pages.
-          </Paragraph>
+          <Paragraph>Use this component to navigate within a page.</Paragraph>
           <Example>
             <ContentsMenu
               items={[
@@ -422,8 +425,8 @@ export default () => (
           <Heading>Paginating</Heading>
           <Subheading>Pagination</Subheading>
           <Paragraph>
-            Use this component to break large pieces of content across multiple
-            pages.
+            Use this component to navigate between content which is split across
+            multiple pages.
           </Paragraph>
           <Example>
             <Pagination

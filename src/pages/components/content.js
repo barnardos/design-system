@@ -223,6 +223,13 @@ export default () => (
               <Topic>Raising awareness</Topic>
             </div>
           </Example>
+          <Cite>
+            View{" "}
+            <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Topic">
+              Topic code
+            </Link>{" "}
+            on GitHub.
+          </Cite>
           <Subheading>Title</Subheading>
           <Example>
             <Title>What we do</Title>
@@ -343,7 +350,6 @@ export default () => (
           <Heading>Lists</Heading>
           <Paragraph>You should:</Paragraph>
           <BulletedList>
-            <ListItem>limit the number on each page</ListItem>
             <ListItem>introduce with a descriptive sentence</ListItem>
             <ListItem>aim to keep the length of items similar</ListItem>
           </BulletedList>
@@ -410,7 +416,7 @@ export default () => (
           <Heading>Disclosure</Heading>
           <Subheading>Details</Subheading>
           <Paragraph>
-            Use this component to reveal extra information in situ.
+            Use this component to reveal hidden information.
           </Paragraph>
           <Example>
             <Paragraph>There are many methods to donate.</Paragraph>
@@ -623,9 +629,10 @@ export default () => (
             </ListItem>
           </BulletedList>
           <Example>
-            <Caption label="Participants receiving their certificate">
+            <Caption label="Volunteer helping in a Barnardo’s shop">
               <Image
-                alt="Lady holding a baby"
+                alt="Volunteer helping in a Barnardo’s shop"
+                ratio="16by9"
                 src={withPrefix("/image-for-caption-example.jpg")}
               />
             </Caption>
