@@ -57,15 +57,14 @@ export default () => (
               </Link>
             </ListItem>
             <ListItem>
-              participate in the discussion on{" "}
               <Link href="https://barnardos.facebook.com/groups/design.system/">
-                Workplace
-              </Link>
+                participate in the discussion
+              </Link>{" "}
+              on Workplace
             </ListItem>
             <ListItem>
-              contribute to the Design System on{" "}
-              <Link href="https://github.com/barnardos/design-system/blob/master/.github/CONTRIBUTING.md">
-                Github
+              <Link href="/getting-started/contribute/">
+                contribute to the Design System
               </Link>
             </ListItem>
           </BulletedList>
