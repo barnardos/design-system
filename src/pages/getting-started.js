@@ -55,10 +55,14 @@ export default () => (
         than copy and paste the code.
       </Paragraph>
       <Paragraph>
-        If you need something that’s not in the Design System create and test a
-        solution in your product, and{" "}
-        <Link href="/#feedback">contribute it back</Link> if it solves a common
-        problem.
+        If you’re looking for something that’s not in the Design System, feel
+        free to design and test your own solution.
+      </Paragraph>
+      <Paragraph>
+        <Link href="/getting-started/contribute/">
+          Contribute to the Design System
+        </Link>{" "}
+        if you have a solution to a common problem.
       </Paragraph>
       <SignpostLink href="/">Go to the homepage</SignpostLink>
     </Main>
