@@ -4,6 +4,7 @@ import Breadcrumbs from "../../components/Breadcrumbs";
 import BulletedList from "../../components/BulletedList";
 import Cite from "../../components/Cite";
 import Code from "../../components/Code";
+import CodeExample from "../../components/CodeExample"
 import Content from "../../components/Content";
 import Contents from "../../components/Contents";
 import ContentsMenu from "../../components/ContentsMenu";
@@ -224,6 +225,60 @@ export default () => (
               />
             </div>
           </Example>
+          <CodeExample>
+            <Menu
+              items={[
+                {
+                  text: "Breakfast",
+                  href: "#",
+                  items: [
+                    {
+                      text: "Cereal",
+                      href: "#"
+                    },
+                    {
+                      text: "Fruit",
+                      href: "#"
+                    },
+                    {
+                      text: "Tea",
+                      href: "#"
+                    }
+                  ]
+                },
+                {
+                  isActive: true,
+                  text: "Lunch",
+                  href: "#",
+                  items: [
+                    {
+                      isActive: true,
+                      text: "Sandwich",
+                      href: "#"
+                    },
+                    {
+                      text: "Juice",
+                      href: "#"
+                    }
+                  ]
+                },
+                {
+                  text: "Dinner",
+                  href: "#",
+                  items: [
+                    {
+                      text: "Pasta",
+                      href: "#"
+                    },
+                    {
+                      text: "Salad",
+                      href: "#"
+                    }
+                  ]
+                }
+              ]}
+            />
+          </CodeExample>
           <Cite>
             View{" "}
             <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Menu">

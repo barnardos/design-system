@@ -1,0 +1,8 @@
+@import "../custom-properties.css";
+
+/** @define Code; */
+
+.Code {
+  font: 400 var(--type-1) monospace;
+  line-height: inherit;
+}
