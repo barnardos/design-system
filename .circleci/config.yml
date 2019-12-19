@@ -5,7 +5,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: cypress/browsers:12.8.1-chrome78-ff70
+      - image: cypress/browsers:node12.8.1-chrome78-ff70
         environment:
           TERM: xterm
 
