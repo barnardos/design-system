@@ -6,3 +6,9 @@
   font: 400 var(--type-1) monospace;
   line-height: inherit;
 }
+
+.html {
+  padding-top: 1rem;
+  white-space: pre-wrap;
+  word-break: break-all;
+}

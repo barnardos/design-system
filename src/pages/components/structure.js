@@ -14,6 +14,7 @@ import Figures from "../../components/Figures";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import Heading from "../../components/Heading";
+import Layout from "../../components/Layout";
 import Link from "../../components/Link";
 import ListItem from "../../components/ListItem";
 import Main from "../../components/Main";
@@ -22,6 +23,7 @@ import Page from "../../components/Page";
 import Paragraph from "../../components/Paragraph";
 import Preformatted from "../../components/Preformatted";
 import Search from "../../components/Search";
+import Site from "../../components/Site";
 import SkipLink from "../../components/SkipLink";
 import Title from "../../components/Title";
 
@@ -78,6 +80,8 @@ const structureForFigure = `<Site>
 </Site>`;
 
 export default () => {
+  const search = (<Search />)
+  // const breadcrumbs = (<Breadcrumbs />)
   const menu = (<Menu
     items={[
       {
@@ -171,6 +175,9 @@ export default () => {
               </ListItem>
               <ListItem>normalise CSS styles</ListItem>
             </BulletedList>
+            <CodeExample>
+              {<Site />}
+            </CodeExample>
             <Cite>
               View{" "}
               <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Site">
@@ -184,6 +191,9 @@ export default () => {
               <ListItem>add space around the page</ListItem>
               <ListItem>limit the width of the page</ListItem>
             </BulletedList>
+            <CodeExample>
+              {<Layout />}
+            </CodeExample>
             <Cite>
               View{" "}
               <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Layout">
@@ -197,6 +207,9 @@ export default () => {
               <SkipLink />
               <Cite>Focus component to reveal.</Cite>
             </Example>
+            <CodeExample>
+              {<SkipLink />}
+            </CodeExample>
             <Cite>
               View{" "}
               <Link href="https://github.com/barnardos/design-system/tree/master/src/components/SkipLink">
@@ -247,6 +260,9 @@ export default () => {
             <Example>
               <Search id="example-search" />
             </Example>
+            <CodeExample>
+              {search}
+            </CodeExample>
             <Cite>
               View{" "}
               <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Search">
@@ -329,6 +345,9 @@ export default () => {
                 />
               </div>
             </Example>
+            <CodeExample>
+              {< Header />}
+            </CodeExample>
             <Cite>
               View{" "}
               <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Header">
@@ -370,6 +389,9 @@ export default () => {
                 ]}
               />
             </Example>
+            <CodeExample>
+              { breadcrumbs }
+            </CodeExample>
             <Cite>
               View{" "}
               <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Breadcrumbs">
@@ -385,6 +407,9 @@ export default () => {
             <Paragraph>
               Use this component for the main content of a page.
             </Paragraph>
+              <CodeExample>
+              {<Main />}
+            </CodeExample>
             <Cite>
               View{" "}
               <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Main">
@@ -418,6 +443,9 @@ export default () => {
                 ]}
               />
             </Example>
+            <CodeExample>
+              {<Footer />}
+            </CodeExample>
             <Cite>
               View{" "}
               <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Footer">
