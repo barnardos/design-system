@@ -81,7 +81,22 @@ const structureForFigure = `<Site>
 
 export default () => {
   const search = (<Search />)
-  // const breadcrumbs = (<Breadcrumbs />)
+  const breadcrumbs = (<Breadcrumbs
+    items={[
+      {
+        text: "Home",
+        href: "#0"
+      },
+      {
+        text: "What we do",
+        href: "#1"
+      },
+      {
+        text: "Fundraising",
+        href: "#3"
+      }
+    ]}
+  />);
   const menu = (<Menu
     items={[
       {
