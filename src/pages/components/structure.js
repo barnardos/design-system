@@ -117,6 +117,64 @@ export default () => {
       }
     ]}
   />);
+
+  const header = (<Header
+    search={<Search />}
+    menu={
+      <Menu
+        items={[
+          {
+            text: "Breakfast",
+            href: "#",
+            items: [
+              {
+                text: "Cereal",
+                href: "#"
+              },
+              {
+                text: "Fruit",
+                href: "#"
+              },
+              {
+                text: "Tea",
+                href: "#"
+              }
+            ]
+          },
+          {
+            isActive: true,
+            text: "Lunch",
+            href: "#",
+            items: [
+              {
+                isActive: true,
+                text: "Sandwich",
+                href: "#"
+              },
+              {
+                text: "Juice",
+                href: "#"
+              }
+            ]
+          },
+          {
+            text: "Dinner",
+            href: "#",
+            items: [
+              {
+                text: "Pasta",
+                href: "#"
+              },
+              {
+                text: "Salad",
+                href: "#"
+              }
+            ]
+          }
+        ]}
+      />
+    }
+  />);
   const menu = (<Menu
     items={[
       {
@@ -315,73 +373,17 @@ export default () => {
               Search and Menu.
             </Paragraph>
             <Example>
-              <div
-                style={{
-                  paddingBottom: "8rem",
-                  position: "relative"
-                }}
-              >
-                <Header
-                  search={<Search />}
-                  menu={
-                    <Menu
-                      items={[
-                        {
-                          text: "Breakfast",
-                          href: "#",
-                          items: [
-                            {
-                              text: "Cereal",
-                              href: "#"
-                            },
-                            {
-                              text: "Fruit",
-                              href: "#"
-                            },
-                            {
-                              text: "Tea",
-                              href: "#"
-                            }
-                          ]
-                        },
-                        {
-                          isActive: true,
-                          text: "Lunch",
-                          href: "#",
-                          items: [
-                            {
-                              isActive: true,
-                              text: "Sandwich",
-                              href: "#"
-                            },
-                            {
-                              text: "Juice",
-                              href: "#"
-                            }
-                          ]
-                        },
-                        {
-                          text: "Dinner",
-                          href: "#",
-                          items: [
-                            {
-                              text: "Pasta",
-                              href: "#"
-                            },
-                            {
-                              text: "Salad",
-                              href: "#"
-                            }
-                          ]
-                        }
-                      ]}
-                    />
-                  }
-                />
-              </div>
+            <div
+              style={{
+                paddingBottom: "8rem",
+                position: "relative"
+              }}
+            >
+            { header }
+            </div>
             </Example>
             <CodeExample>
-              {< Header />}
+            { header }
             </CodeExample>
             <Cite>
               View{" "}
@@ -407,25 +409,10 @@ export default () => {
               <ListItem>displaying the current page</ListItem>
             </BulletedList>
             <Example>
-              <Breadcrumbs
-                items={[
-                  {
-                    text: "Home",
-                    href: "#"
-                  },
-                  {
-                    text: "What we do",
-                    href: "#"
-                  },
-                  {
-                    text: "Supporting young people",
-                    href: "#"
-                  }
-                ]}
-              />
+            { breadcrumbs }
             </Example>
             <CodeExample>
-              { breadcrumbs }
+            { breadcrumbs }
             </CodeExample>
             <Cite>
               View{" "}
@@ -457,26 +444,7 @@ export default () => {
               Use this component for the copyright notice and optional links.
             </Paragraph>
             <Example>
-              <Footer
-                items={[
-                  {
-                    href: "#",
-                    text: "Contact us"
-                  },
-                  {
-                    href: "#",
-                    text: "Privacy notice"
-                  },
-                  {
-                    href: "#",
-                    text: "Terms & conditions"
-                  },
-                  {
-                    href: "#",
-                    text: "Cookie policy"
-                  }
-                ]}
-              />
+              { footer }
             </Example>
             <CodeExample>
               { footer }
