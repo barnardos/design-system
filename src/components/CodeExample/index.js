@@ -13,7 +13,7 @@ const CodeExample = ({ children }) => {
   // removes src to increase readability
   code = code.replace(/src="[^"]*"?/g, 'src=""');
   code = hljs.highlight('xml', pretty(code)).value;
-  return (<pre className="html"><code className="hljs xml">{renderHTML(code)}</code></pre>);
+  return (<pre className="html CodeExample"><code className="hljs xml">{renderHTML(code)}</code></pre>);
 };
 
 CodeExample.propTypes = {

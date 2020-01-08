@@ -1,8 +1,7 @@
 @import "../custom-properties.css";
 
-/** @define Code; */
+/** @define CodeExample; */
 
-.Code {
-  font: 400 var(--type-1) monospace;
-  line-height: inherit;
+.CodeExample {
+  white-space: pre-wrap;
 }
