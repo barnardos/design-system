@@ -97,6 +97,26 @@ export default () => {
       }
     ]}
   />);
+  const footer = (<Footer
+    items={[
+      {
+        href: "#",
+        text: "Contact us"
+      },
+      {
+        href: "#",
+        text: "Privacy notice"
+      },
+      {
+        href: "#",
+        text: "Terms & conditions"
+      },
+      {
+        href: "#",
+        text: "Cookie policy"
+      }
+    ]}
+  />);
   const menu = (<Menu
     items={[
       {
@@ -459,7 +479,7 @@ export default () => {
               />
             </Example>
             <CodeExample>
-              {<Footer />}
+              { footer }
             </CodeExample>
             <Cite>
               View{" "}
