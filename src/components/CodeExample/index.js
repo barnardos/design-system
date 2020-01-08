@@ -10,6 +10,8 @@ import 'highlight.js/styles/vs.css';
 
 const CodeExample = ({ children }) => {
   let code = ReactDOMServer.renderToStaticMarkup(children);
+  // removes src to increase readability
+  code = code.replace(/src="[^"]*"?/g, 'src=""');
   code = hljs.highlight('xml', pretty(code)).value;
   return (<pre className="html"><code className="hljs xml">{renderHTML(code)}</code></pre>);
 };
