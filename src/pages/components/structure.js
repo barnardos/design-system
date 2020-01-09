@@ -4,7 +4,7 @@ import Breadcrumbs from "../../components/Breadcrumbs";
 import BulletedList from "../../components/BulletedList";
 import Cite from "../../components/Cite";
 import Code from "../../components/Code";
-import CodeExample from "../../components/CodeExample"
+import CodeExample from "../../components/CodeExample";
 import Content from "../../components/Content";
 import Contents from "../../components/Contents";
 import ContentsMenu from "../../components/ContentsMenu";
@@ -78,58 +78,60 @@ const structureForFigure = `<Site>
 </Site>`;
 
 export default () => {
-  const menu = (<Menu
-    items={[
-      {
-        text: "Breakfast",
-        href: "#",
-        items: [
-          {
-            text: "Cereal",
-            href: "#"
-          },
-          {
-            text: "Fruit",
-            href: "#"
-          },
-          {
-            text: "Tea",
-            href: "#"
-          }
-        ]
-      },
-      {
-        isActive: true,
-        text: "Lunch",
-        href: "#",
-        items: [
-          {
-            isActive: true,
-            text: "Sandwich",
-            href: "#"
-          },
-          {
-            text: "Juice",
-            href: "#"
-          }
-        ]
-      },
-      {
-        text: "Dinner",
-        href: "#",
-        items: [
-          {
-            text: "Pasta",
-            href: "#"
-          },
-          {
-            text: "Salad",
-            href: "#"
-          }
-        ]
-      }
-    ]}
-  />);
+  const menu = (
+    <Menu
+      items={[
+        {
+          text: "Breakfast",
+          href: "#",
+          items: [
+            {
+              text: "Cereal",
+              href: "#"
+            },
+            {
+              text: "Fruit",
+              href: "#"
+            },
+            {
+              text: "Tea",
+              href: "#"
+            }
+          ]
+        },
+        {
+          isActive: true,
+          text: "Lunch",
+          href: "#",
+          items: [
+            {
+              isActive: true,
+              text: "Sandwich",
+              href: "#"
+            },
+            {
+              text: "Juice",
+              href: "#"
+            }
+          ]
+        },
+        {
+          text: "Dinner",
+          href: "#",
+          items: [
+            {
+              text: "Pasta",
+              href: "#"
+            },
+            {
+              text: "Salad",
+              href: "#"
+            }
+          ]
+        }
+      ]}
+    />
+  );
 
   return (
     <Page title="Structure">
@@ -192,7 +194,9 @@ export default () => {
               on GitHub.
             </Cite>
             <Heading>Skip Link</Heading>
-            <Paragraph>Use this component to skip to the main content.</Paragraph>
+            <Paragraph>
+              Use this component to skip to the main content.
+            </Paragraph>
             <Example>
               <SkipLink />
               <Cite>Focus component to reveal.</Cite>
@@ -228,9 +232,7 @@ export default () => {
                 {menu}
               </div>
             </Example>
-            <CodeExample>
-              {menu}
-            </CodeExample>
+            <CodeExample>{menu}</CodeExample>
             <Cite>
               View{" "}
               <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Menu">
@@ -432,5 +434,6 @@ export default () => {
           </Content>
         </Contents>
       </Main>
-    </Page>);
+    </Page>
+  );
 };
