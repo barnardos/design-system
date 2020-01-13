@@ -201,6 +201,11 @@ export default () => {
               <SkipLink />
               <Cite>Focus component to reveal.</Cite>
             </Example>
+            <CodeExample
+              component={<SkipLink />}
+              react={`<SkipLink />` } 
+              ruby={`<%= skip_link('Skip to main content') %>`}
+            />
             <Cite>
               View{" "}
               <Link href="https://github.com/barnardos/design-system/tree/master/src/components/SkipLink">
@@ -232,7 +237,35 @@ export default () => {
                 {menu}
               </div>
             </Example>
-            <CodeExample>{menu}</CodeExample>
+            <CodeExample component={menu} react={`<Menu
+  items={[
+    {
+      text: "Breakfast",
+      href: "#",
+      items: [
+        {
+          text: "Cereal",
+          href: "#"
+        }
+      ]
+    },
+    {
+      isActive: true,
+      text: "Lunch",
+      href: "#",
+      items: [
+        {
+          isActive: true,
+          text: "Sandwich",
+          href: "#"
+        },
+        {
+          text: "Juice",
+          href: "#"
+        }
+      ]
+    }]} />` }
+            />
             <Cite>
               View{" "}
               <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Menu">
