@@ -1,0 +1,28 @@
+<Menu
+  items={[
+    {
+      text: "Breakfast",
+      href: "#",
+      items: [
+        {
+          text: "Cereal",
+          href: "#"
+        }
+      ]
+    },
+    {
+      isActive: true,
+      text: "Lunch",
+      href: "#",
+      items: [
+        {
+          isActive: true,
+          text: "Sandwich",
+          href: "#"
+        },
+        {
+          text: "Juice",
+          href: "#"
+        }
+      ]
+    }]} />

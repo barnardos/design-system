@@ -18,6 +18,7 @@ import Link from "../../components/Link";
 import ListItem from "../../components/ListItem";
 import Main from "../../components/Main";
 import Menu from "../../components/Menu";
+import MenuExample from "../../components/Menu/example.react.txt";
 import Page from "../../components/Page";
 import Paragraph from "../../components/Paragraph";
 import Preformatted from "../../components/Preformatted";
@@ -203,7 +204,7 @@ export default () => {
             </Example>
             <CodeExample
               component={<SkipLink />}
-              react={`<SkipLink />` } 
+              react={`<SkipLink />`}
               ruby={`<%= skip_link('Skip to main content') %>`}
             />
             <Cite>
@@ -237,35 +238,7 @@ export default () => {
                 {menu}
               </div>
             </Example>
-            <CodeExample component={menu} react={`<Menu
-  items={[
-    {
-      text: "Breakfast",
-      href: "#",
-      items: [
-        {
-          text: "Cereal",
-          href: "#"
-        }
-      ]
-    },
-    {
-      isActive: true,
-      text: "Lunch",
-      href: "#",
-      items: [
-        {
-          isActive: true,
-          text: "Sandwich",
-          href: "#"
-        },
-        {
-          text: "Juice",
-          href: "#"
-        }
-      ]
-    }]} />` }
-            />
+            <CodeExample component={menu} react={MenuExample} />
             <Cite>
               View{" "}
               <Link href="https://github.com/barnardos/design-system/tree/master/src/components/Menu">
