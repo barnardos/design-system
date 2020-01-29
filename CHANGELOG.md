@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.1
+
+### Fixed issue with import
+
 ## 1.0.0
 
 ### Removed
