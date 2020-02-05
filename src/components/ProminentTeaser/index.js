@@ -40,7 +40,8 @@ ProminentTeaser.propTypes = {
   href: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
   meta: PropTypes.string,
-  src: PropTypes.string
+  src: PropTypes.string,
+  alt: PropTypes.string
 };
 
 export default ProminentTeaser;

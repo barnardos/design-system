@@ -26,7 +26,8 @@ Teaser.propTypes = {
   heading: PropTypes.string.isRequired,
   href: PropTypes.string.isRequired,
   meta: PropTypes.string,
-  src: PropTypes.string
+  src: PropTypes.string,
+  alt: PropTypes.string
 };
 
 export default Teaser;
