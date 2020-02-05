@@ -305,6 +305,7 @@ export default () => (
             <Teaser
               href="#"
               src={withPrefix("/image-for-teaser-example.jpg")}
+              alt="Accepting donations at a Barnardo's store"
               heading="Other ways to donate"
             >
               Find out ways to help support vulnerable children including making
@@ -362,6 +363,7 @@ export default () => (
               meta="14 April 2019"
               heading="Brighton Marathon"
               src={withPrefix("/image-for-prominent-teaser-example.jpg")}
+              alt="A supporter running a marathon for Barnardo's"
               text="Sign up"
             >
               Taking in the sights and sounds of the coast, this fantastic 26.2
