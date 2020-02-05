@@ -6,11 +6,11 @@ import Link from "../Link";
 
 import "./index.css";
 
-const Teaser = ({ children, heading, href, meta, src }) => (
+const Teaser = ({ children, heading, href, meta, src, alt = "" }) => (
   <Link className="Teaser" href={href}>
     {src && (
       <div className="Teaser-image">
-        <Image alt="" src={src} />
+        <Image alt={alt} src={src} />
       </div>
     )}
     <div className="Teaser-text">
