@@ -13,12 +13,13 @@ const ProminentTeaser = ({
   href,
   text,
   meta,
-  src
+  src,
+  alt = ""
 }) => (
   <div className={`ProminentTeaser ProminentTeaser--${colour}`}>
     {src && (
       <div className="ProminentTeaser-image">
-        <Image alt="" src={src} />
+        <Image alt={alt} src={src} />
       </div>
     )}
     <div className="ProminentTeaser-text">
