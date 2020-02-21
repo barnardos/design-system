@@ -1,0 +1,49 @@
+@import "../custom-properties.css";
+
+/** @define CodeExample; */
+
+.CodeExample-button {
+  background: transparent;
+  border: none;
+  display: inline-block;
+  font: 600 var(--type-2) proxima-nova;
+  margin: 0 1px;
+  padding: 0.25rem 2.5rem;
+  text-align: center;
+  text-transform: capitalize;
+  vertical-align: middle;
+
+  &:hover,
+  &.selected {
+    background-image: linear-gradient(
+      var(--black),
+      color-mod(var(--black) tint(30%))
+    );
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin: 0;
+    color: white;
+  }
+}
+
+.CodeExample-buttonGroup {
+  background-image: linear-gradient(
+    var(--white),
+    color-mod(var(--black) tint(80%))
+  );
+  border: 1px solid var(--black);
+  border-radius: 5px;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 4px;
+  position: relative;
+  vertical-align: middle;
+}
+
+.CodeExample {
+  white-space: pre-wrap;
+}
+
+.CodeExample-code--hidden {
+  display: none;
+}
