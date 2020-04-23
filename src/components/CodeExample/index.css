@@ -1,0 +1,7 @@
+@import "../custom-properties.css";
+
+/** @define CodeExample; */
+
+.CodeExample {
+  white-space: pre-wrap;
+}
