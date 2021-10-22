@@ -67,7 +67,7 @@ export default () => (
           <Subheading>Primary</Subheading>
           <Swatches
             swatches={[
-              [{ label: "Green", hex: "#6aa300", primary: true }],
+              [{ label: "Green", hex: "#558200", primary: true }],
               [{ label: "Black", hex: "#1d1d1d", primary: true }],
               [
                 {
