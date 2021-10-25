@@ -23,7 +23,7 @@
 
   /* Colours */
   /* stylelint-disable color-no-hex */
-  --green: #558200;
+  /* stylelint-disable unexpected-hex */
   --pink: #cc0070;
   --teal: #0099a9;
   --purple: #6e2066;
@@ -31,6 +31,7 @@
   --red: #c30000;
   --black: #1d1d1d;
   --white: #fff;
+  --green: #558200;
   --yellow: #ffbf47;
 
   /* Assigments */
