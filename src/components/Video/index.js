@@ -5,7 +5,7 @@ import "./index.css";
 
 const Video = ({ src, title }) => (
   <div className="Video">
-    <iframe className="Video-media" title={title} src={src} allowFullscreen />
+    <iframe className="Video-media" title={title} src={src} allowFullScreen />
   </div>
 );
 
