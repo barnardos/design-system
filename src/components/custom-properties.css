@@ -23,21 +23,21 @@
 
   /* Colours */
   /* stylelint-disable color-no-hex */
-  --green: #6aa300;
+  /* stylelint-disable */
+  --green: #558200;
   --pink: #cc0070;
   --teal: #0099a9;
   --purple: #6e2066;
   --orange: #e86c00;
-  --red: #c30000;
+  --red: #9c0000;
   --black: #1d1d1d;
   --white: #fff;
-  --yellow: #ffbf47;
 
   /* Assigments */
   --body-font: system-ui;
   --brand-font: proxima-nova, sans-serif;
   --brand-colour: var(--green);
   --error-colour: var(--red);
-  --focus-colour: var(--yellow);
+  --focus-colour: var(--orange);
   --visited-colour: var(--purple);
 }

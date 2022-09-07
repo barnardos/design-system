@@ -67,7 +67,7 @@ export default () => (
           <Subheading>Primary</Subheading>
           <Swatches
             swatches={[
-              [{ label: "Green", hex: "#6aa300", primary: true }],
+              [{ label: "Green", hex: "#558200", primary: true }],
               [{ label: "Black", hex: "#1d1d1d", primary: true }],
               [
                 {
@@ -91,11 +91,11 @@ export default () => (
           />
           <Subheading>Focus</Subheading>
           <Swatches
-            swatches={[[{ label: "Yellow", hex: "#ffbf47", primary: true }]]}
+            swatches={[[{ label: "Orange", hex: "#e86c00", primary: true }]]}
           />
           <Subheading>Errors</Subheading>
           <Swatches
-            swatches={[[{ label: "Red", hex: "#c30000", primary: true }]]}
+            swatches={[[{ label: "Red", hex: "#9c0000", primary: true }]]}
           />
           <Paragraph>
             If your product isn’t Barnardo’s branded you don’t need to use the
